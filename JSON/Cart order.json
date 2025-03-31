@@ -1,0 +1,363 @@
+{
+  "modelName": "employee",
+  "collections": [
+    {
+      "GUID": "598d27c4-c06e-4f0d-ad80-17aba0506fe0",
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "12620cfb-8d0d-49ff-8688-8b7a76b12aa3",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "7d099772-1d91-4312-bb7b-931a45e6f284",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "becf3145-f9eb-4ff8-b0b3-7686212aedef",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "740d80cc-771d-45b7-aea0-ca84e37e2af9"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "d13c5284-9fde-4864-8490-e8f0e1815c0e"
+    },
+    {
+      "GUID": "ff7ef443-481d-4445-b341-15d5d3cb7094",
+      "collectionName": "New Document1",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "027df29c-dc8e-4577-8879-418cc8fc0c5c",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "5fbd9007-6ef3-4f52-9c51-c3b337554048",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "60491cfe-ce58-4997-ae8b-131a7cea4635",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ded6c073-7eb1-432e-8fcb-c824abaddbce"
+      },
+      "isActivated": true,
+      "additionalProperties": false
+    },
+    {
+      "GUID": "b4476729-8727-482b-96a6-1770bcd793c0",
+      "collectionName": "New Document2",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "09e0be67-a657-40cb-9544-8a38783d9a18",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "79bdf210-d809-4c11-b355-971128c88aeb",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "dd1740dc-5a00-4a0e-b63a-9b2e1eec44e5",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "4310f31f-32aa-4529-92df-a4227ab75a35"
+      },
+      "isActivated": true,
+      "additionalProperties": false
+    },
+    {
+      "GUID": "7d5bc634-5032-4b2e-8e81-57d5cb9e25c8",
+      "collectionName": "New Document3",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "5088525f-715f-4c0f-ab55-672ef1696f43",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "239806a2-dcd5-4d38-9a1b-0d0dc9950749",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "582c22e1-ade6-4682-a5fc-a60fc1636e6b",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "5845a07f-9ff3-453e-a3a4-fce8696d458f"
+      },
+      "isActivated": true,
+      "additionalProperties": false
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New Group",
+      "type": "bucket",
+      "collectionIds": [
+        "598d27c4-c06e-4f0d-ad80-17aba0506fe0"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "d13c5284-9fde-4864-8490-e8f0e1815c0e"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "d13c5284-9fde-4864-8490-e8f0e1815c0e": "New Group",
+    "598d27c4-c06e-4f0d-ad80-17aba0506fe0": "New Document",
+    "12620cfb-8d0d-49ff-8688-8b7a76b12aa3": "New Field",
+    "7d099772-1d91-4312-bb7b-931a45e6f284": "New Field1",
+    "becf3145-f9eb-4ff8-b0b3-7686212aedef": "New Field2",
+    "ff7ef443-481d-4445-b341-15d5d3cb7094": "New Document1",
+    "027df29c-dc8e-4577-8879-418cc8fc0c5c": "New Field",
+    "5fbd9007-6ef3-4f52-9c51-c3b337554048": "New Field1",
+    "60491cfe-ce58-4997-ae8b-131a7cea4635": "New Field2",
+    "b4476729-8727-482b-96a6-1770bcd793c0": "New Document2",
+    "09e0be67-a657-40cb-9544-8a38783d9a18": "New Field",
+    "79bdf210-d809-4c11-b355-971128c88aeb": "New Field1",
+    "dd1740dc-5a00-4a0e-b63a-9b2e1eec44e5": "New Field2",
+    "7d5bc634-5032-4b2e-8e81-57d5cb9e25c8": "New Document3",
+    "5088525f-715f-4c0f-ab55-672ef1696f43": "New Field",
+    "239806a2-dcd5-4d38-9a1b-0d0dc9950749": "New Field1",
+    "582c22e1-ade6-4682-a5fc-a60fc1636e6b": "New Field2"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "1f30f3b0-e505-49d5-a07e-7f4db079311c"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "ec0932cf-14d6-4e11-9191-561c0d8ec1ae"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "daed4870-9819-40a8-8b81-fec59019e222"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-03-31T21:14:15.355Z",
+  "GUID": "5545a81e-d8d8-482f-882a-1e070e5279c3",
+  "isLineageEnabled": false,
+  "hackoladeMeta": {
+    "validationErrors": {
+      "modelName": false
+    }
+  },
+  "lastModifTS": "2025-03-31T21:17:13.474Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.1.1"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "598d27c4-c06e-4f0d-ad80-17aba0506fe0",
+            "x": 1482,
+            "y": 1319,
+            "width": 208,
+            "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "ff7ef443-481d-4445-b341-15d5d3cb7094",
+            "x": 1989,
+            "y": 1577,
+            "width": 215,
+            "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "b4476729-8727-482b-96a6-1770bcd793c0",
+            "x": 1678,
+            "y": 1734,
+            "width": 215,
+            "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "7d5bc634-5032-4b2e-8e81-57d5cb9e25c8",
+            "x": 1481,
+            "y": 1583,
+            "width": 215,
+            "height": 87,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1442,
+            "y": 1279,
+            "GUID": "d13c5284-9fde-4864-8490-e8f0e1815c0e"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
