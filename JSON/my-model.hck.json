@@ -1,0 +1,172 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "GUID": "755d1e69-2da6-4d90-bf89-b6ff629cec51",
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "3b59a1e9-3329-4f46-86dd-9442d062c695",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "0189d31b-cca0-4e73-a2ab-98d67fd59a8e",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "4bf295fe-994b-44e8-ba0e-309362e44e88",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ccb81899-dd90-4c6e-9eca-ffdec44dcb8c"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "5bebd67a-d0a7-47c0-9f64-554a2f2d59ea"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New Group",
+      "type": "bucket",
+      "collectionIds": [
+        "755d1e69-2da6-4d90-bf89-b6ff629cec51"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "5bebd67a-d0a7-47c0-9f64-554a2f2d59ea"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "5bebd67a-d0a7-47c0-9f64-554a2f2d59ea": "New Group",
+    "755d1e69-2da6-4d90-bf89-b6ff629cec51": "New Document",
+    "3b59a1e9-3329-4f46-86dd-9442d062c695": "New Field",
+    "0189d31b-cca0-4e73-a2ab-98d67fd59a8e": "New Field1",
+    "4bf295fe-994b-44e8-ba0e-309362e44e88": "New Field2"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "a5f0fba8-3b2c-446c-9e6a-bcfb9659cde3"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "d200f05b-d468-401e-bf88-7f01620edea3"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "27d66189-e330-4ee7-893f-460a6459926b"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-03-31T20:46:25.534Z",
+  "GUID": "ac5e7cf2-ad17-4725-a235-5d91f9261d7b",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-03-31T20:51:39.066Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.1.1"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "755d1e69-2da6-4d90-bf89-b6ff629cec51",
+            "x": 1239,
+            "y": 1097,
+            "width": 208,
+            "height": 87,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1199,
+            "y": 1057,
+            "GUID": "5bebd67a-d0a7-47c0-9f64-554a2f2d59ea"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
