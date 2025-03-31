@@ -51,6 +51,56 @@
       "isActivated": true,
       "additionalProperties": false,
       "bucketId": "5bebd67a-d0a7-47c0-9f64-554a2f2d59ea"
+    },
+    {
+      "GUID": "7598dda9-8562-43af-a68f-988c98563f9e",
+      "collectionName": "New Document1",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "f31c5e73-7428-42ab-ad9e-72e3b0e9ac7a",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "9a571568-8292-4e52-8677-f375c0cb71e0",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "6f27d6b5-0522-406a-99b7-e199113ab0d1",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "24704b64-33ec-4b70-9456-dc9e9ea2c1e5"
+      },
+      "isActivated": true,
+      "additionalProperties": false
     }
   ],
   "buckets": [
@@ -80,7 +130,11 @@
     "755d1e69-2da6-4d90-bf89-b6ff629cec51": "New Document",
     "3b59a1e9-3329-4f46-86dd-9442d062c695": "New Field",
     "0189d31b-cca0-4e73-a2ab-98d67fd59a8e": "New Field1",
-    "4bf295fe-994b-44e8-ba0e-309362e44e88": "New Field2"
+    "4bf295fe-994b-44e8-ba0e-309362e44e88": "New Field2",
+    "7598dda9-8562-43af-a68f-988c98563f9e": "New Document1",
+    "f31c5e73-7428-42ab-ad9e-72e3b0e9ac7a": "New Field",
+    "9a571568-8292-4e52-8677-f375c0cb71e0": "New Field1",
+    "6f27d6b5-0522-406a-99b7-e199113ab0d1": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -105,7 +159,7 @@
   "creationTS": "2025-03-31T20:46:25.534Z",
   "GUID": "ac5e7cf2-ad17-4725-a235-5d91f9261d7b",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-03-31T20:51:39.066Z",
+  "lastModifTS": "2025-03-31T20:57:30.814Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -114,6 +168,7 @@
   "applicationInformation": {
     "version": "8.1.1"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -123,6 +178,14 @@
             "x": 1239,
             "y": 1097,
             "width": 208,
+            "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "7598dda9-8562-43af-a68f-988c98563f9e",
+            "x": 1600,
+            "y": 1145,
+            "width": 215,
             "height": 87,
             "color": {}
           }
