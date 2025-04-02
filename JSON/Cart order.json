@@ -301,6 +301,56 @@
       },
       "isActivated": true,
       "additionalProperties": false
+    },
+    {
+      "GUID": "31887f13-27e0-46fc-be40-a9546099dd23",
+      "collectionName": "New Document6",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "874d6da0-1ad0-45ed-9180-7ffc0eaaa042",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "dce9bd7b-b565-4a96-8edd-6d02977c07e3",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "10b69dba-b5bc-4a79-adc8-05bcc0398092",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "16ea2fa8-16c6-49b2-b7e7-afac08577752"
+      },
+      "isActivated": true,
+      "additionalProperties": false
     }
   ],
   "buckets": [
@@ -350,7 +400,11 @@
     "b5ccb46f-0bd0-41fb-b3e9-4189b3c3d378": "New Document5",
     "0fd2c917-8eb7-49b7-8cb3-9633cf130c68": "New Field",
     "3a49166a-f749-44a5-9d05-9a19370b4b90": "New Field1",
-    "2cb799e6-6969-4593-bf2c-0abb08e4ef8f": "New Field2"
+    "2cb799e6-6969-4593-bf2c-0abb08e4ef8f": "New Field2",
+    "31887f13-27e0-46fc-be40-a9546099dd23": "New Document6",
+    "874d6da0-1ad0-45ed-9180-7ffc0eaaa042": "New Field",
+    "dce9bd7b-b565-4a96-8edd-6d02977c07e3": "New Field1",
+    "10b69dba-b5bc-4a79-adc8-05bcc0398092": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -380,7 +434,7 @@
       "modelName": false
     }
   },
-  "lastModifTS": "2025-04-02T08:15:28.844Z",
+  "lastModifTS": "2025-04-02T08:18:25.968Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -439,6 +493,14 @@
             "y": 2285.909090909091,
             "width": 240,
             "height": 100,
+            "color": {}
+          },
+          {
+            "GUID": "31887f13-27e0-46fc-be40-a9546099dd23",
+            "x": 2298.836007130125,
+            "y": 1446.782531194296,
+            "width": 215,
+            "height": 87,
             "color": {}
           }
         ],
