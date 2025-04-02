@@ -502,6 +502,56 @@
       "isActivated": true,
       "additionalProperties": false,
       "bucketId": "e14af582-dc9b-4fac-8b6b-c0679b9c91f1"
+    },
+    {
+      "GUID": "6149b2e0-8553-481f-9568-30da60ccfabb",
+      "collectionName": "New Document10",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "9ba37e85-900e-4b42-82c8-2e08055125b4",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "56cb8493-9ea7-4284-8cd5-fe923cbe373e",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "e3285459-adc6-47cb-a677-ac8b4d2f5380",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "c642fee6-764e-40bf-bffc-3444a32d2d47"
+      },
+      "isActivated": true,
+      "additionalProperties": false
     }
   ],
   "buckets": [
@@ -584,7 +634,11 @@
     "29bd8ea2-ab7d-4410-a67e-1c9b1e5ad3d9": "New Document9",
     "f7cd2f39-0065-4b53-a456-583940f28843": "New Field",
     "44bbc50e-804a-44d9-ae54-08211b53e99c": "New Field1",
-    "6cb853e7-d1e1-448b-90be-f128bfa5b407": "New Field2"
+    "6cb853e7-d1e1-448b-90be-f128bfa5b407": "New Field2",
+    "6149b2e0-8553-481f-9568-30da60ccfabb": "New Document10",
+    "9ba37e85-900e-4b42-82c8-2e08055125b4": "New Field",
+    "56cb8493-9ea7-4284-8cd5-fe923cbe373e": "New Field1",
+    "e3285459-adc6-47cb-a677-ac8b4d2f5380": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -614,7 +668,7 @@
       "modelName": false
     }
   },
-  "lastModifTS": "2025-04-02T09:10:57.225Z",
+  "lastModifTS": "2025-04-02T09:19:20.885Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -704,6 +758,14 @@
             "x": 1997.4357438367936,
             "y": 1968.9984206817792,
             "width": 215,
+            "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "6149b2e0-8553-481f-9568-30da60ccfabb",
+            "x": 3298.7294859816184,
+            "y": 1654.104296849978,
+            "width": 222,
             "height": 87,
             "color": {}
           }
