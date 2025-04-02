@@ -201,6 +201,106 @@
       },
       "isActivated": true,
       "additionalProperties": false
+    },
+    {
+      "GUID": "c26e2e5d-7221-4fbb-9c77-0e6c0b3fbad2",
+      "collectionName": "New Document4",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "7583dc66-2614-4751-8481-1ea903677190",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "66222aa2-856e-4ca4-8d26-b614f4bf5d3c",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "01f99808-68e7-46a3-9826-10df8d6fe0b8",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "8b3e0a4e-041b-4555-bbf9-e74bc3257793"
+      },
+      "isActivated": true,
+      "additionalProperties": false
+    },
+    {
+      "GUID": "b5ccb46f-0bd0-41fb-b3e9-4189b3c3d378",
+      "collectionName": "New Document5",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "0fd2c917-8eb7-49b7-8cb3-9633cf130c68",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "3a49166a-f749-44a5-9d05-9a19370b4b90",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "2cb799e6-6969-4593-bf2c-0abb08e4ef8f",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "892d9c29-975a-49b0-b906-0613c839f829"
+      },
+      "isActivated": true,
+      "additionalProperties": false
     }
   ],
   "buckets": [
@@ -242,7 +342,15 @@
     "7d5bc634-5032-4b2e-8e81-57d5cb9e25c8": "New Document3",
     "5088525f-715f-4c0f-ab55-672ef1696f43": "New Field",
     "239806a2-dcd5-4d38-9a1b-0d0dc9950749": "New Field1",
-    "582c22e1-ade6-4682-a5fc-a60fc1636e6b": "New Field2"
+    "582c22e1-ade6-4682-a5fc-a60fc1636e6b": "New Field2",
+    "c26e2e5d-7221-4fbb-9c77-0e6c0b3fbad2": "New Document4",
+    "7583dc66-2614-4751-8481-1ea903677190": "New Field",
+    "66222aa2-856e-4ca4-8d26-b614f4bf5d3c": "New Field1",
+    "01f99808-68e7-46a3-9826-10df8d6fe0b8": "New Field2",
+    "b5ccb46f-0bd0-41fb-b3e9-4189b3c3d378": "New Document5",
+    "0fd2c917-8eb7-49b7-8cb3-9633cf130c68": "New Field",
+    "3a49166a-f749-44a5-9d05-9a19370b4b90": "New Field1",
+    "2cb799e6-6969-4593-bf2c-0abb08e4ef8f": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -272,7 +380,7 @@
       "modelName": false
     }
   },
-  "lastModifTS": "2025-03-31T21:17:13.474Z",
+  "lastModifTS": "2025-04-02T08:15:28.844Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -315,6 +423,22 @@
             "y": 1583,
             "width": 215,
             "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "c26e2e5d-7221-4fbb-9c77-0e6c0b3fbad2",
+            "x": 1686.0606060606062,
+            "y": 2234.030303030303,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          },
+          {
+            "GUID": "b5ccb46f-0bd0-41fb-b3e9-4189b3c3d378",
+            "x": 2905.2121212121215,
+            "y": 2285.909090909091,
+            "width": 240,
+            "height": 100,
             "color": {}
           }
         ],
