@@ -4080,6 +4080,101 @@
       "ledger": false,
       "append_only": false,
       "bucketId": "3989bda4-075b-4d07-90f0-24257095fe71"
+    },
+    {
+      "GUID": "3c18da24-f4cc-430b-8b58-c91b4f1db687",
+      "collectionName": "new_table1",
+      "type": "object",
+      "properties": [
+        {
+          "name": "new_column",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "dc8e4646-157c-4c93-aeba-e930c4878e2f",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "b9832728-4cc3-447e-ba5e-af2375887ebe",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "9182276a-7aef-4134-b100-d8fe358cc017",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f962ed01-6382-4daf-8152-27f4f98c8eb0"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "memory_optimized": false,
+      "collectionUsers": [],
+      "temporal": false,
+      "ledger": false,
+      "append_only": false,
+      "bucketId": "fc2355b4-181f-47b8-9f29-7e24e5ddb2a7"
     }
   ],
   "buckets": [
@@ -4133,6 +4228,23 @@
       "isActivated": true,
       "indexes": [],
       "GUID": "3989bda4-075b-4d07-90f0-24257095fe71"
+    },
+    {
+      "name": "new_schema1",
+      "type": "bucket",
+      "collectionIds": [
+        "3c18da24-f4cc-430b-8b58-c91b4f1db687"
+      ],
+      "backgroundColor": {
+        "r": 0,
+        "g": 138,
+        "b": 0,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "fc2355b4-181f-47b8-9f29-7e24e5ddb2a7"
     }
   ],
   "views": [
@@ -5305,7 +5417,12 @@
     "6839d2d9-d659-43cf-9f52-7939fe353388": "new_table",
     "fdc1cdee-3f4a-4464-9953-f16a1424d298": "new_column",
     "d87ebf88-f994-44ab-a250-7936430bc87c": "new_column1",
-    "6b661e14-8124-4aef-9287-82e7bc759a59": "new_column2"
+    "6b661e14-8124-4aef-9287-82e7bc759a59": "new_column2",
+    "fc2355b4-181f-47b8-9f29-7e24e5ddb2a7": "new_schema1",
+    "3c18da24-f4cc-430b-8b58-c91b4f1db687": "new_table1",
+    "dc8e4646-157c-4c93-aeba-e930c4878e2f": "new_column",
+    "b9832728-4cc3-447e-ba5e-af2375887ebe": "new_column1",
+    "9182276a-7aef-4134-b100-d8fe358cc017": "new_column2"
   },
   "definitions": {
     "type": "definitions",
@@ -5517,7 +5634,7 @@
   "creationTS": "2020-03-20T11:25:55.598Z",
   "GUID": "908fe2e0-6a9d-11ea-a5ff-a16524f9bb05",
   "code": "",
-  "lastModifTS": "2025-04-02T15:00:35.571Z",
+  "lastModifTS": "2025-04-02T15:00:46.787Z",
   "persistenceSchemaVersion": "8",
   "description": "From the AdventureWorks sample database described at https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15",
   "comments": "",
@@ -5660,6 +5777,14 @@
             "width": 244,
             "height": 87,
             "color": {}
+          },
+          {
+            "GUID": "3c18da24-f4cc-430b-8b58-c91b4f1db687",
+            "x": 3284.7997299208987,
+            "y": 1716.4798604591308,
+            "width": 244,
+            "height": 87,
+            "color": {}
           }
         ],
         "erdDefinitions": {
@@ -5678,6 +5803,11 @@
             "x": 3213.896875350223,
             "y": 1324.9598897177002,
             "GUID": "3989bda4-075b-4d07-90f0-24257095fe71"
+          },
+          {
+            "x": 3244.7997299208987,
+            "y": 1676.4798604591308,
+            "GUID": "fc2355b4-181f-47b8-9f29-7e24e5ddb2a7"
           }
         ],
         "collapsedNodes": [],
