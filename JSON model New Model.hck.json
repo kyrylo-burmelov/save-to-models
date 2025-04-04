@@ -1,6 +1,20 @@
 {
   "modelName": "New Model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "63aa42fd-52ce-4a40-9fdd-a332948da2ff"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128"
+    }
+  ],
   "buckets": [
     {
       "name": "New Group",
@@ -22,7 +36,8 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "ed7ad965-1c3a-4a5c-b664-a0e5134de0bc": "New Group"
+    "ed7ad965-1c3a-4a5c-b664-a0e5134de0bc": "New Group",
+    "75e87531-5f7f-42a3-90eb-6ff1d215f128": "New Document"
   },
   "definitions": {
     "type": "definitions",
@@ -47,7 +62,7 @@
   "creationTS": "2025-04-04T11:14:05.714Z",
   "GUID": "31b31491-a10d-4021-950f-49adbca49d79",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-04T12:39:26.099Z",
+  "lastModifTS": "2025-04-04T12:39:49.475Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -62,7 +77,16 @@
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128",
+            "x": 2759,
+            "y": 1897,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
