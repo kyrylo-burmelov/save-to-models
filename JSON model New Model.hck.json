@@ -4,7 +4,48 @@
     {
       "collectionName": "New Document",
       "type": "object",
-      "properties": [],
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "43860a55-ec51-4506-9d03-ab50ba4356b5",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "d5a12600-0001-459a-a5cb-7f97aa3d8891"
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "d721295d-7a1a-4304-856c-e5a950aeadd3"
+        },
+        {
+          "name": "New Field3",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "c516cea3-6429-4552-b839-c3ad0a3f5c19"
+        }
+      ],
       "definitions": {
         "type": "definitions",
         "properties": [],
@@ -37,7 +78,11 @@
   "diagramViews": [],
   "idToNameHashTable": {
     "ed7ad965-1c3a-4a5c-b664-a0e5134de0bc": "New Group",
-    "75e87531-5f7f-42a3-90eb-6ff1d215f128": "New Document"
+    "75e87531-5f7f-42a3-90eb-6ff1d215f128": "New Document",
+    "43860a55-ec51-4506-9d03-ab50ba4356b5": "New Field",
+    "d5a12600-0001-459a-a5cb-7f97aa3d8891": "New Field1",
+    "d721295d-7a1a-4304-856c-e5a950aeadd3": "New Field2",
+    "c516cea3-6429-4552-b839-c3ad0a3f5c19": "New Field3"
   },
   "definitions": {
     "type": "definitions",
@@ -62,7 +107,7 @@
   "creationTS": "2025-04-04T11:14:05.714Z",
   "GUID": "31b31491-a10d-4021-950f-49adbca49d79",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-04T12:39:49.475Z",
+  "lastModifTS": "2025-04-04T12:40:17.470Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -80,10 +125,10 @@
         "erd": [
           {
             "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128",
-            "x": 2759,
-            "y": 1897,
-            "width": 240,
-            "height": 100,
+            "x": 2596,
+            "y": 1744,
+            "width": 208,
+            "height": 105,
             "color": {}
           }
         ],
