@@ -2,7 +2,7 @@
   "modelName": "New Model",
   "collections": [
     {
-      "collectionName": "New Collection",
+      "collectionName": "New Document",
       "type": "object",
       "properties": [
         {
@@ -10,7 +10,9 @@
           "hackoladeMeta": {},
           "isActivated": true,
           "type": "string",
-          "GUID": "6a8ccc9c-6f24-4151-b16d-0ccbe126da16",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "43860a55-ec51-4506-9d03-ab50ba4356b5",
           "error": {
             "name": false,
             "code": false
@@ -21,61 +23,219 @@
           "hackoladeMeta": {},
           "isActivated": true,
           "type": "string",
-          "GUID": "93468bfa-6d5f-4a9c-8b11-f51ceddb6530",
-          "error": {
-            "name": false,
-            "code": false
-          }
+          "properties": [],
+          "color": "#555555",
+          "GUID": "d5a12600-0001-459a-a5cb-7f97aa3d8891"
         },
         {
           "name": "New Field2",
           "hackoladeMeta": {},
           "isActivated": true,
           "type": "string",
-          "GUID": "f980af67-03ec-476a-b124-3602af54d3ab",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "d721295d-7a1a-4304-856c-e5a950aeadd3"
+        },
+        {
+          "name": "New Field3",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "c516cea3-6429-4552-b839-c3ad0a3f5c19"
+        },
+        {
+          "name": "New Field4",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "b203aed6-f8d1-4680-a684-f6527fee4b28",
           "error": {
             "name": false,
             "code": false
           }
+        },
+        {
+          "name": "New Field5",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "916db20d-506b-4766-afd1-44b1c24ba699"
+        },
+        {
+          "name": "New Field6",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "db34d2a0-4c74-4602-9111-20f504850d76"
+        },
+        {
+          "name": "New Field7",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "66b9cfd6-f72a-4640-b825-09082836e662"
+        },
+        {
+          "name": "New Field8",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "068141e4-eb57-4d13-9b77-fb939d7a59bd"
+        },
+        {
+          "name": "New Field9",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "e27c3365-819e-4f71-b5b1-77a7a610ed68"
+        },
+        {
+          "name": "New Field10",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "4ab40572-f3ce-47f0-854c-dfdcd489868a"
+        },
+        {
+          "name": "New Field11",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "e9d96f2f-92d6-4675-a632-0fac35ec78fd"
+        },
+        {
+          "name": "New Field12",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "259dc9c8-8df6-4e9a-a4ad-a56d901d7d02"
+        },
+        {
+          "name": "New Field13",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "f2275a2c-5046-4af7-a671-07bfd8df866a"
+        },
+        {
+          "name": "New Field14",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "a879d234-318b-4bed-bb92-a206bed00837"
+        },
+        {
+          "name": "New Field15",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "bd02ebf8-b97d-4610-93e1-c3f6c0e35fb7"
+        },
+        {
+          "name": "New Field16",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "fef5c6dd-9cb3-4720-a1fc-ac6ca48c3543"
+        },
+        {
+          "name": "New Field17",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "44cb5ff1-47e9-41b8-985f-fea51c609342"
+        },
+        {
+          "name": "New Field18",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "25f35dcf-3ba1-4fb2-aa47-ea3ab4bdfd25"
+        },
+        {
+          "name": "New Field19",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "eb1b2de8-c6b4-405c-aedb-ce585203b694"
+        },
+        {
+          "name": "New Field20",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "ee0ac6eb-deed-43cd-a20b-deea3083450f"
+        },
+        {
+          "name": "New Field21",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "f069953a-cdad-44d8-9a97-27ff1a9c5e77"
         }
       ],
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "67b52317-e40f-4106-a410-2496a8ea0263"
+        "GUID": "63aa42fd-52ce-4a40-9fdd-a332948da2ff"
       },
       "isActivated": true,
       "additionalProperties": false,
-      "validationLevel": "Off",
-      "validationAction": "Warn",
-      "storageEngineName": "WiredTiger",
-      "collectionUsers": [],
-      "indexes": [],
-      "collation": {},
-      "sharding": {
-        "unique": true,
-        "collation": "null"
-      },
-      "GUID": "dece89fc-4ada-4bd8-96fc-3e8bca4e6f1f",
-      "bucketId": "c661c8c1-dc09-4c24-9bef-5a42d20a45a5"
+      "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128"
     }
   ],
   "buckets": [
     {
-      "name": "New_Database",
+      "name": "New Group",
       "type": "bucket",
-      "collectionIds": [
-        "dece89fc-4ada-4bd8-96fc-3e8bca4e6f1f"
-      ],
+      "collectionIds": [],
       "backgroundColor": {
-        "r": 187,
-        "g": 187,
-        "b": 187,
+        "r": 216,
+        "g": 0,
+        "b": 115,
         "a": 1
       },
       "show": true,
       "isActivated": true,
-      "GUID": "c661c8c1-dc09-4c24-9bef-5a42d20a45a5"
+      "GUID": "ed7ad965-1c3a-4a5c-b664-a0e5134de0bc"
     }
   ],
   "views": [],
@@ -83,36 +243,55 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "c661c8c1-dc09-4c24-9bef-5a42d20a45a5": "New_Database",
-    "dece89fc-4ada-4bd8-96fc-3e8bca4e6f1f": "New Collection",
-    "6a8ccc9c-6f24-4151-b16d-0ccbe126da16": "New Field",
-    "93468bfa-6d5f-4a9c-8b11-f51ceddb6530": "New Field1",
-    "f980af67-03ec-476a-b124-3602af54d3ab": "New Field2"
+    "ed7ad965-1c3a-4a5c-b664-a0e5134de0bc": "New Group",
+    "75e87531-5f7f-42a3-90eb-6ff1d215f128": "New Document",
+    "43860a55-ec51-4506-9d03-ab50ba4356b5": "New Field",
+    "d5a12600-0001-459a-a5cb-7f97aa3d8891": "New Field1",
+    "d721295d-7a1a-4304-856c-e5a950aeadd3": "New Field2",
+    "c516cea3-6429-4552-b839-c3ad0a3f5c19": "New Field3",
+    "b203aed6-f8d1-4680-a684-f6527fee4b28": "New Field4",
+    "916db20d-506b-4766-afd1-44b1c24ba699": "New Field5",
+    "db34d2a0-4c74-4602-9111-20f504850d76": "New Field6",
+    "66b9cfd6-f72a-4640-b825-09082836e662": "New Field7",
+    "068141e4-eb57-4d13-9b77-fb939d7a59bd": "New Field8",
+    "e27c3365-819e-4f71-b5b1-77a7a610ed68": "New Field9",
+    "4ab40572-f3ce-47f0-854c-dfdcd489868a": "New Field10",
+    "e9d96f2f-92d6-4675-a632-0fac35ec78fd": "New Field11",
+    "259dc9c8-8df6-4e9a-a4ad-a56d901d7d02": "New Field12",
+    "f2275a2c-5046-4af7-a671-07bfd8df866a": "New Field13",
+    "a879d234-318b-4bed-bb92-a206bed00837": "New Field14",
+    "bd02ebf8-b97d-4610-93e1-c3f6c0e35fb7": "New Field15",
+    "fef5c6dd-9cb3-4720-a1fc-ac6ca48c3543": "New Field16",
+    "44cb5ff1-47e9-41b8-985f-fea51c609342": "New Field17",
+    "25f35dcf-3ba1-4fb2-aa47-ea3ab4bdfd25": "New Field18",
+    "eb1b2de8-c6b4-405c-aedb-ce585203b694": "New Field19",
+    "ee0ac6eb-deed-43cd-a20b-deea3083450f": "New Field20",
+    "f069953a-cdad-44d8-9a97-27ff1a9c5e77": "New Field21"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "13d02566-b642-4685-9fea-5febe639449c"
+    "GUID": "898b11e3-1919-4a03-9dbf-4e556fad358e"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "9edd8311-8181-443c-8dcd-98f6cd5210e2"
+    "GUID": "cf7016f6-59e0-4360-bf4b-52e70e4be9ad"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "36cfcc3f-96d3-4a2a-ae5c-9d421819e44c"
+    "GUID": "654c7c82-57d7-46ac-b816-e4be3517f996"
   },
   "sources": [],
   "decorativeSymbols": [],
-  "dbVersion": "v7.x",
-  "dbVendor": "MongoDB",
-  "appTarget": "MONGODB",
-  "creationTS": "2025-04-04T05:57:11.485Z",
-  "GUID": "649b1bb6-b534-4152-9236-06686b6561bd",
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-04-04T11:14:05.714Z",
+  "GUID": "31b31491-a10d-4021-950f-49adbca49d79",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-04T05:57:33.169Z",
+  "lastModifTS": "2025-04-04T12:41:27.107Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -121,16 +300,19 @@
   "applicationInformation": {
     "version": "8.1.1"
   },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
-            "GUID": "dece89fc-4ada-4bd8-96fc-3e8bca4e6f1f",
-            "x": 1080,
-            "y": 1080,
-            "width": 205,
-            "height": 87,
+            "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128",
+            "x": 2596,
+            "y": 1744,
+            "width": 757,
+            "height": 750,
             "color": {}
           }
         ],
@@ -142,9 +324,9 @@
         },
         "buckets": [
           {
-            "x": 1040,
-            "y": 1040,
-            "GUID": "c661c8c1-dc09-4c24-9bef-5a42d20a45a5"
+            "x": 2104,
+            "y": 1599,
+            "GUID": "ed7ad965-1c3a-4a5c-b664-a0e5134de0bc"
           }
         ],
         "collapsedNodes": [],
@@ -165,7 +347,13 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
