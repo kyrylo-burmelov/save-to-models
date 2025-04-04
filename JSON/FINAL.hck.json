@@ -1,0 +1,179 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "New Collection",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "64f62cac-c9f9-4e45-8ce3-87cf70332b56",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "a7f78620-0cd8-4268-8079-3e7c5031b17f",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "b304c0c6-2b11-42e1-98ec-902667beacc0",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "82517bfc-e5b6-42af-a38f-77d9e6df12ee"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "collectionUsers": [],
+      "indexes": [],
+      "collation": {},
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "c2400601-d32c-481e-9afd-f4f34ab19145",
+      "bucketId": "b51d8260-b11f-43b8-9560-ca08a45aa044"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New_Database",
+      "type": "bucket",
+      "collectionIds": [
+        "c2400601-d32c-481e-9afd-f4f34ab19145"
+      ],
+      "backgroundColor": {
+        "r": 187,
+        "g": 187,
+        "b": 187,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "b51d8260-b11f-43b8-9560-ca08a45aa044"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "b51d8260-b11f-43b8-9560-ca08a45aa044": "New_Database",
+    "c2400601-d32c-481e-9afd-f4f34ab19145": "New Collection",
+    "64f62cac-c9f9-4e45-8ce3-87cf70332b56": "New Field",
+    "a7f78620-0cd8-4268-8079-3e7c5031b17f": "New Field1",
+    "b304c0c6-2b11-42e1-98ec-902667beacc0": "New Field2"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "44043822-5d49-4cf4-97b3-1449cebcd309"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "01d74163-8780-4be9-8b16-8adde806e053"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "b7460ff6-04a6-4615-9bbd-aa0fd42958ab"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "v7.x",
+  "dbVendor": "MongoDB",
+  "appTarget": "MONGODB",
+  "creationTS": "2025-04-04T05:56:16.714Z",
+  "GUID": "ef4f1e62-a797-410e-9f31-47de31dfe4f5",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-04-04T05:56:49.754Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.1.1"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "c2400601-d32c-481e-9afd-f4f34ab19145",
+            "x": 1392,
+            "y": 1360,
+            "width": 205,
+            "height": 87,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1352,
+            "y": 1320,
+            "GUID": "b51d8260-b11f-43b8-9560-ca08a45aa044"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
