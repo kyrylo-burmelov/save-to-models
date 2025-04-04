@@ -44,6 +44,172 @@
           "properties": [],
           "color": "#555555",
           "GUID": "c516cea3-6429-4552-b839-c3ad0a3f5c19"
+        },
+        {
+          "name": "New Field4",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "b203aed6-f8d1-4680-a684-f6527fee4b28",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field5",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "916db20d-506b-4766-afd1-44b1c24ba699"
+        },
+        {
+          "name": "New Field6",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "db34d2a0-4c74-4602-9111-20f504850d76"
+        },
+        {
+          "name": "New Field7",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "66b9cfd6-f72a-4640-b825-09082836e662"
+        },
+        {
+          "name": "New Field8",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "068141e4-eb57-4d13-9b77-fb939d7a59bd"
+        },
+        {
+          "name": "New Field9",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "e27c3365-819e-4f71-b5b1-77a7a610ed68"
+        },
+        {
+          "name": "New Field10",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "4ab40572-f3ce-47f0-854c-dfdcd489868a"
+        },
+        {
+          "name": "New Field11",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "e9d96f2f-92d6-4675-a632-0fac35ec78fd"
+        },
+        {
+          "name": "New Field12",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "259dc9c8-8df6-4e9a-a4ad-a56d901d7d02"
+        },
+        {
+          "name": "New Field13",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "f2275a2c-5046-4af7-a671-07bfd8df866a"
+        },
+        {
+          "name": "New Field14",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "a879d234-318b-4bed-bb92-a206bed00837"
+        },
+        {
+          "name": "New Field15",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "bd02ebf8-b97d-4610-93e1-c3f6c0e35fb7"
+        },
+        {
+          "name": "New Field16",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "fef5c6dd-9cb3-4720-a1fc-ac6ca48c3543"
+        },
+        {
+          "name": "New Field17",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "44cb5ff1-47e9-41b8-985f-fea51c609342"
+        },
+        {
+          "name": "New Field18",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "25f35dcf-3ba1-4fb2-aa47-ea3ab4bdfd25"
+        },
+        {
+          "name": "New Field19",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "eb1b2de8-c6b4-405c-aedb-ce585203b694"
+        },
+        {
+          "name": "New Field20",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "ee0ac6eb-deed-43cd-a20b-deea3083450f"
+        },
+        {
+          "name": "New Field21",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "f069953a-cdad-44d8-9a97-27ff1a9c5e77"
         }
       ],
       "definitions": {
@@ -82,7 +248,25 @@
     "43860a55-ec51-4506-9d03-ab50ba4356b5": "New Field",
     "d5a12600-0001-459a-a5cb-7f97aa3d8891": "New Field1",
     "d721295d-7a1a-4304-856c-e5a950aeadd3": "New Field2",
-    "c516cea3-6429-4552-b839-c3ad0a3f5c19": "New Field3"
+    "c516cea3-6429-4552-b839-c3ad0a3f5c19": "New Field3",
+    "b203aed6-f8d1-4680-a684-f6527fee4b28": "New Field4",
+    "916db20d-506b-4766-afd1-44b1c24ba699": "New Field5",
+    "db34d2a0-4c74-4602-9111-20f504850d76": "New Field6",
+    "66b9cfd6-f72a-4640-b825-09082836e662": "New Field7",
+    "068141e4-eb57-4d13-9b77-fb939d7a59bd": "New Field8",
+    "e27c3365-819e-4f71-b5b1-77a7a610ed68": "New Field9",
+    "4ab40572-f3ce-47f0-854c-dfdcd489868a": "New Field10",
+    "e9d96f2f-92d6-4675-a632-0fac35ec78fd": "New Field11",
+    "259dc9c8-8df6-4e9a-a4ad-a56d901d7d02": "New Field12",
+    "f2275a2c-5046-4af7-a671-07bfd8df866a": "New Field13",
+    "a879d234-318b-4bed-bb92-a206bed00837": "New Field14",
+    "bd02ebf8-b97d-4610-93e1-c3f6c0e35fb7": "New Field15",
+    "fef5c6dd-9cb3-4720-a1fc-ac6ca48c3543": "New Field16",
+    "44cb5ff1-47e9-41b8-985f-fea51c609342": "New Field17",
+    "25f35dcf-3ba1-4fb2-aa47-ea3ab4bdfd25": "New Field18",
+    "eb1b2de8-c6b4-405c-aedb-ce585203b694": "New Field19",
+    "ee0ac6eb-deed-43cd-a20b-deea3083450f": "New Field20",
+    "f069953a-cdad-44d8-9a97-27ff1a9c5e77": "New Field21"
   },
   "definitions": {
     "type": "definitions",
@@ -107,7 +291,7 @@
   "creationTS": "2025-04-04T11:14:05.714Z",
   "GUID": "31b31491-a10d-4021-950f-49adbca49d79",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-04T12:40:17.470Z",
+  "lastModifTS": "2025-04-04T12:41:09.960Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -127,8 +311,8 @@
             "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128",
             "x": 2596,
             "y": 1744,
-            "width": 208,
-            "height": 105,
+            "width": 757,
+            "height": 750,
             "color": {}
           }
         ],
@@ -163,7 +347,13 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "75e87531-5f7f-42a3-90eb-6ff1d215f128"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
