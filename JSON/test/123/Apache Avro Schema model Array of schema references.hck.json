@@ -1,0 +1,375 @@
+{
+  "modelName": "Array of schema references",
+  "collections": [
+    {
+      "collectionName": "Customer",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "customer_id",
+          "isActivated": true,
+          "required": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "int",
+          "childType": "number",
+          "type": "numeric",
+          "GUID": "479490c5-3a95-4f47-9b5f-324bc3216a5d",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "customer_name",
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "e4321e35-9f1b-4172-af5a-dfcec259f020",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "customer_email",
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "0394ccb5-69d7-4315-813e-6566cd330d2d",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "customer_address",
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "d8e6dd09-aaf0-46a8-bd10-b1431a09e4db",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "0a204684-032f-4206-addc-c67324fd9fad",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "collectionUsers": [],
+      "GUID": "9a73b3ae-2e7b-4914-9e27-849116796d77",
+      "bucketId": "878f6919-f58e-489f-a7ce-bcbdb4323378",
+      "code": "",
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "confluentSubjectName": "Customer",
+      "confluentVersion": 1,
+      "schemaNameStrategy": "RecordNameStrategy",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Product",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "product_id",
+          "isActivated": true,
+          "required": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "int",
+          "childType": "number",
+          "type": "numeric",
+          "GUID": "0c250217-5609-497c-8dfd-4fe617361c31",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "product_name",
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "ee1ee15e-1f87-452c-a63d-a407d6274f8d",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "product_price",
+          "isActivated": true,
+          "required": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "double",
+          "childType": "number",
+          "type": "numeric",
+          "GUID": "0e0a1347-ef03-4695-abfb-5ba78a0f5721",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "b1e53ba1-e7d1-4656-bd59-af61a4af1cb9",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "collectionUsers": [],
+      "GUID": "390b7520-562b-4b57-a93e-0d6ca914ef19",
+      "bucketId": "878f6919-f58e-489f-a7ce-bcbdb4323378",
+      "code": "",
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "confluentSubjectName": "Product",
+      "confluentVersion": 1,
+      "schemaNameStrategy": "RecordNameStrategy",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "AllTypes",
+      "type": "object",
+      "properties": [
+        {
+          "required": true,
+          "type": "choice",
+          "properties": [
+            {
+              "subschema": true,
+              "isActivated": true,
+              "type": "document",
+              "GUID": "04cfd7fe-957a-4ae3-941e-d5bbc18cf6e5",
+              "childType": "record",
+              "properties": [
+                {
+                  "GUID": "ada67792-c34d-4903-99fd-831e949a2532",
+                  "name": "Customer",
+                  "type": "reference",
+                  "$ref": "#/definitions/Customer",
+                  "refType": "collectionReference",
+                  "ref": "9a73b3ae-2e7b-4914-9e27-849116796d77",
+                  "refIdPath": [
+                    "9a73b3ae-2e7b-4914-9e27-849116796d77"
+                  ],
+                  "isActivated": true,
+                  "error": {
+                    "name": false,
+                    "code": false
+                  }
+                }
+              ],
+              "additionalProperties": true
+            },
+            {
+              "subschema": true,
+              "isActivated": true,
+              "type": "document",
+              "GUID": "e01f66da-109e-471e-b740-4ccdb28e7acd",
+              "childType": "record",
+              "properties": [
+                {
+                  "GUID": "f8b61543-e5ca-4f7f-9344-4791f63ed23e",
+                  "name": "Product",
+                  "type": "reference",
+                  "$ref": "#/definitions/Product",
+                  "refType": "collectionReference",
+                  "ref": "390b7520-562b-4b57-a93e-0d6ca914ef19",
+                  "refIdPath": [
+                    "390b7520-562b-4b57-a93e-0d6ca914ef19"
+                  ],
+                  "isActivated": true,
+                  "error": {
+                    "name": false,
+                    "code": false
+                  }
+                }
+              ],
+              "additionalProperties": true
+            }
+          ],
+          "isActivated": true,
+          "choice": "oneOf",
+          "GUID": "d3733f3e-add9-417c-bde7-202f16368d7e"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "90dc620a-8c80-4eb5-a0da-c570e0c9d511"
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "collectionUsers": [],
+      "GUID": "b2b95e19-3ca8-4bc7-8930-e8397f61f77c",
+      "bucketId": "878f6919-f58e-489f-a7ce-bcbdb4323378",
+      "error": {},
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "io.confluent.examples.avro",
+      "type": "bucket",
+      "collectionIds": [
+        "9a73b3ae-2e7b-4914-9e27-849116796d77",
+        "390b7520-562b-4b57-a93e-0d6ca914ef19",
+        "b2b95e19-3ca8-4bc7-8930-e8397f61f77c"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "878f6919-f58e-489f-a7ce-bcbdb4323378",
+      "hackoladeMeta": {},
+      "code": "",
+      "addFieldsToBucket": true,
+      "isPlugin": true
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "878f6919-f58e-489f-a7ce-bcbdb4323378": "io.confluent.examples.avro",
+    "479490c5-3a95-4f47-9b5f-324bc3216a5d": "customer_id",
+    "e4321e35-9f1b-4172-af5a-dfcec259f020": "customer_name",
+    "0394ccb5-69d7-4315-813e-6566cd330d2d": "customer_email",
+    "d8e6dd09-aaf0-46a8-bd10-b1431a09e4db": "customer_address",
+    "9a73b3ae-2e7b-4914-9e27-849116796d77": "Customer",
+    "0c250217-5609-497c-8dfd-4fe617361c31": "product_id",
+    "ee1ee15e-1f87-452c-a63d-a407d6274f8d": "product_name",
+    "0e0a1347-ef03-4695-abfb-5ba78a0f5721": "product_price",
+    "390b7520-562b-4b57-a93e-0d6ca914ef19": "Product",
+    "b2b95e19-3ca8-4bc7-8930-e8397f61f77c": "AllTypes",
+    "ada67792-c34d-4903-99fd-831e949a2532": "Customer",
+    "f8b61543-e5ca-4f7f-9344-4791f63ed23e": "Product"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "07e6cf22-d7ca-43f3-bb99-bf62a0f5a3b6"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "b856b574-7e15-4d57-bf3c-0be84e97ded2"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "c6cdb23e-b2d0-4155-aa23-4dc89ee963fb"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Avro",
+  "schemaNameStrategy": "TopicNameStrategy",
+  "appTarget": "Avro",
+  "creationTS": "2023-10-16T11:39:48.538Z",
+  "GUID": "f7b27175-27e4-4a13-a02e-bedd166ffb23",
+  "isLineageEnabled": false,
+  "schemaRegistryType": "Confluent Schema Registry",
+  "schemaRegistryUrl": "https://psrc-4v1qj.eu-central-1.aws.confluent.cloud",
+  "hackoladeMeta": {
+    "validationErrors": {
+      "modelName": false
+    }
+  },
+  "lastModifTS": "2025-04-16T08:58:26.348Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Avro",
+    "pluginVersion": "0.2.16",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.1.3"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "9a73b3ae-2e7b-4914-9e27-849116796d77",
+            "x": 1104.6356338232908,
+            "y": 1236.1867180227841,
+            "width": 224,
+            "height": 101,
+            "color": {}
+          },
+          {
+            "GUID": "390b7520-562b-4b57-a93e-0d6ca914ef19",
+            "x": 1368.6356338232908,
+            "y": 1239.1867180227841,
+            "width": 227,
+            "height": 83,
+            "color": {}
+          },
+          {
+            "GUID": "b2b95e19-3ca8-4bc7-8930-e8397f61f77c",
+            "x": 1183.2356094092283,
+            "y": 1388.7866936087216,
+            "width": 358,
+            "height": 249,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1064.6356338232908,
+            "y": 1196.1867180227841,
+            "GUID": "878f6919-f58e-489f-a7ce-bcbdb4323378"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
