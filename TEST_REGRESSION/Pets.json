@@ -1,5 +1,5 @@
 {
-  "modelName": "Pets",
+  "modelName": "Pets 1",
   "collections": [
     {
       "GUID": "6d160f40-4b06-11e9-a7e9-fd65fc39978d",
@@ -2318,7 +2318,8 @@
             "GUID": "9744f080-ec95-11e8-9095-b77508b89ccc",
             "name": "id",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "index": true,
@@ -2329,7 +2330,8 @@
             "GUID": "9e6cc1d0-ec95-11e8-9095-b77508b89ccc",
             "name": "petId",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "index": true,
@@ -2340,7 +2342,8 @@
             "GUID": "a9f94cd0-ec95-11e8-9095-b77508b89ccc",
             "name": "quantity",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2353,7 +2356,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2378,7 +2382,8 @@
               ]
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "index": true,
@@ -2388,7 +2393,8 @@
             "GUID": "f93cfa60-ec97-11e8-9095-b77508b89ccc",
             "name": "complete",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           }
         ],
         "additionalProperties": false,
@@ -2396,7 +2402,8 @@
         "type": "document",
         "GUID": "80ee1910-ec95-11e8-9095-b77508b89ccc",
         "name": "Order",
-        "isActivated": true
+        "isActivated": true,
+        "definitionRefs": []
       },
       {
         "primaryKey": false,
@@ -2411,7 +2418,8 @@
             "GUID": "e7c6cdf0-ec98-11e8-b284-9b91aec9a25a",
             "name": "id",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2424,7 +2432,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           }
         ],
         "additionalProperties": false,
@@ -2434,10 +2443,9 @@
         "name": "Category",
         "definitionRefs": [
           [
-            "2fc1c370-ec95-11e8-9095-b77508b89ccc",
+            "ce8e73c0-4b06-11e9-a7e9-fd65fc39978d",
             "2fc1c371-ec95-11e8-9095-b77508b89ccc",
             "6a6c6440-ec99-11e8-b284-9b91aec9a25a",
-            "73759fc0-ec99-11e8-b284-9b91aec9a25a",
             "862e8ff0-ec99-11e8-b284-9b91aec9a25a"
           ]
         ],
@@ -2456,7 +2464,8 @@
             "GUID": "0201e470-ec99-11e8-b284-9b91aec9a25a",
             "name": "id",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2469,7 +2478,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2482,7 +2492,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2495,7 +2506,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2508,7 +2520,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2521,7 +2534,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "index": true,
@@ -2533,7 +2547,8 @@
             "description": "User Status",
             "name": "userStatus",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           }
         ],
         "additionalProperties": false,
@@ -2580,7 +2595,8 @@
             "GUID": "556453f0-ec99-11e8-b284-9b91aec9a25a",
             "name": "id",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2593,7 +2609,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           }
         ],
         "additionalProperties": false,
@@ -2606,7 +2623,7 @@
         },
         "definitionRefs": [
           [
-            "2fc1c370-ec95-11e8-9095-b77508b89ccc",
+            "ce8e73c0-4b06-11e9-a7e9-fd65fc39978d",
             "2fc1c371-ec95-11e8-9095-b77508b89ccc",
             "6a6c6440-ec99-11e8-b284-9b91aec9a25a",
             "c2fe7e90-ec99-11e8-b284-9b91aec9a25a",
@@ -2628,7 +2645,8 @@
             "GUID": "73759fc0-ec99-11e8-b284-9b91aec9a25a",
             "name": "id",
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "GUID": "862e8ff0-ec99-11e8-b284-9b91aec9a25a",
@@ -2645,7 +2663,8 @@
             "error": {
               "name": false
             },
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2660,7 +2679,8 @@
               "name": false
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "properties": [
@@ -2672,7 +2692,8 @@
                 "GUID": "a5525d30-ec99-11e8-b284-9b91aec9a25a",
                 "arrayItem": true,
                 "_index": true,
-                "isActivated": true
+                "isActivated": true,
+                "definitionRefs": []
               }
             ],
             "primaryKey": false,
@@ -2685,7 +2706,8 @@
             "error": {
               "name": false
             },
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "properties": [
@@ -2701,7 +2723,8 @@
                   "331166d0-ec99-11e8-b284-9b91aec9a25a"
                 ],
                 "arrayItem": true,
-                "isActivated": true
+                "isActivated": true,
+                "definitionRefs": []
               }
             ],
             "primaryKey": false,
@@ -2710,7 +2733,8 @@
             "type": "array",
             "GUID": "c2fe7e90-ec99-11e8-b284-9b91aec9a25a",
             "name": "tags",
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           },
           {
             "primaryKey": false,
@@ -2735,7 +2759,8 @@
               ]
             },
             "_index": true,
-            "isActivated": true
+            "isActivated": true,
+            "definitionRefs": []
           }
         ],
         "additionalProperties": false,
@@ -2811,7 +2836,7 @@
   "creationTS": "2018-11-20T07:23:33.031Z",
   "GUID": "ce8e73c0-4b06-11e9-a7e9-fd65fc39978d",
   "code": "",
-  "lastModifTS": "2025-04-25T13:47:47.493Z",
+  "lastModifTS": "2025-04-25T13:50:10.730Z",
   "persistenceSchemaVersion": "8",
   "description": "https://mermade.org.uk/examples/swagger.json\nThis is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
   "comments": "",
@@ -2851,7 +2876,11 @@
   "applicationInformation": {
     "version": "8.1.4"
   },
-  "hackoladeMeta": {},
+  "hackoladeMeta": {
+    "validationErrors": {
+      "modelName": false
+    }
+  },
   "settings": {
     "centralPane": {
       "dbLevel": {
