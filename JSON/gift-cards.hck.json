@@ -2,191 +2,72 @@
   "modelName": "New Model",
   "collections": [
     {
-      "GUID": "990a3e68-9b0f-4719-82a0-193b5814a8a9",
+      "GUID": "819e3dee-752e-418c-929a-1b0262b841d7",
       "collectionName": "New Document",
       "type": "object",
-      "properties": [
-        {
-          "name": "New Field",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "ba10e56d-d185-4566-9edd-a4fc0f26e610",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field1",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "8d0cc042-afaa-4e85-9169-235676ba10f7",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field2",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "1bc1fa60-c625-41b0-8728-3b83ea4a296a",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        }
-      ],
+      "properties": [],
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "0efcb2b6-cd43-479e-87d5-e2e7a0330129"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "bucketId": "af75b1c6-cc5f-49c2-b3e1-bf001b4d28fd"
-    },
-    {
-      "GUID": "31b693c8-e6df-41a0-a9c6-246ae39a9c2e",
-      "collectionName": "New Document1",
-      "type": "object",
-      "properties": [
-        {
-          "name": "New Field",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "1d31c12d-9816-4b5c-915e-25c6baf0e426",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field1",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "a9542e3e-fd91-4694-98cc-8a3e2f336bcb",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field2",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "dd5a3ec6-d81c-40b8-b71d-f6d4cd62390a",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        }
-      ],
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "b53e2698-86af-4508-98a5-f4c788b049cc"
+        "GUID": "18c6aa74-e099-4533-a373-ac21347b63b4"
       },
       "isActivated": true,
       "additionalProperties": false
     }
   ],
-  "buckets": [
-    {
-      "name": "New Group",
-      "type": "bucket",
-      "collectionIds": [
-        "990a3e68-9b0f-4719-82a0-193b5814a8a9"
-      ],
-      "backgroundColor": {
-        "r": 216,
-        "g": 0,
-        "b": 115,
-        "a": 1
-      },
-      "show": true,
-      "isActivated": true,
-      "GUID": "af75b1c6-cc5f-49c2-b3e1-bf001b4d28fd"
-    }
-  ],
+  "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "af75b1c6-cc5f-49c2-b3e1-bf001b4d28fd": "New Group",
-    "990a3e68-9b0f-4719-82a0-193b5814a8a9": "New Document",
-    "ba10e56d-d185-4566-9edd-a4fc0f26e610": "New Field",
-    "8d0cc042-afaa-4e85-9169-235676ba10f7": "New Field1",
-    "1bc1fa60-c625-41b0-8728-3b83ea4a296a": "New Field2",
-    "31b693c8-e6df-41a0-a9c6-246ae39a9c2e": "New Document1",
-    "1d31c12d-9816-4b5c-915e-25c6baf0e426": "New Field",
-    "a9542e3e-fd91-4694-98cc-8a3e2f336bcb": "New Field1",
-    "dd5a3ec6-d81c-40b8-b71d-f6d4cd62390a": "New Field2"
+    "819e3dee-752e-418c-929a-1b0262b841d7": "New Document"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "916dca98-4832-4b39-8c5b-b758700779ce"
+    "GUID": "282e6d41-39ba-4bda-b5c3-776f785347c1"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "b6d0eea3-7026-4487-8e96-4bb0d893aa90"
+    "GUID": "6eee4d01-7af5-4a0e-a061-8a0347a46738"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "385f09d5-27bd-4f32-8b90-a32b3e17be12"
+    "GUID": "325b30fc-b016-4b1e-ab0a-76bb5b4a4f39"
   },
   "sources": [],
   "decorativeSymbols": [],
   "dbVendor": "JSON",
   "dbVersion": "2019-09",
   "appTarget": "JSON",
-  "creationTS": "2025-04-01T07:12:46.245Z",
-  "GUID": "a520d487-11f8-4291-8743-fe5ca29b6b86",
+  "creationTS": "2025-04-02T15:57:53.809Z",
+  "GUID": "9ac51293-90a1-40d9-a5ec-447aebaa8377",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-01T07:13:47.899Z",
+  "lastModifTS": "2025-04-25T13:37:05.414Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.1.1"
+    "version": "8.1.4"
   },
-  "hackoladeMeta": {},
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
-            "GUID": "990a3e68-9b0f-4719-82a0-193b5814a8a9",
-            "x": 1076,
-            "y": 1076,
-            "width": 208,
-            "height": 87,
-            "color": {}
-          },
-          {
-            "GUID": "31b693c8-e6df-41a0-a9c6-246ae39a9c2e",
-            "x": 1418,
-            "y": 1056,
-            "width": 215,
-            "height": 87,
+            "GUID": "819e3dee-752e-418c-929a-1b0262b841d7",
+            "x": 1911,
+            "y": 1487,
+            "width": 240,
+            "height": 100,
             "color": {}
           }
         ],
@@ -196,13 +77,7 @@
           "entities": [],
           "decorativeSymbols": []
         },
-        "buckets": [
-          {
-            "x": 1036,
-            "y": 1036,
-            "GUID": "af75b1c6-cc5f-49c2-b3e1-bf001b4d28fd"
-          }
-        ],
+        "buckets": [],
         "collapsedNodes": [],
         "activeRelationship": "",
         "activeRelationshipFields": {
