@@ -1,5 +1,5 @@
 {
-  "modelName": "New Model 1",
+  "modelName": "New Model",
   "collections": [
     {
       "collectionName": "New Document",
@@ -13,6 +13,19 @@
       "isActivated": true,
       "additionalProperties": false,
       "GUID": "ee1cb5df-a574-4799-bc3c-cd2eaed499ed"
+    },
+    {
+      "collectionName": "New Document1",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "212d0ca2-99fe-4025-bd71-bd352e9eca7c"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "acb9846d-4f90-498a-94dd-1da144414fab"
     }
   ],
   "buckets": [],
@@ -21,7 +34,8 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "ee1cb5df-a574-4799-bc3c-cd2eaed499ed": "New Document"
+    "ee1cb5df-a574-4799-bc3c-cd2eaed499ed": "New Document",
+    "acb9846d-4f90-498a-94dd-1da144414fab": "New Document1"
   },
   "definitions": {
     "type": "definitions",
@@ -46,7 +60,7 @@
   "creationTS": "2025-04-30T15:01:21.205Z",
   "GUID": "ff99fa5e-7f38-48f5-8cbb-0f7ad7076475",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-30T15:01:41.868Z",
+  "lastModifTS": "2025-04-30T15:05:29.224Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -55,6 +69,7 @@
   "applicationInformation": {
     "version": "8.1.5"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -63,6 +78,14 @@
             "GUID": "ee1cb5df-a574-4799-bc3c-cd2eaed499ed",
             "x": 1173,
             "y": 1195,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          },
+          {
+            "GUID": "acb9846d-4f90-498a-94dd-1da144414fab",
+            "x": 1597,
+            "y": 1283,
             "width": 240,
             "height": 100,
             "color": {}
