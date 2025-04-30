@@ -1,5 +1,5 @@
 {
-  "modelName": "New Model 2",
+  "modelName": "New Model 3",
   "collections": [
     {
       "collectionName": "New Document",
@@ -206,7 +206,7 @@
   "creationTS": "2025-04-25T16:08:16.162Z",
   "GUID": "b1db0dc9-b1b5-476c-b403-6ffa4874bf43",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-28T14:17:47.142Z",
+  "lastModifTS": "2025-04-30T12:28:13.038Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -215,7 +215,11 @@
   "applicationInformation": {
     "version": "8.1.5"
   },
-  "hackoladeMeta": {},
+  "hackoladeMeta": {
+    "validationErrors": {
+      "modelName": false
+    }
+  },
   "settings": {
     "centralPane": {
       "dbLevel": {
