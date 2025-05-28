@@ -1,0 +1,153 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New_record",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New_field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "c668eb57-9dbc-4f4b-9c9e-f8b46da5adcf",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New_field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "41e0cb46-3fa4-443e-994a-dd6779396661",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New_field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "c35d1beb-d482-494f-99e6-5c8459e2d0d2",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e59a19e6-8564-4ed5-86e1-a66d2e211d95"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "GUID": "b598ce47-b91e-4406-9c09-db394f420890"
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "b598ce47-b91e-4406-9c09-db394f420890": "New_record",
+    "c668eb57-9dbc-4f4b-9c9e-f8b46da5adcf": "New_field",
+    "41e0cb46-3fa4-443e-994a-dd6779396661": "New_field1",
+    "c35d1beb-d482-494f-99e6-5c8459e2d0d2": "New_field2"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "92d5b8f3-0118-40d9-80af-36a6cd952f3a"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "96134831-9ea7-409d-b56b-e3caa2320405"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "026786d7-55fe-48ac-b3fa-516c9c1a8879"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Avro",
+  "schemaNameStrategy": "TopicNameStrategy",
+  "appTarget": "Avro",
+  "creationTS": "2025-05-28T10:16:52.929Z",
+  "GUID": "660f2dc5-9d38-44b4-996c-6981541c0463",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-05-28T10:19:46.844Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Avro",
+    "pluginVersion": "0.2.16",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.1.9"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "b598ce47-b91e-4406-9c09-db394f420890",
+            "x": 1571,
+            "y": 1234,
+            "width": 203,
+            "height": 86,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
