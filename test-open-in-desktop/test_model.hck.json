@@ -54,6 +54,60 @@
       "additionalProperties": false,
       "collectionUsers": [],
       "GUID": "b598ce47-b91e-4406-9c09-db394f420890"
+    },
+    {
+      "collectionName": "New_record1",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New_field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "14da45db-21d5-4ed1-92ba-ce1aae7865c8",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New_field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "4dc46862-c83a-4efb-93ab-585ed6e79de0",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New_field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "required": true,
+          "primaryKey": false,
+          "type": "string",
+          "GUID": "13a5fd00-0b8d-4bf2-bd57-5a41fc00ef70",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f4f136df-673d-419b-a808-621eeab2d20b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "GUID": "1032ff6d-70eb-4abd-b274-348eede8291c"
     }
   ],
   "buckets": [],
@@ -65,7 +119,11 @@
     "b598ce47-b91e-4406-9c09-db394f420890": "New_record",
     "c668eb57-9dbc-4f4b-9c9e-f8b46da5adcf": "New_field",
     "41e0cb46-3fa4-443e-994a-dd6779396661": "New_field1",
-    "c35d1beb-d482-494f-99e6-5c8459e2d0d2": "New_field2"
+    "c35d1beb-d482-494f-99e6-5c8459e2d0d2": "New_field2",
+    "1032ff6d-70eb-4abd-b274-348eede8291c": "New_record1",
+    "14da45db-21d5-4ed1-92ba-ce1aae7865c8": "New_field",
+    "4dc46862-c83a-4efb-93ab-585ed6e79de0": "New_field1",
+    "13a5fd00-0b8d-4bf2-bd57-5a41fc00ef70": "New_field2"
   },
   "definitions": {
     "type": "definitions",
@@ -90,7 +148,7 @@
   "creationTS": "2025-05-28T10:16:52.929Z",
   "GUID": "660f2dc5-9d38-44b4-996c-6981541c0463",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-05-28T10:19:46.844Z",
+  "lastModifTS": "2025-05-28T10:27:38.540Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -101,6 +159,7 @@
   "applicationInformation": {
     "version": "8.1.9"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -109,6 +168,14 @@
             "GUID": "b598ce47-b91e-4406-9c09-db394f420890",
             "x": 1571,
             "y": 1234,
+            "width": 203,
+            "height": 86,
+            "color": {}
+          },
+          {
+            "GUID": "1032ff6d-70eb-4abd-b274-348eede8291c",
+            "x": 2208,
+            "y": 1583,
             "width": 203,
             "height": 86,
             "color": {}
