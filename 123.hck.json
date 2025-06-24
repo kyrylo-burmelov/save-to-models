@@ -1,12 +1,42 @@
 {
   "modelName": "New Model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a1bf1192-2598-42b7-b027-a4b9e79d1ee3"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "5259b2a1-fc0d-4c4d-8c63-99605805d95e"
+    },
+    {
+      "collectionName": "New Document1",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cf64e14b-82d4-4378-aa01-b8ecb76c15e6"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "e015b1dc-5d6b-4b7d-8ed9-12044ec9364b"
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "5259b2a1-fc0d-4c4d-8c63-99605805d95e": "New Document",
+    "e015b1dc-5d6b-4b7d-8ed9-12044ec9364b": "New Document1"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -30,19 +60,39 @@
   "creationTS": "2025-04-16T09:47:55.735Z",
   "GUID": "826035a6-30e2-4555-b362-894941d7c76a",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-16T09:48:20.649Z",
+  "lastModifTS": "2025-06-24T17:54:15.309Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.1.3"
+    "version": "8.2.4"
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   },
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "5259b2a1-fc0d-4c4d-8c63-99605805d95e",
+            "x": 320,
+            "y": 243,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          },
+          {
+            "GUID": "e015b1dc-5d6b-4b7d-8ed9-12044ec9364b",
+            "x": 707,
+            "y": 278,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
