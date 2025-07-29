@@ -51,6 +51,19 @@
       "additionalProperties": false,
       "GUID": "33d58cf5-d6a9-42f3-b693-7f71869118d1",
       "bucketId": "73764e3b-f3d5-4113-849f-1e146e218330"
+    },
+    {
+      "collectionName": "New Document1",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "2a822563-9f9f-4462-ab9c-b6aa338c06a5"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "5f02de8b-34dc-45e5-b360-549fe933c874"
     }
   ],
   "buckets": [
@@ -80,7 +93,8 @@
     "33d58cf5-d6a9-42f3-b693-7f71869118d1": "New Document",
     "3bcf3aa0-29d0-42ce-ad02-377df60f486b": "New Field",
     "63a63909-923e-4f3e-a417-97c2c4a994fc": "New Field1",
-    "063e3492-fb32-4e9a-9062-15f9fe7a2459": "New Field2"
+    "063e3492-fb32-4e9a-9062-15f9fe7a2459": "New Field2",
+    "5f02de8b-34dc-45e5-b360-549fe933c874": "New Document1"
   },
   "definitions": {
     "type": "definitions",
@@ -105,14 +119,17 @@
   "creationTS": "2025-04-04T08:37:57.726Z",
   "GUID": "9bba7ef5-080b-49c8-8a72-fa0a14409f85",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-04T08:38:21.229Z",
+  "lastModifTS": "2025-07-29T10:09:25.839Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.1.1"
+    "version": "8.3.5"
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   },
   "settings": {
     "centralPane": {
@@ -124,6 +141,14 @@
             "y": 1364,
             "width": 208,
             "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "5f02de8b-34dc-45e5-b360-549fe933c874",
+            "x": 1484.5038560411313,
+            "y": 1763.2082262210797,
+            "width": 240,
+            "height": 100,
             "color": {}
           }
         ],
