@@ -1,12 +1,28 @@
 {
   "modelName": "New Model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "15aaec62-8e44-4414-9840-7d9990c846ed"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "2ec74619-f2ad-4252-95c3-f66ac4d9e7be"
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "2ec74619-f2ad-4252-95c3-f66ac4d9e7be": "New Document"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -30,19 +46,31 @@
   "creationTS": "2025-04-16T09:47:55.735Z",
   "GUID": "826035a6-30e2-4555-b362-894941d7c76a",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-16T09:48:20.649Z",
+  "lastModifTS": "2025-07-30T10:26:16.175Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.1.3"
+    "version": "8.3.5"
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   },
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "2ec74619-f2ad-4252-95c3-f66ac4d9e7be",
+            "x": 475,
+            "y": 367,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
