@@ -1,953 +1,900 @@
 {
-    "modelName": "New model",
-    "collections": [
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "comparisonModelCollection",
+      "type": "object",
+      "properties": [
         {
-            "collectionName": "comparisonModelCollection",
-            "type": "object",
-            "properties": [
-                {
-                    "name": "containers",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "subtype": "struct<str>",
-                    "keyType": "string",
-                    "primaryKey": false,
-                    "properties": [
-                        {
-                            "name": "added",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "a135cdf9-535c-4665-9c02-018f10d8df93"
-                        },
-                        {
-                            "name": "deleted",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "dfbd3bc0-d2c0-4806-958c-2c5ac9c1a433"
-                        },
-                        {
-                            "name": "modified",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "31227acd-adf5-4a47-989f-cd32f609fe25"
-                        }
-                    ],
-                    "additionalProperties": false,
-                    "childType": "struct",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey",
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "d58ccaff-73a7-46ae-8019-feb3f2881cea"
-                },
-                {
-                    "name": "entities",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "subtype": "struct<str>",
-                    "keyType": "string",
-                    "primaryKey": false,
-                    "properties": [
-                        {
-                            "name": "added",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "subtype": "struct<str>",
-                                    "keyType": "string",
-                                    "primaryKey": false,
-                                    "properties": [
-                                        {
-                                            "name": "departments",
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "subtype": "struct<str>",
-                                            "keyType": "string",
-                                            "primaryKey": false,
-                                            "properties": [
-                                                {
-                                                    "name": "New column",
-                                                    "hackoladeMeta": {},
-                                                    "isActivated": true,
-                                                    "primaryKey": false,
-                                                    "mode": "string",
-                                                    "childType": "text",
-                                                    "type": "string",
-                                                    "compositeKey": [
-                                                        "compositePartitionKey",
-                                                        "compositeClusteringKey",
-                                                        "compositePrimaryKey",
-                                                        "compositeUniqueKey"
-                                                    ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
-                                                    "compositePrimaryKey": false,
-                                                    "compositeUniqueKey": false,
-                                                    "GUID": "dced316b-44fa-4681-9ed1-0208e651777a"
-                                                }
-                                            ],
-                                            "additionalProperties": false,
-                                            "childType": "struct",
-                                            "type": "document",
-                                            "compositeKey": [
-                                                "compositePartitionKey",
-                                                "compositeClusteringKey",
-                                                "compositePrimaryKey",
-                                                "compositeUniqueKey"
-                                            ],
-                                            "compositePartitionKey": false,
-                                            "compositeClusteringKey": false,
-                                            "compositePrimaryKey": false,
-                                            "compositeUniqueKey": false,
-                                            "GUID": "0a316124-dea8-4837-995c-63a719ac21f9",
-                                            "role": {
-                                                "collectionName": "departments",
-                                                "type": "object",
-                                                "properties": [
-                                                    {
-                                                        "exclusiveMinimum": false,
-                                                        "exclusiveMaximum": false,
-                                                        "primaryKey": false,
-                                                        "mode": "int",
-                                                        "childType": "numeric",
-                                                        "type": "numeric",
-                                                        "compositeKey": [
-                                                            "compositePartitionKey",
-                                                            "compositeClusteringKey"
-                                                        ],
-                                                        "compositePartitionKey": false,
-                                                        "compositeClusteringKey": false,
-                                                        "name": "department_id",
-                                                        "hackoladeMeta": {},
-                                                        "isActivated": true,
-                                                        "GUID": "840d9450-b483-11eb-a042-db7f7008a2f8",
-                                                        "required": true,
-                                                        "error": {},
-                                                        "childRelationships": [
-                                                            "ac1f4ce0-b483-11eb-a042-db7f7008a2f8"
-                                                        ],
-                                                        "compMod": {
-                                                            "oldField": {
-                                                                "name": "department_id",
-                                                                "type": "numeric",
-                                                                "mode": "int"
-                                                            },
-                                                            "newField": {
-                                                                "name": "department_id",
-                                                                "type": "numeric",
-                                                                "mode": "int"
-                                                            }
-                                                        }
-                                                    },
-                                                    {
-                                                        "name": "New column",
-                                                        "hackoladeMeta": {},
-                                                        "isActivated": true,
-                                                        "primaryKey": false,
-                                                        "mode": "string",
-                                                        "childType": "text",
-                                                        "type": "string",
-                                                        "compositeKey": [
-                                                            "compositePartitionKey",
-                                                            "compositeClusteringKey",
-                                                            "compositePrimaryKey",
-                                                            "compositeUniqueKey"
-                                                        ],
-                                                        "compositePartitionKey": false,
-                                                        "compositeClusteringKey": false,
-                                                        "compositePrimaryKey": false,
-                                                        "compositeUniqueKey": false,
-                                                        "GUID": "dced316b-44fa-4681-9ed1-0208e651777a"
-                                                    }
-                                                ],
-                                                "definitions": {
-                                                    "type": "definitions",
-                                                    "properties": [],
-                                                    "GUID": "7dd37e60-b483-11eb-a042-db7f7008a2f8"
-                                                },
-                                                "isActivated": true,
-                                                "collectionUsers": [],
-                                                "tableIfNotExists": true,
-                                                "GUID": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
-                                                "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
-                                                "hackoladeMeta": {
-                                                    "validationErrors": {}
-                                                },
-                                                "additionalProperties": true,
-                                                "compMod": {
-                                                    "keyspaceName": "DataCo",
-                                                    "bucketProperties": {
-                                                        "name": "DataCo",
-                                                        "isActivated": true
-                                                    },
-                                                    "collectionName": {
-                                                        "new": "departments",
-                                                        "old": "departments"
-                                                    },
-                                                    "isActivated": {
-                                                        "new": true,
-                                                        "old": true
-                                                    },
-                                                    "bucketId": {
-                                                        "new": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
-                                                        "old": "06ca6860-ae7f-11eb-b8d3-533823b921f5"
-                                                    },
-                                                    "additionalProperties": {
-                                                        "new": true,
-                                                        "old": true
-                                                    },
-                                                    "tableIfNotExists": {
-                                                        "new": true,
-                                                        "old": true
-                                                    }
-                                                },
-                                                "name": "departments",
-                                                "roleType": "entity"
-                                            }
-                                        }
-                                    ],
-                                    "additionalProperties": false,
-                                    "childType": "struct",
-                                    "type": "document",
-                                    "compositeKey": [
-                                        "compositePartitionKey",
-                                        "compositeClusteringKey",
-                                        "compositePrimaryKey",
-                                        "compositeUniqueKey"
-                                    ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
-                                    "compositePrimaryKey": false,
-                                    "compositeUniqueKey": false,
-                                    "GUID": "153310fe-f5d6-4aa0-bf9f-fbdd225a8721",
-                                    "arrayItem": true
-                                }
-                            ],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "406f8e22-1244-445e-a996-51436d190089"
-                        },
-                        {
-                            "name": "deleted",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "subtype": "struct<str>",
-                                    "keyType": "string",
-                                    "primaryKey": false,
-                                    "properties": [
-                                        {
-                                            "name": "departments",
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "subtype": "struct<str>",
-                                            "keyType": "string",
-                                            "primaryKey": false,
-                                            "properties": [
-                                                {
-                                                    "primaryKey": false,
-                                                    "mode": "varchar",
-                                                    "childType": "text",
-                                                    "type": "string",
-                                                    "compositeKey": [
-                                                        "compositePartitionKey",
-                                                        "compositeClusteringKey"
-                                                    ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
-                                                    "name": "department_name",
-                                                    "hackoladeMeta": {},
-                                                    "isActivated": true,
-                                                    "GUID": "9d070310-b483-11eb-a042-db7f7008a2f8",
-                                                    "error": {}
-                                                }
-                                            ],
-                                            "additionalProperties": false,
-                                            "childType": "struct",
-                                            "type": "document",
-                                            "compositeKey": [
-                                                "compositePartitionKey",
-                                                "compositeClusteringKey",
-                                                "compositePrimaryKey",
-                                                "compositeUniqueKey"
-                                            ],
-                                            "compositePartitionKey": false,
-                                            "compositeClusteringKey": false,
-                                            "compositePrimaryKey": false,
-                                            "compositeUniqueKey": false,
-                                            "GUID": "9def5b28-5d21-48b6-9dd8-211b4ad438f3",
-                                            "role": {
-                                                "collectionName": "departments",
-                                                "type": "object",
-                                                "properties": [
-                                                    {
-                                                        "exclusiveMinimum": false,
-                                                        "exclusiveMaximum": false,
-                                                        "primaryKey": false,
-                                                        "mode": "int",
-                                                        "childType": "numeric",
-                                                        "type": "numeric",
-                                                        "compositeKey": [
-                                                            "compositePartitionKey",
-                                                            "compositeClusteringKey"
-                                                        ],
-                                                        "compositePartitionKey": false,
-                                                        "compositeClusteringKey": false,
-                                                        "name": "department_id",
-                                                        "hackoladeMeta": {},
-                                                        "isActivated": true,
-                                                        "GUID": "840d9450-b483-11eb-a042-db7f7008a2f8",
-                                                        "required": true,
-                                                        "error": {},
-                                                        "childRelationships": [
-                                                            "ac1f4ce0-b483-11eb-a042-db7f7008a2f8"
-                                                        ],
-                                                        "compMod": {
-                                                            "oldField": {
-                                                                "name": "department_id",
-                                                                "type": "numeric",
-                                                                "mode": "int"
-                                                            },
-                                                            "newField": {
-                                                                "name": "department_id",
-                                                                "type": "numeric",
-                                                                "mode": "int"
-                                                            }
-                                                        }
-                                                    },
-                                                    {
-                                                        "primaryKey": false,
-                                                        "mode": "varchar",
-                                                        "childType": "text",
-                                                        "type": "string",
-                                                        "compositeKey": [
-                                                            "compositePartitionKey",
-                                                            "compositeClusteringKey"
-                                                        ],
-                                                        "compositePartitionKey": false,
-                                                        "compositeClusteringKey": false,
-                                                        "name": "department_name",
-                                                        "hackoladeMeta": {},
-                                                        "isActivated": true,
-                                                        "GUID": "9d070310-b483-11eb-a042-db7f7008a2f8",
-                                                        "error": {}
-                                                    }
-                                                ],
-                                                "definitions": {
-                                                    "type": "definitions",
-                                                    "properties": [],
-                                                    "GUID": "7dd37e60-b483-11eb-a042-db7f7008a2f8"
-                                                },
-                                                "isActivated": true,
-                                                "collectionUsers": [],
-                                                "tableIfNotExists": true,
-                                                "GUID": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
-                                                "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
-                                                "hackoladeMeta": {
-                                                    "validationErrors": {}
-                                                },
-                                                "additionalProperties": true,
-                                                "compMod": {
-                                                    "keyspaceName": "DataCo",
-                                                    "bucketProperties": {
-                                                        "name": "DataCo",
-                                                        "isActivated": true
-                                                    },
-                                                    "collectionName": {
-                                                        "new": "departments",
-                                                        "old": "departments"
-                                                    },
-                                                    "isActivated": {
-                                                        "new": true,
-                                                        "old": true
-                                                    },
-                                                    "bucketId": {
-                                                        "new": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
-                                                        "old": "06ca6860-ae7f-11eb-b8d3-533823b921f5"
-                                                    },
-                                                    "additionalProperties": {
-                                                        "new": true,
-                                                        "old": true
-                                                    },
-                                                    "tableIfNotExists": {
-                                                        "new": true,
-                                                        "old": true
-                                                    }
-                                                },
-                                                "name": "departments",
-                                                "roleType": "entity"
-                                            }
-                                        }
-                                    ],
-                                    "additionalProperties": false,
-                                    "childType": "struct",
-                                    "type": "document",
-                                    "compositeKey": [
-                                        "compositePartitionKey",
-                                        "compositeClusteringKey",
-                                        "compositePrimaryKey",
-                                        "compositeUniqueKey"
-                                    ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
-                                    "compositePrimaryKey": false,
-                                    "compositeUniqueKey": false,
-                                    "GUID": "d2d420bd-ba47-42e4-b024-00ad820ea759",
-                                    "arrayItem": true
-                                }
-                            ],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "abc1b902-0cd5-40de-b231-7ee2c49dab04"
-                        },
-                        {
-                            "name": "modified",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "c0a69c20-9656-432f-8438-8ac02ff4f1f3"
-                        }
-                    ],
-                    "additionalProperties": false,
-                    "childType": "struct",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey",
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "7ef9380d-5571-400a-8299-90669785b794"
-                },
-                {
-                    "name": "relationships",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "subtype": "struct<str>",
-                    "keyType": "string",
-                    "primaryKey": false,
-                    "properties": [
-                        {
-                            "name": "added",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "a5fa93ae-0332-4b99-9955-e568e4f97375"
-                        },
-                        {
-                            "name": "deleted",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "e4c5c0dc-c32b-4326-82a8-b560a8a276e5"
-                        },
-                        {
-                            "name": "modified",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "8277f6d3-6b3a-4356-ae61-bcb8d1a1e533"
-                        }
-                    ],
-                    "additionalProperties": false,
-                    "childType": "struct",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey",
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "5a8d9529-170c-4b5d-b968-a8a8f1207263"
-                },
-                {
-                    "name": "views",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "subtype": "struct<str>",
-                    "keyType": "string",
-                    "primaryKey": false,
-                    "properties": [
-                        {
-                            "name": "added",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "d0551770-7a1a-4b2a-9968-3957216dd573"
-                        },
-                        {
-                            "name": "deleted",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "aa5baca8-c7d9-45b3-817c-0abd6d436bbc"
-                        },
-                        {
-                            "name": "modified",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "47e8b424-42a3-4e4c-8d3b-3464d0e325cc"
-                        }
-                    ],
-                    "additionalProperties": false,
-                    "childType": "struct",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey",
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "1f5b794d-bd83-4e9a-8fec-6a224f4df25c"
-                },
-                {
-                    "name": "modelDefinitions",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "subtype": "struct<str>",
-                    "keyType": "string",
-                    "primaryKey": false,
-                    "properties": [
-                        {
-                            "name": "added",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "f928c4d4-915f-48cf-8e0b-25ec6a265079"
-                        },
-                        {
-                            "name": "deleted",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "86317f5a-7633-445f-b6b8-4469d7cf395d"
-                        },
-                        {
-                            "name": "modified",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "subtype": "array<txt>",
-                            "properties": [],
-                            "primaryKey": false,
-                            "additionalItems": true,
-                            "uniqueItems": false,
-                            "childType": "array",
-                            "type": "array",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey",
-                                "compositePrimaryKey",
-                                "compositeUniqueKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "compositePrimaryKey": false,
-                            "compositeUniqueKey": false,
-                            "GUID": "96bf6d4c-d6aa-4e16-b3b3-f49e469e2dc0"
-                        }
-                    ],
-                    "additionalProperties": false,
-                    "childType": "struct",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey",
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "77d1cc68-60fa-4d91-a295-86f93f231ba4"
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "properties": [],
-                "GUID": "ca90663f-80c5-453a-a91e-de94d09b6f3f"
+          "name": "containers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "properties": [
+            {
+              "name": "added",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "a135cdf9-535c-4665-9c02-018f10d8df93"
             },
-            "isActivated": true,
-            "additionalProperties": false,
-            "collectionUsers": [],
-            "tableIfNotExists": true,
-            "GUID": "eabf31ac-dbe5-44bb-9d94-8bc5f48bc489"
+            {
+              "name": "deleted",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "dfbd3bc0-d2c0-4806-958c-2c5ac9c1a433"
+            },
+            {
+              "name": "modified",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "31227acd-adf5-4a47-989f-cd32f609fe25"
+            }
+          ],
+          "additionalProperties": false,
+          "childType": "struct",
+          "type": "document",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "d58ccaff-73a7-46ae-8019-feb3f2881cea"
+        },
+        {
+          "name": "entities",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "properties": [
+            {
+              "name": "added",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [
+                {
+                  "hackoladeMeta": {},
+                  "isActivated": true,
+                  "primaryKey": false,
+                  "properties": [
+                    {
+                      "name": "departments",
+                      "hackoladeMeta": {},
+                      "isActivated": true,
+                      "primaryKey": false,
+                      "properties": [
+                        {
+                          "name": "New column",
+                          "hackoladeMeta": {},
+                          "isActivated": true,
+                          "primaryKey": false,
+                          "mode": "string",
+                          "childType": "text",
+                          "type": "string",
+                          "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                          ],
+                          "compositePartitionKey": false,
+                          "compositeClusteringKey": false,
+                          "GUID": "dced316b-44fa-4681-9ed1-0208e651777a",
+                          "error": {
+                            "name": true
+                          }
+                        }
+                      ],
+                      "additionalProperties": false,
+                      "childType": "struct",
+                      "type": "document",
+                      "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                      ],
+                      "compositePartitionKey": false,
+                      "compositeClusteringKey": false,
+                      "GUID": "0a316124-dea8-4837-995c-63a719ac21f9",
+                      "role": {
+                        "collectionName": "departments",
+                        "type": "object",
+                        "properties": [
+                          {
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "mode": "int",
+                            "childType": "numeric",
+                            "type": "numeric",
+                            "compositeKey": [
+                              "compositePartitionKey",
+                              "compositeClusteringKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "name": "department_id",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "840d9450-b483-11eb-a042-db7f7008a2f8",
+                            "required": true,
+                            "error": {},
+                            "childRelationships": [
+                              "ac1f4ce0-b483-11eb-a042-db7f7008a2f8"
+                            ],
+                            "compMod": {
+                              "oldField": {
+                                "name": "department_id",
+                                "type": "numeric",
+                                "mode": "int"
+                              },
+                              "newField": {
+                                "name": "department_id",
+                                "type": "numeric",
+                                "mode": "int"
+                              }
+                            }
+                          },
+                          {
+                            "name": "New column",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "mode": "string",
+                            "childType": "text",
+                            "type": "string",
+                            "compositeKey": [
+                              "compositePartitionKey",
+                              "compositeClusteringKey",
+                              "compositePrimaryKey",
+                              "compositeUniqueKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "dced316b-44fa-4681-9ed1-0208e651777a"
+                          }
+                        ],
+                        "definitions": {
+                          "type": "definitions",
+                          "properties": [],
+                          "GUID": "7dd37e60-b483-11eb-a042-db7f7008a2f8"
+                        },
+                        "isActivated": true,
+                        "collectionUsers": [],
+                        "tableIfNotExists": true,
+                        "GUID": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+                        "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+                        "hackoladeMeta": {
+                          "validationErrors": {}
+                        },
+                        "additionalProperties": true,
+                        "compMod": {
+                          "keyspaceName": "DataCo",
+                          "bucketProperties": {
+                            "name": "DataCo",
+                            "isActivated": true
+                          },
+                          "collectionName": {
+                            "new": "departments",
+                            "old": "departments"
+                          },
+                          "isActivated": {
+                            "new": true,
+                            "old": true
+                          },
+                          "bucketId": {
+                            "new": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+                            "old": "06ca6860-ae7f-11eb-b8d3-533823b921f5"
+                          },
+                          "additionalProperties": {
+                            "new": true,
+                            "old": true
+                          },
+                          "tableIfNotExists": {
+                            "new": true,
+                            "old": true
+                          }
+                        },
+                        "name": "departments",
+                        "roleType": "entity"
+                      }
+                    }
+                  ],
+                  "additionalProperties": false,
+                  "childType": "struct",
+                  "type": "document",
+                  "compositeKey": [
+                    "compositePartitionKey",
+                    "compositeClusteringKey",
+                    "compositePrimaryKey",
+                    "compositeUniqueKey"
+                  ],
+                  "compositePartitionKey": false,
+                  "compositeClusteringKey": false,
+                  "GUID": "153310fe-f5d6-4aa0-bf9f-fbdd225a8721",
+                  "arrayItem": true
+                }
+              ],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "406f8e22-1244-445e-a996-51436d190089"
+            },
+            {
+              "name": "deleted",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [
+                {
+                  "hackoladeMeta": {},
+                  "isActivated": true,
+                  "primaryKey": false,
+                  "properties": [
+                    {
+                      "name": "departments",
+                      "hackoladeMeta": {},
+                      "isActivated": true,
+                      "primaryKey": false,
+                      "properties": [
+                        {
+                          "primaryKey": false,
+                          "mode": "varchar",
+                          "childType": "text",
+                          "type": "string",
+                          "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                          ],
+                          "compositePartitionKey": false,
+                          "compositeClusteringKey": false,
+                          "name": "department_name",
+                          "hackoladeMeta": {},
+                          "isActivated": true,
+                          "GUID": "9d070310-b483-11eb-a042-db7f7008a2f8",
+                          "error": {}
+                        }
+                      ],
+                      "additionalProperties": false,
+                      "childType": "struct",
+                      "type": "document",
+                      "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                      ],
+                      "compositePartitionKey": false,
+                      "compositeClusteringKey": false,
+                      "GUID": "9def5b28-5d21-48b6-9dd8-211b4ad438f3",
+                      "role": {
+                        "collectionName": "departments",
+                        "type": "object",
+                        "properties": [
+                          {
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "mode": "int",
+                            "childType": "numeric",
+                            "type": "numeric",
+                            "compositeKey": [
+                              "compositePartitionKey",
+                              "compositeClusteringKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "name": "department_id",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "840d9450-b483-11eb-a042-db7f7008a2f8",
+                            "required": true,
+                            "error": {},
+                            "childRelationships": [
+                              "ac1f4ce0-b483-11eb-a042-db7f7008a2f8"
+                            ],
+                            "compMod": {
+                              "oldField": {
+                                "name": "department_id",
+                                "type": "numeric",
+                                "mode": "int"
+                              },
+                              "newField": {
+                                "name": "department_id",
+                                "type": "numeric",
+                                "mode": "int"
+                              }
+                            }
+                          },
+                          {
+                            "primaryKey": false,
+                            "mode": "varchar",
+                            "childType": "text",
+                            "type": "string",
+                            "compositeKey": [
+                              "compositePartitionKey",
+                              "compositeClusteringKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "name": "department_name",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "9d070310-b483-11eb-a042-db7f7008a2f8",
+                            "error": {}
+                          }
+                        ],
+                        "definitions": {
+                          "type": "definitions",
+                          "properties": [],
+                          "GUID": "7dd37e60-b483-11eb-a042-db7f7008a2f8"
+                        },
+                        "isActivated": true,
+                        "collectionUsers": [],
+                        "tableIfNotExists": true,
+                        "GUID": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+                        "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+                        "hackoladeMeta": {
+                          "validationErrors": {}
+                        },
+                        "additionalProperties": true,
+                        "compMod": {
+                          "keyspaceName": "DataCo",
+                          "bucketProperties": {
+                            "name": "DataCo",
+                            "isActivated": true
+                          },
+                          "collectionName": {
+                            "new": "departments",
+                            "old": "departments"
+                          },
+                          "isActivated": {
+                            "new": true,
+                            "old": true
+                          },
+                          "bucketId": {
+                            "new": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+                            "old": "06ca6860-ae7f-11eb-b8d3-533823b921f5"
+                          },
+                          "additionalProperties": {
+                            "new": true,
+                            "old": true
+                          },
+                          "tableIfNotExists": {
+                            "new": true,
+                            "old": true
+                          }
+                        },
+                        "name": "departments",
+                        "roleType": "entity"
+                      }
+                    }
+                  ],
+                  "additionalProperties": false,
+                  "childType": "struct",
+                  "type": "document",
+                  "compositeKey": [
+                    "compositePartitionKey",
+                    "compositeClusteringKey",
+                    "compositePrimaryKey",
+                    "compositeUniqueKey"
+                  ],
+                  "compositePartitionKey": false,
+                  "compositeClusteringKey": false,
+                  "GUID": "d2d420bd-ba47-42e4-b024-00ad820ea759",
+                  "arrayItem": true
+                }
+              ],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "abc1b902-0cd5-40de-b231-7ee2c49dab04"
+            },
+            {
+              "name": "modified",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "c0a69c20-9656-432f-8438-8ac02ff4f1f3"
+            }
+          ],
+          "additionalProperties": false,
+          "childType": "struct",
+          "type": "document",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "7ef9380d-5571-400a-8299-90669785b794"
+        },
+        {
+          "name": "relationships",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "properties": [
+            {
+              "name": "added",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "a5fa93ae-0332-4b99-9955-e568e4f97375"
+            },
+            {
+              "name": "deleted",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "e4c5c0dc-c32b-4326-82a8-b560a8a276e5"
+            },
+            {
+              "name": "modified",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "8277f6d3-6b3a-4356-ae61-bcb8d1a1e533"
+            }
+          ],
+          "additionalProperties": false,
+          "childType": "struct",
+          "type": "document",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "5a8d9529-170c-4b5d-b968-a8a8f1207263"
+        },
+        {
+          "name": "views",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "properties": [
+            {
+              "name": "added",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "d0551770-7a1a-4b2a-9968-3957216dd573"
+            },
+            {
+              "name": "deleted",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "aa5baca8-c7d9-45b3-817c-0abd6d436bbc"
+            },
+            {
+              "name": "modified",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "47e8b424-42a3-4e4c-8d3b-3464d0e325cc"
+            }
+          ],
+          "additionalProperties": false,
+          "childType": "struct",
+          "type": "document",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "1f5b794d-bd83-4e9a-8fec-6a224f4df25c"
+        },
+        {
+          "name": "modelDefinitions",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "properties": [
+            {
+              "name": "added",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "f928c4d4-915f-48cf-8e0b-25ec6a265079"
+            },
+            {
+              "name": "deleted",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "86317f5a-7633-445f-b6b8-4469d7cf395d"
+            },
+            {
+              "name": "modified",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "subtype": "array<txt>",
+              "properties": [],
+              "primaryKey": false,
+              "additionalItems": true,
+              "uniqueItems": false,
+              "childType": "array",
+              "type": "array",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey",
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePartitionKey": false,
+              "compositeClusteringKey": false,
+              "GUID": "96bf6d4c-d6aa-4e16-b3b3-f49e469e2dc0"
+            }
+          ],
+          "additionalProperties": false,
+          "childType": "struct",
+          "type": "document",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "77d1cc68-60fa-4d91-a295-86f93f231ba4"
         }
-    ],
-    "buckets": [],
-    "views": [],
-    "relationships": [],
-    "users": [],
-    "diagramViews": [],
-    "idToNameHashTable": {
-        "a135cdf9-535c-4665-9c02-018f10d8df93": "added",
-        "dfbd3bc0-d2c0-4806-958c-2c5ac9c1a433": "deleted",
-        "31227acd-adf5-4a47-989f-cd32f609fe25": "modified",
-        "06ca6860-ae7f-11eb-b8d3-533823b921f5": "DataCo",
-        "406f8e22-1244-445e-a996-51436d190089": "added",
-        "abc1b902-0cd5-40de-b231-7ee2c49dab04": "deleted",
-        "c0a69c20-9656-432f-8438-8ac02ff4f1f3": "modified",
-        "9c546bb0-ae7f-11eb-b8d3-533823b921f5": "categories",
-        "8f753cc0-b484-11eb-a042-db7f7008a2f8": "customers",
-        "7dd0e650-b483-11eb-a042-db7f7008a2f8": "departments",
-        "bffb6050-b483-11eb-a042-db7f7008a2f8": "order_items",
-        "2111a7a0-b484-11eb-a042-db7f7008a2f8": "orders",
-        "378a4420-ae7f-11eb-b8d3-533823b921f5": "products",
-        "dced316b-44fa-4681-9ed1-0208e651777a": "New column",
-        "9d070310-b483-11eb-a042-db7f7008a2f8": "department_name",
-        "0a316124-dea8-4837-995c-63a719ac21f9": "departments",
-        "9def5b28-5d21-48b6-9dd8-211b4ad438f3": "departments",
-        "a5fa93ae-0332-4b99-9955-e568e4f97375": "added",
-        "e4c5c0dc-c32b-4326-82a8-b560a8a276e5": "deleted",
-        "8277f6d3-6b3a-4356-ae61-bcb8d1a1e533": "modified",
-        "ae7efe90-ae7f-11eb-b8d3-533823b921f5": "fk categories.category_id to products.product_category_id",
-        "ac1f4ce0-b483-11eb-a042-db7f7008a2f8": "fk departments.department_id to categories.category_department_id",
-        "f3c0daf0-b483-11eb-a042-db7f7008a2f8": "fk products.product_id to order_items.order_item_product_id",
-        "79111ee0-b484-11eb-a042-db7f7008a2f8": "fk orders.order_id to order_items.order_item_order_id",
-        "2a0039c0-b485-11eb-a042-db7f7008a2f8": "fk customers.customer_id to orders.order_customer_id",
-        "d0551770-7a1a-4b2a-9968-3957216dd573": "added",
-        "aa5baca8-c7d9-45b3-817c-0abd6d436bbc": "deleted",
-        "47e8b424-42a3-4e4c-8d3b-3464d0e325cc": "modified",
-        "dfb73cf0-b485-11eb-a042-db7f7008a2f8": "orders_view",
-        "f928c4d4-915f-48cf-8e0b-25ec6a265079": "added",
-        "86317f5a-7633-445f-b6b8-4469d7cf395d": "deleted",
-        "96bf6d4c-d6aa-4e16-b3b3-f49e469e2dc0": "modified",
-        "ff6628a0-b484-11eb-a042-db7f7008a2f8": "customer_address",
-        "eabf31ac-dbe5-44bb-9d94-8bc5f48bc489": "comparisonModelCollection",
-        "d58ccaff-73a7-46ae-8019-feb3f2881cea": "containers",
-        "7ef9380d-5571-400a-8299-90669785b794": "entities",
-        "5a8d9529-170c-4b5d-b968-a8a8f1207263": "relationships",
-        "1f5b794d-bd83-4e9a-8fec-6a224f4df25c": "views",
-        "77d1cc68-60fa-4d91-a295-86f93f231ba4": "modelDefinitions"
-    },
-    "definitions": {
+      ],
+      "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "9ae13e91-ae7d-11eb-b8d3-533823b921f5"
-    },
-    "polyglotDefinitions": {
-        "type": "polyglotDefinitions",
-        "properties": [],
-        "GUID": "3f494427-c0f0-4372-9183-319f2775ebb0"
-    },
-    "externalDefinitions": {
-        "type": "externalDefinitions",
-        "properties": [],
-        "GUID": "9ae13e92-ae7d-11eb-b8d3-533823b921f5"
-    },
-    "sources": [],
-    "decorativeSymbols": [],
-    "dbVersion": "Runtime 8",
-    "dbVendor": "Delta Lake",
-    "appTarget": "DeltaLake",
-    "creationTS": "2022-09-15T07:21:13.258Z",
-    "GUID": "e9a5478d-1cd9-4e92-a02e-133c02cc77d1",
-    "compMode": true,
-    "isCreatedByPlugin": true,
-    "pluginInformation": {
-        "pluginName": "DeltaLake",
-        "pluginVersion": "0.1.67",
-        "pluginEngineVersion": "1.0.0"
-    },
-    "lastModifTS": "2022-09-15T07:27:16.329Z",
-    "persistenceSchemaVersion": "6",
-    "applicationInformation": {
-        "version": "6.5.0"
-    },
-    "hackoladeMeta": {},
-    "settings": {
-        "centralPane": {
-            "dbLevel": {
-                "erd": [
-                    {
-                        "GUID": "eabf31ac-dbe5-44bb-9d94-8bc5f48bc489",
-                        "x": 61,
-                        "y": 61,
-                        "width": 280,
-                        "height": 497,
-                        "color": {}
-                    }
-                ],
-                "buckets": [
-                    {
-                        "GUID": ""
-                    }
-                ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
-                "graphView": {
-                    "erd": [],
-                    "buckets": [],
-                    "decorativeSymbols": [],
-                    "forceLayout": true,
-                    "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": []
-            },
-            "collectionLevel": {},
-            "changed": false
-        },
-        "dtDiagram": {
-            "collapsedNodes": [],
-            "shouldDistributeCollections": false
-        }
+        "GUID": "ca90663f-80c5-453a-a91e-de94d09b6f3f"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExists": true,
+      "GUID": "eabf31ac-dbe5-44bb-9d94-8bc5f48bc489",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "a135cdf9-535c-4665-9c02-018f10d8df93": "added",
+    "dfbd3bc0-d2c0-4806-958c-2c5ac9c1a433": "deleted",
+    "31227acd-adf5-4a47-989f-cd32f609fe25": "modified",
+    "06ca6860-ae7f-11eb-b8d3-533823b921f5": "DataCo",
+    "406f8e22-1244-445e-a996-51436d190089": "added",
+    "abc1b902-0cd5-40de-b231-7ee2c49dab04": "deleted",
+    "c0a69c20-9656-432f-8438-8ac02ff4f1f3": "modified",
+    "9c546bb0-ae7f-11eb-b8d3-533823b921f5": "categories",
+    "8f753cc0-b484-11eb-a042-db7f7008a2f8": "customers",
+    "7dd0e650-b483-11eb-a042-db7f7008a2f8": "departments",
+    "bffb6050-b483-11eb-a042-db7f7008a2f8": "order_items",
+    "2111a7a0-b484-11eb-a042-db7f7008a2f8": "orders",
+    "378a4420-ae7f-11eb-b8d3-533823b921f5": "products",
+    "dced316b-44fa-4681-9ed1-0208e651777a": "New column",
+    "9d070310-b483-11eb-a042-db7f7008a2f8": "department_name",
+    "0a316124-dea8-4837-995c-63a719ac21f9": "departments",
+    "9def5b28-5d21-48b6-9dd8-211b4ad438f3": "departments",
+    "a5fa93ae-0332-4b99-9955-e568e4f97375": "added",
+    "e4c5c0dc-c32b-4326-82a8-b560a8a276e5": "deleted",
+    "8277f6d3-6b3a-4356-ae61-bcb8d1a1e533": "modified",
+    "ae7efe90-ae7f-11eb-b8d3-533823b921f5": "fk categories.category_id to products.product_category_id",
+    "ac1f4ce0-b483-11eb-a042-db7f7008a2f8": "fk departments.department_id to categories.category_department_id",
+    "f3c0daf0-b483-11eb-a042-db7f7008a2f8": "fk products.product_id to order_items.order_item_product_id",
+    "79111ee0-b484-11eb-a042-db7f7008a2f8": "fk orders.order_id to order_items.order_item_order_id",
+    "2a0039c0-b485-11eb-a042-db7f7008a2f8": "fk customers.customer_id to orders.order_customer_id",
+    "d0551770-7a1a-4b2a-9968-3957216dd573": "added",
+    "aa5baca8-c7d9-45b3-817c-0abd6d436bbc": "deleted",
+    "47e8b424-42a3-4e4c-8d3b-3464d0e325cc": "modified",
+    "dfb73cf0-b485-11eb-a042-db7f7008a2f8": "orders_view",
+    "f928c4d4-915f-48cf-8e0b-25ec6a265079": "added",
+    "86317f5a-7633-445f-b6b8-4469d7cf395d": "deleted",
+    "96bf6d4c-d6aa-4e16-b3b3-f49e469e2dc0": "modified",
+    "ff6628a0-b484-11eb-a042-db7f7008a2f8": "customer_address",
+    "eabf31ac-dbe5-44bb-9d94-8bc5f48bc489": "comparisonModelCollection",
+    "d58ccaff-73a7-46ae-8019-feb3f2881cea": "containers",
+    "7ef9380d-5571-400a-8299-90669785b794": "entities",
+    "5a8d9529-170c-4b5d-b968-a8a8f1207263": "relationships",
+    "1f5b794d-bd83-4e9a-8fec-6a224f4df25c": "views",
+    "77d1cc68-60fa-4d91-a295-86f93f231ba4": "modelDefinitions"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "9ae13e91-ae7d-11eb-b8d3-533823b921f5"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "3f494427-c0f0-4372-9183-319f2775ebb0"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "9ae13e92-ae7d-11eb-b8d3-533823b921f5"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "Runtime 8",
+  "dbVendor": "Delta Lake",
+  "appTarget": "DeltaLake",
+  "creationTS": "2022-09-15T07:21:13.258Z",
+  "GUID": "e9a5478d-1cd9-4e92-a02e-133c02cc77d1",
+  "compMode": true,
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "DeltaLake",
+    "pluginVersion": "0.2.22",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "lastModifTS": "2025-07-30T13:21:19.455Z",
+  "persistenceSchemaVersion": "8",
+  "applicationInformation": {
+    "version": "8.3.5"
+  },
+  "hackoladeMeta": {},
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "eabf31ac-dbe5-44bb-9d94-8bc5f48bc489",
+            "x": 1000,
+            "y": 1000,
+            "width": 280,
+            "height": 497,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "eabf31ac-dbe5-44bb-9d94-8bc5f48bc489",
+            "autoWidth": false,
+            "autoHeight": false
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
 }
