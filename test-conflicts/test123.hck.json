@@ -226,6 +226,56 @@
       "isActivated": true,
       "additionalProperties": false,
       "GUID": "dad162e1-e250-4c76-a75d-616c2d2beedc"
+    },
+    {
+      "collectionName": "New Document6",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "a32b0f79-4920-4aa5-b8cb-59dcc98e4120",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "d4a28eb4-32db-40b7-a18d-8de3634e3c9b",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "78a8b53f-7472-4177-a437-c734eb6cce3c",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "caa89e5c-c824-4c01-8786-1939933f3bbf"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "a23a2b97-7bb1-4fc0-8992-e455c173bd37"
     }
   ],
   "buckets": [],
@@ -251,7 +301,11 @@
     "dad162e1-e250-4c76-a75d-616c2d2beedc": "New Document5",
     "27b0b3f0-5bb4-4fd1-8a19-c703543be2eb": "New Field",
     "e5d6d9d6-37bd-457c-b600-c3fafcf7a5e0": "New Field1",
-    "856662f2-545f-46cf-9b8b-bf8e2675202d": "New Field2"
+    "856662f2-545f-46cf-9b8b-bf8e2675202d": "New Field2",
+    "a23a2b97-7bb1-4fc0-8992-e455c173bd37": "New Document6",
+    "a32b0f79-4920-4aa5-b8cb-59dcc98e4120": "New Field",
+    "d4a28eb4-32db-40b7-a18d-8de3634e3c9b": "New Field1",
+    "78a8b53f-7472-4177-a437-c734eb6cce3c": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -276,7 +330,7 @@
   "creationTS": "2025-04-30T15:01:21.205Z",
   "GUID": "ff99fa5e-7f38-48f5-8cbb-0f7ad7076475",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-07-30T13:22:07.630Z",
+  "lastModifTS": "2025-07-30T13:22:15.313Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -334,6 +388,14 @@
             "GUID": "dad162e1-e250-4c76-a75d-616c2d2beedc",
             "x": 1709,
             "y": 1222,
+            "width": 215,
+            "height": 86,
+            "color": {}
+          },
+          {
+            "GUID": "a23a2b97-7bb1-4fc0-8992-e455c173bd37",
+            "x": 1771.3289940828402,
+            "y": 1648.424852071006,
             "width": 215,
             "height": 86,
             "color": {}
