@@ -1,0 +1,191 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "Entity_1",
+      "type": "object",
+      "properties": [
+        {
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "color": "#555555",
+          "GUID": "52fd1e4b-d1ae-4c89-bb14-457ba57261af",
+          "name": "Attribute_1",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "Attribute_2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "color": "#555555",
+          "GUID": "8e6bcb67-456a-4b4c-aad9-1cd4060d4d44",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "Attribute_3",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "color": "#555555",
+          "GUID": "0b518b35-f3fe-48fd-8114-6a4510c205d4",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "b1e3f31a-f9fc-4845-835f-db3cfd8cdd1b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "collectionUsers": [],
+      "indexes": [],
+      "collation": {},
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "17627dc6-1d20-408f-a999-dc1685aca364",
+      "bucketId": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "Container_1",
+      "type": "bucket",
+      "collectionIds": [
+        "17627dc6-1d20-408f-a999-dc1685aca364"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c": "Container_1",
+    "17627dc6-1d20-408f-a999-dc1685aca364": "Entity_1",
+    "52fd1e4b-d1ae-4c89-bb14-457ba57261af": "Attribute_1",
+    "8e6bcb67-456a-4b4c-aad9-1cd4060d4d44": "Attribute_2",
+    "0b518b35-f3fe-48fd-8114-6a4510c205d4": "Attribute_3"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "e49d655d-f04a-48db-9d7f-21dbe703b9db"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "18449035-8416-449a-8f6b-669fdb0ed466"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "5f44b770-4f5a-43b1-9885-26c226a9ab8c"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "v7.x",
+  "dbVendor": "MongoDB",
+  "appTarget": "MONGODB",
+  "creationTS": "2025-08-15T08:48:23.023Z",
+  "GUID": "1ba26c23-6ff1-425c-98d6-c56e22981df9",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-08-15T08:52:23.451Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.3.8"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "17627dc6-1d20-408f-a999-dc1685aca364",
+            "x": 1227,
+            "y": 1157,
+            "width": 192,
+            "height": 86,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1187,
+            "y": 1117,
+            "GUID": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  }
+}
