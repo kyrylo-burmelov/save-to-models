@@ -64,6 +64,76 @@
       "hackoladeMeta": {
         "validationErrors": {}
       }
+    },
+    {
+      "collectionName": "Entity_2",
+      "type": "object",
+      "properties": [
+        {
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "color": "#555555",
+          "GUID": "49733846-4f5e-49ed-aa14-6088c467f772",
+          "name": "Attribute_1",
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "Attribute_2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "color": "#555555",
+          "GUID": "0bf56ab9-7ece-4ec7-8a75-97b1bd3b6cf6",
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "Attribute_3",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "color": "#555555",
+          "GUID": "47ae9d87-d6eb-4680-8713-88b9e07589e6",
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "foreignCollection": "",
+          "foreignField": []
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a89a41d7-6420-4319-93d9-d64efce23d4b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "collectionUsers": [],
+      "indexes": [],
+      "collation": {},
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "bb693e5c-e235-4e90-b70f-64807e5287a3",
+      "bucketId": "bdadfb3e-9323-498e-89b2-4cd534ec8306",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
   ],
   "buckets": [
@@ -85,6 +155,25 @@
       "hackoladeMeta": {
         "validationErrors": {}
       }
+    },
+    {
+      "name": "Container_2",
+      "type": "bucket",
+      "collectionIds": [
+        "bb693e5c-e235-4e90-b70f-64807e5287a3"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "bdadfb3e-9323-498e-89b2-4cd534ec8306",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
   ],
   "views": [],
@@ -96,7 +185,12 @@
     "17627dc6-1d20-408f-a999-dc1685aca364": "Entity_1",
     "52fd1e4b-d1ae-4c89-bb14-457ba57261af": "Attribute_1",
     "8e6bcb67-456a-4b4c-aad9-1cd4060d4d44": "Attribute_2",
-    "0b518b35-f3fe-48fd-8114-6a4510c205d4": "Attribute_3"
+    "0b518b35-f3fe-48fd-8114-6a4510c205d4": "Attribute_3",
+    "49733846-4f5e-49ed-aa14-6088c467f772": "Attribute_1",
+    "0bf56ab9-7ece-4ec7-8a75-97b1bd3b6cf6": "Attribute_2",
+    "47ae9d87-d6eb-4680-8713-88b9e07589e6": "Attribute_3",
+    "bb693e5c-e235-4e90-b70f-64807e5287a3": "Entity_2",
+    "bdadfb3e-9323-498e-89b2-4cd534ec8306": "Container_2"
   },
   "definitions": {
     "type": "definitions",
@@ -121,7 +215,7 @@
   "creationTS": "2025-08-15T08:48:23.023Z",
   "GUID": "1ba26c23-6ff1-425c-98d6-c56e22981df9",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-08-15T08:52:23.451Z",
+  "lastModifTS": "2025-08-15T08:56:20.695Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -129,6 +223,9 @@
   },
   "applicationInformation": {
     "version": "8.3.8"
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   },
   "settings": {
     "centralPane": {
@@ -139,6 +236,14 @@
             "x": 1227,
             "y": 1157,
             "width": 192,
+            "height": 86,
+            "color": {}
+          },
+          {
+            "GUID": "bb693e5c-e235-4e90-b70f-64807e5287a3",
+            "x": 1599,
+            "y": 1159,
+            "width": 179,
             "height": 86,
             "color": {}
           }
@@ -154,6 +259,11 @@
             "x": 1187,
             "y": 1117,
             "GUID": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c"
+          },
+          {
+            "x": 1559,
+            "y": 1119,
+            "GUID": "bdadfb3e-9323-498e-89b2-4cd534ec8306"
           }
         ],
         "collapsedNodes": [],
@@ -174,7 +284,11 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "GUID": "bb693e5c-e235-4e90-b70f-64807e5287a3"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
@@ -184,8 +298,5 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
-  },
-  "hackoladeMeta": {
-    "customPropertiesUpdated": true
   }
 }
