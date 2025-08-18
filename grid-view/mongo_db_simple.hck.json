@@ -140,6 +140,64 @@
       "hackoladeMeta": {
         "validationErrors": {}
       }
+    },
+    {
+      "collectionName": "New Collection",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "7bb22525-0ddd-4061-a6f3-1a2ced340d4b",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "90529765-8797-4df3-abeb-fb1ca15f2a15",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "1480994f-326e-45fc-be2b-e27a95b47041",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "3741949f-c82b-4e79-94b6-aa521900bb5f"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "collectionUsers": [],
+      "indexes": [],
+      "collation": {},
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "bba5411a-94b2-4541-8a16-2d20d1f2c2ed",
+      "bucketId": "402013a2-91f3-480d-8ab9-c1f154838201"
     }
   ],
   "buckets": [
@@ -158,7 +216,11 @@
       "show": true,
       "isActivated": true,
       "GUID": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c",
-      "hackoladeMeta": {},
+      "hackoladeMeta": {
+        "validationErrors": {
+          "name": "duplicated"
+        }
+      },
       "code": "Container_1",
       "enableSharding": false,
       "description": "Description test 123",
@@ -184,6 +246,27 @@
       },
       "code": "Container_2",
       "enableSharding": true
+    },
+    {
+      "name": "Container_1",
+      "type": "bucket",
+      "collectionIds": [
+        "bba5411a-94b2-4541-8a16-2d20d1f2c2ed"
+      ],
+      "backgroundColor": {
+        "r": 0,
+        "g": 138,
+        "b": 0,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "402013a2-91f3-480d-8ab9-c1f154838201",
+      "hackoladeMeta": {
+        "validationErrors": {
+          "name": "duplicated"
+        }
+      }
     }
   ],
   "views": [],
@@ -200,7 +283,12 @@
     "207038f2-7abc-40bf-a9ec-74b5d204d2d4": "Attribute_1",
     "8dd81dd1-3c83-4edf-9ee4-fb7efcc34422": "Attribute_2",
     "8f99e78a-6f1c-43e6-920b-5511c3fe5cc8": "Attribute_3",
-    "cbd069f7-5ee2-4aab-b142-fca88a08feb5": "Entity_1"
+    "cbd069f7-5ee2-4aab-b142-fca88a08feb5": "Entity_1",
+    "402013a2-91f3-480d-8ab9-c1f154838201": "Container_1",
+    "bba5411a-94b2-4541-8a16-2d20d1f2c2ed": "New Collection",
+    "7bb22525-0ddd-4061-a6f3-1a2ced340d4b": "New Field",
+    "90529765-8797-4df3-abeb-fb1ca15f2a15": "New Field1",
+    "1480994f-326e-45fc-be2b-e27a95b47041": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -225,7 +313,7 @@
   "creationTS": "2025-08-15T08:48:23.023Z",
   "GUID": "1ba26c23-6ff1-425c-98d6-c56e22981df9",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-08-18T11:37:18.203Z",
+  "lastModifTS": "2025-08-18T11:42:44.375Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -256,6 +344,14 @@
             "width": 192,
             "height": 86,
             "color": {}
+          },
+          {
+            "GUID": "bba5411a-94b2-4541-8a16-2d20d1f2c2ed",
+            "x": 1241,
+            "y": 1439,
+            "width": 205,
+            "height": 86,
+            "color": {}
           }
         ],
         "erdDefinitions": {
@@ -274,6 +370,11 @@
             "x": 1559,
             "y": 1119,
             "GUID": "bdadfb3e-9323-498e-89b2-4cd534ec8306"
+          },
+          {
+            "x": 1201,
+            "y": 1399,
+            "GUID": "402013a2-91f3-480d-8ab9-c1f154838201"
           }
         ],
         "collapsedNodes": [],
