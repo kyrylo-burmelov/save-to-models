@@ -137,7 +137,9 @@
       },
       "GUID": "cbd069f7-5ee2-4aab-b142-fca88a08feb5",
       "bucketId": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c",
-      "hackoladeMeta": {}
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
   ],
   "buckets": [
@@ -156,11 +158,9 @@
       "show": true,
       "isActivated": true,
       "GUID": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c",
-      "hackoladeMeta": {
-        "validationErrors": {}
-      },
+      "hackoladeMeta": {},
       "code": "Container_1",
-      "enableSharding": true,
+      "enableSharding": false,
       "description": "Description test 123",
       "comments": "Comments test 123"
     },
@@ -179,7 +179,9 @@
       "show": true,
       "isActivated": true,
       "GUID": "bdadfb3e-9323-498e-89b2-4cd534ec8306",
-      "hackoladeMeta": {},
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
       "code": "Container_2",
       "enableSharding": true
     }
@@ -223,7 +225,7 @@
   "creationTS": "2025-08-15T08:48:23.023Z",
   "GUID": "1ba26c23-6ff1-425c-98d6-c56e22981df9",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-08-18T11:32:19.629Z",
+  "lastModifTS": "2025-08-18T11:37:18.203Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
