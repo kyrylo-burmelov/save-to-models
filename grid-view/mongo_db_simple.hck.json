@@ -158,7 +158,11 @@
       "GUID": "9af3bdae-0c38-41b4-a038-1a0a3c19ff6c",
       "hackoladeMeta": {
         "validationErrors": {}
-      }
+      },
+      "code": "Container_1",
+      "enableSharding": true,
+      "description": "Description test 123",
+      "comments": "Comments test 123"
     },
     {
       "name": "Container_2",
@@ -175,9 +179,9 @@
       "show": true,
       "isActivated": true,
       "GUID": "bdadfb3e-9323-498e-89b2-4cd534ec8306",
-      "hackoladeMeta": {
-        "validationErrors": {}
-      }
+      "hackoladeMeta": {},
+      "code": "Container_2",
+      "enableSharding": true
     }
   ],
   "views": [],
@@ -219,7 +223,7 @@
   "creationTS": "2025-08-15T08:48:23.023Z",
   "GUID": "1ba26c23-6ff1-425c-98d6-c56e22981df9",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-08-17T19:00:10.894Z",
+  "lastModifTS": "2025-08-18T11:32:19.629Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
