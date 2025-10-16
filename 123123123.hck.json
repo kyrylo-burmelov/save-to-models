@@ -8,11 +8,11 @@
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "8bf59258-c9a0-42f9-94e4-ec33e915550a"
+        "GUID": "23a736fc-cda3-4264-bf65-429d9c3b7247"
       },
       "isActivated": true,
       "additionalProperties": false,
-      "GUID": "fa0228d2-bd6a-46f3-a5a7-02bc8ff64c2f"
+      "GUID": "b87e314a-2da6-4b68-b679-daa7dff5d6c1"
     }
   ],
   "buckets": [],
@@ -21,32 +21,32 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "fa0228d2-bd6a-46f3-a5a7-02bc8ff64c2f": "New Document"
+    "b87e314a-2da6-4b68-b679-daa7dff5d6c1": "New Document"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "0d90e78f-59d5-41f7-a645-6eb5fc62e9bc"
+    "GUID": "350cf7ce-b1da-4484-917d-bd572d2e0e90"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "e458ac92-1ea5-4939-9e22-dca2a46a2821"
+    "GUID": "9566d6c0-c36e-49fc-af7c-1952abe6176a"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "b47d8782-a050-4fee-b86c-0d3b8f4db7ff"
+    "GUID": "6dbf8c00-a9ac-4a1e-8318-4f098b33770c"
   },
   "sources": [],
   "decorativeSymbols": [],
   "dbVendor": "JSON",
   "dbVersion": "2019-09",
   "appTarget": "JSON",
-  "creationTS": "2025-10-16T15:32:06.502Z",
-  "GUID": "073c82c8-44cd-4418-8519-2e8cfdc2aa02",
+  "creationTS": "2025-10-16T16:03:24.169Z",
+  "GUID": "af6c33e7-529c-4a43-a614-edc3a1bab895",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-16T15:32:30.538Z",
+  "lastModifTS": "2025-10-16T16:04:38.601Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -60,9 +60,9 @@
       "dbLevel": {
         "erd": [
           {
-            "GUID": "fa0228d2-bd6a-46f3-a5a7-02bc8ff64c2f",
-            "x": 1562,
-            "y": 1540,
+            "GUID": "b87e314a-2da6-4b68-b679-daa7dff5d6c1",
+            "x": 1170,
+            "y": 1499,
             "width": 240,
             "height": 100,
             "color": {}
