@@ -1,78 +1,80 @@
 {
   "modelName": "New Model",
-  "collections": [],
-  "buckets": [
+  "collections": [
     {
-      "name": "New Group",
-      "type": "bucket",
-      "collectionIds": [],
-      "backgroundColor": {
-        "r": 216,
-        "g": 0,
-        "b": 115,
-        "a": 1
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "69061793-90aa-488f-8813-02cfb499c2d7"
       },
-      "show": true,
       "isActivated": true,
-      "GUID": "921fb327-07ea-4ea7-b72e-7fd5a37e359a"
+      "additionalProperties": false,
+      "GUID": "33237023-094c-4c4c-8d69-444713eccf64"
     }
   ],
+  "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "921fb327-07ea-4ea7-b72e-7fd5a37e359a": "New Group"
+    "33237023-094c-4c4c-8d69-444713eccf64": "New Document"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "95b0bb22-af07-41c3-a216-7214ecd25ddd"
+    "GUID": "8751052c-7961-449f-be22-cd2b85a2c45b"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "566dddd9-7d9f-4350-9150-4e9bff99397b"
+    "GUID": "0c651536-d5cd-47d8-b9bc-8eb2321ef34d"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "c5e51aa8-c236-4d10-bc7f-6954d3f07fd9"
+    "GUID": "8e352529-f4cd-4e51-b914-57354976cc35"
   },
   "sources": [],
   "decorativeSymbols": [],
   "dbVendor": "JSON",
   "dbVersion": "2019-09",
   "appTarget": "JSON",
-  "creationTS": "2025-04-04T08:41:33.434Z",
-  "GUID": "daee8849-dd37-427b-a1dc-7be858944f13",
+  "creationTS": "2025-10-16T15:14:12.798Z",
+  "GUID": "cdd7dace-9ae8-4212-9b6d-d6404e90255f",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-04T08:41:53.172Z",
+  "lastModifTS": "2025-10-16T15:14:38.933Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.1.1"
+    "version": "8.5.2"
   },
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "33237023-094c-4c4c-8d69-444713eccf64",
+            "x": 1790,
+            "y": 1505,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
           "entities": [],
           "decorativeSymbols": []
         },
-        "buckets": [
-          {
-            "x": 1818,
-            "y": 1419,
-            "GUID": "921fb327-07ea-4ea7-b72e-7fd5a37e359a"
-          }
-        ],
+        "buckets": [],
         "collapsedNodes": [],
         "activeRelationship": "",
         "activeRelationshipFields": {
