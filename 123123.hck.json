@@ -13,6 +13,19 @@
       "isActivated": true,
       "additionalProperties": false,
       "GUID": "331d3142-7c3d-4eb2-869d-6e91758adccf"
+    },
+    {
+      "collectionName": "New Document1",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "63200312-9fb2-46ed-ab17-2e67168a55ec"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "84a2daaf-d342-4f8d-b78f-ceadd0e946b7"
     }
   ],
   "buckets": [],
@@ -21,7 +34,8 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "331d3142-7c3d-4eb2-869d-6e91758adccf": "New Document"
+    "331d3142-7c3d-4eb2-869d-6e91758adccf": "New Document",
+    "84a2daaf-d342-4f8d-b78f-ceadd0e946b7": "New Document1"
   },
   "definitions": {
     "type": "definitions",
@@ -46,7 +60,7 @@
   "creationTS": "2025-10-16T15:27:44.849Z",
   "GUID": "0f09f19f-c9d4-404f-9b84-8b52d131234a",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-16T15:28:17.731Z",
+  "lastModifTS": "2025-10-16T16:03:17.905Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -54,6 +68,9 @@
   },
   "applicationInformation": {
     "version": "8.5.2"
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   },
   "settings": {
     "centralPane": {
@@ -63,6 +80,14 @@
             "GUID": "331d3142-7c3d-4eb2-869d-6e91758adccf",
             "x": 1450,
             "y": 1372,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          },
+          {
+            "GUID": "84a2daaf-d342-4f8d-b78f-ceadd0e946b7",
+            "x": 1548,
+            "y": 1603,
             "width": 240,
             "height": 100,
             "color": {}
@@ -103,8 +128,5 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
-  },
-  "hackoladeMeta": {
-    "customPropertiesUpdated": true
   }
 }
