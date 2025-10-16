@@ -2,232 +2,85 @@
   "modelName": "New Model",
   "collections": [
     {
-      "collectionName": "User",
+      "collectionName": "New Document",
       "type": "object",
       "properties": [
         {
-          "name": "ID",
+          "name": "New Field",
           "hackoladeMeta": {},
           "isActivated": true,
           "type": "string",
           "properties": [],
-          "GUID": "97933c1e-e80b-4984-9e7a-524183d4c2cc",
-          "error": {},
-          "relationshipType": "Foreign Key",
-          "foreignCollection": "68cb80ce-c669-4d41-976b-c955613879c2",
-          "foreignField": [
-            "68cb80ce-c669-4d41-976b-c955613879c2",
-            "28aa7fd7-8524-4355-8516-f2845de01073"
-          ],
-          "parentRelationship": "015e708e-f49c-4f92-a2cf-cf8aade290e4"
-        },
-        {
-          "name": "name",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "01a1cd38-336a-4991-a311-4894b71fed68",
-          "error": {}
-        },
-        {
-          "name": "surname",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "6eaddfc3-b4a5-41b4-9412-655eb9052170",
-          "error": {}
+          "color": "#555555",
+          "GUID": "4a7789dc-ec7c-415c-9ef3-8088518df295",
+          "error": {
+            "name": false,
+            "code": false
+          }
         }
       ],
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "ed64f686-afb0-4df1-98e4-fa31324e5317"
+        "GUID": "ad44bb9c-2f62-4e2c-ace6-5883673427aa"
       },
       "isActivated": true,
       "additionalProperties": false,
-      "GUID": "9ad94167-2e61-4784-b384-b771fd0719ab",
-      "hackoladeMeta": {
-        "validationErrors": {}
-      }
-    },
-    {
-      "collectionName": "order",
-      "type": "object",
-      "properties": [
-        {
-          "name": "orderId",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "d3e860ac-1c55-421c-9817-facdedc7175f",
-          "error": {}
-        },
-        {
-          "name": "itemId",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "11c3214a-8f47-4982-8c79-ca364f040612",
-          "error": {}
-        },
-        {
-          "name": "userId",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "28aa7fd7-8524-4355-8516-f2845de01073",
-          "error": {},
-          "childRelationships": [
-            "015e708e-f49c-4f92-a2cf-cf8aade290e4"
-          ]
-        }
-      ],
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "4a87e143-d9b8-4e47-8e23-c443d4a6ef11"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "GUID": "68cb80ce-c669-4d41-976b-c955613879c2",
-      "hackoladeMeta": {
-        "validationErrors": {}
-      }
+      "GUID": "f41506e8-4238-4fd7-b894-b426dadb5d0d"
     }
   ],
   "buckets": [],
   "views": [],
-  "relationships": [
-    {
-      "name": "fk_order_userId_to_User_ID",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "68cb80ce-c669-4d41-976b-c955613879c2",
-          "28aa7fd7-8524-4355-8516-f2845de01073"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "9ad94167-2e61-4784-b384-b771fd0719ab",
-          "97933c1e-e80b-4984-9e7a-524183d4c2cc"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "1..n",
-      "parentCollection": "68cb80ce-c669-4d41-976b-c955613879c2",
-      "childCollection": "9ad94167-2e61-4784-b384-b771fd0719ab",
-      "GUID": "015e708e-f49c-4f92-a2cf-cf8aade290e4",
-      "hackoladeMeta": {
-        "validationErrors": {}
-      },
-      "hackoladeStyles": {
-        "GUID": "95498747-8ed1-452d-95c9-b7c03a67fc50",
-        "autoPositioning": true,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 2382,
-            "y": 1627.5
-          },
-          {
-            "x": 2436.5,
-            "y": 1627.5
-          },
-          {
-            "x": 2436.5,
-            "y": 1694
-          },
-          {
-            "x": 2491,
-            "y": 1694
-          }
-        ],
-        "sides": [
-          "right",
-          "left"
-        ]
-      }
-    }
-  ],
+  "relationships": [],
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "9ad94167-2e61-4784-b384-b771fd0719ab": "User",
-    "97933c1e-e80b-4984-9e7a-524183d4c2cc": "ID",
-    "01a1cd38-336a-4991-a311-4894b71fed68": "name",
-    "6eaddfc3-b4a5-41b4-9412-655eb9052170": "surname",
-    "68cb80ce-c669-4d41-976b-c955613879c2": "order",
-    "d3e860ac-1c55-421c-9817-facdedc7175f": "orderId",
-    "11c3214a-8f47-4982-8c79-ca364f040612": "itemId",
-    "28aa7fd7-8524-4355-8516-f2845de01073": "userId",
-    "015e708e-f49c-4f92-a2cf-cf8aade290e4": "fk_order_userId_to_User_ID"
+    "f41506e8-4238-4fd7-b894-b426dadb5d0d": "New Document",
+    "4a7789dc-ec7c-415c-9ef3-8088518df295": "New Field"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "93036760-fd96-411e-a7e0-3d42b0e56694"
+    "GUID": "0c3ac0da-ba4c-4e84-9c81-93d99f973105"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "b8f1deb7-d92a-4ad8-b475-d9a40d7be184"
+    "GUID": "27f70f5f-2838-4c58-987e-973a93dd9a61"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "f3c6167d-58a0-4745-80ce-c450b6623d38"
+    "GUID": "3ee851c9-7e35-4284-8f72-1307d5839fa5"
   },
   "sources": [],
   "decorativeSymbols": [],
   "dbVendor": "JSON",
   "dbVersion": "2019-09",
   "appTarget": "JSON",
-  "creationTS": "2025-04-17T12:31:41.262Z",
-  "GUID": "4387f751-a540-471f-821e-af338177a5f4",
+  "creationTS": "2025-10-16T10:52:25.460Z",
+  "GUID": "4ccf0015-e895-4d01-a03d-73a113b2fb1f",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-08-23T19:31:33.805Z",
+  "lastModifTS": "2025-10-16T10:53:17.305Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.3.9"
+    "version": "8.5.2"
   },
-  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
-            "GUID": "9ad94167-2e61-4784-b384-b771fd0719ab",
-            "x": 1979,
-            "y": 1494,
-            "width": 403,
-            "height": 267,
-            "color": {
-              "hex": "#9c28b1"
-            }
-          },
-          {
-            "GUID": "68cb80ce-c669-4d41-976b-c955613879c2",
-            "x": 2491,
-            "y": 1605,
-            "width": 261,
-            "height": 178,
-            "color": {
-              "hex": "#9c28b1"
-            }
+            "GUID": "f41506e8-4238-4fd7-b894-b426dadb5d0d",
+            "x": 1600,
+            "y": 1459,
+            "width": 208,
+            "height": 50,
+            "color": {}
           }
         ],
         "erdDefinitions": {
@@ -255,18 +108,7 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [
-          {
-            "autoWidth": false,
-            "autoHeight": false,
-            "GUID": "9ad94167-2e61-4784-b384-b771fd0719ab"
-          },
-          {
-            "autoWidth": false,
-            "autoHeight": false,
-            "GUID": "68cb80ce-c669-4d41-976b-c955613879c2"
-          }
-        ],
+        "options": [],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
@@ -276,5 +118,8 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   }
 }
