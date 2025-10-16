@@ -4,52 +4,15 @@
     {
       "collectionName": "New Document",
       "type": "object",
-      "properties": [
-        {
-          "name": "New Field",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "de542738-a76f-4b43-8045-68ddf6f9a536",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field1",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "67e7830a-e218-4dec-9c6c-371a558ac156",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field2",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "98d5b2d5-9a38-4c00-95b4-e24229ab703d",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        }
-      ],
+      "properties": [],
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "73ceb1a6-ffbd-4ccb-883c-fe8a019f2255"
+        "GUID": "e24c3720-4401-407a-8bb4-ef727f7ad409"
       },
       "isActivated": true,
       "additionalProperties": false,
-      "GUID": "4721b936-c85c-454b-aa56-072fb2fddb24"
+      "GUID": "16c3730d-6382-4d75-bd5e-89d171cbed81"
     }
   ],
   "buckets": [],
@@ -58,53 +21,50 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "4721b936-c85c-454b-aa56-072fb2fddb24": "New Document",
-    "de542738-a76f-4b43-8045-68ddf6f9a536": "New Field",
-    "67e7830a-e218-4dec-9c6c-371a558ac156": "New Field1",
-    "98d5b2d5-9a38-4c00-95b4-e24229ab703d": "New Field2"
+    "16c3730d-6382-4d75-bd5e-89d171cbed81": "New Document"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "b0a3e68a-0b73-4389-82d8-53c76f04dee0"
+    "GUID": "6c80a197-628c-497e-b14b-db3589fc38cc"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "9c588f89-d04e-4db4-867c-aa4d71e8a037"
+    "GUID": "04e46010-9516-4fb1-8a0e-0c4ed63a336d"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "f854b04a-9fdb-4f1a-89ac-c4cf8783aa89"
+    "GUID": "efebf7e5-d168-49d7-8f43-cc1a4a287d1b"
   },
   "sources": [],
   "decorativeSymbols": [],
   "dbVendor": "JSON",
   "dbVersion": "2019-09",
   "appTarget": "JSON",
-  "creationTS": "2025-07-18T09:41:55.170Z",
-  "GUID": "85f939eb-691a-476b-9e29-d80d703c7501",
-  "isLineageEnabled": true,
-  "lastModifTS": "2025-07-18T09:42:41.348Z",
+  "creationTS": "2025-10-16T15:16:03.836Z",
+  "GUID": "bf1f810e-0d6b-405b-b397-bd8225a22b6d",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-10-16T15:16:25.564Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.3.2"
+    "version": "8.5.2"
   },
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
-            "GUID": "4721b936-c85c-454b-aa56-072fb2fddb24",
-            "x": 1317,
-            "y": 1188,
-            "width": 208,
-            "height": 86,
+            "GUID": "16c3730d-6382-4d75-bd5e-89d171cbed81",
+            "x": 1634,
+            "y": 1480,
+            "width": 240,
+            "height": 100,
             "color": {}
           }
         ],
@@ -143,5 +103,8 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   }
 }
