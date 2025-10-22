@@ -1,0 +1,763 @@
+{
+    "modelName": "geoJSON",
+    "collections": [
+        {
+            "GUID": "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+            "type": "object",
+            "description": "One geometry as defined by GeoJSON: https://tools.ietf.org/html/rfc7946#appendix-A\n\n",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "choice",
+                    "choice": "oneOf",
+                    "properties": [
+                        {
+                            "title": "Point",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "Point"
+                                            ],
+                                            "GUID": "791c9770-663b-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "GUID": "80cc3660-663b-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "coordinates",
+                                            "$ref": "#/definitions/position",
+                                            "refType": "internal",
+                                            "ref": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca01-5846-11e7-b5ff-dd5e79dcd289"
+                                            ],
+                                            "isActivated": true,
+                                            "compositeKey": []
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "6c8c3100-663b-11e7-8624-0dc6c9140dad",
+                                    "name": "Point",
+                                    "isActivated": true
+                                }
+                            ],
+                            "type": "document",
+                            "primaryKey": false,
+                            "GUID": "a4622562-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
+                        },
+                        {
+                            "title": "MultiPoint",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "MultiPoint"
+                                            ],
+                                            "GUID": "f5ce6fa0-663b-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "GUID": "fc591690-663b-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "positionArray",
+                                            "$ref": "#/definitions/positionArray",
+                                            "refType": "internal",
+                                            "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
+                                            ],
+                                            "isActivated": true,
+                                            "compositeKey": []
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "e940ef60-663b-11e7-8624-0dc6c9140dad",
+                                    "name": "MultiPoint",
+                                    "isActivated": true
+                                }
+                            ],
+                            "type": "document",
+                            "primaryKey": false,
+                            "GUID": "a4622565-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
+                        },
+                        {
+                            "title": "LineString",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "LineString"
+                                            ],
+                                            "GUID": "7816cac0-663c-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "GUID": "6e4f2140-663c-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "lineString",
+                                            "$ref": "#/definitions/lineString",
+                                            "refType": "internal",
+                                            "ref": "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45f8d50-5846-11e7-b5ff-dd5e79dcd289"
+                                            ],
+                                            "isActivated": true,
+                                            "compositeKey": []
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "1846bf10-663c-11e7-8624-0dc6c9140dad",
+                                    "name": "LineString",
+                                    "isActivated": true
+                                }
+                            ],
+                            "type": "document",
+                            "primaryKey": false,
+                            "GUID": "a4622568-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
+                        },
+                        {
+                            "title": "MultiLineString",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "MultiLineString"
+                                            ],
+                                            "GUID": "a8c0ad80-663c-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "additionalItems": true,
+                                            "GUID": "9d2e0800-663c-11e7-8624-0dc6c9140dad",
+                                            "name": "coordinates",
+                                            "primaryKey": false,
+                                            "properties": [
+                                                {
+                                                    "$ref": "#/definitions/lineString",
+                                                    "arrayItem": true,
+                                                    "GUID": "9d2e0801-663c-11e7-8624-0dc6c9140dad",
+                                                    "primaryKey": false,
+                                                    "ref": "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
+                                                    "refIdPath": [
+                                                        "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45f8d50-5846-11e7-b5ff-dd5e79dcd289"
+                                                    ],
+                                                    "refType": "internal",
+                                                    "type": "reference",
+                                                    "isActivated": true
+                                                }
+                                            ],
+                                            "relationshipType": "",
+                                            "type": "array",
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "26a9c2a0-663c-11e7-8624-0dc6c9140dad",
+                                    "name": "MultiLineString",
+                                    "isActivated": true
+                                }
+                            ],
+                            "type": "document",
+                            "primaryKey": false,
+                            "GUID": "a462256b-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
+                        },
+                        {
+                            "title": "Polygon",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "Polygon"
+                                            ],
+                                            "GUID": "fde428c0-664e-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "GUID": "e63b07c0-664e-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "coodinates",
+                                            "$ref": "#/definitions/polygon",
+                                            "refType": "internal",
+                                            "ref": "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45fb461-5846-11e7-b5ff-dd5e79dcd289"
+                                            ],
+                                            "isActivated": true,
+                                            "compositeKey": []
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "38ed34b0-663c-11e7-8624-0dc6c9140dad",
+                                    "name": "Polygon",
+                                    "isActivated": true
+                                }
+                            ],
+                            "type": "document",
+                            "primaryKey": false,
+                            "GUID": "a462256f-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
+                        },
+                        {
+                            "title": "MultiPolygon",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "MultiPolygon"
+                                            ],
+                                            "GUID": "3fa53290-664f-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "additionalItems": true,
+                                            "GUID": "3a323d30-664f-11e7-8624-0dc6c9140dad",
+                                            "name": "coordinates",
+                                            "primaryKey": false,
+                                            "properties": [
+                                                {
+                                                    "$ref": "#/definitions/polygon",
+                                                    "arrayItem": true,
+                                                    "GUID": "3a323d31-664f-11e7-8624-0dc6c9140dad",
+                                                    "primaryKey": false,
+                                                    "ref": "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
+                                                    "refIdPath": [
+                                                        "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45fb461-5846-11e7-b5ff-dd5e79dcd289"
+                                                    ],
+                                                    "refType": "internal",
+                                                    "type": "reference",
+                                                    "isActivated": true
+                                                }
+                                            ],
+                                            "relationshipType": "",
+                                            "type": "array",
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "57391880-663c-11e7-8624-0dc6c9140dad",
+                                    "name": "MultiPolygons",
+                                    "isActivated": true
+                                }
+                            ],
+                            "type": "document",
+                            "primaryKey": false,
+                            "GUID": "a4622572-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "GUID": "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                    "relationshipType": "",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [
+                    {
+                        "description": "A single position",
+                        "type": "array",
+                        "minItems": 2,
+                        "name": "position",
+                        "primaryKey": false,
+                        "GUID": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
+                        "properties": [
+                            {
+                                "type": "numeric",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45f3f30-5846-11e7-b5ff-dd5e79dcd289",
+                                "properties": [],
+                                "description": "Longitude in decimal degrees",
+                                "error": {},
+                                "minimum": "-180.0",
+                                "mode": "double",
+                                "maximum": 180,
+                                "sample": 4.3328727,
+                                "unit": "Decimal degrees",
+                                "isActivated": true
+                            },
+                            {
+                                "type": "numeric",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45f3f31-5846-11e7-b5ff-dd5e79dcd289",
+                                "properties": [],
+                                "sample": 50.7636859,
+                                "error": {},
+                                "description": "Latitude in decimal degrees",
+                                "mode": "double",
+                                "unit": "Decimal degrees",
+                                "minimum": "-90.0",
+                                "maximum": 90,
+                                "isActivated": true
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f6641-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622562-5846-11e7-b5ff-dd5e79dcd289",
+                                "6c8c3100-663b-11e7-8624-0dc6c9140dad",
+                                "80cc3660-663b-11e7-8624-0dc6c9140dad"
+                            ]
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "description": "An array of positions",
+                        "type": "array",
+                        "name": "positionArray",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                        "properties": [
+                            {
+                                "$ref": "#/definitions/position",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45f6641-5846-11e7-b5ff-dd5e79dcd289",
+                                "type": "reference",
+                                "refType": "internal",
+                                "refIdPath": [
+                                    "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45eca01-5846-11e7-b5ff-dd5e79dcd289"
+                                ],
+                                "ref": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
+                                "isActivated": true,
+                                "displayName": "position",
+                                "error": {
+                                    "displayName": false
+                                }
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f8d51-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f8d53-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f8d55-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f8d56-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45f8d58-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622565-5846-11e7-b5ff-dd5e79dcd289",
+                                "e940ef60-663b-11e7-8624-0dc6c9140dad",
+                                "fc591690-663b-11e7-8624-0dc6c9140dad"
+                            ]
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "description": "An array of two or more positions",
+                        "type": "array",
+                        "name": "lineString",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
+                        "properties": [
+                            {
+                                "type": "choice",
+                                "choice": "allOf",
+                                "properties": [
+                                    {
+                                        "$ref": "#/definitions/positionArray",
+                                        "type": "reference",
+                                        "primaryKey": false,
+                                        "GUID": "a45f8d53-5846-11e7-b5ff-dd5e79dcd289",
+                                        "refType": "internal",
+                                        "refIdPath": [
+                                            "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
+                                        ],
+                                        "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                                        "isActivated": true
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "GUID": "a45f8d51-5846-11e7-b5ff-dd5e79dcd289",
+                                "isActivated": true
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb46d-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb470-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb471-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb473-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb475-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622568-5846-11e7-b5ff-dd5e79dcd289",
+                                "1846bf10-663c-11e7-8624-0dc6c9140dad",
+                                "6e4f2140-663c-11e7-8624-0dc6c9140dad"
+                            ]
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "description": "An array of four positions where the first equals the last",
+                        "type": "array",
+                        "name": "linearRing",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45f8d55-5846-11e7-b5ff-dd5e79dcd289",
+                        "properties": [
+                            {
+                                "type": "choice",
+                                "choice": "allOf",
+                                "properties": [
+                                    {
+                                        "$ref": "#/definitions/positionArray",
+                                        "type": "reference",
+                                        "primaryKey": false,
+                                        "GUID": "a45f8d58-5846-11e7-b5ff-dd5e79dcd289",
+                                        "refType": "internal",
+                                        "refIdPath": [
+                                            "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
+                                        ],
+                                        "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                                        "isActivated": true
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "GUID": "a45f8d56-5846-11e7-b5ff-dd5e79dcd289",
+                                "isActivated": true
+                            }
+                        ],
+                        "isActivated": true,
+                        "definitionRefs": [
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb463-5846-11e7-b5ff-dd5e79dcd289"
+                            ]
+                        ]
+                    },
+                    {
+                        "description": "An array of linear rings",
+                        "type": "array",
+                        "name": "polygon",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
+                        "properties": [
+                            {
+                                "$ref": "#/definitions/linearRing",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45fb463-5846-11e7-b5ff-dd5e79dcd289",
+                                "type": "reference",
+                                "refType": "internal",
+                                "refIdPath": [
+                                    "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45f8d55-5846-11e7-b5ff-dd5e79dcd289"
+                                ],
+                                "ref": "a45f8d55-5846-11e7-b5ff-dd5e79dcd289",
+                                "isActivated": true
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb476-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb479-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb47a-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb47c-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fdb71-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a462256f-5846-11e7-b5ff-dd5e79dcd289",
+                                "38ed34b0-663c-11e7-8624-0dc6c9140dad",
+                                "e63b07c0-664e-11e7-8624-0dc6c9140dad"
+                            ]
+                        ],
+                        "isActivated": true
+                    }
+                ],
+                "GUID": "a45eca00-5846-11e7-b5ff-dd5e79dcd289"
+            },
+            "collectionName": "geoJSON",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "id": "http://json-schema.org/geojson/geometry.json#",
+            "bucketId": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289",
+            "isActivated": true,
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289",
+            "name": "geoJSON",
+            "type": "bucket",
+            "collectionIds": [
+                "a4622560-5846-11e7-b5ff-dd5e79dcd289"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "isActivated": true
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "3fa53290-664f-11e7-8624-0dc6c9140dad": "type",
+        "3a323d30-664f-11e7-8624-0dc6c9140dad": "coordinates",
+        "fde428c0-664e-11e7-8624-0dc6c9140dad": "type",
+        "a8c0ad80-663c-11e7-8624-0dc6c9140dad": "type",
+        "9d2e0800-663c-11e7-8624-0dc6c9140dad": "coordinates",
+        "7816cac0-663c-11e7-8624-0dc6c9140dad": "type",
+        "f5ce6fa0-663b-11e7-8624-0dc6c9140dad": "type",
+        "791c9770-663b-11e7-8624-0dc6c9140dad": "type",
+        "f2f52060-5823-11e7-b5ff-dd5e79dcd289": "geoJSON JSON Schema",
+        "66ce6d30-5828-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "49bee480-5829-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "c0e50f30-5829-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289": "geoJSON",
+        "a4622560-5846-11e7-b5ff-dd5e79dcd289": "geoJSON",
+        "6c8c3100-663b-11e7-8624-0dc6c9140dad": "Point",
+        "80cc3660-663b-11e7-8624-0dc6c9140dad": "coordinates",
+        "e940ef60-663b-11e7-8624-0dc6c9140dad": "MultiPoint",
+        "fc591690-663b-11e7-8624-0dc6c9140dad": "positionArray",
+        "1846bf10-663c-11e7-8624-0dc6c9140dad": "LineString",
+        "26a9c2a0-663c-11e7-8624-0dc6c9140dad": "MultiLineString",
+        "38ed34b0-663c-11e7-8624-0dc6c9140dad": "Polygon",
+        "57391880-663c-11e7-8624-0dc6c9140dad": "MultiPolygons",
+        "6e4f2140-663c-11e7-8624-0dc6c9140dad": "lineString",
+        "e63b07c0-664e-11e7-8624-0dc6c9140dad": "coodinates",
+        "a45eca01-5846-11e7-b5ff-dd5e79dcd289": "position",
+        "a45f3f32-5846-11e7-b5ff-dd5e79dcd289": "positionArray",
+        "a45f8d50-5846-11e7-b5ff-dd5e79dcd289": "lineString",
+        "a45f8d55-5846-11e7-b5ff-dd5e79dcd289": "linearRing",
+        "a45fb461-5846-11e7-b5ff-dd5e79dcd289": "polygon"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "2bd1d211-57f3-11e7-b5ff-dd5e79dcd289"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "3b55f3a3-b000-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "2bd1d212-57f3-11e7-b5ff-dd5e79dcd289"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v3.4",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2017-06-23T09:05:58.193Z",
+    "GUID": "f6859827-3641-415a-95d5-23e46ecb11e4",
+    "lastModifTS": "2024-10-19T15:19:04.052Z",
+    "persistenceSchemaVersion": "7",
+    "description": "Re-usable external refernce model with geoJSON possibilities\nRef: https://tools.ietf.org/html/rfc7946#appendix-A",
+    "comments": "",
+    "author": "Pascal",
+    "version": "0.1",
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.8.1"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                        "x": 1077.2524752475251,
+                        "y": 1324.1832332799947,
+                        "width": 397,
+                        "height": 660
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1037.2524752475251,
+                        "y": 1284.1832332799947,
+                        "GUID": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "GUID": "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    }
+                ],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false,
+                    "hideErdRelationshipsNames": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

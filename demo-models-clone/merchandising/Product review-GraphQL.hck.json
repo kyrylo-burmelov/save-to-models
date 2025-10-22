@@ -1,0 +1,1020 @@
+{
+  "modelName": "Product review",
+  "collections": [
+    {
+      "GUID": "e824274f-abc8-459c-8080-ec0ccba4a984",
+      "collectionName": "bikeQuery",
+      "type": "object",
+      "properties": [
+        {
+          "name": "bikes",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "properties": [
+            {
+              "GUID": "093a7bd1-89ce-458e-9689-d211bb314777",
+              "type": "reference",
+              "$ref": "#model/definitions/Objects/Bike",
+              "refType": "model",
+              "ref": "cc592829-1c9c-4efa-a499-1e506945f940",
+              "refIdPath": [
+                "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+                "cc592829-1c9c-4efa-a499-1e506945f940"
+              ],
+              "isActivated": true,
+              "hackoladeMeta": {},
+              "displayName": "Bike",
+              "arrayItem": true
+            }
+          ],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "outputList",
+          "childType": "List",
+          "type": "array",
+          "GUID": "a6a6a8f7-1cb3-4ac8-8044-fd93009fe621",
+          "description": "Returns a list of available bikes. Each bike is represented by the Bike type.",
+          "error": {}
+        },
+        {
+          "GUID": "416887e7-9fe1-42ae-a0a2-cde24e4e3321",
+          "name": "bike",
+          "type": "reference",
+          "$ref": "#model/definitions/Objects/Bike",
+          "refType": "model",
+          "ref": "cc592829-1c9c-4efa-a499-1e506945f940",
+          "refIdPath": [
+            "790f784b-dbce-434c-85a7-358bc8a7cecb",
+            "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+            "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+            "cc592829-1c9c-4efa-a499-1e506945f940"
+          ],
+          "isActivated": true,
+          "hackoladeMeta": {},
+          "arguments": [
+            {
+              "GUID": "bdbcec6f-dfe4-4d7c-bf93-c60c36c6bad5",
+              "dataType": "object",
+              "name": "id",
+              "required": true,
+              "type": "ID"
+            }
+          ],
+          "refDescription": "Fetches a specific bike by its unique identifier. The id argument is required.",
+          "error": {
+            "refDescription": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e815151f-f4d8-4d1c-8b91-c2d5ae4b6ae5"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "operationType": "Query",
+      "childType": "object",
+      "bucketId": "df38b512-5bc4-43d3-aaa8-9e72e37c106d"
+    },
+    {
+      "GUID": "27f54acb-3681-4564-8e1d-465a11e43345",
+      "collectionName": "reviewQuery",
+      "type": "object",
+      "properties": [
+        {
+          "name": "reviewsByProduct",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "properties": [
+            {
+              "GUID": "5d9c0be8-c798-4e38-becb-07c6d23c89df",
+              "type": "reference",
+              "$ref": "#model/definitions/Objects/Review",
+              "refType": "model",
+              "ref": "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5",
+              "refIdPath": [
+                "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+                "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5"
+              ],
+              "isActivated": true,
+              "hackoladeMeta": {},
+              "displayName": "Review",
+              "arrayItem": true
+            }
+          ],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "outputList",
+          "childType": "List",
+          "type": "array",
+          "GUID": "c42025ba-e093-4f45-a125-2e53c0f84237",
+          "arguments": [
+            {
+              "GUID": "9a45e5cc-e1de-4190-8041-0cc96dedfbc2",
+              "name": "productId",
+              "type": "ID",
+              "required": true
+            }
+          ],
+          "description": "Retrieves all reviews associated with a specific product, identified by the required productId argument.",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ffc58123-fc03-4ef9-8894-181d245f9feb"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "operationType": "Query",
+      "childType": "object",
+      "bucketId": "df38b512-5bc4-43d3-aaa8-9e72e37c106d"
+    },
+    {
+      "GUID": "cfcae9b7-26be-4cb7-b638-66df2d0023de",
+      "collectionName": "reviewMutation",
+      "type": "object",
+      "properties": [
+        {
+          "GUID": "89523861-d237-41e4-8e8d-bb4837aee792",
+          "name": "addReview",
+          "type": "reference",
+          "$ref": "#model/definitions/Objects/Review",
+          "refType": "model",
+          "ref": "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5",
+          "refIdPath": [
+            "790f784b-dbce-434c-85a7-358bc8a7cecb",
+            "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+            "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+            "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5"
+          ],
+          "isActivated": true,
+          "hackoladeMeta": {},
+          "required": true,
+          "error": {
+            "refDescription": false
+          },
+          "arguments": [
+            {
+              "GUID": "6d6003cc-c109-4068-b5a7-11f16a12a232",
+              "dataType": "object",
+              "name": "review",
+              "type": "d3e6f121-98d8-41dc-88fa-47252751b99a"
+            }
+          ],
+          "refDescription": "Creates a new review using the input provided via the ReviewInput type. Returns the newly created Review object. This operation is critical for adding user feedback on products."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "b0722a99-dc4c-4e7f-8299-e7dc0eb680c2"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "operationType": "Mutation",
+      "childType": "object",
+      "bucketId": "df38b512-5bc4-43d3-aaa8-9e72e37c106d"
+    },
+    {
+      "GUID": "ae132a12-fcab-4f3a-8040-e139e963a41b",
+      "collectionName": "reviewSubscription",
+      "type": "object",
+      "properties": [
+        {
+          "GUID": "7e9da5a2-755d-4dfd-9e61-69eec3c8f13a",
+          "name": "reviewAdded",
+          "type": "reference",
+          "$ref": "#model/definitions/Objects/Review",
+          "refType": "model",
+          "ref": "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5",
+          "refIdPath": [
+            "790f784b-dbce-434c-85a7-358bc8a7cecb",
+            "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+            "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+            "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5"
+          ],
+          "isActivated": true,
+          "hackoladeMeta": {},
+          "required": true,
+          "error": {
+            "refDescription": false
+          },
+          "arguments": [
+            {
+              "GUID": "e54845f6-0457-4e5b-a632-ae42b8a2bdb8",
+              "dataType": "object",
+              "name": "bikeCategories",
+              "type": "List",
+              "listItems": [
+                {
+                  "GUID": "4a321b62-8931-4fe3-8cdf-c3836782f005",
+                  "dataType": "object",
+                  "required": true,
+                  "type": "a6689f9e-00b5-4cfa-b7d4-dd9c7d6134b0"
+                }
+              ]
+            }
+          ],
+          "refDescription": "Subscribes to new review events for bikes filtered by one or more specified categories. Clients receive a Review object each time a new review is added to a bike within the provided list of categories."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a4b47d63-cf82-4a21-ab61-44cd050933ac"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "operationType": "Subscription",
+      "childType": "object",
+      "bucketId": "df38b512-5bc4-43d3-aaa8-9e72e37c106d"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "NewGraph",
+      "type": "bucket",
+      "collectionIds": [
+        "e824274f-abc8-459c-8080-ec0ccba4a984",
+        "27f54acb-3681-4564-8e1d-465a11e43345",
+        "cfcae9b7-26be-4cb7-b638-66df2d0023de",
+        "ae132a12-fcab-4f3a-8040-e139e963a41b"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "schemaRootTypes": {
+        "rootQuery": "Query",
+        "rootMutation": "Mutation",
+        "rootSubscription": "Subscription",
+        "GUID": "41232e80-a1cc-4d54-a320-fca345a3ee45"
+      },
+      "GUID": "df38b512-5bc4-43d3-aaa8-9e72e37c106d",
+      "description": "This GraphQL schema models a component of an ecommerce bike platform focused on managing product reviews. It enables clients to query bike details and associated reviews, add new reviews, and receive real-time updates when reviews are added for bikes in specified categories."
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "58d48c43-e2f9-4af7-8f37-898dc8a59ff2": "Scalars",
+    "a95b62bf-2695-49b2-a210-45a444226f24": "Enums",
+    "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0": "Objects",
+    "cea81665-c04d-444d-8533-73377e3a9344": "Interfaces",
+    "196233af-6339-4cf0-973c-7e97d007d01f": "Unions",
+    "3a2a07f1-f8d1-4483-92d5-bb5aedadfc36": "Input objects",
+    "3568db82-3122-48f7-918f-c5e1505ac65b": "Directives",
+    "05a1a72c-ac24-4f9a-87bb-1aaa289d9d5c": "Product",
+    "6fe7fb2b-1dd2-40ce-94c7-fde61574a127": "id",
+    "da35024a-246a-4d85-a0b1-bf607f98241a": "name",
+    "df38b512-5bc4-43d3-aaa8-9e72e37c106d": "NewGraph",
+    "e824274f-abc8-459c-8080-ec0ccba4a984": "bikeQuery",
+    "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5": "Review",
+    "c995bf65-f4f7-471e-a10e-cd67170df3f1": "rating",
+    "75aa9c8a-fdd3-4eca-bade-4fc972d161ce": "comment",
+    "a6a6a8f7-1cb3-4ac8-8044-fd93009fe621": "bikes",
+    "416887e7-9fe1-42ae-a0a2-cde24e4e3321": "bike",
+    "27f54acb-3681-4564-8e1d-465a11e43345": "reviewQuery",
+    "c42025ba-e093-4f45-a125-2e53c0f84237": "reviewsByProduct",
+    "8e8f5205-5722-4380-bcb4-e1bab453d47f": "product",
+    "cfcae9b7-26be-4cb7-b638-66df2d0023de": "reviewMutation",
+    "89523861-d237-41e4-8e8d-bb4837aee792": "addReview",
+    "d3e6f121-98d8-41dc-88fa-47252751b99a": "ReviewInput",
+    "c51a55c0-ccbd-4ac8-b414-25ea9e5255f9": "Rating",
+    "1a9628f7-4e5d-4f40-a08d-5e29140217c7": "rating",
+    "9671519c-9006-4e44-b236-a78997e2a392": "comment",
+    "123fc305-8838-42b6-8585-2d771a377009": "productId",
+    "cc592829-1c9c-4efa-a499-1e506945f940": "Bike",
+    "105e03c4-3861-46dc-b3d1-12cf78fc4d85": "category",
+    "ae132a12-fcab-4f3a-8040-e139e963a41b": "reviewSubscription",
+    "7e9da5a2-755d-4dfd-9e61-69eec3c8f13a": "reviewAdded",
+    "a6689f9e-00b5-4cfa-b7d4-dd9c7d6134b0": "Category"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [
+      {
+        "name": "Scalars",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "name": "Rating",
+            "hackoladeMeta": {
+              "disableAdd": true,
+              "disableAppend": true
+            },
+            "isActivated": true,
+            "ignore_z_value": true,
+            "subtype": "snippetChildrenOnly",
+            "childType": "scalar",
+            "type": "string",
+            "GUID": "c51a55c0-ccbd-4ac8-b414-25ea9e5255f9",
+            "definitionRefs": [
+              [
+                "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+                "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5",
+                "c995bf65-f4f7-471e-a10e-cd67170df3f1"
+              ],
+              [
+                "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                "3a2a07f1-f8d1-4483-92d5-bb5aedadfc36",
+                "d3e6f121-98d8-41dc-88fa-47252751b99a",
+                "1a9628f7-4e5d-4f40-a08d-5e29140217c7"
+              ]
+            ],
+            "description": "A custom scalar used to represent the review rating. The exact format (e.g., numerical score, string value) is defined by the implementation, allowing for flexibility in how ratings are expressed and validated.",
+            "error": {}
+          }
+        ],
+        "childType": "type",
+        "type": "document",
+        "subtype": "scalar",
+        "GUID": "58d48c43-e2f9-4af7-8f37-898dc8a59ff2",
+        "definitionRefs": []
+      },
+      {
+        "name": "Enums",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "name": "Category",
+            "hackoladeMeta": {
+              "disableAdd": true,
+              "disableAppend": true
+            },
+            "isActivated": true,
+            "ignore_z_value": true,
+            "subtype": "snippetChildrenOnly",
+            "childType": "enum",
+            "type": "string",
+            "GUID": "a6689f9e-00b5-4cfa-b7d4-dd9c7d6134b0",
+            "definitionRefs": [
+              [
+                "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+                "cc592829-1c9c-4efa-a499-1e506945f940",
+                "105e03c4-3861-46dc-b3d1-12cf78fc4d85"
+              ]
+            ],
+            "enumValues": [
+              {
+                "GUID": "dbccdee9-2f8e-4263-977b-2fe6271cec2b",
+                "value": "BMX",
+                "typeDirectives": [
+                  {
+                    "GUID": "fa45e06e-013a-4b9d-9d8b-3a8fefbc835c",
+                    "directiveFormat": "Structured",
+                    "argumentValueFormat": "Raw",
+                    "directiveName": "@deprecated",
+                    "rawArgumentValues": "reason: \"BMX bikes are no longer supported. Consider using ROAD or MOUNTAIN categories instead.\""
+                  }
+                ],
+                "description": "Deprecated: Indicates that BMX bikes are no longer supported. Clients are advised to use either the ROAD or MOUNTAIN categories instead."
+              },
+              {
+                "GUID": "3fef8377-6523-4491-84f3-79c048bf043b",
+                "value": "ELECTRIC",
+                "description": "Represents bikes powered by an electric motor."
+              },
+              {
+                "GUID": "3c196b77-f9f9-45dd-95e4-bcc13a1d139b",
+                "value": "HYBRID",
+                "description": "Represents bikes that combine features from different bike types."
+              },
+              {
+                "GUID": "dca831ab-3aa7-4203-8833-a6169404ba2b",
+                "value": "ROAD",
+                "description": "Represents bikes designed primarily for on-road cycling."
+              },
+              {
+                "GUID": "c3f7b03a-b137-49ca-a178-8ba6a3c52da2",
+                "value": "MOUNTAIN",
+                "description": "Represents bikes designed for off-road or rugged terrain cycling."
+              }
+            ],
+            "description": "Enumerates the different categories available for bikes.\n",
+            "error": {}
+          }
+        ],
+        "childType": "type",
+        "type": "document",
+        "subtype": "enum",
+        "GUID": "a95b62bf-2695-49b2-a210-45a444226f24",
+        "definitionRefs": []
+      },
+      {
+        "name": "Objects",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "source": true
+        },
+        "isActivated": true,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "name": "Bike",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "properties": [
+              {
+                "name": "id",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "childType": "ID",
+                "type": "string",
+                "required": true,
+                "GUID": "d1df197d-836c-4c1f-a680-e4400a94793b",
+                "description": "Unique identifier inherited from Product.",
+                "error": {}
+              },
+              {
+                "name": "name",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "nullable": false,
+                "childType": "String",
+                "type": "string",
+                "GUID": "750e771f-e295-4a52-af54-6f08fbe1cf16",
+                "required": true,
+                "description": "Name of the bike inherited from Product.",
+                "error": {}
+              },
+              {
+                "GUID": "105e03c4-3861-46dc-b3d1-12cf78fc4d85",
+                "name": "category",
+                "type": "reference",
+                "$ref": "#model/definitions/Enums/Category",
+                "refType": "model",
+                "ref": "a6689f9e-00b5-4cfa-b7d4-dd9c7d6134b0",
+                "refIdPath": [
+                  "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                  "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                  "a95b62bf-2695-49b2-a210-45a444226f24",
+                  "a6689f9e-00b5-4cfa-b7d4-dd9c7d6134b0"
+                ],
+                "isActivated": true,
+                "hackoladeMeta": {},
+                "required": true,
+                "error": {
+                  "refDescription": false
+                },
+                "refDescription": "The category of the bike, as defined by the Category enum."
+              },
+              {
+                "name": "reviews",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "properties": [
+                  {
+                    "GUID": "5ee240b0-efeb-487b-8e8c-961ac1a67775",
+                    "type": "reference",
+                    "$ref": "#model/definitions/Objects/Review",
+                    "refType": "model",
+                    "ref": "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5",
+                    "refIdPath": [
+                      "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                      "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                      "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+                      "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5"
+                    ],
+                    "isActivated": true,
+                    "hackoladeMeta": {},
+                    "displayName": "Review",
+                    "arrayItem": true
+                  }
+                ],
+                "primaryKey": false,
+                "additionalItems": true,
+                "uniqueItems": false,
+                "subtype": "outputList",
+                "childType": "List",
+                "type": "array",
+                "GUID": "042dd4e3-b15a-4d6b-9292-01e5496a50c7",
+                "arguments": [
+                  {
+                    "GUID": "534102d4-e338-4e80-adee-dffbbe9eabe5",
+                    "name": "rating",
+                    "type": "c51a55c0-ccbd-4ac8-b414-25ea9e5255f9"
+                  }
+                ],
+                "description": "Retrieves reviews for this bike. An optional rating argument allows clients to filter reviews based on a specific rating value.",
+                "error": {}
+              }
+            ],
+            "ignore_z_value": true,
+            "additionalProperties": false,
+            "childType": "object",
+            "type": "document",
+            "GUID": "cc592829-1c9c-4efa-a499-1e506945f940",
+            "implementsInterfaces": [
+              {
+                "GUID": "bdaa6c4b-1148-470a-bd81-bdab838f2677",
+                "interface": "05a1a72c-ac24-4f9a-87bb-1aaa289d9d5c"
+              }
+            ],
+            "definitionRefs": [
+              [
+                "e824274f-abc8-459c-8080-ec0ccba4a984",
+                "a6a6a8f7-1cb3-4ac8-8044-fd93009fe621",
+                "093a7bd1-89ce-458e-9689-d211bb314777"
+              ],
+              [
+                "e824274f-abc8-459c-8080-ec0ccba4a984",
+                "416887e7-9fe1-42ae-a0a2-cde24e4e3321"
+              ]
+            ],
+            "description": "Represents a bike in the ecommerce platform. Inherits common product fields from the Product interface.",
+            "error": {}
+          },
+          {
+            "name": "Review",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "properties": [
+              {
+                "GUID": "c995bf65-f4f7-471e-a10e-cd67170df3f1",
+                "name": "rating",
+                "type": "reference",
+                "$ref": "#model/definitions/Scalars/Rating",
+                "refType": "model",
+                "ref": "c51a55c0-ccbd-4ac8-b414-25ea9e5255f9",
+                "refIdPath": [
+                  "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                  "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                  "58d48c43-e2f9-4af7-8f37-898dc8a59ff2",
+                  "c51a55c0-ccbd-4ac8-b414-25ea9e5255f9"
+                ],
+                "isActivated": true,
+                "hackoladeMeta": {},
+                "refDescription": "The rating provided in the review.",
+                "error": {
+                  "refDescription": false
+                }
+              },
+              {
+                "name": "comment",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "nullable": false,
+                "childType": "String",
+                "type": "string",
+                "GUID": "75aa9c8a-fdd3-4eca-bade-4fc972d161ce",
+                "description": "A textual comment offering additional details or feedback.",
+                "error": {}
+              },
+              {
+                "GUID": "8e8f5205-5722-4380-bcb4-e1bab453d47f",
+                "name": "product",
+                "type": "reference",
+                "$ref": "#model/definitions/Interfaces/Product",
+                "refType": "model",
+                "ref": "05a1a72c-ac24-4f9a-87bb-1aaa289d9d5c",
+                "refIdPath": [
+                  "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                  "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                  "cea81665-c04d-444d-8533-73377e3a9344",
+                  "05a1a72c-ac24-4f9a-87bb-1aaa289d9d5c"
+                ],
+                "isActivated": true,
+                "hackoladeMeta": {},
+                "refDescription": "A reference to the product (such as a Bike) that the review pertains to, establishing a connection back to the reviewed item.",
+                "error": {
+                  "refDescription": false
+                }
+              }
+            ],
+            "ignore_z_value": true,
+            "additionalProperties": false,
+            "childType": "object",
+            "type": "document",
+            "GUID": "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5",
+            "definitionRefs": [
+              [
+                "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+                "cc592829-1c9c-4efa-a499-1e506945f940",
+                "042dd4e3-b15a-4d6b-9292-01e5496a50c7",
+                "5ee240b0-efeb-487b-8e8c-961ac1a67775"
+              ],
+              [
+                "27f54acb-3681-4564-8e1d-465a11e43345",
+                "c42025ba-e093-4f45-a125-2e53c0f84237",
+                "5d9c0be8-c798-4e38-becb-07c6d23c89df"
+              ],
+              [
+                "cfcae9b7-26be-4cb7-b638-66df2d0023de",
+                "89523861-d237-41e4-8e8d-bb4837aee792"
+              ],
+              [
+                "ae132a12-fcab-4f3a-8040-e139e963a41b",
+                "7e9da5a2-755d-4dfd-9e61-69eec3c8f13a"
+              ]
+            ],
+            "description": "Represents a customer review for a product.",
+            "error": {}
+          }
+        ],
+        "childType": "type",
+        "type": "document",
+        "subtype": "object",
+        "GUID": "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+        "definitionRefs": []
+      },
+      {
+        "name": "Interfaces",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "name": "Product",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "properties": [
+              {
+                "name": "id",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "childType": "ID",
+                "type": "string",
+                "required": true,
+                "GUID": "6fe7fb2b-1dd2-40ce-94c7-fde61574a127",
+                "description": "A unique identifier for the product.",
+                "error": {}
+              },
+              {
+                "name": "name",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "nullable": false,
+                "childType": "String",
+                "type": "string",
+                "GUID": "da35024a-246a-4d85-a0b1-bf607f98241a",
+                "required": true,
+                "description": "The name of the product.",
+                "error": {}
+              }
+            ],
+            "ignore_z_value": true,
+            "additionalProperties": false,
+            "childType": "interface",
+            "type": "document",
+            "GUID": "05a1a72c-ac24-4f9a-87bb-1aaa289d9d5c",
+            "definitionRefs": [
+              [
+                "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                "f8d75c5b-3aa3-4766-879f-7f4ecae2bbe0",
+                "a9aa2a65-2e77-40a6-a293-cefd9bf04ef5",
+                "8e8f5205-5722-4380-bcb4-e1bab453d47f"
+              ]
+            ],
+            "description": "An abstract type that defines the common properties of all products in the system.",
+            "error": {}
+          }
+        ],
+        "childType": "type",
+        "type": "document",
+        "subtype": "interface",
+        "GUID": "cea81665-c04d-444d-8533-73377e3a9344",
+        "definitionRefs": []
+      },
+      {
+        "name": "Unions",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "type",
+        "type": "document",
+        "subtype": "union",
+        "GUID": "196233af-6339-4cf0-973c-7e97d007d01f",
+        "definitionRefs": []
+      },
+      {
+        "name": "Input objects",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "name": "ReviewInput",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "properties": [
+              {
+                "name": "productId",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "childType": "ID",
+                "type": "string",
+                "required": true,
+                "GUID": "123fc305-8838-42b6-8585-2d771a377009",
+                "description": "The unique identifier of the product (bike) being reviewed.",
+                "error": {}
+              },
+              {
+                "GUID": "1a9628f7-4e5d-4f40-a08d-5e29140217c7",
+                "name": "rating",
+                "type": "reference",
+                "$ref": "#model/definitions/Scalars/Rating",
+                "refType": "model",
+                "ref": "c51a55c0-ccbd-4ac8-b414-25ea9e5255f9",
+                "refIdPath": [
+                  "790f784b-dbce-434c-85a7-358bc8a7cecb",
+                  "3e675a9c-2f5e-4dc5-afe0-9e104e56c120",
+                  "58d48c43-e2f9-4af7-8f37-898dc8a59ff2",
+                  "c51a55c0-ccbd-4ac8-b414-25ea9e5255f9"
+                ],
+                "isActivated": true,
+                "hackoladeMeta": {},
+                "required": true,
+                "error": {
+                  "refDescription": false
+                },
+                "refDescription": "The rating assigned to the product, using the custom Rating scalar."
+              },
+              {
+                "name": "comment",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "nullable": false,
+                "childType": "String",
+                "type": "string",
+                "GUID": "9671519c-9006-4e44-b236-a78997e2a392",
+                "required": false,
+                "description": "An optional textual comment providing additional feedback on the product.",
+                "error": {}
+              }
+            ],
+            "ignore_z_value": true,
+            "additionalProperties": false,
+            "childType": "input",
+            "type": "document",
+            "GUID": "d3e6f121-98d8-41dc-88fa-47252751b99a",
+            "description": "Input type used to add a new review.",
+            "error": {}
+          }
+        ],
+        "childType": "type",
+        "type": "document",
+        "subtype": "input",
+        "GUID": "3a2a07f1-f8d1-4483-92d5-bb5aedadfc36",
+        "definitionRefs": []
+      },
+      {
+        "name": "Directives",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "type",
+        "type": "document",
+        "subtype": "directive",
+        "GUID": "3568db82-3122-48f7-918f-c5e1505ac65b",
+        "definitionRefs": []
+      }
+    ],
+    "GUID": "3e675a9c-2f5e-4dc5-afe0-9e104e56c120"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "55739479-7098-40db-a5e4-213a0d58e5ca"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "eb118607-e7c5-4b14-aea7-66e111f554f4"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "bc24e39f-016a-407e-b070-745d8755eac0",
+      "name": "Disclaimer",
+      "type": "annotation",
+      "disableInitialFocus": true,
+      "value": "This GraphQL Review Management Model is intended for illustration purposes only and provides a simplified representation of a review management system within an ecommerce bike platform.\n\nWhile it captures essential entities, operations, and relationships through GraphQL concepts (queries, mutations, subscriptions, interfaces, etc.), it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation."
+    }
+  ],
+  "dbVendor": "GraphQL",
+  "version": "1.0.0",
+  "appTarget": "GraphQL",
+  "creationTS": "2025-02-19T07:16:01.927Z",
+  "GUID": "790f784b-dbce-434c-85a7-358bc8a7cecb",
+  "isLineageEnabled": false,
+  "hackoladeMeta": {
+    "validationErrors": {
+      "description": false
+    }
+  },
+  "lastModifTS": "2025-02-28T12:20:30.113Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "GraphQL",
+    "pluginVersion": "0.2.2",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.2"
+  },
+  "description": "This GraphQL Review Management Model is intended for illustration purposes only and provides a simplified representation of a review management system within an ecommerce bike platform.\n\nWhile it captures essential entities, operations, and relationships through GraphQL concepts (queries, mutations, subscriptions, interfaces, etc.), it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation.",
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "e824274f-abc8-459c-8080-ec0ccba4a984",
+            "x": 1080,
+            "y": 891,
+            "width": 434,
+            "height": 441,
+            "color": {}
+          },
+          {
+            "GUID": "27f54acb-3681-4564-8e1d-465a11e43345",
+            "x": 1529,
+            "y": 911,
+            "width": 339,
+            "height": 177,
+            "color": {}
+          },
+          {
+            "GUID": "cfcae9b7-26be-4cb7-b638-66df2d0023de",
+            "x": 1552,
+            "y": 1115,
+            "width": 387,
+            "height": 164,
+            "color": {}
+          },
+          {
+            "GUID": "ae132a12-fcab-4f3a-8040-e139e963a41b",
+            "x": 1290,
+            "y": 1352,
+            "width": 394,
+            "height": 143,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": [],
+          "displayOptions": {
+            "dndHandles": false,
+            "hideErdRelationshipsNames": false
+          }
+        },
+        "buckets": [
+          {
+            "x": 1040,
+            "y": 851,
+            "GUID": "df38b512-5bc4-43d3-aaa8-9e72e37c106d"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "bc24e39f-016a-407e-b070-745d8755eac0",
+            "x": 1039.7844748858447,
+            "y": 639.3269406392694,
+            "height": 201,
+            "width": 392,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "e824274f-abc8-459c-8080-ec0ccba4a984"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "27f54acb-3681-4564-8e1d-465a11e43345"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "cfcae9b7-26be-4cb7-b638-66df2d0023de"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "ae132a12-fcab-4f3a-8040-e139e963a41b"
+          }
+        ],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false,
+          "hideErdRelationshipsNames": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

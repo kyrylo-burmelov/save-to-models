@@ -1,0 +1,1690 @@
+{
+  "modelName": "Product search",
+  "collections": [
+    {
+      "GUID": "3118f7dc-8b13-4c1d-ab91-35396809b06b",
+      "collectionName": "Tag",
+      "type": "object",
+      "properties": [
+        {
+          "name": "id",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "38eae1ee-e451-4e29-911a-4716875a2cc3",
+          "code": "id",
+          "description": "A unique identifier for the tag. This property is used to distinctly reference and manage each tag within the system.",
+          "error": {}
+        },
+        {
+          "name": "name",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "71c40dd6-8cb6-4e46-be2d-486d2c89ead3",
+          "code": "name",
+          "description": "A human-readable name that describes the tag (e.g., \"Electric\", \"Lightweight\"). It serves as a keyword for filtering and search purposes.",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "85d4e465-7477-4c15-a63f-b64bbfc3549b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "hackoladeMeta": {
+        "namingConvention": "code"
+      },
+      "code": "tag",
+      "description": "The tag node represents a descriptor or keyword that can be associated with products. Tags help in categorizing product features and enhancing the searchability of products on the ecommerce platform."
+    },
+    {
+      "GUID": "cfec8827-bc74-44f1-b49f-9fb9a5203d53",
+      "type": "reference",
+      "$ref": "#external/definitions/Category",
+      "refType": "polyglot",
+      "ref": "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+      "refIdPath": [
+        "0b635137-5708-4b72-8a75-bb24fc5d914b",
+        "9ee1d1b4-bf53-4d27-8fcd-883f6a1bb3cd",
+        "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f"
+      ],
+      "isActivated": true,
+      "collectionName": "Category",
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "de5797ee-d95d-4eb5-aed5-0540d6606b57"
+      },
+      "description": "Classifies products into distinct groups based on shared characteristics or purposes, such as **Bikes**, **Accessories**, or **Apparel**. This categorization aids customers in navigating the product offerings and enhances the shopping experience by allowing for easier product discovery and filtering.",
+      "additionalProperties": false,
+      "error": {
+        "refPath": false
+      },
+      "hackoladeMeta": {
+        "namingConvention": "code"
+      },
+      "code": "category",
+      "refDescription": "The category node organizes products into logical groups based on type or usage. It aids users in navigating the product catalog and supports filtering by clearly defined groupings.",
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "97db87db-8fbe-41bb-8850-34193c9ee07e",
+            "description": "The name of the category (e.g., \"Mountain Bikes\", \"Road Bikes\"). This is used for grouping similar products together.",
+            "error": {}
+          }
+        ]
+      }
+    },
+    {
+      "GUID": "2925ae78-e002-444f-a47f-bffa062f378d",
+      "type": "reference",
+      "$ref": "#external/definitions/Product",
+      "refType": "polyglot",
+      "ref": "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b",
+      "refIdPath": [
+        "0b635137-5708-4b72-8a75-bb24fc5d914b",
+        "9ee1d1b4-bf53-4d27-8fcd-883f6a1bb3cd",
+        "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b"
+      ],
+      "isActivated": true,
+      "collectionName": "Product",
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "4c29c2bb-f070-41f1-a4b9-f2619cf4be40"
+      },
+      "description": "Represents the items available for sale in the e-commerce platform. It encompasses essential details about each product, including its **name**, **description**, **pricing**, and associations with **categories** and **suppliers**. This entity is crucial for managing inventory and facilitating sales transactions.",
+      "additionalProperties": false,
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "6b6386de-f9dc-46d9-9fc2-16d3c2c58340",
+            "hackoladeMeta": {},
+            "error": {}
+          },
+          {
+            "GUID": "c5f20bbd-e577-4a70-b532-13e319e3ef18",
+            "hackoladeMeta": {},
+            "error": {},
+            "description": "The product's name, providing a descriptive title for display and search."
+          },
+          {
+            "GUID": "4d678e93-e8cb-434c-9789-0d411b30a433",
+            "hackoladeMeta": {},
+            "error": {},
+            "description": "A property that redundantly stores the category name. While the belongs to relationship links the product to its category, this property can serve as a quick reference for indexing or search."
+          },
+          {
+            "GUID": "a898b734-3304-48c1-b45d-98c1f7cc3808",
+            "hackoladeMeta": {},
+            "error": {},
+            "description": "A code that references the supplier. It provides an easy way to associate a product with its supplier even outside of relationship queries."
+          },
+          {
+            "GUID": "6ef810f9-c366-426b-9aa7-97f54138905f",
+            "hackoladeMeta": {},
+            "error": {},
+            "description": "A detailed description of the product’s features, specifications, and benefits."
+          },
+          {
+            "name": "Current stock",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "primaryKey": false,
+            "unique": false,
+            "childType": "number",
+            "type": "numeric",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "compositeNodeKey": false,
+            "error": {},
+            "GUID": "e43384c8-5d75-4f67-9d32-75cfcbf69185",
+            "mode": "integer",
+            "code": "currentStock",
+            "minimum": 0,
+            "description": "An integer value representing the current inventory count of the product."
+          },
+          {
+            "name": "Current price",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "primaryKey": false,
+            "unique": false,
+            "childType": "number",
+            "type": "numeric",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "compositeNodeKey": false,
+            "error": {},
+            "code": "currentPrice",
+            "GUID": "b12d61af-cad8-47dc-9693-7af7ac1e7cac",
+            "mode": "float",
+            "minimum": 0,
+            "description": "The current selling price of the product, represented as a numeric value."
+          },
+          {
+            "GUID": "dc12c121-c011-42fd-865f-1a0fcd657fc0",
+            "referenceDiffDeleted": true,
+            "hackoladeMeta": {},
+            "error": {}
+          },
+          {
+            "GUID": "097524b6-a4e7-4091-bf57-be02308a2816",
+            "referenceDiffDeleted": true,
+            "hackoladeMeta": {},
+            "error": {}
+          }
+        ]
+      },
+      "error": {
+        "refPath": false
+      },
+      "hackoladeMeta": {
+        "namingConvention": "code"
+      },
+      "code": "product",
+      "refDescription": "The product node is the central entity of the ecommerce platform, encapsulating all key information about an individual product. It includes identification, descriptive, and transactional data that supports inventory management and customer-facing search functionalities."
+    },
+    {
+      "GUID": "c5ce3066-69e7-459f-a81b-68dd21e98ce2",
+      "type": "reference",
+      "$ref": "#external/definitions/Supplier",
+      "refType": "polyglot",
+      "ref": "1eec2f02-271b-45e3-b874-b47ac00ca585",
+      "refIdPath": [
+        "0b635137-5708-4b72-8a75-bb24fc5d914b",
+        "9ee1d1b4-bf53-4d27-8fcd-883f6a1bb3cd",
+        "1eec2f02-271b-45e3-b874-b47ac00ca585"
+      ],
+      "isActivated": true,
+      "collectionName": "Supplier",
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "a5f0b585-61d0-4143-bb30-3bf6081fc398"
+      },
+      "description": "Represents the vendors or manufacturers that provide products. Contains essential information about each supplier, including their **contact details** and the **products** they supply. This entity is important for managing supplier relationships, tracking product sourcing, and ensuring timely inventory replenishment.",
+      "additionalProperties": false,
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "d138a990-ba4d-4cf7-b998-b57f5d576902",
+            "description": "A unique identifier for the supplier, used to distinctly reference each supplier in the system.",
+            "error": {}
+          },
+          {
+            "GUID": "8ee85d26-2d69-49d4-82b9-1d2b12c7966d",
+            "description": "The official name of the supplier’s company.",
+            "error": {}
+          },
+          {
+            "GUID": "ba154f30-0f46-41b7-bbd0-b5e106f2cf32",
+            "referenceDiffDeleted": true,
+            "hackoladeMeta": {},
+            "error": {}
+          },
+          {
+            "GUID": "9cc886b2-1216-4d95-bef9-d48290b0e804",
+            "referenceDiffDeleted": true,
+            "hackoladeMeta": {},
+            "error": {}
+          },
+          {
+            "GUID": "3a79b59c-1d60-4c86-a484-a20deb6fcd95",
+            "referenceDiffDeleted": true,
+            "hackoladeMeta": {},
+            "error": {}
+          },
+          {
+            "GUID": "b9d5da76-8812-4308-8bf6-0ac6a34c938f",
+            "referenceDiffDeleted": true,
+            "hackoladeMeta": {},
+            "error": {}
+          }
+        ]
+      },
+      "hackoladeMeta": {
+        "namingConvention": "code"
+      },
+      "code": "supplier",
+      "constraint": [],
+      "error": {
+        "refPath": false
+      },
+      "refDescription": "The supplier node represents vendors or companies that provide products. It captures essential information required for managing supply chains, vendor relationships, and ensuring the reliability of product sourcing."
+    }
+  ],
+  "buckets": [
+    {
+      "GUID": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "name": "Product management",
+      "type": "reference",
+      "$ref": "#external/definitions/Product management",
+      "refType": "polyglot",
+      "ref": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+      "refIdPath": [
+        "0b635137-5708-4b72-8a75-bb24fc5d914b",
+        "9ee1d1b4-bf53-4d27-8fcd-883f6a1bb3cd",
+        "4631c9fb-41fb-4647-a18e-f22367a656c5"
+      ],
+      "isActivated": true,
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "collectionIds": [
+        "cfec8827-bc74-44f1-b49f-9fb9a5203d53",
+        "2925ae78-e002-444f-a47f-bffa062f378d",
+        "c5ce3066-69e7-459f-a81b-68dd21e98ce2",
+        "3118f7dc-8b13-4c1d-ab91-35396809b06b"
+      ],
+      "description": "Serves as a comprehensive framework for managing all aspects of products within the e-commerce system. This entity encompasses various components that facilitate the organization, tracking, and sale of products, ensuring a streamlined process from supplier management to customer sales.",
+      "hackoladeMeta": {
+        "namingConvention": "code"
+      },
+      "code": "productManagement",
+      "refDescription": "This Neo4j model is a lean demonstration designed specifically to enhance the search functionality of an ecommerce bike platform. It captures essential metadata and relationships that optimize product discovery, filtering, and recommendation—all critical for delivering a robust search experience."
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "name": "is similar to",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "2925ae78-e002-444f-a47f-bffa062f378d",
+      "childCollection": "2925ae78-e002-444f-a47f-bffa062f378d",
+      "level": "entity",
+      "GUID": "ae7e3dcd-e462-48aa-9337-2eae2a08222c",
+      "lineSize": 2,
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "description": "This relationship connects products that share similar attributes. It is a critical component for recommendation engines, allowing the system to suggest alternative products that may appeal to a customer based on similar characteristics.",
+      "biDirectional": true,
+      "properties": [
+        {
+          "name": "similarityScore",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "description": "A numeric value that quantifies how similar two products are. Higher scores indicate a greater degree of similarity.",
+          "GUID": "911be4a4-d840-4187-91e1-71e1bb905897",
+          "mode": "integer",
+          "code": "similarityscore",
+          "minimum": 0,
+          "required": true,
+          "error": {}
+        },
+        {
+          "name": "reason",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "58975dc5-e365-48e6-b7b4-37c028fcac42",
+          "description": "A text field that explains the rationale behind the similarity (e.g., shared design, features, or price range).",
+          "code": "reason",
+          "error": {}
+        },
+        {
+          "name": "lastEvaluated",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "childType": "temporal",
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "description": "A date indicating when the similarity score was last updated. This helps ensure that recommendations remain current.",
+          "GUID": "86b80d10-c242-479d-8e02-04bc5ce1de96",
+          "mode": "date",
+          "code": "lastevaluated",
+          "required": true,
+          "error": {}
+        }
+      ]
+    },
+    {
+      "name": "has tag",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "2925ae78-e002-444f-a47f-bffa062f378d",
+      "childCollection": "3118f7dc-8b13-4c1d-ab91-35396809b06b",
+      "level": "entity",
+      "GUID": "bd873d64-4014-4682-875b-9dcc01cdaf3c",
+      "lineSize": 2,
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "description": "The has tag relationship links products with descriptive tags. This connection enhances the search capabilities of the platform by allowing queries to filter products based on specific keywords or features, with the relevance score aiding in prioritization.",
+      "properties": [
+        {
+          "name": "relevance",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "574f08b4-6fb7-42e5-be86-7feb34a37133",
+          "mode": "integer",
+          "description": "A numeric score (e.g., 0–100) that measures the relevance of the tag to the product. It helps in ranking and filtering during searches.",
+          "code": "relevance",
+          "minimum": 0,
+          "required": true,
+          "error": {}
+        },
+        {
+          "name": "addedDate",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "childType": "temporal",
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "c83c6314-9fdb-46f9-8dde-0b6c1c251b3a",
+          "mode": "date",
+          "description": "The date when the tag was associated with the product, providing a timestamp for when the product's metadata was updated.",
+          "code": "addeddate",
+          "required": true,
+          "error": {}
+        }
+      ]
+    },
+    {
+      "name": "belongs to",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "2925ae78-e002-444f-a47f-bffa062f378d",
+      "childCollection": "cfec8827-bc74-44f1-b49f-9fb9a5203d53",
+      "level": "entity",
+      "GUID": "85e55e86-cb0c-4165-9821-0c4d65b62666",
+      "lineSize": 2,
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "description": "The belongs to relationship assigns a product to a specific category. It plays a crucial role in organizing products and facilitating efficient browsing and filtering by ensuring each product is appropriately grouped.",
+      "properties": [
+        {
+          "name": "priority",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "77c0f7f2-bedf-4277-9c25-0af89f4910d1",
+          "mode": "integer",
+          "description": "A numeric value indicating the importance or order of the product within the category. This can be useful when a product belongs to multiple categories, designating a primary association.",
+          "code": "priority",
+          "minimum": 0,
+          "error": {}
+        },
+        {
+          "name": "assignedDate",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "childType": "temporal",
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "857b93f9-a850-47da-95fc-47168eea03e9",
+          "mode": "date",
+          "description": "The date on which the product was assigned to the category, enabling historical tracking and auditability.",
+          "code": "assigneddate",
+          "required": true,
+          "error": {}
+        }
+      ]
+    },
+    {
+      "name": "issued by",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "2925ae78-e002-444f-a47f-bffa062f378d",
+      "childCollection": "c5ce3066-69e7-459f-a81b-68dd21e98ce2",
+      "level": "entity",
+      "GUID": "366c825e-bbb3-41d4-acc0-fdba6a3b4bf9",
+      "lineSize": 2,
+      "bucketId": "7a9fd452-6da8-45b9-8a5a-e15d116b1840",
+      "description": "The issued by relationship connects a product to its supplier. It encapsulates key contractual and performance-related data, providing insights into supply chain efficiency and supplier reliability.",
+      "properties": [
+        {
+          "name": "contractStart",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "childType": "temporal",
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "description": "The date when the supply contract with the supplier began. This is important for tracking contract timelines and managing supply agreements.",
+          "GUID": "17b3f2e8-ac51-4efa-9d22-df5a7f3266c3",
+          "mode": "date",
+          "code": "contractstart",
+          "required": true,
+          "error": {}
+        },
+        {
+          "name": "leadTime",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "childType": "temporal",
+          "type": "string",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "d7f3de20-ea47-4a1d-bd19-9ba928e9d8aa",
+          "mode": "duration",
+          "description": "The duration (using ISO-8601 format) representing the typical delivery lead time from the supplier. This is vital for inventory planning and logistics.",
+          "code": "leadtime",
+          "error": {}
+        },
+        {
+          "name": "supplierRating",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "compositeNodeKey"
+          ],
+          "GUID": "7e399559-31f4-452e-99fd-3af27e60d215",
+          "mode": "integer",
+          "description": "A numeric rating that reflects the supplier's performance or reliability. This score can be used to evaluate supplier quality and make informed sourcing decisions.",
+          "code": "supplierrating",
+          "minimum": 0,
+          "error": {}
+        }
+      ]
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "3118f7dc-8b13-4c1d-ab91-35396809b06b": "Tag",
+    "38eae1ee-e451-4e29-911a-4716875a2cc3": "id",
+    "71c40dd6-8cb6-4e46-be2d-486d2c89ead3": "name",
+    "cfec8827-bc74-44f1-b49f-9fb9a5203d53": "Category",
+    "2925ae78-e002-444f-a47f-bffa062f378d": "Product",
+    "7a9fd452-6da8-45b9-8a5a-e15d116b1840": "Product management",
+    "1ac37494-f1ff-4c05-9b04-71626b9da7e6": "Current price",
+    "e43384c8-5d75-4f67-9d32-75cfcbf69185": "Current stock",
+    "c5ce3066-69e7-459f-a81b-68dd21e98ce2": "Supplier",
+    "b2d37af6-3cf9-4b92-8c47-fa830427b859": "Current price",
+    "c0e90510-7595-40e0-98a7-0af8ef06ef78": "Current price",
+    "ae7e3dcd-e462-48aa-9337-2eae2a08222c": "is similar to",
+    "bd873d64-4014-4682-875b-9dcc01cdaf3c": "has tag",
+    "574f08b4-6fb7-42e5-be86-7feb34a37133": "relevance",
+    "c83c6314-9fdb-46f9-8dde-0b6c1c251b3a": "addedDate",
+    "58975dc5-e365-48e6-b7b4-37c028fcac42": "reason",
+    "86b80d10-c242-479d-8e02-04bc5ce1de96": "lastEvaluated",
+    "911be4a4-d840-4187-91e1-71e1bb905897": "similarityScore",
+    "85e55e86-cb0c-4165-9821-0c4d65b62666": "belongs to",
+    "366c825e-bbb3-41d4-acc0-fdba6a3b4bf9": "issued by",
+    "17b3f2e8-ac51-4efa-9d22-df5a7f3266c3": "contractStart",
+    "d7f3de20-ea47-4a1d-bd19-9ba928e9d8aa": "leadTime",
+    "7e399559-31f4-452e-99fd-3af27e60d215": "supplierRating",
+    "77c0f7f2-bedf-4277-9c25-0af89f4910d1": "priority",
+    "857b93f9-a850-47da-95fc-47168eea03e9": "assignedDate",
+    "b12d61af-cad8-47dc-9693-7af7ac1e7cac": "Current price"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "cf9a152f-8738-4e3f-b90f-d5d1c93a19c5"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "primaryKey": false,
+        "properties": [
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Currency",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "GUID": "ea782112-8bc7-4902-98a0-7dc8ea8207e5",
+            "enum": [
+              "USD",
+              "EUR",
+              "JPY",
+              "GBP",
+              "AUD",
+              "CAD",
+              "CHF",
+              "CNY",
+              "SEK",
+              "NZD",
+              "INR",
+              "MXN",
+              "SGD",
+              "HKD"
+            ],
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "currency",
+            "error": {}
+          },
+          {
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "primaryKey": false,
+            "unique": false,
+            "childType": "number",
+            "type": "numeric",
+            "compositeNodeKey": false,
+            "name": "Amount",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "GUID": "bfcda36f-8a7b-421b-ba98-8a9b313affc6",
+            "mode": "integer",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "amount",
+            "error": {}
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "childType": "temporal",
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Effective date",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "GUID": "2c86253b-1d80-4798-ad2b-3bef74fa239c",
+            "mode": "date",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "effectiveDate",
+            "error": {}
+          }
+        ],
+        "additionalProperties": false,
+        "unique": false,
+        "childType": "map",
+        "type": "document",
+        "compositeNodeKey": false,
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "GUID": "1002c3a4-64cd-46ec-b4ff-e330099caa23",
+        "arrayItem": true,
+        "required": false,
+        "displayName": "Price",
+        "compositeKey": [
+          "compositeNodeKey"
+        ],
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Product management/Product/properties/Prices/properties/0",
+        "name": "Price",
+        "fileType": "hackoladeSchema",
+        "definitionEntityType": "field",
+        "definitionRefs": [],
+        "code": "price",
+        "error": {}
+      },
+      {
+        "GUID": "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+        "collectionName": "Category",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": true,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Name",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "GUID": "97db87db-8fbe-41bb-8850-34193c9ee07e",
+            "description": " serves as the primary identifier for grouping related products. Examples include **Bikes**, **Accessories**, and **Apparel**.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "name"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Description",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "b0919d69-0355-438b-b7aa-759e6fe9632c",
+            "description": "A brief overview of the category, providing additional context and details about the types of products included. This attribute can help customers understand the category's focus and offerings.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "description"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "eef2d743-9c10-4efd-a735-4905de0029bf"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "bucketId": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+        "description": "Classifies products into distinct groups based on shared characteristics or purposes, such as **Bikes**, **Accessories**, or **Apparel**. This categorization aids customers in navigating the product offerings and enhances the shopping experience by allowing for easier product discovery and filtering.",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "code": "category",
+        "definitionEntityType": "collection",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "cfec8827-bc74-44f1-b49f-9fb9a5203d53"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "fieldRelativePath": "#/Product management/Category"
+      },
+      {
+        "GUID": "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b",
+        "collectionName": "Product",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": true,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "SKU",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "GUID": "6b6386de-f9dc-46d9-9fc2-16d3c2c58340",
+            "description": "A unique identifier assigned to each product for inventory management and tracking purposes. It helps differentiate products and streamline the ordering process.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "sku"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Name",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "c5f20bbd-e577-4a70-b532-13e319e3ef18",
+            "description": "The name of the product or service as displayed to the customer.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "name"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Category name",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "4d678e93-e8cb-434c-9789-0d411b30a433",
+            "description": "References the category or product group to which this item belongs. This links to a separate Category entity that stores hierarchical or descriptive data about product categories.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "categoryName"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Supplier code",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "a898b734-3304-48c1-b45d-98c1f7cc3808",
+            "description": "References the unique code of the supplier who provides or manufactures the product. Ties to the Supplier entity, facilitating supplier relationship management and inventory tracking.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "supplierCode"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Description",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "6ef810f9-c366-426b-9aa7-97f54138905f",
+            "description": "A longer text providing additional details about the product. May be omitted if product details are referenced externally.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "description"
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "unique": false,
+                "type": "string",
+                "compositeNodeKey": false,
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "required": false,
+                "GUID": "eb09feb9-6460-4193-b564-2d31c3ca40b4",
+                "arrayItem": true,
+                "displayName": "url",
+                "description": "The direct link or path to the image file. Ensures the platform can retrieve and display product images across various channels.",
+                "compositeKey": [
+                  "compositeNodeKey"
+                ]
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "unique": false,
+            "childType": "list",
+            "type": "array",
+            "compositeNodeKey": false,
+            "name": "Images",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "dc12c121-c011-42fd-865f-1a0fcd657fc0",
+            "description": "An array of URLs representing images of the product for display on the website. These images enhance the customer experience by providing visual context and details about the product.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "images"
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeNodeKey": false,
+                    "name": "Currency",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": true,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "GUID": "ea782112-8bc7-4902-98a0-7dc8ea8207e5",
+                    "enum": [
+                      "USD",
+                      "EUR",
+                      "JPY",
+                      "GBP",
+                      "AUD",
+                      "CAD",
+                      "CHF",
+                      "CNY",
+                      "SEK",
+                      "NZD",
+                      "INR",
+                      "MXN",
+                      "SGD",
+                      "HKD"
+                    ],
+                    "description": "Indicates the currency in which the product price is set.",
+                    "compositeKey": [
+                      "compositeNodeKey"
+                    ],
+                    "code": "currency"
+                  },
+                  {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeNodeKey": false,
+                    "name": "Amount",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "bfcda36f-8a7b-421b-ba98-8a9b313affc6",
+                    "mode": "integer",
+                    "description": "The numeric value of the product’s price in the specified currency.",
+                    "compositeKey": [
+                      "compositeNodeKey"
+                    ],
+                    "code": "amount"
+                  },
+                  {
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "temporal",
+                    "type": "string",
+                    "compositeNodeKey": false,
+                    "name": "Effective date",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "2c86253b-1d80-4798-ad2b-3bef74fa239c",
+                    "description": "The date or date/time from which the specified price becomes valid. Enables time-based pricing and helps maintain a historical record of price changes.",
+                    "mode": "date",
+                    "compositeKey": [
+                      "compositeNodeKey"
+                    ],
+                    "code": "effectiveDate"
+                  }
+                ],
+                "additionalProperties": false,
+                "unique": false,
+                "childType": "map",
+                "type": "document",
+                "compositeNodeKey": false,
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "GUID": "1002c3a4-64cd-46ec-b4ff-e330099caa23",
+                "arrayItem": true,
+                "required": false,
+                "displayName": "Price",
+                "compositeKey": [
+                  "compositeNodeKey"
+                ]
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "unique": false,
+            "childType": "list",
+            "type": "array",
+            "compositeNodeKey": false,
+            "name": "Prices",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "097524b6-a4e7-4091-bf57-be02308a2816",
+            "description": "An array of price records associated with the product, each linked to an **effective date**. This allows for tracking price changes over time and supports promotional pricing strategies.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "prices"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "5be067f0-fa8e-4f4c-9404-3e82c95124cf"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "bucketId": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+        "description": "Represents the items available for sale in the e-commerce platform. It encompasses essential details about each product, including its **name**, **description**, **pricing**, and associations with **categories** and **suppliers**. This entity is crucial for managing inventory and facilitating sales transactions.",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "code": "product",
+        "definitionEntityType": "collection",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "2925ae78-e002-444f-a47f-bffa062f378d"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "fieldRelativePath": "#/Product management/Product"
+      },
+      {
+        "name": "contains",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "level": "entity",
+        "GUID": "0d5d62f2-6a6d-4288-8f4a-d8413e910460",
+        "lineSize": 2,
+        "parentCollection": "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+        "childCollection": "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b",
+        "hackoladeStyles": {
+          "GUID": "bf092fa8-6b53-4caa-be61-d45f386c63c4",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1389,
+              "y": 1218.6666666666667
+            },
+            {
+              "x": 1463.9469309674228,
+              "y": 1218.6666666666667
+            },
+            {
+              "x": 1463.9469309674228,
+              "y": 1299.2793540182593
+            },
+            {
+              "x": 1538.8938619348455,
+              "y": 1299.2793540182593
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "bucketId": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+        "definitionEntityType": "relationship",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [],
+        "kind": "relativePath",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "fieldRelativePath": "#/relationships/contains"
+      },
+      {
+        "name": "Product management",
+        "type": "bucket",
+        "collectionIds": [
+          "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+          "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b"
+        ],
+        "backgroundColor": {
+          "r": 216,
+          "g": 0,
+          "b": 115,
+          "a": 1
+        },
+        "show": true,
+        "isActivated": true,
+        "indexes": [],
+        "GUID": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+        "description": "Serves as a comprehensive framework for managing all aspects of products within the e-commerce system. This entity encompasses various components that facilitate the organization, tracking, and sale of products, ensuring a streamlined process from supplier management to customer sales.",
+        "definitionEntityType": "bucket",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Product management",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "7a9fd452-6da8-45b9-8a5a-e15d116b1840"
+          ]
+        ],
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "code": "productManagement"
+      },
+      {
+        "GUID": "1eec2f02-271b-45e3-b874-b47ac00ca585",
+        "collectionName": "Supplier",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": true,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Company code",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "GUID": "d138a990-ba4d-4cf7-b998-b57f5d576902",
+            "description": "A unique code identifying the supplier company. This serves as the primary key for the Supplier entity, and may also be used as a foreign key to link to a broader Company entity or domain if one exists.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "companyCode"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Company name",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "8ee85d26-2d69-49d4-82b9-1d2b12c7966d",
+            "description": "The official or registered name of the supplier company.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "companyName"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Contact name",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "ba154f30-0f46-41b7-bbd0-b5e106f2cf32",
+            "description": "The primary point of contact’s full name. This individual typically handles order-related queries, negotiations, or partnership details.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "contactName"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "email",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "9cc886b2-1216-4d95-bef9-d48290b0e804",
+            "description": "The main email address for communicating with the supplier. Should be validated to ensure correct formatting.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "email"
+          },
+          {
+            "primaryKey": false,
+            "unique": false,
+            "type": "string",
+            "compositeNodeKey": false,
+            "name": "Phone number",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "3a79b59c-1d60-4c86-a484-a20deb6fcd95",
+            "description": "The primary telephone or mobile number for reaching the supplier. Formats may vary by region; it is recommended to store this in a standardized format if possible.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ],
+            "code": "phoneNumber"
+          },
+          {
+            "primaryKey": false,
+            "properties": [
+              {
+                "primaryKey": false,
+                "unique": false,
+                "type": "string",
+                "compositeNodeKey": false,
+                "name": "Address ID",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": false,
+                "GUID": "e189ccf5-46f5-5fa1-9ea3-ae5205482c84",
+                "compositeKey": [
+                  "compositeNodeKey"
+                ],
+                "code": "addressId"
+              },
+              {
+                "primaryKey": false,
+                "unique": false,
+                "type": "string",
+                "compositeNodeKey": false,
+                "name": "Street",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": true,
+                "GUID": "64066830-7738-58ed-8d0a-af3d688bfbcd",
+                "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+                "compositeKey": [
+                  "compositeNodeKey"
+                ],
+                "code": "street"
+              },
+              {
+                "primaryKey": false,
+                "unique": false,
+                "type": "string",
+                "compositeNodeKey": false,
+                "name": "Postal code",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": true,
+                "GUID": "71d44276-326c-526e-a406-81076072e148",
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+                "compositeKey": [
+                  "compositeNodeKey"
+                ],
+                "code": "postalCode"
+              },
+              {
+                "primaryKey": false,
+                "unique": false,
+                "type": "string",
+                "compositeNodeKey": false,
+                "name": "City",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": true,
+                "GUID": "fbd27464-7883-59a3-b809-58270bea270a",
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+                "compositeKey": [
+                  "compositeNodeKey"
+                ],
+                "code": "city"
+              }
+            ],
+            "additionalProperties": false,
+            "unique": false,
+            "childType": "map",
+            "type": "document",
+            "compositeNodeKey": false,
+            "name": "Address",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "GUID": "b9d5da76-8812-4308-8bf6-0ac6a34c938f",
+            "code": "address",
+            "refDescription": "Encapsulates the supplier’s main business address or headquarters location. Storing this as an object ensures address details remain logically grouped.",
+            "compositeKey": [
+              "compositeNodeKey"
+            ]
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "632549f7-2b16-4f2e-9496-e5e45852b4c9"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "bucketId": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+        "description": "Represents the vendors or manufacturers that provide products. Contains essential information about each supplier, including their **contact details** and the **products** they supply. This entity is important for managing supplier relationships, tracking product sourcing, and ensuring timely inventory replenishment.",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "code": "supplier",
+        "definitionEntityType": "collection",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "c5ce3066-69e7-459f-a81b-68dd21e98ce2"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "fieldRelativePath": "#/Product management/Supplier"
+      },
+      {
+        "name": "is issued by",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1..n",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "1",
+        "level": "entity",
+        "GUID": "742e1275-de2e-4675-a75e-5902b8832233",
+        "lineSize": 2,
+        "parentCollection": "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b",
+        "childCollection": "1eec2f02-271b-45e3-b874-b47ac00ca585",
+        "hackoladeStyles": {
+          "GUID": "63f5d819-9996-4ab0-a791-dce0f196d1bb",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1366.2486241170195,
+              "y": 1385.560485077721
+            },
+            {
+              "x": 1366.2486241170195,
+              "y": 1344.2802425388604
+            },
+            {
+              "x": 1219.5,
+              "y": 1344.2802425388604
+            },
+            {
+              "x": 1219.5,
+              "y": 1303
+            }
+          ],
+          "sides": [
+            "top",
+            "bottom"
+          ]
+        },
+        "bucketId": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+        "definitionEntityType": "relationship",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/relationships/is issued by",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": []
+      }
+    ],
+    "GUID": "9ee1d1b4-bf53-4d27-8fcd-883f6a1bb3cd"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "7607cfc4-361b-4aef-b1cc-23ef1ccd9a7e"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "cb5071fe-d69c-48a1-b45f-73a5240726d7",
+      "name": "Disclaimer",
+      "type": "annotation",
+      "disableInitialFocus": true,
+      "value": "This Neo4j eCommerce Product Search Model is intended for illustration purposes only and provides a simplified representation of a product search system within a graph-based database.\n\nWhile it covers essential nodes (such as Product, Category, Tag, and Supplier), relationships (like \"is similar to,\" \"has tag,\" \"belongs to,\" and \"issued by\"), and key metadata that underpin effective product discovery, filtering, and recommendation workflows, it does not encompass all potential complexities or best practices applicable in a comprehensive, production-level implementation."
+    }
+  ],
+  "dbVersion": "4.3",
+  "dbVendor": "Neo4j",
+  "appTarget": "NEO4J",
+  "creationTS": "2025-02-20T07:44:47.970Z",
+  "GUID": "0b635137-5708-4b72-8a75-bb24fc5d914b",
+  "isLineageEnabled": false,
+  "hackoladeMeta": {
+    "validationErrors": {
+      "description": false
+    },
+    "namingConvention": "code"
+  },
+  "lastModifTS": "2025-02-28T12:18:46.027Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Neo4j",
+    "pluginVersion": "0.1.52",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.2"
+  },
+  "polyglotModelPaths": [
+    {
+      "GUID": "1ed83804-55a6-422e-94a2-b54ec98a3c51",
+      "polyglotModelName": "Product-Polyglot.hck",
+      "polyglotModelPath": "../merchandising/Product-Polyglot.hck.json",
+      "normalization": false
+    }
+  ],
+  "code": "productSearch",
+  "description": "This Neo4j eCommerce Product Search Model is intended for illustration purposes only and provides a simplified representation of a product search system within a graph-based database.\n\nWhile it covers essential nodes (such as Product, Category, Tag, and Supplier), relationships (like \"is similar to,\" \"has tag,\" \"belongs to,\" and \"issued by\"), and key metadata that underpin effective product discovery, filtering, and recommendation workflows, it does not encompass all potential complexities or best practices applicable in a comprehensive, production-level implementation.",
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "c5ce3066-69e7-459f-a81b-68dd21e98ce2",
+            "x": 1144.3999999999999,
+            "y": 923.0000000000003,
+            "width": 222,
+            "height": 66,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "2925ae78-e002-444f-a47f-bffa062f378d",
+            "x": 1645,
+            "y": 1051,
+            "width": 288,
+            "height": 282,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "cfec8827-bc74-44f1-b49f-9fb9a5203d53",
+            "x": 2169.0069375619414,
+            "y": 925.3762140733403,
+            "width": 198,
+            "height": 66,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "3118f7dc-8b13-4c1d-ab91-35396809b06b",
+            "x": 2153.400000000001,
+            "y": 1511,
+            "width": 151,
+            "height": 65,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "ae7e3dcd-e462-48aa-9337-2eae2a08222c",
+            "x": 1296.5417244796827,
+            "y": 1150.134192269574,
+            "width": 273,
+            "height": 106,
+            "color": {
+              "hex": "#333333"
+            }
+          },
+          {
+            "GUID": "bd873d64-4014-4682-875b-9dcc01cdaf3c",
+            "x": 2017.0872150644202,
+            "y": 1336.5401387512393,
+            "width": 232,
+            "height": 94,
+            "color": {
+              "hex": "#333333"
+            }
+          },
+          {
+            "GUID": "85e55e86-cb0c-4165-9821-0c4d65b62666",
+            "x": 2029.3034687809707,
+            "y": 1055.1881070366703,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#333333"
+            }
+          },
+          {
+            "GUID": "366c825e-bbb3-41d4-acc0-fdba6a3b4bf9",
+            "x": 1411.3000000000009,
+            "y": 949.6000000000006,
+            "width": 271,
+            "height": 87,
+            "color": {
+              "hex": "#333333"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1104.3999999999999,
+            "y": 883.0000000000003,
+            "GUID": "7a9fd452-6da8-45b9-8a5a-e15d116b1840"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "3118f7dc-8b13-4c1d-ab91-35396809b06b",
+              "size": 100,
+              "x": 1280.7700187956184,
+              "y": 999.5414196649448
+            },
+            {
+              "GUID": "cfec8827-bc74-44f1-b49f-9fb9a5203d53",
+              "size": 100,
+              "x": 1452.5610573441804,
+              "y": 1472.3595497407605
+            },
+            {
+              "GUID": "2925ae78-e002-444f-a47f-bffa062f378d",
+              "size": 100,
+              "x": 1212.5459081538515,
+              "y": 1291.9292800374449
+            },
+            {
+              "GUID": "c5ce3066-69e7-459f-a81b-68dd21e98ce2",
+              "size": 100,
+              "x": 980.2655773454469,
+              "y": 1482.1904457739602
+            }
+          ],
+          "buckets": [
+            {
+              "x": 940.2655773454469,
+              "y": 959.5414196649448,
+              "GUID": "7a9fd452-6da8-45b9-8a5a-e15d116b1840"
+            }
+          ],
+          "decorativeSymbols": [
+            {
+              "GUID": "cb5071fe-d69c-48a1-b45f-73a5240726d7",
+              "x": 1103,
+              "y": 637,
+              "height": 150,
+              "width": 300
+            }
+          ],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "cb5071fe-d69c-48a1-b45f-73a5240726d7",
+            "x": 1297,
+            "y": 658,
+            "height": 206,
+            "width": 416,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "c5ce3066-69e7-459f-a81b-68dd21e98ce2",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "2925ae78-e002-444f-a47f-bffa062f378d"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "bd873d64-4014-4682-875b-9dcc01cdaf3c"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "ae7e3dcd-e462-48aa-9337-2eae2a08222c"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "366c825e-bbb3-41d4-acc0-fdba6a3b4bf9"
+          }
+        ],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false,
+          "hideErdRelationshipsNames": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

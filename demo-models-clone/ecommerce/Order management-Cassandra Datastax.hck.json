@@ -1,0 +1,993 @@
+{
+  "modelName": "Order management",
+  "collections": [
+    {
+      "GUID": "c0df0789-e76e-4c7b-b777-d0f19ea24e33",
+      "type": "reference",
+      "$ref": "#external/definitions/Order",
+      "refType": "polyglot",
+      "ref": "46385b4a-a728-4579-8b09-10e9e7c52c99",
+      "refIdPath": [
+        "4122eab4-f913-4743-b0d3-c44616be0554",
+        "6d4e5d8f-fde7-4bf4-9dbc-d3da60817d61",
+        "46385b4a-a728-4579-8b09-10e9e7c52c99"
+      ],
+      "isActivated": true,
+      "collectionName": "orders_by_customer",
+      "code": "orders_by_customer",
+      "bucketId": "c3fe3a15-f8e1-4c5d-ab5a-0d8b9bcad098",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "1d131df4-73a4-457d-92e3-c0aae6db1b98"
+      },
+      "description": "Represents a purchase transaction, including details about the items ordered, shipping information, payment details, and order status.",
+      "additionalProperties": false,
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "2dc5cd19-9bb7-4405-a00f-69af0c39ea24",
+            "error": {},
+            "hackoladeMeta": {},
+            "name": "Order identifier"
+          },
+          {
+            "GUID": "6adc1c99-dca5-4d92-88fd-6e27edf175ce",
+            "error": {},
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePartitionKey",
+              "compositeClusteringKey"
+            ],
+            "compositePartitionKey": true,
+            "primaryKey": true,
+            "required": true,
+            "description": "Acts as the partition key. This field uniquely identifies a customer and groups all orders associated with that customer."
+          },
+          {
+            "GUID": "9e4faa2d-6567-4c55-908d-59f30426bdc1",
+            "error": {},
+            "hackoladeMeta": {},
+            "name": "Ship_to address",
+            "code": "ship_to_address",
+            "properties": [
+              {
+                "GUID": "99f6874d-0ce2-5b47-8ab9-42d7c3702219",
+                "error": {
+                  "name": false
+                },
+                "hackoladeMeta": {}
+              },
+              {
+                "GUID": "e1cf9617-3aab-51fb-a0bf-11c788dc0179",
+                "error": {
+                  "name": false
+                },
+                "hackoladeMeta": {}
+              },
+              {
+                "GUID": "93594ede-d2dc-51d6-bfb2-06fcfee72d2b",
+                "error": {
+                  "name": false
+                },
+                "hackoladeMeta": {}
+              }
+            ]
+          },
+          {
+            "GUID": "fad47821-c108-4728-ac06-edd87399a408",
+            "referenceDiffDeleted": true
+          },
+          {
+            "GUID": "72bc07b9-d511-42e0-966a-7e5f14513040",
+            "referenceDiffDeleted": true
+          }
+        ]
+      },
+      "hackoladeMeta": {
+        "namingConvention": "code"
+      },
+      "compositePartitionKey": [
+        {
+          "keyId": "6adc1c99-dca5-4d92-88fd-6e27edf175ce"
+        }
+      ],
+      "error": {
+        "refPath": false
+      },
+      "compositeClusteringKey": [
+        {
+          "keyId": "3a550c04-6ca2-4876-8ec9-89aa76ea1d13",
+          "type": "descending"
+        }
+      ],
+      "refDescription": "This table stores summary information for customer orders. It is designed to enable efficient retrieval of all orders for a given customer, sorted by order date in descending order (ensuring that the most recent orders appear first)."
+    },
+    {
+      "GUID": "3a4bc1bc-67ad-4e30-925b-eb0d5f2d8bea",
+      "collectionName": "order_items_by_order",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Item index",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "integer",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "code": "item_index",
+          "GUID": "d0b74ccf-affc-418f-901c-3af693efa0c9",
+          "compositeClusteringKey": true,
+          "required": true,
+          "description": "Functions as the clustering column. This integer maintains the sequence of items within the order, ensuring a consistent order when querying.",
+          "error": {}
+        },
+        {
+          "name": "Order identifier",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "primaryKey": true,
+          "mode": "varchar",
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "GUID": "f3dc815d-a8f4-4779-adbb-5a73c66dd620",
+          "code": "order_identifier",
+          "compositePartitionKey": true,
+          "required": true,
+          "description": "Serves as the partition key. It uniquely identifies an order and groups all associated items together.",
+          "error": {}
+        },
+        {
+          "GUID": "e767112f-8db7-482e-a004-e3074235b9cd",
+          "name": "SKU",
+          "type": "reference",
+          "$ref": "#external/definitions/SKU",
+          "refType": "polyglot",
+          "ref": "6b6386de-f9dc-46d9-9fc2-16d3c2c58340",
+          "refIdPath": [
+            "4122eab4-f913-4743-b0d3-c44616be0554",
+            "6d4e5d8f-fde7-4bf4-9dbc-d3da60817d61",
+            "6b6386de-f9dc-46d9-9fc2-16d3c2c58340"
+          ],
+          "isActivated": true,
+          "code": "sku",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "error": {
+            "refDescription": false,
+            "refPath": false
+          },
+          "refDescription": "Stores the Stock Keeping Unit code for the product, serving as a unique product identifier within the inventory system."
+        },
+        {
+          "GUID": "f2f352ef-158c-4895-b2de-aa3cbd990a49",
+          "name": "Product name",
+          "type": "reference",
+          "$ref": "#external/definitions/Name",
+          "refType": "polyglot",
+          "ref": "c5f20bbd-e577-4a70-b532-13e319e3ef18",
+          "refIdPath": [
+            "4122eab4-f913-4743-b0d3-c44616be0554",
+            "6d4e5d8f-fde7-4bf4-9dbc-d3da60817d61",
+            "c5f20bbd-e577-4a70-b532-13e319e3ef18"
+          ],
+          "isActivated": true,
+          "code": "product_name",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "error": {
+            "refDescription": false,
+            "refPath": false
+          },
+          "refDescription": "Provides the human-readable name of the product. It is useful for display purposes in customer-facing interfaces and order summaries."
+        },
+        {
+          "name": "Quantity",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "integer",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "code": "quantity",
+          "GUID": "91f4a9e0-fcd4-4591-a5ac-e65f49a0855c",
+          "description": "Indicates the number of units ordered for the given product. This helps in calculating the overall order volume and inventory allocation.",
+          "error": {}
+        },
+        {
+          "name": "Price",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "decimal",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "code": "price",
+          "GUID": "c5f6eca1-be99-40a8-a537-8d3f7e3f3cb2",
+          "description": "Represents the price per unit of the product. Using a decimal data type ensures accuracy in financial computations and billing.",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "7600b2e7-69da-4e5f-bc1a-ed258e8fc260"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExist": false,
+      "bucketId": "c3fe3a15-f8e1-4c5d-ab5a-0d8b9bcad098",
+      "hackoladeMeta": {
+        "namingConvention": "code"
+      },
+      "code": "order_by_customer",
+      "compositePartitionKey": [
+        {
+          "keyId": "f3dc815d-a8f4-4779-adbb-5a73c66dd620"
+        }
+      ],
+      "compositeClusteringKey": [
+        {
+          "keyId": "d0b74ccf-affc-418f-901c-3af693efa0c9",
+          "type": "ascending"
+        }
+      ],
+      "description": "This table captures detailed information about the individual items within each order. It is keyed by the order identifier to allow retrieval of all items in a particular order in a defined sequence."
+    }
+  ],
+  "buckets": [
+    {
+      "GUID": "c3fe3a15-f8e1-4c5d-ab5a-0d8b9bcad098",
+      "name": "Order management",
+      "type": "reference",
+      "$ref": "#external/definitions/Order management",
+      "refType": "polyglot",
+      "ref": "e863d79d-6e38-4098-a01e-46d6249501f8",
+      "refIdPath": [
+        "4122eab4-f913-4743-b0d3-c44616be0554",
+        "6d4e5d8f-fde7-4bf4-9dbc-d3da60817d61",
+        "e863d79d-6e38-4098-a01e-46d6249501f8"
+      ],
+      "isActivated": true,
+      "code": "order_management",
+      "backgroundColor": {
+        "r": 0,
+        "g": 188,
+        "b": 213,
+        "a": 1
+      },
+      "show": true,
+      "collectionIds": [
+        "c0df0789-e76e-4c7b-b777-d0f19ea24e33",
+        "3a4bc1bc-67ad-4e30-925b-eb0d5f2d8bea"
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {},
+        "namingConvention": "code"
+      },
+      "description": "The Order Management container is responsible for all entities and relationships involved in creating, tracking, and fulfilling customer orders. At a logical level, the Order Management container interacts closely with both the Customer Management container (to identify and authenticate the customer placing the order) and the Product Management container (to reference product details and availability)."
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "c0df0789-e76e-4c7b-b777-d0f19ea24e33": "orders_by_customer",
+    "c3fe3a15-f8e1-4c5d-ab5a-0d8b9bcad098": "Order management",
+    "9e4faa2d-6567-4c55-908d-59f30426bdc1": "Ship_to address",
+    "4ed3ffda-0e5d-44e5-87fd-de01c53fc947": "customer_email",
+    "3a4bc1bc-67ad-4e30-925b-eb0d5f2d8bea": "order_items_by_order",
+    "d0b74ccf-affc-418f-901c-3af693efa0c9": "Item index",
+    "f3dc815d-a8f4-4779-adbb-5a73c66dd620": "Order identifier",
+    "2dc5cd19-9bb7-4405-a00f-69af0c39ea24": "Order identifier",
+    "f2f352ef-158c-4895-b2de-aa3cbd990a49": "Product name",
+    "e767112f-8db7-482e-a004-e3074235b9cd": "SKU",
+    "91f4a9e0-fcd4-4591-a5ac-e65f49a0855c": "Quantity",
+    "c5f6eca1-be99-40a8-a537-8d3f7e3f3cb2": "Price"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "815819b2-d152-446e-a5f7-f333a29c6766"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "GUID": "46385b4a-a728-4579-8b09-10e9e7c52c99",
+        "collectionName": "Order",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": true,
+            "mode": "varchar",
+            "subtype": "string",
+            "childType": "char",
+            "type": "string",
+            "compositePartitionKey": true,
+            "compositeClusteringKey": false,
+            "name": "Identifier",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "GUID": "2dc5cd19-9bb7-4405-a00f-69af0c39ea24",
+            "description": "A unique reference number or code assigned to the order for tracking and identification.",
+            "compositeKey": [
+              "compositePartitionKey",
+              "compositeClusteringKey"
+            ],
+            "code": "identifier"
+          },
+          {
+            "primaryKey": false,
+            "mode": "varchar",
+            "subtype": "string",
+            "childType": "char",
+            "type": "string",
+            "compositePartitionKey": false,
+            "compositeClusteringKey": false,
+            "name": "Customer reference",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "6adc1c99-dca5-4d92-88fd-6e27edf175ce",
+            "foreignCollection": "65b184c5-dbf9-5d7a-b038-30aa2b8bb11a",
+            "foreignField": [
+              "65b184c5-dbf9-5d7a-b038-30aa2b8bb11a",
+              "15a4d58f-d2ae-5415-9cd9-23669eec4ef8"
+            ],
+            "relationshipType": "Foreign Key",
+            "description": "References the unique identifier of the Customer entity. Associates the order with the customer who placed it.",
+            "compositeKey": [
+              "compositePartitionKey",
+              "compositeClusteringKey"
+            ],
+            "code": "customer_reference"
+          },
+          {
+            "subtype": "map<str>",
+            "keyType": "char",
+            "keySubtype": "text",
+            "primaryKey": false,
+            "properties": [
+              {
+                "primaryKey": false,
+                "mode": "varchar",
+                "subtype": "string",
+                "childType": "char",
+                "type": "string",
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "name": "Address ID",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": false,
+                "GUID": "74c02da5-4923-52cc-a457-faac0dfeb552",
+                "compositeKey": [
+                  "compositePartitionKey",
+                  "compositeClusteringKey"
+                ],
+                "code": "address_id"
+              },
+              {
+                "primaryKey": false,
+                "mode": "varchar",
+                "subtype": "string",
+                "childType": "char",
+                "type": "string",
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "name": "Street",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": true,
+                "GUID": "99f6874d-0ce2-5b47-8ab9-42d7c3702219",
+                "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+                "compositeKey": [
+                  "compositePartitionKey",
+                  "compositeClusteringKey"
+                ],
+                "code": "street"
+              },
+              {
+                "primaryKey": false,
+                "mode": "varchar",
+                "subtype": "string",
+                "childType": "char",
+                "type": "string",
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "name": "Postal code",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": true,
+                "GUID": "e1cf9617-3aab-51fb-a0bf-11c788dc0179",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+                "compositeKey": [
+                  "compositePartitionKey",
+                  "compositeClusteringKey"
+                ],
+                "code": "postal_code"
+              },
+              {
+                "primaryKey": false,
+                "mode": "varchar",
+                "subtype": "string",
+                "childType": "char",
+                "type": "string",
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "name": "City",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "required": true,
+                "GUID": "93594ede-d2dc-51d6-bfb2-06fcfee72d2b",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+                "compositeKey": [
+                  "compositePartitionKey",
+                  "compositeClusteringKey"
+                ],
+                "code": "city"
+              }
+            ],
+            "additionalProperties": false,
+            "childType": "map",
+            "type": "document",
+            "compositePartitionKey": false,
+            "compositeClusteringKey": false,
+            "name": "Ship-to address",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "GUID": "9e4faa2d-6567-4c55-908d-59f30426bdc1",
+            "code": "ship-to_address",
+            "refDescription": "The destination address where the order is to be delivered.",
+            "compositeKey": [
+              "compositePartitionKey",
+              "compositeClusteringKey"
+            ]
+          },
+          {
+            "subtype": "list<str>",
+            "properties": [
+              {
+                "subtype": "map<str>",
+                "keyType": "char",
+                "keySubtype": "text",
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "decimal",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "GUID": "42c71b66-59d1-4f73-b821-a9034764f127",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "name": "Amount",
+                    "description": "The total cost of the payment, net of applicable taxes and fees.",
+                    "compositeKey": [
+                      "compositePartitionKey",
+                      "compositeClusteringKey"
+                    ],
+                    "code": "amount"
+                  },
+                  {
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "Timestamp",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "GUID": "b2f61376-69c8-46f5-9f61-8e68a0dae68d",
+                    "description": "The date and time when the payment was received.",
+                    "compositeKey": [
+                      "compositePartitionKey",
+                      "compositeClusteringKey"
+                    ],
+                    "code": "timestamp"
+                  }
+                ],
+                "additionalProperties": false,
+                "childType": "map",
+                "type": "document",
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "GUID": "1010c594-625d-457d-955c-a897e9a514c1",
+                "arrayItem": true,
+                "required": false,
+                "displayName": "Payment",
+                "compositeKey": [
+                  "compositePartitionKey",
+                  "compositeClusteringKey"
+                ]
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "childType": "list",
+            "type": "array",
+            "compositePartitionKey": false,
+            "compositeClusteringKey": false,
+            "name": "Payments",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "fad47821-c108-4728-ac06-edd87399a408",
+            "description": "A record of financial transactions associated with the order.",
+            "compositeKey": [
+              "compositePartitionKey",
+              "compositeClusteringKey"
+            ],
+            "code": "payments"
+          },
+          {
+            "subtype": "list<str>",
+            "properties": [
+              {
+                "subtype": "map<str>",
+                "keyType": "char",
+                "keySubtype": "text",
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "Quantity",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "GUID": "e16e89ec-42c0-4647-ab3f-4225a2c9df1c",
+                    "description": "The number of units for each ordered item.",
+                    "compositeKey": [
+                      "compositePartitionKey",
+                      "compositeClusteringKey"
+                    ],
+                    "code": "quantity"
+                  },
+                  {
+                    "primaryKey": true,
+                    "mode": "varchar",
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "name": "SKU",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": true,
+                    "description": "A unique identifier assigned to each product for inventory management and tracking purposes. It helps differentiate products and streamline the ordering process.",
+                    "GUID": "acdd584f-e173-4126-a669-6ea2f414ffd0",
+                    "code": "sku",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "relationshipType": "",
+                    "compositeKey": [
+                      "compositePartitionKey",
+                      "compositeClusteringKey"
+                    ]
+                  },
+                  {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "decimal",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "Amount",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "The numeric value of the product’s price in the specified currency.",
+                    "GUID": "cf7c7d06-9e2a-490d-852d-29010e9eefd8",
+                    "code": "amount",
+                    "compositeKey": [
+                      "compositePartitionKey",
+                      "compositeClusteringKey"
+                    ]
+                  }
+                ],
+                "additionalProperties": false,
+                "childType": "map",
+                "type": "document",
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "GUID": "eae27a5b-3644-46dd-a3d1-01afce2a245d",
+                "arrayItem": true,
+                "required": false,
+                "displayName": "Ordered item",
+                "compositeKey": [
+                  "compositePartitionKey",
+                  "compositeClusteringKey"
+                ]
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "childType": "list",
+            "type": "array",
+            "compositePartitionKey": false,
+            "compositeClusteringKey": false,
+            "name": "Ordered items",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "72bc07b9-d511-42e0-966a-7e5f14513040",
+            "description": "A list of products included in the order, detailing the purchased goods.",
+            "compositeKey": [
+              "compositePartitionKey",
+              "compositeClusteringKey"
+            ],
+            "code": "ordered_items"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "c3fe565c-9e15-44ed-957b-4bca2e105ec8"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "bucketId": "e863d79d-6e38-4098-a01e-46d6249501f8",
+        "description": "Represents a purchase transaction, including details about the items ordered, shipping information, payment details, and order status.",
+        "uniqueKey": [
+          {
+            "GUID": "53cbcce4-2637-470e-9bba-debbe6fb564d"
+          }
+        ],
+        "compositePartitionKey": [
+          {
+            "keyId": "2dc5cd19-9bb7-4405-a00f-69af0c39ea24",
+            "type": ""
+          },
+          {
+            "keyId": "acdd584f-e173-4126-a669-6ea2f414ffd0",
+            "type": ""
+          }
+        ],
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "code": "order",
+        "definitionEntityType": "collection",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "c0df0789-e76e-4c7b-b777-d0f19ea24e33"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "Order management-Polyglot.hck.json",
+        "fieldRelativePath": "#/Order management/Order"
+      },
+      {
+        "name": "Order management",
+        "type": "bucket",
+        "collectionIds": [
+          "46385b4a-a728-4579-8b09-10e9e7c52c99"
+        ],
+        "backgroundColor": {
+          "r": 0,
+          "g": 188,
+          "b": 213,
+          "a": 1
+        },
+        "show": true,
+        "isActivated": true,
+        "indexes": [],
+        "GUID": "e863d79d-6e38-4098-a01e-46d6249501f8",
+        "description": "The Order Management container is responsible for all entities and relationships involved in creating, tracking, and fulfilling customer orders. At a logical level, the Order Management container interacts closely with both the Customer Management container (to identify and authenticate the customer placing the order) and the Product Management container (to reference product details and availability).",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "code": "order_management",
+        "definitionEntityType": "bucket",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "c3fe3a15-f8e1-4c5d-ab5a-0d8b9bcad098"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "Order management-Polyglot.hck.json",
+        "fieldRelativePath": "#/Order management"
+      },
+      {
+        "primaryKey": true,
+        "mode": "varchar",
+        "subtype": "string",
+        "childType": "char",
+        "type": "string",
+        "compositePartitionKey": true,
+        "compositeClusteringKey": false,
+        "name": "SKU",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "required": true,
+        "GUID": "6b6386de-f9dc-46d9-9fc2-16d3c2c58340",
+        "description": "A unique identifier assigned to each product for inventory management and tracking purposes. It helps differentiate products and streamline the ordering process.",
+        "compositeKey": [
+          "compositePartitionKey",
+          "compositeClusteringKey"
+        ],
+        "definitionEntityType": "field",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "3a4bc1bc-67ad-4e30-925b-eb0d5f2d8bea",
+            "e767112f-8db7-482e-a004-e3074235b9cd"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "fieldRelativePath": "#/Product management/Product/properties/SKU"
+      },
+      {
+        "primaryKey": false,
+        "mode": "varchar",
+        "subtype": "string",
+        "childType": "char",
+        "type": "string",
+        "compositePartitionKey": false,
+        "compositeClusteringKey": false,
+        "name": "Name",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "required": false,
+        "GUID": "c5f20bbd-e577-4a70-b532-13e319e3ef18",
+        "description": "The name of the product or service as displayed to the customer.",
+        "compositeKey": [
+          "compositePartitionKey",
+          "compositeClusteringKey"
+        ],
+        "definitionEntityType": "field",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "3a4bc1bc-67ad-4e30-925b-eb0d5f2d8bea",
+            "f2f352ef-158c-4895-b2de-aa3cbd990a49"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "../merchandising/Product-Polyglot.hck.json",
+        "fieldRelativePath": "#/Product management/Product/properties/Name"
+      }
+    ],
+    "GUID": "6d4e5d8f-fde7-4bf4-9dbc-d3da60817d61"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "fcb958c0-13c4-4523-8175-0013c18e8c32"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "2b53846e-9e8f-4fc8-b807-dc6a2c1f0590",
+      "name": "Disclaimer",
+      "type": "annotation",
+      "disableInitialFocus": true,
+      "value": "This Cassandra order management model is intended for illustration purposes only and provides a simplified representation of an order management system within a Cassandra-based environment.\n\nWhile it covers essential tables for an eCommerce context, it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation."
+    }
+  ],
+  "dbVersion": "5.x",
+  "dbVendor": "Cassandra",
+  "appTarget": "CASSANDRA",
+  "creationTS": "2025-02-25T06:25:40.632Z",
+  "GUID": "4122eab4-f913-4743-b0d3-c44616be0554",
+  "isLineageEnabled": false,
+  "hackoladeMeta": {
+    "validationErrors": {
+      "description": false
+    },
+    "namingConvention": "code"
+  },
+  "polyglotModelPaths": [
+    {
+      "GUID": "d684f5e5-5ff1-4541-8557-6909d12bdfe1",
+      "polyglotModelName": "Order management-Polyglot.hck",
+      "polyglotModelPath": "Order management-Polyglot.hck.json",
+      "normalization": false
+    }
+  ],
+  "code": "order_management",
+  "description": "This Cassandra order management model is intended for illustration purposes only and provides a simplified representation of an order management system within a Cassandra-based environment.\n\nWhile it covers essential tables for an eCommerce context, it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation.",
+  "lastModifTS": "2025-02-28T12:16:47.366Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Cassandra",
+    "pluginVersion": "0.2.11",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "c0df0789-e76e-4c7b-b777-d0f19ea24e33",
+            "x": 1264.5380761523052,
+            "y": 893.3563794255192,
+            "width": 384,
+            "height": 170,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "3a4bc1bc-67ad-4e30-925b-eb0d5f2d8bea",
+            "x": 1772,
+            "y": 906,
+            "width": 339,
+            "height": 153,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1224.5380761523052,
+            "y": 853.3563794255192,
+            "GUID": "c3fe3a15-f8e1-4c5d-ab5a-0d8b9bcad098"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "2b53846e-9e8f-4fc8-b807-dc6a2c1f0590",
+            "x": 1218,
+            "y": 647,
+            "height": 175,
+            "width": 416,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "c0df0789-e76e-4c7b-b777-d0f19ea24e33",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "3a4bc1bc-67ad-4e30-925b-eb0d5f2d8bea"
+          }
+        ],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "hideErdRelationshipsNames": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

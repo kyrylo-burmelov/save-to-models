@@ -1,0 +1,516 @@
+{
+  "modelName": "Class words in Data Element Naming",
+  "collections": [],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "cbd11962-4dfc-4fbe-9d8f-5148231d336c": "Amount",
+    "fea19653-4095-4f20-aa9f-dc8dba1abbb5": "Code",
+    "8437bd6f-5e90-41d0-b30f-78850749aa81": "Constant",
+    "f54db302-07b7-43ee-87b4-161b06202454": "Count",
+    "07449441-4554-4eaf-9117-3c780f13b5eb": "Date",
+    "1869e001-35ce-407d-8b5b-158413dc80e2": "Document",
+    "d9c78c32-8e59-4889-8776-a95d41b4a385": "File",
+    "df528827-0cd6-412b-872f-fd4b85aa88be": "Identifier",
+    "54831fa4-7791-4389-8096-6b3b0f39942c": "Indicator",
+    "581755f9-8cef-45cc-bdb2-1f0b7c528825": "Line",
+    "03b37367-46eb-4dc2-850c-aab54f27b9a7": "Name",
+    "376c67f5-02de-49ae-ab8f-1d0fd9bfce08": "Number",
+    "9933b4ef-c5fb-4e86-a6f1-a57733d3a9cb": "Percent",
+    "506288f6-268d-44b3-9804-cf4f579b5823": "Point",
+    "ee1027d9-dd3c-48d4-b828-b49da4c5e509": "Polygon",
+    "0e34b3e1-6325-4d36-820f-4de9dd9267c5": "Switch",
+    "0936ab8a-2409-4e94-965e-6f865ba39818": "Text",
+    "035ff6dd-13f1-4a08-a348-28fc650721c0": "Time",
+    "31ddce2a-537a-4184-8a68-32c429e525e0": "Timestamp"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [
+      {
+        "name": "Amount",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "index": true,
+        "exclusiveMinimum": false,
+        "exclusiveMaximum": false,
+        "primaryKey": false,
+        "required": false,
+        "childType": "number",
+        "type": "numeric",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "cbd11962-4dfc-4fbe-9d8f-5148231d336c",
+        "definitionRefs": [],
+        "mode": "decimal",
+        "description": "Specifically about currency; A quantity of money - a monetary amount. Any valid monetary\nExamples: amount value\n\n* Annual Rent Amount\n* Earned Premium Amount\n* Per Occurrence Limit Amount\n* Premium Discount Amount\n\nNote: Also consider the possibility of Count classword.",
+        "error": {
+          "name": false
+        }
+      },
+      {
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "required": false,
+        "childType": "varchar",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "fea19653-4095-4f20-aa9f-dc8dba1abbb5",
+        "name": "Code",
+        "mode": "string",
+        "description": "A short alphanumeric value that represents a longer, fuller name or description of an Defined Allowed\nobject, thing, or classification belonging to a set of defined allowed values. Values, usually in a\nExamples: set\n\n* Company Code\n* Diagnosis Code\n* Postal State Code\n* Vehicle Type Code\n\nNote: Also consider the possibility of Name or Number classword.\n",
+        "error": {
+          "name": false
+        }
+      },
+      {
+        "name": "Constant",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "required": false,
+        "childType": "varchar",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "8437bd6f-5e90-41d0-b30f-78850749aa81",
+        "description": "Data that does not change value from one transaction to another. Considered for A numeric,\nreference values that should not or rarely change. alphabetic, or\nExamples: alphanumeric value\n* Print Mask Constant that rarely if ever\n* Column Heading Constant changes.\n* Tax Multiplier Constant\n\nNote: Also consider the possibility of Text classword",
+        "error": {
+          "name": false
+        }
+      },
+      {
+        "name": "Count",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "index": true,
+        "exclusiveMinimum": false,
+        "exclusiveMaximum": false,
+        "primaryKey": false,
+        "required": false,
+        "childType": "number",
+        "type": "numeric",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "f54db302-07b7-43ee-87b4-161b06202454",
+        "description": "An arithmetic value or quantity {including fractions and units of measure) of anything Any valid numeric\nexcept money. Could also be used in or be the result of a mathematical computation like | value or decimal\nan average, minimum, maximum, etc. value\nExamples:\n\n* Previous Month Total Claim Count\n* Premium Discount Factor Count\n* Square Footage Count\n* Vehicle Mileage Count\n* Maximum Payload Capacity Count\n\nNote: Also consider the possibility of Percent or Amount classwords.\n",
+        "error": {
+          "name": false
+        }
+      },
+      {
+        "name": "Date",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "index": true,
+        "required": false,
+        "childType": "date",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "primaryKey": false,
+        "GUID": "07449441-4554-4eaf-9117-3c780f13b5eb",
+        "description": "Actual calendar date.\nExamples:\n* Accident Date\n* Birth Date\n* Buyer Signing Date\n* Expiration Date\n* New Hire Date\n* Purchase Date\n\nNote: Also consider the related Time and Timestamp classwords",
+        "error": {}
+      },
+      {
+        "name": "Document",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [],
+        "additionalProperties": false,
+        "childType": "object",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "primaryKey": false,
+        "required": false,
+        "GUID": "1869e001-35ce-407d-8b5b-158413dc80e2",
+        "description": "Formatted data which can contain several data elements with defined contents and\nstructure such as:, ADO, AJAX, ASP, CSS, CSV, DHTML, DOM, DTD, HTML, JavaScript,\nJSON, PHP, RSS, SQL, XHTML, XML, XSD, XSL, XSLT, etc. which must be interpreted\nbefore use by a system or application, and may represent a portion of a data file.\n\n**Note:** One benefit of the Document classword is that the data elements contained within are flexible due to defined contents can change from within one record to the next.\n\nExamples:\n* Claim Document\n* Coverage Document\n* Pricing Rule Set Input Document\n* Pricing Rule Set Output Document\n* Structure Feature Document\n* Vehicle Feature Document\n\n**Note:** Also consider the possibility of File or Text classword\n\n",
+        "error": {}
+      },
+      {
+        "name": "File",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "required": false,
+        "childType": "binary",
+        "type": "binary",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "primaryKey": false,
+        "GUID": "d9c78c32-8e59-4889-8776-a95d41b4a385",
+        "description": "A digital “container” of data that represents Images; Sound, Video executables, etc that\nhave a computer file extension like “.JPG”, “WAV”, “MOV”, “EXE”, “PDF”, “ZIP”, etc\nExamples:\n* Claim Scene Image File\n* Claim Property Loss Video File\n* Window Procedures Sound File\n\n**Note:** Also consider the possibility of the Document classword\n",
+        "error": {}
+      },
+      {
+        "name": "Identifier",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "required": false,
+        "childType": "varchar",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "df528827-0cd6-412b-872f-fd4b85aa88be",
+        "mode": "string",
+        "description": "A meaningless value (often sequentially or randomly generated) that uniquely represents an occurrence of a record about an object, entity, or thing, including a specific person or\norganization.\nExamples:\n* Contract Identifier\n* Project Identifier\n* Property Identifier\n* Party Identifier\n* Taxpayer Identifier\n\n**Note:** Also consider the possibility of the Name or Number classwords\n",
+        "error": {}
+      },
+      {
+        "name": "Indicator",
+        "type": "multiple",
+        "properties": [],
+        "multipleTypes": [
+          {
+            "childType": "varchar",
+            "type": "string",
+            "GUID": "37a3f3d3-db04-44a6-8970-1e3db1536362"
+          },
+          {
+            "isActivated": true,
+            "type": "null",
+            "alternateKey": false,
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "GUID": "2043fb6d-cf34-4197-8f10-4272f43d09fb"
+          },
+          {
+            "isActivated": true,
+            "index": true,
+            "alternateKey": false,
+            "childType": "boolean",
+            "type": "boolean",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "GUID": "0e52ebb9-384c-4706-b5dc-4fffae391792"
+          }
+        ],
+        "isActivated": true,
+        "primaryKey": false,
+        "GUID": "54831fa4-7791-4389-8096-6b3b0f39942c",
+        "hackoladeMeta": {},
+        "description": "A value limited to four different status types in regard to the existence or presence of a situation or condition.\n\n**Note:** \"No\" is sometimes used as a default placeholder, until the status of the condition is checked in process, later resulting in a \"Yes\", overlaying the \"No\". In some cases the reverse can be the \"Yes\" is used as a default value, until the condition is checked, resulting a \"No\", overlaying the \"Yes\". If the Yes and No default does not work for specific application then the Unknown and  NotApplicable must be used for a default.\n\nExamples:\n* Appraisal Needed Indicator\n* Multiple Line Discount Indicator\n* Part Timing Employee Indicator\n* Occasional Youthful Operator Indicator\n\n**Note:** Also, consider the closely related class word, SWITCH; if condition statuses are to be expressed as Boolean values of “QO” or “1”. \n\n**Allowed values:**\nAlways one of the following literal (character ONLY) allowed values (max 13 characters): \n* “**Yes**” (Condition exists) \n* “**No**” (Condition does not exists)\n* “**Unknown**” (Status of condition is unknown)\n* “**NotApplicable**” (Condition and its status do not apply)\n\n",
+        "required": false,
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "error": {},
+        "default": ""
+      },
+      {
+        "name": "Line",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [],
+        "additionalProperties": false,
+        "alternateKey": false,
+        "childType": "geoshape",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "error": {},
+        "primaryKey": false,
+        "required": false,
+        "description": "A spatial, geometric shape that defines a straight connection between two points or may | No distinct set of\nextend infinitely in both directions. allowed values.\nExamples:\n* Longitude Line (represents different line positions from N to S poles)\n* Prime Meridian Line (is always the entire line at 0 longitude from N to S poles)\n* Forty Fourth Parallel Line\n* Property Boundary Line\n* Marketing Street Segment Line\n\n**Note:** Also consider the related geospatial Point and Polygon classword",
+        "GUID": "581755f9-8cef-45cc-bdb2-1f0b7c528825"
+      },
+      {
+        "name": "Name",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "required": false,
+        "childType": "varchar",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "03b37367-46eb-4dc2-850c-aab54f27b9a7",
+        "description": "Meaningful alphabetic data using words which identifies a specific object or which may Allowed but optional\nhave known allowed values. It can also identify a type or category of an object or thing.\nExamples:\n* Building Name\n* Occupation Name\n* Company Name\n* Party Last Name\n* Data Location Type Name\n\n**Note:** Also consider the possibility of the Identifier and Text classwords\n",
+        "error": {}
+      },
+      {
+        "name": "Number",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "required": false,
+        "childType": "varchar",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "376c67f5-02de-49ae-ab8f-1d0fd9bfce08",
+        "description": "Alphanumeric data not using words, which identifies a specific object or thing, but can Not applicable\nalso identify a type or category of an object or thing.\nExamples:\n* Telephone Number\n* Model Number\n* Tax Identification Number\n* Serial Number\n* Social Security Number\n* Apartment Number\n* Latitude Number (the location along the Longitude Line)\n* Vehicle Model Year Number\n\n**Note:** Also consider the possibility of Code, Count, Name, Identifier classword\n",
+        "error": {}
+      },
+      {
+        "name": "Percent",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "index": true,
+        "exclusiveMinimum": false,
+        "exclusiveMaximum": false,
+        "primaryKey": false,
+        "mode": "int32",
+        "required": false,
+        "childType": "integer",
+        "type": "numeric",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "description": "An arithmetic numeric expression based on the rate or proportion per hundred. \n\nCalculation Example: \n\"DiscountPercentage\": If a product has a discount of 20% (20/100 ratio; or part/whole), you would store it as 0.20 in the database. When displaying this value to users, you can format it as 20% using formatting functions. But it should be stored as a decimal for easier calculation and consistency for all storage of percentages. \n\nExamples: \n* Construction Retainage Percent \n* Project Completion Percent \n* Annual Interest Percent \n* Interest Ratio Percent \n* Premium Discount Percent\n\n**Note:** Also consider the possibility of Count classword \n\n\n**Allowed values**: Typical stored decimal values range between 0 and +1 at any level of precision.\nNOTE: In some situations a negative number can represent situations for  a decrease/loss. In \n\naineis STUER A percentage can exceed +1when the percentage represents a proportion that has exceeded the whole or original quantity.\n\n",
+        "GUID": "9933b4ef-c5fb-4e86-a6f1-a57733d3a9cb",
+        "minimum": 0,
+        "maximum": 1,
+        "error": {}
+      },
+      {
+        "name": "Point",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [],
+        "additionalProperties": false,
+        "alternateKey": false,
+        "childType": "geopoint",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "error": {},
+        "primaryKey": false,
+        "required": false,
+        "description": "A spatial, geometric reference that defines the intersection of two coordinate lines. \n\nExamples:\n* Claim Loss Accident Location Point\n* Insured Risk Location Point\n* Daily Distance Vehicle Driven Starting Point\n* Corporate Building Location Point\n\n**Note:** Also consider the related geospatial Line and Polygon classwords",
+        "GUID": "506288f6-268d-44b3-9804-cf4f579b5823"
+      },
+      {
+        "name": "Polygon",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [],
+        "additionalProperties": false,
+        "alternateKey": false,
+        "childType": "geoshape",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "error": {},
+        "primaryKey": false,
+        "required": false,
+        "description": "A Spatial, geometric shape that defines a multi-sided geographic area.  \n\nExamples: \n* Flood Zone Polygon\n* Geographic County Polygon\n* Illinois State Border Polygon\n* Peril Risk Area Polygon\n\n**Note:** Also consider the related geospatial Point and Line classwords\n",
+        "GUID": "ee1027d9-dd3c-48d4-b828-b49da4c5e509"
+      },
+      {
+        "name": "Switch",
+        "type": "multiple",
+        "properties": [],
+        "multipleTypes": [
+          {
+            "index": true,
+            "childType": "boolean",
+            "type": "boolean",
+            "GUID": "de3c0dad-1923-4b84-bdf1-658adc87b3d8"
+          },
+          {
+            "isActivated": true,
+            "type": "null",
+            "alternateKey": false,
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "GUID": "b01b0d7b-a7ea-47b0-b573-c11b709e3ee2"
+          }
+        ],
+        "isActivated": true,
+        "primaryKey": false,
+        "GUID": "0e34b3e1-6325-4d36-820f-4de9dd9267c5",
+        "hackoladeMeta": {},
+        "description": "Depending on the database management systems (DBMS) a boolean using a datatype of bit or byte (single character/number). The most common physical stored values will only have two condition statuses: “O” or “1”. Few may use “f” or “t”. Some DBMS also allow a NULL as the physical value. Best to consult the documentation of the specific DBMS for the details. \n\n**Note:** \"O\" is sometimes used as a default placeholder, until the status of the condition is checked in process, later resulting in a \"1\", overlaying the \"O\". In some cases the reverse can be the '1\" is used as a default value, until the condition is checked, resulting a \"0\", overlaying the \"1\".\n\n*Note: Though physically a switch bit can ONLY be physically stored as a “O” or “1”, in display or process assignment statements often “false” or “true” are displayed. \nExamples: \n* Cancellation Notice Sent Switch \n* =Multiple Line Discount Eligible Switch \n* Premium Payment Received Switch \n* Underwriter Review Request Switch\n\n**Note:** Consider a closely related class word, INDICATOR, if condition statuses are not to be expressed as as “O” or “1”.\n\n**Allowed values:** Always one of the following Boolean values: \n* “O\"= Off, No, or False (Condition does not exists)\n* “1’= On, Yes, or True (Condition exists)\n* Null = Absence of Value (for the most part 0/1 are accepted and null are the exception when “not answered”)",
+        "required": false,
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "error": {},
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "alternateKey": false
+      },
+      {
+        "name": "Text",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "required": false,
+        "childType": "varchar",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "0936ab8a-2409-4e94-965e-6f865ba39818",
+        "description": "Data having undefined content and/or unstructured format with no definable allowed values. Could be a free form description or comment about anything but does NOT specifically identify an object or thing.\n\nExamples:\n* Damage Description Text\n* Loss Description Text\n* Accident Description Text\n* Name Address Print Label Text\n\n**Note:** Also consider the possibility of Name, Contant, Document classwords\n",
+        "mode": "text",
+        "error": {}
+      },
+      {
+        "name": "Time",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "tPrecision": 9,
+        "required": false,
+        "childType": "time",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "035ff6dd-13f1-4a08-a348-28fc650721c0",
+        "description": "Actual clock time, which can be expressed in hours(military hours is usually best), Any valid time value minutes and sometimes seconds and smaller.\n\nExamples:\n* Option Expired Time\n* Transaction Applied Time\n* Appointment Time\n* Store Closing Time\n\n**Note:** Also consider the related Date and Timestamp classword",
+        "error": {}
+      },
+      {
+        "name": "Timestamp",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "tPrecision": 9,
+        "required": false,
+        "childType": "timestamp_tz",
+        "type": "string",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "GUID": "31ddce2a-537a-4184-8a68-32c429e525e0",
+        "description": "Hybrid DATE/TIME classword combination. \n\nExamples:\n* Table Row Create Timestamp\n* Communication Initiation Timestamp\n* Queue Message Received Timestamp\n* Systems Job Start Timestamp\n\n*Note: Also consider the related Date and Time classword\n\n**Allowed values:** Any valid timestamp value\n",
+        "error": {}
+      }
+    ],
+    "GUID": "46f4e0a5-4ed9-4cd5-9450-6ef2d5cc496a"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "b30fbf20-f48a-4a5f-989c-2a4f8b60f038"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "a9d6071c-1d00-4750-bd92-9174d66df642"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2025-03-04T16:11:38.445Z",
+  "GUID": "d2b770f5-fc25-4abe-89b7-038335dc5f2a",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-03-04T18:42:52.868Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.3"
+  },
+  "hackoladeMeta": {
+    "validationErrors": {
+      "description": false
+    }
+  },
+  "description": "Based on Steve Sewell's document",
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

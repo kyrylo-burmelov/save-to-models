@@ -1,0 +1,453 @@
+{
+  "modelName": "Customer Polyglot",
+  "collections": [
+    {
+      "GUID": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+      "collectionName": "Customer",
+      "type": "object",
+      "properties": [
+        {
+          "name": "First name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "e8a58173-1262-4752-859c-10ceec5598aa",
+          "description": "The customer’s given name, used for personalization and identification.",
+          "error": {}
+        },
+        {
+          "name": "Last name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "872c6f47-1c90-4b97-ad5e-2c446d854243",
+          "description": "The customer’s surname or family name.",
+          "error": {}
+        },
+        {
+          "name": "email",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "18d05aa0-70b0-4f8e-9736-ffbc7104f778",
+          "description": "The unique email address of the customer, serving as the primary key and primary contact method. Often used for authentication and login purposes.",
+          "error": {}
+        },
+        {
+          "name": "Phone number",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "bb57e423-15a3-43d2-bb4f-81c084e50416",
+          "description": "The primary telephone or mobile number for contacting the customer. Format may vary based on locale.",
+          "error": {}
+        },
+        {
+          "name": "Registration date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": false,
+          "childType": "date",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "primaryKey": false,
+          "GUID": "7fa9c279-fe3c-4864-83e9-10df93832aef",
+          "description": "Records the date when the customer registered on the e-commerce platform. It is essential for tracking customer lifecycle stages, analyzing customer acquisition trends, and managing loyalty programs.",
+          "error": {}
+        },
+        {
+          "GUID": "299ad0aa-01de-43f1-a266-bd803d9d7616",
+          "name": "Bill-to address",
+          "type": "reference",
+          "$ref": "#external/definitions/Address",
+          "refType": "external",
+          "ref": "08a8411a-1281-468b-9ec4-cbe9179336a3",
+          "refIdPath": [
+            "dca9ade7-ee0b-4953-b408-cc0e6b806e82",
+            "993e567a-09e9-47db-9254-e71c2dccbfc4",
+            "08a8411a-1281-468b-9ec4-cbe9179336a3"
+          ],
+          "isActivated": true,
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {
+            "refDescription": false,
+            "refPath": false
+          },
+          "refDescription": "Stores the default billing address for the customer. Used for invoicing, payment processing, and tax calculations."
+        },
+        {
+          "name": "Ship-to addresses",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "additionalItems": true,
+          "properties": [
+            {
+              "GUID": "3ff559e8-d20f-432c-9ad8-5b93be0f1055",
+              "type": "reference",
+              "$ref": "#external/definitions/Address",
+              "refType": "external",
+              "ref": "08a8411a-1281-468b-9ec4-cbe9179336a3",
+              "refIdPath": [
+                "dca9ade7-ee0b-4953-b408-cc0e6b806e82",
+                "993e567a-09e9-47db-9254-e71c2dccbfc4",
+                "08a8411a-1281-468b-9ec4-cbe9179336a3"
+              ],
+              "isActivated": true,
+              "compositeKey": [
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "compositePrimaryKey": false,
+              "compositeUniqueKey": false,
+              "displayName": "Address",
+              "arrayItem": true,
+              "error": {
+                "refPath": false
+              }
+            }
+          ],
+          "childType": "array",
+          "type": "array",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "primaryKey": false,
+          "required": false,
+          "GUID": "a569060a-b3b2-4f73-95c7-7c2e2145c273",
+          "description": "Holds a list of potential shipping addresses registered by the customer. Customers can maintain multiple shipping addresses for convenience and flexibility, allowing them to select a preferred address when placing an order. This feature enhances the user experience by accommodating different delivery locations, such as home, work, or gift recipients.",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a8a134b2-2caf-48d9-93b6-3a86f837ad43"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "81137752-f86d-41e7-bb91-6d3e9fdb9628",
+      "description": "The Customer entity represents an individual or organization using the ecommerce platform to browse, purchase, and manage orders. It stores essential contact information, registration data, and address details for billing and shipping."
+    }
+  ],
+  "buckets": [
+    {
+      "name": "Customer management",
+      "type": "bucket",
+      "collectionIds": [
+        "5cc94e26-8eb9-4b1c-a78d-a870d9f640db"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "81137752-f86d-41e7-bb91-6d3e9fdb9628",
+      "description": "The Customer Management container encompasses all entities and relationships associated with users of the ecommerce platform. It covers personal information, contact details, and addresses needed to fulfill orders, provide customer support, and maintain communication preferences."
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "5cc94e26-8eb9-4b1c-a78d-a870d9f640db": "Customer",
+    "e8a58173-1262-4752-859c-10ceec5598aa": "First name",
+    "872c6f47-1c90-4b97-ad5e-2c446d854243": "Last name",
+    "18d05aa0-70b0-4f8e-9736-ffbc7104f778": "email",
+    "bb57e423-15a3-43d2-bb4f-81c084e50416": "Phone number",
+    "7fa9c279-fe3c-4864-83e9-10df93832aef": "Registration date",
+    "9ef4d443-9c95-45f0-883a-6ec491d51efc": "Address",
+    "a569060a-b3b2-4f73-95c7-7c2e2145c273": "Ship-to addresses",
+    "81137752-f86d-41e7-bb91-6d3e9fdb9628": "Customer management",
+    "08a8411a-1281-468b-9ec4-cbe9179336a3": "Address",
+    "299ad0aa-01de-43f1-a266-bd803d9d7616": "Bill-to address"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "794f206c-bb8b-4cad-9a65-de8ac0a4f1b0"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "1929329d-edc0-41b2-b32c-51f5e9256ae9"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [
+      {
+        "name": "Address",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "name": "Address ID",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "c0851672-1531-5dea-b964-a55342c19d01",
+            "error": {}
+          },
+          {
+            "name": "Street",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "e39309ef-bddf-5ad6-a9f2-28eed3a97e6b",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+            "error": {}
+          },
+          {
+            "name": "Postal code",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "ed47b834-37f8-5b6c-a099-4c12f5ab2524",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+            "error": {}
+          },
+          {
+            "name": "City",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "36e43dd7-de6b-520a-87b4-9b61bc5c8260",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+            "error": {}
+          }
+        ],
+        "additionalProperties": false,
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "GUID": "08a8411a-1281-468b-9ec4-cbe9179336a3",
+        "fieldRelativePath": "#/Address",
+        "fileType": "hackoladeSchema",
+        "kind": "relativePath",
+        "link": "Address-Polyglot.hck.json",
+        "childType": "object",
+        "definitionRefs": [
+          [
+            "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+            "299ad0aa-01de-43f1-a266-bd803d9d7616"
+          ],
+          [
+            "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+            "a569060a-b3b2-4f73-95c7-7c2e2145c273",
+            "3ff559e8-d20f-432c-9ad8-5b93be0f1055"
+          ]
+        ]
+      }
+    ],
+    "GUID": "993e567a-09e9-47db-9254-e71c2dccbfc4"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "f40517e2-29ea-49d0-9706-f405a6cf02ac",
+      "name": "Disclaimer",
+      "type": "annotation",
+      "value": "This Model serves as a basic example of reusable definitions within a data modeling context\n\nIt is intended for illustration purposes only and simplifies the complexities of customer data management, omitting certain variations and best practices relevant to real-world applications.",
+      "disableInitialFocus": true
+    }
+  ],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2024-12-31T11:04:00.830Z",
+  "GUID": "dca9ade7-ee0b-4953-b408-cc0e6b806e82",
+  "isLineageEnabled": false,
+  "polyglotModelPaths": [],
+  "lastModifTS": "2025-02-28T12:15:06.712Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.2"
+  },
+  "hackoladeMeta": {
+    "validationErrors": {
+      "comments": false
+    }
+  },
+  "description": "The **Customer** entity represents individuals or organizations that engage with the e-commerce platform. This entity captures essential information about customers, allowing for effective management of customer relationships, order processing, and personalized marketing efforts.",
+  "comments": "This Model serves as a basic example of reusable definitions within a data modeling context\n\nIt is intended for illustration purposes only and simplifies the complexities of customer data management, omitting certain variations and best practices relevant to real-world applications.",
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+            "x": 1263,
+            "y": 1167,
+            "width": 385,
+            "height": 317,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1223,
+            "y": 1127,
+            "GUID": "81137752-f86d-41e7-bb91-6d3e9fdb9628"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+              "size": 100,
+              "x": 1040,
+              "y": 1040
+            }
+          ],
+          "buckets": [
+            {
+              "x": 1218,
+              "y": 1099,
+              "GUID": "81137752-f86d-41e7-bb91-6d3e9fdb9628"
+            }
+          ],
+          "decorativeSymbols": [
+            {
+              "GUID": "f40517e2-29ea-49d0-9706-f405a6cf02ac",
+              "x": 1242,
+              "y": 1099,
+              "height": 150,
+              "width": 300
+            }
+          ],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "f40517e2-29ea-49d0-9706-f405a6cf02ac",
+            "x": 1707,
+            "y": 1139,
+            "height": 150,
+            "width": 300,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

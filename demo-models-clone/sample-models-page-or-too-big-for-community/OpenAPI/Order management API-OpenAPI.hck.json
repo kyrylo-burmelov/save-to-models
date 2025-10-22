@@ -1,0 +1,3954 @@
+{
+  "modelName": "Order management API",
+  "collections": [
+    {
+      "GUID": "bf9ffe64-6ccc-4ca6-9612-c03131215fb3",
+      "collectionName": "get",
+      "type": "object",
+      "properties": [
+        {
+          "name": "parameters",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "structureType": true,
+          "schemeType": "apiKey",
+          "required": false,
+          "properties": [],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "anyParameter",
+          "nullable": false,
+          "childType": "array",
+          "type": "array",
+          "code": "",
+          "GUID": "72676d24-5827-4cd7-a87e-5839a89f4791",
+          "error": {}
+        },
+        {
+          "name": "callbacks",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "operationObject",
+          "type": "document",
+          "subtype": "callback",
+          "GUID": "a514003a-bebf-4e93-9989-ee16c8f0be54",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "a689ac57-6364-411d-8f5b-0d3c1109d335",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "subtype": "requestBody",
+      "bucketId": "94ce591f-efe4-437c-9eef-57c68810fa51",
+      "scopesExtensions": [],
+      "tags": [
+        {
+          "tag": "Orders",
+          "GUID": "03664eca-b821-4fa8-bd89-f4a06e91458b"
+        }
+      ],
+      "summary": "List all orders",
+      "description": "Retrieve a list of orders with optional filtering capabilities.",
+      "withRequestBody": false,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "3127a678-95a0-474c-897b-38fdd4abcd38"
+      ]
+    },
+    {
+      "GUID": "3127a678-95a0-474c-897b-38fdd4abcd38",
+      "collectionName": "200",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "cf21c741-e4f8-4618-8c02-8f2f522249bc",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [
+                {
+                  "name": "application/json",
+                  "hackoladeMeta": {
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "properties": [
+                    {
+                      "code": "",
+                      "name": "schema",
+                      "isActivated": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "properties": [
+                        {
+                          "GUID": "a507f091-4d53-4645-ab66-c58146788212",
+                          "type": "reference",
+                          "$ref": "#model/definitions/schemas/Order",
+                          "refType": "model",
+                          "ref": "9ea9afa0-8f58-44af-9163-c816b0867be3",
+                          "refIdPath": [
+                            "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+                            "546b7c14-5a33-496f-b6e5-161c79c56742",
+                            "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+                            "9ea9afa0-8f58-44af-9163-c816b0867be3"
+                          ],
+                          "isActivated": true,
+                          "displayName": "Order",
+                          "arrayItem": true
+                        }
+                      ],
+                      "primaryKey": false,
+                      "additionalItems": true,
+                      "uniqueItems": false,
+                      "subtype": "schema",
+                      "nullable": false,
+                      "childType": "array",
+                      "type": "array",
+                      "GUID": "84135d8d-db1d-467b-b355-5b156c1b435f",
+                      "error": {}
+                    },
+                    {
+                      "name": "examples",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "example",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "bfbe9f83-781e-4d6a-bee6-65048a167646",
+                      "error": {}
+                    },
+                    {
+                      "name": "encoding",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "encoding",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "188cb528-b77c-454f-b799-d04198dfb42b",
+                      "error": {}
+                    }
+                  ],
+                  "ignore_z_value": true,
+                  "snippet": "media",
+                  "additionalProperties": true,
+                  "subtype": "structuralSchema",
+                  "childType": "media",
+                  "type": "document",
+                  "scopesExtensions": [],
+                  "GUID": "4edfed16-5ed7-49ff-b8f0-1df801ab7167",
+                  "error": {}
+                }
+              ],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "337c1839-64d0-47c5-8f54-404976c9c594",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "0d93d75f-c926-40c8-aae8-d2148cddbff1",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "A list of orders.",
+          "GUID": "a9cc4c04-80c8-4ef2-9a7b-95a3f0eedb9f",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "600b3eae-7f24-4d50-86c5-53b718124bc5",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "94ce591f-efe4-437c-9eef-57c68810fa51",
+      "description": "A list of orders.",
+      "parentCollection": "bf9ffe64-6ccc-4ca6-9612-c03131215fb3",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "f149bc3f-c719-473e-91c9-ea1ec9add7ad",
+      "collectionName": "post",
+      "type": "object",
+      "properties": [
+        {
+          "name": "parameters",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "structureType": true,
+          "schemeType": "apiKey",
+          "required": false,
+          "properties": [],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "anyParameter",
+          "nullable": false,
+          "childType": "array",
+          "type": "array",
+          "code": "",
+          "GUID": "a6e05141-6ca7-4f9a-b23f-7e02a138ecad",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "requestBody",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "required": true,
+          "properties": [
+            {
+              "name": "application/json",
+              "hackoladeMeta": {
+                "disableReference": true
+              },
+              "isActivated": true,
+              "schemeType": "apiKey",
+              "properties": [
+                {
+                  "GUID": "df58f1ed-dbd9-45b0-aae6-9484dd6bca04",
+                  "name": "schema",
+                  "type": "reference",
+                  "$ref": "#model/definitions/schemas/Order",
+                  "refType": "model",
+                  "ref": "9ea9afa0-8f58-44af-9163-c816b0867be3",
+                  "refIdPath": [
+                    "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+                    "546b7c14-5a33-496f-b6e5-161c79c56742",
+                    "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+                    "9ea9afa0-8f58-44af-9163-c816b0867be3"
+                  ],
+                  "isActivated": true,
+                  "code": ""
+                },
+                {
+                  "name": "examples",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "example",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "012c98b7-5f87-483a-847a-96670944ea20",
+                  "error": {}
+                },
+                {
+                  "name": "encoding",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "encoding",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "3f435002-52f4-44a5-90ab-bca67079cbd9",
+                  "error": {}
+                }
+              ],
+              "ignore_z_value": true,
+              "snippet": "media",
+              "additionalProperties": true,
+              "subtype": "structuralSchema",
+              "childType": "media",
+              "type": "document",
+              "scopesExtensions": [],
+              "GUID": "43a2273a-b8ee-4bc2-88e4-81b96afbdf0b",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "snippet": "requestBody",
+          "subtype": "media",
+          "childType": "requestBody",
+          "type": "document",
+          "scopesExtensions": [],
+          "GUID": "1981dcb5-41c8-436e-97da-8d5d6f51eb2f",
+          "error": {}
+        },
+        {
+          "name": "callbacks",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "operationObject",
+          "type": "document",
+          "subtype": "callback",
+          "GUID": "f483ef0b-d4b5-4511-893a-4c085b6d223e",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "0c742a1c-f538-47b9-91f0-87256e6d2301",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "subtype": "requestBody",
+      "bucketId": "94ce591f-efe4-437c-9eef-57c68810fa51",
+      "scopesExtensions": [],
+      "tags": [
+        {
+          "tag": "Orders",
+          "GUID": "7bb2197f-deef-4c36-a938-2205831f3996"
+        }
+      ],
+      "summary": "Create a new order",
+      "description": "Create an order with order details and associated items.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "ee723c80-3b76-41a5-b69a-103a07cba413",
+        "d1ff06f7-e8eb-4a05-b3c4-48f01f85ab15"
+      ]
+    },
+    {
+      "GUID": "ee723c80-3b76-41a5-b69a-103a07cba413",
+      "collectionName": "201",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "3c6fac03-1ba9-49b8-9c52-4546cacc42b5",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [
+                {
+                  "name": "application/json",
+                  "hackoladeMeta": {
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "properties": [
+                    {
+                      "GUID": "90b4b646-e744-4558-b308-48c50e3e4f84",
+                      "name": "schema",
+                      "type": "reference",
+                      "$ref": "#model/definitions/schemas/Order",
+                      "refType": "model",
+                      "ref": "9ea9afa0-8f58-44af-9163-c816b0867be3",
+                      "refIdPath": [
+                        "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+                        "546b7c14-5a33-496f-b6e5-161c79c56742",
+                        "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+                        "9ea9afa0-8f58-44af-9163-c816b0867be3"
+                      ],
+                      "isActivated": true,
+                      "code": ""
+                    },
+                    {
+                      "name": "examples",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "example",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "fcb3c3f6-9c61-4a7e-bef8-23db953b20ed",
+                      "error": {}
+                    },
+                    {
+                      "name": "encoding",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "encoding",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "a6aba9bc-088a-4243-93da-1dd8ec5c1e31",
+                      "error": {}
+                    }
+                  ],
+                  "ignore_z_value": true,
+                  "snippet": "media",
+                  "additionalProperties": true,
+                  "subtype": "structuralSchema",
+                  "childType": "media",
+                  "type": "document",
+                  "scopesExtensions": [],
+                  "GUID": "261c736f-3ffd-49f5-86d7-47879f0763f1",
+                  "error": {}
+                }
+              ],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "3d950850-ccad-4976-bef7-8124cc33877f",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "bb944c83-f843-4242-a448-aba8832e4229",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "The newly created order.",
+          "GUID": "df27b871-f642-438b-bed9-0e563ac736bd",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "c742b6ca-764e-4d74-8620-c8ed01be8711",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "94ce591f-efe4-437c-9eef-57c68810fa51",
+      "description": "The newly created order.",
+      "parentCollection": "f149bc3f-c719-473e-91c9-ea1ec9add7ad",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "d1ff06f7-e8eb-4a05-b3c4-48f01f85ab15",
+      "collectionName": "400",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "80a50810-13f3-4e82-90b7-30465189bb8d",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "c3f8c728-87dd-445e-aa7b-c25f55a64715",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "8c277d11-02d9-4aee-9d92-e85a953ee3ff",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "Invalid request data.",
+          "GUID": "3cf034a1-f4ba-4ec0-8371-91e031fcecd5",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "5dee2b3f-7c57-467d-813d-f1db8c0c1e41",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "94ce591f-efe4-437c-9eef-57c68810fa51",
+      "description": "Invalid request data.",
+      "parentCollection": "f149bc3f-c719-473e-91c9-ea1ec9add7ad",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "5a4bf182-902e-496a-9945-f3037281c9ea",
+      "collectionName": "get",
+      "type": "object",
+      "properties": [
+        {
+          "name": "parameters",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "structureType": true,
+          "schemeType": "apiKey",
+          "required": false,
+          "properties": [
+            {
+              "code": "",
+              "hackoladeMeta": {
+                "displayNameFromField": "parameterName"
+              },
+              "isActivated": true,
+              "schemeType": "apiKey",
+              "required": true,
+              "properties": [
+                {
+                  "code": "",
+                  "name": "schema",
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "nullable": false,
+                  "type": "string",
+                  "subtype": "schema",
+                  "GUID": "3a1b0a14-8f6d-49f3-a8fa-dffc5e0ea4ca",
+                  "error": {}
+                },
+                {
+                  "name": "content",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "media",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "e2ca878d-670a-4532-af83-a2dff6b02418",
+                  "error": {}
+                },
+                {
+                  "name": "examples",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "example",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "450a51c8-ec68-4d77-86fb-64fed7a32324",
+                  "error": {}
+                }
+              ],
+              "ignore_z_value": true,
+              "snippet": "parameter",
+              "additionalProperties": true,
+              "subtype": "structuralSchema",
+              "parameterName": "orderId",
+              "childType": "parameter (path)",
+              "type": "document",
+              "GUID": "efa7cfe6-a679-4eb6-ac5d-742a442a4f6c",
+              "arrayItem": true,
+              "scopesExtensions": [],
+              "name": "orderId",
+              "description": "The unique ID of the order to retrieve",
+              "error": {}
+            }
+          ],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "anyParameter",
+          "nullable": false,
+          "childType": "array",
+          "type": "array",
+          "code": "",
+          "GUID": "c39524b0-45bc-4712-9172-8fd422eb0fbf",
+          "error": {}
+        },
+        {
+          "name": "callbacks",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "operationObject",
+          "type": "document",
+          "subtype": "callback",
+          "GUID": "a875683a-e8f5-4689-b71f-d6f0ba5749c1",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "a278da56-f20e-436f-9c86-c7a849515aa8",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "subtype": "requestBody",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "scopesExtensions": [],
+      "tags": [
+        {
+          "tag": "Orders",
+          "GUID": "8f7f8316-6ed8-4395-a231-8812cc074736"
+        }
+      ],
+      "summary": "Retrieve an order by ID",
+      "description": "Get details of a single order by its unique identifier.",
+      "withRequestBody": false,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "d03b15b7-17bb-479a-adf1-68e47efe6e7e",
+        "373ddb98-54e8-428c-a327-0b12a51c9b8b"
+      ]
+    },
+    {
+      "GUID": "d03b15b7-17bb-479a-adf1-68e47efe6e7e",
+      "collectionName": "200",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "10cf9116-cb38-486c-911a-01b852b029b8",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [
+                {
+                  "name": "application/json",
+                  "hackoladeMeta": {
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "properties": [
+                    {
+                      "GUID": "c045752a-8b67-4c05-91cd-e4ea308aa4c8",
+                      "name": "schema",
+                      "type": "reference",
+                      "$ref": "#model/definitions/schemas/Order",
+                      "refType": "model",
+                      "ref": "9ea9afa0-8f58-44af-9163-c816b0867be3",
+                      "refIdPath": [
+                        "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+                        "546b7c14-5a33-496f-b6e5-161c79c56742",
+                        "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+                        "9ea9afa0-8f58-44af-9163-c816b0867be3"
+                      ],
+                      "isActivated": true,
+                      "code": ""
+                    },
+                    {
+                      "name": "examples",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "example",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "58c2f48c-cf74-45f7-9a8c-7d1717a14dba",
+                      "error": {}
+                    },
+                    {
+                      "name": "encoding",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "encoding",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "a3568bda-06ef-4c2c-9b5e-8b9fb4313958",
+                      "error": {}
+                    }
+                  ],
+                  "ignore_z_value": true,
+                  "snippet": "media",
+                  "additionalProperties": true,
+                  "subtype": "structuralSchema",
+                  "childType": "media",
+                  "type": "document",
+                  "scopesExtensions": [],
+                  "GUID": "832b1f7b-d1c6-458b-8f27-66a85ec56167",
+                  "error": {}
+                }
+              ],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "b6653be6-0d39-4f6b-972e-91757e77bb81",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "e0e9a687-df06-44c0-a236-bc804bb296c0",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "The requested order.",
+          "GUID": "25009f1e-3d4f-4c03-af76-127dab61584f",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "bb467bfa-3a22-4610-a0d0-3bae773a89a5",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "description": "The requested order.",
+      "parentCollection": "5a4bf182-902e-496a-9945-f3037281c9ea",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "373ddb98-54e8-428c-a327-0b12a51c9b8b",
+      "collectionName": "404",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "c1a27f92-049a-4770-a010-5f27775dfc22",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "bcd78565-e5f9-4595-8e07-d23c3a42525f",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "0fd022df-77e4-4fca-8e96-00febfe543ce",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "Order not found.",
+          "GUID": "8fdbeb3e-48ef-43b1-9335-4d16d69660f0",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "e617d329-ef31-4f5f-8ad8-55ddcfba714b",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "description": "Order not found.",
+      "parentCollection": "5a4bf182-902e-496a-9945-f3037281c9ea",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "c8912668-44ce-471d-9b26-a431585890ed",
+      "collectionName": "put",
+      "type": "object",
+      "properties": [
+        {
+          "name": "parameters",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "structureType": true,
+          "schemeType": "apiKey",
+          "required": false,
+          "properties": [
+            {
+              "code": "",
+              "hackoladeMeta": {
+                "displayNameFromField": "parameterName"
+              },
+              "isActivated": true,
+              "schemeType": "apiKey",
+              "required": true,
+              "properties": [
+                {
+                  "code": "",
+                  "name": "schema",
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "nullable": false,
+                  "type": "string",
+                  "subtype": "schema",
+                  "GUID": "60dce3c2-91b5-4cff-b860-d61ee3c84490",
+                  "error": {}
+                },
+                {
+                  "name": "content",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "media",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "c51c69f1-6de8-486b-8c4a-68f9cc6c07d4",
+                  "error": {}
+                },
+                {
+                  "name": "examples",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "example",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "9ed94c28-2894-4ebe-92ea-9045afffbc79",
+                  "error": {}
+                }
+              ],
+              "ignore_z_value": true,
+              "snippet": "parameter",
+              "additionalProperties": true,
+              "subtype": "structuralSchema",
+              "parameterName": "orderId",
+              "childType": "parameter (path)",
+              "type": "document",
+              "GUID": "ebfd9a39-c2b3-4cd3-b52a-895fec76d4a6",
+              "arrayItem": true,
+              "scopesExtensions": [],
+              "name": "orderId",
+              "description": "The unique ID of the order to update",
+              "error": {}
+            }
+          ],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "anyParameter",
+          "nullable": false,
+          "childType": "array",
+          "type": "array",
+          "code": "",
+          "GUID": "3ba39ccb-aa0e-402b-b6c8-8b5cf45c9e07",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "requestBody",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "required": true,
+          "properties": [
+            {
+              "name": "application/json",
+              "hackoladeMeta": {
+                "disableReference": true
+              },
+              "isActivated": true,
+              "schemeType": "apiKey",
+              "properties": [
+                {
+                  "GUID": "ee891fe4-6e19-4518-9db9-bf69aeed3347",
+                  "name": "schema",
+                  "type": "reference",
+                  "$ref": "#model/definitions/schemas/Order",
+                  "refType": "model",
+                  "ref": "9ea9afa0-8f58-44af-9163-c816b0867be3",
+                  "refIdPath": [
+                    "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+                    "546b7c14-5a33-496f-b6e5-161c79c56742",
+                    "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+                    "9ea9afa0-8f58-44af-9163-c816b0867be3"
+                  ],
+                  "isActivated": true,
+                  "code": ""
+                },
+                {
+                  "name": "examples",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "example",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "b0cfb0e9-bd34-4c43-bd1b-f2334ff0ec2d",
+                  "error": {}
+                },
+                {
+                  "name": "encoding",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "encoding",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "80c2d944-c700-49e0-b6bf-ea9a66d2b49e",
+                  "error": {}
+                }
+              ],
+              "ignore_z_value": true,
+              "snippet": "media",
+              "additionalProperties": true,
+              "subtype": "structuralSchema",
+              "childType": "media",
+              "type": "document",
+              "scopesExtensions": [],
+              "GUID": "d5267a2b-2eb2-4a42-bab2-a8472033eb78",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "snippet": "requestBody",
+          "subtype": "media",
+          "childType": "requestBody",
+          "type": "document",
+          "scopesExtensions": [],
+          "GUID": "b7e1f793-3b8b-4794-acf2-f82662a414f7",
+          "error": {}
+        },
+        {
+          "name": "callbacks",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "operationObject",
+          "type": "document",
+          "subtype": "callback",
+          "GUID": "a77d30cc-fa92-4ed9-9241-1b6f422e1ea3",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "e81814cf-568d-4e5c-9418-58368061d18b",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "subtype": "requestBody",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "scopesExtensions": [],
+      "tags": [
+        {
+          "tag": "Orders",
+          "GUID": "a979a991-90f0-4580-a2e5-be428389e386"
+        }
+      ],
+      "summary": "Update an existing order",
+      "description": "Replace the entire order resource with the provided data.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "aa074b9b-64f5-486c-8187-8be3470a7ae3",
+        "68e3e089-17c8-4110-8d22-ee6dfd8cc0b9"
+      ]
+    },
+    {
+      "GUID": "aa074b9b-64f5-486c-8187-8be3470a7ae3",
+      "collectionName": "200",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "e5744062-7ff5-465d-993b-39caf4d81b2e",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [
+                {
+                  "name": "application/json",
+                  "hackoladeMeta": {
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "properties": [
+                    {
+                      "GUID": "854e9b26-ab36-4d72-9272-998b0b8c77fd",
+                      "name": "schema",
+                      "type": "reference",
+                      "$ref": "#model/definitions/schemas/Order",
+                      "refType": "model",
+                      "ref": "9ea9afa0-8f58-44af-9163-c816b0867be3",
+                      "refIdPath": [
+                        "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+                        "546b7c14-5a33-496f-b6e5-161c79c56742",
+                        "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+                        "9ea9afa0-8f58-44af-9163-c816b0867be3"
+                      ],
+                      "isActivated": true,
+                      "code": ""
+                    },
+                    {
+                      "name": "examples",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "example",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "7c904350-10a9-473a-ab50-4feacb140c4f",
+                      "error": {}
+                    },
+                    {
+                      "name": "encoding",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "encoding",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "85d5c2b0-44f1-43dc-b9f9-6d22e2cf07eb",
+                      "error": {}
+                    }
+                  ],
+                  "ignore_z_value": true,
+                  "snippet": "media",
+                  "additionalProperties": true,
+                  "subtype": "structuralSchema",
+                  "childType": "media",
+                  "type": "document",
+                  "scopesExtensions": [],
+                  "GUID": "950c986b-c973-4c80-a8a3-f4d86c85cffc",
+                  "error": {}
+                }
+              ],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "bd1cb8d5-4f91-4131-a92c-ded1a84face3",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "c305d83b-82f2-4074-9ce6-8c0fd30cafac",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "The updated order.",
+          "GUID": "6f3ee456-9336-483b-852d-8acfce92999a",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "ce6a7869-cd06-4948-bab2-bf24a2486656",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "description": "The updated order.",
+      "parentCollection": "c8912668-44ce-471d-9b26-a431585890ed",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "68e3e089-17c8-4110-8d22-ee6dfd8cc0b9",
+      "collectionName": "404",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "adf88a94-d020-402c-9b4b-259bfcad112e",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "6f1049c3-a2b8-4016-9f23-b7d867f756c7",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "c290fd63-f5b5-4d12-9b42-d9e452329a3b",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "Order not found.",
+          "GUID": "143ae292-0c92-4ef5-bea9-5b5fc13383ea",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "bdc72241-cab4-4593-8a71-32c51199dfa9",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "description": "Order not found.",
+      "parentCollection": "c8912668-44ce-471d-9b26-a431585890ed",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "d5bae68e-332d-4b27-97c5-d48494321ac8",
+      "collectionName": "delete",
+      "type": "object",
+      "properties": [
+        {
+          "name": "parameters",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "structureType": true,
+          "schemeType": "apiKey",
+          "required": false,
+          "properties": [
+            {
+              "code": "",
+              "hackoladeMeta": {
+                "displayNameFromField": "parameterName"
+              },
+              "isActivated": true,
+              "schemeType": "apiKey",
+              "required": true,
+              "properties": [
+                {
+                  "code": "",
+                  "name": "schema",
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "nullable": false,
+                  "type": "string",
+                  "subtype": "schema",
+                  "GUID": "c257ec8d-16ed-46c3-a7de-ee3125f1b2d8",
+                  "error": {}
+                },
+                {
+                  "name": "content",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "media",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "da67c75c-62d6-4b01-be7f-02a6c7798942",
+                  "error": {}
+                },
+                {
+                  "name": "examples",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "example",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "119fc968-4c25-4730-abb1-42700ef0f325",
+                  "error": {}
+                }
+              ],
+              "ignore_z_value": true,
+              "snippet": "parameter",
+              "additionalProperties": true,
+              "subtype": "structuralSchema",
+              "parameterName": "orderId",
+              "childType": "parameter (path)",
+              "type": "document",
+              "GUID": "753f9c7f-2564-45e1-996d-802688291045",
+              "arrayItem": true,
+              "scopesExtensions": [],
+              "name": "orderId",
+              "description": "The unique ID of the order to delete",
+              "error": {}
+            }
+          ],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "anyParameter",
+          "nullable": false,
+          "childType": "array",
+          "type": "array",
+          "code": "",
+          "GUID": "2159f4c2-7eef-469a-b800-77e79757ad11",
+          "error": {}
+        },
+        {
+          "name": "callbacks",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "operationObject",
+          "type": "document",
+          "subtype": "callback",
+          "GUID": "1579a8b6-8afc-45a5-bf8e-72d669f3a500",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "137bc06f-9f78-40f5-ad54-8ef8bebfb721",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "subtype": "requestBody",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "scopesExtensions": [],
+      "tags": [
+        {
+          "tag": "Orders",
+          "GUID": "3e9d8c05-09ae-4650-9ba1-6901a4c3d61e"
+        }
+      ],
+      "summary": "Delete an order",
+      "description": "Permanently remove an order from the system.",
+      "withRequestBody": false,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "c5e37090-3482-4639-8143-79ebdf7fd6fd",
+        "a5e2f5c0-46ff-4a58-890f-accd62eebcfe"
+      ]
+    },
+    {
+      "GUID": "c5e37090-3482-4639-8143-79ebdf7fd6fd",
+      "collectionName": "204",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "2126800e-4682-44e0-bb30-f36346c32f20",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "5900251c-cceb-4a72-a507-a85503f1fe36",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "d64bda6d-211d-4e75-899e-725da6947d8c",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "Order successfully deleted.",
+          "GUID": "4c885853-0df3-46fb-b302-599253a443d2",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "0e6679d0-0bac-4fdd-ba4f-602edb22afdc",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "description": "Order successfully deleted.",
+      "parentCollection": "d5bae68e-332d-4b27-97c5-d48494321ac8",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "a5e2f5c0-46ff-4a58-890f-accd62eebcfe",
+      "collectionName": "404",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "cef45e7a-6cfe-497b-b997-d341e6220468",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "2838e28a-7a1d-49a0-8ee5-66791e5a5d9a",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "4be190d9-fced-45ca-bbf4-711d76f1d73a",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "Order not found.",
+          "GUID": "fe830b51-d88e-45ba-949c-d05a57745c41",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "99ec955d-08a4-44f5-abd9-4523326b8896",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "description": "Order not found.",
+      "parentCollection": "d5bae68e-332d-4b27-97c5-d48494321ac8",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "/orders",
+      "type": "bucket",
+      "collectionIds": [
+        "bf9ffe64-6ccc-4ca6-9612-c03131215fb3",
+        "3127a678-95a0-474c-897b-38fdd4abcd38",
+        "f149bc3f-c719-473e-91c9-ea1ec9add7ad",
+        "ee723c80-3b76-41a5-b69a-103a07cba413",
+        "d1ff06f7-e8eb-4a05-b3c4-48f01f85ab15"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "94ce591f-efe4-437c-9eef-57c68810fa51",
+      "hackoladeMeta": {},
+      "addFieldsToBucket": true,
+      "isPlugin": true
+    },
+    {
+      "name": "/orders/{orderId}",
+      "type": "bucket",
+      "collectionIds": [
+        "5a4bf182-902e-496a-9945-f3037281c9ea",
+        "d03b15b7-17bb-479a-adf1-68e47efe6e7e",
+        "373ddb98-54e8-428c-a327-0b12a51c9b8b",
+        "c8912668-44ce-471d-9b26-a431585890ed",
+        "aa074b9b-64f5-486c-8187-8be3470a7ae3",
+        "68e3e089-17c8-4110-8d22-ee6dfd8cc0b9",
+        "d5bae68e-332d-4b27-97c5-d48494321ac8",
+        "c5e37090-3482-4639-8143-79ebdf7fd6fd",
+        "a5e2f5c0-46ff-4a58-890f-accd62eebcfe"
+      ],
+      "backgroundColor": {
+        "r": 0,
+        "g": 138,
+        "b": 0,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "0fe039ae-2bf2-4298-b282-397c853c8485",
+      "hackoladeMeta": {},
+      "addFieldsToBucket": true,
+      "isPlugin": true
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a": "schemas",
+    "85a75ab0-65ca-497c-b382-cac0a1596195": "responses",
+    "aac06346-1668-482d-867e-0a0ccf2c1a54": "parameters",
+    "8bc48156-a710-4386-8521-29423bd6054e": "examples",
+    "f3edff4d-edd8-4702-8263-31932b052822": "requestBodies",
+    "9e7fc0ee-fdba-4c5b-bb43-d611b13aa2c4": "headers",
+    "9508fa7b-5c6d-4e2d-99e6-6997aa876790": "securitySchemes",
+    "2eeaf294-a899-4a2d-8807-5ddf7f03f6ee": "links",
+    "7faed5c3-2f36-42e1-8abb-aa2b2b47c305": "callbacks",
+    "2f938919-336d-4cf0-82ff-93b0c6f8847a": "Specification Extensions",
+    "9ea9afa0-8f58-44af-9163-c816b0867be3": "Order",
+    "94ce591f-efe4-437c-9eef-57c68810fa51": "/orders",
+    "0fe039ae-2bf2-4298-b282-397c853c8485": "/orders/{orderId}",
+    "72676d24-5827-4cd7-a87e-5839a89f4791": "parameters",
+    "a514003a-bebf-4e93-9989-ee16c8f0be54": "callbacks",
+    "bf9ffe64-6ccc-4ca6-9612-c03131215fb3": "get",
+    "a9cc4c04-80c8-4ef2-9a7b-95a3f0eedb9f": "response",
+    "cf21c741-e4f8-4618-8c02-8f2f522249bc": "headers",
+    "337c1839-64d0-47c5-8f54-404976c9c594": "content",
+    "4edfed16-5ed7-49ff-b8f0-1df801ab7167": "application/json",
+    "84135d8d-db1d-467b-b355-5b156c1b435f": "schema",
+    "bfbe9f83-781e-4d6a-bee6-65048a167646": "examples",
+    "188cb528-b77c-454f-b799-d04198dfb42b": "encoding",
+    "0d93d75f-c926-40c8-aae8-d2148cddbff1": "links",
+    "3127a678-95a0-474c-897b-38fdd4abcd38": "200",
+    "a6e05141-6ca7-4f9a-b23f-7e02a138ecad": "parameters",
+    "1981dcb5-41c8-436e-97da-8d5d6f51eb2f": "requestBody",
+    "43a2273a-b8ee-4bc2-88e4-81b96afbdf0b": "application/json",
+    "df58f1ed-dbd9-45b0-aae6-9484dd6bca04": "schema",
+    "012c98b7-5f87-483a-847a-96670944ea20": "examples",
+    "3f435002-52f4-44a5-90ab-bca67079cbd9": "encoding",
+    "f483ef0b-d4b5-4511-893a-4c085b6d223e": "callbacks",
+    "f149bc3f-c719-473e-91c9-ea1ec9add7ad": "post",
+    "df27b871-f642-438b-bed9-0e563ac736bd": "response",
+    "3c6fac03-1ba9-49b8-9c52-4546cacc42b5": "headers",
+    "3d950850-ccad-4976-bef7-8124cc33877f": "content",
+    "261c736f-3ffd-49f5-86d7-47879f0763f1": "application/json",
+    "90b4b646-e744-4558-b308-48c50e3e4f84": "schema",
+    "fcb3c3f6-9c61-4a7e-bef8-23db953b20ed": "examples",
+    "a6aba9bc-088a-4243-93da-1dd8ec5c1e31": "encoding",
+    "bb944c83-f843-4242-a448-aba8832e4229": "links",
+    "ee723c80-3b76-41a5-b69a-103a07cba413": "201",
+    "3cf034a1-f4ba-4ec0-8371-91e031fcecd5": "response",
+    "80a50810-13f3-4e82-90b7-30465189bb8d": "headers",
+    "c3f8c728-87dd-445e-aa7b-c25f55a64715": "content",
+    "8c277d11-02d9-4aee-9d92-e85a953ee3ff": "links",
+    "d1ff06f7-e8eb-4a05-b3c4-48f01f85ab15": "400",
+    "c39524b0-45bc-4712-9172-8fd422eb0fbf": "parameters",
+    "efa7cfe6-a679-4eb6-ac5d-742a442a4f6c": "orderId",
+    "3a1b0a14-8f6d-49f3-a8fa-dffc5e0ea4ca": "schema",
+    "e2ca878d-670a-4532-af83-a2dff6b02418": "content",
+    "450a51c8-ec68-4d77-86fb-64fed7a32324": "examples",
+    "a875683a-e8f5-4689-b71f-d6f0ba5749c1": "callbacks",
+    "5a4bf182-902e-496a-9945-f3037281c9ea": "get",
+    "25009f1e-3d4f-4c03-af76-127dab61584f": "response",
+    "10cf9116-cb38-486c-911a-01b852b029b8": "headers",
+    "b6653be6-0d39-4f6b-972e-91757e77bb81": "content",
+    "832b1f7b-d1c6-458b-8f27-66a85ec56167": "application/json",
+    "c045752a-8b67-4c05-91cd-e4ea308aa4c8": "schema",
+    "58c2f48c-cf74-45f7-9a8c-7d1717a14dba": "examples",
+    "a3568bda-06ef-4c2c-9b5e-8b9fb4313958": "encoding",
+    "e0e9a687-df06-44c0-a236-bc804bb296c0": "links",
+    "d03b15b7-17bb-479a-adf1-68e47efe6e7e": "200",
+    "8fdbeb3e-48ef-43b1-9335-4d16d69660f0": "response",
+    "c1a27f92-049a-4770-a010-5f27775dfc22": "headers",
+    "bcd78565-e5f9-4595-8e07-d23c3a42525f": "content",
+    "0fd022df-77e4-4fca-8e96-00febfe543ce": "links",
+    "373ddb98-54e8-428c-a327-0b12a51c9b8b": "404",
+    "3ba39ccb-aa0e-402b-b6c8-8b5cf45c9e07": "parameters",
+    "ebfd9a39-c2b3-4cd3-b52a-895fec76d4a6": "orderId",
+    "60dce3c2-91b5-4cff-b860-d61ee3c84490": "schema",
+    "c51c69f1-6de8-486b-8c4a-68f9cc6c07d4": "content",
+    "9ed94c28-2894-4ebe-92ea-9045afffbc79": "examples",
+    "b7e1f793-3b8b-4794-acf2-f82662a414f7": "requestBody",
+    "d5267a2b-2eb2-4a42-bab2-a8472033eb78": "application/json",
+    "ee891fe4-6e19-4518-9db9-bf69aeed3347": "schema",
+    "b0cfb0e9-bd34-4c43-bd1b-f2334ff0ec2d": "examples",
+    "80c2d944-c700-49e0-b6bf-ea9a66d2b49e": "encoding",
+    "a77d30cc-fa92-4ed9-9241-1b6f422e1ea3": "callbacks",
+    "c8912668-44ce-471d-9b26-a431585890ed": "put",
+    "6f3ee456-9336-483b-852d-8acfce92999a": "response",
+    "e5744062-7ff5-465d-993b-39caf4d81b2e": "headers",
+    "bd1cb8d5-4f91-4131-a92c-ded1a84face3": "content",
+    "950c986b-c973-4c80-a8a3-f4d86c85cffc": "application/json",
+    "854e9b26-ab36-4d72-9272-998b0b8c77fd": "schema",
+    "7c904350-10a9-473a-ab50-4feacb140c4f": "examples",
+    "85d5c2b0-44f1-43dc-b9f9-6d22e2cf07eb": "encoding",
+    "c305d83b-82f2-4074-9ce6-8c0fd30cafac": "links",
+    "aa074b9b-64f5-486c-8187-8be3470a7ae3": "200",
+    "143ae292-0c92-4ef5-bea9-5b5fc13383ea": "response",
+    "adf88a94-d020-402c-9b4b-259bfcad112e": "headers",
+    "6f1049c3-a2b8-4016-9f23-b7d867f756c7": "content",
+    "c290fd63-f5b5-4d12-9b42-d9e452329a3b": "links",
+    "68e3e089-17c8-4110-8d22-ee6dfd8cc0b9": "404",
+    "2159f4c2-7eef-469a-b800-77e79757ad11": "parameters",
+    "753f9c7f-2564-45e1-996d-802688291045": "orderId",
+    "c257ec8d-16ed-46c3-a7de-ee3125f1b2d8": "schema",
+    "da67c75c-62d6-4b01-be7f-02a6c7798942": "content",
+    "119fc968-4c25-4730-abb1-42700ef0f325": "examples",
+    "1579a8b6-8afc-45a5-bf8e-72d669f3a500": "callbacks",
+    "d5bae68e-332d-4b27-97c5-d48494321ac8": "delete",
+    "4c885853-0df3-46fb-b302-599253a443d2": "response",
+    "2126800e-4682-44e0-bb30-f36346c32f20": "headers",
+    "5900251c-cceb-4a72-a507-a85503f1fe36": "content",
+    "d64bda6d-211d-4e75-899e-725da6947d8c": "links",
+    "c5e37090-3482-4639-8143-79ebdf7fd6fd": "204",
+    "fe830b51-d88e-45ba-949c-d05a57745c41": "response",
+    "cef45e7a-6cfe-497b-b997-d341e6220468": "headers",
+    "2838e28a-7a1d-49a0-8ee5-66791e5a5d9a": "content",
+    "4be190d9-fced-45ca-bbf4-711d76f1d73a": "links",
+    "a5e2f5c0-46ff-4a58-890f-accd62eebcfe": "404"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [
+      {
+        "name": "schemas",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "source": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "GUID": "9ea9afa0-8f58-44af-9163-c816b0867be3",
+            "name": "Order",
+            "type": "reference",
+            "$ref": "#external/definitions/Order",
+            "refType": "polyglot",
+            "ref": "46385b4a-a728-4579-8b09-10e9e7c52c99",
+            "refIdPath": [
+              "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+              "49588cc6-da54-413e-ad08-a55ad0c8dd3d",
+              "46385b4a-a728-4579-8b09-10e9e7c52c99"
+            ],
+            "isActivated": true,
+            "code": "Order",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "error": {
+              "name": false,
+              "code": false,
+              "refPath": true
+            },
+            "definitionRefs": [
+              [
+                "c8912668-44ce-471d-9b26-a431585890ed",
+                "b7e1f793-3b8b-4794-acf2-f82662a414f7",
+                "d5267a2b-2eb2-4a42-bab2-a8472033eb78",
+                "ee891fe4-6e19-4518-9db9-bf69aeed3347"
+              ],
+              [
+                "d03b15b7-17bb-479a-adf1-68e47efe6e7e",
+                "25009f1e-3d4f-4c03-af76-127dab61584f",
+                "b6653be6-0d39-4f6b-972e-91757e77bb81",
+                "832b1f7b-d1c6-458b-8f27-66a85ec56167",
+                "c045752a-8b67-4c05-91cd-e4ea308aa4c8"
+              ],
+              [
+                "aa074b9b-64f5-486c-8187-8be3470a7ae3",
+                "6f3ee456-9336-483b-852d-8acfce92999a",
+                "bd1cb8d5-4f91-4131-a92c-ded1a84face3",
+                "950c986b-c973-4c80-a8a3-f4d86c85cffc",
+                "854e9b26-ab36-4d72-9272-998b0b8c77fd"
+              ],
+              [
+                "f149bc3f-c719-473e-91c9-ea1ec9add7ad",
+                "1981dcb5-41c8-436e-97da-8d5d6f51eb2f",
+                "43a2273a-b8ee-4bc2-88e4-81b96afbdf0b",
+                "df58f1ed-dbd9-45b0-aae6-9484dd6bca04"
+              ],
+              [
+                "ee723c80-3b76-41a5-b69a-103a07cba413",
+                "df27b871-f642-438b-bed9-0e563ac736bd",
+                "3d950850-ccad-4976-bef7-8124cc33877f",
+                "261c736f-3ffd-49f5-86d7-47879f0763f1",
+                "90b4b646-e744-4558-b308-48c50e3e4f84"
+              ],
+              [
+                "3127a678-95a0-474c-897b-38fdd4abcd38",
+                "a9cc4c04-80c8-4ef2-9a7b-95a3f0eedb9f",
+                "337c1839-64d0-47c5-8f54-404976c9c594",
+                "4edfed16-5ed7-49ff-b8f0-1df801ab7167",
+                "84135d8d-db1d-467b-b355-5b156c1b435f",
+                "a507f091-4d53-4645-ab66-c58146788212"
+              ]
+            ]
+          }
+        ],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "schema",
+        "GUID": "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "responses",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "response",
+        "GUID": "85a75ab0-65ca-497c-b382-cac0a1596195",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "parameters",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "structureType": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "anyParameter",
+        "GUID": "aac06346-1668-482d-867e-0a0ccf2c1a54",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "examples",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "example",
+        "GUID": "8bc48156-a710-4386-8521-29423bd6054e",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "requestBodies",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "request",
+        "GUID": "f3edff4d-edd8-4702-8263-31932b052822",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "headers",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "header",
+        "GUID": "9e7fc0ee-fdba-4c5b-bb43-d611b13aa2c4",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "securitySchemes",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "securityScheme",
+        "GUID": "9508fa7b-5c6d-4e2d-99e6-6997aa876790",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "links",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "link",
+        "GUID": "2eeaf294-a899-4a2d-8807-5ddf7f03f6ee",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "callbacks",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "callback",
+        "GUID": "7faed5c3-2f36-42e1-8abb-aa2b2b47c305",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "Specification Extensions",
+        "hackoladeMeta": {
+          "disableAdd": true,
+          "disableReference": true,
+          "disableDelete": true,
+          "disableAppend": true,
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "structureType": true,
+        "subtype": "snippetChildrenOnly",
+        "additionalProperties": false,
+        "childType": "extensions",
+        "type": "document",
+        "scopesExtensions": [],
+        "GUID": "2f938919-336d-4cf0-82ff-93b0c6f8847a",
+        "properties": [],
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      }
+    ],
+    "GUID": "546b7c14-5a33-496f-b6e5-161c79c56742"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "name": "Order",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "primaryKey": false,
+        "properties": [
+          {
+            "primaryKey": true,
+            "nullable": false,
+            "type": "string",
+            "name": "Identifier",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": true,
+            "GUID": "2dc5cd19-9bb7-4405-a00f-69af0c39ea24",
+            "description": "A unique reference number or code assigned to the order for tracking and identification."
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Customer reference",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "6adc1c99-dca5-4d92-88fd-6e27edf175ce",
+            "foreignCollection": "e2ba0994-1763-4b13-8b19-e7a0d9f95edb",
+            "foreignField": [
+              "e2ba0994-1763-4b13-8b19-e7a0d9f95edb",
+              "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+              "18d05aa0-70b0-4f8e-9736-ffbc7104f778"
+            ],
+            "relationshipType": "Foreign Key",
+            "description": "References the unique identifier of the Customer entity. Associates the order with the customer who placed it."
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Order date",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "GUID": "3a550c04-6ca2-4876-8ec9-89aa76ea1d13",
+            "description": "The date and time at which the order was placed. Used for chronological reporting and status tracking.",
+            "format": "date"
+          },
+          {
+            "primaryKey": false,
+            "mode": "double",
+            "nullable": false,
+            "childType": "number",
+            "type": "numeric",
+            "name": "Total amount",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "required": false,
+            "GUID": "17ee1d91-fa06-4638-831b-a7766df0e191",
+            "description": "The aggregated cost of all ordered items, including any taxes, fees, or discounts applied to the order. Should reflect the final amount the customer is expected to pay."
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Status",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "GUID": "6dac6534-e11a-49ac-a049-30f3b1207b88",
+            "description": "The current state of the order (e.g., Pending, Shipped, Delivered, Canceled).",
+            "enum": [
+              "Pending",
+              "Shipped",
+              "Delivered",
+              "Canceled"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Tracking number",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "d8e8b56d-827d-4fd1-bea0-07bd5bab9c2e",
+            "description": "A unique code provided by the shipping carrier to track the delivery status of the order."
+          },
+          {
+            "primaryKey": false,
+            "properties": [
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "Street",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "required": true,
+                "GUID": "99f6874d-0ce2-5b47-8ab9-42d7c3702219",
+                "description": "Specifies the street name and number, providing detailed location information within a city or town."
+              },
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "Postal code",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "required": true,
+                "GUID": "e1cf9617-3aab-51fb-a0bf-11c788dc0179",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+              },
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "City",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "required": true,
+                "GUID": "93594ede-d2dc-51d6-bfb2-06fcfee72d2b",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+              }
+            ],
+            "additionalProperties": false,
+            "additionalPropControl": "Boolean",
+            "additionalPropertiesObjectType": "integer",
+            "additionalPropertiesIntegerFormat": "int32",
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "object",
+            "type": "document",
+            "name": "Ship-to address",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "GUID": "9e4faa2d-6567-4c55-908d-59f30426bdc1",
+            "refDescription": "The destination address where the order is to be delivered."
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "primaryKey": false,
+                    "mode": "double",
+                    "nullable": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "required": false,
+                    "GUID": "42c71b66-59d1-4f73-b821-a9034764f127",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "name": "Amount",
+                    "description": "The total cost of the payment, net of applicable taxes and fees."
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Timestamp",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "GUID": "b2f61376-69c8-46f5-9f61-8e68a0dae68d",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "The date and time when the payment was received.",
+                    "format": "date-time"
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Payment method",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "GUID": "37ecefbe-69cd-4c46-bfe2-bdb2fea3be1c",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "The method used for payment (e.g., Credit Card, PayPal, Bank Transfer).",
+                    "enum": [
+                      "CreditCard",
+                      "PayPal",
+                      "BankTransfer"
+                    ]
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Status",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "GUID": "4b11b953-edb3-4c2d-8e36-a17406cb7b26",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "Indicates whether the payment has been completed, pending, or failed.",
+                    "enum": [
+                      "completed",
+                      "pending",
+                      "failed"
+                    ]
+                  }
+                ],
+                "additionalProperties": false,
+                "additionalPropControl": "Boolean",
+                "additionalPropertiesObjectType": "integer",
+                "additionalPropertiesIntegerFormat": "int32",
+                "subtype": "schema",
+                "nullable": false,
+                "childType": "object",
+                "type": "document",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "GUID": "1010c594-625d-457d-955c-a897e9a514c1",
+                "arrayItem": true,
+                "required": false,
+                "displayName": "Payment"
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "array",
+            "type": "array",
+            "name": "Payments",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "fad47821-c108-4728-ac06-edd87399a408",
+            "description": "A record of financial transactions associated with the order."
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "primaryKey": false,
+                    "mode": "float",
+                    "nullable": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "Quantity",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "required": false,
+                    "GUID": "e16e89ec-42c0-4647-ab3f-4225a2c9df1c",
+                    "description": "The number of units for each ordered item."
+                  },
+                  {
+                    "primaryKey": true,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "SKU",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": true,
+                    "description": "A unique identifier assigned to each product for inventory management and tracking purposes. It helps differentiate products and streamline the ordering process.",
+                    "GUID": "acdd584f-e173-4126-a669-6ea2f414ffd0",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "relationshipType": ""
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Name",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "description": "The name of the product or service as displayed to the customer.",
+                    "GUID": "39a652f4-defc-4297-8814-d16fdb749d18"
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Description",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": false,
+                    "description": "A longer text providing additional details about the product. May be omitted if product details are referenced externally.",
+                    "GUID": "6d536af4-ae07-48db-923e-3fd215300a8c"
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Currency",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "required": true,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "enum": [
+                      "USD",
+                      "EUR",
+                      "JPY",
+                      "GBP",
+                      "AUD",
+                      "CAD",
+                      "CHF",
+                      "CNY",
+                      "SEK",
+                      "NZD",
+                      "INR",
+                      "MXN",
+                      "SGD",
+                      "HKD"
+                    ],
+                    "description": "Indicates the currency in which the product price is set.",
+                    "GUID": "c7ccd811-1374-4a95-96b8-1bbb7eda7590"
+                  },
+                  {
+                    "primaryKey": false,
+                    "mode": "double",
+                    "nullable": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "Amount",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "required": true,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "The numeric value of the product’s price in the specified currency.",
+                    "GUID": "cf7c7d06-9e2a-490d-852d-29010e9eefd8"
+                  }
+                ],
+                "additionalProperties": false,
+                "additionalPropControl": "Boolean",
+                "additionalPropertiesObjectType": "integer",
+                "additionalPropertiesIntegerFormat": "int32",
+                "subtype": "schema",
+                "nullable": false,
+                "childType": "object",
+                "type": "document",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "isActivated": true,
+                "GUID": "eae27a5b-3644-46dd-a3d1-01afce2a245d",
+                "arrayItem": true,
+                "required": false,
+                "displayName": "Ordered item"
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "array",
+            "type": "array",
+            "name": "Ordered items",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "isActivated": true,
+            "required": false,
+            "GUID": "72bc07b9-d511-42e0-966a-7e5f14513040",
+            "description": "A list of products included in the order, detailing the purchased goods."
+          }
+        ],
+        "additionalProperties": false,
+        "additionalPropControl": "Boolean",
+        "additionalPropertiesObjectType": "integer",
+        "additionalPropertiesIntegerFormat": "int32",
+        "subtype": "schema",
+        "nullable": false,
+        "childType": "object",
+        "type": "document",
+        "GUID": "46385b4a-a728-4579-8b09-10e9e7c52c99",
+        "code": "",
+        "description": "Represents a purchase transaction, including details about the items ordered, shipping information, payment details, and order status.",
+        "comments": "",
+        "required": false,
+        "definitionEntityType": "field",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+            "546b7c14-5a33-496f-b6e5-161c79c56742",
+            "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a",
+            "9ea9afa0-8f58-44af-9163-c816b0867be3"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "Order management-Polyglot.hck.json",
+        "fieldRelativePath": "#/Order"
+      },
+      {
+        "name": "Product",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "primaryKey": false,
+        "properties": [
+          {
+            "primaryKey": true,
+            "nullable": false,
+            "type": "string",
+            "name": "SKU",
+            "isActivated": true,
+            "description": "A unique identifier assigned to each product for inventory management and tracking purposes. It helps differentiate products and streamline the ordering process.",
+            "required": true,
+            "GUID": "a32b91a4-33c4-5028-815c-b44e4800f498",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "SKU"
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Name",
+            "isActivated": true,
+            "required": false,
+            "GUID": "ffaa2cf7-1d93-5b16-94e6-2432669683eb",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Name"
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Category name",
+            "isActivated": true,
+            "required": false,
+            "foreignCollection": "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+            "foreignField": [
+              "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+              "97db87db-8fbe-41bb-8850-34193c9ee07e"
+            ],
+            "relationshipType": "Foreign Key",
+            "GUID": "ca3a320d-72c4-5dae-b9cd-b15dbdfeb086",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Categoryname"
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Supplier code",
+            "isActivated": true,
+            "required": false,
+            "GUID": "35fa7050-12c8-59d1-814c-71dccda695e4",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Suppliercode"
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Description",
+            "isActivated": true,
+            "required": false,
+            "GUID": "f405ba5c-dca3-5acf-9853-bd0a9ad8da02",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Description"
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "displayName": "url",
+                "isActivated": true,
+                "required": false,
+                "GUID": "1866bc3a-2de4-57b4-80c5-98b1dfca816a",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "arrayItem": true
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "array",
+            "type": "array",
+            "name": "Images",
+            "isActivated": true,
+            "description": "An array of URLs representing images of the product for display on the website. These images enhance the customer experience by providing visual context and details about the product.",
+            "required": false,
+            "GUID": "0f676cf5-4ba8-55ee-82e9-83f893d4c172",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Images"
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Currency",
+                    "isActivated": true,
+                    "required": true,
+                    "enum": [
+                      "USD",
+                      "EUR",
+                      "JPY",
+                      "GBP",
+                      "AUD",
+                      "CAD",
+                      "CHF",
+                      "CNY",
+                      "SEK",
+                      "NZD",
+                      "INR",
+                      "MXN",
+                      "SGD",
+                      "HKD"
+                    ],
+                    "GUID": "2bf5755b-c7ad-55bc-9540-f90ede316654",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "code": "Currency"
+                  },
+                  {
+                    "primaryKey": false,
+                    "mode": "double",
+                    "nullable": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "Amount",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "a0bee2c7-cfb0-55bc-a243-2d62ba40f160",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "code": "Amount"
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Effective date",
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "d83042d7-569e-5c8e-9f1a-91c3ce161699",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "format": "date",
+                    "code": "Effectivedate"
+                  }
+                ],
+                "additionalProperties": false,
+                "additionalPropControl": "Boolean",
+                "additionalPropertiesObjectType": "integer",
+                "additionalPropertiesIntegerFormat": "int32",
+                "subtype": "schema",
+                "nullable": false,
+                "childType": "object",
+                "type": "document",
+                "displayName": "Price",
+                "isActivated": true,
+                "required": false,
+                "GUID": "ffb031b9-cb75-5f56-8783-6ab6328b510a",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "arrayItem": true
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "array",
+            "type": "array",
+            "name": "Prices",
+            "isActivated": true,
+            "description": "An array of price records associated with the product, each linked to an **effective date**. This allows for tracking price changes over time and supports promotional pricing strategies.",
+            "required": false,
+            "GUID": "29f53c38-44f6-5130-a18e-a59e74560e2d",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Prices"
+          }
+        ],
+        "additionalProperties": false,
+        "additionalPropControl": "Boolean",
+        "additionalPropertiesObjectType": "integer",
+        "additionalPropertiesIntegerFormat": "int32",
+        "subtype": "schema",
+        "nullable": false,
+        "childType": "object",
+        "type": "document",
+        "GUID": "8519b9b6-e2aa-4eb0-b6cc-aaa9c401f648",
+        "description": "Represents the items available for sale in the e-commerce platform. It encompasses essential details about each product, including its **name**, **description**, **pricing**, and associations with **categories** and **suppliers**. This entity is crucial for managing inventory and facilitating sales transactions.",
+        "comments": "",
+        "required": false,
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Product",
+        "link": "Order management-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": []
+      },
+      {
+        "name": "Customer",
+        "hackoladeMeta": {
+          "namingConvention": "code"
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "primaryKey": false,
+        "properties": [
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "First name",
+            "isActivated": true,
+            "required": false,
+            "GUID": "589a1f15-44b8-573f-9bcd-36ba61cf5c53",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Firstname"
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Last name",
+            "isActivated": true,
+            "required": false,
+            "GUID": "e400ab1a-a8c0-5713-8142-87e9e9c76893",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Lastname"
+          },
+          {
+            "primaryKey": true,
+            "nullable": false,
+            "type": "string",
+            "name": "email",
+            "isActivated": true,
+            "required": true,
+            "GUID": "15a4d58f-d2ae-5415-9cd9-23669eec4ef8",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "email"
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Phone number",
+            "isActivated": true,
+            "required": false,
+            "GUID": "46f33bd1-be57-59af-9888-14ab0a340325",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Phonenumber"
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Registration date",
+            "isActivated": true,
+            "description": "Records the date when the customer registered on the e-commerce platform. It is essential for tracking customer lifecycle stages, analyzing customer acquisition trends, and managing loyalty programs.",
+            "required": false,
+            "GUID": "ef78bf1c-d281-530e-981f-4143945452fd",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "format": "date",
+            "code": "Registrationdate"
+          },
+          {
+            "primaryKey": false,
+            "properties": [
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "Street",
+                "isActivated": true,
+                "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+                "required": false,
+                "GUID": "0ba9a1e1-1d03-5fec-b7db-f909d52cf5b4",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "code": "Street"
+              },
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "Postal code",
+                "isActivated": true,
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+                "required": false,
+                "foreignCollection": "",
+                "foreignField": [],
+                "GUID": "4bb8f276-1165-56e7-bc29-d2b693e7dccc",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "code": "Postalcode"
+              },
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "City",
+                "isActivated": true,
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+                "required": false,
+                "foreignCollection": "",
+                "foreignField": [],
+                "GUID": "9fdd6ef3-3ead-52f4-b5c2-f2adafe30048",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "code": "City"
+              }
+            ],
+            "additionalProperties": false,
+            "additionalPropControl": "Boolean",
+            "additionalPropertiesObjectType": "integer",
+            "additionalPropertiesIntegerFormat": "int32",
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "object",
+            "type": "document",
+            "name": "Bill-to address",
+            "isActivated": true,
+            "refDescription": "Stores the billing address associated with the customer. It is used for invoicing and payment processing, ensuring that billing information is accurate and up to date. The bill-to address may differ from the shipping address and is crucial for financial record-keeping.",
+            "GUID": "d20fa2b8-3adc-5d9c-a666-dd46a90323f5",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Billtoaddress"
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Street",
+                    "isActivated": true,
+                    "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+                    "required": false,
+                    "GUID": "7eacb2ab-bcd2-514d-8fe3-1dabbe2c4e35",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "code": "Street"
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Postal code",
+                    "isActivated": true,
+                    "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+                    "required": false,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "GUID": "894ce0be-e533-56df-b9be-186b97556a70",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "code": "Postalcode"
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "City",
+                    "isActivated": true,
+                    "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+                    "required": false,
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "GUID": "b2352396-891f-5318-8fe5-caee907f2d35",
+                    "hackoladeMeta": {
+                      "namingConvention": "code"
+                    },
+                    "code": "City"
+                  }
+                ],
+                "additionalProperties": false,
+                "additionalPropControl": "Boolean",
+                "additionalPropertiesObjectType": "integer",
+                "additionalPropertiesIntegerFormat": "int32",
+                "subtype": "schema",
+                "nullable": false,
+                "childType": "object",
+                "type": "document",
+                "displayName": "Address",
+                "isActivated": true,
+                "GUID": "a7f55412-8c4c-56aa-bf66-d1e77a1107cf",
+                "hackoladeMeta": {
+                  "namingConvention": "code"
+                },
+                "arrayItem": true
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "array",
+            "type": "array",
+            "name": "Ship-to addresses",
+            "isActivated": true,
+            "description": "Holds a list of potential shipping addresses registered by the customer. Customers can maintain multiple shipping addresses for convenience and flexibility, allowing them to select a preferred address when placing an order. This feature enhances the user experience by accommodating different delivery locations, such as home, work, or gift recipients.",
+            "required": false,
+            "GUID": "5a6d03d7-8ee7-5383-bc31-e1bdc0b878d9",
+            "hackoladeMeta": {
+              "namingConvention": "code"
+            },
+            "code": "Shiptoaddresses"
+          }
+        ],
+        "additionalProperties": false,
+        "additionalPropControl": "Boolean",
+        "additionalPropertiesObjectType": "integer",
+        "additionalPropertiesIntegerFormat": "int32",
+        "subtype": "schema",
+        "nullable": false,
+        "childType": "object",
+        "type": "document",
+        "GUID": "e2ba0994-1763-4b13-8b19-e7a0d9f95edb",
+        "description": "",
+        "comments": "",
+        "required": false,
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Customer",
+        "link": "Order management-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": []
+      },
+      {
+        "primaryKey": false,
+        "mode": "float",
+        "nullable": false,
+        "childType": "number",
+        "type": "numeric",
+        "name": "Quantity",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "exclusiveMinimum": false,
+        "exclusiveMaximum": false,
+        "required": false,
+        "GUID": "e16e89ec-42c0-4647-ab3f-4225a2c9df1c",
+        "description": "The number of units for each ordered item.",
+        "definitionEntityType": "field",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [],
+        "kind": "relativePath",
+        "link": "../../ecommerce/Order management-Polyglot.hck.json",
+        "fieldRelativePath": "#/Order management/Order/properties/Ordered items/properties/0/properties/Quantity"
+      }
+    ],
+    "GUID": "49588cc6-da54-413e-ad08-a55ad0c8dd3d"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "493b87b3-9073-4455-93e9-3df38c6568cb"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "e727e35a-5580-4135-8bf4-6b5f5e8df739",
+      "name": "Disclaimer",
+      "type": "annotation",
+      "disableInitialFocus": true,
+      "value": "This OpenAPI eCommerce Order Model is intended for illustration purposes only and provides a simplified representation of an order management system within a REST-based API.\n\nWhile it covers essential endpoints, data definitions, and typical workflows for an eCommerce context, it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation."
+    }
+  ],
+  "dbVersion": "3.1.0",
+  "dbVendor": "OpenAPI",
+  "appTarget": "OPENAPI",
+  "creationTS": "2025-02-24T10:19:17.320Z",
+  "GUID": "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+  "hackoladeMeta": {
+    "namingConvention": "code",
+    "validationErrors": {
+      "description": false
+    }
+  },
+  "isLineageEnabled": false,
+  "code": "Ordr mngmnt AP",
+  "lastModifTS": "2025-04-27T07:20:43.325Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "OpenAPI",
+    "pluginVersion": "0.2.5",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.1.4"
+  },
+  "scopesExtensions": [],
+  "modelVersion": "1.0.0",
+  "title": "Ecommerce Bike Platform - Order API",
+  "infoExtensions": [],
+  "description": "**This model exceeds the number of model objects allowed in the free Hackolade Community Edition and therefore requires a valid license key to be opened in Hackolade Studio. However, Hackolade offers a free trial that provides a fully functional version of the software, enabling you to evaluate its capabilities without commitment.**\n\nThis OpenAPI eCommerce Order Model is intended for illustration purposes only and provides a simplified representation of an order management system within a REST-based API.\n\nWhile it covers essential endpoints, data definitions, and typical workflows for an eCommerce context, it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation.",
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "bf9ffe64-6ccc-4ca6-9612-c03131215fb3",
+            "x": 1878.3282773564456,
+            "y": 2981.008125677141,
+            "width": 178,
+            "height": 65,
+            "color": {}
+          },
+          {
+            "GUID": "3127a678-95a0-474c-897b-38fdd4abcd38",
+            "x": 2086.3282773564456,
+            "y": 2701.508125677141,
+            "width": 440,
+            "height": 624,
+            "color": {}
+          },
+          {
+            "GUID": "f149bc3f-c719-473e-91c9-ea1ec9add7ad",
+            "x": 978.3282773564456,
+            "y": 2776.008125677141,
+            "width": 400,
+            "height": 588,
+            "color": {}
+          },
+          {
+            "GUID": "ee723c80-3b76-41a5-b69a-103a07cba413",
+            "x": 1408.3282773564456,
+            "y": 2701.508125677141,
+            "width": 420,
+            "height": 606,
+            "color": {}
+          },
+          {
+            "GUID": "d1ff06f7-e8eb-4a05-b3c4-48f01f85ab15",
+            "x": 1408.3282773564456,
+            "y": 3337.508125677141,
+            "width": 192,
+            "height": 101,
+            "color": {}
+          },
+          {
+            "GUID": "5a4bf182-902e-496a-9945-f3037281c9ea",
+            "x": 1050,
+            "y": 2098.5,
+            "width": 250,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "d03b15b7-17bb-479a-adf1-68e47efe6e7e",
+            "x": 1330,
+            "y": 1798.5,
+            "width": 420,
+            "height": 606,
+            "color": {}
+          },
+          {
+            "GUID": "373ddb98-54e8-428c-a327-0b12a51c9b8b",
+            "x": 1330,
+            "y": 2434.5,
+            "width": 192,
+            "height": 101,
+            "color": {}
+          },
+          {
+            "GUID": "c8912668-44ce-471d-9b26-a431585890ed",
+            "x": 1050,
+            "y": 1088.5,
+            "width": 400,
+            "height": 660,
+            "color": {}
+          },
+          {
+            "GUID": "aa074b9b-64f5-486c-8187-8be3470a7ae3",
+            "x": 1480,
+            "y": 1050,
+            "width": 420,
+            "height": 606,
+            "color": {}
+          },
+          {
+            "GUID": "68e3e089-17c8-4110-8d22-ee6dfd8cc0b9",
+            "x": 1480,
+            "y": 1686,
+            "width": 192,
+            "height": 101,
+            "color": {}
+          },
+          {
+            "GUID": "d5bae68e-332d-4b27-97c5-d48494321ac8",
+            "x": 1950,
+            "y": 1097.5,
+            "width": 250,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "c5e37090-3482-4639-8143-79ebdf7fd6fd",
+            "x": 2230,
+            "y": 1050,
+            "width": 192,
+            "height": 101,
+            "color": {}
+          },
+          {
+            "GUID": "a5e2f5c0-46ff-4a58-890f-accd62eebcfe",
+            "x": 2230,
+            "y": 1181,
+            "width": 192,
+            "height": 101,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [
+            "bdfc46e7-6559-4f0a-b8ed-ff6775343d69",
+            "546b7c14-5a33-496f-b6e5-161c79c56742",
+            "fb6bb92f-6c6a-43c4-8dc6-b896f385d26a"
+          ],
+          "entities": [],
+          "decorativeSymbols": [],
+          "displayOptions": {
+            "hideErdRelationshipsNames": false
+          }
+        },
+        "buckets": [
+          {
+            "x": 938.3282773564456,
+            "y": 2661.508125677141,
+            "GUID": "94ce591f-efe4-437c-9eef-57c68810fa51"
+          },
+          {
+            "x": 1010,
+            "y": 1010,
+            "GUID": "0fe039ae-2bf2-4298-b282-397c853c8485"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "e727e35a-5580-4135-8bf4-6b5f5e8df739",
+            "x": 1520.6045503791981,
+            "y": 748.8364030335862,
+            "height": 189,
+            "width": 450,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "vertical",
+        "options": [],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false,
+          "hideErdRelationshipsNames": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

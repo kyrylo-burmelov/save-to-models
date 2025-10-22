@@ -1,0 +1,1361 @@
+{
+  "modelName": "Customer management PUT",
+  "collections": [
+    {
+      "GUID": "305ecb70-4022-4689-816e-5e919ec5098c",
+      "collectionName": "put",
+      "type": "object",
+      "properties": [
+        {
+          "name": "parameters",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "structureType": true,
+          "schemeType": "apiKey",
+          "required": false,
+          "properties": [
+            {
+              "code": "",
+              "hackoladeMeta": {
+                "displayNameFromField": "parameterName"
+              },
+              "isActivated": true,
+              "schemeType": "apiKey",
+              "required": true,
+              "properties": [
+                {
+                  "code": "",
+                  "name": "schema",
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "nullable": false,
+                  "type": "string",
+                  "subtype": "schema",
+                  "GUID": "4b05afba-c2da-4a3b-b6fc-4973a88bf4ae",
+                  "error": {}
+                },
+                {
+                  "name": "content",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "media",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "586ea5e5-cb9c-4381-994a-18ef6ac1bb6b",
+                  "error": {}
+                },
+                {
+                  "name": "examples",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "example",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "67d8994c-226b-4725-ab72-bdce326396ed",
+                  "error": {}
+                }
+              ],
+              "ignore_z_value": true,
+              "snippet": "parameter",
+              "additionalProperties": true,
+              "subtype": "structuralSchema",
+              "parameterName": "customerId",
+              "childType": "parameter (path)",
+              "type": "document",
+              "GUID": "35100781-f43d-41e2-99c5-bf3c95c98870",
+              "arrayItem": true,
+              "scopesExtensions": [],
+              "name": "customerId",
+              "description": "Unique ID of the customer to update",
+              "error": {}
+            }
+          ],
+          "primaryKey": false,
+          "additionalItems": true,
+          "uniqueItems": false,
+          "subtype": "anyParameter",
+          "nullable": false,
+          "childType": "array",
+          "type": "array",
+          "code": "",
+          "GUID": "85d0519c-6e5b-418f-b264-c835eee7bbc3",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "requestBody",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "required": true,
+          "properties": [
+            {
+              "name": "application/json",
+              "hackoladeMeta": {
+                "disableReference": true
+              },
+              "isActivated": true,
+              "schemeType": "apiKey",
+              "properties": [
+                {
+                  "GUID": "f587eea2-febc-4d77-934f-9b0804be86df",
+                  "name": "schema",
+                  "type": "reference",
+                  "$ref": "#model/definitions/schemas/Customer",
+                  "refType": "model",
+                  "ref": "3220b8c3-72be-42ac-992f-2de99960576a",
+                  "refIdPath": [
+                    "5b87d931-af65-4496-8576-698532d04eb8",
+                    "a1d13652-1494-4454-8dce-5c012fb7ecca",
+                    "5210d2f5-2fbb-4ac6-a027-af86ead2774f",
+                    "3220b8c3-72be-42ac-992f-2de99960576a"
+                  ],
+                  "isActivated": true,
+                  "code": ""
+                },
+                {
+                  "name": "examples",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "example",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "1def0e7c-cd8c-4cb9-838d-a7513ae875b7",
+                  "error": {}
+                },
+                {
+                  "name": "encoding",
+                  "hackoladeMeta": {
+                    "disableAppend": true,
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "structureType": true,
+                  "schemeType": "apiKey",
+                  "required": false,
+                  "primaryKey": false,
+                  "properties": [],
+                  "additionalProperties": true,
+                  "additionalPropControl": "Boolean",
+                  "additionalPropertiesObjectType": "integer",
+                  "additionalPropertiesIntegerFormat": "int32",
+                  "subtype": "encoding",
+                  "nullable": false,
+                  "childType": "object",
+                  "type": "document",
+                  "code": "",
+                  "GUID": "cdf67854-c887-4c4d-83f5-a3099b14aced",
+                  "error": {}
+                }
+              ],
+              "ignore_z_value": true,
+              "snippet": "media",
+              "additionalProperties": true,
+              "subtype": "structuralSchema",
+              "childType": "media",
+              "type": "document",
+              "scopesExtensions": [],
+              "GUID": "9cebcf47-7285-41c5-a93e-a4c39ec7002b",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "snippet": "requestBody",
+          "subtype": "media",
+          "childType": "requestBody",
+          "type": "document",
+          "scopesExtensions": [],
+          "GUID": "3d340d3c-2e48-4157-831f-0f7fa23f7ac3",
+          "error": {}
+        },
+        {
+          "name": "callbacks",
+          "hackoladeMeta": {
+            "disableAdd": false,
+            "disableDelete": false,
+            "disableAppend": true,
+            "resetInsteadOfDelete": true,
+            "disableChoices": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "ignore_z_value": true,
+          "additionalProperties": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "operationObject",
+          "type": "document",
+          "subtype": "callback",
+          "GUID": "aa59a851-08c3-4cfc-87ff-f01e7d69b908",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "879bbd00-5d8f-4943-a42b-e2cf42183d75",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "subtype": "requestBody",
+      "bucketId": "9a3fef4c-767a-4e81-bd1a-4e942ae2e2f2",
+      "scopesExtensions": [],
+      "tags": [
+        {
+          "tag": "Customers",
+          "GUID": "67f56bc1-8068-46f9-bb97-48dc2255274a"
+        }
+      ],
+      "summary": "Update an existing customer",
+      "description": "Replace the entire customer resource with the provided data.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "e063880b-5c3d-48cd-b95a-24c568997c56",
+        "d1013cbb-5aad-4adf-ac00-51307587e037"
+      ]
+    },
+    {
+      "GUID": "e063880b-5c3d-48cd-b95a-24c568997c56",
+      "collectionName": "200",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "7a8c4f43-f7cc-4c7a-92ed-fd28409b1152",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [
+                {
+                  "name": "application/json",
+                  "hackoladeMeta": {
+                    "disableReference": true
+                  },
+                  "isActivated": true,
+                  "schemeType": "apiKey",
+                  "properties": [
+                    {
+                      "GUID": "2ebef8ed-50a6-4c3a-8116-96524740fa2d",
+                      "name": "schema",
+                      "type": "reference",
+                      "$ref": "#model/definitions/schemas/Updated customer",
+                      "refType": "model",
+                      "ref": "d4328d78-b61f-4050-8f08-321bff4387f7",
+                      "refIdPath": [
+                        "5b87d931-af65-4496-8576-698532d04eb8",
+                        "a1d13652-1494-4454-8dce-5c012fb7ecca",
+                        "5210d2f5-2fbb-4ac6-a027-af86ead2774f",
+                        "d4328d78-b61f-4050-8f08-321bff4387f7"
+                      ],
+                      "isActivated": true,
+                      "code": ""
+                    },
+                    {
+                      "name": "examples",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "example",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "36909004-a27e-4258-93ed-9909ec3e09cf",
+                      "error": {}
+                    },
+                    {
+                      "name": "encoding",
+                      "hackoladeMeta": {
+                        "disableAppend": true,
+                        "disableReference": true
+                      },
+                      "isActivated": true,
+                      "structureType": true,
+                      "schemeType": "apiKey",
+                      "required": false,
+                      "primaryKey": false,
+                      "properties": [],
+                      "additionalProperties": true,
+                      "additionalPropControl": "Boolean",
+                      "additionalPropertiesObjectType": "integer",
+                      "additionalPropertiesIntegerFormat": "int32",
+                      "subtype": "encoding",
+                      "nullable": false,
+                      "childType": "object",
+                      "type": "document",
+                      "code": "",
+                      "GUID": "715f6076-fb8f-4b91-89de-de75831005a0",
+                      "error": {}
+                    }
+                  ],
+                  "ignore_z_value": true,
+                  "snippet": "media",
+                  "additionalProperties": true,
+                  "subtype": "structuralSchema",
+                  "childType": "media",
+                  "type": "document",
+                  "scopesExtensions": [],
+                  "GUID": "f325744f-4bf0-4ea1-aad1-9cc0a3b435ee",
+                  "error": {}
+                }
+              ],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "51e9119e-19e4-4447-a291-667401d76a72",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "58c74ac5-eb08-45fd-bfcf-becf8520fed9",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "The updated customer",
+          "GUID": "8e5bf42a-23c3-4d68-ace0-fcd79bd128a3",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "8b97cf88-baf3-4dfd-b99d-7082718cb24a",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "9a3fef4c-767a-4e81-bd1a-4e942ae2e2f2",
+      "description": "The updated customer",
+      "parentCollection": "305ecb70-4022-4689-816e-5e919ec5098c",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "scopesExtensions": []
+    },
+    {
+      "GUID": "d1013cbb-5aad-4adf-ac00-51307587e037",
+      "collectionName": "404",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "response",
+          "hackoladeMeta": {
+            "disableAdd": true,
+            "resetInsteadOfDelete": true,
+            "disableAppend": true
+          },
+          "isActivated": true,
+          "schemeType": "apiKey",
+          "properties": [
+            {
+              "name": "headers",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "header",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "79c75558-c6ce-4162-99b6-ff0c0bec6f09",
+              "error": {}
+            },
+            {
+              "name": "content",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "media",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "6a8e3030-ad24-4dda-a184-b200e4c41c18",
+              "error": {}
+            },
+            {
+              "name": "links",
+              "hackoladeMeta": {
+                "disableAppend": true,
+                "disableReference": true
+              },
+              "isActivated": true,
+              "structureType": true,
+              "schemeType": "apiKey",
+              "required": false,
+              "primaryKey": false,
+              "properties": [],
+              "additionalProperties": true,
+              "additionalPropControl": "Boolean",
+              "additionalPropertiesObjectType": "integer",
+              "additionalPropertiesIntegerFormat": "int32",
+              "subtype": "link",
+              "nullable": false,
+              "childType": "object",
+              "type": "document",
+              "code": "",
+              "GUID": "b4eaf3fb-dc60-45f3-8b30-14514e51b5f6",
+              "error": {}
+            }
+          ],
+          "ignore_z_value": true,
+          "snippet": "response",
+          "subtype": "snippetChildrenOnly",
+          "additionalProperties": true,
+          "childType": "response",
+          "type": "document",
+          "scopesExtensions": [],
+          "description": "Customer not found",
+          "GUID": "3f8ca7e7-9879-45af-91b0-dc8f800a050e",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "d8c1fb57-27d6-4d56-a9df-7596ea7f1baa",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "subtype": "response",
+      "bucketId": "9a3fef4c-767a-4e81-bd1a-4e942ae2e2f2",
+      "description": "Customer not found",
+      "parentCollection": "305ecb70-4022-4689-816e-5e919ec5098c",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "/customers/{customerId}",
+      "type": "bucket",
+      "collectionIds": [
+        "305ecb70-4022-4689-816e-5e919ec5098c",
+        "e063880b-5c3d-48cd-b95a-24c568997c56",
+        "d1013cbb-5aad-4adf-ac00-51307587e037"
+      ],
+      "backgroundColor": {
+        "r": 0,
+        "g": 138,
+        "b": 0,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "9a3fef4c-767a-4e81-bd1a-4e942ae2e2f2",
+      "hackoladeMeta": {},
+      "addFieldsToBucket": true,
+      "isPlugin": true
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "5210d2f5-2fbb-4ac6-a027-af86ead2774f": "schemas",
+    "25bf5543-898f-43bf-ad71-839b6fc2811b": "responses",
+    "f5481f68-7a80-417a-a697-848e31e56f6a": "parameters",
+    "091f26ea-0578-459a-b392-08208306beb9": "examples",
+    "a11bcc67-cd82-4cab-a298-566b8b4228c3": "requestBodies",
+    "0b589c1a-a850-49aa-b80d-4fa958d4e488": "headers",
+    "3e8a3901-591c-4b41-8bb4-6e856b789e3f": "securitySchemes",
+    "f86dbac8-f991-4e11-b926-51f4d3ef024b": "links",
+    "f254477f-17e9-43e8-9292-05b3f867b975": "callbacks",
+    "dfb53299-1de5-4e34-b0ff-35d83660be04": "Specification Extensions",
+    "3220b8c3-72be-42ac-992f-2de99960576a": "Customer",
+    "9a3fef4c-767a-4e81-bd1a-4e942ae2e2f2": "/customers/{customerId}",
+    "85d0519c-6e5b-418f-b264-c835eee7bbc3": "parameters",
+    "35100781-f43d-41e2-99c5-bf3c95c98870": "customerId",
+    "4b05afba-c2da-4a3b-b6fc-4973a88bf4ae": "schema",
+    "586ea5e5-cb9c-4381-994a-18ef6ac1bb6b": "content",
+    "67d8994c-226b-4725-ab72-bdce326396ed": "examples",
+    "3d340d3c-2e48-4157-831f-0f7fa23f7ac3": "requestBody",
+    "9cebcf47-7285-41c5-a93e-a4c39ec7002b": "application/json",
+    "f587eea2-febc-4d77-934f-9b0804be86df": "schema",
+    "1def0e7c-cd8c-4cb9-838d-a7513ae875b7": "examples",
+    "cdf67854-c887-4c4d-83f5-a3099b14aced": "encoding",
+    "aa59a851-08c3-4cfc-87ff-f01e7d69b908": "callbacks",
+    "305ecb70-4022-4689-816e-5e919ec5098c": "put",
+    "8e5bf42a-23c3-4d68-ace0-fcd79bd128a3": "response",
+    "7a8c4f43-f7cc-4c7a-92ed-fd28409b1152": "headers",
+    "51e9119e-19e4-4447-a291-667401d76a72": "content",
+    "f325744f-4bf0-4ea1-aad1-9cc0a3b435ee": "application/json",
+    "2ebef8ed-50a6-4c3a-8116-96524740fa2d": "schema",
+    "36909004-a27e-4258-93ed-9909ec3e09cf": "examples",
+    "715f6076-fb8f-4b91-89de-de75831005a0": "encoding",
+    "58c74ac5-eb08-45fd-bfcf-becf8520fed9": "links",
+    "e063880b-5c3d-48cd-b95a-24c568997c56": "200",
+    "3f8ca7e7-9879-45af-91b0-dc8f800a050e": "response",
+    "79c75558-c6ce-4162-99b6-ff0c0bec6f09": "headers",
+    "6a8e3030-ad24-4dda-a184-b200e4c41c18": "content",
+    "b4eaf3fb-dc60-45f3-8b30-14514e51b5f6": "links",
+    "d1013cbb-5aad-4adf-ac00-51307587e037": "404",
+    "d4328d78-b61f-4050-8f08-321bff4387f7": "Updated customer",
+    "939cded8-5498-469d-9118-db280d25239d": "First name",
+    "18f8deec-7034-4401-a15a-6a94733ad776": "Last name"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [
+      {
+        "name": "schemas",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "source": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "GUID": "3220b8c3-72be-42ac-992f-2de99960576a",
+            "name": "Customer",
+            "type": "reference",
+            "$ref": "#external/definitions/Customer",
+            "refType": "polyglot",
+            "ref": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+            "refIdPath": [
+              "5b87d931-af65-4496-8576-698532d04eb8",
+              "d37163c1-c825-469a-921a-e21a26e97425",
+              "5cc94e26-8eb9-4b1c-a78d-a870d9f640db"
+            ],
+            "isActivated": true,
+            "definitionRefs": [
+              [
+                "305ecb70-4022-4689-816e-5e919ec5098c",
+                "3d340d3c-2e48-4157-831f-0f7fa23f7ac3",
+                "9cebcf47-7285-41c5-a93e-a4c39ec7002b",
+                "f587eea2-febc-4d77-934f-9b0804be86df"
+              ]
+            ],
+            "error": {
+              "refPath": false
+            }
+          },
+          {
+            "name": "Updated customer",
+            "hackoladeMeta": {
+              "disableDelete": false,
+              "disableAppend": false,
+              "resetInsteadOfDelete": false,
+              "displayNameFromField": false
+            },
+            "isActivated": true,
+            "schemeType": "apiKey",
+            "required": false,
+            "primaryKey": false,
+            "properties": [
+              {
+                "name": "email",
+                "hackoladeMeta": {
+                  "disableAppend": false,
+                  "disableDelete": false,
+                  "disableReference": false,
+                  "resetInsteadOfDelete": false
+                },
+                "isActivated": true,
+                "schemeType": "apiKey",
+                "required": true,
+                "primaryKey": false,
+                "type": "string",
+                "GUID": "6151fabe-a6f2-47b6-b9fe-87a09a2267fb",
+                "error": {}
+              },
+              {
+                "name": "First name",
+                "hackoladeMeta": {
+                  "disableAppend": false,
+                  "disableDelete": false,
+                  "disableReference": false,
+                  "resetInsteadOfDelete": false
+                },
+                "isActivated": true,
+                "schemeType": "apiKey",
+                "required": false,
+                "primaryKey": false,
+                "type": "string",
+                "GUID": "939cded8-5498-469d-9118-db280d25239d",
+                "error": {}
+              },
+              {
+                "name": "Last name",
+                "hackoladeMeta": {
+                  "disableAppend": false,
+                  "disableDelete": false,
+                  "disableReference": false,
+                  "resetInsteadOfDelete": false
+                },
+                "isActivated": true,
+                "schemeType": "apiKey",
+                "required": false,
+                "primaryKey": false,
+                "type": "string",
+                "GUID": "18f8deec-7034-4401-a15a-6a94733ad776",
+                "error": {}
+              }
+            ],
+            "additionalProperties": false,
+            "additionalPropControl": "Boolean",
+            "additionalPropertiesObjectType": "integer",
+            "additionalPropertiesIntegerFormat": "int32",
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "object",
+            "type": "document",
+            "error": {},
+            "GUID": "d4328d78-b61f-4050-8f08-321bff4387f7",
+            "definitionRefs": [
+              [
+                "e063880b-5c3d-48cd-b95a-24c568997c56",
+                "8e5bf42a-23c3-4d68-ace0-fcd79bd128a3",
+                "51e9119e-19e4-4447-a291-667401d76a72",
+                "f325744f-4bf0-4ea1-aad1-9cc0a3b435ee",
+                "2ebef8ed-50a6-4c3a-8116-96524740fa2d"
+              ]
+            ]
+          }
+        ],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "schema",
+        "GUID": "5210d2f5-2fbb-4ac6-a027-af86ead2774f",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "responses",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "response",
+        "GUID": "25bf5543-898f-43bf-ad71-839b6fc2811b",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "parameters",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "structureType": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "anyParameter",
+        "GUID": "f5481f68-7a80-417a-a697-848e31e56f6a",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "examples",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "example",
+        "GUID": "091f26ea-0578-459a-b392-08208306beb9",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "requestBodies",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "request",
+        "GUID": "a11bcc67-cd82-4cab-a298-566b8b4228c3",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "headers",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "header",
+        "GUID": "0b589c1a-a850-49aa-b80d-4fa958d4e488",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "securitySchemes",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "securityScheme",
+        "GUID": "3e8a3901-591c-4b41-8bb4-6e856b789e3f",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "links",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "link",
+        "GUID": "f86dbac8-f991-4e11-b926-51f4d3ef024b",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "callbacks",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "callback",
+        "GUID": "f254477f-17e9-43e8-9292-05b3f867b975",
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      },
+      {
+        "name": "Specification Extensions",
+        "hackoladeMeta": {
+          "disableAdd": true,
+          "disableReference": true,
+          "disableDelete": true,
+          "disableAppend": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "ignore_z_value": true,
+        "structureType": true,
+        "subtype": "snippetChildrenOnly",
+        "additionalProperties": false,
+        "childType": "extensions",
+        "type": "document",
+        "scopesExtensions": [],
+        "GUID": "dfb53299-1de5-4e34-b0ff-35d83660be04",
+        "properties": [],
+        "required": false,
+        "definitionRefs": [],
+        "error": {}
+      }
+    ],
+    "GUID": "a1d13652-1494-4454-8dce-5c012fb7ecca"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "name": "Customer",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "primaryKey": false,
+        "properties": [
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "First name",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "GUID": "e8a58173-1262-4752-859c-10ceec5598aa",
+            "description": "The customer’s given name, used for personalization and identification."
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Last name",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "GUID": "872c6f47-1c90-4b97-ad5e-2c446d854243",
+            "description": "The customer’s surname or family name."
+          },
+          {
+            "primaryKey": true,
+            "nullable": false,
+            "type": "string",
+            "name": "email",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": true,
+            "GUID": "18d05aa0-70b0-4f8e-9736-ffbc7104f778",
+            "description": "The unique email address of the customer, serving as the primary key and primary contact method. Often used for authentication and login purposes."
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Phone number",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "GUID": "bb57e423-15a3-43d2-bb4f-81c084e50416",
+            "description": "The primary telephone or mobile number for contacting the customer. Format may vary based on locale."
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Registration date",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "GUID": "7fa9c279-fe3c-4864-83e9-10df93832aef",
+            "description": "Records the date when the customer registered on the e-commerce platform. It is essential for tracking customer lifecycle stages, analyzing customer acquisition trends, and managing loyalty programs.",
+            "format": "date"
+          },
+          {
+            "primaryKey": false,
+            "properties": [
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "Street",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "required": true,
+                "GUID": "a67178d1-2b76-5521-a4c3-d6fd453f0f74",
+                "description": "Specifies the street name and number, providing detailed location information within a city or town."
+              },
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "Postal code",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "required": true,
+                "GUID": "7c7e4aed-3aa9-5bd2-bccb-4430d94e0834",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+              },
+              {
+                "primaryKey": false,
+                "nullable": false,
+                "type": "string",
+                "name": "City",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "required": true,
+                "GUID": "0e1b934a-42c4-5d75-8fdc-07f8d0129925",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+              }
+            ],
+            "additionalProperties": false,
+            "additionalPropControl": "Boolean",
+            "additionalPropertiesObjectType": "integer",
+            "additionalPropertiesIntegerFormat": "int32",
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "object",
+            "type": "document",
+            "name": "Bill-to address",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "GUID": "299ad0aa-01de-43f1-a266-bd803d9d7616",
+            "refDescription": "Stores the default billing address for the customer. Used for invoicing, payment processing, and tax calculations."
+          },
+          {
+            "properties": [
+              {
+                "primaryKey": false,
+                "properties": [
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Street",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "f1fde62f-2224-5c53-bdd5-815c2369d986",
+                    "description": "Specifies the street name and number, providing detailed location information within a city or town."
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "Postal code",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "03048688-44ef-5286-9d37-e87d6ca8cdf8",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+                  },
+                  {
+                    "primaryKey": false,
+                    "nullable": false,
+                    "type": "string",
+                    "name": "City",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "24a64b44-cec0-54fc-8e94-f6287864ebcc",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+                  }
+                ],
+                "additionalProperties": false,
+                "additionalPropControl": "Boolean",
+                "additionalPropertiesObjectType": "integer",
+                "additionalPropertiesIntegerFormat": "int32",
+                "subtype": "schema",
+                "nullable": false,
+                "childType": "object",
+                "type": "document",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "GUID": "3ff559e8-d20f-432c-9ad8-5b93be0f1055",
+                "displayName": "Address",
+                "arrayItem": true
+              }
+            ],
+            "primaryKey": false,
+            "additionalItems": true,
+            "uniqueItems": false,
+            "subtype": "schema",
+            "nullable": false,
+            "childType": "array",
+            "type": "array",
+            "name": "Ship-to addresses",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "GUID": "a569060a-b3b2-4f73-95c7-7c2e2145c273",
+            "description": "Holds a list of potential shipping addresses registered by the customer. Customers can maintain multiple shipping addresses for convenience and flexibility, allowing them to select a preferred address when placing an order. This feature enhances the user experience by accommodating different delivery locations, such as home, work, or gift recipients."
+          }
+        ],
+        "additionalProperties": false,
+        "additionalPropControl": "Boolean",
+        "additionalPropertiesObjectType": "integer",
+        "additionalPropertiesIntegerFormat": "int32",
+        "subtype": "schema",
+        "nullable": false,
+        "childType": "object",
+        "type": "document",
+        "GUID": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+        "code": "",
+        "description": "The Customer entity represents an individual or organization using the ecommerce platform to browse, purchase, and manage orders. It stores essential contact information, registration data, and address details for billing and shipping.",
+        "comments": "",
+        "required": false,
+        "definitionEntityType": "field",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "5b87d931-af65-4496-8576-698532d04eb8",
+            "a1d13652-1494-4454-8dce-5c012fb7ecca",
+            "5210d2f5-2fbb-4ac6-a027-af86ead2774f",
+            "3220b8c3-72be-42ac-992f-2de99960576a"
+          ]
+        ],
+        "kind": "relativePath",
+        "link": "../common/Customer-Polyglot.hck.json",
+        "fieldRelativePath": "#/Customer"
+      }
+    ],
+    "GUID": "d37163c1-c825-469a-921a-e21a26e97425"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "d5fd6ebf-bb10-42c5-9977-23f5871c859e"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "36a14984-f794-4b02-a3c8-9f37751d1f79",
+      "name": "Disclaimer",
+      "type": "annotation",
+      "disableInitialFocus": true,
+      "value": "This OpenAPI eCommerce Order Model is intended for illustration purposes only and provides a simplified representation of an order management system within a REST-based API.\n\nWhile it covers essential endpoints, data definitions, and typical workflows for an eCommerce context, it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation.\n\nIn addition, due to object-count limitations in the free community edition of Hackolade Studio, the model is split by HTTP methods (e.g., separate files/endpoints for GET, PUT, DELETE, etc.). Although this approach may appear unconventional, it is purely for demonstration and does not reflect a recommended best practice for production-ready APIs."
+    }
+  ],
+  "dbVersion": "3.1.0",
+  "dbVendor": "OpenAPI",
+  "appTarget": "OPENAPI",
+  "creationTS": "2025-02-24T10:52:12.322Z",
+  "GUID": "5b87d931-af65-4496-8576-698532d04eb8",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-02-28T10:33:55.012Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "OpenAPI",
+    "pluginVersion": "0.2.4",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.3"
+  },
+  "hackoladeMeta": {
+    "validationErrors": {
+      "description": false
+    }
+  },
+  "scopesExtensions": [],
+  "modelVersion": "1.0.0",
+  "title": "Ecommerce Bike Platform - Customer API",
+  "infoExtensions": [],
+  "description": "This OpenAPI eCommerce Order Model is intended for illustration purposes only and provides a simplified representation of an order management system within a REST-based API.\n\nWhile it covers essential endpoints, data definitions, and typical workflows for an eCommerce context, it does not encompass all potential complexities or best practices that may be applicable in a comprehensive production system implementation.\n\nIn addition, due to object-count limitations in the free community edition of Hackolade Studio, the model is split by HTTP methods (e.g., separate files/endpoints for GET, PUT, DELETE, etc.). Although this approach may appear unconventional, it is purely for demonstration and does not reflect a recommended best practice for production-ready APIs.",
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "305ecb70-4022-4689-816e-5e919ec5098c",
+            "x": 1050,
+            "y": 1050,
+            "width": 356,
+            "height": 480,
+            "color": {}
+          },
+          {
+            "GUID": "e063880b-5c3d-48cd-b95a-24c568997c56",
+            "x": 1436,
+            "y": 1111,
+            "width": 322,
+            "height": 227,
+            "color": {}
+          },
+          {
+            "GUID": "d1013cbb-5aad-4adf-ac00-51307587e037",
+            "x": 1436,
+            "y": 1368,
+            "width": 192,
+            "height": 101,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1010,
+            "y": 1010,
+            "GUID": "9a3fef4c-767a-4e81-bd1a-4e942ae2e2f2"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "36a14984-f794-4b02-a3c8-9f37751d1f79",
+            "x": 1139.5600397255334,
+            "y": 772.8621343445292,
+            "height": 215,
+            "width": 555,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "vertical",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "e063880b-5c3d-48cd-b95a-24c568997c56"
+          }
+        ],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false,
+          "hideErdRelationshipsNames": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
