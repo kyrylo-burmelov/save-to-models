@@ -22,6 +22,48 @@
       "hackoladeMeta": {
         "validationErrors": {}
       }
+    },
+    {
+      "collectionName": "Relaive Path",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Customer",
+      "properties": [],
+      "GUID": "b22aebdc-08c6-4f6e-b73c-d9739ab8f782",
+      "bucketId": "",
+      "ref": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+      "refIdPath": [
+        "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
+        "31159d48-e46e-41c1-9454-128765422b32",
+        "5cc94e26-8eb9-4b1c-a78d-a870d9f640db"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a8812921-a790-44eb-ac49-56d2d2adec6a"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "New Document",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Ship-to addresses",
+      "properties": [],
+      "GUID": "bb3e9f84-e6c1-4d18-bd37-1b00ee5b6c1a",
+      "ref": "a569060a-b3b2-4f73-95c7-7c2e2145c273",
+      "refIdPath": [
+        "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
+        "31159d48-e46e-41c1-9454-128765422b32",
+        "a569060a-b3b2-4f73-95c7-7c2e2145c273"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "5d302efc-9cc6-46aa-b48d-5cf6b6bffb1a"
+      }
     }
   ],
   "buckets": [],
@@ -30,7 +72,9 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "8c9efdbf-1683-478a-806a-4b0421e8d73b": "Valid link"
+    "8c9efdbf-1683-478a-806a-4b0421e8d73b": "Valid link",
+    "b22aebdc-08c6-4f6e-b73c-d9739ab8f782": "Relaive Path",
+    "bb3e9f84-e6c1-4d18-bd37-1b00ee5b6c1a": "New Document"
   },
   "definitions": {
     "type": "definitions",
@@ -109,6 +153,293 @@
             "8c9efdbf-1683-478a-806a-4b0421e8d73b"
           ]
         ]
+      },
+      {
+        "name": "Customer",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "First name",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "e8a58173-1262-4752-859c-10ceec5598aa",
+            "description": "The customer’s given name, used for personalization and identification."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Last name",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "872c6f47-1c90-4b97-ad5e-2c446d854243",
+            "description": "The customer’s surname or family name."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "email",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "18d05aa0-70b0-4f8e-9736-ffbc7104f778",
+            "description": "The unique email address of the customer, serving as the primary key and primary contact method. Often used for authentication and login purposes."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Phone number",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "bb57e423-15a3-43d2-bb4f-81c084e50416",
+            "description": "The primary telephone or mobile number for contacting the customer. Format may vary based on locale."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Registration date",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "primaryKey": false,
+            "GUID": "7fa9c279-fe3c-4864-83e9-10df93832aef",
+            "description": "Records the date when the customer registered on the e-commerce platform. It is essential for tracking customer lifecycle stages, analyzing customer acquisition trends, and managing loyalty programs.",
+            "format": "date"
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Address ID",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "404f5440-4f6f-5fa8-b5b8-44545c884019"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Street",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "64ac9deb-d531-5c2e-9742-d374e403c39d",
+                "description": "Specifies the street name and number, providing detailed location information within a city or town."
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Postal code",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "3e7923a3-ceca-5b37-bb9e-dd527134cc31",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "City",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "558240f1-eede-5026-8c2e-8cf20ba2d5cc",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+              }
+            ],
+            "GUID": "299ad0aa-01de-43f1-a266-bd803d9d7616",
+            "name": "Bill-to address",
+            "isActivated": true,
+            "refDescription": "Stores the default billing address for the customer. Used for invoicing, payment processing, and tax calculations.",
+            "hackoladeMeta": {}
+          },
+          {
+            "type": "array",
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Address ID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": false,
+                    "GUID": "7055ca52-d4fe-5b0c-83e2-27bf3a457cb2"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Street",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "f18f4f3c-3a6e-5ea0-8037-be712f93026b",
+                    "description": "Specifies the street name and number, providing detailed location information within a city or town."
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Postal code",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "f0edd13e-e801-51ee-9725-cffcfc65921d",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "City",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "55b4e07b-7172-545a-af91-430bb091806d",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+                  }
+                ],
+                "GUID": "3ff559e8-d20f-432c-9ad8-5b93be0f1055",
+                "isActivated": true,
+                "displayName": "Address",
+                "hackoladeMeta": {},
+                "arrayItem": true
+              }
+            ],
+            "additionalItems": true,
+            "name": "Ship-to addresses",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "a569060a-b3b2-4f73-95c7-7c2e2145c273",
+            "description": "Holds a list of potential shipping addresses registered by the customer. Customers can maintain multiple shipping addresses for convenience and flexibility, allowing them to select a preferred address when placing an order. This feature enhances the user experience by accommodating different delivery locations, such as home, work, or gift recipients."
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+        "code": "",
+        "description": "The Customer entity represents an individual or organization using the ecommerce platform to browse, purchase, and manage orders. It stores essential contact information, registration data, and address details for billing and shipping.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Customer management/Customer",
+        "link": "../demo-models-clone/common/Customer-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "b22aebdc-08c6-4f6e-b73c-d9739ab8f782"
+          ]
+        ]
+      },
+      {
+        "type": "array",
+        "properties": [
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Address ID",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "7055ca52-d4fe-5b0c-83e2-27bf3a457cb2"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Street",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "f18f4f3c-3a6e-5ea0-8037-be712f93026b",
+                "description": "Specifies the street name and number, providing detailed location information within a city or town."
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Postal code",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "f0edd13e-e801-51ee-9725-cffcfc65921d",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "City",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "55b4e07b-7172-545a-af91-430bb091806d",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+              }
+            ],
+            "GUID": "3ff559e8-d20f-432c-9ad8-5b93be0f1055",
+            "isActivated": true,
+            "displayName": "Address",
+            "hackoladeMeta": {},
+            "arrayItem": true
+          }
+        ],
+        "additionalItems": true,
+        "name": "Ship-to addresses",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "primaryKey": false,
+        "required": false,
+        "GUID": "a569060a-b3b2-4f73-95c7-7c2e2145c273",
+        "description": "Holds a list of potential shipping addresses registered by the customer. Customers can maintain multiple shipping addresses for convenience and flexibility, allowing them to select a preferred address when placing an order. This feature enhances the user experience by accommodating different delivery locations, such as home, work, or gift recipients.",
+        "link": "/Users/kburmelov/Development/models/model_repos/save-to-models/demo-models-clone/common/Customer-Polyglot.hck.json",
+        "kind": "localPath",
+        "fieldRelativePath": "#/Customer management/Customer/properties/Ship-to addresses",
+        "fileType": "hackoladeSchema",
+        "definitionEntityType": "field",
+        "definitionRefs": [
+          [
+            "bb3e9f84-e6c1-4d18-bd37-1b00ee5b6c1a"
+          ]
+        ]
       }
     ],
     "GUID": "31159d48-e46e-41c1-9454-128765422b32"
@@ -126,7 +457,7 @@
   "creationTS": "2025-10-22T19:09:44.143Z",
   "GUID": "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-22T19:16:15.680Z",
+  "lastModifTS": "2025-10-22T19:49:42.501Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -145,6 +476,22 @@
             "y": 1051,
             "width": 285,
             "height": 143,
+            "color": {}
+          },
+          {
+            "GUID": "b22aebdc-08c6-4f6e-b73c-d9739ab8f782",
+            "x": 1023,
+            "y": 1455,
+            "width": 385,
+            "height": 319,
+            "color": {}
+          },
+          {
+            "GUID": "bb3e9f84-e6c1-4d18-bd37-1b00ee5b6c1a",
+            "x": 1033,
+            "y": 1272,
+            "width": 232,
+            "height": 122,
             "color": {}
           }
         ],
@@ -178,6 +525,11 @@
             "autoWidth": false,
             "autoHeight": false,
             "GUID": "8c9efdbf-1683-478a-806a-4b0421e8d73b"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "b22aebdc-08c6-4f6e-b73c-d9739ab8f782"
           }
         ],
         "relationshipUpdateDisabled": false
