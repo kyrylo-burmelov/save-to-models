@@ -1,0 +1,334 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "New Document",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/OrderUpdated",
+      "properties": [],
+      "GUID": "c2709e58-bd58-484a-91c2-0e1306443fd2",
+      "ref": "30f43a54-5e73-4f88-8b7a-2901a5790a14",
+      "refIdPath": [
+        "66e89d93-6172-4970-8d95-713d23097a4e",
+        "1f7e4608-c826-471f-ad0f-edd278f3a8f9",
+        "30f43a54-5e73-4f88-8b7a-2901a5790a14"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d6bb8620-b3e8-4831-b65e-a16b77f8dbc9"
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "c2709e58-bd58-484a-91c2-0e1306443fd2": "New Document"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "4d995daa-4d82-470e-ac7f-ca27b74c78cc"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "name": "OrderUpdated",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "order_id",
+            "code": "order_id",
+            "isActivated": true,
+            "description": "A unique identifier for the order being updated. This field links the update event to a specific order within the system.",
+            "primaryKey": true,
+            "required": true,
+            "GUID": "f48efb72-3d8b-4734-9bbb-c761633d1281",
+            "hackoladeMeta": {}
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "update_timestamp",
+            "code": "update_timestamp",
+            "isActivated": true,
+            "description": "The precise timestamp of when the update occurred, represented as the number of milliseconds since the Unix epoch. This field is crucial for maintaining an accurate audit trail of order modifications.",
+            "primaryKey": true,
+            "required": true,
+            "GUID": "bb3a75b5-8925-4be2-8911-b02d7e9084bc",
+            "hackoladeMeta": {}
+          },
+          {
+            "choice": "oneOf",
+            "isActivated": true,
+            "description": "An optional field that, if present, contains an array of product update details.\n\nUsage Note:\nThis field is null if there is no product-related update for the order.",
+            "name": "product_update",
+            "code": "product_update",
+            "type": "choice",
+            "required": true,
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "null",
+                    "name": "no product update",
+                    "code": "no_product_update",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "2896aca8-8ee6-4527-872a-ef7dd11c528c",
+                    "hackoladeMeta": {}
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "256c219c-0562-475e-8928-50fcf1ec34f6",
+                "subschema": true
+              },
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "array",
+                    "properties": [
+                      {
+                        "type": "document",
+                        "properties": [
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "product_id",
+                            "code": "product_id",
+                            "isActivated": true,
+                            "description": "A unique identifier for the product, used to reference the product in the catalog or inventory system.",
+                            "primaryKey": false,
+                            "required": true,
+                            "GUID": "509b5987-68ef-5e9a-a895-09dda3ac5782",
+                            "hackoladeMeta": {}
+                          },
+                          {
+                            "type": "integer",
+                            "properties": [],
+                            "name": "quantity",
+                            "code": "quantity",
+                            "isActivated": true,
+                            "description": "Specifies the number of units ordered for the corresponding product, ensuring accurate order fulfillment and inventory management.",
+                            "primaryKey": false,
+                            "required": true,
+                            "GUID": "bd7e531a-96c9-5921-82c9-6a707fafaadf",
+                            "hackoladeMeta": {}
+                          }
+                        ],
+                        "name": "Product",
+                        "code": "product",
+                        "displayName": "Product",
+                        "isActivated": true,
+                        "dependencies": [],
+                        "primaryKey": false,
+                        "required": true,
+                        "GUID": "3542b496-374f-48a1-a355-cfdc64bdac49",
+                        "hackoladeMeta": {},
+                        "arrayItem": true
+                      }
+                    ],
+                    "additionalItems": true,
+                    "name": "updated_product_list",
+                    "code": "updated_product_list",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "uniqueItems": false,
+                    "GUID": "b917d2dc-4b38-4842-b649-a1412f95d72c",
+                    "hackoladeMeta": {}
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "07d66b8a-af16-4ce7-843e-2e26d0339a46",
+                "subschema": true
+              }
+            ],
+            "GUID": "b56995bd-208f-46fd-a30e-e66edbba6ea0",
+            "hackoladeMeta": {}
+          },
+          {
+            "choice": "oneOf",
+            "isActivated": true,
+            "description": "An optional field that, if present, captures changes to the order’s status.\n\nUsage Note:\nThis field is null if the update does not involve a status change.",
+            "name": "status_update",
+            "code": "status_update",
+            "type": "choice",
+            "required": true,
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "null",
+                    "name": "no status update",
+                    "code": "no_status_update",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "0a136afe-5e5e-4143-ae0c-d301889f5a48",
+                    "hackoladeMeta": {}
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "b5a88829-601e-4c2a-9c1a-e2f0889aefa3",
+                "subschema": true
+              },
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "document",
+                    "properties": [
+                      {
+                        "type": "string",
+                        "properties": [],
+                        "name": "previous_status",
+                        "code": "previous_status",
+                        "isActivated": true,
+                        "description": "The previous status of the order before the update.",
+                        "primaryKey": false,
+                        "required": true,
+                        "GUID": "d2df36c6-36e3-47f9-94a6-212c3022dbc5",
+                        "hackoladeMeta": {}
+                      },
+                      {
+                        "type": "string",
+                        "properties": [],
+                        "name": "new_status",
+                        "code": "new_status",
+                        "isActivated": true,
+                        "description": "The updated status of the order after the change.",
+                        "primaryKey": false,
+                        "required": true,
+                        "GUID": "a66eec5a-a5ed-4d3b-aacc-6e90765c9be3",
+                        "hackoladeMeta": {}
+                      }
+                    ],
+                    "name": "status_update",
+                    "code": "status_update",
+                    "isActivated": true,
+                    "description": "Captures changes to the order's status.",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "1a104ab2-a5de-405e-9e62-16294bc082b9",
+                    "hackoladeMeta": {}
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "4f1e9f49-7560-4fc3-a1fe-be95b5320c6c",
+                "subschema": true
+              }
+            ],
+            "GUID": "3ae3c4bc-9c45-45b7-8720-b42439eb5164",
+            "hackoladeMeta": {}
+          }
+        ],
+        "additionalProperties": true,
+        "color": "#555555",
+        "GUID": "30f43a54-5e73-4f88-8b7a-2901a5790a14",
+        "description": "The OrderUpdated record represents an event that signifies modifications made to an existing order within the e-commerce system. It captures the unique order identifier, the exact timestamp of the update, and the details of the update. Update details are provided through two optional fields—product_update and status_update—each of which can be null if not applicable.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/com.ecommerce.bike.orders/OrderUpdated",
+        "link": "/Users/kburmelov/Development/models/model_repos/save-to-models/demo-models-clone/ecommerce/Order event management-Apache Avro Schema.hck.json",
+        "kind": "localPath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "c2709e58-bd58-484a-91c2-0e1306443fd2"
+          ]
+        ]
+      }
+    ],
+    "GUID": "1f7e4608-c826-471f-ad0f-edd278f3a8f9"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "f2788e01-bd92-46c6-8f5a-f31257a2cab4"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-10-22T21:44:59.599Z",
+  "GUID": "66e89d93-6172-4970-8d95-713d23097a4e",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-10-22T21:46:08.077Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.5.3"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "c2709e58-bd58-484a-91c2-0e1306443fd2",
+            "x": 1190,
+            "y": 1118,
+            "width": 306,
+            "height": 339,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  }
+}
