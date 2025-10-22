@@ -1,0 +1,479 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "Valid link",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Address",
+      "properties": [],
+      "GUID": "8c9efdbf-1683-478a-806a-4b0421e8d73b",
+      "ref": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+      "refIdPath": [
+        "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
+        "31159d48-e46e-41c1-9454-128765422b32",
+        "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "00603cf9-ad15-4e58-8705-111645df66f6"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Absolute Path",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Customer",
+      "properties": [],
+      "GUID": "33faa07c-c8de-4ca4-82a1-f2cc3f11428a",
+      "ref": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+      "refIdPath": [
+        "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
+        "31159d48-e46e-41c1-9454-128765422b32",
+        "5cc94e26-8eb9-4b1c-a78d-a870d9f640db"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "589b1c3f-8008-450e-a456-055da7028b01"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Relaive Path",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Customer",
+      "properties": [],
+      "GUID": "b22aebdc-08c6-4f6e-b73c-d9739ab8f782",
+      "bucketId": "",
+      "ref": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+      "refIdPath": [
+        "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
+        "31159d48-e46e-41c1-9454-128765422b32",
+        "5cc94e26-8eb9-4b1c-a78d-a870d9f640db"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a8812921-a790-44eb-ac49-56d2d2adec6a"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "8c9efdbf-1683-478a-806a-4b0421e8d73b": "Valid link",
+    "33faa07c-c8de-4ca4-82a1-f2cc3f11428a": "Absolute Path",
+    "b22aebdc-08c6-4f6e-b73c-d9739ab8f782": "Relaive Path"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "7d3661cb-62c4-418e-9470-15eee6a8f5af"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "name": "Address",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Address ID",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "65b54be5-17e3-480b-9543-41cade950030"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Street",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "226178a4-d5d7-4303-8ded-6edd2bf5e94a",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Postal code",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "172ef4de-fb50-4087-a44b-9a34e92b1f39",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "City",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "f23a20a2-d7b1-476d-b567-50a67b99f2fc",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+        "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Address",
+        "link": "https://raw.githubusercontent.com/hackolade/demo-models-read-only/main/common/Address-Polyglot.hck.json",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "8c9efdbf-1683-478a-806a-4b0421e8d73b"
+          ]
+        ]
+      },
+      {
+        "name": "Customer",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "First name",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "e8a58173-1262-4752-859c-10ceec5598aa",
+            "description": "The customer’s given name, used for personalization and identification."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Last name",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "872c6f47-1c90-4b97-ad5e-2c446d854243",
+            "description": "The customer’s surname or family name."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "email",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "18d05aa0-70b0-4f8e-9736-ffbc7104f778",
+            "description": "The unique email address of the customer, serving as the primary key and primary contact method. Often used for authentication and login purposes."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Phone number",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "bb57e423-15a3-43d2-bb4f-81c084e50416",
+            "description": "The primary telephone or mobile number for contacting the customer. Format may vary based on locale."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Registration date",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "primaryKey": false,
+            "GUID": "7fa9c279-fe3c-4864-83e9-10df93832aef",
+            "description": "Records the date when the customer registered on the e-commerce platform. It is essential for tracking customer lifecycle stages, analyzing customer acquisition trends, and managing loyalty programs.",
+            "format": "date"
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Address ID",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "404f5440-4f6f-5fa8-b5b8-44545c884019"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Street",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "64ac9deb-d531-5c2e-9742-d374e403c39d",
+                "description": "Specifies the street name and number, providing detailed location information within a city or town."
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Postal code",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "3e7923a3-ceca-5b37-bb9e-dd527134cc31",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "City",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "primaryKey": false,
+                "required": true,
+                "GUID": "558240f1-eede-5026-8c2e-8cf20ba2d5cc",
+                "foreignCollection": "",
+                "foreignField": [],
+                "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+              }
+            ],
+            "GUID": "299ad0aa-01de-43f1-a266-bd803d9d7616",
+            "name": "Bill-to address",
+            "isActivated": true,
+            "refDescription": "Stores the default billing address for the customer. Used for invoicing, payment processing, and tax calculations.",
+            "hackoladeMeta": {}
+          },
+          {
+            "type": "array",
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Address ID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": false,
+                    "GUID": "7055ca52-d4fe-5b0c-83e2-27bf3a457cb2"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Street",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "f18f4f3c-3a6e-5ea0-8037-be712f93026b",
+                    "description": "Specifies the street name and number, providing detailed location information within a city or town."
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Postal code",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "f0edd13e-e801-51ee-9725-cffcfc65921d",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "City",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "55b4e07b-7172-545a-af91-430bb091806d",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+                  }
+                ],
+                "GUID": "3ff559e8-d20f-432c-9ad8-5b93be0f1055",
+                "isActivated": true,
+                "displayName": "Address",
+                "hackoladeMeta": {},
+                "arrayItem": true
+              }
+            ],
+            "additionalItems": true,
+            "name": "Ship-to addresses",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "a569060a-b3b2-4f73-95c7-7c2e2145c273",
+            "description": "Holds a list of potential shipping addresses registered by the customer. Customers can maintain multiple shipping addresses for convenience and flexibility, allowing them to select a preferred address when placing an order. This feature enhances the user experience by accommodating different delivery locations, such as home, work, or gift recipients."
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
+        "code": "",
+        "description": "The Customer entity represents an individual or organization using the ecommerce platform to browse, purchase, and manage orders. It stores essential contact information, registration data, and address details for billing and shipping.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Customer management/Customer",
+        "link": "../demo-models-clone/common/Customer-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "33faa07c-c8de-4ca4-82a1-f2cc3f11428a"
+          ],
+          [
+            "b22aebdc-08c6-4f6e-b73c-d9739ab8f782"
+          ]
+        ]
+      }
+    ],
+    "GUID": "31159d48-e46e-41c1-9454-128765422b32"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "bccf087d-e5c2-434f-a7dc-3e1f1f2a8da9"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-10-22T19:09:44.143Z",
+  "GUID": "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-10-22T19:25:39.688Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.5.3"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "8c9efdbf-1683-478a-806a-4b0421e8d73b",
+            "x": 1033,
+            "y": 1051,
+            "width": 285,
+            "height": 143,
+            "color": {}
+          },
+          {
+            "GUID": "33faa07c-c8de-4ca4-82a1-f2cc3f11428a",
+            "x": 1033,
+            "y": 1274,
+            "width": 385,
+            "height": 319,
+            "color": {}
+          },
+          {
+            "GUID": "b22aebdc-08c6-4f6e-b73c-d9739ab8f782",
+            "x": 1030,
+            "y": 1631,
+            "width": 385,
+            "height": 319,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "8c9efdbf-1683-478a-806a-4b0421e8d73b"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "33faa07c-c8de-4ca4-82a1-f2cc3f11428a"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "b22aebdc-08c6-4f6e-b73c-d9739ab8f782"
+          }
+        ],
+        "relationshipUpdateDisabled": true
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  }
+}
