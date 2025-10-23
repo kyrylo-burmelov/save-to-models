@@ -1,0 +1,84 @@
+{
+  "modelName": "New resource model",
+  "collections": [],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {},
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "fd1a880d-8b5c-428a-b09b-a678ccf694eb"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "a67080ee-f253-4eb0-ba33-37755a0de1fa"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "cd1819df-02cf-48e2-973a-3c7f6edc0660"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "2.0",
+  "dbVendor": "Swagger",
+  "appTarget": "SWAGGER",
+  "creationTS": "2025-10-23T07:37:53.650Z",
+  "GUID": "cff9b125-bd46-4984-b3d7-b6c5d8c6efab",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-10-23T07:38:33.091Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Swagger",
+    "pluginVersion": "0.2.5",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.5.3"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "vertical",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
