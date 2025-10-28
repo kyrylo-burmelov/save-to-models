@@ -1,12 +1,63 @@
 {
   "modelName": "New Model",
-  "collections": [],
+  "collections": [
+    {
+      "isActivated": true,
+      "collectionName": "Order",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "b4d21312-bc08-4894-aabf-f81c7cca2833"
+      },
+      "additionalProperties": false,
+      "GUID": "4315ae76-e0f8-4aba-9a0d-1042d7666ecc",
+      "$ref": "#external/definitions/Order",
+      "refType": "polyglot",
+      "ref": "493f94a3-4dea-4686-a0b9-8cbc52faff53",
+      "refIdPath": [
+        "9be161c7-365b-4544-b84d-6d92768dcf4d",
+        "c72fe309-db9f-4ec4-940d-c06eb054016a",
+        "493f94a3-4dea-4686-a0b9-8cbc52faff53"
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "Address",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "780dc0ab-f5c7-4392-8bd5-4bfa8fe40521"
+      },
+      "additionalProperties": false,
+      "GUID": "2114a8d8-8e18-4909-a95a-486b587768bc",
+      "$ref": "#external/definitions/Address",
+      "refType": "polyglot",
+      "ref": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+      "refIdPath": [
+        "9be161c7-365b-4544-b84d-6d92768dcf4d",
+        "c72fe309-db9f-4ec4-940d-c06eb054016a",
+        "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7"
+      ],
+      "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "4315ae76-e0f8-4aba-9a0d-1042d7666ecc": "Order",
+    "2114a8d8-8e18-4909-a95a-486b587768bc": "Address"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -14,7 +65,161 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "collectionName": "Order",
+        "type": "object",
+        "properties": [
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Order identifier",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "5829cfb6-5ffa-464f-accd-8ddec772485e"
+          },
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Customer identifier",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#9c28b1"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "142742b0-9959-4b09-8fcc-61b588145a3f",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "da2fd91c-4b1d-4ac9-8515-3e21bacf3c7e",
+            "foreignField": [
+              "da2fd91c-4b1d-4ac9-8515-3e21bacf3c7e",
+              "cb229cec-41da-4ae6-95f1-358c83f9c16f"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Ordered date",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "primaryKey": false,
+            "GUID": "80306a4f-bc4b-4b5c-b9b1-7af9a4cd15b8",
+            "format": "date"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Status",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "primaryKey": false,
+            "GUID": "7c9beb55-f7b5-4252-973e-7f0b9aad4da5"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "becbe442-24a7-449a-b52e-2aeff74d1f19"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "493f94a3-4dea-4686-a0b9-8cbc52faff53",
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "113dda6f-9c60-4967-9dd5-8fc65b1e8d63",
+        "definitionEntityType": "collection",
+        "link": "../demo-models-clone/Pragmatic data modeling/1-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Referencing/Order",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "4315ae76-e0f8-4aba-9a0d-1042d7666ecc"
+          ]
+        ]
+      },
+      {
+        "GUID": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+        "collectionName": "Address",
+        "type": "object",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Address ID",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "65b54be5-17e3-480b-9543-41cade950030"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Street",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "226178a4-d5d7-4303-8ded-6edd2bf5e94a",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Postal code",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "172ef4de-fb50-4087-a44b-9a34e92b1f39",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "City",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "f23a20a2-d7b1-476d-b567-50a67b99f2fc",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "fca16002-ccce-45ab-804e-e7e2ec62e4b8"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "bucketId": "",
+        "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+        "definitionEntityType": "collection",
+        "link": "https://raw.githubusercontent.com/hackolade/demo-models-read-only/main/common/Address-Polyglot.hck.json",
+        "kind": "link",
+        "fieldRelativePath": "#/Address",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "2114a8d8-8e18-4909-a95a-486b587768bc"
+          ]
+        ]
+      }
+    ],
     "GUID": "c72fe309-db9f-4ec4-940d-c06eb054016a"
   },
   "externalDefinitions": {
@@ -30,7 +235,7 @@
   "creationTS": "2025-10-28T15:09:03.723Z",
   "GUID": "9be161c7-365b-4544-b84d-6d92768dcf4d",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-28T15:09:40.182Z",
+  "lastModifTS": "2025-10-28T15:11:45.444Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -39,10 +244,48 @@
   "applicationInformation": {
     "version": "8.5.4"
   },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
+  "polyglotModelPaths": [
+    {
+      "GUID": "0c265644-7658-479a-987a-bccbeb782078",
+      "polyglotModelName": "1-Polyglot.hck",
+      "polyglotModelPath": "../demo-models-clone/Pragmatic data modeling/1-Polyglot.hck.json",
+      "normalization": false
+    },
+    {
+      "GUID": "3bcd4455-6f7d-4e62-84d6-050b98d206ef",
+      "polyglotModelName": "Address-Polyglot.hck",
+      "polyglotModelPath": "https://raw.githubusercontent.com/hackolade/demo-models-read-only/main/common/Address-Polyglot.hck.json",
+      "normalization": false
+    }
+  ],
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "2114a8d8-8e18-4909-a95a-486b587768bc",
+            "x": 2133.201933724171,
+            "y": 2357.4040027224673,
+            "width": 237,
+            "height": 97,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "4315ae76-e0f8-4aba-9a0d-1042d7666ecc",
+            "x": 1780.272328180259,
+            "y": 2360.0514383696664,
+            "width": 268,
+            "height": 105,
+            "color": {
+              "hex": "#008a00"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -68,7 +311,11 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "GUID": "4315ae76-e0f8-4aba-9a0d-1042d7666ecc"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
@@ -78,8 +325,5 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
-  },
-  "hackoladeMeta": {
-    "customPropertiesUpdated": true
   }
 }
