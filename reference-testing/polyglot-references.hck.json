@@ -3,7 +3,7 @@
   "collections": [
     {
       "isActivated": true,
-      "collectionName": "Order",
+      "collectionName": "Relative",
       "type": "reference",
       "properties": [],
       "definitions": {
@@ -26,7 +26,7 @@
     },
     {
       "isActivated": true,
-      "collectionName": "Address",
+      "collectionName": "LINK",
       "type": "reference",
       "properties": [],
       "definitions": {
@@ -47,6 +47,30 @@
       "hackoladeMeta": {
         "validationErrors": {}
       }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "Absolute",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "856b8ec1-652c-40b9-a0c6-d1313aca21fc"
+      },
+      "additionalProperties": false,
+      "GUID": "0cb4ed3b-8fd4-4255-8743-60685871c563",
+      "$ref": "#external/definitions/Address",
+      "refType": "polyglot",
+      "ref": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+      "refIdPath": [
+        "9be161c7-365b-4544-b84d-6d92768dcf4d",
+        "c72fe309-db9f-4ec4-940d-c06eb054016a",
+        "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7"
+      ],
+      "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
   ],
   "buckets": [],
@@ -55,8 +79,9 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "4315ae76-e0f8-4aba-9a0d-1042d7666ecc": "Order",
-    "2114a8d8-8e18-4909-a95a-486b587768bc": "Address"
+    "4315ae76-e0f8-4aba-9a0d-1042d7666ecc": "Relative",
+    "2114a8d8-8e18-4909-a95a-486b587768bc": "LINK",
+    "0cb4ed3b-8fd4-4255-8743-60685871c563": "Absolute"
   },
   "definitions": {
     "type": "definitions",
@@ -208,6 +233,7 @@
         "additionalProperties": false,
         "bucketId": "",
         "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+        "name": "Address",
         "definitionEntityType": "collection",
         "link": "https://raw.githubusercontent.com/hackolade/demo-models-read-only/main/common/Address-Polyglot.hck.json",
         "kind": "link",
@@ -216,6 +242,9 @@
         "definitionRefs": [
           [
             "2114a8d8-8e18-4909-a95a-486b587768bc"
+          ],
+          [
+            "0cb4ed3b-8fd4-4255-8743-60685871c563"
           ]
         ]
       }
@@ -235,7 +264,7 @@
   "creationTS": "2025-10-28T15:09:03.723Z",
   "GUID": "9be161c7-365b-4544-b84d-6d92768dcf4d",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-28T15:11:45.444Z",
+  "lastModifTS": "2025-10-28T15:17:35.877Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -259,6 +288,12 @@
       "polyglotModelName": "Address-Polyglot.hck",
       "polyglotModelPath": "https://raw.githubusercontent.com/hackolade/demo-models-read-only/main/common/Address-Polyglot.hck.json",
       "normalization": false
+    },
+    {
+      "GUID": "136162c4-d3c9-4f97-a0d4-302c0a554eb8",
+      "polyglotModelName": "Address-Polyglot.hck1",
+      "polyglotModelPath": "/Users/kburmelov/Development/models/model_repos/save-to-models/demo-models-clone/common/Address-Polyglot.hck.json",
+      "normalization": false
     }
   ],
   "settings": {
@@ -266,10 +301,20 @@
       "dbLevel": {
         "erd": [
           {
+            "GUID": "0cb4ed3b-8fd4-4255-8743-60685871c563",
+            "x": 2535.128046807913,
+            "y": 2242.5679704128256,
+            "width": 206,
+            "height": 97,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
             "GUID": "2114a8d8-8e18-4909-a95a-486b587768bc",
             "x": 2133.201933724171,
             "y": 2357.4040027224673,
-            "width": 237,
+            "width": 206,
             "height": 97,
             "color": {
               "hex": "#2196F3"
@@ -279,7 +324,7 @@
             "GUID": "4315ae76-e0f8-4aba-9a0d-1042d7666ecc",
             "x": 1780.272328180259,
             "y": 2360.0514383696664,
-            "width": 268,
+            "width": 261,
             "height": 105,
             "color": {
               "hex": "#008a00"
