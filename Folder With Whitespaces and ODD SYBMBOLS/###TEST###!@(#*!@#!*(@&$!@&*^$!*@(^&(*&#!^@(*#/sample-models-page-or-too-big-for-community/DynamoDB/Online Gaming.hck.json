@@ -1,0 +1,252 @@
+{
+  "modelName": "Online Gaming",
+  "collections": [
+    {
+      "GUID": "4ca9b130-b8f0-11e6-8089-6f1f31218a06",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": [
+        {
+          "type": "string",
+          "primaryKey": true,
+          "relationshipType": "",
+          "sample": "d9bI3",
+          "GUID": "4caa4d70-b8f0-11e6-8089-6f1f31218a06",
+          "required": true,
+          "name": "gameId",
+          "partitionKey": true,
+          "isActivated": true
+        },
+        {
+          "GUID": "53d21ec0-b8f0-11e6-8089-6f1f31218a06",
+          "type": "string",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "name": "date",
+          "sample": "2014-10-02",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "primaryKey": false,
+          "relationshipType": "",
+          "sample": "David",
+          "GUID": "5dbdf210-b8f0-11e6-8089-6f1f31218a06",
+          "required": true,
+          "name": "host",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "primaryKey": false,
+          "relationshipType": "",
+          "sample": "Alice",
+          "GUID": "62bb9060-b8f0-11e6-8089-6f1f31218a06",
+          "required": true,
+          "name": "opponent",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "primaryKey": false,
+          "relationshipType": "",
+          "enum": [
+            "DONE",
+            "PENDING",
+            "IN_PROGRESS"
+          ],
+          "sample": "DONE",
+          "GUID": "6836c320-b8f0-11e6-8089-6f1f31218a06",
+          "required": true,
+          "name": "status",
+          "compositeAttributes": [
+            "4caa4d70-b8f0-11e6-8089-6f1f31218a06"
+          ],
+          "isActivated": true
+        }
+      ],
+      "collectionName": "games",
+      "collectionUsers": [],
+      "indexes": [
+        {
+          "GUID": "3925da70-b8f1-11e6-8089-6f1f31218a06",
+          "name": "queryFilterGSI",
+          "lsi": false,
+          "sortKey": [
+            {
+              "keyId": "53d21ec0-b8f0-11e6-8089-6f1f31218a06"
+            }
+          ],
+          "projectionType": "Include",
+          "partitionKey": [
+            {
+              "keyId": "62bb9060-b8f0-11e6-8089-6f1f31218a06"
+            }
+          ],
+          "key": [
+            "4caa4d70-b8f0-11e6-8089-6f1f31218a06",
+            "6836c320-b8f0-11e6-8089-6f1f31218a06",
+            "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
+          ],
+          "nonKeyAttributes": [
+            {
+              "keyId": "4caa4d70-b8f0-11e6-8089-6f1f31218a06"
+            },
+            {
+              "keyId": "6836c320-b8f0-11e6-8089-6f1f31218a06"
+            },
+            {
+              "keyId": "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
+            }
+          ],
+          "isActivated": true,
+          "includeSortKey": true
+        },
+        {
+          "GUID": "cecd50d0-b8f1-11e6-8089-6f1f31218a06",
+          "name": "compositeKeyGSI",
+          "lsi": false,
+          "sortKey": [
+            {
+              "keyId": "6836c320-b8f0-11e6-8089-6f1f31218a06"
+            }
+          ],
+          "projectionType": "Include",
+          "partitionKey": [
+            {
+              "keyId": "62bb9060-b8f0-11e6-8089-6f1f31218a06"
+            }
+          ],
+          "key": [
+            "4caa4d70-b8f0-11e6-8089-6f1f31218a06",
+            "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
+          ],
+          "nonKeyAttributes": [
+            {
+              "keyId": "4caa4d70-b8f0-11e6-8089-6f1f31218a06"
+            },
+            {
+              "keyId": "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
+            }
+          ],
+          "isActivated": true,
+          "includeSortKey": true
+        }
+      ],
+      "definitions": {
+        "id": "55bb3951-affe-11ec-ab49-f732172fe980",
+        "properties": [],
+        "type": "definitions"
+      },
+      "isActivated": true,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "4caa4d70-b8f0-11e6-8089-6f1f31218a06": "gameId",
+    "4ca9b130-b8f0-11e6-8089-6f1f31218a06": "games",
+    "53d21ec0-b8f0-11e6-8089-6f1f31218a06": "date",
+    "5dbdf210-b8f0-11e6-8089-6f1f31218a06": "host",
+    "62bb9060-b8f0-11e6-8089-6f1f31218a06": "opponent",
+    "6836c320-b8f0-11e6-8089-6f1f31218a06": "status"
+  },
+  "definitions": {
+    "id": "55bb3950-affe-11ec-ab49-f732172fe980",
+    "properties": [],
+    "type": "definitions"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "56cd4593-affe-11ec-ab49-f732172fe980"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "56cd4592-affe-11ec-ab49-f732172fe980"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "AWS DynamoDB",
+  "appTarget": "DYNAMODB",
+  "creationTS": "2016-12-03T00:33:06.893Z",
+  "GUID": "0f408fd0-b8f0-11e6-8089-6f1f31218a06",
+  "lastModifTS": "2025-02-27T10:22:33.029Z",
+  "persistenceSchemaVersion": "8",
+  "description": "DAT-401 YouTube video https://www.youtube.com/watch?v=ggDIat_FZtA&t=3s by Rick Houlihan, Principal Solutions Architect\n\nThird use case illustrating query filters vs composite key indexes",
+  "comments": "Issue that we don't yet support composite keys, cfr: https://youtu.be/ggDIat_FZtA?t=2421",
+  "author": "",
+  "version": "",
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "4ca9b130-b8f0-11e6-8089-6f1f31218a06",
+            "x": 1000,
+            "y": 1000,
+            "width": 247,
+            "height": 123
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "4ca9b130-b8f0-11e6-8089-6f1f31218a06",
+            "autoWidth": false,
+            "autoHeight": false
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

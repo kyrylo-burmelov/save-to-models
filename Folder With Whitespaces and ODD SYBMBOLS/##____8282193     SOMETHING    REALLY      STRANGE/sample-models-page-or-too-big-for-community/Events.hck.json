@@ -1,0 +1,1359 @@
+{
+  "modelName": "Class words in Data Element Naming",
+  "collections": [
+    {
+      "GUID": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+      "collectionName": "Event",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Event Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "6a4df5d1-aa97-49a0-b1c6-671e17dd48e9",
+          "childRelationships": [
+            "f4117fb5-ccb7-45ef-ab66-82697881db8a",
+            "214e798b-444e-4247-b323-4646326eceba"
+          ]
+        },
+        {
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "3a0b954e-7216-4526-a1e6-be3836063a45",
+          "name": "Event Name",
+          "error": {}
+        },
+        {
+          "name": "Event Type Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "d54a8005-9026-45d4-9c58-475580b6a05c",
+          "error": {
+            "name": false
+          },
+          "enum": [
+            "PICNIC",
+            "CONCERT"
+          ],
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+          "foreignField": [
+            "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+            "ef9c6d01-ce7f-493b-b1b9-ce748786ecaa"
+          ],
+          "parentRelationship": "5b33857a-edde-455b-a9ff-520cb7c06e6a"
+        },
+        {
+          "name": "Event Description Text",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "88034c5e-0315-46c8-9963-92e1e197b4ac",
+          "mode": "text",
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "Event Attendee Limit Count",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "int32",
+          "required": false,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "6adefb0c-5cf8-4db9-90ef-6e1fa730622c"
+        },
+        {
+          "name": "Event Response Due Date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": false,
+          "alternateKey": false,
+          "childType": "date",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "primaryKey": false,
+          "GUID": "404ef464-038f-47d4-809d-4b520e4c3081"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d4efa377-ee0c-4035-8479-9ea033a92fd9"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "32505dbc-2b5e-469a-944c-5067cd761488"
+    },
+    {
+      "GUID": "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+      "collectionName": "Event Venue",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Event Idendtifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "a2e813d1-eaf1-45b6-87ad-5a30be8d0a66",
+          "error": {
+            "name": false
+          },
+          "compositePrimaryKey": true,
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+          "foreignField": [
+            "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+            "6a4df5d1-aa97-49a0-b1c6-671e17dd48e9"
+          ],
+          "parentRelationship": "f4117fb5-ccb7-45ef-ab66-82697881db8a"
+        },
+        {
+          "name": "Venue Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "9891e926-8f76-488b-a969-f0b58a3c0a32",
+          "error": {
+            "name": false
+          },
+          "compositePrimaryKey": true,
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+          "foreignField": [
+            "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+            "8ea2ba0a-df61-419a-a728-3dd69d84a1e4"
+          ],
+          "parentRelationship": "3e01e503-78e4-4f93-8e16-634dc9b556f8"
+        },
+        {
+          "name": "Event Date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": false,
+          "childType": "date",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "primaryKey": false,
+          "GUID": "71f14df1-5bc8-4606-b294-a550a8c80ae5",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "Event Start Time",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "tPrecision": 9,
+          "required": false,
+          "childType": "time",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "GUID": "59d11957-b423-4b21-a5d1-1331bc8a96e9",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "Event End Time",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "tPrecision": 9,
+          "required": false,
+          "childType": "time",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "GUID": "947bb55b-c194-4174-acb9-e94bab72b51f",
+          "foreignCollection": "",
+          "foreignField": []
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "da67af6b-fabc-46c1-926b-7e09b5e75c48"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "32505dbc-2b5e-469a-944c-5067cd761488",
+      "primaryKey": [
+        {
+          "GUID": "9b6c251f-1387-4811-bce8-1341714995d3",
+          "compositePrimaryKey": [
+            {
+              "keyId": "a2e813d1-eaf1-45b6-87ad-5a30be8d0a66"
+            },
+            {
+              "keyId": "9891e926-8f76-488b-a969-f0b58a3c0a32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "GUID": "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+      "collectionName": "Venue",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Venue Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "8ea2ba0a-df61-419a-a728-3dd69d84a1e4",
+          "error": {},
+          "childRelationships": [
+            "3e01e503-78e4-4f93-8e16-634dc9b556f8",
+            "db1aecb3-bfc5-4376-93ca-30fbab92854c"
+          ]
+        },
+        {
+          "name": "Venue Name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "GUID": "6f61d12e-6204-4352-bace-d07af2bb743a",
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "Venue Address",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "GUID": "fa9d751d-5893-4a5c-a8cc-6e2a19fc13b0",
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "Venue Capacity Count",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "int32",
+          "required": false,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "e4de453a-3911-46ec-afcc-bce35b11c877"
+        },
+        {
+          "name": "Venue Comment Text",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "GUID": "36209633-2a6c-4fd8-bc4b-0fee9d14cc72",
+          "error": {
+            "name": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cd39b43a-d26a-4390-9708-a349797bc92b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "32505dbc-2b5e-469a-944c-5067cd761488"
+    },
+    {
+      "GUID": "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+      "collectionName": "Volunteer",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Volunteer Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "fd086c7b-6a95-4488-a240-1e9a13634e23",
+          "error": {},
+          "childRelationships": [
+            "9545fae6-673b-4f36-ad41-bc8ecbe05863"
+          ]
+        },
+        {
+          "name": "Volunteer Name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "GUID": "6e2065c7-03ac-4da9-8577-d2e369b01623",
+          "error": {
+            "name": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "945323ed-755d-4202-8395-ade57f99a089"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "32505dbc-2b5e-469a-944c-5067cd761488"
+    },
+    {
+      "GUID": "392af721-08bb-47f0-af04-57e6469ed456",
+      "collectionName": "Event Volunteer Role",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Event Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "a0527798-1a0a-4de4-8890-dad91137c435",
+          "error": {
+            "name": false
+          },
+          "compositePrimaryKey": true,
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+          "foreignField": [
+            "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+            "6a4df5d1-aa97-49a0-b1c6-671e17dd48e9"
+          ],
+          "parentRelationship": "214e798b-444e-4247-b323-4646326eceba"
+        },
+        {
+          "name": "Volunteer Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "919508cc-59f6-4ee1-9f54-0330ac30e39c",
+          "error": {
+            "name": false
+          },
+          "compositePrimaryKey": true,
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+          "foreignField": [
+            "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+            "fd086c7b-6a95-4488-a240-1e9a13634e23"
+          ],
+          "parentRelationship": "9545fae6-673b-4f36-ad41-bc8ecbe05863"
+        },
+        {
+          "name": "Volunteer Role",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "5e607287-2bba-4578-8133-ec9fba3a809c",
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "Volunteer Comment Text",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "GUID": "2e4a3c2c-644f-48c9-a792-7bf79397594c",
+          "error": {
+            "name": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "0a496524-e467-4cb3-8673-d6a35e9b63b1"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "32505dbc-2b5e-469a-944c-5067cd761488",
+      "primaryKey": [
+        {
+          "GUID": "d16f01f5-95c9-424d-9db2-04a99af95685",
+          "compositePrimaryKey": [
+            {
+              "keyId": "a0527798-1a0a-4de4-8890-dad91137c435"
+            },
+            {
+              "keyId": "919508cc-59f6-4ee1-9f54-0330ac30e39c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "GUID": "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+      "collectionName": "Event Type",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Event Type Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "ef9c6d01-ce7f-493b-b1b9-ce748786ecaa",
+          "childRelationships": [
+            "5b33857a-edde-455b-a9ff-520cb7c06e6a"
+          ],
+          "error": {}
+        },
+        {
+          "name": "Event Type Name Text",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "GUID": "cceb85b5-e8af-4954-83d2-cbe9aaf19054",
+          "error": {
+            "name": false
+          },
+          "compositeUniqueKey": true,
+          "alternateKey": false
+        },
+        {
+          "name": "Event Type Description Text",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "GUID": "0bc05e58-c7aa-48b1-afef-590cad169aa9",
+          "error": {
+            "name": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d3dd8989-c871-4af3-8901-9622bfa199dd"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "32505dbc-2b5e-469a-944c-5067cd761488",
+      "uniqueKey": [
+        {
+          "GUID": "87adb2ae-2703-4b02-8b8a-4ca5aff69bc0",
+          "alternateKey": true,
+          "compositeUniqueKey": [
+            {
+              "keyId": "cceb85b5-e8af-4954-83d2-cbe9aaf19054"
+            }
+          ],
+          "constraintName": "Alt"
+        }
+      ]
+    },
+    {
+      "GUID": "5e03e790-28f9-4be5-ac2c-8aaf081a14ad",
+      "collectionName": "Venue Image",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Venue Image Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "3ec0ba53-240e-45fc-bb54-cf603cd6f71e",
+          "error": {}
+        },
+        {
+          "name": "Venue Image Path",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "957acd41-68b1-4612-9580-7936b020faf1",
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "Venue Identifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "f40f8c58-1969-4e4a-ba21-9887087f368b",
+          "error": {
+            "name": false
+          },
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+          "foreignField": [
+            "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+            "8ea2ba0a-df61-419a-a728-3dd69d84a1e4"
+          ],
+          "parentRelationship": "db1aecb3-bfc5-4376-93ca-30fbab92854c"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "44a0555c-eaeb-437d-8297-0f81cfc4a295"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "bucketId": "32505dbc-2b5e-469a-944c-5067cd761488"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "Events, Venues, and Volunteers Management",
+      "type": "bucket",
+      "collectionIds": [
+        "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+        "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+        "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+        "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+        "392af721-08bb-47f0-af04-57e6469ed456",
+        "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+        "5e03e790-28f9-4be5-ac2c-8aaf081a14ad"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "32505dbc-2b5e-469a-944c-5067cd761488"
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "name": "fk_Venue_Venue Identifier_to_Event Locations_Venue Identifier",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+          "8ea2ba0a-df61-419a-a728-3dd69d84a1e4"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+          "9891e926-8f76-488b-a969-f0b58a3c0a32"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+      "childCollection": "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+      "GUID": "3e01e503-78e4-4f93-8e16-634dc9b556f8",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "5ac8fabc-c77c-4f4c-82e0-0e7805f729ca",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1609.8000000000002,
+            "y": 1519.4
+          },
+          {
+            "x": 1609.8000000000002,
+            "y": 1562.4
+          },
+          {
+            "x": 1609.3000000000002,
+            "y": 1562.4
+          },
+          {
+            "x": 1609.3000000000002,
+            "y": 1605.4
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
+    },
+    {
+      "name": "fk_Event_Event Identifier_to_Event Locations_Event Idendtifier",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+          "6a4df5d1-aa97-49a0-b1c6-671e17dd48e9"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+          "a2e813d1-eaf1-45b6-87ad-5a30be8d0a66"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+      "childCollection": "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+      "GUID": "f4117fb5-ccb7-45ef-ab66-82697881db8a",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "ddfeed38-e374-4964-906e-38cbf9287686",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1484,
+            "y": 1457.9
+          },
+          {
+            "x": 1432,
+            "y": 1457.9
+          },
+          {
+            "x": 1432,
+            "y": 1457.9
+          },
+          {
+            "x": 1380,
+            "y": 1457.9
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "name": "fk_Volunteer_Volunteer Identifier_to_Event Volunteer Role_Volunteer Identifier",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+          "fd086c7b-6a95-4488-a240-1e9a13634e23"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "392af721-08bb-47f0-af04-57e6469ed456",
+          "919508cc-59f6-4ee1-9f54-0330ac30e39c"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+      "childCollection": "392af721-08bb-47f0-af04-57e6469ed456",
+      "GUID": "9545fae6-673b-4f36-ad41-bc8ecbe05863",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "cfd713e5-2859-46a6-9879-bde7fa955144",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1225.8000000000002,
+            "y": 1719.4
+          },
+          {
+            "x": 1225.8000000000002,
+            "y": 1759.9
+          },
+          {
+            "x": 1225.3000000000002,
+            "y": 1759.9
+          },
+          {
+            "x": 1225.3000000000002,
+            "y": 1800.4
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
+    },
+    {
+      "name": "fk_Event_Event Identifier_to_Event Volunteer Role_Event Identifier",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+          "6a4df5d1-aa97-49a0-b1c6-671e17dd48e9"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "392af721-08bb-47f0-af04-57e6469ed456",
+          "a0527798-1a0a-4de4-8890-dad91137c435"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+      "childCollection": "392af721-08bb-47f0-af04-57e6469ed456",
+      "GUID": "214e798b-444e-4247-b323-4646326eceba",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "01ee799a-2351-415f-ab4a-a5f8228e7c57",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1225.8000000000002,
+            "y": 1614.4
+          },
+          {
+            "x": 1225.8000000000002,
+            "y": 1571.4
+          },
+          {
+            "x": 1225.3000000000002,
+            "y": 1571.4
+          },
+          {
+            "x": 1225.3000000000002,
+            "y": 1528.4
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      }
+    },
+    {
+      "name": "fk_Event Type_Event Type Identifier_to_Event_Event Type Identifier",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+          "ef9c6d01-ce7f-493b-b1b9-ce748786ecaa"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+          "d54a8005-9026-45d4-9c58-475580b6a05c"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+      "childCollection": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+      "GUID": "5b33857a-edde-455b-a9ff-520cb7c06e6a",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "6f9b6830-3f78-4780-8e2f-aea077592564",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1069,
+            "y": 1457.9
+          },
+          {
+            "x": 1023.293752569311,
+            "y": 1457.9
+          },
+          {
+            "x": 1023.293752569311,
+            "y": 1457.9
+          },
+          {
+            "x": 977.587505138622,
+            "y": 1457.9
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "name": "fk_Venue_Venue Identifier_to_Venue Image_Venue Identifier",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+          "8ea2ba0a-df61-419a-a728-3dd69d84a1e4"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "5e03e790-28f9-4be5-ac2c-8aaf081a14ad",
+          "f40f8c58-1969-4e4a-ba21-9887087f368b"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+      "childCollection": "5e03e790-28f9-4be5-ac2c-8aaf081a14ad",
+      "GUID": "db1aecb3-bfc5-4376-93ca-30fbab92854c",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "b1f3534a-a179-425a-bd60-6034c063afb1",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1609.8000000000002,
+            "y": 1794.0666666666668
+          },
+          {
+            "x": 1609.8000000000002,
+            "y": 1761.2333333333336
+          },
+          {
+            "x": 1609.3000000000002,
+            "y": 1761.2333333333336
+          },
+          {
+            "x": 1609.3000000000002,
+            "y": 1728.4
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      }
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "32505dbc-2b5e-469a-944c-5067cd761488": "Events, Venues, and Volunteers Management",
+    "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216": "Event",
+    "6a4df5d1-aa97-49a0-b1c6-671e17dd48e9": "Event Identifier",
+    "d54a8005-9026-45d4-9c58-475580b6a05c": "Event Type Identifier",
+    "88034c5e-0315-46c8-9963-92e1e197b4ac": "Event Description Text",
+    "5e65837e-ba56-4d34-a684-aa49c0eb173b": "Event Venue",
+    "a2e813d1-eaf1-45b6-87ad-5a30be8d0a66": "Event Idendtifier",
+    "9891e926-8f76-488b-a969-f0b58a3c0a32": "Venue Identifier",
+    "9f4b93bb-0015-408f-86f3-71dd2baaa870": "Venue",
+    "8ea2ba0a-df61-419a-a728-3dd69d84a1e4": "Venue Identifier",
+    "6f61d12e-6204-4352-bace-d07af2bb743a": "Venue Name",
+    "fa9d751d-5893-4a5c-a8cc-6e2a19fc13b0": "Venue Address",
+    "88d69e8b-b621-4c49-8a81-45159f3cf39e": "Volunteer",
+    "fd086c7b-6a95-4488-a240-1e9a13634e23": "Volunteer Identifier",
+    "6e2065c7-03ac-4da9-8577-d2e369b01623": "Volunteer Name",
+    "3a0b954e-7216-4526-a1e6-be3836063a45": "Event Name",
+    "6adefb0c-5cf8-4db9-90ef-6e1fa730622c": "Event Attendee Limit Count",
+    "3e01e503-78e4-4f93-8e16-634dc9b556f8": "fk_Venue_Venue Identifier_to_Event Locations_Venue Identifier",
+    "f4117fb5-ccb7-45ef-ab66-82697881db8a": "fk_Event_Event Identifier_to_Event Locations_Event Idendtifier",
+    "e4de453a-3911-46ec-afcc-bce35b11c877": "Venue Capacity Count",
+    "392af721-08bb-47f0-af04-57e6469ed456": "Event Volunteer Role",
+    "a0527798-1a0a-4de4-8890-dad91137c435": "Event Identifier",
+    "919508cc-59f6-4ee1-9f54-0330ac30e39c": "Volunteer Identifier",
+    "5e607287-2bba-4578-8133-ec9fba3a809c": "Volunteer Role",
+    "9545fae6-673b-4f36-ad41-bc8ecbe05863": "fk_Volunteer_Volunteer Identifier_to_Event Volunteer Role_Volunteer Identifier",
+    "214e798b-444e-4247-b323-4646326eceba": "fk_Event_Event Identifier_to_Event Volunteer Role_Event Identifier",
+    "49cbc2e0-bf3c-425f-b3b4-618a0bf11823": "Event Type",
+    "ef9c6d01-ce7f-493b-b1b9-ce748786ecaa": "Event Type Identifier",
+    "cceb85b5-e8af-4954-83d2-cbe9aaf19054": "Event Type Name Text",
+    "0bc05e58-c7aa-48b1-afef-590cad169aa9": "Event Type Description Text",
+    "5b33857a-edde-455b-a9ff-520cb7c06e6a": "fk_Event Type_Event Type Identifier_to_Event_Event Type Identifier",
+    "404ef464-038f-47d4-809d-4b520e4c3081": "Event Response Due Date",
+    "2e4a3c2c-644f-48c9-a792-7bf79397594c": "Volunteer Comment Text",
+    "36209633-2a6c-4fd8-bc4b-0fee9d14cc72": "Venue Comment Text",
+    "5e03e790-28f9-4be5-ac2c-8aaf081a14ad": "Venue Image",
+    "3ec0ba53-240e-45fc-bb54-cf603cd6f71e": "Venue Image Identifier",
+    "957acd41-68b1-4612-9580-7936b020faf1": "Venue Image Path",
+    "f40f8c58-1969-4e4a-ba21-9887087f368b": "Venue Identifier",
+    "db1aecb3-bfc5-4376-93ca-30fbab92854c": "fk_Venue_Venue Identifier_to_Venue Image_Venue Identifier",
+    "59d11957-b423-4b21-a5d1-1331bc8a96e9": "Event Start Time",
+    "947bb55b-c194-4174-acb9-e94bab72b51f": "Event End Time",
+    "71f14df1-5bc8-4606-b294-a550a8c80ae5": "Event Date"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "46f4e0a5-4ed9-4cd5-9450-6ef2d5cc496a"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "b30fbf20-f48a-4a5f-989c-2a4f8b60f038"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "a9d6071c-1d00-4750-bd92-9174d66df642"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2025-03-04T16:11:38.445Z",
+  "GUID": "d2b770f5-fc25-4abe-89b7-038335dc5f2a",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-03-05T20:02:18.723Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.3"
+  },
+  "hackoladeMeta": {
+    "validationErrors": {
+      "description": false
+    }
+  },
+  "description": "Based on Steve Sewell's document",
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+            "x": 1069,
+            "y": 1387.4,
+            "width": 311,
+            "height": 141,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+            "x": 1484,
+            "y": 1396.4,
+            "width": 250,
+            "height": 123,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+            "x": 1468,
+            "y": 1605.4,
+            "width": 281,
+            "height": 123,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+            "x": 1091,
+            "y": 1800.4,
+            "width": 267,
+            "height": 69,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "392af721-08bb-47f0-af04-57e6469ed456",
+            "x": 1076,
+            "y": 1614.4,
+            "width": 298,
+            "height": 105,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+            "x": 663.587505138622,
+            "y": 1414.4,
+            "width": 314,
+            "height": 87,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "5e03e790-28f9-4be5-ac2c-8aaf081a14ad",
+            "x": 1467,
+            "y": 1794.0666666666668,
+            "width": 284,
+            "height": 87,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 623.587505138622,
+            "y": 1347.4,
+            "GUID": "32505dbc-2b5e-469a-944c-5067cd761488"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216",
+              "size": 100,
+              "x": 1157.5840702522346,
+              "y": 987.89225998067
+            },
+            {
+              "GUID": "5e65837e-ba56-4d34-a684-aa49c0eb173b",
+              "size": 100,
+              "x": 1273.5096744801804,
+              "y": 763.8258592404097
+            },
+            {
+              "GUID": "9f4b93bb-0015-408f-86f3-71dd2baaa870",
+              "size": 100,
+              "x": 1518.3597437317612,
+              "y": 703.6589904726494
+            },
+            {
+              "GUID": "88d69e8b-b621-4c49-8a81-45159f3cf39e",
+              "size": 100,
+              "x": 1565.8023523727331,
+              "y": 1144.1557881037747
+            },
+            {
+              "GUID": "392af721-08bb-47f0-af04-57e6469ed456",
+              "size": 100,
+              "x": 1317.3320897001627,
+              "y": 1182.9544237452767
+            },
+            {
+              "GUID": "49cbc2e0-bf3c-425f-b3b4-618a0bf11823",
+              "size": 100,
+              "x": 916.5072732130002,
+              "y": 1059.2848407222396
+            },
+            {
+              "GUID": "5e03e790-28f9-4be5-ac2c-8aaf081a14ad",
+              "size": 100,
+              "x": 1540.730709180826,
+              "y": 953.8757265367922
+            }
+          ],
+          "buckets": [
+            {
+              "x": 665.5875051386222,
+              "y": 779.0302852362829,
+              "GUID": "32505dbc-2b5e-469a-944c-5067cd761488"
+            }
+          ],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 251
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": true,
+            "autoHeight": true,
+            "GUID": "5e03e790-28f9-4be5-ac2c-8aaf081a14ad"
+          },
+          {
+            "autoWidth": true,
+            "autoHeight": true,
+            "GUID": "ee7562b5-d7e2-4da1-bdd6-2dc4055aa216"
+          },
+          {
+            "autoWidth": true,
+            "autoHeight": true,
+            "GUID": "5e65837e-ba56-4d34-a684-aa49c0eb173b"
+          },
+          {
+            "autoWidth": true,
+            "autoHeight": true,
+            "GUID": "9f4b93bb-0015-408f-86f3-71dd2baaa870"
+          },
+          {
+            "autoWidth": true,
+            "autoHeight": true,
+            "GUID": "88d69e8b-b621-4c49-8a81-45159f3cf39e"
+          },
+          {
+            "autoWidth": true,
+            "autoHeight": true,
+            "GUID": "392af721-08bb-47f0-af04-57e6469ed456"
+          },
+          {
+            "autoWidth": true,
+            "autoHeight": true,
+            "GUID": "49cbc2e0-bf3c-425f-b3b4-618a0bf11823"
+          }
+        ],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false,
+          "hideRelationshipName": true
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

@@ -1,0 +1,2667 @@
+{
+  "modelName": "Swagger_generation_template",
+  "collections": [
+    {
+      "GUID": "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+      "collectionName": "post",
+      "type": "object",
+      "properties": [
+        {
+          "name": "path",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "10d2a32b-7f2f-45f4-9446-92518126974c",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "query",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "b4d155df-3042-4f7a-9c24-cfd6e3a6553b",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "header",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "d7f59d27-668c-4507-b350-79f7b019d80e",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "2276de34-79b1-45cd-b8ca-2d2f7eb73096",
+              "type": "reference",
+              "name": "body",
+              "$ref": "#model/definitions/Entity",
+              "refType": "model",
+              "ref": "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50"
+              ],
+              "code": "",
+              "isActivated": true,
+              "refDescription": "Required input.",
+              "required": true
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "13487a3e-6d89-4dd3-93fd-f3dca52c6fe9",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "formData",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "a37fa3cf-f2c6-47df-8ca3-5d3df1afd9dc",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "0b0eaacd-ffc2-41f9-b109-22d4c35b1845",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "bucketId": "48b644ce-f33b-4865-8104-fe6a8bdd0d30",
+      "extensions": [],
+      "tags": [
+        {
+          "tag": "Entity resource",
+          "GUID": "e659bf7b-655f-4ab2-8f6e-f44995169591"
+        }
+      ],
+      "summary": "Create entity.",
+      "description": "Create a new entity resource.",
+      "operationId": "Createentity.",
+      "produces": [
+        {
+          "producesMimeTypeDef": "application/json",
+          "GUID": "ba87cb1b-82ae-4122-9203-1ffbba21233b"
+        }
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "02b0c4e4-13a5-43d4-a32c-edeae1434985",
+        "32c5334a-6fae-4052-af3e-c6b4ed5aea19",
+        "57cbcb70-6e28-497e-9e10-d6aa84a1c273",
+        "5c4b8882-585a-4720-9022-08217eed6eb8",
+        "c577564c-c957-48ec-ba47-cdb0d9ff04eb"
+      ]
+    },
+    {
+      "GUID": "02b0c4e4-13a5-43d4-a32c-edeae1434985",
+      "collectionName": "201",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "eae439bc-fa50-4592-a184-8f87b1cb3c9c",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "9c270da2-72e4-4a9f-af90-14d3e8242f36",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/EntitiesResponse",
+              "refType": "model",
+              "ref": "a416fa95-d48b-4508-98b0-ca26eff39ae0",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "a416fa95-d48b-4508-98b0-ca26eff39ae0"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "4b39d1e7-0d6f-4910-885e-dcd4e6748f9c",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "6618d036-b31c-46a8-b801-4c310bd97f19",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "48b644ce-f33b-4865-8104-fe6a8bdd0d30",
+      "parentCollection": "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "32c5334a-6fae-4052-af3e-c6b4ed5aea19",
+      "collectionName": "400",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "2672f9e3-1798-4917-83f3-a81809e5d156",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "475fed50-4a3b-41f9-a3b0-90ec4203d04c",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "ba6e05b0-3529-44a0-b0b8-0cecaff9fc15",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "3fee5688-b6bc-4dd8-a350-7ee1ff9c7a02",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "48b644ce-f33b-4865-8104-fe6a8bdd0d30",
+      "parentCollection": "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "57cbcb70-6e28-497e-9e10-d6aa84a1c273",
+      "collectionName": "401",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "4ff93c44-b210-405f-90b9-c357421f350c",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "14044080-72fc-426b-acf7-7f20df2bd173",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "48bd125a-8425-470c-988b-a36daff5c23f",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "1254c68b-badc-4d13-9356-0babbc990650",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "48b644ce-f33b-4865-8104-fe6a8bdd0d30",
+      "parentCollection": "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "5c4b8882-585a-4720-9022-08217eed6eb8",
+      "collectionName": "403",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "76cc54d8-4688-4931-a669-66cc54d36a80",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "fee24988-23a2-48f3-99da-ae50c499ef75",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "af81031b-b915-4284-adb4-32559c2e496b",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "aa832422-149e-46f8-b1d7-2cb0ad3e071e",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "48b644ce-f33b-4865-8104-fe6a8bdd0d30",
+      "parentCollection": "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "c577564c-c957-48ec-ba47-cdb0d9ff04eb",
+      "collectionName": "500",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "c20a9f2c-f28a-476f-93bb-749116cea790",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "95c8f099-aad2-42e1-a94f-0d86a0bb1d7e",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "70d22a86-47c0-48e2-bef1-6b4d6343c533",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "d4cf2346-e897-4c75-b5f1-dfc13dde6c85",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "48b644ce-f33b-4865-8104-fe6a8bdd0d30",
+      "parentCollection": "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "beef8443-b731-4be5-8105-be269758bd61",
+      "collectionName": "get",
+      "type": "object",
+      "properties": [
+        {
+          "name": "path",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "code": "",
+              "name": "id",
+              "isActivated": true,
+              "required": true,
+              "primaryKey": false,
+              "type": "string",
+              "in": "path",
+              "description": "The id of the template to retrieve",
+              "GUID": "590d11e3-9fad-4c18-a05e-8929a7610c56",
+              "error": {}
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "c89f716d-4c4d-4149-8377-5597d12ff0dd",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "query",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "eaab95d6-413e-4cd6-8163-1b1c541fb8ba",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "header",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "fa8db706-72a9-469f-8f36-9f2fda6a53d9",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "f910b739-47c5-45e0-80b3-3871eb0c1997",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "formData",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "71437542-d179-43ba-bfe1-e8de51fdf78c",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "3473a80f-e348-494c-9b1a-3f5ef319850f",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "extensions": [],
+      "tags": [
+        {
+          "tag": "Entity resource",
+          "GUID": "cf4dd3d5-c130-4c0c-94a9-200e75f7da60"
+        }
+      ],
+      "summary": "Retrieve entity.",
+      "description": "Retrieve all the data for the template resource.",
+      "operationId": "Retrieveentity.",
+      "produces": [
+        {
+          "producesMimeTypeDef": "application/json",
+          "GUID": "39745e7c-790a-4d33-9287-f0ae48d9149f"
+        }
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "4099b03e-8428-43ae-9eab-f9128bc366aa",
+        "f0f8055b-4677-4c75-8fc1-b7348a4c5607",
+        "94748492-f57a-4dab-9ce2-f4709c0bbc48",
+        "23079620-1584-4b42-b09e-eb2b7d73321e",
+        "8f94c3d4-67c0-485f-919a-da89237b7569"
+      ]
+    },
+    {
+      "GUID": "4099b03e-8428-43ae-9eab-f9128bc366aa",
+      "collectionName": "200",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "9d18b018-9803-40d9-b971-02727843c235",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "cc788e8b-27c9-41b3-8491-f6f9aacdbf93",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/EntitiesResponse",
+              "refType": "model",
+              "ref": "a416fa95-d48b-4508-98b0-ca26eff39ae0",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "a416fa95-d48b-4508-98b0-ca26eff39ae0"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "b865ae5c-40f7-42ee-b23b-7929fc9b2ee1",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "6a58fefe-a69b-4766-a5d8-f7d823d190c5",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "beef8443-b731-4be5-8105-be269758bd61",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "f0f8055b-4677-4c75-8fc1-b7348a4c5607",
+      "collectionName": "401",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "2b689aa2-fcc6-484a-889c-7a498ba8ae16",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "104a03ce-8b19-43d2-9a29-1efef6b77c42",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "fb77fc34-fc0f-4698-a104-75db4d6c62ff",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "54995f31-8142-4e08-80b1-5b329b54a127",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "beef8443-b731-4be5-8105-be269758bd61",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "94748492-f57a-4dab-9ce2-f4709c0bbc48",
+      "collectionName": "403",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "44e979a9-4444-44f6-ba1e-6922f528b341",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "64ac16ac-6c57-4bb1-b542-46d01c6cd4a5",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "fb07366e-cf37-4307-987a-e5d8377f1a57",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "d1ef7c36-c06e-4ed9-9a77-b23d5b649891",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "beef8443-b731-4be5-8105-be269758bd61",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "23079620-1584-4b42-b09e-eb2b7d73321e",
+      "collectionName": "404",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "1195ed37-1bf3-4680-a53f-710063d80ba8",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "e70f77f0-a595-42a3-a208-6231e8fc614d",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "3019c99a-486d-443c-9346-7b23c9b416cb",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "8c01128c-fa84-4df2-9959-f024752e6591",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "beef8443-b731-4be5-8105-be269758bd61",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "8f94c3d4-67c0-485f-919a-da89237b7569",
+      "collectionName": "500",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "a97c1639-71db-46ec-9279-1b839be310e0",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "54cdac74-06c1-4e97-ae45-dffdad99079c",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "7f279629-f0e3-49ce-8bfa-5f8cfed0ce7b",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "2f8cbeb8-4bb9-433d-a40d-1dab8ef696be",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "beef8443-b731-4be5-8105-be269758bd61",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+      "collectionName": "put",
+      "type": "object",
+      "properties": [
+        {
+          "name": "path",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "code": "",
+              "name": "id",
+              "isActivated": true,
+              "required": true,
+              "primaryKey": false,
+              "type": "string",
+              "in": "path",
+              "description": "The id of the template to create/update",
+              "GUID": "980112dc-bf2b-4d9b-bf81-9690765b42ce",
+              "error": {}
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "ef3af879-b2b4-4f18-8389-2853d3b0106d",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "query",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "3e76286f-46cc-4bd5-8faa-5ca9bca1010c",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "header",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "a94190ae-29e5-4caa-8efa-19a45824e57b",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "c25da21f-9e92-4133-b3a0-d25b32fc2f2f",
+              "type": "reference",
+              "name": "body",
+              "$ref": "#model/definitions/Entity",
+              "refType": "model",
+              "ref": "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50"
+              ],
+              "code": "",
+              "isActivated": true,
+              "refDescription": "Required input.",
+              "required": true
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "06462d24-04f3-4bbd-ba86-76981e6e9447",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "formData",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "a3d9839f-d52d-4344-b74c-6210736ee69e",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "ca6052aa-903a-4e9b-93b8-2fb500dbb14e",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "extensions": [],
+      "tags": [
+        {
+          "tag": "Entity resource",
+          "GUID": "db9c9402-1185-442a-8e9a-3b951637b19b"
+        }
+      ],
+      "summary": "Create or Update entity.",
+      "description": "Create a new or update an existing template resource.",
+      "operationId": "CreateorUpdateentity.",
+      "produces": [
+        {
+          "producesMimeTypeDef": "application/json",
+          "GUID": "21ac841b-df21-40d5-bc3d-1906b6003883"
+        }
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "dc053da6-bb17-430d-bb61-ef62ccad9b88",
+        "4ef35f4c-de79-4fbe-9d7d-8f144a535d67",
+        "b8e00c3b-8d5d-44b5-8ec2-231742bf0541",
+        "346eab7f-b9cd-4f91-a0d3-8ad35a312535",
+        "074178f9-3b95-4648-82ba-1250f2ad7464",
+        "8c09c75a-6ee7-44e4-9d34-bdac9f7f29a2"
+      ]
+    },
+    {
+      "GUID": "dc053da6-bb17-430d-bb61-ef62ccad9b88",
+      "collectionName": "200",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "5970a17b-aa13-40b6-8b9c-c24417b2ddb4",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "efe6c0a0-24a2-42db-bd03-f1f7c66f4f12",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/EntitiesResponse",
+              "refType": "model",
+              "ref": "a416fa95-d48b-4508-98b0-ca26eff39ae0",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "a416fa95-d48b-4508-98b0-ca26eff39ae0"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "eeae9c27-553a-4533-b749-4269f0feba66",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "20dad29e-072b-44fb-91f4-b31b0c7d0ccc",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "4ef35f4c-de79-4fbe-9d7d-8f144a535d67",
+      "collectionName": "400",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "92bc2dd1-1453-4716-a05a-702896245b46",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "49e28846-84b8-4b9a-b9cb-8636f952322a",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "c703435e-204a-4d4d-b10a-3716ccc0ce7d",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "87255756-bd3f-4088-a689-b3fc58bfda67",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "b8e00c3b-8d5d-44b5-8ec2-231742bf0541",
+      "collectionName": "401",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "a5bc6586-082f-4388-9f23-f1daa176e4a9",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "6aed75ed-0cf9-49f0-9698-a67fcdc5b159",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "ad1f9b85-ab2e-47c2-99ff-70c650679665",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "148512cd-6d62-4705-b1ef-3ac2ae74b8f0",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "346eab7f-b9cd-4f91-a0d3-8ad35a312535",
+      "collectionName": "403",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "5d7b5f0e-f7f2-4748-9743-eb394590cce1",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "fcd5abd6-4f9a-4ec9-aac5-e015be8ed881",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "19d2ebc2-6d41-4733-bef4-b021cc1ebf7c",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "4c064e44-c009-4b2c-a5f7-82e8a78e2844",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "074178f9-3b95-4648-82ba-1250f2ad7464",
+      "collectionName": "404",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "c4677e64-dab2-4312-a768-009116eaab71",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "1ce92f73-ca46-4ab8-bf3c-731144f4248d",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "3cbf0485-edb1-468c-afb6-9642b57031c4",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "5fc9cb3e-c23a-4288-839b-7727cae7685f",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "8c09c75a-6ee7-44e4-9d34-bdac9f7f29a2",
+      "collectionName": "500",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "ed944dc5-0c2a-4bdd-97ac-93ffc99985dd",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "19e8d707-09bc-48ec-af0d-3b3ea60ad3f2",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "d563a730-7103-4f7a-970c-56d2753a2981",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "ed1238a0-523a-4287-8bab-a4208a2c9e70",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+      "collectionName": "delete",
+      "type": "object",
+      "properties": [
+        {
+          "name": "path",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "code": "",
+              "name": "id",
+              "isActivated": true,
+              "required": true,
+              "primaryKey": false,
+              "type": "string",
+              "in": "path",
+              "description": "The id of the template to delete",
+              "GUID": "f820c0c1-0843-4b5f-8511-efe68e0a8d88",
+              "error": {}
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "ddf28291-a4d4-45a3-9a9c-8e0bd6dc9bc2",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "query",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "7c98444d-0ef8-4db8-9809-c8167aa69eee",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "header",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "e6adc84a-ef7f-4a2e-9305-4c5fbcb84006",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "acec358d-5e6c-4e74-a381-641f8e7d8ace",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "formData",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "c146e0bf-a3b9-4e35-a782-3130d614efa0",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "627f31aa-4ef0-45ef-8c82-caba4118d5d1",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "request",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "extensions": [],
+      "tags": [
+        {
+          "tag": "Entity resource",
+          "GUID": "36486a47-bff6-4d1b-8895-844769b56e81"
+        }
+      ],
+      "summary": "Delete entity.",
+      "description": "Delete the template resource.",
+      "operationId": "Deleteentity.",
+      "produces": [
+        {
+          "producesMimeTypeDef": "application/json",
+          "GUID": "990e655c-ac0a-42ac-b215-8fda16d8aa0f"
+        }
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "childCollection": [
+        "44ef598a-7896-4ee0-b03c-c0600cfc60b8",
+        "6f6846ee-ea82-4291-a768-1c01defdb127",
+        "87510ec7-2b80-4b8b-91a1-b1d48020b628",
+        "434a5858-2c5f-4b46-8bcc-a5e20330cdc6",
+        "ba92e992-bab1-4a51-8568-4801f9c30ed2"
+      ]
+    },
+    {
+      "GUID": "44ef598a-7896-4ee0-b03c-c0600cfc60b8",
+      "collectionName": "204",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "8e352ee4-4b2b-47a7-97ae-bfc1f2f0a594",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "65a9c9e5-a195-4ab1-be03-c85026d5070f",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "c4cb9bb0-a4c9-48d2-8400-a5b405b42a9f",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "6f6846ee-ea82-4291-a768-1c01defdb127",
+      "collectionName": "401",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "43eefab2-3b92-4c4e-bb58-f70ecea0edc8",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "b4d1bed9-1f3c-40b0-bd64-6b71e0d8a9c8",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "343d4100-d9d7-471a-b7c3-575737d500a7",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "e2076c60-7999-46cb-ab72-1006df7062b7",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "87510ec7-2b80-4b8b-91a1-b1d48020b628",
+      "collectionName": "403",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "268f369c-a138-453a-bffd-b8a370ec738c",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "3452988e-9aec-4d4c-9468-fa2479d66157",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "dc2234c1-4a9e-48fa-bbb2-24ea3e990f81",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "ed7f03f6-bc0e-4c77-9194-df284e919348",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "434a5858-2c5f-4b46-8bcc-a5e20330cdc6",
+      "collectionName": "404",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "ade6ec78-be58-4d30-9b64-b49eeb3c7569",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "54d1f9b6-6041-4b8d-9088-c257b9d4f1ce",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "f96a4f06-f5f5-4342-b6d9-4707df9efe13",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "9151bd9d-ed5c-48b4-9389-458b3b50e2f9",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "ba92e992-bab1-4a51-8568-4801f9c30ed2",
+      "collectionName": "500",
+      "type": "object",
+      "properties": [
+        {
+          "name": "headers",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "noFile",
+          "GUID": "4954b514-c558-4fb6-aa85-5007c2e29ad2",
+          "additionalProperties": true,
+          "error": {}
+        },
+        {
+          "name": "body",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "structureType": true,
+          "properties": [
+            {
+              "GUID": "f7b63922-59a8-489f-962d-50994308987e",
+              "type": "reference",
+              "name": "schema",
+              "$ref": "#model/definitions/Entities500Error",
+              "refType": "model",
+              "ref": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+              "refIdPath": [
+                "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+                "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+                "57f140eb-6e2d-4434-bbc1-4769f4d19ef4"
+              ],
+              "code": "",
+              "isActivated": true,
+              "required": false
+            }
+          ],
+          "childType": "parameter",
+          "type": "document",
+          "subtype": "file",
+          "GUID": "8b296397-4c6a-4dad-9962-d0317409101c",
+          "additionalProperties": true,
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "7090c941-ac58-4a3e-91ab-f9bf47e6f05b",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "entityType": "response",
+      "bucketId": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "parentCollection": "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+      "extensions": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "/entities",
+      "type": "bucket",
+      "collectionIds": [
+        "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+        "02b0c4e4-13a5-43d4-a32c-edeae1434985",
+        "32c5334a-6fae-4052-af3e-c6b4ed5aea19",
+        "57cbcb70-6e28-497e-9e10-d6aa84a1c273",
+        "5c4b8882-585a-4720-9022-08217eed6eb8",
+        "c577564c-c957-48ec-ba47-cdb0d9ff04eb"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "48b644ce-f33b-4865-8104-fe6a8bdd0d30",
+      "hackoladeMeta": {},
+      "extensions": [],
+      "addFieldsToBucket": true,
+      "isPlugin": true
+    },
+    {
+      "name": "/entities/{id}",
+      "type": "bucket",
+      "collectionIds": [
+        "beef8443-b731-4be5-8105-be269758bd61",
+        "4099b03e-8428-43ae-9eab-f9128bc366aa",
+        "f0f8055b-4677-4c75-8fc1-b7348a4c5607",
+        "94748492-f57a-4dab-9ce2-f4709c0bbc48",
+        "23079620-1584-4b42-b09e-eb2b7d73321e",
+        "8f94c3d4-67c0-485f-919a-da89237b7569",
+        "fb0bdb04-c204-47b8-8976-f680e058daf7",
+        "dc053da6-bb17-430d-bb61-ef62ccad9b88",
+        "4ef35f4c-de79-4fbe-9d7d-8f144a535d67",
+        "b8e00c3b-8d5d-44b5-8ec2-231742bf0541",
+        "346eab7f-b9cd-4f91-a0d3-8ad35a312535",
+        "074178f9-3b95-4648-82ba-1250f2ad7464",
+        "8c09c75a-6ee7-44e4-9d34-bdac9f7f29a2",
+        "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+        "44ef598a-7896-4ee0-b03c-c0600cfc60b8",
+        "6f6846ee-ea82-4291-a768-1c01defdb127",
+        "87510ec7-2b80-4b8b-91a1-b1d48020b628",
+        "434a5858-2c5f-4b46-8bcc-a5e20330cdc6",
+        "ba92e992-bab1-4a51-8568-4801f9c30ed2"
+      ],
+      "backgroundColor": {
+        "r": 0,
+        "g": 138,
+        "b": 0,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "980800d8-923c-4f62-8e2f-447bb388b8e2",
+      "hackoladeMeta": {},
+      "extensions": [],
+      "addFieldsToBucket": true,
+      "isPlugin": true
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "48b644ce-f33b-4865-8104-fe6a8bdd0d30": "/entities",
+    "980800d8-923c-4f62-8e2f-447bb388b8e2": "/entities/{id}",
+    "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50": "Entity",
+    "7081acfd-9340-4d07-971d-07ecf7a3dad1": "id",
+    "c08372e2-0fbc-4316-b9a9-ae54d78223a0": "name",
+    "e8f08d1e-515b-4bda-98d2-f77420d3c173": "Error",
+    "32f64563-6d49-4388-8547-9fdee1887778": "code",
+    "1b91b5e4-db0c-47d6-98fd-ad0e18a1dac6": "description",
+    "57f140eb-6e2d-4434-bbc1-4769f4d19ef4": "Entities500Error",
+    "46c00e4e-578a-4634-a623-032e20676ea3": "Error",
+    "a416fa95-d48b-4508-98b0-ca26eff39ae0": "EntitiesResponse",
+    "bece4ff7-786b-4661-9483-0171d4dd2786": "Entity",
+    "10d2a32b-7f2f-45f4-9446-92518126974c": "path",
+    "b4d155df-3042-4f7a-9c24-cfd6e3a6553b": "query",
+    "d7f59d27-668c-4507-b350-79f7b019d80e": "header",
+    "13487a3e-6d89-4dd3-93fd-f3dca52c6fe9": "body",
+    "2276de34-79b1-45cd-b8ca-2d2f7eb73096": "body",
+    "a37fa3cf-f2c6-47df-8ca3-5d3df1afd9dc": "formData",
+    "fee070e2-5ebc-44bb-b24e-ef9edced54df": "post",
+    "eae439bc-fa50-4592-a184-8f87b1cb3c9c": "headers",
+    "4b39d1e7-0d6f-4910-885e-dcd4e6748f9c": "body",
+    "9c270da2-72e4-4a9f-af90-14d3e8242f36": "schema",
+    "02b0c4e4-13a5-43d4-a32c-edeae1434985": "201",
+    "2672f9e3-1798-4917-83f3-a81809e5d156": "headers",
+    "ba6e05b0-3529-44a0-b0b8-0cecaff9fc15": "body",
+    "475fed50-4a3b-41f9-a3b0-90ec4203d04c": "schema",
+    "32c5334a-6fae-4052-af3e-c6b4ed5aea19": "400",
+    "4ff93c44-b210-405f-90b9-c357421f350c": "headers",
+    "48bd125a-8425-470c-988b-a36daff5c23f": "body",
+    "14044080-72fc-426b-acf7-7f20df2bd173": "schema",
+    "57cbcb70-6e28-497e-9e10-d6aa84a1c273": "401",
+    "76cc54d8-4688-4931-a669-66cc54d36a80": "headers",
+    "af81031b-b915-4284-adb4-32559c2e496b": "body",
+    "fee24988-23a2-48f3-99da-ae50c499ef75": "schema",
+    "5c4b8882-585a-4720-9022-08217eed6eb8": "403",
+    "c20a9f2c-f28a-476f-93bb-749116cea790": "headers",
+    "70d22a86-47c0-48e2-bef1-6b4d6343c533": "body",
+    "95c8f099-aad2-42e1-a94f-0d86a0bb1d7e": "schema",
+    "c577564c-c957-48ec-ba47-cdb0d9ff04eb": "500",
+    "c89f716d-4c4d-4149-8377-5597d12ff0dd": "path",
+    "590d11e3-9fad-4c18-a05e-8929a7610c56": "id",
+    "eaab95d6-413e-4cd6-8163-1b1c541fb8ba": "query",
+    "fa8db706-72a9-469f-8f36-9f2fda6a53d9": "header",
+    "f910b739-47c5-45e0-80b3-3871eb0c1997": "body",
+    "71437542-d179-43ba-bfe1-e8de51fdf78c": "formData",
+    "beef8443-b731-4be5-8105-be269758bd61": "get",
+    "9d18b018-9803-40d9-b971-02727843c235": "headers",
+    "b865ae5c-40f7-42ee-b23b-7929fc9b2ee1": "body",
+    "cc788e8b-27c9-41b3-8491-f6f9aacdbf93": "schema",
+    "4099b03e-8428-43ae-9eab-f9128bc366aa": "200",
+    "2b689aa2-fcc6-484a-889c-7a498ba8ae16": "headers",
+    "fb77fc34-fc0f-4698-a104-75db4d6c62ff": "body",
+    "104a03ce-8b19-43d2-9a29-1efef6b77c42": "schema",
+    "f0f8055b-4677-4c75-8fc1-b7348a4c5607": "401",
+    "44e979a9-4444-44f6-ba1e-6922f528b341": "headers",
+    "fb07366e-cf37-4307-987a-e5d8377f1a57": "body",
+    "64ac16ac-6c57-4bb1-b542-46d01c6cd4a5": "schema",
+    "94748492-f57a-4dab-9ce2-f4709c0bbc48": "403",
+    "1195ed37-1bf3-4680-a53f-710063d80ba8": "headers",
+    "3019c99a-486d-443c-9346-7b23c9b416cb": "body",
+    "e70f77f0-a595-42a3-a208-6231e8fc614d": "schema",
+    "23079620-1584-4b42-b09e-eb2b7d73321e": "404",
+    "a97c1639-71db-46ec-9279-1b839be310e0": "headers",
+    "7f279629-f0e3-49ce-8bfa-5f8cfed0ce7b": "body",
+    "54cdac74-06c1-4e97-ae45-dffdad99079c": "schema",
+    "8f94c3d4-67c0-485f-919a-da89237b7569": "500",
+    "ef3af879-b2b4-4f18-8389-2853d3b0106d": "path",
+    "980112dc-bf2b-4d9b-bf81-9690765b42ce": "id",
+    "3e76286f-46cc-4bd5-8faa-5ca9bca1010c": "query",
+    "a94190ae-29e5-4caa-8efa-19a45824e57b": "header",
+    "06462d24-04f3-4bbd-ba86-76981e6e9447": "body",
+    "c25da21f-9e92-4133-b3a0-d25b32fc2f2f": "body",
+    "a3d9839f-d52d-4344-b74c-6210736ee69e": "formData",
+    "fb0bdb04-c204-47b8-8976-f680e058daf7": "put",
+    "5970a17b-aa13-40b6-8b9c-c24417b2ddb4": "headers",
+    "eeae9c27-553a-4533-b749-4269f0feba66": "body",
+    "efe6c0a0-24a2-42db-bd03-f1f7c66f4f12": "schema",
+    "dc053da6-bb17-430d-bb61-ef62ccad9b88": "200",
+    "92bc2dd1-1453-4716-a05a-702896245b46": "headers",
+    "c703435e-204a-4d4d-b10a-3716ccc0ce7d": "body",
+    "49e28846-84b8-4b9a-b9cb-8636f952322a": "schema",
+    "4ef35f4c-de79-4fbe-9d7d-8f144a535d67": "400",
+    "a5bc6586-082f-4388-9f23-f1daa176e4a9": "headers",
+    "ad1f9b85-ab2e-47c2-99ff-70c650679665": "body",
+    "6aed75ed-0cf9-49f0-9698-a67fcdc5b159": "schema",
+    "b8e00c3b-8d5d-44b5-8ec2-231742bf0541": "401",
+    "5d7b5f0e-f7f2-4748-9743-eb394590cce1": "headers",
+    "19d2ebc2-6d41-4733-bef4-b021cc1ebf7c": "body",
+    "fcd5abd6-4f9a-4ec9-aac5-e015be8ed881": "schema",
+    "346eab7f-b9cd-4f91-a0d3-8ad35a312535": "403",
+    "c4677e64-dab2-4312-a768-009116eaab71": "headers",
+    "3cbf0485-edb1-468c-afb6-9642b57031c4": "body",
+    "1ce92f73-ca46-4ab8-bf3c-731144f4248d": "schema",
+    "074178f9-3b95-4648-82ba-1250f2ad7464": "404",
+    "ed944dc5-0c2a-4bdd-97ac-93ffc99985dd": "headers",
+    "d563a730-7103-4f7a-970c-56d2753a2981": "body",
+    "19e8d707-09bc-48ec-af0d-3b3ea60ad3f2": "schema",
+    "8c09c75a-6ee7-44e4-9d34-bdac9f7f29a2": "500",
+    "ddf28291-a4d4-45a3-9a9c-8e0bd6dc9bc2": "path",
+    "f820c0c1-0843-4b5f-8511-efe68e0a8d88": "id",
+    "7c98444d-0ef8-4db8-9809-c8167aa69eee": "query",
+    "e6adc84a-ef7f-4a2e-9305-4c5fbcb84006": "header",
+    "acec358d-5e6c-4e74-a381-641f8e7d8ace": "body",
+    "c146e0bf-a3b9-4e35-a782-3130d614efa0": "formData",
+    "484b6679-3b31-472a-8d10-7e40f5ebfe39": "delete",
+    "8e352ee4-4b2b-47a7-97ae-bfc1f2f0a594": "headers",
+    "65a9c9e5-a195-4ab1-be03-c85026d5070f": "body",
+    "44ef598a-7896-4ee0-b03c-c0600cfc60b8": "204",
+    "43eefab2-3b92-4c4e-bb58-f70ecea0edc8": "headers",
+    "343d4100-d9d7-471a-b7c3-575737d500a7": "body",
+    "b4d1bed9-1f3c-40b0-bd64-6b71e0d8a9c8": "schema",
+    "6f6846ee-ea82-4291-a768-1c01defdb127": "401",
+    "268f369c-a138-453a-bffd-b8a370ec738c": "headers",
+    "dc2234c1-4a9e-48fa-bbb2-24ea3e990f81": "body",
+    "3452988e-9aec-4d4c-9468-fa2479d66157": "schema",
+    "87510ec7-2b80-4b8b-91a1-b1d48020b628": "403",
+    "ade6ec78-be58-4d30-9b64-b49eeb3c7569": "headers",
+    "f96a4f06-f5f5-4342-b6d9-4707df9efe13": "body",
+    "54d1f9b6-6041-4b8d-9088-c257b9d4f1ce": "schema",
+    "434a5858-2c5f-4b46-8bcc-a5e20330cdc6": "404",
+    "4954b514-c558-4fb6-aa85-5007c2e29ad2": "headers",
+    "8b296397-4c6a-4dad-9962-d0317409101c": "body",
+    "f7b63922-59a8-489f-962d-50994308987e": "schema",
+    "ba92e992-bab1-4a51-8568-4801f9c30ed2": "500"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [
+      {
+        "code": "",
+        "name": "Entity",
+        "isActivated": true,
+        "required": false,
+        "primaryKey": false,
+        "properties": [
+          {
+            "code": "",
+            "name": "id",
+            "isActivated": true,
+            "required": true,
+            "primaryKey": false,
+            "type": "string",
+            "GUID": "7081acfd-9340-4d07-971d-07ecf7a3dad1",
+            "error": {},
+            "definitionRefs": []
+          },
+          {
+            "code": "",
+            "name": "name",
+            "isActivated": true,
+            "required": true,
+            "primaryKey": false,
+            "type": "string",
+            "description": "name of entity",
+            "minLength": 1,
+            "maxLength": 100,
+            "GUID": "c08372e2-0fbc-4316-b9a9-ae54d78223a0",
+            "error": {},
+            "definitionRefs": []
+          }
+        ],
+        "additionalProperties": true,
+        "subtype": "noFile",
+        "childType": "object",
+        "type": "document",
+        "title": "Entity",
+        "GUID": "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50",
+        "definitionRefs": [
+          [
+            "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+            "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+            "a416fa95-d48b-4508-98b0-ca26eff39ae0",
+            "bece4ff7-786b-4661-9483-0171d4dd2786"
+          ],
+          [
+            "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+            "13487a3e-6d89-4dd3-93fd-f3dca52c6fe9",
+            "2276de34-79b1-45cd-b8ca-2d2f7eb73096"
+          ],
+          [
+            "fb0bdb04-c204-47b8-8976-f680e058daf7",
+            "06462d24-04f3-4bbd-ba86-76981e6e9447",
+            "c25da21f-9e92-4133-b3a0-d25b32fc2f2f"
+          ]
+        ],
+        "error": {}
+      },
+      {
+        "code": "",
+        "name": "Error",
+        "isActivated": true,
+        "required": false,
+        "primaryKey": false,
+        "properties": [
+          {
+            "code": "",
+            "name": "code",
+            "isActivated": true,
+            "required": false,
+            "primaryKey": false,
+            "type": "string",
+            "description": "Error code",
+            "sample": "500",
+            "GUID": "32f64563-6d49-4388-8547-9fdee1887778",
+            "error": {},
+            "definitionRefs": []
+          },
+          {
+            "code": "",
+            "name": "description",
+            "isActivated": true,
+            "required": false,
+            "primaryKey": false,
+            "type": "string",
+            "description": "Description of the error",
+            "sample": "A downstream system is not responding correctly.",
+            "GUID": "1b91b5e4-db0c-47d6-98fd-ad0e18a1dac6",
+            "error": {},
+            "definitionRefs": []
+          }
+        ],
+        "additionalProperties": true,
+        "subtype": "noFile",
+        "childType": "object",
+        "type": "document",
+        "title": "Error",
+        "GUID": "e8f08d1e-515b-4bda-98d2-f77420d3c173",
+        "definitionRefs": [
+          [
+            "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+            "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+            "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+            "46c00e4e-578a-4634-a623-032e20676ea3"
+          ]
+        ],
+        "error": {}
+      },
+      {
+        "code": "",
+        "name": "Entities500Error",
+        "isActivated": true,
+        "required": false,
+        "primaryKey": false,
+        "properties": [
+          {
+            "code": "",
+            "name": "Error",
+            "isActivated": true,
+            "required": false,
+            "$ref": "#model/definitions/Error",
+            "GUID": "46c00e4e-578a-4634-a623-032e20676ea3",
+            "type": "reference",
+            "refType": "model",
+            "refIdPath": [
+              "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+              "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+              "e8f08d1e-515b-4bda-98d2-f77420d3c173"
+            ],
+            "ref": "e8f08d1e-515b-4bda-98d2-f77420d3c173",
+            "error": {},
+            "definitionRefs": []
+          }
+        ],
+        "additionalProperties": true,
+        "subtype": "noFile",
+        "childType": "object",
+        "type": "document",
+        "title": "Entities500Error",
+        "GUID": "57f140eb-6e2d-4434-bbc1-4769f4d19ef4",
+        "error": {},
+        "definitionRefs": [
+          [
+            "32c5334a-6fae-4052-af3e-c6b4ed5aea19",
+            "ba6e05b0-3529-44a0-b0b8-0cecaff9fc15",
+            "475fed50-4a3b-41f9-a3b0-90ec4203d04c"
+          ],
+          [
+            "57cbcb70-6e28-497e-9e10-d6aa84a1c273",
+            "48bd125a-8425-470c-988b-a36daff5c23f",
+            "14044080-72fc-426b-acf7-7f20df2bd173"
+          ],
+          [
+            "5c4b8882-585a-4720-9022-08217eed6eb8",
+            "af81031b-b915-4284-adb4-32559c2e496b",
+            "fee24988-23a2-48f3-99da-ae50c499ef75"
+          ],
+          [
+            "c577564c-c957-48ec-ba47-cdb0d9ff04eb",
+            "70d22a86-47c0-48e2-bef1-6b4d6343c533",
+            "95c8f099-aad2-42e1-a94f-0d86a0bb1d7e"
+          ],
+          [
+            "f0f8055b-4677-4c75-8fc1-b7348a4c5607",
+            "fb77fc34-fc0f-4698-a104-75db4d6c62ff",
+            "104a03ce-8b19-43d2-9a29-1efef6b77c42"
+          ],
+          [
+            "94748492-f57a-4dab-9ce2-f4709c0bbc48",
+            "fb07366e-cf37-4307-987a-e5d8377f1a57",
+            "64ac16ac-6c57-4bb1-b542-46d01c6cd4a5"
+          ],
+          [
+            "23079620-1584-4b42-b09e-eb2b7d73321e",
+            "3019c99a-486d-443c-9346-7b23c9b416cb",
+            "e70f77f0-a595-42a3-a208-6231e8fc614d"
+          ],
+          [
+            "8f94c3d4-67c0-485f-919a-da89237b7569",
+            "7f279629-f0e3-49ce-8bfa-5f8cfed0ce7b",
+            "54cdac74-06c1-4e97-ae45-dffdad99079c"
+          ],
+          [
+            "4ef35f4c-de79-4fbe-9d7d-8f144a535d67",
+            "c703435e-204a-4d4d-b10a-3716ccc0ce7d",
+            "49e28846-84b8-4b9a-b9cb-8636f952322a"
+          ],
+          [
+            "b8e00c3b-8d5d-44b5-8ec2-231742bf0541",
+            "ad1f9b85-ab2e-47c2-99ff-70c650679665",
+            "6aed75ed-0cf9-49f0-9698-a67fcdc5b159"
+          ],
+          [
+            "346eab7f-b9cd-4f91-a0d3-8ad35a312535",
+            "19d2ebc2-6d41-4733-bef4-b021cc1ebf7c",
+            "fcd5abd6-4f9a-4ec9-aac5-e015be8ed881"
+          ],
+          [
+            "074178f9-3b95-4648-82ba-1250f2ad7464",
+            "3cbf0485-edb1-468c-afb6-9642b57031c4",
+            "1ce92f73-ca46-4ab8-bf3c-731144f4248d"
+          ],
+          [
+            "8c09c75a-6ee7-44e4-9d34-bdac9f7f29a2",
+            "d563a730-7103-4f7a-970c-56d2753a2981",
+            "19e8d707-09bc-48ec-af0d-3b3ea60ad3f2"
+          ],
+          [
+            "6f6846ee-ea82-4291-a768-1c01defdb127",
+            "343d4100-d9d7-471a-b7c3-575737d500a7",
+            "b4d1bed9-1f3c-40b0-bd64-6b71e0d8a9c8"
+          ],
+          [
+            "87510ec7-2b80-4b8b-91a1-b1d48020b628",
+            "dc2234c1-4a9e-48fa-bbb2-24ea3e990f81",
+            "3452988e-9aec-4d4c-9468-fa2479d66157"
+          ],
+          [
+            "434a5858-2c5f-4b46-8bcc-a5e20330cdc6",
+            "f96a4f06-f5f5-4342-b6d9-4707df9efe13",
+            "54d1f9b6-6041-4b8d-9088-c257b9d4f1ce"
+          ],
+          [
+            "ba92e992-bab1-4a51-8568-4801f9c30ed2",
+            "8b296397-4c6a-4dad-9962-d0317409101c",
+            "f7b63922-59a8-489f-962d-50994308987e"
+          ]
+        ]
+      },
+      {
+        "code": "",
+        "name": "EntitiesResponse",
+        "isActivated": true,
+        "required": false,
+        "primaryKey": false,
+        "properties": [
+          {
+            "code": "",
+            "name": "Entity",
+            "isActivated": true,
+            "required": false,
+            "$ref": "#model/definitions/Entity",
+            "GUID": "bece4ff7-786b-4661-9483-0171d4dd2786",
+            "type": "reference",
+            "refType": "model",
+            "refIdPath": [
+              "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+              "cf533671-36b7-438c-b31c-f2c0139ba8e7",
+              "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50"
+            ],
+            "ref": "3c91f897-a8bd-48bf-b6ce-42b2d4dcfd50",
+            "error": {},
+            "definitionRefs": []
+          }
+        ],
+        "additionalProperties": true,
+        "subtype": "noFile",
+        "childType": "object",
+        "type": "document",
+        "title": "EntitiesResponse",
+        "GUID": "a416fa95-d48b-4508-98b0-ca26eff39ae0",
+        "error": {},
+        "definitionRefs": [
+          [
+            "02b0c4e4-13a5-43d4-a32c-edeae1434985",
+            "4b39d1e7-0d6f-4910-885e-dcd4e6748f9c",
+            "9c270da2-72e4-4a9f-af90-14d3e8242f36"
+          ],
+          [
+            "4099b03e-8428-43ae-9eab-f9128bc366aa",
+            "b865ae5c-40f7-42ee-b23b-7929fc9b2ee1",
+            "cc788e8b-27c9-41b3-8491-f6f9aacdbf93"
+          ],
+          [
+            "dc053da6-bb17-430d-bb61-ef62ccad9b88",
+            "eeae9c27-553a-4533-b749-4269f0feba66",
+            "efe6c0a0-24a2-42db-bd03-f1f7c66f4f12"
+          ]
+        ]
+      }
+    ],
+    "GUID": "cf533671-36b7-438c-b31c-f2c0139ba8e7"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "d92de61e-3ff4-4688-941c-6fad93996744"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "75be4818-5eeb-45a8-98f8-4cc9f8b1c742"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "2.0",
+  "dbVendor": "Swagger",
+  "appTarget": "SWAGGER",
+  "creationTS": "2025-02-27T12:22:49.329Z",
+  "GUID": "7a82eb34-0838-4b9c-8fd6-2b8a359013d0",
+  "isLineageEnabled": false,
+  "extensions": [],
+  "host": "www.prod.com",
+  "basePath": "/data/0.1",
+  "description": "This API provides access to Entity data.",
+  "modelVersion": "0.1",
+  "title": "Entities API",
+  "contact": {
+    "contactName": "Pascal",
+    "contactURL": "https://hackolade.com",
+    "contactemail": "info@hackolade.com",
+    "contactExtensions": [],
+    "GUID": "310ec22e-4731-4534-be0f-81ba9ce52fd7"
+  },
+  "license": {
+    "GUID": "597ceba9-35e5-425b-85e7-36316a401b50"
+  },
+  "infoExtensions": [],
+  "security": [
+    {
+      "GUID": "8f563d50-f505-11ef-9b41-e324cab8370d",
+      "securityRequirementName": "auth",
+      "securityRequirementOperation": []
+    }
+  ],
+  "tags": [
+    {
+      "GUID": "06b34bff-82af-4841-97d1-3371e21aabb7",
+      "extensions": [],
+      "tagName": "Entity resource template",
+      "tagDescription": "CRUD to manage the Entity resources."
+    },
+    {
+      "GUID": "1e274f8b-5eff-4b0a-8013-42618d66de0a",
+      "extensions": [],
+      "tagName": "Entity resource"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    {
+      "GUID": "64755779-37c4-45cb-89e1-ac7c85bc8916",
+      "consumesMimeTypeDef": "application/json"
+    }
+  ],
+  "produces": [
+    {
+      "GUID": "be7c3770-ed6a-4c72-9f17-b30c5ab4df98",
+      "producesMimeTypeDef": "application/json"
+    }
+  ],
+  "securityDefinitions": [
+    {
+      "GUID": "8f563d51-f505-11ef-9b41-e324cab8370d",
+      "securitySchemeType": "basic",
+      "securityDefinitionsName": "auth",
+      "securitySchemeScopes": []
+    }
+  ],
+  "lastModifTS": "2025-04-27T07:19:15.591Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Swagger",
+    "pluginVersion": "0.2.4",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.1.4"
+  },
+  "hackoladeMeta": {
+    "validationErrors": {
+      "basePath": true
+    }
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "fee070e2-5ebc-44bb-b24e-ef9edced54df",
+            "x": 2792,
+            "y": 1366,
+            "width": 252,
+            "height": 173,
+            "color": {}
+          },
+          {
+            "GUID": "02b0c4e4-13a5-43d4-a32c-edeae1434985",
+            "x": 3074,
+            "y": 1050,
+            "width": 272,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "32c5334a-6fae-4052-af3e-c6b4ed5aea19",
+            "x": 3074,
+            "y": 1217,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "57cbcb70-6e28-497e-9e10-d6aa84a1c273",
+            "x": 3074,
+            "y": 1384,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "5c4b8882-585a-4720-9022-08217eed6eb8",
+            "x": 3074,
+            "y": 1551,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "c577564c-c957-48ec-ba47-cdb0d9ff04eb",
+            "x": 3074,
+            "y": 1718,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "beef8443-b731-4be5-8105-be269758bd61",
+            "x": 1654,
+            "y": 1384,
+            "width": 203,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "4099b03e-8428-43ae-9eab-f9128bc366aa",
+            "x": 1887,
+            "y": 1050,
+            "width": 272,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "f0f8055b-4677-4c75-8fc1-b7348a4c5607",
+            "x": 1887,
+            "y": 1217,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "94748492-f57a-4dab-9ce2-f4709c0bbc48",
+            "x": 1887,
+            "y": 1384,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "23079620-1584-4b42-b09e-eb2b7d73321e",
+            "x": 1887,
+            "y": 1551,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "8f94c3d4-67c0-485f-919a-da89237b7569",
+            "x": 1887,
+            "y": 1718,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "fb0bdb04-c204-47b8-8976-f680e058daf7",
+            "x": 1050,
+            "y": 1440.5,
+            "width": 252,
+            "height": 191,
+            "color": {}
+          },
+          {
+            "GUID": "dc053da6-bb17-430d-bb61-ef62ccad9b88",
+            "x": 1332,
+            "y": 1050,
+            "width": 272,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "4ef35f4c-de79-4fbe-9d7d-8f144a535d67",
+            "x": 1332,
+            "y": 1217,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "b8e00c3b-8d5d-44b5-8ec2-231742bf0541",
+            "x": 1332,
+            "y": 1384,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "346eab7f-b9cd-4f91-a0d3-8ad35a312535",
+            "x": 1332,
+            "y": 1551,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "074178f9-3b95-4648-82ba-1250f2ad7464",
+            "x": 1332,
+            "y": 1718,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "8c09c75a-6ee7-44e4-9d34-bdac9f7f29a2",
+            "x": 1332,
+            "y": 1885,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "484b6679-3b31-472a-8d10-7e40f5ebfe39",
+            "x": 2209,
+            "y": 1348,
+            "width": 203,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "44ef598a-7896-4ee0-b03c-c0600cfc60b8",
+            "x": 2442,
+            "y": 1050,
+            "width": 164,
+            "height": 65,
+            "color": {}
+          },
+          {
+            "GUID": "6f6846ee-ea82-4291-a768-1c01defdb127",
+            "x": 2442,
+            "y": 1145,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "87510ec7-2b80-4b8b-91a1-b1d48020b628",
+            "x": 2442,
+            "y": 1312,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "434a5858-2c5f-4b46-8bcc-a5e20330cdc6",
+            "x": 2442,
+            "y": 1479,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          },
+          {
+            "GUID": "ba92e992-bab1-4a51-8568-4801f9c30ed2",
+            "x": 2442,
+            "y": 1646,
+            "width": 270,
+            "height": 137,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 2752,
+            "y": 1010,
+            "GUID": "48b644ce-f33b-4865-8104-fe6a8bdd0d30"
+          },
+          {
+            "x": 1010,
+            "y": 1010,
+            "GUID": "980800d8-923c-4f62-8e2f-447bb388b8e2"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "vertical",
+        "options": [],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

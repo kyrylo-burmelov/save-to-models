@@ -1,0 +1,715 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [
+        {
+          "isActivated": true,
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "name": "New attribute",
+          "alternateKey": false,
+          "GUID": "2be61c2e-f06d-47f2-9c72-da36d30bdcf1",
+          "type": "reference",
+          "$ref": "#external/definitions/Prices",
+          "refType": "polyglot",
+          "ref": "ac3a61f6-9c63-4bab-a0d1-48d0f847112c",
+          "refIdPath": [
+            "1dfebf8c-003e-47cd-ab17-0abff9296656",
+            "b2a266a2-09bd-44e0-b4d5-e62703054844",
+            "ac3a61f6-9c63-4bab-a0d1-48d0f847112c"
+          ],
+          "error": {
+            "name": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "89065586-a47e-441c-954e-2063b846931a"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "4d01570c-ccb1-44db-ab9a-8ee9297955f0",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "New entity1",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Address",
+      "properties": [],
+      "GUID": "f752a6ac-a81a-4a4f-86c1-0abe20866655",
+      "ref": "9931aa00-6a9d-11ea-a5ff-a16524f9bb05",
+      "refIdPath": [
+        "1dfebf8c-003e-47cd-ab17-0abff9296656",
+        "b2a266a2-09bd-44e0-b4d5-e62703054844",
+        "9931aa00-6a9d-11ea-a5ff-a16524f9bb05"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cf4b90bc-2616-4170-8318-83b6736932cb"
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "Address",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "57d8af28-1579-499f-bb1a-ab1402be5c5b"
+      },
+      "additionalProperties": false,
+      "snippet": "required",
+      "GUID": "454c4ef4-a644-4561-8899-392b08664ff1",
+      "$ref": "#external/definitions/Address",
+      "refType": "polyglot",
+      "ref": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+      "refIdPath": [
+        "1dfebf8c-003e-47cd-ab17-0abff9296656",
+        "b2a266a2-09bd-44e0-b4d5-e62703054844",
+        "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7"
+      ],
+      "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "4d01570c-ccb1-44db-ab9a-8ee9297955f0": "New entity",
+    "f752a6ac-a81a-4a4f-86c1-0abe20866655": "New entity1",
+    "454c4ef4-a644-4561-8899-392b08664ff1": "Address",
+    "2be61c2e-f06d-47f2-9c72-da36d30bdcf1": "New attribute"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "eb79ab91-e048-429f-9dff-0bb77169a6b8"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "GUID": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+        "collectionName": "Address",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Address ID",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "GUID": "65b54be5-17e3-480b-9543-41cade950030",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Street",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "GUID": "226178a4-d5d7-4303-8ded-6edd2bf5e94a",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Postal code",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "GUID": "172ef4de-fb50-4087-a44b-9a34e92b1f39",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "City",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "GUID": "f23a20a2-d7b1-476d-b567-50a67b99f2fc",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "fca16002-ccce-45ab-804e-e7e2ec62e4b8"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "bucketId": "",
+        "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+        "definitionEntityType": "collection",
+        "link": "../demo-models-clone/common/Address-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Address",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "454c4ef4-a644-4561-8899-392b08664ff1"
+          ]
+        ]
+      },
+      {
+        "name": "Prices",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [
+          {
+            "primaryKey": true,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "id",
+            "isActivated": true,
+            "mode": "string",
+            "length": 20,
+            "description": "A unique identifier assigned to each product for inventory management and tracking purposes. It helps differentiate products and streamline the ordering process.",
+            "GUID": "842aaa1c-ac8d-4217-a0e2-4f252f5834b1",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "SKU",
+            "isActivated": true,
+            "mode": "string",
+            "length": 20,
+            "description": "A unique identifier assigned to each product for inventory management and tracking purposes. It helps differentiate products and streamline the ordering process.",
+            "foreignCollection": "f22a3e7d-5adf-48dd-b736-243710525b9b",
+            "foreignField": [
+              "f22a3e7d-5adf-48dd-b736-243710525b9b",
+              "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b",
+              "6b6386de-f9dc-46d9-9fc2-16d3c2c58340"
+            ],
+            "relationshipType": "Foreign Key",
+            "GUID": "cd2650f2-7d03-45e9-8a6e-e0d109eac4c4",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Currency",
+            "isActivated": true,
+            "mode": "string",
+            "length": 20,
+            "description": "Indicates the currency in which the product price is set.",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "enum": [
+              "USD",
+              "EUR",
+              "JPY",
+              "GBP",
+              "AUD",
+              "CAD",
+              "CHF",
+              "CNY",
+              "SEK",
+              "NZD",
+              "INR",
+              "MXN",
+              "SGD",
+              "HKD"
+            ],
+            "GUID": "ea782112-8bc7-4902-98a0-7dc8ea8207e5",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "number",
+            "type": "numeric",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Amount",
+            "isActivated": true,
+            "mode": "",
+            "description": "The numeric value of the product’s price in the specified currency.",
+            "foreignCollection": "",
+            "foreignField": [],
+            "GUID": "bfcda36f-8a7b-421b-ba98-8a9b313affc6",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "required": true,
+            "alternateKey": false,
+            "childType": "date",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Effective date",
+            "isActivated": true,
+            "description": "The date or date/time from which the specified price becomes valid. Enables time-based pricing and helps maintain a historical record of price changes.",
+            "primaryKey": false,
+            "GUID": "2c86253b-1d80-4798-ad2b-3bef74fa239c",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "additionalProperties": false,
+        "alternateKey": false,
+        "childType": "object",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "GUID": "ac3a61f6-9c63-4bab-a0d1-48d0f847112c",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Prices",
+        "link": "../demo-models-clone/merchandising/Product management-Oracle.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "4d01570c-ccb1-44db-ab9a-8ee9297955f0",
+            "2be61c2e-f06d-47f2-9c72-da36d30bdcf1"
+          ]
+        ]
+      },
+      {
+        "name": "Address",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [
+          {
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "primaryKey": true,
+            "mode": "int",
+            "required": true,
+            "alternateKey": false,
+            "childType": "integer",
+            "type": "numeric",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "AddressID",
+            "isActivated": true,
+            "relationshipType": "",
+            "defaultOption": "Autoincrement",
+            "autoincrement": {
+              "GUID": "9931f820-6a9d-11ea-a5ff-a16524f9bb05",
+              "start_num": 1,
+              "step_num": 1
+            },
+            "sample": 9,
+            "GUID": "992e75b0-6a9d-11ea-a5ff-a16524f9bb05",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "nvarchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "AddressLine1",
+            "isActivated": true,
+            "mode": "",
+            "length": 60,
+            "description": "This is for house number, street, and optional apt/suite",
+            "relationshipType": "",
+            "sample": "8713 Yosemite Ct.",
+            "GUID": "992e75b1-6a9d-11ea-a5ff-a16524f9bb05",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "nvarchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "AddressLine2",
+            "isActivated": true,
+            "mode": "",
+            "length": 60,
+            "relationshipType": "",
+            "sample": null,
+            "GUID": "992e75b2-6a9d-11ea-a5ff-a16524f9bb05",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "nvarchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "City",
+            "isActivated": true,
+            "mode": "",
+            "length": 30,
+            "relationshipType": "",
+            "sample": "Bothell",
+            "GUID": "992e75b3-6a9d-11ea-a5ff-a16524f9bb05",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "nvarchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "StateProvince",
+            "isActivated": true,
+            "mode": "",
+            "length": 50,
+            "relationshipType": "",
+            "GUID": "992e75b8-6a9d-11ea-a5ff-a16524f9bb05",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "nvarchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "CountryRegion",
+            "isActivated": true,
+            "mode": "",
+            "length": 50,
+            "relationshipType": "",
+            "GUID": "992e75b4-6a9d-11ea-a5ff-a16524f9bb05",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "nvarchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "PostalCode",
+            "isActivated": true,
+            "mode": "",
+            "length": 15,
+            "relationshipType": "",
+            "sample": "98011",
+            "GUID": "992e75b6-6a9d-11ea-a5ff-a16524f9bb05",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "rowguid",
+            "isActivated": true,
+            "mode": "",
+            "length": null,
+            "unique": true,
+            "relationshipType": "",
+            "default": "(newid())",
+            "sample": "268AF621-76D7-4C78-9441-144FD139821A",
+            "GUID": "992e75b7-6a9d-11ea-a5ff-a16524f9bb05",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "tPrecision": 9,
+            "required": true,
+            "alternateKey": false,
+            "childType": "timestamp_ntz",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "ModifiedDate",
+            "isActivated": true,
+            "mode": "datetime",
+            "relationshipType": "",
+            "default": "(getdate())",
+            "sample": "2006-07-01T00:00:00.000Z",
+            "GUID": "992e75b5-6a9d-11ea-a5ff-a16524f9bb05",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "additionalProperties": false,
+        "alternateKey": false,
+        "childType": "object",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "GUID": "9931aa00-6a9d-11ea-a5ff-a16524f9bb05",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/SalesLT/Address",
+        "link": "../Folder With Whitespaces and ODD SYBMBOLS/##____8282193     SOMETHING    REALLY      STRANGE/sample-models-page-or-too-big-for-community/SQLServer/SQLServer_AdventureWorks.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "f752a6ac-a81a-4a4f-86c1-0abe20866655"
+          ]
+        ]
+      }
+    ],
+    "GUID": "b2a266a2-09bd-44e0-b4d5-e62703054844"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "407dfa26-4e73-4c17-9e6c-6a8931e27dff"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2025-10-31T05:50:02.082Z",
+  "GUID": "1dfebf8c-003e-47cd-ab17-0abff9296656",
+  "isLineageEnabled": false,
+  "polyglotModelPaths": [
+    {
+      "GUID": "bec3ff63-8585-4eb5-b95a-344055f03d7a",
+      "polyglotModelName": "Address-Polyglot.hck",
+      "polyglotModelPath": "../demo-models-clone/common/Address-Polyglot.hck.json",
+      "normalization": false
+    }
+  ],
+  "lastModifTS": "2025-10-31T05:56:17.208Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.5.4"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "454c4ef4-a644-4561-8899-392b08664ff1",
+            "x": 1227,
+            "y": 1398,
+            "width": 237,
+            "height": 97,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "4d01570c-ccb1-44db-ab9a-8ee9297955f0",
+            "x": 1205,
+            "y": 1172,
+            "width": 304,
+            "height": 141,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "f752a6ac-a81a-4a4f-86c1-0abe20866655",
+            "x": 2022,
+            "y": 1294,
+            "width": 275,
+            "height": 195,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "4d01570c-ccb1-44db-ab9a-8ee9297955f0",
+              "size": 100,
+              "x": 1674,
+              "y": 1319
+            },
+            {
+              "GUID": "f752a6ac-a81a-4a4f-86c1-0abe20866655",
+              "size": 100,
+              "x": 2267,
+              "y": 1370
+            },
+            {
+              "GUID": "454c4ef4-a644-4561-8899-392b08664ff1",
+              "size": 100,
+              "x": 1040,
+              "y": 1040
+            }
+          ],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

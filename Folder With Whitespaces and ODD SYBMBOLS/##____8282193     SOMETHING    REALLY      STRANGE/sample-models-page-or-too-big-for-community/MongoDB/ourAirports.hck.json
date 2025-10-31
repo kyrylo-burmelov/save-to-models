@@ -1,0 +1,2225 @@
+{
+  "modelName": "ourAirports",
+  "collections": [
+    {
+      "properties": [
+        {
+          "type": "numeric",
+          "name": "id",
+          "required": true,
+          "primaryKey": true,
+          "relationshipType": "",
+          "GUID": "1ed6b7f6-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "airport_ref",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ed6b7f3-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "airport_ident",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "759c7e40-50e2-11e6-bed2-17e5bd00121b",
+          "foreignCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "foreignField": [
+            "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+            "1e7f7038-50c0-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1ed6b7f2-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ed6b7f7-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "description",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ed6b7f4-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "frequency_mhz",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ed6b7f5-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        }
+      ],
+      "type": "object",
+      "GUID": "1ed6b7f0-50c0-11e6-bed2-17e5bd00121b",
+      "collectionName": "airport-frequencies",
+      "definitions": {
+        "id": "12fe26e1-596f-11eb-abd9-032680bfc303",
+        "properties": [],
+        "type": "definitions"
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "indexes": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "properties": [
+        {
+          "type": "numeric",
+          "name": "id",
+          "required": true,
+          "primaryKey": true,
+          "relationshipType": "",
+          "GUID": "1e7f7037-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "ident",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "childRelationships": [
+            "a3c2dfe0-50e1-11e6-bed2-17e5bd00121b",
+            "1428d4b0-50e2-11e6-bed2-17e5bd00121b",
+            "759c7e40-50e2-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1e7f7038-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7042-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7040-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "latitude_deg",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f703c-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "longitude_deg",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f703e-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e7f4920-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e7f4921-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "elevation_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7033-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "continent",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7032-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "iso_country",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "ccc72b40-50e0-11e6-bed2-17e5bd00121b",
+          "foreignCollection": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+          "foreignField": [
+            "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+            "1ee86b32-50c0-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1e7f7039-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "iso_region",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "308a6a20-50e1-11e6-bed2-17e5bd00121b",
+          "foreignCollection": "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+          "foreignField": [
+            "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+            "1e8c1a64-50c0-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1e7f703a-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "municipality",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f703f-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "scheduled_service",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7041-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "gps_code",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7034-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "iata_code",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7036-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "local_code",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f703d-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "home_link",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7035-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "wikipedia_link",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f7043-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "keywords",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e7f703b-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        }
+      ],
+      "type": "object",
+      "GUID": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+      "collectionName": "airports",
+      "definitions": {
+        "id": "12fe26e2-596f-11eb-abd9-032680bfc303",
+        "properties": [],
+        "type": "definitions"
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "indexes": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "properties": [
+        {
+          "type": "numeric",
+          "name": "id",
+          "required": true,
+          "primaryKey": true,
+          "relationshipType": "",
+          "GUID": "1ee86b34-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "code",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "childRelationships": [
+            "ccc72b40-50e0-11e6-bed2-17e5bd00121b",
+            "0e3a1510-50e1-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1ee86b32-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ee86b36-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "continent",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ee86b33-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "wikipedia_link",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ee86b37-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "keywords",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ee86b35-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        }
+      ],
+      "type": "object",
+      "GUID": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+      "collectionName": "countries",
+      "definitions": {
+        "id": "12fe26e3-596f-11eb-abd9-032680bfc303",
+        "properties": [],
+        "type": "definitions"
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "indexes": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "properties": [
+        {
+          "type": "numeric",
+          "name": "id",
+          "required": true,
+          "primaryKey": true,
+          "relationshipType": "",
+          "GUID": "1ec504c0-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "filename",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504be-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "ident",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c1-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c6-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c9-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "frequency_khz",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504bf-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "latitude_deg",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c3-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "longitude_deg",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c4-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1ec504b1-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1ec504b2-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "elevation_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504bd-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "iso_country",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c2-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1ec4dda2-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1ec4dda3-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "dme_frequency_khz",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504ba-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "dme_channel",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504b8-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1ec4dda4-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1ec4dda5-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "dme_latitude_deg",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504bb-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1ec4dda6-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1ec504b0-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "dme_longitude_deg",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504bc-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1ec4dda0-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1ec4dda1-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "dme_elevation_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504b9-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1ec504b3-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1ec504b4-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "slaved_variation_deg",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c8-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "magnetic_variation_deg",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c5-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "usageType",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504ca-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "power",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1ec504c7-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "associated_airport",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "a3c2dfe0-50e1-11e6-bed2-17e5bd00121b",
+          "foreignCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "foreignField": [
+            "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+            "1e7f7038-50c0-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1ec504b7-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        }
+      ],
+      "type": "object",
+      "GUID": "1ec504b5-50c0-11e6-bed2-17e5bd00121b",
+      "collectionName": "navaids",
+      "definitions": {
+        "id": "12fe26e4-596f-11eb-abd9-032680bfc303",
+        "properties": [],
+        "type": "definitions"
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "indexes": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "properties": [
+        {
+          "type": "numeric",
+          "name": "id",
+          "required": true,
+          "primaryKey": true,
+          "relationshipType": "",
+          "GUID": "1e8c1a66-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "code",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "childRelationships": [
+            "308a6a20-50e1-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1e8c1a64-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e8c1a60-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e8c1a61-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "local_code",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e8c1a69-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e8c1a6a-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "continent",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e8c1a65-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "iso_country",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "0e3a1510-50e1-11e6-bed2-17e5bd00121b",
+          "foreignCollection": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+          "foreignField": [
+            "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+            "1ee86b32-50c0-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1e8c1a67-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "wikipedia_link",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e8c1a6b-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "keywords",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e8c1a68-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        }
+      ],
+      "type": "object",
+      "GUID": "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+      "collectionName": "regions",
+      "definitions": {
+        "id": "12fe26e5-596f-11eb-abd9-032680bfc303",
+        "properties": [],
+        "type": "definitions"
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "indexes": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "properties": [
+        {
+          "type": "numeric",
+          "name": "id",
+          "required": true,
+          "primaryKey": true,
+          "relationshipType": "",
+          "GUID": "1e557a0b-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "airport_ref",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a03-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "airport_ident",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "1428d4b0-50e2-11e6-bed2-17e5bd00121b",
+          "foreignCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "foreignField": [
+            "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+            "1e7f7038-50c0-11e6-bed2-17e5bd00121b"
+          ],
+          "GUID": "1e557a02-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "length_ft",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a12-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e54ddc3-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e54ddc4-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "width_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e55a110-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "surface",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a14-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "lighted",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a13-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "numeric",
+          "name": "closed",
+          "required": true,
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a04-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e54b6b4-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e54b6b5-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "le_ident",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a0f-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e54b6b6-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e54ddc0-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "le_latitude_deg",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a10-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e54ddc1-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e54ddc2-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "le_longitude_deg",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a11-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e54b6b0-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e54b6b1-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "le_elevation_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a0d-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e54b6b2-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e54b6b3-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "le_heading_degT",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a0e-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e544186-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e544187-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "le_displaced_threshold_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a0c-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e544180-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e544181-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "he_ident",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a08-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e544182-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e544183-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "he_latitude_deg",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a09-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e544184-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e544185-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "he_longitude_deg",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a0a-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e541a71-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e541a72-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "he_elevation_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a06-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e541a73-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e541a74-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "he_heading_degT",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a07-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        },
+        {
+          "type": "multiple",
+          "multipleTypes": [
+            {
+              "GUID": "1e53f360-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "string",
+              "minLength": "",
+              "maxLength": "",
+              "pattern": "",
+              "format": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            },
+            {
+              "GUID": "1e541a70-50c0-11e6-bed2-17e5bd00121b",
+              "description": "",
+              "dependencies": [],
+              "type": "numeric",
+              "mode": "",
+              "unit": "",
+              "minimum": "",
+              "exclusiveMinimum": false,
+              "maximum": "",
+              "exclusiveMaximum": false,
+              "multipleOf": "",
+              "divisibleBy": "",
+              "primaryKey": false,
+              "relationshipType": "",
+              "parentRelationship": "",
+              "childRelationships": [],
+              "foreignCollection": "",
+              "foreignField": [],
+              "enum": []
+            }
+          ],
+          "name": "he_displaced_threshold_ft",
+          "primaryKey": false,
+          "relationshipType": "",
+          "GUID": "1e557a05-50c0-11e6-bed2-17e5bd00121b",
+          "isActivated": true
+        }
+      ],
+      "type": "object",
+      "GUID": "1e557a00-50c0-11e6-bed2-17e5bd00121b",
+      "collectionName": "runways",
+      "definitions": {
+        "id": "12fe26e6-596f-11eb-abd9-032680bfc303",
+        "properties": [],
+        "type": "definitions"
+      },
+      "isActivated": true,
+      "additionalProperties": true,
+      "indexes": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [
+    {
+      "GUID": "ccc72b40-50e0-11e6-bed2-17e5bd00121b",
+      "name": "countriesAirports",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+      "parentField": [
+        [
+          "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+          "1ee86b32-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+      "childField": [
+        [
+          "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "1e7f7039-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "childCardinality": "1..n",
+      "hackoladeStyles": {
+        "GUID": "e1f1f5d1-f6c7-420e-a2bb-a34bd61b5159",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1439,
+            "y": 1249
+          },
+          {
+            "x": 1439,
+            "y": 1204
+          },
+          {
+            "x": 1260.5,
+            "y": 1204
+          },
+          {
+            "x": 1260.5,
+            "y": 1159
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      },
+      "isActivated": true
+    },
+    {
+      "GUID": "0e3a1510-50e1-11e6-bed2-17e5bd00121b",
+      "name": "countriesRegions",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+      "parentField": [
+        [
+          "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+          "1ee86b32-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+      "childField": [
+        [
+          "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+          "1e8c1a67-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "childCardinality": "1..n",
+      "hackoladeStyles": {
+        "GUID": "df9b487d-343c-4362-ae71-823fa8964504",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1571,
+            "y": 1088.5
+          },
+          {
+            "x": 1376,
+            "y": 1088.5
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "isActivated": true
+    },
+    {
+      "GUID": "308a6a20-50e1-11e6-bed2-17e5bd00121b",
+      "name": "regionsAirports",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+      "parentField": [
+        [
+          "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+          "1e8c1a64-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+      "childField": [
+        [
+          "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "1e7f703a-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "childCardinality": "1",
+      "hackoladeStyles": {
+        "GUID": "9270c6c9-1ef3-4af5-8de3-b42b1e6be661",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1525,
+            "y": 1249
+          },
+          {
+            "x": 1525,
+            "y": 1213
+          },
+          {
+            "x": 1688,
+            "y": 1213
+          },
+          {
+            "x": 1688,
+            "y": 1177
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      },
+      "isActivated": true
+    },
+    {
+      "GUID": "a3c2dfe0-50e1-11e6-bed2-17e5bd00121b",
+      "name": "airportsNavaids",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+      "parentField": [
+        [
+          "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "1e7f7038-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "1ec504b5-50c0-11e6-bed2-17e5bd00121b",
+      "childField": [
+        [
+          "1ec504b5-50c0-11e6-bed2-17e5bd00121b",
+          "1ec504b7-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "childCardinality": "1..n",
+      "hackoladeStyles": {
+        "GUID": "5424553d-9ce2-44c7-95b7-e70eb69e2a8e",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1289,
+            "y": 1427.5
+          },
+          {
+            "x": 1353,
+            "y": 1427.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "isActivated": true
+    },
+    {
+      "GUID": "1428d4b0-50e2-11e6-bed2-17e5bd00121b",
+      "name": "airportsRunaways",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+      "parentField": [
+        [
+          "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "1e7f7038-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "1e557a00-50c0-11e6-bed2-17e5bd00121b",
+      "childField": [
+        [
+          "1e557a00-50c0-11e6-bed2-17e5bd00121b",
+          "1e557a02-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "childCardinality": "1..n",
+      "hackoladeStyles": {
+        "GUID": "aa7059f9-bdb2-494c-b917-d0ee109990f6",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1692.86943620178,
+            "y": 1427.5
+          },
+          {
+            "x": 1611,
+            "y": 1427.5
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "isActivated": true
+    },
+    {
+      "GUID": "759c7e40-50e2-11e6-bed2-17e5bd00121b",
+      "name": "New Relationship",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+      "parentField": [
+        [
+          "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+          "1e7f7038-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "1ed6b7f0-50c0-11e6-bed2-17e5bd00121b",
+      "childField": [
+        [
+          "1ed6b7f0-50c0-11e6-bed2-17e5bd00121b",
+          "1ed6b7f2-50c0-11e6-bed2-17e5bd00121b"
+        ]
+      ],
+      "childCardinality": "1..n",
+      "hackoladeStyles": {
+        "GUID": "c615c7e7-6aa6-4bf7-94a1-cd42d1ec17ed",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1482,
+            "y": 1665.6528189910994
+          },
+          {
+            "x": 1482,
+            "y": 1606
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      },
+      "isActivated": true
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "1e557a02-50c0-11e6-bed2-17e5bd00121b": "airport_ident",
+    "1e557a03-50c0-11e6-bed2-17e5bd00121b": "airport_ref",
+    "1e557a04-50c0-11e6-bed2-17e5bd00121b": "closed",
+    "1e557a05-50c0-11e6-bed2-17e5bd00121b": "he_displaced_threshold_ft",
+    "1e557a06-50c0-11e6-bed2-17e5bd00121b": "he_elevation_ft",
+    "1e557a07-50c0-11e6-bed2-17e5bd00121b": "he_heading_degT",
+    "1e557a08-50c0-11e6-bed2-17e5bd00121b": "he_ident",
+    "1e557a09-50c0-11e6-bed2-17e5bd00121b": "he_latitude_deg",
+    "1e557a0a-50c0-11e6-bed2-17e5bd00121b": "he_longitude_deg",
+    "1e557a0b-50c0-11e6-bed2-17e5bd00121b": "id",
+    "1e557a0c-50c0-11e6-bed2-17e5bd00121b": "le_displaced_threshold_ft",
+    "1e557a0d-50c0-11e6-bed2-17e5bd00121b": "le_elevation_ft",
+    "1e557a0e-50c0-11e6-bed2-17e5bd00121b": "le_heading_degT",
+    "1e557a0f-50c0-11e6-bed2-17e5bd00121b": "le_ident",
+    "1e557a10-50c0-11e6-bed2-17e5bd00121b": "le_latitude_deg",
+    "1e557a11-50c0-11e6-bed2-17e5bd00121b": "le_longitude_deg",
+    "1e557a12-50c0-11e6-bed2-17e5bd00121b": "length_ft",
+    "1e557a13-50c0-11e6-bed2-17e5bd00121b": "lighted",
+    "1e557a14-50c0-11e6-bed2-17e5bd00121b": "surface",
+    "1e55a110-50c0-11e6-bed2-17e5bd00121b": "width_ft",
+    "1e557a00-50c0-11e6-bed2-17e5bd00121b": "runways",
+    "1e7f7032-50c0-11e6-bed2-17e5bd00121b": "continent",
+    "1e7f7033-50c0-11e6-bed2-17e5bd00121b": "elevation_ft",
+    "1e7f7034-50c0-11e6-bed2-17e5bd00121b": "gps_code",
+    "1e7f7035-50c0-11e6-bed2-17e5bd00121b": "home_link",
+    "1e7f7036-50c0-11e6-bed2-17e5bd00121b": "iata_code",
+    "1e7f7037-50c0-11e6-bed2-17e5bd00121b": "id",
+    "1e7f7038-50c0-11e6-bed2-17e5bd00121b": "ident",
+    "1e7f7039-50c0-11e6-bed2-17e5bd00121b": "iso_country",
+    "1e7f703a-50c0-11e6-bed2-17e5bd00121b": "iso_region",
+    "1e7f703b-50c0-11e6-bed2-17e5bd00121b": "keywords",
+    "1e7f703c-50c0-11e6-bed2-17e5bd00121b": "latitude_deg",
+    "1e7f703d-50c0-11e6-bed2-17e5bd00121b": "local_code",
+    "1e7f703e-50c0-11e6-bed2-17e5bd00121b": "longitude_deg",
+    "1e7f703f-50c0-11e6-bed2-17e5bd00121b": "municipality",
+    "1e7f7040-50c0-11e6-bed2-17e5bd00121b": "name",
+    "1e7f7041-50c0-11e6-bed2-17e5bd00121b": "scheduled_service",
+    "1e7f7042-50c0-11e6-bed2-17e5bd00121b": "type",
+    "1e7f7043-50c0-11e6-bed2-17e5bd00121b": "wikipedia_link",
+    "1e7f7030-50c0-11e6-bed2-17e5bd00121b": "airports",
+    "1e8c1a64-50c0-11e6-bed2-17e5bd00121b": "code",
+    "1e8c1a65-50c0-11e6-bed2-17e5bd00121b": "continent",
+    "1e8c1a66-50c0-11e6-bed2-17e5bd00121b": "id",
+    "1e8c1a67-50c0-11e6-bed2-17e5bd00121b": "iso_country",
+    "1e8c1a68-50c0-11e6-bed2-17e5bd00121b": "keywords",
+    "1e8c1a69-50c0-11e6-bed2-17e5bd00121b": "local_code",
+    "1e8c1a6a-50c0-11e6-bed2-17e5bd00121b": "name",
+    "1e8c1a6b-50c0-11e6-bed2-17e5bd00121b": "wikipedia_link",
+    "1e8c1a62-50c0-11e6-bed2-17e5bd00121b": "regions",
+    "1ec504b7-50c0-11e6-bed2-17e5bd00121b": "associated_airport",
+    "1ec504b8-50c0-11e6-bed2-17e5bd00121b": "dme_channel",
+    "1ec504b9-50c0-11e6-bed2-17e5bd00121b": "dme_elevation_ft",
+    "1ec504ba-50c0-11e6-bed2-17e5bd00121b": "dme_frequency_khz",
+    "1ec504bb-50c0-11e6-bed2-17e5bd00121b": "dme_latitude_deg",
+    "1ec504bc-50c0-11e6-bed2-17e5bd00121b": "dme_longitude_deg",
+    "1ec504bd-50c0-11e6-bed2-17e5bd00121b": "elevation_ft",
+    "1ec504be-50c0-11e6-bed2-17e5bd00121b": "filename",
+    "1ec504bf-50c0-11e6-bed2-17e5bd00121b": "frequency_khz",
+    "1ec504c0-50c0-11e6-bed2-17e5bd00121b": "id",
+    "1ec504c1-50c0-11e6-bed2-17e5bd00121b": "ident",
+    "1ec504c2-50c0-11e6-bed2-17e5bd00121b": "iso_country",
+    "1ec504c3-50c0-11e6-bed2-17e5bd00121b": "latitude_deg",
+    "1ec504c4-50c0-11e6-bed2-17e5bd00121b": "longitude_deg",
+    "1ec504c5-50c0-11e6-bed2-17e5bd00121b": "magnetic_variation_deg",
+    "1ec504c6-50c0-11e6-bed2-17e5bd00121b": "name",
+    "1ec504c7-50c0-11e6-bed2-17e5bd00121b": "power",
+    "1ec504c8-50c0-11e6-bed2-17e5bd00121b": "slaved_variation_deg",
+    "1ec504c9-50c0-11e6-bed2-17e5bd00121b": "type",
+    "1ec504ca-50c0-11e6-bed2-17e5bd00121b": "usageType",
+    "1ec504b5-50c0-11e6-bed2-17e5bd00121b": "navaids",
+    "1ed6b7f2-50c0-11e6-bed2-17e5bd00121b": "airport_ident",
+    "1ed6b7f3-50c0-11e6-bed2-17e5bd00121b": "airport_ref",
+    "1ed6b7f4-50c0-11e6-bed2-17e5bd00121b": "description",
+    "1ed6b7f5-50c0-11e6-bed2-17e5bd00121b": "frequency_mhz",
+    "1ed6b7f6-50c0-11e6-bed2-17e5bd00121b": "id",
+    "1ed6b7f7-50c0-11e6-bed2-17e5bd00121b": "type",
+    "1ed6b7f0-50c0-11e6-bed2-17e5bd00121b": "airport-frequencies",
+    "1ee86b32-50c0-11e6-bed2-17e5bd00121b": "code",
+    "1ee86b33-50c0-11e6-bed2-17e5bd00121b": "continent",
+    "1ee86b34-50c0-11e6-bed2-17e5bd00121b": "id",
+    "1ee86b35-50c0-11e6-bed2-17e5bd00121b": "keywords",
+    "1ee86b36-50c0-11e6-bed2-17e5bd00121b": "name",
+    "1ee86b37-50c0-11e6-bed2-17e5bd00121b": "wikipedia_link",
+    "1ee86b30-50c0-11e6-bed2-17e5bd00121b": "countries",
+    "ccc72b40-50e0-11e6-bed2-17e5bd00121b": "countriesAirports",
+    "0e3a1510-50e1-11e6-bed2-17e5bd00121b": "countriesRegions",
+    "308a6a20-50e1-11e6-bed2-17e5bd00121b": "regionsAirports",
+    "a3c2dfe0-50e1-11e6-bed2-17e5bd00121b": "airportsNavaids",
+    "1428d4b0-50e2-11e6-bed2-17e5bd00121b": "airportsRunaways",
+    "759c7e40-50e2-11e6-bed2-17e5bd00121b": "New Relationship"
+  },
+  "definitions": {
+    "id": "12fe26e0-596f-11eb-abd9-032680bfc303",
+    "properties": [],
+    "type": "definitions"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "edcac423-b000-11ec-ab49-f732172fe980"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "1349fcf2-596f-11eb-abd9-032680bfc303"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "v3.2",
+  "dbVendor": "MongoDB",
+  "appTarget": "MONGODB",
+  "creationTS": "2016-07-23T10:27:35.093Z",
+  "GUID": "12375d60-50c0-11e6-bed2-17e5bd00121b",
+  "lastModifTS": "2025-02-27T14:19:45.083Z",
+  "persistenceSchemaVersion": "8",
+  "description": "http://ourairports.com/data/ is a free site where visitors can explore the world's airports, read other people's comments, and leave their own. The help pages have information to get you started.\n\nThe site is dedicated to both passengers and pilots. You can create a map of the airports you've visited and share that map with friends. You can find the closest airports to you, and discover the ones that you haven't visited yet.",
+  "comments": "Downloaded from http://ourairports.com/data/\n\nTotally flat and relational...",
+  "author": "Pascal",
+  "version": "0.1",
+  "validation": "MongoDB extension",
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "1e557a00-50c0-11e6-bed2-17e5bd00121b",
+            "x": 1692.86943620178,
+            "y": 1231,
+            "width": 302,
+            "height": 393
+          },
+          {
+            "GUID": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+            "x": 1353,
+            "y": 1249,
+            "width": 258,
+            "height": 357
+          },
+          {
+            "GUID": "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+            "x": 1571,
+            "y": 1000,
+            "width": 234,
+            "height": 177
+          },
+          {
+            "GUID": "1ec504b5-50c0-11e6-bed2-17e5bd00121b",
+            "x": 1000,
+            "y": 1231,
+            "width": 289,
+            "height": 393
+          },
+          {
+            "GUID": "1ed6b7f0-50c0-11e6-bed2-17e5bd00121b",
+            "x": 1357,
+            "y": 1665.6528189910994,
+            "width": 250,
+            "height": 129
+          },
+          {
+            "GUID": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+            "x": 1145,
+            "y": 1018,
+            "width": 231,
+            "height": 141
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "1e557a00-50c0-11e6-bed2-17e5bd00121b",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "1ec504b5-50c0-11e6-bed2-17e5bd00121b",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "1ed6b7f0-50c0-11e6-bed2-17e5bd00121b",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
+            "autoWidth": false,
+            "autoHeight": false
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
