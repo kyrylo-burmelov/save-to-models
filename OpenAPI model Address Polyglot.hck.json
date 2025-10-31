@@ -1,0 +1,404 @@
+{
+  "modelName": "OpenAPI model Address Polyglot",
+  "collections": [],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "2ab351eb-a689-4069-92d1-8b0b3df7a786": "schemas",
+    "00cc9f25-b5be-4037-9b61-c68472180490": "responses",
+    "59be00e0-a236-4d54-bd59-ac604cdcb279": "parameters",
+    "a176f858-fbf9-4db2-aef5-9ab1ce6a7f4b": "examples",
+    "edce4fb7-4511-4709-bc42-ead5d3d8a903": "requestBodies",
+    "1510606c-aa6c-4466-b25b-77553b3bbcf7": "headers",
+    "314a0372-278b-4960-b5a3-41560a7a9519": "securitySchemes",
+    "9fe80ac8-6e3d-4195-a902-80a50499a11d": "links",
+    "baddd13e-93e6-45a1-afea-1a5ef1763d11": "callbacks",
+    "a5360879-d6ab-4a70-bb6f-57b46ba26e1e": "Specification Extensions",
+    "902a13e4-06ad-4cc2-a076-5a303aa35724": "Address"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [
+      {
+        "name": "schemas",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true,
+          "source": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [
+          {
+            "isActivated": true,
+            "GUID": "902a13e4-06ad-4cc2-a076-5a303aa35724",
+            "type": "reference",
+            "$ref": "#external/definitions/Address",
+            "refType": "polyglot",
+            "ref": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+            "refIdPath": [
+              "83cd7c15-5b70-45fb-b356-263ec9643f60",
+              "b98f5b36-6343-4115-b82a-b75687c762b9",
+              "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7"
+            ],
+            "name": "Address"
+          }
+        ],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "schema",
+        "GUID": "2ab351eb-a689-4069-92d1-8b0b3df7a786",
+        "definitionRefs": []
+      },
+      {
+        "name": "responses",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "response",
+        "GUID": "00cc9f25-b5be-4037-9b61-c68472180490",
+        "definitionRefs": []
+      },
+      {
+        "name": "parameters",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "structureType": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "anyParameter",
+        "GUID": "59be00e0-a236-4d54-bd59-ac604cdcb279",
+        "definitionRefs": []
+      },
+      {
+        "name": "examples",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "example",
+        "GUID": "a176f858-fbf9-4db2-aef5-9ab1ce6a7f4b",
+        "definitionRefs": []
+      },
+      {
+        "name": "requestBodies",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "request",
+        "GUID": "edce4fb7-4511-4709-bc42-ead5d3d8a903",
+        "definitionRefs": []
+      },
+      {
+        "name": "headers",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "header",
+        "GUID": "1510606c-aa6c-4466-b25b-77553b3bbcf7",
+        "definitionRefs": []
+      },
+      {
+        "name": "securitySchemes",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "securityScheme",
+        "GUID": "314a0372-278b-4960-b5a3-41560a7a9519",
+        "definitionRefs": []
+      },
+      {
+        "name": "links",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "link",
+        "GUID": "9fe80ac8-6e3d-4195-a902-80a50499a11d",
+        "definitionRefs": []
+      },
+      {
+        "name": "callbacks",
+        "hackoladeMeta": {
+          "disableAdd": false,
+          "disableDelete": true,
+          "disableAppend": true,
+          "disableChoices": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "additionalProperties": false,
+        "structureType": true,
+        "properties": [],
+        "childType": "componentObject",
+        "type": "document",
+        "subtype": "callback",
+        "GUID": "baddd13e-93e6-45a1-afea-1a5ef1763d11",
+        "definitionRefs": []
+      },
+      {
+        "name": "Specification Extensions",
+        "hackoladeMeta": {
+          "disableAdd": true,
+          "disableReference": true,
+          "disableDelete": true,
+          "disableAppend": true
+        },
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "required": false,
+        "ignore_z_value": true,
+        "structureType": true,
+        "subtype": "snippetChildrenOnly",
+        "additionalProperties": false,
+        "childType": "extensions",
+        "type": "document",
+        "GUID": "a5360879-d6ab-4a70-bb6f-57b46ba26e1e",
+        "definitionRefs": []
+      }
+    ],
+    "GUID": "2c821b08-2e07-4e47-acfd-3eb0931a5727"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "name": "Address",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "schemeType": "apiKey",
+        "primaryKey": false,
+        "properties": [
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Address ID",
+            "isActivated": true,
+            "required": false,
+            "GUID": "65b54be5-17e3-480b-9543-41cade950030",
+            "hackoladeMeta": {}
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Street",
+            "isActivated": true,
+            "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+            "required": true,
+            "GUID": "226178a4-d5d7-4303-8ded-6edd2bf5e94a",
+            "hackoladeMeta": {}
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "Postal code",
+            "isActivated": true,
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+            "required": true,
+            "foreignCollection": "",
+            "foreignField": [],
+            "GUID": "172ef4de-fb50-4087-a44b-9a34e92b1f39",
+            "hackoladeMeta": {}
+          },
+          {
+            "primaryKey": false,
+            "nullable": false,
+            "type": "string",
+            "name": "City",
+            "isActivated": true,
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+            "required": true,
+            "foreignCollection": "",
+            "foreignField": [],
+            "GUID": "f23a20a2-d7b1-476d-b567-50a67b99f2fc",
+            "hackoladeMeta": {}
+          }
+        ],
+        "additionalProperties": false,
+        "additionalPropControl": "Boolean",
+        "additionalPropertiesObjectType": "integer",
+        "additionalPropertiesIntegerFormat": "int32",
+        "subtype": "schema",
+        "nullable": false,
+        "childType": "object",
+        "type": "document",
+        "GUID": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+        "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+        "comments": "",
+        "required": false,
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Address",
+        "link": "demo-models-clone/common/Address-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "83cd7c15-5b70-45fb-b356-263ec9643f60",
+            "2c821b08-2e07-4e47-acfd-3eb0931a5727",
+            "2ab351eb-a689-4069-92d1-8b0b3df7a786",
+            "902a13e4-06ad-4cc2-a076-5a303aa35724"
+          ]
+        ]
+      }
+    ],
+    "GUID": "b98f5b36-6343-4115-b82a-b75687c762b9"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "30f64ad0-d3af-48e0-ab8c-2cf9d35578a1"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "3.0.3",
+  "dbVendor": "OpenAPI",
+  "appTarget": "OPENAPI",
+  "creationTS": "2025-10-29T08:24:24.453Z",
+  "GUID": "83cd7c15-5b70-45fb-b356-263ec9643f60",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-10-29T08:24:24.646Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "OpenAPI",
+    "pluginVersion": "0.2.11",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.5.4"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "modelName": "new_model",
+  "collections": [
+    {
+      "collectionName": "new_table",
+      "type": "object",
+      "properties": [
+        {
+          "name": "new_column",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "signed": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "7b21376e-33ce-4594-8061-134bb0f277ad",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "signed": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "02091d77-2baa-42ad-8d48-2f59439d9e63",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "signed": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "520596c1-e19c-445e-b2df-b1e3fe49e363",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1ede80a7-b7b8-4bc7-9cc2-0f256aea241e"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "5da753b6-40dc-457c-a156-2ae9ef5d981f"
+    },
+    {
+      "collectionName": "new_table1",
+      "type": "object",
+      "properties": [
+        {
+          "name": "new_column",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "signed": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "c95f4553-ae1b-45fd-8291-dc1334ec6623",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "signed": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "01b8f1c7-2875-4ff5-b525-78b714a24ef8",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "signed": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "length": 10,
+          "subtype": "string",
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "8c8ad7ec-73f2-4d1f-a364-4e589cc560c2",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "0ba4ac66-8207-4348-95af-110f6b094185"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "77846287-fdda-4901-a06c-c67aea538cd2"
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "5da753b6-40dc-457c-a156-2ae9ef5d981f": "new_table",
+    "7b21376e-33ce-4594-8061-134bb0f277ad": "new_column",
+    "02091d77-2baa-42ad-8d48-2f59439d9e63": "new_column1",
+    "520596c1-e19c-445e-b2df-b1e3fe49e363": "new_column2",
+    "77846287-fdda-4901-a06c-c67aea538cd2": "new_table1",
+    "c95f4553-ae1b-45fd-8291-dc1334ec6623": "new_column",
+    "01b8f1c7-2875-4ff5-b525-78b714a24ef8": "new_column1",
+    "8c8ad7ec-73f2-4d1f-a364-4e589cc560c2": "new_column2"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "08428a88-d29c-4b9a-9ce8-1a407a00ada1"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "6c96f969-1092-44eb-ad7a-49e98cee7077"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "393fde5f-9d90-4726-ade4-cfb81b8caca2"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "v5.x",
+  "dbVendor": "MySQL",
+  "appTarget": "MySQL",
+  "creationTS": "2025-10-30T11:00:46.035Z",
+  "GUID": "c1f48750-659f-4189-9869-5fab13fa1655",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-10-30T11:01:16.420Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "MySQL",
+    "pluginVersion": "0.2.16",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.5.4"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "5da753b6-40dc-457c-a156-2ae9ef5d981f",
+            "x": 1311,
+            "y": 1116,
+            "width": 244,
+            "height": 86,
+            "color": {}
+          },
+          {
+            "GUID": "77846287-fdda-4901-a06c-c67aea538cd2",
+            "x": 1688,
+            "y": 1085,
+            "width": 244,
+            "height": 86,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
