@@ -162,7 +162,7 @@
         "comments": "",
         "definitionEntityType": "field",
         "fieldRelativePath": "#/New Document",
-        "link": "../../123123123.hck.json",
+        "link": "..\\..\\123123123.hck.json",
         "kind": "relativePath",
         "fileType": "hackoladeSchema",
         "definitionRefs": [
@@ -270,7 +270,7 @@
           ]
         ],
         "childType": "object",
-        "link": "../../ROOT_FOLDER_MODEL.hck.json",
+        "link": "..\\..\\ROOT_FOLDER_MODEL.hck.json",
         "fieldRelativePath": "#/Address",
         "kind": "relativePath",
         "fileType": "hackoladeSchema"
