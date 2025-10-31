@@ -2,26 +2,6 @@
   "modelName": "New model",
   "collections": [
     {
-      "collectionName": "Backslash reference with whitespaces",
-      "refType": "external",
-      "refNamePath": "#external/definitions/Address",
-      "properties": [],
-      "GUID": "d218b067-5d7e-4334-85fd-137cf24ea056",
-      "bucketId": "9b754600-014d-4501-982e-a2105f2b617e",
-      "ref": "37a7824d-72cc-4650-bd9b-eb5d0474dfc4",
-      "refIdPath": [
-        "e2bf23ed-c323-4256-b1e4-6748c6c1fd60",
-        "19dbbc6c-fdcf-4e97-86ff-1811d07428de",
-        "37a7824d-72cc-4650-bd9b-eb5d0474dfc4"
-      ],
-      "type": "reference",
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "d34ec892-e6e4-411e-bdda-5e75a3709b0b"
-      }
-    },
-    {
       "collectionName": "Regular",
       "refType": "external",
       "refNamePath": "#external/definitions/Address",
@@ -39,6 +19,9 @@
         "type": "definitions",
         "properties": [],
         "GUID": "b11d15d5-f6f2-491d-b861-93b532905c5c"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
       }
     }
   ],
@@ -47,7 +30,6 @@
       "name": "References with Windows-like path",
       "type": "bucket",
       "collectionIds": [
-        "d218b067-5d7e-4334-85fd-137cf24ea056",
         "a01bcdf8-4bca-4a00-957a-b5786036b79e"
       ],
       "backgroundColor": {
@@ -71,7 +53,6 @@
   "diagramViews": [],
   "idToNameHashTable": {
     "9b754600-014d-4501-982e-a2105f2b617e": "References with Windows-like path",
-    "d218b067-5d7e-4334-85fd-137cf24ea056": "Backslash reference with whitespaces",
     "37a7824d-72cc-4650-bd9b-eb5d0474dfc4": "Address",
     "a01bcdf8-4bca-4a00-957a-b5786036b79e": "Regular",
     "f0e71c7a-0e07-47d3-8a4d-fd93c6a85728": "New Document"
@@ -263,9 +244,6 @@
         "GUID": "37a7824d-72cc-4650-bd9b-eb5d0474dfc4",
         "definitionRefs": [
           [
-            "d218b067-5d7e-4334-85fd-137cf24ea056"
-          ],
-          [
             "a01bcdf8-4bca-4a00-957a-b5786036b79e"
           ]
         ],
@@ -285,7 +263,7 @@
   "creationTS": "2025-10-31T06:05:46.636Z",
   "GUID": "e2bf23ed-c323-4256-b1e4-6748c6c1fd60",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-31T06:13:26.944Z",
+  "lastModifTS": "2025-10-31T06:36:28.585Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -296,20 +274,11 @@
   "applicationInformation": {
     "version": "8.5.4"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
-          {
-            "GUID": "d218b067-5d7e-4334-85fd-137cf24ea056",
-            "x": 1319,
-            "y": 1259,
-            "width": 354,
-            "height": 121,
-            "color": {
-              "hex": "#2196F3"
-            }
-          },
           {
             "GUID": "a01bcdf8-4bca-4a00-957a-b5786036b79e",
             "x": 1527,
@@ -329,8 +298,8 @@
         },
         "buckets": [
           {
-            "x": 1255,
-            "y": 1195,
+            "x": 1463,
+            "y": 1344,
             "GUID": "9b754600-014d-4501-982e-a2105f2b617e"
           }
         ],
@@ -344,12 +313,6 @@
         "displayColorPicker": false,
         "graphView": {
           "erd": [
-            {
-              "GUID": "d218b067-5d7e-4334-85fd-137cf24ea056",
-              "size": 100,
-              "x": 1359,
-              "y": 1277
-            },
             {
               "GUID": "a01bcdf8-4bca-4a00-957a-b5786036b79e",
               "size": 100,
@@ -371,13 +334,7 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [
-          {
-            "autoWidth": false,
-            "autoHeight": false,
-            "GUID": "d218b067-5d7e-4334-85fd-137cf24ea056"
-          }
-        ],
+        "options": [],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
