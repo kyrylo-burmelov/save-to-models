@@ -2,7 +2,7 @@
   "modelName": "New model",
   "collections": [
     {
-      "collectionName": "Backslash reference",
+      "collectionName": "Backslash reference with whitespaces",
       "refType": "external",
       "refNamePath": "#external/definitions/Address",
       "properties": [],
@@ -20,6 +20,26 @@
         "properties": [],
         "GUID": "d34ec892-e6e4-411e-bdda-5e75a3709b0b"
       }
+    },
+    {
+      "collectionName": "Regular",
+      "refType": "external",
+      "refNamePath": "#external/definitions/Address",
+      "properties": [],
+      "GUID": "a01bcdf8-4bca-4a00-957a-b5786036b79e",
+      "bucketId": "9b754600-014d-4501-982e-a2105f2b617e",
+      "ref": "37a7824d-72cc-4650-bd9b-eb5d0474dfc4",
+      "refIdPath": [
+        "e2bf23ed-c323-4256-b1e4-6748c6c1fd60",
+        "19dbbc6c-fdcf-4e97-86ff-1811d07428de",
+        "37a7824d-72cc-4650-bd9b-eb5d0474dfc4"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "b11d15d5-f6f2-491d-b861-93b532905c5c"
+      }
     }
   ],
   "buckets": [
@@ -27,7 +47,8 @@
       "name": "References with Windows-like path",
       "type": "bucket",
       "collectionIds": [
-        "d218b067-5d7e-4334-85fd-137cf24ea056"
+        "d218b067-5d7e-4334-85fd-137cf24ea056",
+        "a01bcdf8-4bca-4a00-957a-b5786036b79e"
       ],
       "backgroundColor": {
         "r": 129,
@@ -50,8 +71,10 @@
   "diagramViews": [],
   "idToNameHashTable": {
     "9b754600-014d-4501-982e-a2105f2b617e": "References with Windows-like path",
-    "d218b067-5d7e-4334-85fd-137cf24ea056": "Backslash reference",
-    "37a7824d-72cc-4650-bd9b-eb5d0474dfc4": "Address"
+    "d218b067-5d7e-4334-85fd-137cf24ea056": "Backslash reference with whitespaces",
+    "37a7824d-72cc-4650-bd9b-eb5d0474dfc4": "Address",
+    "a01bcdf8-4bca-4a00-957a-b5786036b79e": "Regular",
+    "f0e71c7a-0e07-47d3-8a4d-fd93c6a85728": "New Document"
   },
   "definitions": {
     "type": "definitions",
@@ -60,7 +83,97 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "name": "New Document",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New Field",
+            "isActivated": true,
+            "mode": "string",
+            "properties": [],
+            "GUID": "087fafb1-531c-425c-a244-7097d758f1eb",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New Field1",
+            "isActivated": true,
+            "mode": "string",
+            "properties": [],
+            "GUID": "0ae4061d-85a7-4c25-bb70-201b3eb3c680",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New Field2",
+            "isActivated": true,
+            "mode": "string",
+            "properties": [],
+            "GUID": "6663be51-9fac-4564-8e3b-5f84d35d240b",
+            "hackoladeMeta": {},
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "additionalProperties": false,
+        "alternateKey": false,
+        "childType": "object",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "GUID": "97f42135-c36d-49c8-aa93-56290c102d21",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/New Document",
+        "link": "../../123123123.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "a01bcdf8-4bca-4a00-957a-b5786036b79e",
+            "37a7824d-72cc-4650-bd9b-eb5d0474dfc4",
+            "f0e71c7a-0e07-47d3-8a4d-fd93c6a85728"
+          ]
+        ]
+      }
+    ],
     "GUID": "61be1451-aa66-4337-ae1e-d3792d78a674"
   },
   "externalDefinitions": {
@@ -151,10 +264,13 @@
         "definitionRefs": [
           [
             "d218b067-5d7e-4334-85fd-137cf24ea056"
+          ],
+          [
+            "a01bcdf8-4bca-4a00-957a-b5786036b79e"
           ]
         ],
         "childType": "object",
-        "link": "..\\..\\ROOT_FOLDER_MODEL.hck.json",
+        "link": "../../ROOT_FOLDER_MODEL.hck.json",
         "fieldRelativePath": "#/Address",
         "kind": "relativePath",
         "fileType": "hackoladeSchema"
@@ -169,7 +285,7 @@
   "creationTS": "2025-10-31T06:05:46.636Z",
   "GUID": "e2bf23ed-c323-4256-b1e4-6748c6c1fd60",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-31T06:07:57.117Z",
+  "lastModifTS": "2025-10-31T06:13:26.944Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -186,10 +302,20 @@
         "erd": [
           {
             "GUID": "d218b067-5d7e-4334-85fd-137cf24ea056",
-            "x": 1359,
-            "y": 1277,
-            "width": 233,
-            "height": 100,
+            "x": 1319,
+            "y": 1259,
+            "width": 354,
+            "height": 121,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "a01bcdf8-4bca-4a00-957a-b5786036b79e",
+            "x": 1527,
+            "y": 1408,
+            "width": 222,
+            "height": 104,
             "color": {
               "hex": "#2196F3"
             }
@@ -203,8 +329,8 @@
         },
         "buckets": [
           {
-            "x": 1295,
-            "y": 1213,
+            "x": 1255,
+            "y": 1195,
             "GUID": "9b754600-014d-4501-982e-a2105f2b617e"
           }
         ],
@@ -223,6 +349,12 @@
               "size": 100,
               "x": 1359,
               "y": 1277
+            },
+            {
+              "GUID": "a01bcdf8-4bca-4a00-957a-b5786036b79e",
+              "size": 100,
+              "x": 1379,
+              "y": 1297
             }
           ],
           "buckets": [
@@ -239,7 +371,13 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "d218b067-5d7e-4334-85fd-137cf24ea056"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
