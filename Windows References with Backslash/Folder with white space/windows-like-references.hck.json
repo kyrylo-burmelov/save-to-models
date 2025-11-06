@@ -43,80 +43,22 @@
     },
     {
       "collectionName": "New entity",
-      "type": "object",
-      "properties": [
-        {
-          "name": "New attribute",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "required": false,
-          "alternateKey": false,
-          "childType": "varchar",
-          "type": "string",
-          "compositeKey": [
-            "compositePrimaryKey",
-            "compositeUniqueKey"
-          ],
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "GUID": "801e492c-dffa-4e65-aad3-9cab6645813a",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New attribute1",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "required": false,
-          "alternateKey": false,
-          "childType": "varchar",
-          "type": "string",
-          "compositeKey": [
-            "compositePrimaryKey",
-            "compositeUniqueKey"
-          ],
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "GUID": "1e46f7ff-b9b5-48a7-82d7-1b18ac463b70",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New attribute2",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "required": false,
-          "alternateKey": false,
-          "childType": "varchar",
-          "type": "string",
-          "compositeKey": [
-            "compositePrimaryKey",
-            "compositeUniqueKey"
-          ],
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "GUID": "ef0c085b-f0d4-451f-a5d9-3bf420c2b398",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        }
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Street",
+      "properties": [],
+      "GUID": "aa2658ff-b35c-4cda-b1ea-fe4f3f7fe546",
+      "ref": "835e8257-1aef-5b76-b37c-ecb52594180e",
+      "refIdPath": [
+        "e2bf23ed-c323-4256-b1e4-6748c6c1fd60",
+        "61be1451-aa66-4337-ae1e-d3792d78a674",
+        "835e8257-1aef-5b76-b37c-ecb52594180e"
       ],
+      "type": "reference",
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "343310a0-13ba-4ee5-bfd9-d8225dde9579"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "GUID": "aa2658ff-b35c-4cda-b1ea-fe4f3f7fe546"
+        "GUID": "3c86a3cb-a1bd-45b3-8a6f-d15ff0d9ea13"
+      }
     }
   ],
   "buckets": [
@@ -253,6 +195,35 @@
             "f0e71c7a-0e07-47d3-8a4d-fd93c6a85728"
           ]
         ]
+      },
+      {
+        "primaryKey": false,
+        "required": true,
+        "alternateKey": false,
+        "childType": "varchar",
+        "type": "string",
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "name": "Street",
+        "isActivated": true,
+        "mode": "string",
+        "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+        "GUID": "835e8257-1aef-5b76-b37c-ecb52594180e",
+        "hackoladeMeta": {},
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "link": "../../OpenAPI model Address Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/New container/Address/properties/Street",
+        "fileType": "hackoladeSchema",
+        "definitionEntityType": "field",
+        "definitionRefs": [
+          [
+            "aa2658ff-b35c-4cda-b1ea-fe4f3f7fe546"
+          ]
+        ]
       }
     ],
     "GUID": "61be1451-aa66-4337-ae1e-d3792d78a674"
@@ -366,7 +337,7 @@
   "creationTS": "2025-10-31T06:05:46.636Z",
   "GUID": "e2bf23ed-c323-4256-b1e4-6748c6c1fd60",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-06T07:35:49.608Z",
+  "lastModifTS": "2025-11-06T07:38:19.118Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -406,8 +377,8 @@
             "GUID": "aa2658ff-b35c-4cda-b1ea-fe4f3f7fe546",
             "x": 1807,
             "y": 1750,
-            "width": 217,
-            "height": 86,
+            "width": 181,
+            "height": 32,
             "color": {
               "hex": "#2196F3"
             }
