@@ -40,6 +40,83 @@
         "properties": [],
         "GUID": "b11d15d5-f6f2-491d-b861-93b532905c5c"
       }
+    },
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New attribute",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "032adf71-30d7-423c-9664-2aa9249ed5f2",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "f434a346-2185-4390-9d36-bc4a22e97b74",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "a64d81ba-3b46-4a55-9561-91def734ddbe",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "9c2f9f17-8b5b-49e4-b2bd-6781604c458b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "a7511c2b-1727-4527-afea-d7dcbd9f5056"
     }
   ],
   "buckets": [
@@ -74,7 +151,11 @@
     "d218b067-5d7e-4334-85fd-137cf24ea056": "Backslash reference with whitespaces",
     "37a7824d-72cc-4650-bd9b-eb5d0474dfc4": "Address",
     "a01bcdf8-4bca-4a00-957a-b5786036b79e": "Regular",
-    "f0e71c7a-0e07-47d3-8a4d-fd93c6a85728": "New Document"
+    "f0e71c7a-0e07-47d3-8a4d-fd93c6a85728": "New Document",
+    "a7511c2b-1727-4527-afea-d7dcbd9f5056": "New entity",
+    "032adf71-30d7-423c-9664-2aa9249ed5f2": "New attribute",
+    "f434a346-2185-4390-9d36-bc4a22e97b74": "New attribute1",
+    "a64d81ba-3b46-4a55-9561-91def734ddbe": "New attribute2"
   },
   "definitions": {
     "type": "definitions",
@@ -285,7 +366,7 @@
   "creationTS": "2025-10-31T06:05:46.636Z",
   "GUID": "e2bf23ed-c323-4256-b1e4-6748c6c1fd60",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-31T06:13:26.944Z",
+  "lastModifTS": "2025-11-06T06:50:58.549Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -296,6 +377,7 @@
   "applicationInformation": {
     "version": "8.5.4"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -316,6 +398,16 @@
             "y": 1408,
             "width": 222,
             "height": 104,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "a7511c2b-1727-4527-afea-d7dcbd9f5056",
+            "x": 1829,
+            "y": 1720,
+            "width": 217,
+            "height": 86,
             "color": {
               "hex": "#2196F3"
             }
@@ -355,6 +447,12 @@
               "size": 100,
               "x": 1379,
               "y": 1297
+            },
+            {
+              "GUID": "a7511c2b-1727-4527-afea-d7dcbd9f5056",
+              "size": 100,
+              "x": 1681,
+              "y": 1609
             }
           ],
           "buckets": [
