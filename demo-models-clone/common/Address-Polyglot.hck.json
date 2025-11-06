@@ -72,6 +72,27 @@
           "foreignField": [],
           "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
           "error": {}
+        },
+        {
+          "name": "Phone",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "d3f97740-4de2-4c2f-826d-99a01b80b123"
         }
       ],
       "definitions": {
@@ -95,7 +116,8 @@
     "226178a4-d5d7-4303-8ded-6edd2bf5e94a": "Street",
     "172ef4de-fb50-4087-a44b-9a34e92b1f39": "Postal code",
     "f23a20a2-d7b1-476d-b567-50a67b99f2fc": "City",
-    "65b54be5-17e3-480b-9543-41cade950030": "Address ID"
+    "65b54be5-17e3-480b-9543-41cade950030": "Address ID",
+    "d3f97740-4de2-4c2f-826d-99a01b80b123": "Phone"
   },
   "definitions": {
     "type": "definitions",
@@ -127,7 +149,7 @@
   "creationTS": "2024-12-31T10:50:34.735Z",
   "GUID": "251c1cc6-cb0b-4efc-bbc7-56d5a47c2515",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-02-27T10:15:09.640Z",
+  "lastModifTS": "2025-11-06T09:18:24.458Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -136,7 +158,7 @@
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.0.2"
+    "version": "8.5.4"
   },
   "hackoladeMeta": {
     "validationErrors": {
@@ -150,29 +172,30 @@
         "erd": [
           {
             "GUID": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
-            "x": 1263,
-            "y": 1084,
-            "width": 237,
-            "height": 97,
+            "x": 1199.4828571428573,
+            "y": 1124.542857142857,
+            "width": 222,
+            "height": 122,
             "color": {
               "hex": "#2196F3"
             }
           }
         ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
         "buckets": [],
-        "diagramViews": [],
-        "decorativeSymbols": [
-          {
-            "GUID": "e5521fe8-98de-4f72-bfa0-156a53edd8af",
-            "x": 1587,
-            "y": 1013,
-            "height": 154,
-            "width": 366,
-            "color": {
-              "hex": "#fec107"
-            }
-          }
-        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
         "graphView": {
           "erd": [
             {
@@ -194,7 +217,23 @@
           ],
           "forceLayout": true,
           "defaultLinkLength": 300
-        }
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "e5521fe8-98de-4f72-bfa0-156a53edd8af",
+            "x": 1587,
+            "y": 1013,
+            "height": 154,
+            "width": 366,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
       "changed": false
