@@ -69,7 +69,7 @@
       }
     },
     {
-      "collectionName": "New Document",
+      "collectionName": "Extra-repo ref",
       "refType": "polyglot",
       "refNamePath": "#external/definitions/Loyalty campaign",
       "properties": [],
@@ -85,6 +85,9 @@
         "type": "definitions",
         "properties": [],
         "GUID": "1139f277-24d0-41ac-b65b-6dbccd1f3dea"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
       }
     }
   ],
@@ -97,7 +100,7 @@
     "8c9efdbf-1683-478a-806a-4b0421e8d73b": "Valid link",
     "33faa07c-c8de-4ca4-82a1-f2cc3f11428a": "Absolute Path",
     "b22aebdc-08c6-4f6e-b73c-d9739ab8f782": "Relaive Path",
-    "418f2cc1-4521-4af1-a7da-94cf0ec5f8f3": "New Document",
+    "418f2cc1-4521-4af1-a7da-94cf0ec5f8f3": "Extra-repo ref",
     "17bbf0c2-c05a-40a5-9902-03dde6d20f68": "New Field",
     "1df5be11-b0c2-44b7-b62e-d8a057e82f90": "New Field1",
     "d07d9062-27fb-495e-854e-c48a71e4ed02": "New Field2"
@@ -450,7 +453,7 @@
   "creationTS": "2025-10-22T19:09:44.143Z",
   "GUID": "5a3f4dd3-0e70-4812-a249-ccfdd66ac2a1",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-14T10:16:37.434Z",
+  "lastModifTS": "2025-11-14T10:16:48.775Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -494,7 +497,7 @@
             "GUID": "418f2cc1-4521-4af1-a7da-94cf0ec5f8f3",
             "x": 1454.8057432432436,
             "y": 1530.244932432433,
-            "width": 208,
+            "width": 206,
             "height": 69,
             "color": {}
           }
