@@ -2,54 +2,92 @@
   "modelName": "New Model",
   "collections": [
     {
-      "collectionName": "New Document",
-      "type": "object",
-      "properties": [
-        {
-          "name": "New Field",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "aabc901c-7462-48e0-ae97-76e1421451a9",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field1",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "405801ee-86f2-4e45-9a38-0be8ae77eee2",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field2",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "ba92548b-25d9-43d4-935b-95110d9ba704",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        }
+      "collectionName": "EXTRA_GITHUB (PUBLIC)",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Address",
+      "properties": [],
+      "GUID": "c96785e0-93b4-4370-bb4c-73612016f989",
+      "ref": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7"
       ],
+      "type": "reference",
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "aae9be51-3183-4464-8e76-31ec12077d00"
+        "GUID": "ef1e9a24-4103-4f37-8efe-2357e7f26e74"
       },
-      "isActivated": true,
-      "additionalProperties": false,
-      "GUID": "c96785e0-93b4-4370-bb4c-73612016f989"
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "EXTRA_GITHUB (PRIVATE)",
+      "refType": "external",
+      "refNamePath": "#external/definitions/glossary",
+      "properties": [],
+      "GUID": "b2ca52a3-0dac-4824-a410-2f504693a469",
+      "ref": "ed60ab88-aeb5-455a-9c28-5afa16ee641b",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "7eace1f8-ab8c-4023-89c8-098208d1d31b",
+        "ed60ab88-aeb5-455a-9c28-5afa16ee641b"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1e0afdb3-79cc-4d30-8741-4446ce925e4a"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "EXTRA_GITLAB (PRIVATE)",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/users",
+      "properties": [],
+      "GUID": "ca08c454-1597-4277-8dff-70ca403697cd",
+      "ref": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "9cff72b0-02e2-11e6-a6da-47e48d71d0e8"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e327d71d-ba30-4208-aab8-98edc588b7fc"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "INTRA",
+      "refType": "external",
+      "refNamePath": "#external/definitions/Order",
+      "properties": [],
+      "GUID": "06797420-c394-4793-acdc-c61f47504c6b",
+      "ref": "199cb6ae-221e-42bd-a1ff-407d8076146a",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "7eace1f8-ab8c-4023-89c8-098208d1d31b",
+        "199cb6ae-221e-42bd-a1ff-407d8076146a"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "0fbf8549-f0ae-40e8-9d5e-7f8bde03a52c"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
   ],
   "buckets": [],
@@ -58,10 +96,24 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "c96785e0-93b4-4370-bb4c-73612016f989": "New Document",
+    "c96785e0-93b4-4370-bb4c-73612016f989": "EXTRA_GITHUB (PUBLIC)",
     "aabc901c-7462-48e0-ae97-76e1421451a9": "New Field",
     "405801ee-86f2-4e45-9a38-0be8ae77eee2": "New Field1",
-    "ba92548b-25d9-43d4-935b-95110d9ba704": "New Field2"
+    "ba92548b-25d9-43d4-935b-95110d9ba704": "New Field2",
+    "b2ca52a3-0dac-4824-a410-2f504693a469": "EXTRA_GITHUB (PRIVATE)",
+    "370760c1-4c2d-423d-9af2-9f739bd7666e": "New Field",
+    "47ebcc56-50b3-4eeb-937c-09ef9e35bfbe": "New Field1",
+    "65df43f9-93ad-437c-ab58-3fb3c1a8f656": "New Field2",
+    "ed60ab88-aeb5-455a-9c28-5afa16ee641b": "glossary",
+    "ca08c454-1597-4277-8dff-70ca403697cd": "EXTRA_GITLAB (PRIVATE)",
+    "acc0983e-fedb-4eff-8d9f-44a0f2aef0c3": "New Field",
+    "a3c485ad-23c4-4ca8-a422-684a12e1f31a": "New Field1",
+    "b26c13a2-7a8a-4258-8adc-27c47412694b": "New Field2",
+    "06797420-c394-4793-acdc-c61f47504c6b": "INTRA",
+    "7711a0c4-1153-4936-9c7f-84e6cb40570b": "New Field",
+    "31eca78b-6777-4a8b-891c-0fb98ccca887": "New Field1",
+    "b06c256c-ff6f-41ce-b8e4-bb11851227a3": "New Field2",
+    "199cb6ae-221e-42bd-a1ff-407d8076146a": "Order"
   },
   "definitions": {
     "type": "definitions",
@@ -70,12 +122,586 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "name": "Address",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Address ID",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "65b54be5-17e3-480b-9543-41cade950030"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Street",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "226178a4-d5d7-4303-8ded-6edd2bf5e94a",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Postal code",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "172ef4de-fb50-4087-a44b-9a34e92b1f39",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "City",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "f23a20a2-d7b1-476d-b567-50a67b99f2fc",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+        "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Address",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=common%2FAddress-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "c96785e0-93b4-4370-bb4c-73612016f989"
+          ]
+        ]
+      },
+      {
+        "name": "users",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "b8eba5b0-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "boolean",
+            "name": "active",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "default": false,
+            "sample": "true",
+            "foreignCollection": "",
+            "foreignField": [],
+            "relationshipType": "",
+            "GUID": "c0678a70-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "email",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "format": "email",
+            "sample": "testuser1@example.com",
+            "GUID": "d40a6570-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "firstName",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "Test",
+            "GUID": "e16c4cb0-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "lastName",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "User1",
+            "GUID": "ea6f94c0-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "sp_api_key_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "6YQB0A8VXM0X8RVDPPLRHBI7J",
+            "GUID": "68b47390-0312-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "sp_api_key_secret",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "YFx56Dl0bbiVEpvbjF",
+            "GUID": "74b0fe70-0312-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "lastLogin",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "7e16fff0-0312-11e6-a6da-47e48d71d0e8",
+            "format": "date"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "ca8e31f0-0312-11e6-a6da-47e48d71d0e8",
+            "format": "date"
+          },
+          {
+            "type": "array",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "relationshipType": "",
+                "GUID": "f2c35100-0312-11e6-a6da-47e48d71d0e8",
+                "arrayItem": true
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "relationshipType": "",
+                "GUID": "e565e120-0313-11e6-a6da-47e48d71d0e8",
+                "arrayItem": true
+              }
+            ],
+            "additionalItems": true,
+            "name": "subs",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "d28f7350-0312-11e6-a6da-47e48d71d0e8"
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+        "description": "Master collection of users",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/users",
+        "link": "?g=gitlab&o=hackolade&r=models&f=MongoDB%2FBuzzfeed.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "ca08c454-1597-4277-8dff-70ca403697cd"
+          ]
+        ]
+      }
+    ],
     "GUID": "9de8d99c-7ad7-4854-9aa6-242e796ae060"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "name": "glossary",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "name": "termBusinessName",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "bc636c2f-2da6-510b-bb25-6ffe843f2aee",
+            "required": true,
+            "error": {
+              "examples": false
+            },
+            "examples": [
+              "account"
+            ]
+          },
+          {
+            "name": "termTechnicalName",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "3445aa1c-72bf-545b-9ecb-0972ab636850",
+            "required": false,
+            "error": {
+              "examples": false
+            },
+            "examples": [
+              "accnt"
+            ]
+          },
+          {
+            "name": "Description",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "18b2ece3-4acb-5489-a320-8036334a02a1",
+            "error": {
+              "examples": false
+            },
+            "examples": [
+              "Account description"
+            ]
+          },
+          {
+            "name": "URI",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "f84eba40-9fb6-5a67-af10-905230fecbe9",
+            "error": {}
+          },
+          {
+            "name": "synonyms",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "array",
+            "properties": [
+              {
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "string",
+                "properties": [],
+                "color": "#555555",
+                "GUID": "676259b9-0a37-51a7-8968-0510bd883e07",
+                "arrayItem": true,
+                "error": {
+                  "examples": false
+                }
+              }
+            ],
+            "additionalItems": true,
+            "color": "#555555",
+            "GUID": "6b136853-c539-5a27-b1df-7db0343040d7",
+            "error": {}
+          },
+          {
+            "name": "^[a-zA-Z0-9_.-]+$",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "document",
+            "properties": [
+              {
+                "name": "dataType",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "array",
+                "properties": [
+                  {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "cb2496ef-ce41-51a1-8c5f-30c2c083cc58",
+                    "arrayItem": true,
+                    "error": {
+                      "examples": false
+                    },
+                    "examples": [
+                      "string"
+                    ]
+                  }
+                ],
+                "additionalItems": true,
+                "color": "#555555",
+                "GUID": "0b74c5fc-b1f6-5ad8-b9df-1d3622fa1e6a",
+                "error": {}
+              },
+              {
+                "type": "choice",
+                "properties": [
+                  {
+                    "subschema": true,
+                    "isActivated": true,
+                    "type": "document",
+                    "GUID": "8072ed45-f706-52e6-a44a-c5012e5c0e01",
+                    "properties": [
+                      {
+                        "name": "length",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "f7a0dc2f-cbb7-56cd-ab0e-224c42497cf2",
+                        "minimum": 0,
+                        "error": {}
+                      },
+                      {
+                        "name": "default",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "687ebd72-dc68-5d15-acc4-5b075c838921",
+                        "error": {}
+                      },
+                      {
+                        "name": "enum",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "array",
+                        "properties": [
+                          {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "color": "#555555",
+                            "GUID": "64ec54c5-912f-5fae-a8f3-1813f4d51e20",
+                            "arrayItem": true
+                          }
+                        ],
+                        "additionalItems": true,
+                        "color": "#555555",
+                        "GUID": "4cf9da8a-d305-521c-91d7-a3fe7f181b2f",
+                        "error": {}
+                      }
+                    ],
+                    "additionalProperties": true,
+                    "displayName": "string",
+                    "error": {}
+                  },
+                  {
+                    "subschema": true,
+                    "isActivated": true,
+                    "type": "document",
+                    "GUID": "cc5ced73-6129-5df8-9ca1-845a167749be",
+                    "properties": [
+                      {
+                        "name": "precision",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "d6a1a989-5cc3-5847-8760-93ce060920fc",
+                        "minimum": 0,
+                        "error": {}
+                      },
+                      {
+                        "name": "scale",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "42e47883-90bb-5d67-92dc-1bb966958d9a",
+                        "minimum": 0,
+                        "error": {}
+                      },
+                      {
+                        "name": "default",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "3074232e-3feb-5948-a07a-9f332ed7a577",
+                        "error": {
+                          "name": false,
+                          "code": false
+                        }
+                      },
+                      {
+                        "name": "enum",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "array",
+                        "properties": [
+                          {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "properties": [],
+                            "color": "#555555",
+                            "GUID": "8c071fe5-9845-50b7-984e-76e9041d8b51",
+                            "arrayItem": true
+                          }
+                        ],
+                        "additionalItems": true,
+                        "color": "#555555",
+                        "GUID": "fd30a5b6-8a36-5c71-9616-aba751c1109d",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "error": {
+                          "name": false,
+                          "code": false
+                        }
+                      }
+                    ],
+                    "additionalProperties": true,
+                    "displayName": "number",
+                    "error": {}
+                  }
+                ],
+                "isActivated": true,
+                "choice": "anyOf",
+                "GUID": "c603f03b-7b5b-599f-aee5-aad364be4a82"
+              },
+              {
+                "name": "required",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "boolean",
+                "color": "#555555",
+                "GUID": "28a2ee50-17fb-5c04-9895-6f2adcbc6517",
+                "error": {}
+              }
+            ],
+            "additionalProperties": true,
+            "color": "#555555",
+            "isPatternField": true,
+            "GUID": "1c670e86-59c1-57b9-bf42-7f08869197ea",
+            "sampleName": "avro",
+            "error": {}
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "ed60ab88-aeb5-455a-9c28-5afa16ee641b",
+        "definitionRefs": [
+          [
+            "b2ca52a3-0dac-4824-a410-2f504693a469"
+          ]
+        ],
+        "link": "?g=github&o=hackolade&r=hub-models&f=JSON%2FHackolade+Studio+Glossary.hck.json&b=main",
+        "fieldRelativePath": "#/glossary",
+        "kind": "link",
+        "fileType": "hackoladeSchema"
+      },
+      {
+        "name": "Order",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Order identifier",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "f83f1f06-572a-5dc6-89cc-1dafc3bb2949"
+          },
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Customer identifier",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#9c28b1"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "2a68bc5d-8446-5407-a630-c21d1b63670e",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "da2fd91c-4b1d-4ac9-8515-3e21bacf3c7e",
+            "foreignField": [
+              "da2fd91c-4b1d-4ac9-8515-3e21bacf3c7e",
+              "cb229cec-41da-4ae6-95f1-358c83f9c16f"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Ordered date",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "primaryKey": false,
+            "GUID": "08ee4b05-b99a-5c6b-9eb6-45d5ca7b522b",
+            "format": "date"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Status",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "primaryKey": false,
+            "GUID": "ba768696-6b03-5a9b-9072-bb171bab9b9c"
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "199cb6ae-221e-42bd-a1ff-407d8076146a",
+        "definitionRefs": [
+          [
+            "06797420-c394-4793-acdc-c61f47504c6b"
+          ]
+        ],
+        "link": "polyglot-references.hck.json",
+        "fieldRelativePath": "#/Order",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema"
+      }
+    ],
     "GUID": "7eace1f8-ab8c-4023-89c8-098208d1d31b"
   },
   "sources": [],
@@ -86,7 +712,7 @@
   "creationTS": "2025-11-18T06:52:42.589Z",
   "GUID": "252882d4-451a-4f98-a743-0b8dff0fb4b0",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-18T06:53:21.068Z",
+  "lastModifTS": "2025-11-18T06:57:31.305Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -95,16 +721,41 @@
   "applicationInformation": {
     "version": "8.6.1"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
             "GUID": "c96785e0-93b4-4370-bb4c-73612016f989",
-            "x": 1040,
-            "y": 1065,
-            "width": 208,
-            "height": 86,
+            "x": 1026,
+            "y": 1063,
+            "width": 312,
+            "height": 201,
+            "color": {}
+          },
+          {
+            "GUID": "b2ca52a3-0dac-4824-a410-2f504693a469",
+            "x": 1366,
+            "y": 1063,
+            "width": 319,
+            "height": 195,
+            "color": {}
+          },
+          {
+            "GUID": "ca08c454-1597-4277-8dff-70ca403697cd",
+            "x": 1031,
+            "y": 1289,
+            "width": 313,
+            "height": 256,
+            "color": {}
+          },
+          {
+            "GUID": "06797420-c394-4793-acdc-c61f47504c6b",
+            "x": 1370,
+            "y": 1291,
+            "width": 324,
+            "height": 260,
             "color": {}
           }
         ],
@@ -133,7 +784,28 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "c96785e0-93b4-4370-bb4c-73612016f989"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "b2ca52a3-0dac-4824-a410-2f504693a469"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "ca08c454-1597-4277-8dff-70ca403697cd"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "06797420-c394-4793-acdc-c61f47504c6b"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
