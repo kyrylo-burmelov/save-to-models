@@ -2,17 +2,48 @@
   "modelName": "New model",
   "collections": [
     {
-      "collectionName": "New entity",
-      "type": "object",
+      "collectionName": "GITLAB",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/data",
       "properties": [],
+      "GUID": "f8b66de1-9659-4469-957e-be7220eff87a",
+      "ref": "e4919987-a59b-11e6-af2e-1909f8baa290",
+      "refIdPath": [
+        "fc06a5ee-b8ac-42f7-a08c-3d4699917d75",
+        "e1f574d7-f6ba-447e-8805-8b955c64fddc",
+        "e4919987-a59b-11e6-af2e-1909f8baa290"
+      ],
+      "type": "reference",
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "86680032-eaf3-4e7e-b6ca-d0683bd7014a"
+        "GUID": "d7f40c12-1754-4b55-8c76-dd6e42c940fa"
       },
-      "isActivated": true,
-      "additionalProperties": false,
-      "GUID": "f8b66de1-9659-4469-957e-be7220eff87a"
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Bitbucket cloud",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/New Document",
+      "properties": [],
+      "GUID": "4a0ac00e-6231-42ff-9508-aa5fed063bb1",
+      "ref": "1f1921b4-c5fb-4d40-9936-f7cd65a73172",
+      "refIdPath": [
+        "fc06a5ee-b8ac-42f7-a08c-3d4699917d75",
+        "e1f574d7-f6ba-447e-8805-8b955c64fddc",
+        "1f1921b4-c5fb-4d40-9936-f7cd65a73172"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1e4992a8-636a-4a36-9593-a9a3450b31c4"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
   ],
   "buckets": [],
@@ -21,7 +52,8 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "f8b66de1-9659-4469-957e-be7220eff87a": "New entity"
+    "f8b66de1-9659-4469-957e-be7220eff87a": "GITLAB",
+    "4a0ac00e-6231-42ff-9508-aa5fed063bb1": "Bitbucket cloud"
   },
   "definitions": {
     "type": "definitions",
@@ -30,7 +62,184 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "properties": [
+          {
+            "default": null,
+            "type": "null",
+            "primaryKey": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "A",
+            "isActivated": true,
+            "required": true,
+            "GUID": "e4919988-a59b-11e6-af2e-1909f8baa290",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "default": null,
+            "type": "null",
+            "primaryKey": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "A10",
+            "isActivated": true,
+            "required": true,
+            "GUID": "e4919992-a59b-11e6-af2e-1909f8baa290",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "default": null,
+            "type": "null",
+            "primaryKey": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "A11",
+            "isActivated": true,
+            "required": true,
+            "GUID": "e4919993-a59b-11e6-af2e-1909f8baa290",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "default": null,
+            "type": "null",
+            "primaryKey": false,
+            "alternateKey": false,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "A12",
+            "isActivated": true,
+            "required": true,
+            "GUID": "e4919994-a59b-11e6-af2e-1909f8baa290",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "additionalProperties": true,
+        "alternateKey": false,
+        "childType": "object",
+        "type": "document",
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "name": "data",
+        "isActivated": true,
+        "primaryKey": false,
+        "GUID": "e4919987-a59b-11e6-af2e-1909f8baa290",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "link": "?g=gitlab&o=hackolade&r=integration-fork&f=MongoDB%2FAirFranceTestShort.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/activities/properties/data",
+        "fileType": "hackoladeSchema",
+        "definitionEntityType": "field",
+        "definitionRefs": [
+          [
+            "f8b66de1-9659-4469-957e-be7220eff87a"
+          ]
+        ]
+      },
+      {
+        "name": "New Document",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "properties": [
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New Field",
+            "isActivated": true,
+            "mode": "string",
+            "properties": [],
+            "GUID": "aae8b31b-6852-4edc-9450-fa75428edc34",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New Field1",
+            "isActivated": true,
+            "mode": "string",
+            "properties": [],
+            "GUID": "62eec964-6ba4-4393-b838-9507d26f0e80",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New Field2",
+            "isActivated": true,
+            "mode": "string",
+            "properties": [],
+            "GUID": "7cf935d0-c7dc-43da-9c1a-140f8e44811d",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "additionalProperties": false,
+        "alternateKey": false,
+        "childType": "object",
+        "type": "document",
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "GUID": "1f1921b4-c5fb-4d40-9936-f7cd65a73172",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/New Document",
+        "link": "?g=bitbucket_cloud&z=save-to-tests&o=save-to-tests&r=repo-test-3&f=test1.hck.json&b=test123",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "4a0ac00e-6231-42ff-9508-aa5fed063bb1"
+          ]
+        ]
+      }
+    ],
     "GUID": "e1f574d7-f6ba-447e-8805-8b955c64fddc"
   },
   "externalDefinitions": {
@@ -45,7 +254,7 @@
   "creationTS": "2025-11-19T05:39:37.456Z",
   "GUID": "fc06a5ee-b8ac-42f7-a08c-3d4699917d75",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-19T05:40:12.707Z",
+  "lastModifTS": "2025-11-19T05:41:50.180Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -56,16 +265,27 @@
   "applicationInformation": {
     "version": "8.6.1"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
             "GUID": "f8b66de1-9659-4469-957e-be7220eff87a",
-            "x": 1048,
-            "y": 1134,
-            "width": 240,
-            "height": 100,
+            "x": 959,
+            "y": 1125,
+            "width": 312,
+            "height": 127,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "4a0ac00e-6231-42ff-9508-aa5fed063bb1",
+            "x": 956,
+            "y": 1306,
+            "width": 196,
+            "height": 86,
             "color": {
               "hex": "#2196F3"
             }
@@ -93,6 +313,12 @@
               "size": 100,
               "x": 1048,
               "y": 1134
+            },
+            {
+              "GUID": "4a0ac00e-6231-42ff-9508-aa5fed063bb1",
+              "size": 100,
+              "x": 1080,
+              "y": 1355
             }
           ],
           "buckets": [],
@@ -103,7 +329,13 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "f8b66de1-9659-4469-957e-be7220eff87a"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
