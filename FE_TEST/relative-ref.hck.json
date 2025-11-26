@@ -1,12 +1,48 @@
 {
   "modelName": "New Model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [
+        {
+          "isActivated": true,
+          "name": "RELATIVE_REF",
+          "GUID": "b06e6432-ee0c-4be0-bb97-58a9360cba95",
+          "type": "reference",
+          "$ref": "#external/definitions/Product",
+          "refType": "polyglot",
+          "ref": "54769056-cf30-4b0c-b965-4d3377bf317e",
+          "refIdPath": [
+            "7af08cc8-0211-48f8-9b8f-ef2248eb33c6",
+            "80ca11da-04b3-4917-b7fb-e958acfd92ea",
+            "54769056-cf30-4b0c-b965-4d3377bf317e"
+          ],
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "887b40f3-bea6-4859-b95b-a457f6df79f4"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8"
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8": "New Document",
+    "b06e6432-ee0c-4be0-bb97-58a9360cba95": "RELATIVE_REF"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -14,7 +50,150 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Address ID",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "404f5440-4f6f-5fa8-b5b8-44545c884019"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Street",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "64ac9deb-d531-5c2e-9742-d374e403c39d",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Postal code",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "3e7923a3-ceca-5b37-bb9e-dd527134cc31",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "City",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "558240f1-eede-5026-8c2e-8cf20ba2d5cc",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+          }
+        ],
+        "GUID": "299ad0aa-01de-43f1-a266-bd803d9d7616",
+        "name": "Bill-to address",
+        "isActivated": true,
+        "refDescription": "Stores the default billing address for the customer. Used for invoicing, payment processing, and tax calculations.",
+        "link": "../demo-models-clone/common/Customer-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Customer management/Customer/properties/Bill-to address",
+        "fileType": "hackoladeSchema",
+        "definitionEntityType": "field",
+        "definitionRefs": []
+      },
+      {
+        "name": "Product",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Name",
+            "code": "",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "82630883-445e-42d4-89ca-10bc9b861d6e",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#2196f3"
+              }
+            }
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Description",
+            "code": "",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "foreignCollection": "",
+            "foreignField": [],
+            "GUID": "1dc1717e-f2b4-4355-8cd5-34e9340e810f"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Product identifier",
+            "code": "",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "foreignCollection": "",
+            "foreignField": [],
+            "GUID": "299d9562-3248-4b5d-8a5e-4ee6e3a2ea05",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#673bb7"
+              }
+            }
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Unit price",
+            "code": "",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "foreignCollection": "",
+            "foreignField": [],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "GUID": "d4aa7b2a-16a1-4949-b374-f6997b0a4cd3",
+            "hackoladeMeta": {
+              "styles": {}
+            }
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "54769056-cf30-4b0c-b965-4d3377bf317e",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Extended referencing - many-to-many/Product",
+        "link": "../independent_model_test.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8",
+            "b06e6432-ee0c-4be0-bb97-58a9360cba95"
+          ]
+        ]
+      }
+    ],
     "GUID": "80ca11da-04b3-4917-b7fb-e958acfd92ea"
   },
   "externalDefinitions": {
@@ -30,7 +209,7 @@
   "creationTS": "2025-11-26T13:49:13.107Z",
   "GUID": "7af08cc8-0211-48f8-9b8f-ef2248eb33c6",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-26T13:49:51.349Z",
+  "lastModifTS": "2025-11-26T13:51:23.339Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -39,10 +218,22 @@
   "applicationInformation": {
     "version": "8.6.1"
   },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8",
+            "x": 1118,
+            "y": 1140,
+            "width": 291,
+            "height": 123,
+            "color": {}
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -78,8 +269,5 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
-  },
-  "hackoladeMeta": {
-    "customPropertiesUpdated": true
   }
 }
