@@ -2,7 +2,7 @@
   "modelName": "New Model",
   "collections": [
     {
-      "collectionName": "New Document",
+      "collectionName": "ENTITY_1",
       "type": "object",
       "properties": [
         {
@@ -31,7 +31,29 @@
       },
       "isActivated": true,
       "additionalProperties": false,
-      "GUID": "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8"
+      "GUID": "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "ENTITY_2",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Order",
+      "properties": [],
+      "GUID": "9ac9d71a-6df1-4c5d-811e-046ca74eb45d",
+      "ref": "493f94a3-4dea-4686-a0b9-8cbc52faff53",
+      "refIdPath": [
+        "7af08cc8-0211-48f8-9b8f-ef2248eb33c6",
+        "80ca11da-04b3-4917-b7fb-e958acfd92ea",
+        "493f94a3-4dea-4686-a0b9-8cbc52faff53"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d61c05f0-e047-4491-a3e5-6a8f60a3115e"
+      }
     }
   ],
   "buckets": [],
@@ -40,8 +62,12 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8": "New Document",
-    "b06e6432-ee0c-4be0-bb97-58a9360cba95": "RELATIVE_REF"
+    "3d189a94-2c5b-45d4-8ea6-673ce51aa5a8": "ENTITY_1",
+    "b06e6432-ee0c-4be0-bb97-58a9360cba95": "RELATIVE_REF",
+    "9ac9d71a-6df1-4c5d-811e-046ca74eb45d": "ENTITY_2",
+    "4be69c2a-c149-47d4-942d-0557ddccbe9a": "New Field",
+    "4f7f4331-c9da-470c-a5aa-f46e40bd9130": "New Field1",
+    "966a983c-58ca-4d2b-b693-620a16a3433f": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -192,6 +218,87 @@
             "b06e6432-ee0c-4be0-bb97-58a9360cba95"
           ]
         ]
+      },
+      {
+        "name": "Order",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Order identifier",
+            "code": "order_identifier",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "GUID": "5829cfb6-5ffa-464f-accd-8ddec772485e"
+          },
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Customer identifier",
+            "code": "customer_identifier",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "foreignCollection": "9c30d616-94f8-4220-a713-0557473279b7",
+            "foreignField": [
+              "9c30d616-94f8-4220-a713-0557473279b7",
+              "da2fd91c-4b1d-4ac9-8515-3e21bacf3c7e",
+              "cb229cec-41da-4ae6-95f1-358c83f9c16f"
+            ],
+            "relationshipType": "Foreign Key",
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "GUID": "142742b0-9959-4b09-8fcc-61b588145a3f",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#9c28b1"
+              }
+            }
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Ordered date",
+            "code": "ordered_date",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "80306a4f-bc4b-4b5c-b9b1-7af9a4cd15b8",
+            "format": "date"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Status",
+            "code": "status",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "GUID": "7c9beb55-f7b5-4252-973e-7f0b9aad4da5"
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "493f94a3-4dea-4686-a0b9-8cbc52faff53",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Order",
+        "link": "../demo-models-clone/Pragmatic data modeling/3-Referencing-Oracle.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "9ac9d71a-6df1-4c5d-811e-046ca74eb45d"
+          ]
+        ]
       }
     ],
     "GUID": "80ca11da-04b3-4917-b7fb-e958acfd92ea"
@@ -209,7 +316,7 @@
   "creationTS": "2025-11-26T13:49:13.107Z",
   "GUID": "7af08cc8-0211-48f8-9b8f-ef2248eb33c6",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-26T14:04:59.013Z",
+  "lastModifTS": "2025-11-26T14:05:56.619Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -231,6 +338,14 @@
             "y": 1140,
             "width": 291,
             "height": 123,
+            "color": {}
+          },
+          {
+            "GUID": "9ac9d71a-6df1-4c5d-811e-046ca74eb45d",
+            "x": 1101,
+            "y": 1388,
+            "width": 266,
+            "height": 105,
             "color": {}
           }
         ],
@@ -259,7 +374,13 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "9ac9d71a-6df1-4c5d-811e-046ca74eb45d"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
