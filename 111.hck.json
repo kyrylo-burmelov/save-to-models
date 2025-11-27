@@ -1,0 +1,153 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "New Document",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "ddeb89e2-03d5-4629-8292-cbee06df23e5",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "d8da07e6-d29e-4af3-8469-78c8412a01d4",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "color": "#555555",
+          "GUID": "ac2b96f1-aac9-4b72-9847-aa565135c1df",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "50b2b09c-3290-4651-bfc5-2b6472dad464"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "e056cb8e-f553-4657-bd75-7d45112add5c"
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "e056cb8e-f553-4657-bd75-7d45112add5c": "New Document",
+    "ddeb89e2-03d5-4629-8292-cbee06df23e5": "New Field",
+    "d8da07e6-d29e-4af3-8469-78c8412a01d4": "New Field1",
+    "ac2b96f1-aac9-4b72-9847-aa565135c1df": "New Field2"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "df368d01-df70-4831-9e7a-36d6a3878467"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "d96972f4-a7d9-4ab1-bb02-e38763d2cf79"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "899e05ed-7380-40c8-bb62-9ae851e96986"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-11-27T09:23:14.512Z",
+  "GUID": "5dfdfea5-7c68-4edf-ad09-0984acc36581",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-11-27T09:23:32.060Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.6.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "e056cb8e-f553-4657-bd75-7d45112add5c",
+            "x": 1172,
+            "y": 1254,
+            "width": 208,
+            "height": 86,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  }
+}
