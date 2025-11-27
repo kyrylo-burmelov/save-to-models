@@ -3,56 +3,88 @@
   "collections": [
     {
       "collectionName": "New Document",
-      "type": "object",
-      "properties": [
-        {
-          "name": "New Field",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "color": "#555555",
-          "GUID": "914de4c2-6b63-425f-b4aa-599d7bf82e85",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field1",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "color": "#555555",
-          "GUID": "a490e63e-394b-42b1-9b2d-79757f8d8327",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field2",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "color": "#555555",
-          "GUID": "fbadbb7b-e152-4c20-ae4b-69567af7ff96",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        }
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Loyalty campaign",
+      "properties": [],
+      "GUID": "cdb7bbd0-66f7-4758-b2f9-3f1ab6d44535",
+      "ref": "138a8017-4801-441d-bdfe-e54f867faed2",
+      "refIdPath": [
+        "a73bb539-ff20-42d3-896b-580df7e40cba",
+        "6502a954-7df0-4b7d-ba30-351bf6b39b18",
+        "138a8017-4801-441d-bdfe-e54f867faed2"
       ],
+      "type": "reference",
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "bdc9e1ea-4372-4b0b-b914-7fd2da375b19"
+        "GUID": "9ebadb8d-1409-4ac7-b08f-65c4059f3cc5"
       },
-      "isActivated": true,
-      "additionalProperties": false,
-      "GUID": "cdb7bbd0-66f7-4758-b2f9-3f1ab6d44535"
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "New Document1",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/OrderUpdated",
+      "properties": [],
+      "GUID": "9fd5a792-9d5c-4e9c-99e9-7b98aa6cc366",
+      "ref": "30f43a54-5e73-4f88-8b7a-2901a5790a14",
+      "refIdPath": [
+        "a73bb539-ff20-42d3-896b-580df7e40cba",
+        "6502a954-7df0-4b7d-ba30-351bf6b39b18",
+        "30f43a54-5e73-4f88-8b7a-2901a5790a14"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "3e8ae669-4152-4f6c-b7c6-79f74b523d81"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "New Document2",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Stock",
+      "properties": [],
+      "GUID": "d1d25da6-f89f-4b3a-b0ad-c6505ec1396e",
+      "ref": "14dd0530-7fdc-4567-a3c4-2177fc0bd660",
+      "refIdPath": [
+        "a73bb539-ff20-42d3-896b-580df7e40cba",
+        "6502a954-7df0-4b7d-ba30-351bf6b39b18",
+        "14dd0530-7fdc-4567-a3c4-2177fc0bd660"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "c95f05f6-0ecd-4eae-b791-9705716c6887"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "New Document3",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Customer",
+      "properties": [],
+      "GUID": "a4f3f217-ea41-421e-a77a-37599e16425c",
+      "ref": "c46e4489-6888-467e-a756-5e22baabc59e",
+      "refIdPath": [
+        "a73bb539-ff20-42d3-896b-580df7e40cba",
+        "6502a954-7df0-4b7d-ba30-351bf6b39b18",
+        "c46e4489-6888-467e-a756-5e22baabc59e"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "725ca0c8-c8d4-4f4c-9fd2-03813f8cf918"
+      }
     }
   ],
   "buckets": [],
@@ -64,7 +96,22 @@
     "cdb7bbd0-66f7-4758-b2f9-3f1ab6d44535": "New Document",
     "914de4c2-6b63-425f-b4aa-599d7bf82e85": "New Field",
     "a490e63e-394b-42b1-9b2d-79757f8d8327": "New Field1",
-    "fbadbb7b-e152-4c20-ae4b-69567af7ff96": "New Field2"
+    "fbadbb7b-e152-4c20-ae4b-69567af7ff96": "New Field2",
+    "9fd5a792-9d5c-4e9c-99e9-7b98aa6cc366": "New Document1",
+    "8b01cbd9-deb3-4fa9-855a-07801fd8be1c": "New Field",
+    "be940a2b-b38e-4272-9886-80685c91b5b7": "New Field1",
+    "1a128538-7784-4449-99ae-05c338314137": "New Field2",
+    "d1d25da6-f89f-4b3a-b0ad-c6505ec1396e": "New Document2",
+    "dd378c97-9e32-4972-b1d7-fe777afd9c2b": "New Field",
+    "058618b2-5a62-4021-8b09-230ccf1f9c41": "New Field1",
+    "c27be89b-9958-4682-a70d-dee4a3e57580": "New Field2",
+    "17eb6e48-d533-4b3e-a65e-9fd355a1ab39": "New Field",
+    "a3d01107-c33d-4d83-8158-5a5ab4246ce0": "New Field1",
+    "d35c903b-5efb-466c-8de2-c82d581b8cc2": "New Field2",
+    "a4f3f217-ea41-421e-a77a-37599e16425c": "New Document3",
+    "274fc161-44b9-4f27-846d-054e8fed1bcd": "New Field",
+    "5a1aa259-6cf6-4a9b-9052-7190575e569f": "New Field1",
+    "38397644-f6ee-49eb-9931-e9b8acb7d4c2": "New Field2"
   },
   "definitions": {
     "type": "definitions",
@@ -73,7 +120,923 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "name": "Loyalty campaign",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "primaryKey": true,
+            "required": true,
+            "name": "Name",
+            "isActivated": true,
+            "GUID": "52b23ea1-067c-4f56-a31f-ad924ae36667",
+            "description": "The unique identifier for the loyalty campaign. Used by external systems and internal references to track campaign-specific data."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "primaryKey": false,
+            "required": false,
+            "name": "Description",
+            "isActivated": true,
+            "GUID": "f29ec549-bdc4-48fc-ae32-8961f523108d",
+            "description": "A textual overview of the loyalty campaign’s rules, goals, or benefits. May include promotional details or terms and conditions."
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "138a8017-4801-441d-bdfe-e54f867faed2",
+        "description": "The Loyalty Campaign entity defines a specific rewards program or promotional campaign, including its key identifying attributes and descriptive details. Each campaign can be tied to multiple customers through loyalty points accrual.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Loyalty management/Loyalty campaign",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=marketing%2FLoyalty-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "cdb7bbd0-66f7-4758-b2f9-3f1ab6d44535"
+          ]
+        ]
+      },
+      {
+        "name": "OrderUpdated",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "order_id",
+            "code": "order_id",
+            "isActivated": true,
+            "description": "A unique identifier for the order being updated. This field links the update event to a specific order within the system.",
+            "primaryKey": true,
+            "required": true,
+            "GUID": "f48efb72-3d8b-4734-9bbb-c761633d1281"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "update_timestamp",
+            "code": "update_timestamp",
+            "isActivated": true,
+            "description": "The precise timestamp of when the update occurred, represented as the number of milliseconds since the Unix epoch. This field is crucial for maintaining an accurate audit trail of order modifications.",
+            "primaryKey": true,
+            "required": true,
+            "GUID": "bb3a75b5-8925-4be2-8911-b02d7e9084bc"
+          },
+          {
+            "choice": "oneOf",
+            "isActivated": true,
+            "description": "An optional field that, if present, contains an array of product update details.\n\nUsage Note:\nThis field is null if there is no product-related update for the order.",
+            "name": "product_update",
+            "code": "product_update",
+            "type": "choice",
+            "required": true,
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "null",
+                    "name": "no product update",
+                    "code": "no_product_update",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "2896aca8-8ee6-4527-872a-ef7dd11c528c"
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "256c219c-0562-475e-8928-50fcf1ec34f6",
+                "subschema": true
+              },
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "array",
+                    "properties": [
+                      {
+                        "type": "document",
+                        "properties": [
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "product_id",
+                            "code": "product_id",
+                            "isActivated": true,
+                            "description": "A unique identifier for the product, used to reference the product in the catalog or inventory system.",
+                            "primaryKey": false,
+                            "required": true,
+                            "GUID": "509b5987-68ef-5e9a-a895-09dda3ac5782"
+                          },
+                          {
+                            "type": "integer",
+                            "properties": [],
+                            "name": "quantity",
+                            "code": "quantity",
+                            "isActivated": true,
+                            "description": "Specifies the number of units ordered for the corresponding product, ensuring accurate order fulfillment and inventory management.",
+                            "primaryKey": false,
+                            "required": true,
+                            "GUID": "bd7e531a-96c9-5921-82c9-6a707fafaadf"
+                          }
+                        ],
+                        "name": "Product",
+                        "code": "product",
+                        "displayName": "Product",
+                        "isActivated": true,
+                        "dependencies": [],
+                        "primaryKey": false,
+                        "required": true,
+                        "GUID": "3542b496-374f-48a1-a355-cfdc64bdac49",
+                        "arrayItem": true
+                      }
+                    ],
+                    "additionalItems": true,
+                    "name": "updated_product_list",
+                    "code": "updated_product_list",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "uniqueItems": false,
+                    "GUID": "b917d2dc-4b38-4842-b649-a1412f95d72c"
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "07d66b8a-af16-4ce7-843e-2e26d0339a46",
+                "subschema": true
+              }
+            ],
+            "GUID": "b56995bd-208f-46fd-a30e-e66edbba6ea0"
+          },
+          {
+            "choice": "oneOf",
+            "isActivated": true,
+            "description": "An optional field that, if present, captures changes to the order’s status.\n\nUsage Note:\nThis field is null if the update does not involve a status change.",
+            "name": "status_update",
+            "code": "status_update",
+            "type": "choice",
+            "required": true,
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "null",
+                    "name": "no status update",
+                    "code": "no_status_update",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "0a136afe-5e5e-4143-ae0c-d301889f5a48"
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "b5a88829-601e-4c2a-9c1a-e2f0889aefa3",
+                "subschema": true
+              },
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "document",
+                    "properties": [
+                      {
+                        "type": "string",
+                        "properties": [],
+                        "name": "previous_status",
+                        "code": "previous_status",
+                        "isActivated": true,
+                        "description": "The previous status of the order before the update.",
+                        "primaryKey": false,
+                        "required": true,
+                        "GUID": "d2df36c6-36e3-47f9-94a6-212c3022dbc5"
+                      },
+                      {
+                        "type": "string",
+                        "properties": [],
+                        "name": "new_status",
+                        "code": "new_status",
+                        "isActivated": true,
+                        "description": "The updated status of the order after the change.",
+                        "primaryKey": false,
+                        "required": true,
+                        "GUID": "a66eec5a-a5ed-4d3b-aacc-6e90765c9be3"
+                      }
+                    ],
+                    "name": "status_update",
+                    "code": "status_update",
+                    "isActivated": true,
+                    "description": "Captures changes to the order's status.",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "1a104ab2-a5de-405e-9e62-16294bc082b9"
+                  }
+                ],
+                "additionalProperties": true,
+                "isActivated": true,
+                "GUID": "4f1e9f49-7560-4fc3-a1fe-be95b5320c6c",
+                "subschema": true
+              }
+            ],
+            "GUID": "3ae3c4bc-9c45-45b7-8720-b42439eb5164"
+          }
+        ],
+        "additionalProperties": true,
+        "color": "#555555",
+        "GUID": "30f43a54-5e73-4f88-8b7a-2901a5790a14",
+        "description": "The OrderUpdated record represents an event that signifies modifications made to an existing order within the e-commerce system. It captures the unique order identifier, the exact timestamp of the update, and the details of the update. Update details are provided through two optional fields—product_update and status_update—each of which can be null if not applicable.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/com.ecommerce.bike.orders/OrderUpdated",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=ecommerce%2FOrder+event+management-Apache+Avro+Schema.hck.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "9fd5a792-9d5c-4e9c-99e9-7b98aa6cc366"
+          ]
+        ]
+      },
+      {
+        "name": "Stock",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Product SKU",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "6f007354-8393-4d66-99c6-53161f2b6041",
+            "foreignCollection": "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b",
+            "foreignField": [
+              "d69b2dea-e91d-49e8-8a14-f9c3ab1af88b",
+              "6b6386de-f9dc-46d9-9fc2-16d3c2c58340"
+            ],
+            "relationshipType": "Foreign Key",
+            "description": "A unique identifier for the product in stock. Serves as a foreign key linking to the Product entity, ensuring that each stock record is associated with an existing product."
+          },
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Available quantity",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "0a217bbc-b01e-4a87-82be-e32251c403e5",
+            "description": "Represents the current quantity of the product available for sale. This value is essential for **inventory management**, helping to determine stock levels and facilitate order fulfillment."
+          },
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Minimum quantity for reorder",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "1829692f-ff91-4301-a113-9b09becc8fea",
+            "description": "Indicates the threshold quantity at which a reorder should be triggered. This helps prevent stockouts by ensuring that inventory is replenished in a timely manner when levels fall below a certain point."
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Name",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "ee4486fd-34d7-4b0b-9828-3c421f8de5df",
+                "description": "The name of the warehouse where the product is stored."
+              },
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Address ID",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": false,
+                    "GUID": "ddb14f13-5334-5983-bec4-781b8f8b03d8"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Street",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "efae929a-3753-5626-b255-62006a1eb9b8",
+                    "description": "Specifies the street name and number, providing detailed location information within a city or town."
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Postal code",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "7ed09fd1-15a2-559b-8006-3fb265a5d5dd",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "City",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "83ac87b2-9363-5229-aad3-db311d9b09bb",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+                  }
+                ],
+                "GUID": "e486e793-d174-4dde-a091-f01158f80e86",
+                "name": "Address",
+                "isActivated": true,
+                "refDescription": "The physical address of the warehouse, which is important for logistics and shipping purposes."
+              }
+            ],
+            "name": "Warehouse",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "8b6314e5-b395-43b9-a367-4fbde307f10d",
+            "description": "Represents the location where the stock is physically stored. Captures essential details for distribution and logistics."
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "14dd0530-7fdc-4567-a3c4-2177fc0bd660",
+        "description": "Tracks the inventory levels of each product. Contains information about the **quantity** of each product available for sale, **reorder levels**, and **warehouse locations**. This entity is vital for inventory management, ensuring that products are adequately stocked to meet customer demand and prevent stockouts.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Product management/Stock",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=merchandising%2FProduct-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "d1d25da6-f89f-4b3a-b0ad-c6505ec1396e"
+          ]
+        ]
+      },
+      {
+        "name": "Customer",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Customer identifier",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "b9af1859-4e88-43ac-ade9-bc80bc2d0858"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Lastname",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "73b2ee6f-cd9f-4694-89b6-855db68640cd"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Firstname",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "daa30378-a889-4d7c-b31d-12fca97a75ea"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Email",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "e7dfb89e-c757-46ba-a006-5f958d7ed15c"
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Street",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "0e8f845d-cd03-4514-a058-191401c24df8"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "House number",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "7f8c8891-d44d-4bc1-bd01-3c62b827d5ea"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "e5b68321-5d79-47cc-a0cc-09b7132ab857",
+                "name": "Postal code"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "City",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "9079b823-0a5b-4748-85f7-d2d17709dcaf"
+              }
+            ],
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#ff9801"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "f024c7ff-b38e-47d1-9260-202dbffdb319",
+            "name": "Address",
+            "comments": "Address object is embedded in several entities, duplicated entities Address will be created in Derived when normalization is applied."
+          },
+          {
+            "type": "array",
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "numeric",
+                    "properties": [],
+                    "name": "Order identifier",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": false,
+                    "GUID": "67ab32d3-b425-426b-98fa-1dd2834841c0"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Ordered date",
+                    "isActivated": true,
+                    "required": false,
+                    "primaryKey": false,
+                    "GUID": "00dcac6c-e850-44d6-b6d4-9643a9ea7b84",
+                    "format": "date"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Status",
+                    "isActivated": true,
+                    "required": false,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "primaryKey": false,
+                    "GUID": "424563d5-8d31-4343-ace2-0b7646743696"
+                  },
+                  {
+                    "type": "array",
+                    "properties": [
+                      {
+                        "type": "document",
+                        "properties": [
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Quantity",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "7b1fe763-6527-4d5f-881d-4f3da58eb721"
+                          },
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Product identifier",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "c637cbd1-a67b-476e-a11f-f4b3c8959a3e"
+                          },
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Product title",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "31afcbde-d331-4929-ae31-71b7f44ec244"
+                          }
+                        ],
+                        "isActivated": true,
+                        "GUID": "310eab05-4a15-4a5d-81a0-4396b2bf0432",
+                        "arrayItem": true,
+                        "primaryKey": false,
+                        "required": false,
+                        "displayName": "Ordered product"
+                      }
+                    ],
+                    "additionalItems": true,
+                    "isActivated": true,
+                    "GUID": "46a3e20e-460b-4aed-a738-d716fe77ed27",
+                    "primaryKey": false,
+                    "required": false,
+                    "name": "Ordered products"
+                  }
+                ],
+                "isActivated": true,
+                "GUID": "4d661ddc-8b2a-409b-bd36-d2a06d4da791",
+                "arrayItem": true,
+                "primaryKey": false,
+                "required": false,
+                "displayName": "Order"
+              }
+            ],
+            "additionalItems": true,
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#f54337"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "5394c5e8-bb87-4b5f-9060-921225506f1a",
+            "name": "Orders",
+            "comments": "A Product can be marked as Favorite by several Customers, but this denormalized modeling approach does not clearly represent that.\n\nIn this case, the cardinality should be n-n instead of n-1 in the derivation, but Hackolade Studio cannot identify this."
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Plan identifier",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "a1d74fa3-610c-423e-be9b-ad94723131fc"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Plan name",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "8ef2f03a-5a94-48fa-8c7e-cf25ca2c9b13"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "e4a90b49-d1bd-4f6f-928b-9d28c34f79db",
+                "name": "Description"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "494faa91-b97c-47eb-8d2c-76ad3ce2c04a",
+                "name": "Monthly fee"
+              }
+            ],
+            "name": "Membership plan",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#9c28b1"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "b0053661-3aee-4ea3-8c1f-acde6766e8a8"
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "c46e4489-6888-467e-a756-5e22baabc59e",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Embedding/Customer",
+        "link": "demo-models-clone/Pragmatic data modeling/1-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "a4f3f217-ea41-421e-a77a-37599e16425c"
+          ]
+        ]
+      },
+      {
+        "name": "Customer",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Customer identifier",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "b9af1859-4e88-43ac-ade9-bc80bc2d0858"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Lastname",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "73b2ee6f-cd9f-4694-89b6-855db68640cd"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Firstname",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "daa30378-a889-4d7c-b31d-12fca97a75ea"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Email",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "e7dfb89e-c757-46ba-a006-5f958d7ed15c"
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Street",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "0e8f845d-cd03-4514-a058-191401c24df8"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "House number",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "7f8c8891-d44d-4bc1-bd01-3c62b827d5ea"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "e5b68321-5d79-47cc-a0cc-09b7132ab857",
+                "name": "Postal code"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "City",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "9079b823-0a5b-4748-85f7-d2d17709dcaf"
+              }
+            ],
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#ff9801"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "f024c7ff-b38e-47d1-9260-202dbffdb319",
+            "name": "Address",
+            "comments": "Address object is embedded in several entities, duplicated entities Address will be created in Derived when normalization is applied."
+          },
+          {
+            "type": "array",
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "numeric",
+                    "properties": [],
+                    "name": "Order identifier",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": false,
+                    "GUID": "67ab32d3-b425-426b-98fa-1dd2834841c0"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Ordered date",
+                    "isActivated": true,
+                    "required": false,
+                    "primaryKey": false,
+                    "GUID": "00dcac6c-e850-44d6-b6d4-9643a9ea7b84",
+                    "format": "date"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Status",
+                    "isActivated": true,
+                    "required": false,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "primaryKey": false,
+                    "GUID": "424563d5-8d31-4343-ace2-0b7646743696"
+                  },
+                  {
+                    "type": "array",
+                    "properties": [
+                      {
+                        "type": "document",
+                        "properties": [
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Quantity",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "7b1fe763-6527-4d5f-881d-4f3da58eb721"
+                          },
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Product identifier",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "c637cbd1-a67b-476e-a11f-f4b3c8959a3e"
+                          },
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Product title",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "31afcbde-d331-4929-ae31-71b7f44ec244"
+                          }
+                        ],
+                        "isActivated": true,
+                        "GUID": "310eab05-4a15-4a5d-81a0-4396b2bf0432",
+                        "arrayItem": true,
+                        "primaryKey": false,
+                        "required": false,
+                        "displayName": "Ordered product"
+                      }
+                    ],
+                    "additionalItems": true,
+                    "isActivated": true,
+                    "GUID": "46a3e20e-460b-4aed-a738-d716fe77ed27",
+                    "primaryKey": false,
+                    "required": false,
+                    "name": "Ordered products"
+                  }
+                ],
+                "isActivated": true,
+                "GUID": "4d661ddc-8b2a-409b-bd36-d2a06d4da791",
+                "arrayItem": true,
+                "primaryKey": false,
+                "required": false,
+                "displayName": "Order"
+              }
+            ],
+            "additionalItems": true,
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#f54337"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "5394c5e8-bb87-4b5f-9060-921225506f1a",
+            "name": "Orders",
+            "comments": "A Product can be marked as Favorite by several Customers, but this denormalized modeling approach does not clearly represent that.\n\nIn this case, the cardinality should be n-n instead of n-1 in the derivation, but Hackolade Studio cannot identify this."
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Plan identifier",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "a1d74fa3-610c-423e-be9b-ad94723131fc"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Plan name",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "8ef2f03a-5a94-48fa-8c7e-cf25ca2c9b13"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "e4a90b49-d1bd-4f6f-928b-9d28c34f79db",
+                "name": "Description"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "494faa91-b97c-47eb-8d2c-76ad3ce2c04a",
+                "name": "Monthly fee"
+              }
+            ],
+            "name": "Membership plan",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#9c28b1"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "b0053661-3aee-4ea3-8c1f-acde6766e8a8"
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "c46e4489-6888-467e-a756-5e22baabc59e",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Embedding/Customer",
+        "link": "demo-models-clone/Pragmatic data modeling/1-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "a4f3f217-ea41-421e-a77a-37599e16425c"
+          ]
+        ]
+      }
+    ],
     "GUID": "6502a954-7df0-4b7d-ba30-351bf6b39b18"
   },
   "externalDefinitions": {
@@ -89,7 +1052,7 @@
   "creationTS": "2025-11-27T07:57:28.589Z",
   "GUID": "a73bb539-ff20-42d3-896b-580df7e40cba",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-27T08:18:06.151Z",
+  "lastModifTS": "2025-11-27T08:28:13.398Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -104,10 +1067,34 @@
         "erd": [
           {
             "GUID": "cdb7bbd0-66f7-4758-b2f9-3f1ab6d44535",
-            "x": 1424,
-            "y": 1330,
+            "x": 1161,
+            "y": 1206,
             "width": 208,
-            "height": 86,
+            "height": 69,
+            "color": {}
+          },
+          {
+            "GUID": "9fd5a792-9d5c-4e9c-99e9-7b98aa6cc366",
+            "x": 1107,
+            "y": 1324,
+            "width": 306,
+            "height": 339,
+            "color": {}
+          },
+          {
+            "GUID": "d1d25da6-f89f-4b3a-b0ad-c6505ec1396e",
+            "x": 1278,
+            "y": 1766,
+            "width": 321,
+            "height": 213,
+            "color": {}
+          },
+          {
+            "GUID": "a4f3f217-ea41-421e-a77a-37599e16425c",
+            "x": 1134,
+            "y": 2186,
+            "width": 330,
+            "height": 465,
             "color": {}
           }
         ],
