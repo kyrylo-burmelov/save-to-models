@@ -3,16 +3,22 @@
   "collections": [
     {
       "collectionName": "New Document",
-      "type": "object",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Customer",
       "properties": [],
+      "GUID": "4469b40d-d4a5-458f-b8f4-04db40228413",
+      "ref": "c46e4489-6888-467e-a756-5e22baabc59e",
+      "refIdPath": [
+        "3914ca12-6049-49d4-9552-82b273c33e8d",
+        "04af76a9-081d-48bc-8b1e-7f9fdcf964ef",
+        "c46e4489-6888-467e-a756-5e22baabc59e"
+      ],
+      "type": "reference",
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "e29e9e6d-2aaf-4d28-9e47-8eec027904cf"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "GUID": "4469b40d-d4a5-458f-b8f4-04db40228413"
+        "GUID": "b5da766a-ad1b-48c4-9cc7-31556e0d00b7"
+      }
     }
   ],
   "buckets": [],
@@ -30,7 +36,276 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "name": "Customer",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Customer identifier",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "b9af1859-4e88-43ac-ade9-bc80bc2d0858"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Lastname",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "73b2ee6f-cd9f-4694-89b6-855db68640cd"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Firstname",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "daa30378-a889-4d7c-b31d-12fca97a75ea"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Email",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "e7dfb89e-c757-46ba-a006-5f958d7ed15c"
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Street",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "0e8f845d-cd03-4514-a058-191401c24df8"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "House number",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "7f8c8891-d44d-4bc1-bd01-3c62b827d5ea"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "e5b68321-5d79-47cc-a0cc-09b7132ab857",
+                "name": "Postal code"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "City",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "9079b823-0a5b-4748-85f7-d2d17709dcaf"
+              }
+            ],
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#ff9801"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "f024c7ff-b38e-47d1-9260-202dbffdb319",
+            "name": "Address",
+            "comments": "Address object is embedded in several entities, duplicated entities Address will be created in Derived when normalization is applied."
+          },
+          {
+            "type": "array",
+            "properties": [
+              {
+                "type": "document",
+                "properties": [
+                  {
+                    "type": "numeric",
+                    "properties": [],
+                    "name": "Order identifier",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "required": false,
+                    "GUID": "67ab32d3-b425-426b-98fa-1dd2834841c0"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Ordered date",
+                    "isActivated": true,
+                    "required": false,
+                    "primaryKey": false,
+                    "GUID": "00dcac6c-e850-44d6-b6d4-9643a9ea7b84",
+                    "format": "date"
+                  },
+                  {
+                    "type": "string",
+                    "properties": [],
+                    "name": "Status",
+                    "isActivated": true,
+                    "required": false,
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                    "primaryKey": false,
+                    "GUID": "424563d5-8d31-4343-ace2-0b7646743696"
+                  },
+                  {
+                    "type": "array",
+                    "properties": [
+                      {
+                        "type": "document",
+                        "properties": [
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Quantity",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "7b1fe763-6527-4d5f-881d-4f3da58eb721"
+                          },
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Product identifier",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "c637cbd1-a67b-476e-a11f-f4b3c8959a3e"
+                          },
+                          {
+                            "type": "string",
+                            "properties": [],
+                            "name": "Product title",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "31afcbde-d331-4929-ae31-71b7f44ec244"
+                          }
+                        ],
+                        "isActivated": true,
+                        "GUID": "310eab05-4a15-4a5d-81a0-4396b2bf0432",
+                        "arrayItem": true,
+                        "primaryKey": false,
+                        "required": false,
+                        "displayName": "Ordered product"
+                      }
+                    ],
+                    "additionalItems": true,
+                    "isActivated": true,
+                    "GUID": "46a3e20e-460b-4aed-a738-d716fe77ed27",
+                    "primaryKey": false,
+                    "required": false,
+                    "name": "Ordered products"
+                  }
+                ],
+                "isActivated": true,
+                "GUID": "4d661ddc-8b2a-409b-bd36-d2a06d4da791",
+                "arrayItem": true,
+                "primaryKey": false,
+                "required": false,
+                "displayName": "Order"
+              }
+            ],
+            "additionalItems": true,
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#f54337"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "5394c5e8-bb87-4b5f-9060-921225506f1a",
+            "name": "Orders",
+            "comments": "A Product can be marked as Favorite by several Customers, but this denormalized modeling approach does not clearly represent that.\n\nIn this case, the cardinality should be n-n instead of n-1 in the derivation, but Hackolade Studio cannot identify this."
+          },
+          {
+            "type": "document",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Plan identifier",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "a1d74fa3-610c-423e-be9b-ad94723131fc"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "name": "Plan name",
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "8ef2f03a-5a94-48fa-8c7e-cf25ca2c9b13"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "e4a90b49-d1bd-4f6f-928b-9d28c34f79db",
+                "name": "Description"
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "required": false,
+                "GUID": "494faa91-b97c-47eb-8d2c-76ad3ce2c04a",
+                "name": "Monthly fee"
+              }
+            ],
+            "name": "Membership plan",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#9c28b1"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "b0053661-3aee-4ea3-8c1f-acde6766e8a8"
+          }
+        ],
+        "additionalProperties": false,
+        "color": "#555555",
+        "GUID": "c46e4489-6888-467e-a756-5e22baabc59e",
+        "description": "",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Embedding/Customer",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=Pragmatic+data+modeling%2F1-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "4469b40d-d4a5-458f-b8f4-04db40228413"
+          ]
+        ]
+      }
+    ],
     "GUID": "04af76a9-081d-48bc-8b1e-7f9fdcf964ef"
   },
   "externalDefinitions": {
@@ -46,7 +321,7 @@
   "creationTS": "2025-11-28T09:36:45.114Z",
   "GUID": "3914ca12-6049-49d4-9552-82b273c33e8d",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-28T09:37:03.552Z",
+  "lastModifTS": "2025-11-28T09:37:48.224Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -63,8 +338,8 @@
             "GUID": "4469b40d-d4a5-458f-b8f4-04db40228413",
             "x": 1123,
             "y": 1197,
-            "width": 240,
-            "height": 100,
+            "width": 330,
+            "height": 465,
             "color": {}
           }
         ],
