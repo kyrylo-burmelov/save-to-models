@@ -1,0 +1,5068 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "EXTRA_GITHUB (PUBLIC)",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/Address",
+      "properties": [],
+      "GUID": "c96785e0-93b4-4370-bb4c-73612016f989",
+      "ref": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ef1e9a24-4103-4f37-8efe-2357e7f26e74"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "EXTRA_GITHUB (PRIVATE)",
+      "refType": "external",
+      "refNamePath": "#external/definitions/glossary",
+      "properties": [],
+      "GUID": "b2ca52a3-0dac-4824-a410-2f504693a469",
+      "ref": "ed60ab88-aeb5-455a-9c28-5afa16ee641b",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "7eace1f8-ab8c-4023-89c8-098208d1d31b",
+        "ed60ab88-aeb5-455a-9c28-5afa16ee641b"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1e0afdb3-79cc-4d30-8741-4446ce925e4a"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "EXTRA_GITLAB (PRIVATE)",
+      "refType": "polyglot",
+      "refNamePath": "#external/definitions/users",
+      "properties": [],
+      "GUID": "ca08c454-1597-4277-8dff-70ca403697cd",
+      "ref": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "9cff72b0-02e2-11e6-a6da-47e48d71d0e8"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e327d71d-ba30-4208-aab8-98edc588b7fc"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "error": {
+        "refPath": true
+      }
+    },
+    {
+      "collectionName": "INTRA",
+      "refType": "external",
+      "refNamePath": "#external/definitions/Order",
+      "properties": [],
+      "GUID": "06797420-c394-4793-acdc-c61f47504c6b",
+      "ref": "199cb6ae-221e-42bd-a1ff-407d8076146a",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "7eace1f8-ab8c-4023-89c8-098208d1d31b",
+        "199cb6ae-221e-42bd-a1ff-407d8076146a"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "0fbf8549-f0ae-40e8-9d5e-7f8bde03a52c"
+      },
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "users",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "c2c5cea4-b786-4c4b-85cc-a1fbb507b52c"
+      },
+      "additionalProperties": false,
+      "GUID": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+      "$ref": "#external/definitions/users",
+      "refType": "polyglot",
+      "ref": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "b1efe2ac-3178-4870-82d3-4fcba440bd88"
+      ],
+      "description": "users: accounts of people who create, comment, and manage blogs",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "fc983e47-d931-4de2-b065-b8a503490ad8",
+            "childRelationships": [
+              "94b07615-7ea5-498b-b53f-939c7000207d",
+              "03f370bc-5d56-4ade-9bec-a87bf9269520",
+              "0c6ce4de-584a-45da-88e0-67a3d506d5f8",
+              "c05f66de-198f-4886-ac2b-2264bbce9792",
+              "e676d63a-8f00-49ed-a447-f2a1845c623b"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "blogs",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "369ef0d1-04a1-4b2e-a091-ce0447aa9065"
+      },
+      "additionalProperties": false,
+      "GUID": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+      "$ref": "#external/definitions/blogs",
+      "refType": "polyglot",
+      "ref": "f81efc89-8397-45e9-9379-fc8c401401c9",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "f81efc89-8397-45e9-9379-fc8c401401c9"
+      ],
+      "description": "blogs: individual blog sites owned by users",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "0aaf9492-619d-46c8-97f4-6e957531c417",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+            "foreignField": [
+              "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ],
+            "parentRelationship": "94b07615-7ea5-498b-b53f-939c7000207d"
+          },
+          {
+            "GUID": "63cabcd9-1b4a-4151-9a89-16e6039dd628",
+            "childRelationships": [
+              "7c941b73-82a9-476f-84d9-b92f00105465",
+              "99e16188-a76d-48eb-80b7-80c7ec15640f",
+              "9bde9457-074b-4219-8c3c-7dad458c18cb",
+              "d349c66b-34bb-4698-a8c1-f4ebcc5e9de9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "posts",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "375ffaa2-7c8b-44a8-924b-96b1f08b4076"
+      },
+      "additionalProperties": false,
+      "GUID": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+      "$ref": "#external/definitions/posts",
+      "refType": "polyglot",
+      "ref": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "43321fc0-0908-43fa-bf2c-1e837c341b0e"
+      ],
+      "description": "posts: blog posts authored by users within a blog",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "b4a668f6-dd8e-4890-86c4-7be37fe6c964",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+            "foreignField": [
+              "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ],
+            "parentRelationship": "7c941b73-82a9-476f-84d9-b92f00105465"
+          },
+          {
+            "GUID": "a73cadc2-430e-4b19-82df-ad366f64e403",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+            "foreignField": [
+              "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ],
+            "parentRelationship": "03f370bc-5d56-4ade-9bec-a87bf9269520"
+          },
+          {
+            "GUID": "d9b6c4f7-515d-4ca5-b158-65365e7b5c54",
+            "childRelationships": [
+              "ed690529-7a32-4b66-9be8-fc191bb22ac6",
+              "cc02f3dd-56d1-4016-a020-4b6b0d53a1cd"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "post_revisions",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "8a6fbc58-a51b-424c-a318-f98345e62e73"
+      },
+      "additionalProperties": false,
+      "GUID": "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d",
+      "$ref": "#external/definitions/post_revisions",
+      "refType": "polyglot",
+      "ref": "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "a3600622-b0b8-4fde-91a8-c1ccf695868f"
+      ],
+      "description": "post_revisions: immutable versions of a post content for audit",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "fe2f634f-9266-4d26-bf18-e45842ab671b",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+            "foreignField": [
+              "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+              "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+              "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+            ],
+            "parentRelationship": "ed690529-7a32-4b66-9be8-fc191bb22ac6"
+          },
+          {
+            "GUID": "5431d582-eef1-4f01-9f48-a41cf9f2a44c",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+            "foreignField": [
+              "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ],
+            "parentRelationship": "0c6ce4de-584a-45da-88e0-67a3d506d5f8"
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "categories",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "9c49ff12-d78e-42f9-a554-e579ff11a182"
+      },
+      "additionalProperties": false,
+      "GUID": "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+      "$ref": "#external/definitions/categories",
+      "refType": "polyglot",
+      "ref": "8da0b810-b703-487d-be35-7782896ef9f2",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "8da0b810-b703-487d-be35-7782896ef9f2"
+      ],
+      "description": "categories: hierarchical categories per blog",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "00899342-f3b3-4df7-a4b9-a44d9e5a6773",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+            "foreignField": [
+              "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ],
+            "parentRelationship": "99e16188-a76d-48eb-80b7-80c7ec15640f"
+          },
+          {
+            "GUID": "90a673be-2f06-4985-a342-70329c7cf60e",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+            "foreignField": [
+              "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+              "8da0b810-b703-487d-be35-7782896ef9f2",
+              "95100e7e-6a58-4aa7-acd2-bf7ae8a72bb9"
+            ],
+            "parentRelationship": "6705d7d9-6eb3-469c-93de-a1967eb3f167"
+          },
+          {
+            "GUID": "95100e7e-6a58-4aa7-acd2-bf7ae8a72bb9",
+            "childRelationships": [
+              "6705d7d9-6eb3-469c-93de-a1967eb3f167"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "tags",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "a7d45461-c434-4bee-8593-1c29c297939e"
+      },
+      "additionalProperties": false,
+      "GUID": "fdaa949b-7d37-4703-9258-de0d76d597a5",
+      "$ref": "#external/definitions/tags",
+      "refType": "polyglot",
+      "ref": "f2723b4e-52f5-4be6-a46b-0849e9a017d5",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "f2723b4e-52f5-4be6-a46b-0849e9a017d5"
+      ],
+      "description": "tags: flat tags per blog",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "abb7dfef-e3ab-4c03-8a0a-cd1081b87b11",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+            "foreignField": [
+              "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ],
+            "parentRelationship": "9bde9457-074b-4219-8c3c-7dad458c18cb"
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "post_tags",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "15fe3924-bd8c-46a7-805a-7cd18bd9d60f"
+      },
+      "additionalProperties": false,
+      "GUID": "33a032bc-aba7-40f9-a034-9a98b9baff06",
+      "$ref": "#external/definitions/post_tags",
+      "refType": "polyglot",
+      "ref": "c641f3da-fed0-439b-823d-6896558a0df3",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "c641f3da-fed0-439b-823d-6896558a0df3"
+      ],
+      "description": "post_tags: junction table between posts and tags",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "comments",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "8e9d8f11-fe26-4b76-8f24-0993261b01a2"
+      },
+      "additionalProperties": false,
+      "GUID": "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+      "$ref": "#external/definitions/comments",
+      "refType": "polyglot",
+      "ref": "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "557f40f0-fade-4ce1-9d90-2c664d1d15e0"
+      ],
+      "description": "comments: user comments on posts with threaded replies",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "2448bcc3-5e0b-418a-a946-e925a5a1a25e",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+            "foreignField": [
+              "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+              "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+              "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+            ],
+            "parentRelationship": "cc02f3dd-56d1-4016-a020-4b6b0d53a1cd"
+          },
+          {
+            "GUID": "d3b452e4-e642-4e5b-8a0d-7cf2c5bd4ae6",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+            "foreignField": [
+              "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ],
+            "parentRelationship": "c05f66de-198f-4886-ac2b-2264bbce9792"
+          },
+          {
+            "GUID": "aa3af5ba-141c-4fca-82c1-5d7bfbd2a06c",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+            "foreignField": [
+              "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+              "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+              "9da74043-bd9c-4de9-945e-dc1059143791"
+            ],
+            "parentRelationship": "030a2abb-a7ed-4e40-a6d5-4816f716d902"
+          },
+          {
+            "GUID": "9da74043-bd9c-4de9-945e-dc1059143791",
+            "childRelationships": [
+              "030a2abb-a7ed-4e40-a6d5-4816f716d902"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "media_assets",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "d6924a57-f4eb-454c-94e2-60f9df841edd"
+      },
+      "additionalProperties": false,
+      "GUID": "7917a648-e546-40c6-8a40-b877f705e9a7",
+      "$ref": "#external/definitions/media_assets",
+      "refType": "polyglot",
+      "ref": "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "223dc4da-cdaf-4853-ae5c-d401d3f068fc"
+      ],
+      "description": "media_assets: files uploaded and attached across a blog",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "referenceDiff": {
+        "properties": [
+          {
+            "GUID": "c8afeaf9-d1d9-4cee-abcc-bee18b1528e0",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+            "foreignField": [
+              "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ],
+            "parentRelationship": "d349c66b-34bb-4698-a8c1-f4ebcc5e9de9"
+          },
+          {
+            "GUID": "637a8119-5267-431e-b94c-b47f1804ef51",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+            "foreignField": [
+              "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ],
+            "parentRelationship": "e676d63a-8f00-49ed-a447-f2a1845c623b"
+          }
+        ]
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "follows",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "7be06a6b-761c-4d24-837d-e461e73b6d5a"
+      },
+      "additionalProperties": false,
+      "GUID": "84b807f1-1bcd-42f5-bf70-7e3cbab177bb",
+      "$ref": "#external/definitions/follows",
+      "refType": "polyglot",
+      "ref": "dfb069ff-6086-40ab-bbbb-516b671598a3",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "dfb069ff-6086-40ab-bbbb-516b671598a3"
+      ],
+      "description": "follows: user follows a blog to receive updates",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [
+    {
+      "name": "USER_writes_POST",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "writes",
+      "parentCollection": "",
+      "childCollection": "",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "036a897a-409e-44fb-8b9f-69fe248c9d1c",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1386,
+            "y": 1260
+          },
+          {
+            "x": 1285,
+            "y": 1260
+          },
+          {
+            "x": 1285,
+            "y": 1173
+          },
+          {
+            "x": 1184,
+            "y": 1173
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "hackoladeMeta": {},
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/USER_writes_POST",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "ccc0c2a2-236b-4757-af55-e7201cfa7b6f"
+      ],
+      "ref": "ccc0c2a2-236b-4757-af55-e7201cfa7b6f",
+      "GUID": "25879be1-8bc1-4f88-8bb2-bb635e7d4a25"
+    },
+    {
+      "name": "USER_writes_COMMENT",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "writes",
+      "parentCollection": "",
+      "childCollection": "",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "d3be87f5-b29d-43a0-bf37-96ad21fa5c09",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1361,
+            "y": 1106
+          },
+          {
+            "x": 1272.5,
+            "y": 1106
+          },
+          {
+            "x": 1272.5,
+            "y": 1145
+          },
+          {
+            "x": 1184,
+            "y": 1145
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "hackoladeMeta": {},
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/USER_writes_COMMENT",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "7dcc2176-79ba-49ad-934a-ae1baee844c3"
+      ],
+      "ref": "7dcc2176-79ba-49ad-934a-ae1baee844c3",
+      "GUID": "70e23ed9-b490-4da0-a361-d1bfa3200d87"
+    },
+    {
+      "name": "POST_has_COMMENT",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "has",
+      "parentCollection": "",
+      "childCollection": "",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "8565e50d-34ad-449b-b5b5-6836ab24776c",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1583,
+            "y": 1106
+          },
+          {
+            "x": 1621,
+            "y": 1106
+          },
+          {
+            "x": 1621,
+            "y": 1260
+          },
+          {
+            "x": 1596,
+            "y": 1260
+          }
+        ],
+        "sides": [
+          "right",
+          "right"
+        ]
+      },
+      "hackoladeMeta": {},
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/POST_has_COMMENT",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "efb2cb3e-487c-408c-bcad-06b8c1e5729b"
+      ],
+      "ref": "efb2cb3e-487c-408c-bcad-06b8c1e5729b",
+      "GUID": "459e00f7-1c2d-4db9-a045-dd3f1658c64f"
+    },
+    {
+      "name": "users_follows_follows",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "follows",
+      "parentCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+      "childCollection": "84b807f1-1bcd-42f5-bf70-7e3cbab177bb",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "3b0e54a1-50eb-478a-b890-2031d89e51ce",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1907,
+            "y": 1511
+          },
+          {
+            "x": 1907,
+            "y": 1596
+          },
+          {
+            "x": 1923.5,
+            "y": 1596
+          },
+          {
+            "x": 1923.5,
+            "y": 1681
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      },
+      "hackoladeMeta": {},
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/users_follows_follows",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "acd7d279-a92d-431b-a444-ee8420a0f969"
+      ],
+      "ref": "acd7d279-a92d-431b-a444-ee8420a0f969",
+      "GUID": "00a28097-4aa8-4693-b092-df2b65f3f12e"
+    },
+    {
+      "name": "blogs_is_followed_follows",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "is_followed",
+      "parentCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+      "childCollection": "84b807f1-1bcd-42f5-bf70-7e3cbab177bb",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "6893b41a-a99d-4a41-ba59-a67d8062b617",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2039,
+            "y": 1469
+          },
+          {
+            "x": 2214,
+            "y": 1469
+          },
+          {
+            "x": 2214,
+            "y": 1437.6
+          },
+          {
+            "x": 2389,
+            "y": 1437.6
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "hackoladeMeta": {},
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/blogs_is_followed_follows",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "4c04bb7f-a775-4c2e-9e08-d91b01c22206"
+      ],
+      "ref": "4c04bb7f-a775-4c2e-9e08-d91b01c22206",
+      "GUID": "f86caf15-2c78-41cc-9e54-b92f88d38eaf"
+    },
+    {
+      "name": "users_owns_blogs",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+          "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+          "fc983e47-d931-4de2-b065-b8a503490ad8"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+          "f81efc89-8397-45e9-9379-fc8c401401c9",
+          "0aaf9492-619d-46c8-97f4-6e957531c417"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "owns",
+      "parentCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+      "childCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "ece5a439-1b7a-43ea-a16d-58ecd295c4c8",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2389,
+            "y": 1468.8
+          },
+          {
+            "x": 2221,
+            "y": 1468.8
+          },
+          {
+            "x": 2221,
+            "y": 1739
+          },
+          {
+            "x": 2053,
+            "y": 1739
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/users_owns_blogs",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "819152f1-b41a-4d61-8a0d-1826c8ee08ef"
+      ],
+      "ref": "819152f1-b41a-4d61-8a0d-1826c8ee08ef",
+      "GUID": "94b07615-7ea5-498b-b53f-939c7000207d"
+    },
+    {
+      "name": "blogs_contains_posts",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+          "f81efc89-8397-45e9-9379-fc8c401401c9",
+          "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+          "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+          "b4a668f6-dd8e-4890-86c4-7be37fe6c964"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "contains",
+      "parentCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+      "childCollection": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "a4906103-4ada-4a80-a72c-0c6d646c01bf",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1308,
+            "y": 1207
+          },
+          {
+            "x": 1848.5,
+            "y": 1207
+          },
+          {
+            "x": 1848.5,
+            "y": 1406.4
+          },
+          {
+            "x": 2389,
+            "y": 1406.4
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/blogs_contains_posts",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "7e2ddf26-a76b-4185-9484-5164bec6cd85"
+      ],
+      "ref": "7e2ddf26-a76b-4185-9484-5164bec6cd85",
+      "GUID": "7c941b73-82a9-476f-84d9-b92f00105465"
+    },
+    {
+      "name": "users_authors_posts",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+          "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+          "fc983e47-d931-4de2-b065-b8a503490ad8"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+          "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+          "a73cadc2-430e-4b19-82df-ad366f64e403"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "authors",
+      "parentCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+      "childCollection": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "f9f4158b-5f3d-414a-9ecf-c84e02ab9376",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1308,
+            "y": 1264
+          },
+          {
+            "x": 1551,
+            "y": 1264
+          },
+          {
+            "x": 1551,
+            "y": 1724.5
+          },
+          {
+            "x": 1794,
+            "y": 1724.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/users_authors_posts",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "6d19598f-542d-472e-9a42-4bff56a7adfa"
+      ],
+      "ref": "6d19598f-542d-472e-9a42-4bff56a7adfa",
+      "GUID": "03f370bc-5d56-4ade-9bec-a87bf9269520"
+    },
+    {
+      "name": "posts_tagged_with_post_tags",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "tagged_with",
+      "parentCollection": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+      "childCollection": "33a032bc-aba7-40f9-a034-9a98b9baff06",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "6309f657-eedc-4bcb-85c4-0d2f2f9cb108",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1703,
+            "y": 1153
+          },
+          {
+            "x": 1505.5,
+            "y": 1153
+          },
+          {
+            "x": 1505.5,
+            "y": 1150
+          },
+          {
+            "x": 1308,
+            "y": 1150
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/posts_tagged_with_post_tags",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "5b4ba442-e024-4f99-952b-3a6b4f3357bb"
+      ],
+      "ref": "5b4ba442-e024-4f99-952b-3a6b4f3357bb",
+      "GUID": "15174a32-f99e-4327-9450-ac4f140ff348"
+    },
+    {
+      "name": "posts_has_post_revisions",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+          "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+          "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d",
+          "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+          "fe2f634f-9266-4d26-bf18-e45842ab671b"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "has",
+      "parentCollection": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+      "childCollection": "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "e3b9b42d-22be-4785-877b-328aa8be29d8",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1328.5,
+            "y": 1698
+          },
+          {
+            "x": 1328.5,
+            "y": 1509.5
+          },
+          {
+            "x": 1222.6666666666667,
+            "y": 1509.5
+          },
+          {
+            "x": 1222.6666666666667,
+            "y": 1321
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/posts_has_post_revisions",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "a8fa7019-edbb-4c2d-bd74-5434c2881028"
+      ],
+      "ref": "a8fa7019-edbb-4c2d-bd74-5434c2881028",
+      "GUID": "ed690529-7a32-4b66-9be8-fc191bb22ac6"
+    },
+    {
+      "name": "users_edits_post_revisions",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+          "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+          "fc983e47-d931-4de2-b065-b8a503490ad8"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d",
+          "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+          "5431d582-eef1-4f01-9f48-a41cf9f2a44c"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "edits",
+      "parentCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+      "childCollection": "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "23423dd4-7bb5-49d1-8284-39ae0db024d7",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1464,
+            "y": 1767
+          },
+          {
+            "x": 1629,
+            "y": 1767
+          },
+          {
+            "x": 1629,
+            "y": 1768
+          },
+          {
+            "x": 1794,
+            "y": 1768
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/users_edits_post_revisions",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "445e81eb-4dad-49b9-9c30-d287a80abc36"
+      ],
+      "ref": "445e81eb-4dad-49b9-9c30-d287a80abc36",
+      "GUID": "0c6ce4de-584a-45da-88e0-67a3d506d5f8"
+    },
+    {
+      "name": "blogs_has_categories",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+          "f81efc89-8397-45e9-9379-fc8c401401c9",
+          "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+          "8da0b810-b703-487d-be35-7782896ef9f2",
+          "00899342-f3b3-4df7-a4b9-a44d9e5a6773"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "has",
+      "parentCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+      "childCollection": "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "7946b901-f671-4519-a919-a1081fb02c6a",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2672.806488991882,
+            "y": 1181.7079953650061
+          },
+          {
+            "x": 2672.806488991882,
+            "y": 1262.8539976825032
+          },
+          {
+            "x": 2515.5,
+            "y": 1262.8539976825032
+          },
+          {
+            "x": 2515.5,
+            "y": 1344
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/blogs_has_categories",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "be2fdd03-475b-4a4c-bb03-51c49afb242e"
+      ],
+      "ref": "be2fdd03-475b-4a4c-bb03-51c49afb242e",
+      "GUID": "99e16188-a76d-48eb-80b7-80c7ec15640f"
+    },
+    {
+      "name": "categories_parent_of_categories",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+          "8da0b810-b703-487d-be35-7782896ef9f2",
+          "95100e7e-6a58-4aa7-acd2-bf7ae8a72bb9"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+          "8da0b810-b703-487d-be35-7782896ef9f2",
+          "90a673be-2f06-4985-a342-70329c7cf60e"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "parent_of",
+      "parentCollection": "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+      "childCollection": "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "12704d9f-15ba-4210-80ec-7b9b12cf1fa5",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2672.806488991882,
+            "y": 1043.7079953650061
+          },
+          {
+            "x": 2672.806488991882,
+            "y": 1018.7079953650061
+          },
+          {
+            "x": 2820.806488991882,
+            "y": 1018.7079953650061
+          },
+          {
+            "x": 2820.806488991882,
+            "y": 1112.7079953650061
+          },
+          {
+            "x": 2795.806488991882,
+            "y": 1112.7079953650061
+          }
+        ],
+        "sides": [
+          "top",
+          "right"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/categories_parent_of_categories",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "2258834e-831b-41e9-9f1c-c2ae094bcd4a"
+      ],
+      "ref": "2258834e-831b-41e9-9f1c-c2ae094bcd4a",
+      "GUID": "6705d7d9-6eb3-469c-93de-a1967eb3f167"
+    },
+    {
+      "name": "blogs_has_tags",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+          "f81efc89-8397-45e9-9379-fc8c401401c9",
+          "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "fdaa949b-7d37-4703-9258-de0d76d597a5",
+          "f2723b4e-52f5-4be6-a46b-0849e9a017d5",
+          "abb7dfef-e3ab-4c03-8a0a-cd1081b87b11"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "has",
+      "parentCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+      "childCollection": "fdaa949b-7d37-4703-9258-de0d76d597a5",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "417d3a62-5519-4610-a115-fa5069597a99",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2262,
+            "y": 1151
+          },
+          {
+            "x": 2325.5,
+            "y": 1151
+          },
+          {
+            "x": 2325.5,
+            "y": 1375.2
+          },
+          {
+            "x": 2389,
+            "y": 1375.2
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/blogs_has_tags",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "1c36adb3-544d-4345-986b-883569ca2739"
+      ],
+      "ref": "1c36adb3-544d-4345-986b-883569ca2739",
+      "GUID": "9bde9457-074b-4219-8c3c-7dad458c18cb"
+    },
+    {
+      "name": "tags_maps_to_post_tags",
+      "relationshipType": "Foreign Key",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "maps_to",
+      "parentCollection": "fdaa949b-7d37-4703-9258-de0d76d597a5",
+      "childCollection": "33a032bc-aba7-40f9-a034-9a98b9baff06",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "29ab09a2-68fd-4a64-a1b0-beb77de0ac18",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1928,
+            "y": 1153
+          },
+          {
+            "x": 2006,
+            "y": 1153
+          },
+          {
+            "x": 2006,
+            "y": 1151
+          },
+          {
+            "x": 2084,
+            "y": 1151
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/tags_maps_to_post_tags",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "9d78f33e-04b8-4f29-909f-c0bbe316352f"
+      ],
+      "ref": "9d78f33e-04b8-4f29-909f-c0bbe316352f",
+      "GUID": "db9c45f1-5e94-465e-9ef3-2d6f0295011f"
+    },
+    {
+      "name": "posts_receives_comments",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+          "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+          "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+          "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+          "2448bcc3-5e0b-418a-a946-e925a5a1a25e"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "receives",
+      "parentCollection": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+      "childCollection": "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "78b3c5bc-ff12-4b2a-8891-150f03ae77a1",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1135.6666666666667,
+            "y": 2049
+          },
+          {
+            "x": 1135.6666666666667,
+            "y": 1685
+          },
+          {
+            "x": 1137.3333333333333,
+            "y": 1685
+          },
+          {
+            "x": 1137.3333333333333,
+            "y": 1321
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/posts_receives_comments",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "c7272b1c-e6ed-4033-8c67-61e0d528c8ce"
+      ],
+      "ref": "c7272b1c-e6ed-4033-8c67-61e0d528c8ce",
+      "GUID": "cc02f3dd-56d1-4016-a020-4b6b0d53a1cd"
+    },
+    {
+      "name": "users_writes_comments",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+          "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+          "fc983e47-d931-4de2-b065-b8a503490ad8"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+          "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+          "d3b452e4-e642-4e5b-8a0d-7cf2c5bd4ae6"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "writes",
+      "parentCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+      "childCollection": "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "325fe413-68c1-4c42-9867-9d69ae314ae8",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1325,
+            "y": 2177
+          },
+          {
+            "x": 1559.5,
+            "y": 2177
+          },
+          {
+            "x": 1559.5,
+            "y": 1811.5
+          },
+          {
+            "x": 1794,
+            "y": 1811.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/users_writes_comments",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "d59b709b-0795-4293-a40d-2710a4b1ba77"
+      ],
+      "ref": "d59b709b-0795-4293-a40d-2710a4b1ba77",
+      "GUID": "c05f66de-198f-4886-ac2b-2264bbce9792"
+    },
+    {
+      "name": "comments_replies_to_comments",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+          "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+          "9da74043-bd9c-4de9-945e-dc1059143791"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+          "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+          "aa3af5ba-141c-4fca-82c1-5d7bfbd2a06c"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "replies_to",
+      "parentCollection": "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+      "childCollection": "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+      "lineSize": 2,
+      "hackoladeMeta": {},
+      "hackoladeStyles": {
+        "GUID": "1cb90422-0139-47e3-bc7c-1a1301ceefbe",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1230.3333333333333,
+            "y": 2049
+          },
+          {
+            "x": 1230.3333333333333,
+            "y": 2024
+          },
+          {
+            "x": 1350,
+            "y": 2024
+          },
+          {
+            "x": 1350,
+            "y": 2113
+          },
+          {
+            "x": 1325,
+            "y": 2113
+          }
+        ],
+        "sides": [
+          "top",
+          "right"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/comments_replies_to_comments",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "c647c2a4-d00c-4c6d-8cd8-90acfa3ddbf9"
+      ],
+      "ref": "c647c2a4-d00c-4c6d-8cd8-90acfa3ddbf9",
+      "GUID": "030a2abb-a7ed-4e40-a6d5-4816f716d902"
+    },
+    {
+      "name": "blogs_hosts_media_assets",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+          "f81efc89-8397-45e9-9379-fc8c401401c9",
+          "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "7917a648-e546-40c6-8a40-b877f705e9a7",
+          "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+          "c8afeaf9-d1d9-4cee-abcc-bee18b1528e0"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "hosts",
+      "parentCollection": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+      "childCollection": "7917a648-e546-40c6-8a40-b877f705e9a7",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "73c1bcb9-478e-4f30-b1cf-8509b325b7db",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2506,
+            "y": 1752
+          },
+          {
+            "x": 2506,
+            "y": 1626
+          },
+          {
+            "x": 2515.5,
+            "y": 1626
+          },
+          {
+            "x": 2515.5,
+            "y": 1500
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/blogs_hosts_media_assets",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "9516e7de-5cb1-43dd-a5cf-55daad65b681"
+      ],
+      "ref": "9516e7de-5cb1-43dd-a5cf-55daad65b681",
+      "GUID": "d349c66b-34bb-4698-a8c1-f4ebcc5e9de9"
+    },
+    {
+      "name": "users_uploads_media_assets",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+          "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+          "fc983e47-d931-4de2-b065-b8a503490ad8"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "7917a648-e546-40c6-8a40-b877f705e9a7",
+          "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+          "637a8119-5267-431e-b94c-b47f1804ef51"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "description": "uploads",
+      "parentCollection": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+      "childCollection": "7917a648-e546-40c6-8a40-b877f705e9a7",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "0407491b-7fa7-45f1-b7fc-ceda10051291",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2372,
+            "y": 1848
+          },
+          {
+            "x": 2212.5,
+            "y": 1848
+          },
+          {
+            "x": 2212.5,
+            "y": 1797
+          },
+          {
+            "x": 2053,
+            "y": 1797
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "type": "reference",
+      "refType": "polyglot",
+      "$ref": "#external/definitions/users_uploads_media_assets",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "fec073ed-677b-454c-a6a9-2215c3d8b430"
+      ],
+      "ref": "fec073ed-677b-454c-a6a9-2215c3d8b430",
+      "GUID": "e676d63a-8f00-49ed-a447-f2a1845c623b"
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "c96785e0-93b4-4370-bb4c-73612016f989": "EXTRA_GITHUB (PUBLIC)",
+    "aabc901c-7462-48e0-ae97-76e1421451a9": "New Field",
+    "405801ee-86f2-4e45-9a38-0be8ae77eee2": "New Field1",
+    "ba92548b-25d9-43d4-935b-95110d9ba704": "New Field2",
+    "b2ca52a3-0dac-4824-a410-2f504693a469": "EXTRA_GITHUB (PRIVATE)",
+    "370760c1-4c2d-423d-9af2-9f739bd7666e": "New Field",
+    "47ebcc56-50b3-4eeb-937c-09ef9e35bfbe": "New Field1",
+    "65df43f9-93ad-437c-ab58-3fb3c1a8f656": "New Field2",
+    "ed60ab88-aeb5-455a-9c28-5afa16ee641b": "glossary",
+    "ca08c454-1597-4277-8dff-70ca403697cd": "EXTRA_GITLAB (PRIVATE)",
+    "acc0983e-fedb-4eff-8d9f-44a0f2aef0c3": "New Field",
+    "a3c485ad-23c4-4ca8-a422-684a12e1f31a": "New Field1",
+    "b26c13a2-7a8a-4258-8adc-27c47412694b": "New Field2",
+    "06797420-c394-4793-acdc-c61f47504c6b": "INTRA",
+    "7711a0c4-1153-4936-9c7f-84e6cb40570b": "New Field",
+    "31eca78b-6777-4a8b-891c-0fb98ccca887": "New Field1",
+    "b06c256c-ff6f-41ce-b8e4-bb11851227a3": "New Field2",
+    "199cb6ae-221e-42bd-a1ff-407d8076146a": "Order",
+    "4236e797-1868-4bc8-9fa6-623414ce1dc0": "users",
+    "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960": "blogs",
+    "be6dc3ba-851a-4832-87c9-c22526c2cfe9": "posts",
+    "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d": "post_revisions",
+    "049aa3ac-c020-412e-9ffc-9fbe1fa55bad": "categories",
+    "fdaa949b-7d37-4703-9258-de0d76d597a5": "tags",
+    "33a032bc-aba7-40f9-a034-9a98b9baff06": "post_tags",
+    "12f32d6f-63c2-40ec-9950-bd78a782ef2f": "comments",
+    "7917a648-e546-40c6-8a40-b877f705e9a7": "media_assets",
+    "84b807f1-1bcd-42f5-bf70-7e3cbab177bb": "follows",
+    "a30bc293-13f6-47cc-8259-52fc067eec20": "Disclaimer",
+    "25879be1-8bc1-4f88-8bb2-bb635e7d4a25": "USER_writes_POST",
+    "70e23ed9-b490-4da0-a361-d1bfa3200d87": "USER_writes_COMMENT",
+    "459e00f7-1c2d-4db9-a045-dd3f1658c64f": "POST_has_COMMENT",
+    "00a28097-4aa8-4693-b092-df2b65f3f12e": "users_follows_follows",
+    "f86caf15-2c78-41cc-9e54-b92f88d38eaf": "blogs_is_followed_follows",
+    "94b07615-7ea5-498b-b53f-939c7000207d": "users_owns_blogs",
+    "7c941b73-82a9-476f-84d9-b92f00105465": "blogs_contains_posts",
+    "03f370bc-5d56-4ade-9bec-a87bf9269520": "users_authors_posts",
+    "15174a32-f99e-4327-9450-ac4f140ff348": "posts_tagged_with_post_tags",
+    "ed690529-7a32-4b66-9be8-fc191bb22ac6": "posts_has_post_revisions",
+    "0c6ce4de-584a-45da-88e0-67a3d506d5f8": "users_edits_post_revisions",
+    "99e16188-a76d-48eb-80b7-80c7ec15640f": "blogs_has_categories",
+    "6705d7d9-6eb3-469c-93de-a1967eb3f167": "categories_parent_of_categories",
+    "9bde9457-074b-4219-8c3c-7dad458c18cb": "blogs_has_tags",
+    "db9c45f1-5e94-465e-9ef3-2d6f0295011f": "tags_maps_to_post_tags",
+    "cc02f3dd-56d1-4016-a020-4b6b0d53a1cd": "posts_receives_comments",
+    "c05f66de-198f-4886-ac2b-2264bbce9792": "users_writes_comments",
+    "030a2abb-a7ed-4e40-a6d5-4816f716d902": "comments_replies_to_comments",
+    "d349c66b-34bb-4698-a8c1-f4ebcc5e9de9": "blogs_hosts_media_assets",
+    "e676d63a-8f00-49ed-a447-f2a1845c623b": "users_uploads_media_assets"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "cd818dd4-9d7e-4d71-93b2-edab1bad1717"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "name": "Address",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Address ID",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "65b54be5-17e3-480b-9543-41cade950030"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Street",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "226178a4-d5d7-4303-8ded-6edd2bf5e94a",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Postal code",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "172ef4de-fb50-4087-a44b-9a34e92b1f39",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification."
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "City",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "GUID": "f23a20a2-d7b1-476d-b567-50a67b99f2fc",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region."
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "50ec3adc-dd4a-4ddf-bab7-572b8e9b8bf7",
+        "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/Address",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=common%2FAddress-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "c96785e0-93b4-4370-bb4c-73612016f989"
+          ]
+        ]
+      },
+      {
+        "name": "users",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "name": "_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "b8eba5b0-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "boolean",
+            "name": "active",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "default": false,
+            "sample": "true",
+            "foreignCollection": "",
+            "foreignField": [],
+            "relationshipType": "",
+            "GUID": "c0678a70-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "email",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "format": "email",
+            "sample": "testuser1@example.com",
+            "GUID": "d40a6570-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "firstName",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "Test",
+            "GUID": "e16c4cb0-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "lastName",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "User1",
+            "GUID": "ea6f94c0-0310-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "sp_api_key_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "6YQB0A8VXM0X8RVDPPLRHBI7J",
+            "GUID": "68b47390-0312-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "sp_api_key_secret",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "sample": "YFx56Dl0bbiVEpvbjF",
+            "GUID": "74b0fe70-0312-11e6-a6da-47e48d71d0e8"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "lastLogin",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "7e16fff0-0312-11e6-a6da-47e48d71d0e8",
+            "format": "date"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "ca8e31f0-0312-11e6-a6da-47e48d71d0e8",
+            "format": "date"
+          },
+          {
+            "type": "array",
+            "properties": [
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "relationshipType": "",
+                "GUID": "f2c35100-0312-11e6-a6da-47e48d71d0e8",
+                "arrayItem": true
+              },
+              {
+                "type": "string",
+                "properties": [],
+                "isActivated": true,
+                "primaryKey": false,
+                "relationshipType": "",
+                "GUID": "e565e120-0313-11e6-a6da-47e48d71d0e8",
+                "arrayItem": true
+              }
+            ],
+            "additionalItems": true,
+            "name": "subs",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "relationshipType": "",
+            "GUID": "d28f7350-0312-11e6-a6da-47e48d71d0e8"
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+        "description": "Master collection of users",
+        "comments": "",
+        "definitionEntityType": "field",
+        "fieldRelativePath": "#/users",
+        "link": "?g=gitlab&o=hackolade&r=models&f=MongoDB%2FBuzzfeed.json&b=main",
+        "kind": "link",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "ca08c454-1597-4277-8dff-70ca403697cd"
+          ]
+        ]
+      },
+      {
+        "collectionName": "users",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "user_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "fc983e47-d931-4de2-b065-b8a503490ad8",
+            "description": "Primary key"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "username",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "829972c0-db47-4962-93b8-5f4525a515ce",
+            "description": "Unique handle"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "email",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "60f1d385-fb45-4ece-8892-e699e04b9d4f",
+            "description": "Unique email"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "password_hash",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "1dda4de4-629d-4fd1-a8fd-9f94c8b2c6a0",
+            "description": "Password hash"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "display_name",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "21bb68c9-332d-40a7-a39c-c7afecbbb2d7",
+            "description": "Public display name"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "bio",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "34d578fd-f5df-4dab-918b-ef50e3994203",
+            "description": "Short biography"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "fb1a8ab2-077b-4105-80da-2f2064c4cb0b",
+            "description": "Account creation time UTC",
+            "format": "date-time"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "status",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "5f4412de-9c89-4dd1-b41d-ba1e1696be56",
+            "description": "active suspended deleted"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "c43d1354-713d-4c7e-9434-d229392675b3"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+        "description": "users: accounts of people who create, comment, and manage blogs",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/users",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "4236e797-1868-4bc8-9fa6-623414ce1dc0"
+          ]
+        ]
+      },
+      {
+        "collectionName": "blogs",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "blog_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "63cabcd9-1b4a-4151-9a89-16e6039dd628",
+            "description": "Primary key"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "owner_user_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "0aaf9492-619d-46c8-97f4-6e957531c417",
+            "description": "Owner user",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "foreignField": [
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "slug",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "e8926a25-2dce-45b4-8577-7fa0e24d9107",
+            "description": "Unique blog slug"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "title",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "adcf55cb-ecc0-4622-8d0a-f7f32a4cb2ba",
+            "description": "Blog title"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "description",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "d3677e02-de09-42b7-8c5f-35802b158d65",
+            "description": "Blog description"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "is_public",
+            "isActivated": true,
+            "primaryKey": false,
+            "GUID": "90166368-c372-48a6-a002-f14e05310061",
+            "description": "Visibility flag",
+            "required": false
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "a60732ce-faf1-4a0a-a5f2-5875cf77a4bc",
+            "description": "Creation time UTC",
+            "format": "date-time"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "5643f5ff-8a3e-4d29-a732-367535da06f6"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "f81efc89-8397-45e9-9379-fc8c401401c9",
+        "description": "blogs: individual blog sites owned by users",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/blogs",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960"
+          ]
+        ]
+      },
+      {
+        "collectionName": "posts",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "post_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "d9b6c4f7-515d-4ca5-b158-65365e7b5c54",
+            "description": "Primary key"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "blog_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "b4a668f6-dd8e-4890-86c4-7be37fe6c964",
+            "description": "Parent blog",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "foreignField": [
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ]
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "author_user_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "a73cadc2-430e-4b19-82df-ad366f64e403",
+            "description": "Author user",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "foreignField": [
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "title",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "fb5c677e-b010-45ab-8bfe-ed3183236858",
+            "description": "Post title"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "slug",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "301d4d4c-c483-479b-8ca9-3dcd3aabf739",
+            "description": "Post slug"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "summary",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "0250db2c-0c4f-4e6d-92dd-2a1e450d660b",
+            "description": "Optional summary"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "content",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "09c09356-6059-47dd-96b2-096116d68f50",
+            "description": "Post body"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "status",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "67d48da5-060d-4591-ad86-ec1923f789dd",
+            "description": "draft scheduled published archived"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "published_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "a371bd8d-29c9-4c68-b6ca-03babde134b1",
+            "description": "Publish time UTC",
+            "format": "date-time"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "8deb31f2-d0de-47f5-adcb-b79d03a19084",
+            "description": "Creation time UTC",
+            "format": "date-time"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "updated_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "b13cf66b-8577-40ee-a81a-8fd8580293ad",
+            "description": "Last update time UTC",
+            "format": "date-time"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "36e2a86e-4722-4b6d-a0a6-6d7dcf035381"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+        "description": "posts: blog posts authored by users within a blog",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/posts",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "be6dc3ba-851a-4832-87c9-c22526c2cfe9"
+          ]
+        ]
+      },
+      {
+        "collectionName": "post_revisions",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "revision_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "a6ee79d7-3709-4e87-bd79-22ce57c55d71",
+            "description": "Primary key"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "post_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "fe2f634f-9266-4d26-bf18-e45842ab671b",
+            "description": "Post",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+            "foreignField": [
+              "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+              "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+            ]
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "edited_by_user_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "5431d582-eef1-4f01-9f48-a41cf9f2a44c",
+            "description": "Editor user",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "foreignField": [
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ]
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "version_number",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "4f41f357-c6fe-43a5-9a9e-b981b7e0d89e",
+            "description": "Monotonic version"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "content",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "28205c04-ba95-4dcf-91ac-3c9704568d6e",
+            "description": "Snapshot of body"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "22ae8849-7c7f-4a43-81a3-e632a5f746d6",
+            "description": "Revision time UTC",
+            "format": "date-time"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "353ce7e7-1b5f-4a88-8cc4-fbeeed347ac3"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+        "description": "post_revisions: immutable versions of a post content for audit",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/post_revisions",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d"
+          ]
+        ]
+      },
+      {
+        "collectionName": "categories",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "category_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "95100e7e-6a58-4aa7-acd2-bf7ae8a72bb9",
+            "description": "Primary key"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "blog_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "00899342-f3b3-4df7-a4b9-a44d9e5a6773",
+            "description": "Blog",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "foreignField": [
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "name",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "53c4e8b0-4241-4cda-97f7-d96df081d822",
+            "description": "Category name"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "slug",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "51f332b6-219f-4fb4-b256-6df78e531848",
+            "description": "Category slug"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "parent_category_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "90a673be-2f06-4985-a342-70329c7cf60e",
+            "description": "Parent category",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "8da0b810-b703-487d-be35-7782896ef9f2",
+            "foreignField": [
+              "8da0b810-b703-487d-be35-7782896ef9f2",
+              "95100e7e-6a58-4aa7-acd2-bf7ae8a72bb9"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "description",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "80153c0b-84e6-4b5a-8bb7-b2323a1742a7",
+            "description": "Category description"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "f4bc6860-f1d0-4b75-a5af-5b81897b4836"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "8da0b810-b703-487d-be35-7782896ef9f2",
+        "description": "categories: hierarchical categories per blog",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/categories",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "049aa3ac-c020-412e-9ffc-9fbe1fa55bad"
+          ]
+        ]
+      },
+      {
+        "collectionName": "tags",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "tag_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "22bcd8ce-317f-423b-b454-6963ba56e988",
+            "description": "Primary key"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "blog_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "abb7dfef-e3ab-4c03-8a0a-cd1081b87b11",
+            "description": "Blog",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "foreignField": [
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "name",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "19bb6777-3293-4b9f-ae04-f83843438b37",
+            "description": "Tag name"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "slug",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "c26c0c29-9f4e-4c19-b8c1-02c3b6311840",
+            "description": "Tag slug"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "d6bd3e80-600c-4403-8dc8-667cf24629a4"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "f2723b4e-52f5-4be6-a46b-0849e9a017d5",
+        "description": "tags: flat tags per blog",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/tags",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "fdaa949b-7d37-4703-9258-de0d76d597a5"
+          ]
+        ]
+      },
+      {
+        "collectionName": "post_tags",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "post_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "5bef56a1-1921-462c-87c0-cb29c1fb8808",
+            "description": "Post"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "tag_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "1b8546f2-14a0-48f5-9e07-e2cb44320320",
+            "description": "Tag"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "tagged_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "f576f4b5-0cc5-448e-9a74-f66f743b0b99",
+            "description": "When tagging occurred UTC",
+            "format": "date-time"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "36976c77-a5e0-4d2a-820e-ec65dafef1f9"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "c641f3da-fed0-439b-823d-6896558a0df3",
+        "description": "post_tags: junction table between posts and tags",
+        "primaryKey": [
+          {
+            "GUID": "e021837e-d5da-4e18-bb25-32bfc2158419",
+            "constraintName": "pk",
+            "compositePrimaryKey": [
+              {
+                "keyId": "5bef56a1-1921-462c-87c0-cb29c1fb8808"
+              },
+              {
+                "keyId": "1b8546f2-14a0-48f5-9e07-e2cb44320320"
+              }
+            ]
+          }
+        ],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/post_tags",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "33a032bc-aba7-40f9-a034-9a98b9baff06"
+          ]
+        ]
+      },
+      {
+        "collectionName": "comments",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "comment_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "9da74043-bd9c-4de9-945e-dc1059143791",
+            "description": "Primary key"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "post_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "2448bcc3-5e0b-418a-a946-e925a5a1a25e",
+            "description": "Post",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+            "foreignField": [
+              "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+              "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+            ]
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "user_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "d3b452e4-e642-4e5b-8a0d-7cf2c5bd4ae6",
+            "description": "Author user",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "foreignField": [
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ]
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "parent_comment_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "aa3af5ba-141c-4fca-82c1-5d7bfbd2a06c",
+            "description": "Parent comment",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+            "foreignField": [
+              "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+              "9da74043-bd9c-4de9-945e-dc1059143791"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "content",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "ca8c4f60-bb01-427d-866f-d2773685ed52",
+            "description": "Comment body"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "48dc96cf-ccb9-4973-a74f-dfd2c281a27d",
+            "description": "Creation time UTC",
+            "format": "date-time"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "updated_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "bfa99f29-794b-43d9-a33b-fcccccce2780",
+            "description": "Last edit time UTC",
+            "format": "date-time"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "status",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "a3c3005c-8610-4268-8e2f-993dfb91f231",
+            "description": "visible hidden flagged"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "is_deleted",
+            "isActivated": true,
+            "primaryKey": false,
+            "GUID": "ca336f96-e8c7-4619-9c88-50d05846ab16",
+            "description": "Soft delete flag",
+            "required": false
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "ba74c868-3a02-4e99-8bc7-fcde6573f0a2"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+        "description": "comments: user comments on posts with threaded replies",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/comments",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "12f32d6f-63c2-40ec-9950-bd78a782ef2f"
+          ]
+        ]
+      },
+      {
+        "collectionName": "media_assets",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "media_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "3060909a-af10-49a6-aa2c-1957265de6e6",
+            "description": "Primary key"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "blog_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "c8afeaf9-d1d9-4cee-abcc-bee18b1528e0",
+            "description": "Blog",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "foreignField": [
+              "f81efc89-8397-45e9-9379-fc8c401401c9",
+              "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+            ]
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "uploader_user_id",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "637a8119-5267-431e-b94c-b47f1804ef51",
+            "description": "Uploader user",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "foreignField": [
+              "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+              "fc983e47-d931-4de2-b065-b8a503490ad8"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "file_name",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "2d0d5618-d764-43ed-b817-0578bd1aa10f",
+            "description": "Original file name"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "file_type",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "fdc494dc-3c9f-4699-8764-6dc6522ad176",
+            "description": "Mime subtype or label"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "file_size_bytes",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "567f6b8e-1039-4262-8110-c5b834d0b2ab",
+            "description": "Size in bytes"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "url",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "2386d570-b45b-4e5f-a680-f0ccd31c03b4",
+            "description": "Public or signed URL"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "alt_text",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "4ffb1986-7a36-4ee3-ba29-283511a00c2c",
+            "description": "Accessibility alt text"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "456e79af-46c3-4ab1-88aa-5079aec33c39",
+            "description": "Upload time UTC",
+            "format": "date-time"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "9f86e5e9-edea-4520-b525-3148f5f82e72"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+        "description": "media_assets: files uploaded and attached across a blog",
+        "primaryKey": [],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/media_assets",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "7917a648-e546-40c6-8a40-b877f705e9a7"
+          ]
+        ]
+      },
+      {
+        "collectionName": "follows",
+        "type": "object",
+        "properties": [
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "follower_user_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "7415f4c2-1acd-4163-842a-fcdbcd0df0de",
+            "description": "User"
+          },
+          {
+            "type": "integer",
+            "properties": [],
+            "name": "followed_blog_id",
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "82416f4f-b2ab-4a4c-9107-71edbc6f0260",
+            "description": "Blog"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "created_at",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "8abdd94b-fd07-4bd8-a51b-a2a304b53643",
+            "description": "Follow time UTC",
+            "format": "date-time"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "cbb7f833-745e-44b0-89c7-c4c7414bda48"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "dfb069ff-6086-40ab-bbbb-516b671598a3",
+        "description": "follows: user follows a blog to receive updates",
+        "primaryKey": [
+          {
+            "GUID": "ddaf8f53-a2ae-432d-a1dc-eb35f02cb216",
+            "constraintName": "pk",
+            "compositePrimaryKey": [
+              {
+                "keyId": "7415f4c2-1acd-4163-842a-fcdbcd0df0de"
+              },
+              {
+                "keyId": "82416f4f-b2ab-4a4c-9107-71edbc6f0260"
+              }
+            ]
+          }
+        ],
+        "uniqueKey": [],
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "bucketId": "",
+        "definitionEntityType": "collection",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/follows",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "84b807f1-1bcd-42f5-bf70-7e3cbab177bb"
+          ]
+        ]
+      },
+      {
+        "GUID": "38a55353-9fd8-467f-b73f-bf3ad58ab9a0",
+        "name": "Disclaimer",
+        "type": "annotation",
+        "value": "*About this model*\n\nThis model was created using a public GenAI tool (e.g., ChatGPT) prompted to generate an ER diagram in Mermaid syntax.\nThe Mermaid code was then imported into Hackolade Studio (v8.3.2+) via the reverse-engineering feature, either from a .mmd file or directly from the clipboard.\n\nThis approach allows rapid generation and editing of data models using Mermaid’s human-readable syntax as a bridge between GenAI and Hackolade Studio. While Mermaid lacks support for advanced constraints or physical schemas, it offers a fast, intuitive way to translate conceptual prompts into structured diagrams.\n\nTo learn more about importing Mermaid ER diagrams into Hackolade Studio: https://hackolade.com/help/GenAI-createdMermaidERdiagram.html",
+        "disableInitialFocus": true,
+        "definitionEntityType": "decorativeSymbol",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/Disclaimer",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "a30bc293-13f6-47cc-8259-52fc067eec20"
+          ]
+        ]
+      },
+      {
+        "name": "USER_writes_POST",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "ccc0c2a2-236b-4757-af55-e7201cfa7b6f",
+        "description": "writes",
+        "parentCollection": "",
+        "childCollection": "",
+        "lineSize": 2,
+        "hackoladeStyles": {
+          "GUID": "036a897a-409e-44fb-8b9f-69fe248c9d1c",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1386,
+              "y": 1260
+            },
+            {
+              "x": 1285,
+              "y": 1260
+            },
+            {
+              "x": 1285,
+              "y": 1173
+            },
+            {
+              "x": 1184,
+              "y": 1173
+            }
+          ],
+          "sides": [
+            "left",
+            "right"
+          ]
+        },
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/USER_writes_POST",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "25879be1-8bc1-4f88-8bb2-bb635e7d4a25"
+          ]
+        ]
+      },
+      {
+        "name": "USER_writes_COMMENT",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "7dcc2176-79ba-49ad-934a-ae1baee844c3",
+        "description": "writes",
+        "parentCollection": "",
+        "childCollection": "",
+        "lineSize": 2,
+        "hackoladeStyles": {
+          "GUID": "d3be87f5-b29d-43a0-bf37-96ad21fa5c09",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1361,
+              "y": 1106
+            },
+            {
+              "x": 1272.5,
+              "y": 1106
+            },
+            {
+              "x": 1272.5,
+              "y": 1145
+            },
+            {
+              "x": 1184,
+              "y": 1145
+            }
+          ],
+          "sides": [
+            "left",
+            "right"
+          ]
+        },
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/USER_writes_COMMENT",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "70e23ed9-b490-4da0-a361-d1bfa3200d87"
+          ]
+        ]
+      },
+      {
+        "name": "POST_has_COMMENT",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "efb2cb3e-487c-408c-bcad-06b8c1e5729b",
+        "description": "has",
+        "parentCollection": "",
+        "childCollection": "",
+        "lineSize": 2,
+        "hackoladeStyles": {
+          "GUID": "8565e50d-34ad-449b-b5b5-6836ab24776c",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1583,
+              "y": 1106
+            },
+            {
+              "x": 1621,
+              "y": 1106
+            },
+            {
+              "x": 1621,
+              "y": 1260
+            },
+            {
+              "x": 1596,
+              "y": 1260
+            }
+          ],
+          "sides": [
+            "right",
+            "right"
+          ]
+        },
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/POST_has_COMMENT",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "459e00f7-1c2d-4db9-a045-dd3f1658c64f"
+          ]
+        ]
+      },
+      {
+        "name": "users_follows_follows",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "acd7d279-a92d-431b-a444-ee8420a0f969",
+        "description": "follows",
+        "parentCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+        "childCollection": "dfb069ff-6086-40ab-bbbb-516b671598a3",
+        "lineSize": 2,
+        "hackoladeStyles": {
+          "GUID": "3b0e54a1-50eb-478a-b890-2031d89e51ce",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1907,
+              "y": 1511
+            },
+            {
+              "x": 1907,
+              "y": 1596
+            },
+            {
+              "x": 1923.5,
+              "y": 1596
+            },
+            {
+              "x": 1923.5,
+              "y": 1681
+            }
+          ],
+          "sides": [
+            "bottom",
+            "top"
+          ]
+        },
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/users_follows_follows",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "00a28097-4aa8-4693-b092-df2b65f3f12e"
+          ]
+        ]
+      },
+      {
+        "name": "blogs_is_followed_follows",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "4c04bb7f-a775-4c2e-9e08-d91b01c22206",
+        "description": "is_followed",
+        "parentCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+        "childCollection": "dfb069ff-6086-40ab-bbbb-516b671598a3",
+        "lineSize": 2,
+        "hackoladeStyles": {
+          "GUID": "6893b41a-a99d-4a41-ba59-a67d8062b617",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 2039,
+              "y": 1469
+            },
+            {
+              "x": 2214,
+              "y": 1469
+            },
+            {
+              "x": 2214,
+              "y": 1437.6
+            },
+            {
+              "x": 2389,
+              "y": 1437.6
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/blogs_is_followed_follows",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "f86caf15-2c78-41cc-9e54-b92f88d38eaf"
+          ]
+        ]
+      },
+      {
+        "name": "users_owns_blogs",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "fc983e47-d931-4de2-b065-b8a503490ad8"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "0aaf9492-619d-46c8-97f4-6e957531c417"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "819152f1-b41a-4d61-8a0d-1826c8ee08ef",
+        "description": "owns",
+        "parentCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+        "childCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "ece5a439-1b7a-43ea-a16d-58ecd295c4c8",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 2389,
+              "y": 1468.8
+            },
+            {
+              "x": 2221,
+              "y": 1468.8
+            },
+            {
+              "x": 2221,
+              "y": 1739
+            },
+            {
+              "x": 2053,
+              "y": 1739
+            }
+          ],
+          "sides": [
+            "left",
+            "right"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/users_owns_blogs",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "94b07615-7ea5-498b-b53f-939c7000207d"
+          ]
+        ]
+      },
+      {
+        "name": "blogs_contains_posts",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+            "b4a668f6-dd8e-4890-86c4-7be37fe6c964"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "7e2ddf26-a76b-4185-9484-5164bec6cd85",
+        "description": "contains",
+        "parentCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+        "childCollection": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "a4906103-4ada-4a80-a72c-0c6d646c01bf",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1308,
+              "y": 1207
+            },
+            {
+              "x": 1848.5,
+              "y": 1207
+            },
+            {
+              "x": 1848.5,
+              "y": 1406.4
+            },
+            {
+              "x": 2389,
+              "y": 1406.4
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/blogs_contains_posts",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "7c941b73-82a9-476f-84d9-b92f00105465"
+          ]
+        ]
+      },
+      {
+        "name": "users_authors_posts",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "fc983e47-d931-4de2-b065-b8a503490ad8"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+            "a73cadc2-430e-4b19-82df-ad366f64e403"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "6d19598f-542d-472e-9a42-4bff56a7adfa",
+        "description": "authors",
+        "parentCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+        "childCollection": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "f9f4158b-5f3d-414a-9ecf-c84e02ab9376",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1308,
+              "y": 1264
+            },
+            {
+              "x": 1551,
+              "y": 1264
+            },
+            {
+              "x": 1551,
+              "y": 1724.5
+            },
+            {
+              "x": 1794,
+              "y": 1724.5
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/users_authors_posts",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "03f370bc-5d56-4ade-9bec-a87bf9269520"
+          ]
+        ]
+      },
+      {
+        "name": "posts_tagged_with_post_tags",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "5b4ba442-e024-4f99-952b-3a6b4f3357bb",
+        "description": "tagged_with",
+        "parentCollection": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+        "childCollection": "c641f3da-fed0-439b-823d-6896558a0df3",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "6309f657-eedc-4bcb-85c4-0d2f2f9cb108",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1703,
+              "y": 1153
+            },
+            {
+              "x": 1505.5,
+              "y": 1153
+            },
+            {
+              "x": 1505.5,
+              "y": 1150
+            },
+            {
+              "x": 1308,
+              "y": 1150
+            }
+          ],
+          "sides": [
+            "left",
+            "right"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/posts_tagged_with_post_tags",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "15174a32-f99e-4327-9450-ac4f140ff348"
+          ]
+        ]
+      },
+      {
+        "name": "posts_has_post_revisions",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+            "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+            "fe2f634f-9266-4d26-bf18-e45842ab671b"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "a8fa7019-edbb-4c2d-bd74-5434c2881028",
+        "description": "has",
+        "parentCollection": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+        "childCollection": "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "e3b9b42d-22be-4785-877b-328aa8be29d8",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1328.5,
+              "y": 1698
+            },
+            {
+              "x": 1328.5,
+              "y": 1509.5
+            },
+            {
+              "x": 1222.6666666666667,
+              "y": 1509.5
+            },
+            {
+              "x": 1222.6666666666667,
+              "y": 1321
+            }
+          ],
+          "sides": [
+            "top",
+            "bottom"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/posts_has_post_revisions",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "ed690529-7a32-4b66-9be8-fc191bb22ac6"
+          ]
+        ]
+      },
+      {
+        "name": "users_edits_post_revisions",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "fc983e47-d931-4de2-b065-b8a503490ad8"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+            "5431d582-eef1-4f01-9f48-a41cf9f2a44c"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "445e81eb-4dad-49b9-9c30-d287a80abc36",
+        "description": "edits",
+        "parentCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+        "childCollection": "a3600622-b0b8-4fde-91a8-c1ccf695868f",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "23423dd4-7bb5-49d1-8284-39ae0db024d7",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1464,
+              "y": 1767
+            },
+            {
+              "x": 1629,
+              "y": 1767
+            },
+            {
+              "x": 1629,
+              "y": 1768
+            },
+            {
+              "x": 1794,
+              "y": 1768
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/users_edits_post_revisions",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "0c6ce4de-584a-45da-88e0-67a3d506d5f8"
+          ]
+        ]
+      },
+      {
+        "name": "blogs_has_categories",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "8da0b810-b703-487d-be35-7782896ef9f2",
+            "00899342-f3b3-4df7-a4b9-a44d9e5a6773"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "be2fdd03-475b-4a4c-bb03-51c49afb242e",
+        "description": "has",
+        "parentCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+        "childCollection": "8da0b810-b703-487d-be35-7782896ef9f2",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "7946b901-f671-4519-a919-a1081fb02c6a",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 2672.806488991882,
+              "y": 1181.7079953650061
+            },
+            {
+              "x": 2672.806488991882,
+              "y": 1262.8539976825032
+            },
+            {
+              "x": 2515.5,
+              "y": 1262.8539976825032
+            },
+            {
+              "x": 2515.5,
+              "y": 1344
+            }
+          ],
+          "sides": [
+            "bottom",
+            "top"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/blogs_has_categories",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "99e16188-a76d-48eb-80b7-80c7ec15640f"
+          ]
+        ]
+      },
+      {
+        "name": "categories_parent_of_categories",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "8da0b810-b703-487d-be35-7782896ef9f2",
+            "95100e7e-6a58-4aa7-acd2-bf7ae8a72bb9"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "8da0b810-b703-487d-be35-7782896ef9f2",
+            "90a673be-2f06-4985-a342-70329c7cf60e"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "2258834e-831b-41e9-9f1c-c2ae094bcd4a",
+        "description": "parent_of",
+        "parentCollection": "8da0b810-b703-487d-be35-7782896ef9f2",
+        "childCollection": "8da0b810-b703-487d-be35-7782896ef9f2",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "12704d9f-15ba-4210-80ec-7b9b12cf1fa5",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 2672.806488991882,
+              "y": 1043.7079953650061
+            },
+            {
+              "x": 2672.806488991882,
+              "y": 1018.7079953650061
+            },
+            {
+              "x": 2820.806488991882,
+              "y": 1018.7079953650061
+            },
+            {
+              "x": 2820.806488991882,
+              "y": 1112.7079953650061
+            },
+            {
+              "x": 2795.806488991882,
+              "y": 1112.7079953650061
+            }
+          ],
+          "sides": [
+            "top",
+            "right"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/categories_parent_of_categories",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "6705d7d9-6eb3-469c-93de-a1967eb3f167"
+          ]
+        ]
+      },
+      {
+        "name": "blogs_has_tags",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "f2723b4e-52f5-4be6-a46b-0849e9a017d5",
+            "abb7dfef-e3ab-4c03-8a0a-cd1081b87b11"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "1c36adb3-544d-4345-986b-883569ca2739",
+        "description": "has",
+        "parentCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+        "childCollection": "f2723b4e-52f5-4be6-a46b-0849e9a017d5",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "417d3a62-5519-4610-a115-fa5069597a99",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 2262,
+              "y": 1151
+            },
+            {
+              "x": 2325.5,
+              "y": 1151
+            },
+            {
+              "x": 2325.5,
+              "y": 1375.2
+            },
+            {
+              "x": 2389,
+              "y": 1375.2
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/blogs_has_tags",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "9bde9457-074b-4219-8c3c-7dad458c18cb"
+          ]
+        ]
+      },
+      {
+        "name": "tags_maps_to_post_tags",
+        "relationshipType": "Foreign Key",
+        "parentField": [],
+        "parentCardinality": "1",
+        "childField": [],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "9d78f33e-04b8-4f29-909f-c0bbe316352f",
+        "description": "maps_to",
+        "parentCollection": "f2723b4e-52f5-4be6-a46b-0849e9a017d5",
+        "childCollection": "c641f3da-fed0-439b-823d-6896558a0df3",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "29ab09a2-68fd-4a64-a1b0-beb77de0ac18",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1928,
+              "y": 1153
+            },
+            {
+              "x": 2006,
+              "y": 1153
+            },
+            {
+              "x": 2006,
+              "y": 1151
+            },
+            {
+              "x": 2084,
+              "y": 1151
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/tags_maps_to_post_tags",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "db9c45f1-5e94-465e-9ef3-2d6f0295011f"
+          ]
+        ]
+      },
+      {
+        "name": "posts_receives_comments",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+            "d9b6c4f7-515d-4ca5-b158-65365e7b5c54"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+            "2448bcc3-5e0b-418a-a946-e925a5a1a25e"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "c7272b1c-e6ed-4033-8c67-61e0d528c8ce",
+        "description": "receives",
+        "parentCollection": "43321fc0-0908-43fa-bf2c-1e837c341b0e",
+        "childCollection": "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "78b3c5bc-ff12-4b2a-8891-150f03ae77a1",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1135.6666666666667,
+              "y": 2049
+            },
+            {
+              "x": 1135.6666666666667,
+              "y": 1685
+            },
+            {
+              "x": 1137.3333333333333,
+              "y": 1685
+            },
+            {
+              "x": 1137.3333333333333,
+              "y": 1321
+            }
+          ],
+          "sides": [
+            "top",
+            "bottom"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/posts_receives_comments",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "cc02f3dd-56d1-4016-a020-4b6b0d53a1cd"
+          ]
+        ]
+      },
+      {
+        "name": "users_writes_comments",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "fc983e47-d931-4de2-b065-b8a503490ad8"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+            "d3b452e4-e642-4e5b-8a0d-7cf2c5bd4ae6"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "d59b709b-0795-4293-a40d-2710a4b1ba77",
+        "description": "writes",
+        "parentCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+        "childCollection": "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "325fe413-68c1-4c42-9867-9d69ae314ae8",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1325,
+              "y": 2177
+            },
+            {
+              "x": 1559.5,
+              "y": 2177
+            },
+            {
+              "x": 1559.5,
+              "y": 1811.5
+            },
+            {
+              "x": 1794,
+              "y": 1811.5
+            }
+          ],
+          "sides": [
+            "right",
+            "left"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/users_writes_comments",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "c05f66de-198f-4886-ac2b-2264bbce9792"
+          ]
+        ]
+      },
+      {
+        "name": "comments_replies_to_comments",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+            "9da74043-bd9c-4de9-945e-dc1059143791"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+            "aa3af5ba-141c-4fca-82c1-5d7bfbd2a06c"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "c647c2a4-d00c-4c6d-8cd8-90acfa3ddbf9",
+        "description": "replies_to",
+        "parentCollection": "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+        "childCollection": "557f40f0-fade-4ce1-9d90-2c664d1d15e0",
+        "lineSize": 2,
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "hackoladeStyles": {
+          "GUID": "1cb90422-0139-47e3-bc7c-1a1301ceefbe",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 1230.3333333333333,
+              "y": 2049
+            },
+            {
+              "x": 1230.3333333333333,
+              "y": 2024
+            },
+            {
+              "x": 1350,
+              "y": 2024
+            },
+            {
+              "x": 1350,
+              "y": 2113
+            },
+            {
+              "x": 1325,
+              "y": 2113
+            }
+          ],
+          "sides": [
+            "top",
+            "right"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/comments_replies_to_comments",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "030a2abb-a7ed-4e40-a6d5-4816f716d902"
+          ]
+        ]
+      },
+      {
+        "name": "blogs_hosts_media_assets",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "f81efc89-8397-45e9-9379-fc8c401401c9",
+            "63cabcd9-1b4a-4151-9a89-16e6039dd628"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+            "c8afeaf9-d1d9-4cee-abcc-bee18b1528e0"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "9516e7de-5cb1-43dd-a5cf-55daad65b681",
+        "description": "hosts",
+        "parentCollection": "f81efc89-8397-45e9-9379-fc8c401401c9",
+        "childCollection": "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+        "lineSize": 2,
+        "hackoladeStyles": {
+          "GUID": "73c1bcb9-478e-4f30-b1cf-8509b325b7db",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 2506,
+              "y": 1752
+            },
+            {
+              "x": 2506,
+              "y": 1626
+            },
+            {
+              "x": 2515.5,
+              "y": 1626
+            },
+            {
+              "x": 2515.5,
+              "y": 1500
+            }
+          ],
+          "sides": [
+            "top",
+            "bottom"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/blogs_hosts_media_assets",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "d349c66b-34bb-4698-a8c1-f4ebcc5e9de9"
+          ]
+        ]
+      },
+      {
+        "name": "users_uploads_media_assets",
+        "relationshipType": "Foreign Key",
+        "parentField": [
+          [
+            "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+            "fc983e47-d931-4de2-b065-b8a503490ad8"
+          ]
+        ],
+        "parentCardinality": "1",
+        "childField": [
+          [
+            "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+            "637a8119-5267-431e-b94c-b47f1804ef51"
+          ]
+        ],
+        "isActivated": true,
+        "childCardinality": "0..n",
+        "GUID": "fec073ed-677b-454c-a6a9-2215c3d8b430",
+        "description": "uploads",
+        "parentCollection": "b1efe2ac-3178-4870-82d3-4fcba440bd88",
+        "childCollection": "223dc4da-cdaf-4853-ae5c-d401d3f068fc",
+        "lineSize": 2,
+        "hackoladeStyles": {
+          "GUID": "0407491b-7fa7-45f1-b7fc-ceda10051291",
+          "autoPositioning": true,
+          "type": "Orthogonal",
+          "thickness": 2,
+          "color": "#79c4ff",
+          "dataType": "",
+          "shape": [
+            {
+              "x": 2372,
+              "y": 1848
+            },
+            {
+              "x": 2212.5,
+              "y": 1848
+            },
+            {
+              "x": 2212.5,
+              "y": 1797
+            },
+            {
+              "x": 2053,
+              "y": 1797
+            }
+          ],
+          "sides": [
+            "left",
+            "right"
+          ]
+        },
+        "definitionEntityType": "relationship",
+        "link": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+        "kind": "link",
+        "fieldRelativePath": "#/relationships/users_uploads_media_assets",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "e676d63a-8f00-49ed-a447-f2a1845c623b"
+          ]
+        ]
+      }
+    ],
+    "GUID": "9de8d99c-7ad7-4854-9aa6-242e796ae060"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [
+      {
+        "name": "glossary",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "name": "termBusinessName",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "bc636c2f-2da6-510b-bb25-6ffe843f2aee",
+            "required": true,
+            "error": {
+              "examples": false
+            },
+            "examples": [
+              "account"
+            ]
+          },
+          {
+            "name": "termTechnicalName",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "3445aa1c-72bf-545b-9ecb-0972ab636850",
+            "required": false,
+            "error": {
+              "examples": false
+            },
+            "examples": [
+              "accnt"
+            ]
+          },
+          {
+            "name": "Description",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "18b2ece3-4acb-5489-a320-8036334a02a1",
+            "error": {
+              "examples": false
+            },
+            "examples": [
+              "Account description"
+            ]
+          },
+          {
+            "name": "URI",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "f84eba40-9fb6-5a67-af10-905230fecbe9",
+            "error": {}
+          },
+          {
+            "name": "synonyms",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "array",
+            "properties": [
+              {
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "string",
+                "properties": [],
+                "color": "#555555",
+                "GUID": "676259b9-0a37-51a7-8968-0510bd883e07",
+                "arrayItem": true,
+                "error": {
+                  "examples": false
+                }
+              }
+            ],
+            "additionalItems": true,
+            "color": "#555555",
+            "GUID": "6b136853-c539-5a27-b1df-7db0343040d7",
+            "error": {}
+          },
+          {
+            "name": "^[a-zA-Z0-9_.-]+$",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "document",
+            "properties": [
+              {
+                "name": "dataType",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "array",
+                "properties": [
+                  {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "cb2496ef-ce41-51a1-8c5f-30c2c083cc58",
+                    "arrayItem": true,
+                    "error": {
+                      "examples": false
+                    },
+                    "examples": [
+                      "string"
+                    ]
+                  }
+                ],
+                "additionalItems": true,
+                "color": "#555555",
+                "GUID": "0b74c5fc-b1f6-5ad8-b9df-1d3622fa1e6a",
+                "error": {}
+              },
+              {
+                "type": "choice",
+                "properties": [
+                  {
+                    "subschema": true,
+                    "isActivated": true,
+                    "type": "document",
+                    "GUID": "8072ed45-f706-52e6-a44a-c5012e5c0e01",
+                    "properties": [
+                      {
+                        "name": "length",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "f7a0dc2f-cbb7-56cd-ab0e-224c42497cf2",
+                        "minimum": 0,
+                        "error": {}
+                      },
+                      {
+                        "name": "default",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "687ebd72-dc68-5d15-acc4-5b075c838921",
+                        "error": {}
+                      },
+                      {
+                        "name": "enum",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "array",
+                        "properties": [
+                          {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "color": "#555555",
+                            "GUID": "64ec54c5-912f-5fae-a8f3-1813f4d51e20",
+                            "arrayItem": true
+                          }
+                        ],
+                        "additionalItems": true,
+                        "color": "#555555",
+                        "GUID": "4cf9da8a-d305-521c-91d7-a3fe7f181b2f",
+                        "error": {}
+                      }
+                    ],
+                    "additionalProperties": true,
+                    "displayName": "string",
+                    "error": {}
+                  },
+                  {
+                    "subschema": true,
+                    "isActivated": true,
+                    "type": "document",
+                    "GUID": "cc5ced73-6129-5df8-9ca1-845a167749be",
+                    "properties": [
+                      {
+                        "name": "precision",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "d6a1a989-5cc3-5847-8760-93ce060920fc",
+                        "minimum": 0,
+                        "error": {}
+                      },
+                      {
+                        "name": "scale",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "42e47883-90bb-5d67-92dc-1bb966958d9a",
+                        "minimum": 0,
+                        "error": {}
+                      },
+                      {
+                        "name": "default",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "numeric",
+                        "properties": [],
+                        "color": "#555555",
+                        "GUID": "3074232e-3feb-5948-a07a-9f332ed7a577",
+                        "error": {
+                          "name": false,
+                          "code": false
+                        }
+                      },
+                      {
+                        "name": "enum",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "array",
+                        "properties": [
+                          {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "properties": [],
+                            "color": "#555555",
+                            "GUID": "8c071fe5-9845-50b7-984e-76e9041d8b51",
+                            "arrayItem": true
+                          }
+                        ],
+                        "additionalItems": true,
+                        "color": "#555555",
+                        "GUID": "fd30a5b6-8a36-5c71-9616-aba751c1109d",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "error": {
+                          "name": false,
+                          "code": false
+                        }
+                      }
+                    ],
+                    "additionalProperties": true,
+                    "displayName": "number",
+                    "error": {}
+                  }
+                ],
+                "isActivated": true,
+                "choice": "anyOf",
+                "GUID": "c603f03b-7b5b-599f-aee5-aad364be4a82"
+              },
+              {
+                "name": "required",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "boolean",
+                "color": "#555555",
+                "GUID": "28a2ee50-17fb-5c04-9895-6f2adcbc6517",
+                "error": {}
+              }
+            ],
+            "additionalProperties": true,
+            "color": "#555555",
+            "isPatternField": true,
+            "GUID": "1c670e86-59c1-57b9-bf42-7f08869197ea",
+            "sampleName": "avro",
+            "error": {}
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "ed60ab88-aeb5-455a-9c28-5afa16ee641b",
+        "definitionRefs": [
+          [
+            "b2ca52a3-0dac-4824-a410-2f504693a469"
+          ]
+        ],
+        "link": "?g=github&o=hackolade&r=hub-models&f=JSON%2FHackolade+Studio+Glossary.hck.json&b=main",
+        "fieldRelativePath": "#/glossary",
+        "kind": "link",
+        "fileType": "hackoladeSchema"
+      },
+      {
+        "name": "Order",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Order identifier",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": true,
+            "required": true,
+            "GUID": "f83f1f06-572a-5dc6-89cc-1dafc3bb2949"
+          },
+          {
+            "type": "numeric",
+            "properties": [],
+            "name": "Customer identifier",
+            "hackoladeMeta": {
+              "styles": {
+                "color": "#9c28b1"
+              }
+            },
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "2a68bc5d-8446-5407-a630-c21d1b63670e",
+            "relationshipType": "Foreign Key",
+            "foreignCollection": "da2fd91c-4b1d-4ac9-8515-3e21bacf3c7e",
+            "foreignField": [
+              "da2fd91c-4b1d-4ac9-8515-3e21bacf3c7e",
+              "cb229cec-41da-4ae6-95f1-358c83f9c16f"
+            ]
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Ordered date",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "primaryKey": false,
+            "GUID": "08ee4b05-b99a-5c6b-9eb6-45d5ca7b522b",
+            "format": "date"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Status",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "required": false,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "primaryKey": false,
+            "GUID": "ba768696-6b03-5a9b-9072-bb171bab9b9c"
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "199cb6ae-221e-42bd-a1ff-407d8076146a",
+        "definitionRefs": [
+          [
+            "06797420-c394-4793-acdc-c61f47504c6b"
+          ]
+        ],
+        "link": "polyglot-references.hck.json",
+        "fieldRelativePath": "#/Order",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema"
+      }
+    ],
+    "GUID": "7eace1f8-ab8c-4023-89c8-098208d1d31b"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "a30bc293-13f6-47cc-8259-52fc067eec20",
+      "name": "Disclaimer",
+      "refType": "polyglot",
+      "refIdPath": [
+        "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+        "9de8d99c-7ad7-4854-9aa6-242e796ae060",
+        "38a55353-9fd8-467f-b73f-bf3ad58ab9a0"
+      ],
+      "type": "reference",
+      "ref": "38a55353-9fd8-467f-b73f-bf3ad58ab9a0",
+      "value": "*About this model*\n\nThis model was created using a public GenAI tool (e.g., ChatGPT) prompted to generate an ER diagram in Mermaid syntax.\nThe Mermaid code was then imported into Hackolade Studio (v8.3.2+) via the reverse-engineering feature, either from a .mmd file or directly from the clipboard.\n\nThis approach allows rapid generation and editing of data models using Mermaid’s human-readable syntax as a bridge between GenAI and Hackolade Studio. While Mermaid lacks support for advanced constraints or physical schemas, it offers a fast, intuitive way to translate conceptual prompts into structured diagrams.\n\nTo learn more about importing Mermaid ER diagrams into Hackolade Studio: https://hackolade.com/help/GenAI-createdMermaidERdiagram.html",
+      "disableInitialFocus": true
+    }
+  ],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-11-18T06:52:42.589Z",
+  "GUID": "252882d4-451a-4f98-a743-0b8dff0fb4b0",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-11-18T13:31:09.675Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.6.1"
+  },
+  "hackoladeMeta": {},
+  "polyglotModelPaths": [
+    {
+      "GUID": "a6f752d5-8cce-499b-a442-23e43895427c",
+      "polyglotModelName": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+      "polyglotModelPath": "?g=gitlab&o=hackolade&r=genAI-created-models-read-only&f=blog-platform-model-Polyglot.hck.json&b=main",
+      "normalization": false,
+      "applyTargetNamingConventions": false
+    }
+  ],
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "4236e797-1868-4bc8-9fa6-623414ce1dc0",
+            "x": 1794,
+            "y": 1681,
+            "width": 259,
+            "height": 174,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960",
+            "x": 2389,
+            "y": 1344,
+            "width": 253,
+            "height": 156,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "be6dc3ba-851a-4832-87c9-c22526c2cfe9",
+            "x": 1052,
+            "y": 1093,
+            "width": 256,
+            "height": 228,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d",
+            "x": 1193,
+            "y": 1698,
+            "width": 271,
+            "height": 138,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "049aa3ac-c020-412e-9ffc-9fbe1fa55bad",
+            "x": 2549.806488991882,
+            "y": 1043.7079953650061,
+            "width": 246,
+            "height": 138,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "fdaa949b-7d37-4703-9258-de0d76d597a5",
+            "x": 2084,
+            "y": 1100,
+            "width": 178,
+            "height": 102,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "33a032bc-aba7-40f9-a034-9a98b9baff06",
+            "x": 1703,
+            "y": 1111,
+            "width": 225,
+            "height": 84,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "12f32d6f-63c2-40ec-9950-bd78a782ef2f",
+            "x": 1041,
+            "y": 2049,
+            "width": 284,
+            "height": 192,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "7917a648-e546-40c6-8a40-b877f705e9a7",
+            "x": 2372,
+            "y": 1752,
+            "width": 268,
+            "height": 192,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "84b807f1-1bcd-42f5-bf70-7e3cbab177bb",
+            "x": 1775,
+            "y": 1427,
+            "width": 264,
+            "height": 84,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "c96785e0-93b4-4370-bb4c-73612016f989",
+            "x": 1026,
+            "y": 1063,
+            "width": 312,
+            "height": 201,
+            "color": {}
+          },
+          {
+            "GUID": "b2ca52a3-0dac-4824-a410-2f504693a469",
+            "x": 1366,
+            "y": 1063,
+            "width": 319,
+            "height": 195,
+            "color": {}
+          },
+          {
+            "GUID": "ca08c454-1597-4277-8dff-70ca403697cd",
+            "x": 1031,
+            "y": 1289,
+            "width": 313,
+            "height": 256,
+            "color": {}
+          },
+          {
+            "GUID": "06797420-c394-4793-acdc-c61f47504c6b",
+            "x": 1370,
+            "y": 1291,
+            "width": 324,
+            "height": 260,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "a30bc293-13f6-47cc-8259-52fc067eec20",
+            "x": 1212.6666666666677,
+            "y": 833.3333333333343,
+            "height": 225,
+            "width": 681,
+            "color": {
+              "hex": "#fec107"
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "4236e797-1868-4bc8-9fa6-623414ce1dc0"
+          },
+          {
+            "GUID": "8ab2ce14-68ba-4cd6-9edc-07fbdd28c960"
+          },
+          {
+            "GUID": "be6dc3ba-851a-4832-87c9-c22526c2cfe9"
+          },
+          {
+            "GUID": "5eeb3108-f4f2-4041-bcf1-5d8e8241fe6d"
+          },
+          {
+            "GUID": "049aa3ac-c020-412e-9ffc-9fbe1fa55bad"
+          },
+          {
+            "GUID": "fdaa949b-7d37-4703-9258-de0d76d597a5"
+          },
+          {
+            "GUID": "33a032bc-aba7-40f9-a034-9a98b9baff06"
+          },
+          {
+            "GUID": "12f32d6f-63c2-40ec-9950-bd78a782ef2f"
+          },
+          {
+            "GUID": "7917a648-e546-40c6-8a40-b877f705e9a7"
+          },
+          {
+            "GUID": "84b807f1-1bcd-42f5-bf70-7e3cbab177bb"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
