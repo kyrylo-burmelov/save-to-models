@@ -1,0 +1,85 @@
+{
+  "modelName": "New Model",
+  "collections": [],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {},
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "de02279e-2dde-47ae-8155-e379107a3774"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "9788e1d8-aca2-4cac-afba-1357af1d56a7"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "31515b24-57b8-44b6-bb22-4a4ddd24f0b7"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2025-12-03T11:49:16.859Z",
+  "GUID": "497c1762-c783-48f2-a49d-fa2a9a75f283",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-12-03T11:49:39.434Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.7.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  }
+}
