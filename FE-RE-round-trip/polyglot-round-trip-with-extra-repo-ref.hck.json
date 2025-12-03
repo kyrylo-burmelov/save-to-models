@@ -8,20 +8,20 @@
       "properties": [],
       "definitions": {
         "properties": [],
-        "GUID": "c62c95fd-4792-4ee4-932f-8aab8cf2e2f0"
+        "GUID": "1ba7638d-dd55-4f3f-ba23-871a78e1c764"
       },
       "additionalProperties": false,
       "snippet": "required",
-      "GUID": "5187fe5a-daf0-48ac-94e6-bcef51b069da",
+      "GUID": "930ca277-4ee7-49c2-81dc-8c6c89d6e239",
       "$ref": "#external/definitions/Customer",
       "refType": "polyglot",
       "ref": "5cc94e26-8eb9-4b1c-a78d-a870d9f640db",
       "refIdPath": [
-        "e71bc727-21dc-4dc8-8674-2f6b1aec9d87",
-        "261ce70e-347c-4e53-a781-3863e4e38eb8",
+        "08d27511-934f-4684-b2cb-56657465caad",
+        "34ebac01-44f8-4ca9-954d-19fd91f65d3e",
         "5cc94e26-8eb9-4b1c-a78d-a870d9f640db"
       ],
-      "bucketId": "5250c31d-27b0-4511-984d-e9a921669284",
+      "bucketId": "0a0b35f8-e568-496a-95de-9176e9bb7aaf",
       "description": "The Customer entity represents an individual or organization using the ecommerce platform to browse, purchase, and manage orders. It stores essential contact information, registration data, and address details for billing and shipping.",
       "hackoladeMeta": {
         "validationErrors": {}
@@ -34,7 +34,7 @@
       "name": "Customer management",
       "type": "reference",
       "collectionIds": [
-        "5187fe5a-daf0-48ac-94e6-bcef51b069da"
+        "930ca277-4ee7-49c2-81dc-8c6c89d6e239"
       ],
       "backgroundColor": {
         "r": 216,
@@ -44,13 +44,13 @@
       },
       "show": true,
       "indexes": [],
-      "GUID": "5250c31d-27b0-4511-984d-e9a921669284",
+      "GUID": "0a0b35f8-e568-496a-95de-9176e9bb7aaf",
       "$ref": "#external/definitions/Customer management",
       "refType": "polyglot",
       "ref": "81137752-f86d-41e7-bb91-6d3e9fdb9628",
       "refIdPath": [
-        "e71bc727-21dc-4dc8-8674-2f6b1aec9d87",
-        "261ce70e-347c-4e53-a781-3863e4e38eb8",
+        "08d27511-934f-4684-b2cb-56657465caad",
+        "34ebac01-44f8-4ca9-954d-19fd91f65d3e",
         "81137752-f86d-41e7-bb91-6d3e9fdb9628"
       ],
       "description": "The Customer Management container encompasses all entities and relationships associated with users of the ecommerce platform. It covers personal information, contact details, and addresses needed to fulfill orders, provide customer support, and maintain communication preferences."
@@ -61,14 +61,14 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "5187fe5a-daf0-48ac-94e6-bcef51b069da": "Customer",
-    "5250c31d-27b0-4511-984d-e9a921669284": "Customer management",
-    "d22079b2-5d13-4807-8309-467f6f9a45c7": "Disclaimer"
+    "930ca277-4ee7-49c2-81dc-8c6c89d6e239": "Customer",
+    "0a0b35f8-e568-496a-95de-9176e9bb7aaf": "Customer management",
+    "163fa47d-a7bd-4cc3-bc7b-7a685c67d554": "Disclaimer"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "7f610702-99db-486e-9292-f658461e6f2a"
+    "GUID": "b05d3763-ef1c-4949-bd27-f61e60993d93"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
@@ -179,7 +179,7 @@
                 "compositeUniqueKey": false,
                 "name": "Address ID",
                 "isActivated": true,
-                "GUID": "dff923d5-84b7-533f-8a76-4dcd803a5a33",
+                "GUID": "404f5440-4f6f-5fa8-b5b8-44545c884019",
                 "mode": "",
                 "compositeKey": [
                   "compositePrimaryKey",
@@ -196,7 +196,7 @@
                 "compositeUniqueKey": false,
                 "name": "Street",
                 "isActivated": true,
-                "GUID": "a67178d1-2b76-5521-a4c3-d6fd453f0f74",
+                "GUID": "64ac9deb-d531-5c2e-9742-d374e403c39d",
                 "description": "Specifies the street name and number, providing detailed location information within a city or town.",
                 "mode": "",
                 "compositeKey": [
@@ -214,7 +214,7 @@
                 "compositeUniqueKey": false,
                 "name": "Postal code",
                 "isActivated": true,
-                "GUID": "7c7e4aed-3aa9-5bd2-bccb-4430d94e0834",
+                "GUID": "3e7923a3-ceca-5b37-bb9e-dd527134cc31",
                 "foreignCollection": "",
                 "foreignField": [],
                 "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
@@ -234,29 +234,10 @@
                 "compositeUniqueKey": false,
                 "name": "City",
                 "isActivated": true,
-                "GUID": "0e1b934a-42c4-5d75-8fdc-07f8d0129925",
+                "GUID": "558240f1-eede-5026-8c2e-8cf20ba2d5cc",
                 "foreignCollection": "",
                 "foreignField": [],
                 "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
-                "mode": "",
-                "compositeKey": [
-                  "compositePrimaryKey",
-                  "compositeUniqueKey"
-                ]
-              },
-              {
-                "exclusiveMinimum": false,
-                "exclusiveMaximum": false,
-                "primaryKey": false,
-                "required": false,
-                "alternateKey": false,
-                "childType": "number",
-                "type": "numeric",
-                "compositePrimaryKey": false,
-                "compositeUniqueKey": false,
-                "name": "Phone",
-                "isActivated": true,
-                "GUID": "54558de0-b840-59fe-8e34-79ebcdab300a",
                 "mode": "",
                 "compositeKey": [
                   "compositePrimaryKey",
@@ -293,7 +274,7 @@
                     "compositeUniqueKey": false,
                     "name": "Address ID",
                     "isActivated": true,
-                    "GUID": "f5f040e0-9c82-58c8-a951-00c223a0b0bd",
+                    "GUID": "7055ca52-d4fe-5b0c-83e2-27bf3a457cb2",
                     "mode": "",
                     "compositeKey": [
                       "compositePrimaryKey",
@@ -310,7 +291,7 @@
                     "compositeUniqueKey": false,
                     "name": "Street",
                     "isActivated": true,
-                    "GUID": "f1fde62f-2224-5c53-bdd5-815c2369d986",
+                    "GUID": "f18f4f3c-3a6e-5ea0-8037-be712f93026b",
                     "description": "Specifies the street name and number, providing detailed location information within a city or town.",
                     "mode": "",
                     "compositeKey": [
@@ -328,7 +309,7 @@
                     "compositeUniqueKey": false,
                     "name": "Postal code",
                     "isActivated": true,
-                    "GUID": "03048688-44ef-5286-9d37-e87d6ca8cdf8",
+                    "GUID": "f0edd13e-e801-51ee-9725-cffcfc65921d",
                     "foreignCollection": "",
                     "foreignField": [],
                     "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
@@ -348,29 +329,10 @@
                     "compositeUniqueKey": false,
                     "name": "City",
                     "isActivated": true,
-                    "GUID": "24a64b44-cec0-54fc-8e94-f6287864ebcc",
+                    "GUID": "55b4e07b-7172-545a-af91-430bb091806d",
                     "foreignCollection": "",
                     "foreignField": [],
                     "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
-                    "mode": "",
-                    "compositeKey": [
-                      "compositePrimaryKey",
-                      "compositeUniqueKey"
-                    ]
-                  },
-                  {
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "required": false,
-                    "alternateKey": false,
-                    "childType": "number",
-                    "type": "numeric",
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "name": "Phone",
-                    "isActivated": true,
-                    "GUID": "6b7c8f65-60d0-5396-89d4-e314a0f178be",
                     "mode": "",
                     "compositeKey": [
                       "compositePrimaryKey",
@@ -421,13 +383,13 @@
         "bucketId": "81137752-f86d-41e7-bb91-6d3e9fdb9628",
         "description": "The Customer entity represents an individual or organization using the ecommerce platform to browse, purchase, and manage orders. It stores essential contact information, registration data, and address details for billing and shipping.",
         "definitionEntityType": "collection",
-        "link": "../demo-models-clone/common/Customer-Polyglot.hck.json",
-        "kind": "relativePath",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=common%2FCustomer-Polyglot.hck.json&b=main",
+        "kind": "link",
         "fieldRelativePath": "#/Customer management/Customer",
         "fileType": "hackoladeSchema",
         "definitionRefs": [
           [
-            "5187fe5a-daf0-48ac-94e6-bcef51b069da"
+            "930ca277-4ee7-49c2-81dc-8c6c89d6e239"
           ]
         ]
       },
@@ -438,13 +400,13 @@
         "value": "This Model serves as a basic example of reusable definitions within a data modeling context\n\nIt is intended for illustration purposes only and simplifies the complexities of customer data management, omitting certain variations and best practices relevant to real-world applications.",
         "disableInitialFocus": true,
         "definitionEntityType": "decorativeSymbol",
-        "link": "../demo-models-clone/common/Customer-Polyglot.hck.json",
-        "kind": "relativePath",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=common%2FCustomer-Polyglot.hck.json&b=main",
+        "kind": "link",
         "fieldRelativePath": "#/Disclaimer",
         "fileType": "hackoladeSchema",
         "definitionRefs": [
           [
-            "d22079b2-5d13-4807-8309-467f6f9a45c7"
+            "163fa47d-a7bd-4cc3-bc7b-7a685c67d554"
           ]
         ]
       },
@@ -466,33 +428,33 @@
         "GUID": "81137752-f86d-41e7-bb91-6d3e9fdb9628",
         "description": "The Customer Management container encompasses all entities and relationships associated with users of the ecommerce platform. It covers personal information, contact details, and addresses needed to fulfill orders, provide customer support, and maintain communication preferences.",
         "definitionEntityType": "bucket",
-        "link": "../demo-models-clone/common/Customer-Polyglot.hck.json",
-        "kind": "relativePath",
+        "link": "?g=github&o=hackolade&r=demo-models-read-only&f=common%2FCustomer-Polyglot.hck.json&b=main",
+        "kind": "link",
         "fieldRelativePath": "#/Customer management",
         "fileType": "hackoladeSchema",
         "definitionRefs": [
           [
-            "5250c31d-27b0-4511-984d-e9a921669284"
+            "0a0b35f8-e568-496a-95de-9176e9bb7aaf"
           ]
         ]
       }
     ],
-    "GUID": "261ce70e-347c-4e53-a781-3863e4e38eb8"
+    "GUID": "34ebac01-44f8-4ca9-954d-19fd91f65d3e"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "43d523d9-8f94-4925-82f9-5fdbfe50882e"
+    "GUID": "9e639b10-5f0e-4f0b-80b2-bc238dcda691"
   },
   "sources": [],
   "decorativeSymbols": [
     {
-      "GUID": "d22079b2-5d13-4807-8309-467f6f9a45c7",
+      "GUID": "163fa47d-a7bd-4cc3-bc7b-7a685c67d554",
       "name": "Disclaimer",
       "refType": "polyglot",
       "refIdPath": [
-        "e71bc727-21dc-4dc8-8674-2f6b1aec9d87",
-        "261ce70e-347c-4e53-a781-3863e4e38eb8",
+        "08d27511-934f-4684-b2cb-56657465caad",
+        "34ebac01-44f8-4ca9-954d-19fd91f65d3e",
         "f40517e2-29ea-49d0-9706-f405a6cf02ac"
       ],
       "type": "reference",
@@ -503,19 +465,19 @@
   ],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
-  "creationTS": "2025-12-03T11:55:17.018Z",
-  "GUID": "e71bc727-21dc-4dc8-8674-2f6b1aec9d87",
+  "creationTS": "2025-12-03T12:04:03.444Z",
+  "GUID": "08d27511-934f-4684-b2cb-56657465caad",
   "isLineageEnabled": false,
   "polyglotModelPaths": [
     {
-      "GUID": "8a24f8a1-df01-46f0-9844-a59e01f6c365",
+      "GUID": "7a365268-f970-45fc-8317-73cf16170ea4",
       "polyglotModelName": "Customer-Polyglot",
-      "polyglotModelPath": "../demo-models-clone/common/Customer-Polyglot.hck.json",
+      "polyglotModelPath": "?g=github&o=hackolade&r=demo-models-read-only&f=common%2FCustomer-Polyglot.hck.json&b=main",
       "normalization": false,
       "applyTargetNamingConventions": false
     }
   ],
-  "lastModifTS": "2025-12-03T11:58:41.069Z",
+  "lastModifTS": "2025-12-03T12:05:04.305Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -531,7 +493,7 @@
       "dbLevel": {
         "erd": [
           {
-            "GUID": "5187fe5a-daf0-48ac-94e6-bcef51b069da",
+            "GUID": "930ca277-4ee7-49c2-81dc-8c6c89d6e239",
             "x": 1263,
             "y": 1167,
             "width": 385,
@@ -551,7 +513,7 @@
           {
             "x": 1199,
             "y": 1103,
-            "GUID": "5250c31d-27b0-4511-984d-e9a921669284"
+            "GUID": "0a0b35f8-e568-496a-95de-9176e9bb7aaf"
           }
         ],
         "collapsedNodes": [],
@@ -565,7 +527,7 @@
         "graphView": {
           "erd": [
             {
-              "GUID": "5187fe5a-daf0-48ac-94e6-bcef51b069da",
+              "GUID": "930ca277-4ee7-49c2-81dc-8c6c89d6e239",
               "size": 100,
               "x": 1040,
               "y": 1040
@@ -575,12 +537,12 @@
             {
               "x": 64,
               "y": 64,
-              "GUID": "5250c31d-27b0-4511-984d-e9a921669284"
+              "GUID": "0a0b35f8-e568-496a-95de-9176e9bb7aaf"
             }
           ],
           "decorativeSymbols": [
             {
-              "GUID": "d22079b2-5d13-4807-8309-467f6f9a45c7",
+              "GUID": "163fa47d-a7bd-4cc3-bc7b-7a685c67d554",
               "x": 1242,
               "y": 1099,
               "height": 150,
@@ -593,7 +555,7 @@
         "diagramViews": [],
         "decorativeSymbols": [
           {
-            "GUID": "d22079b2-5d13-4807-8309-467f6f9a45c7",
+            "GUID": "163fa47d-a7bd-4cc3-bc7b-7a685c67d554",
             "x": 1707,
             "y": 1139,
             "height": 150,
@@ -606,7 +568,7 @@
         "nestedCollectionsLayout": "horizontal",
         "options": [
           {
-            "GUID": "5187fe5a-daf0-48ac-94e6-bcef51b069da"
+            "GUID": "930ca277-4ee7-49c2-81dc-8c6c89d6e239"
           }
         ],
         "relationshipUpdateDisabled": false
