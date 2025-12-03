@@ -1,0 +1,169 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "Entity 1",
+      "type": "object",
+      "properties": [
+        {
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "f55120f8-5e5d-40cc-879c-0308b9f31c31",
+          "name": "Field 1",
+          "error": {}
+        },
+        {
+          "name": "Field 2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "8166cf44-c009-44d4-9ac5-f928445764cc",
+          "error": {}
+        },
+        {
+          "name": "Field 3",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "8f4eda38-536c-4f1f-b59e-7d368e4073f9",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "97757fca-f813-41d8-92da-4c2fb95321bd"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "815cc8f6-1932-4e34-8a1f-19bae880b37b",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "815cc8f6-1932-4e34-8a1f-19bae880b37b": "Entity 1",
+    "f55120f8-5e5d-40cc-879c-0308b9f31c31": "Field 1",
+    "8166cf44-c009-44d4-9ac5-f928445764cc": "Field 2",
+    "8f4eda38-536c-4f1f-b59e-7d368e4073f9": "Field 3"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "52e43f9f-bb14-4979-a5f7-a9fa9b715c85"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "075da5aa-9a51-4fe4-b5a6-2574c33e2430"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "b0a180dc-9bed-4a12-a57e-5284a1c9d910"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2025-12-03T10:50:14.289Z",
+  "GUID": "4f99b14f-d61e-41a8-870c-7094d7e35b7b",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-12-03T10:51:15.886Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.7.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "815cc8f6-1932-4e34-8a1f-19bae880b37b",
+            "x": 1093,
+            "y": 1119,
+            "width": 170,
+            "height": 86,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "815cc8f6-1932-4e34-8a1f-19bae880b37b",
+              "size": 100,
+              "x": 1123,
+              "y": 1166
+            }
+          ],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
