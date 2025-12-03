@@ -1,113 +1,49 @@
 {
-  "modelName": "New Model",
-  "collections": [
-    {
-      "collectionName": "New Document",
-      "type": "object",
-      "properties": [
-        {
-          "name": "New Field",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "087fafb1-531c-425c-a244-7097d758f1eb",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field1",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "0ae4061d-85a7-4c25-bb70-201b3eb3c680",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        },
-        {
-          "name": "New Field2",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "properties": [],
-          "GUID": "6663be51-9fac-4564-8e3b-5f84d35d240b",
-          "error": {
-            "name": false,
-            "code": false
-          }
-        }
-      ],
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "db7c8410-7e21-4852-894e-2b13fe4576e4"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "GUID": "97f42135-c36d-49c8-aa93-56290c102d21"
-    }
-  ],
+  "modelName": "New model",
+  "collections": [],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {
-    "97f42135-c36d-49c8-aa93-56290c102d21": "New Document",
-    "087fafb1-531c-425c-a244-7097d758f1eb": "New Field",
-    "0ae4061d-85a7-4c25-bb70-201b3eb3c680": "New Field1",
-    "6663be51-9fac-4564-8e3b-5f84d35d240b": "New Field2"
-  },
+  "idToNameHashTable": {},
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "01f77c4d-2084-4adb-a2ea-f8763a340ac9"
+    "GUID": "9aa992ee-340d-41ec-b6fe-3840bbd60af7"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "441dcbb9-cac9-432f-9070-c73df9b18552"
+    "GUID": "867cdd98-e97e-4c74-92c1-d6c898b183e7"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "282d5199-51dd-4dbd-9755-cff9a3f7181b"
+    "GUID": "4b3f35b0-c0da-46b3-8006-ab236ba243f0"
   },
   "sources": [],
   "decorativeSymbols": [],
-  "dbVendor": "JSON",
-  "dbVersion": "2019-09",
-  "appTarget": "JSON",
-  "creationTS": "2025-10-28T14:24:19.504Z",
-  "GUID": "e0c4f3a5-694e-4914-9018-89baddbaffa6",
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2025-12-03T12:06:57.085Z",
+  "GUID": "32bafbed-abc0-4c98-9e1a-02af27140ce2",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-10-28T14:24:44.631Z",
+  "lastModifTS": "2025-12-03T12:07:28.140Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.5.4"
+    "version": "8.7.2"
   },
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [
-          {
-            "GUID": "97f42135-c36d-49c8-aa93-56290c102d21",
-            "x": 2341,
-            "y": 1455,
-            "width": 208,
-            "height": 86,
-            "color": {}
-          }
-        ],
+        "erd": [],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
