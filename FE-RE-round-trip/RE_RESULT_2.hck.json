@@ -1,12 +1,55 @@
 {
   "modelName": "New Model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "MODEL_2 Entity",
+      "type": "object",
+      "properties": [
+        {
+          "name": "EXT_REF_FIELD",
+          "hackoladeMeta": {
+            "styles": {}
+          },
+          "isActivated": true,
+          "color": "#555555",
+          "$ref": "#external/definitions/Entity 1",
+          "refType": "polyglot",
+          "refIdPath": [
+            "15532147-d1f6-40ed-bbc7-56f4da423eb5",
+            "e6b1948a-ef60-4c0f-b0ba-8fc6ca9509d5",
+            "815cc8f6-1932-4e34-8a1f-19bae880b37b"
+          ],
+          "type": "reference",
+          "ref": "815cc8f6-1932-4e34-8a1f-19bae880b37b",
+          "GUID": "5fe3466d-5a06-403b-bc43-4cd02411287e"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "75c5ed96-0b2d-4e28-ae3f-e59a710a6502",
+        "properties": []
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "a6571a25-1434-485a-8c4d-42a3575b00ab",
+      "isRestfulApi": false,
+      "transaction": "Request",
+      "method": "Post",
+      "isNonPersistentTopic": false,
+      "mediaType": "application/JSON",
+      "unevaluatedProperties": false,
+      "bucketId": ""
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "5fe3466d-5a06-403b-bc43-4cd02411287e": "EXT_REF_FIELD",
+    "a6571a25-1434-485a-8c4d-42a3575b00ab": "MODEL_2 Entity"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -14,7 +57,64 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "collectionName": "Entity 1",
+        "type": "object",
+        "properties": [
+          {
+            "type": "string",
+            "properties": [],
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "f55120f8-5e5d-40cc-879c-0308b9f31c31",
+            "name": "Field 1"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Field 2",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "8166cf44-c009-44d4-9ac5-f928445764cc"
+          },
+          {
+            "type": "string",
+            "properties": [],
+            "name": "Field 3",
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "GUID": "8f4eda38-536c-4f1f-b59e-7d368e4073f9"
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "97757fca-f813-41d8-92da-4c2fb95321bd"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "815cc8f6-1932-4e34-8a1f-19bae880b37b",
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "definitionEntityType": "field",
+        "fileType": "hackoladeSchema",
+        "fieldRelativePath": "#/Entity 1",
+        "kind": "relativePath",
+        "link": "1.json",
+        "name": "New Field",
+        "definitionRefs": [
+          [
+            "a6571a25-1434-485a-8c4d-42a3575b00ab",
+            "5fe3466d-5a06-403b-bc43-4cd02411287e"
+          ]
+        ]
+      }
+    ],
     "GUID": "e6b1948a-ef60-4c0f-b0ba-8fc6ca9509d5"
   },
   "externalDefinitions": {
@@ -30,7 +130,7 @@
   "creationTS": "2025-12-03T11:00:51.837Z",
   "GUID": "15532147-d1f6-40ed-bbc7-56f4da423eb5",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-12-03T11:01:24.175Z",
+  "lastModifTS": "2025-12-03T11:02:38.531Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -39,10 +139,25 @@
   "applicationInformation": {
     "version": "8.7.2"
   },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
+  "polyglotModelPaths": [],
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "a6571a25-1434-485a-8c4d-42a3575b00ab",
+            "x": 64,
+            "y": 64,
+            "width": 305,
+            "height": 187,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -68,7 +183,16 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "fontStyle": [
+              "bold"
+            ],
+            "GUID": "a6571a25-1434-485a-8c4d-42a3575b00ab",
+            "autoWidth": false,
+            "autoHeight": false
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
@@ -78,8 +202,5 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
-  },
-  "hackoladeMeta": {
-    "customPropertiesUpdated": true
   }
 }
