@@ -1,5 +1,5 @@
 {
-  "modelName": "New Model",
+  "modelName": "New model",
   "collections": [],
   "buckets": [],
   "views": [],
@@ -10,30 +10,31 @@
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "52db93b5-8bbb-491d-8c5c-9aeb7edcd854"
+    "GUID": "8cfdeb77-d776-4607-bafe-9d6343468afb"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "4c7c8cec-a4b2-4287-b0a6-83a362fd02de"
+    "GUID": "543f3689-13f5-4ef7-b1d5-cf7991453efb"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "4ce9bb50-0618-4458-8d34-6430edfe130b"
+    "GUID": "caf1136d-2058-4bc2-8e49-f2c2f0df16b4"
   },
   "sources": [],
   "decorativeSymbols": [],
-  "dbVendor": "JSON",
-  "dbVersion": "2019-09",
-  "appTarget": "JSON",
-  "creationTS": "2025-12-04T12:11:17.962Z",
-  "GUID": "dfd1360a-5183-4dea-bdaf-667826aa28aa",
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2025-12-04T12:13:03.268Z",
+  "GUID": "4f43d3c3-6166-4803-8ed2-d9df86ca69ad",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-12-04T12:11:38.719Z",
+  "lastModifTS": "2025-12-04T12:13:42.929Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
@@ -78,8 +79,5 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
-  },
-  "hackoladeMeta": {
-    "customPropertiesUpdated": true
   }
 }
