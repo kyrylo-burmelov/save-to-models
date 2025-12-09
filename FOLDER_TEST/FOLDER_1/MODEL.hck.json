@@ -2,7 +2,7 @@
   "modelName": "New Model",
   "collections": [
     {
-      "collectionName": "MODEL",
+      "collectionName": "FOLDER_1 / MODEL",
       "type": "object",
       "properties": [],
       "definitions": {
@@ -24,7 +24,7 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "39c10420-9d62-40fc-bd20-c43c8317702b": "MODEL"
+    "39c10420-9d62-40fc-bd20-c43c8317702b": "FOLDER_1 / MODEL"
   },
   "definitions": {
     "type": "definitions",
@@ -49,7 +49,7 @@
   "creationTS": "2025-12-09T11:02:34.485Z",
   "GUID": "afdf9cf6-2406-4184-b233-6ff03ac760ea",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-12-09T11:04:54.287Z",
+  "lastModifTS": "2025-12-09T11:05:40.176Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
