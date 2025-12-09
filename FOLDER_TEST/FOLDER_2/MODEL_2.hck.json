@@ -2,7 +2,7 @@
   "modelName": "New Model",
   "collections": [
     {
-      "collectionName": "Model 1",
+      "collectionName": "Model 2",
       "type": "object",
       "properties": [],
       "definitions": {
@@ -24,7 +24,7 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "39c10420-9d62-40fc-bd20-c43c8317702b": "Model 1"
+    "39c10420-9d62-40fc-bd20-c43c8317702b": "Model 2"
   },
   "definitions": {
     "type": "definitions",
@@ -49,7 +49,7 @@
   "creationTS": "2025-12-09T11:02:34.485Z",
   "GUID": "afdf9cf6-2406-4184-b233-6ff03ac760ea",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-12-09T11:04:20.616Z",
+  "lastModifTS": "2025-12-09T11:04:27.389Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -64,7 +64,7 @@
         "erd": [
           {
             "GUID": "39c10420-9d62-40fc-bd20-c43c8317702b",
-            "x": 1069,
+            "x": 1068,
             "y": 1096,
             "width": 253,
             "height": 144,
