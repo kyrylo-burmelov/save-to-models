@@ -1,0 +1,118 @@
+{
+  "modelName": "EXTDmEzDsllLw6fCnEkDwoLDg8O6R8Oj",
+  "collections": [
+    {
+      "collectionName": "WMOMNcO2M8KNSQ3CrsKRw6jDgMOZw77DvsOt",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "405d0feb-5bd9-4226-9959-a83b5f75724d"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "58cc35f6-338d-490d-ae91-e8c0d9fefeed"
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "58cc35f6-338d-490d-ae91-e8c0d9fefeed": "WMOMNcO2M8KNSQ3CrsKRw6jDgMOZw77DvsOt",
+    "1174d84c-f259-4be7-9c49-0382c3fa47e3": "EXTDmEzDsllLw6fCnEkDwoLDg8O6R8Oj"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "cf6f0d3f-92d1-4e34-a77d-b9731bf2d36c"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "ea9c0d6d-ef6d-49c4-a8a5-7b8df0ccdb8d"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "046716ae-5adb-4c27-bdea-6ac976cba069"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2025-12-24T07:34:37.826Z",
+  "GUID": "1174d84c-f259-4be7-9c49-0382c3fa47e3",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-12-24T07:34:51.376Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.8.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "58cc35f6-338d-490d-ae91-e8c0d9fefeed",
+            "x": 1029,
+            "y": 1158,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "58cc35f6-338d-490d-ae91-e8c0d9fefeed",
+              "size": 100,
+              "x": 1029,
+              "y": 1158
+            }
+          ],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

@@ -53,6 +53,25 @@
       "isActivated": true,
       "additionalProperties": false,
       "GUID": "e056cb8e-f553-4657-bd75-7d45112add5c"
+    },
+    {
+      "collectionName": "New Document1",
+      "refType": "external",
+      "refNamePath": "#external/definitions/New Document2",
+      "properties": [],
+      "GUID": "7e99e5cb-744b-4a67-bf39-f396b93b476c",
+      "ref": "253a03a8-bbde-4bad-a382-68c6a61e77e9",
+      "refIdPath": [
+        "5dfdfea5-7c68-4edf-ad09-0984acc36581",
+        "899e05ed-7380-40c8-bb62-9ae851e96986",
+        "253a03a8-bbde-4bad-a382-68c6a61e77e9"
+      ],
+      "type": "reference",
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "fd26a4f1-3811-4fa0-a02f-bd8df855426c"
+      }
     }
   ],
   "buckets": [],
@@ -64,7 +83,12 @@
     "e056cb8e-f553-4657-bd75-7d45112add5c": "New Document",
     "ddeb89e2-03d5-4629-8292-cbee06df23e5": "New Field",
     "d8da07e6-d29e-4af3-8469-78c8412a01d4": "New Field1",
-    "ac2b96f1-aac9-4b72-9847-aa565135c1df": "New Field2"
+    "ac2b96f1-aac9-4b72-9847-aa565135c1df": "New Field2",
+    "7e99e5cb-744b-4a67-bf39-f396b93b476c": "New Document1",
+    "57415cbf-5cd7-4365-8bcd-2f7148824b63": "New Field",
+    "6439f9b4-365c-429f-bfde-c01af5d1b00b": "New Field1",
+    "04885081-44a9-470c-9fff-86ddf112ecda": "New Field2",
+    "253a03a8-bbde-4bad-a382-68c6a61e77e9": "New Document2"
   },
   "definitions": {
     "type": "definitions",
@@ -78,7 +102,66 @@
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "name": "New Document2",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "name": "New Field",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "99e98be5-3c77-573d-9ef2-c36fa307805d",
+            "error": {
+              "name": false,
+              "code": false
+            }
+          },
+          {
+            "name": "New Field1",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "f975f867-1e64-5658-ab1e-c1d301418133",
+            "error": {
+              "name": false,
+              "code": false
+            }
+          },
+          {
+            "name": "New Field2",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "type": "string",
+            "properties": [],
+            "color": "#555555",
+            "GUID": "b2499326-080d-52ee-9007-ece6a2d3a70f",
+            "error": {
+              "name": false,
+              "code": false
+            }
+          }
+        ],
+        "additionalProperties": false,
+        "GUID": "253a03a8-bbde-4bad-a382-68c6a61e77e9",
+        "definitionRefs": [
+          [
+            "7e99e5cb-744b-4a67-bf39-f396b93b476c"
+          ]
+        ],
+        "link": "../../TEST_REPOSITORIES/repo-github/private/test-hackolade-connection/JSON_model_with_buckets.json",
+        "fieldRelativePath": "#/New Group1/New Document2",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema"
+      }
+    ],
     "GUID": "899e05ed-7380-40c8-bb62-9ae851e96986"
   },
   "sources": [],
@@ -89,14 +172,17 @@
   "creationTS": "2025-11-27T09:23:14.512Z",
   "GUID": "5dfdfea5-7c68-4edf-ad09-0984acc36581",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-11-27T09:23:32.060Z",
+  "lastModifTS": "2025-12-16T18:26:19.754Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.6.2"
+    "version": "8.7.2"
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
   },
   "settings": {
     "centralPane": {
@@ -107,6 +193,14 @@
             "x": 1172,
             "y": 1254,
             "width": 208,
+            "height": 86,
+            "color": {}
+          },
+          {
+            "GUID": "7e99e5cb-744b-4a67-bf39-f396b93b476c",
+            "x": 1176.3979057591616,
+            "y": 1475.8115183246077,
+            "width": 215,
             "height": 86,
             "color": {}
           }
@@ -146,8 +240,5 @@
       "collapsedNodes": [],
       "shouldDistributeCollections": false
     }
-  },
-  "hackoladeMeta": {
-    "customPropertiesUpdated": true
   }
 }
