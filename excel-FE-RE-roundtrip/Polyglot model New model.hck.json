@@ -7,72 +7,68 @@
       "properties": [
         {
           "name": "Attribute without reference",
-          "hackoladeMeta": {},
+          "hackoladeMeta": {
+            "styles": {}
+          },
           "isActivated": true,
           "primaryKey": false,
           "required": false,
+          "alternateKey": false,
           "childType": "varchar",
           "type": "string",
           "compositeKey": [
             "compositePrimaryKey",
             "compositeUniqueKey"
           ],
-          "GUID": "17b4293c-9768-48ba-abf4-3900b0c8aece",
-          "error": {}
+          "polyglotOnly": false,
+          "hasMaxLength": false,
+          "unique": false,
+          "GUID": "17b4293c-9768-48ba-abf4-3900b0c8aece"
         }
       ],
       "definitions": {
         "type": "definitions",
-        "properties": [],
-        "GUID": "42dcabd7-2391-44d6-aa7e-dfab62c87a52"
+        "GUID": "606b6e8c-46a6-4719-ab8f-ef97be1fed33",
+        "properties": []
       },
       "isActivated": true,
       "additionalProperties": false,
-      "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e",
-      "hackoladeMeta": {
-        "validationErrors": {}
-      }
+      "GUID": "a8bf2aa7-88c7-4d29-81ea-494a122f235f",
+      "polyglotOnly": false
     },
     {
       "collectionName": "Entity (rel reference)",
       "type": "object",
       "properties": [
         {
-          "isActivated": true,
-          "compositeKey": [
-            "compositePrimaryKey",
-            "compositeUniqueKey"
-          ],
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
           "name": "Attribute with rel reference",
-          "GUID": "e3c9a082-3f0a-4542-84c2-d564b7efb85f",
-          "type": "reference",
-          "$ref": "#external/definitions/Address",
+          "hackoladeMeta": {
+            "styles": {}
+          },
+          "isActivated": true,
+          "polyglotOnly": false,
           "refType": "external",
-          "ref": "b6542151-140e-44c7-a274-73d868fa51b6",
+          "required": false,
+          "$ref": "#external/definitions/Address",
           "refIdPath": [
-            "7a5c47c1-6895-4141-bc25-951ae610eb72",
-            "5902098b-7cd7-4e3e-aab6-28a713481c6f",
-            "b6542151-140e-44c7-a274-73d868fa51b6"
+            "c2228ad2-1f40-4255-b5b8-aedce69eb45f",
+            "f2d086f8-c1d3-4e46-aa32-ec793d514a07",
+            "2b98872b-ecd1-4500-a577-2fbe9083da50"
           ],
-          "error": {
-            "name": false,
-            "code": false
-          }
+          "type": "reference",
+          "ref": "2b98872b-ecd1-4500-a577-2fbe9083da50",
+          "GUID": "e3c9a082-3f0a-4542-84c2-d564b7efb85f"
         }
       ],
       "definitions": {
         "type": "definitions",
-        "properties": [],
-        "GUID": "1e3284fc-7a9d-4336-a2ba-b295c1ade9bc"
+        "GUID": "22ef3654-05f9-42e4-9fbc-b69cdf362d4f",
+        "properties": []
       },
       "isActivated": true,
       "additionalProperties": false,
-      "GUID": "42a4bc49-6a03-4796-bdb4-79b06a949183",
-      "hackoladeMeta": {
-        "validationErrors": {}
-      }
+      "GUID": "a2d61133-d4ec-4334-ba01-e6a40934c219",
+      "polyglotOnly": false
     }
   ],
   "buckets": [],
@@ -81,30 +77,28 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "febe18f2-8f73-4d04-ba10-1d36eb37250e": "Entity (no reference)",
     "17b4293c-9768-48ba-abf4-3900b0c8aece": "Attribute without reference",
-    "42a4bc49-6a03-4796-bdb4-79b06a949183": "Entity (rel reference)",
-    "b6542151-140e-44c7-a274-73d868fa51b6": "Address",
-    "e3c9a082-3f0a-4542-84c2-d564b7efb85f": "Attribute with rel reference"
+    "a8bf2aa7-88c7-4d29-81ea-494a122f235f": "Entity (no reference)",
+    "e3c9a082-3f0a-4542-84c2-d564b7efb85f": "Attribute with rel reference",
+    "a2d61133-d4ec-4334-ba01-e6a40934c219": "Entity (rel reference)"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "93ba1d0b-b44b-4b5a-842f-08f669531987"
+    "GUID": "2b7b9922-c39f-47d5-976c-4bffd1504998"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "d53a1c1b-ab06-4f33-b21e-a47a3aa2eb39"
+    "GUID": "c903ee3f-bb0e-40f5-ab35-63ca4ea0e60f"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [
       {
-        "name": "Address",
-        "hackoladeMeta": {},
-        "isActivated": true,
-        "type": "document",
+        "GUID": "2b98872b-ecd1-4500-a577-2fbe9083da50",
+        "collectionName": "Address",
+        "type": "object",
         "properties": [
           {
             "name": "Address ID",
@@ -118,7 +112,7 @@
               "compositePrimaryKey",
               "compositeUniqueKey"
             ],
-            "GUID": "c81d18e3-a68c-5745-b253-df897a56f881",
+            "GUID": "65b54be5-17e3-480b-9543-41cade950030",
             "error": {}
           },
           {
@@ -133,7 +127,7 @@
               "compositePrimaryKey",
               "compositeUniqueKey"
             ],
-            "GUID": "2473a910-54bb-560d-8f86-9cb6c71152dc",
+            "GUID": "226178a4-d5d7-4303-8ded-6edd2bf5e94a",
             "description": "Specifies the street name and number, providing detailed location information within a city or town.",
             "error": {}
           },
@@ -149,7 +143,7 @@
               "compositePrimaryKey",
               "compositeUniqueKey"
             ],
-            "GUID": "b3128bbf-4d0f-5262-838d-ed31e27d120f",
+            "GUID": "172ef4de-fb50-4087-a44b-9a34e92b1f39",
             "foreignCollection": "",
             "foreignField": [],
             "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
@@ -167,7 +161,7 @@
               "compositePrimaryKey",
               "compositeUniqueKey"
             ],
-            "GUID": "d3ed6d24-13af-5b3a-a1d2-b43281dc21c5",
+            "GUID": "f23a20a2-d7b1-476d-b567-50a67b99f2fc",
             "foreignCollection": "",
             "foreignField": [],
             "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
@@ -192,40 +186,39 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false,
             "error": {},
-            "GUID": "ca18ea00-e670-5fbf-b214-31cc447e8074"
+            "GUID": "d3f97740-4de2-4c2f-826d-99a01b80b123"
           }
         ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "fca16002-ccce-45ab-804e-e7e2ec62e4b8"
+        },
+        "isActivated": true,
         "additionalProperties": false,
-        "compositeKey": [
-          "compositePrimaryKey",
-          "compositeUniqueKey"
-        ],
-        "compositePrimaryKey": false,
-        "compositeUniqueKey": false,
-        "GUID": "b6542151-140e-44c7-a274-73d868fa51b6",
-        "definitionRefs": [
-          [
-            "42a4bc49-6a03-4796-bdb4-79b06a949183",
-            "e3c9a082-3f0a-4542-84c2-d564b7efb85f"
-          ]
-        ],
-        "childType": "object",
+        "bucketId": "",
+        "description": "Represents a physical location, including street details, postal code, and city information. Used to store and manage location-based data for individuals, businesses, or properties.",
         "link": "../demo-models-clone/common/Address-Polyglot.hck.json",
         "fieldRelativePath": "#/Address",
         "kind": "relativePath",
-        "fileType": "hackoladeSchema"
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "a2d61133-d4ec-4334-ba01-e6a40934c219",
+            "e3c9a082-3f0a-4542-84c2-d564b7efb85f"
+          ]
+        ]
       }
     ],
-    "GUID": "5902098b-7cd7-4e3e-aab6-28a713481c6f"
+    "GUID": "f2d086f8-c1d3-4e46-aa32-ec793d514a07"
   },
-  "sources": [],
   "decorativeSymbols": [],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
-  "creationTS": "2026-01-22T07:37:47.055Z",
-  "GUID": "7a5c47c1-6895-4141-bc25-951ae610eb72",
+  "creationTS": "2026-01-22T11:59:55.569Z",
+  "GUID": "c2228ad2-1f40-4255-b5b8-aedce69eb45f",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-01-22T09:00:12.441Z",
+  "lastModifTS": "2026-01-22T12:00:43.812Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -236,27 +229,26 @@
   "applicationInformation": {
     "version": "8.8.6"
   },
-  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
-            "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e",
-            "x": 1051,
-            "y": 1109,
-            "width": 342,
-            "height": 158,
+            "GUID": "a8bf2aa7-88c7-4d29-81ea-494a122f235f",
+            "x": 64,
+            "y": 64,
+            "width": 250,
+            "height": 75,
             "color": {
               "hex": "#2196F3"
             }
           },
           {
-            "GUID": "42a4bc49-6a03-4796-bdb4-79b06a949183",
-            "x": 1074,
-            "y": 1368,
-            "width": 338,
-            "height": 140,
+            "GUID": "a2d61133-d4ec-4334-ba01-e6a40934c219",
+            "x": 84,
+            "y": 84,
+            "width": 250,
+            "height": 75,
             "color": {
               "hex": "#2196F3"
             }
@@ -280,16 +272,16 @@
         "graphView": {
           "erd": [
             {
-              "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e",
+              "GUID": "a8bf2aa7-88c7-4d29-81ea-494a122f235f",
               "size": 100,
-              "x": 1118,
-              "y": 1101
+              "x": 80,
+              "y": 100
             },
             {
-              "GUID": "42a4bc49-6a03-4796-bdb4-79b06a949183",
+              "GUID": "a2d61133-d4ec-4334-ba01-e6a40934c219",
               "size": 100,
-              "x": 1180,
-              "y": 1392
+              "x": 173.14251883361254,
+              "y": 151.7036626398391
             }
           ],
           "buckets": [],
@@ -302,9 +294,20 @@
         "nestedCollectionsLayout": "horizontal",
         "options": [
           {
+            "fontStyle": [
+              "bold"
+            ],
+            "GUID": "a8bf2aa7-88c7-4d29-81ea-494a122f235f",
             "autoWidth": false,
-            "autoHeight": false,
-            "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e"
+            "autoHeight": false
+          },
+          {
+            "fontStyle": [
+              "bold"
+            ],
+            "GUID": "a2d61133-d4ec-4334-ba01-e6a40934c219",
+            "autoWidth": true,
+            "autoHeight": true
           }
         ],
         "relationshipUpdateDisabled": false

@@ -73,6 +73,30 @@
       "hackoladeMeta": {
         "validationErrors": {}
       }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "Category",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "00ab7b91-fe97-474e-b204-4f91d852c6b2"
+      },
+      "additionalProperties": false,
+      "GUID": "aba71b0d-464e-498e-817e-9d1471154249",
+      "$ref": "#external/definitions/Category",
+      "refType": "polyglot",
+      "ref": "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+      "refIdPath": [
+        "7a5c47c1-6895-4141-bc25-951ae610eb72",
+        "d53a1c1b-ab06-4f33-b21e-a47a3aa2eb39",
+        "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f"
+      ],
+      "description": "Classifies products into distinct groups based on shared characteristics or purposes, such as **Bikes**, **Accessories**, or **Apparel**. This categorization aids customers in navigating the product offerings and enhances the shopping experience by allowing for easier product discovery and filtering.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
   ],
   "buckets": [],
@@ -85,7 +109,8 @@
     "17b4293c-9768-48ba-abf4-3900b0c8aece": "Attribute without reference",
     "42a4bc49-6a03-4796-bdb4-79b06a949183": "Entity (rel reference)",
     "b6542151-140e-44c7-a274-73d868fa51b6": "Address",
-    "e3c9a082-3f0a-4542-84c2-d564b7efb85f": "Attribute with rel reference"
+    "e3c9a082-3f0a-4542-84c2-d564b7efb85f": "Attribute with rel reference",
+    "aba71b0d-464e-498e-817e-9d1471154249": "Category"
   },
   "definitions": {
     "type": "definitions",
@@ -94,7 +119,73 @@
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
-    "properties": [],
+    "properties": [
+      {
+        "GUID": "2a4261e2-bfa0-46a7-a79e-5eb8692e8d9f",
+        "collectionName": "Category",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": true,
+            "required": true,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Name",
+            "isActivated": true,
+            "GUID": "97db87db-8fbe-41bb-8850-34193c9ee07e",
+            "description": " serves as the primary identifier for grouping related products. Examples include **Bikes**, **Accessories**, and **Apparel**.",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "childRelationships": [
+              "0d5d62f2-6a6d-4288-8f4a-d8413e910460"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "Description",
+            "isActivated": true,
+            "GUID": "b0919d69-0355-438b-b7aa-759e6fe9632c",
+            "description": "A brief overview of the category, providing additional context and details about the types of products included. This attribute can help customers understand the category's focus and offerings.",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "eef2d743-9c10-4efd-a735-4905de0029bf"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "bucketId": "4631c9fb-41fb-4647-a18e-f22367a656c5",
+        "description": "Classifies products into distinct groups based on shared characteristics or purposes, such as **Bikes**, **Accessories**, or **Apparel**. This categorization aids customers in navigating the product offerings and enhances the shopping experience by allowing for easier product discovery and filtering.",
+        "definitionEntityType": "collection",
+        "link": "../demo-models-clone/merchandising/Product-Polyglot.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Product management/Category",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "aba71b0d-464e-498e-817e-9d1471154249"
+          ]
+        ]
+      }
+    ],
     "GUID": "d53a1c1b-ab06-4f33-b21e-a47a3aa2eb39"
   },
   "externalDefinitions": {
@@ -225,7 +316,7 @@
   "creationTS": "2026-01-22T07:37:47.055Z",
   "GUID": "7a5c47c1-6895-4141-bc25-951ae610eb72",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-01-22T09:00:12.441Z",
+  "lastModifTS": "2026-01-22T09:02:03.380Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -237,10 +328,30 @@
     "version": "8.8.6"
   },
   "hackoladeMeta": {},
+  "polyglotModelPaths": [
+    {
+      "GUID": "d12ccc85-d57c-4774-a224-00fe527e8e18",
+      "polyglotModelName": "Product-Polyglot",
+      "polyglotModelPath": "../demo-models-clone/merchandising/Product-Polyglot.hck.json",
+      "normalization": false,
+      "generateAssociativeEntitiesForManyToManyRelationships": true,
+      "applyTargetNamingConventions": false
+    }
+  ],
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
+          {
+            "GUID": "aba71b0d-464e-498e-817e-9d1471154249",
+            "x": 1538.8938619348455,
+            "y": 1264.8785624696802,
+            "width": 272,
+            "height": 71,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
           {
             "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e",
             "x": 1051,
@@ -290,6 +401,12 @@
               "size": 100,
               "x": 1180,
               "y": 1392
+            },
+            {
+              "GUID": "aba71b0d-464e-498e-817e-9d1471154249",
+              "size": 100,
+              "x": 993.1738971493444,
+              "y": 892.5655360700084
             }
           ],
           "buckets": [],
