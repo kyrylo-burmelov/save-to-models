@@ -1,0 +1,319 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "Entity (no reference)",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Attribute without reference",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "17b4293c-9768-48ba-abf4-3900b0c8aece",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "42dcabd7-2391-44d6-aa7e-dfab62c87a52"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Entity (rel reference)",
+      "type": "object",
+      "properties": [
+        {
+          "isActivated": true,
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "name": "Attribute with rel reference",
+          "GUID": "e3c9a082-3f0a-4542-84c2-d564b7efb85f",
+          "type": "reference",
+          "$ref": "#external/definitions/Address",
+          "refType": "external",
+          "ref": "b6542151-140e-44c7-a274-73d868fa51b6",
+          "refIdPath": [
+            "7a5c47c1-6895-4141-bc25-951ae610eb72",
+            "5902098b-7cd7-4e3e-aab6-28a713481c6f",
+            "b6542151-140e-44c7-a274-73d868fa51b6"
+          ],
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1e3284fc-7a9d-4336-a2ba-b295c1ade9bc"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "42a4bc49-6a03-4796-bdb4-79b06a949183",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "febe18f2-8f73-4d04-ba10-1d36eb37250e": "Entity (no reference)",
+    "17b4293c-9768-48ba-abf4-3900b0c8aece": "Attribute without reference",
+    "42a4bc49-6a03-4796-bdb4-79b06a949183": "Entity (rel reference)",
+    "b6542151-140e-44c7-a274-73d868fa51b6": "Address",
+    "e3c9a082-3f0a-4542-84c2-d564b7efb85f": "Attribute with rel reference"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "93ba1d0b-b44b-4b5a-842f-08f669531987"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "d53a1c1b-ab06-4f33-b21e-a47a3aa2eb39"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [
+      {
+        "name": "Address",
+        "hackoladeMeta": {},
+        "isActivated": true,
+        "type": "document",
+        "properties": [
+          {
+            "name": "Address ID",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "c81d18e3-a68c-5745-b253-df897a56f881",
+            "error": {}
+          },
+          {
+            "name": "Street",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "2473a910-54bb-560d-8f86-9cb6c71152dc",
+            "description": "Specifies the street name and number, providing detailed location information within a city or town.",
+            "error": {}
+          },
+          {
+            "name": "Postal code",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "b3128bbf-4d0f-5262-838d-ed31e27d120f",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "A numerical or alphanumeric code assigned to a geographic area to facilitate mail delivery and location identification.",
+            "error": {}
+          },
+          {
+            "name": "City",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "primaryKey": false,
+            "required": true,
+            "childType": "varchar",
+            "type": "string",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "GUID": "d3ed6d24-13af-5b3a-a1d2-b43281dc21c5",
+            "foreignCollection": "",
+            "foreignField": [],
+            "description": "Indicates the name of the city or town where the address is located, helping to define the broader geographic region.",
+            "error": {}
+          },
+          {
+            "name": "Phone",
+            "hackoladeMeta": {},
+            "isActivated": true,
+            "index": true,
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false,
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "number",
+            "type": "numeric",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ],
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "error": {},
+            "GUID": "ca18ea00-e670-5fbf-b214-31cc447e8074"
+          }
+        ],
+        "additionalProperties": false,
+        "compositeKey": [
+          "compositePrimaryKey",
+          "compositeUniqueKey"
+        ],
+        "compositePrimaryKey": false,
+        "compositeUniqueKey": false,
+        "GUID": "b6542151-140e-44c7-a274-73d868fa51b6",
+        "definitionRefs": [
+          [
+            "42a4bc49-6a03-4796-bdb4-79b06a949183",
+            "e3c9a082-3f0a-4542-84c2-d564b7efb85f"
+          ]
+        ],
+        "childType": "object",
+        "link": "../demo-models-clone/common/Address-Polyglot.hck.json",
+        "fieldRelativePath": "#/Address",
+        "kind": "relativePath",
+        "fileType": "hackoladeSchema"
+      }
+    ],
+    "GUID": "5902098b-7cd7-4e3e-aab6-28a713481c6f"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-01-22T07:37:47.055Z",
+  "GUID": "7a5c47c1-6895-4141-bc25-951ae610eb72",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-01-22T07:40:42.525Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.8.6"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e",
+            "x": 1051,
+            "y": 1109,
+            "width": 342,
+            "height": 158,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "42a4bc49-6a03-4796-bdb4-79b06a949183",
+            "x": 1074,
+            "y": 1368,
+            "width": 338,
+            "height": 140,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e",
+              "size": 100,
+              "x": 1118,
+              "y": 1101
+            },
+            {
+              "GUID": "42a4bc49-6a03-4796-bdb4-79b06a949183",
+              "size": 100,
+              "x": 1180,
+              "y": 1392
+            }
+          ],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "febe18f2-8f73-4d04-ba10-1d36eb37250e"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

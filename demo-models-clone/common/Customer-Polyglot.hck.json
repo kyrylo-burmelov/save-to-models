@@ -167,6 +167,83 @@
       "additionalProperties": false,
       "bucketId": "81137752-f86d-41e7-bb91-6d3e9fdb9628",
       "description": "The Customer entity represents an individual or organization using the ecommerce platform to browse, purchase, and manage orders. It stores essential contact information, registration data, and address details for billing and shipping."
+    },
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New attribute",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "38f4acea-51c2-43fa-aa8b-93198b797cb5",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "3937a6d4-7474-4297-8ac8-a7ead73d32f1",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "1843e783-cd92-4947-8769-275631125a9f",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "b1c93205-35b6-43d5-9a41-e0f3e041d1ca"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "f44c89e6-d9b6-4ed7-876c-98033e1fc0a8"
     }
   ],
   "buckets": [
@@ -184,7 +261,6 @@
       },
       "show": true,
       "isActivated": true,
-      "indexes": [],
       "GUID": "81137752-f86d-41e7-bb91-6d3e9fdb9628",
       "description": "The Customer Management container encompasses all entities and relationships associated with users of the ecommerce platform. It covers personal information, contact details, and addresses needed to fulfill orders, provide customer support, and maintain communication preferences."
     }
@@ -204,7 +280,11 @@
     "a569060a-b3b2-4f73-95c7-7c2e2145c273": "Ship-to addresses",
     "81137752-f86d-41e7-bb91-6d3e9fdb9628": "Customer management",
     "08a8411a-1281-468b-9ec4-cbe9179336a3": "Address",
-    "299ad0aa-01de-43f1-a266-bd803d9d7616": "Bill-to address"
+    "299ad0aa-01de-43f1-a266-bd803d9d7616": "Bill-to address",
+    "f44c89e6-d9b6-4ed7-876c-98033e1fc0a8": "New entity",
+    "38f4acea-51c2-43fa-aa8b-93198b797cb5": "New attribute",
+    "3937a6d4-7474-4297-8ac8-a7ead73d32f1": "New attribute1",
+    "1843e783-cd92-4947-8769-275631125a9f": "New attribute2"
   },
   "definitions": {
     "type": "definitions",
@@ -337,7 +417,7 @@
   "GUID": "dca9ade7-ee0b-4953-b408-cc0e6b806e82",
   "isLineageEnabled": false,
   "polyglotModelPaths": [],
-  "lastModifTS": "2025-02-28T12:15:06.712Z",
+  "lastModifTS": "2026-01-12T07:21:21.304Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -346,7 +426,7 @@
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.0.2"
+    "version": "8.8.4"
   },
   "hackoladeMeta": {
     "validationErrors": {
@@ -368,6 +448,16 @@
             "color": {
               "hex": "#2196F3"
             }
+          },
+          {
+            "GUID": "f44c89e6-d9b6-4ed7-876c-98033e1fc0a8",
+            "x": 1419.9397590361446,
+            "y": 1632.4698795180723,
+            "width": 217,
+            "height": 86,
+            "color": {
+              "hex": "#2196F3"
+            }
           }
         ],
         "erdDefinitions": {
@@ -378,8 +468,8 @@
         },
         "buckets": [
           {
-            "x": 1223,
-            "y": 1127,
+            "x": 1199,
+            "y": 1103,
             "GUID": "81137752-f86d-41e7-bb91-6d3e9fdb9628"
           }
         ],
@@ -398,6 +488,12 @@
               "size": 100,
               "x": 1040,
               "y": 1040
+            },
+            {
+              "GUID": "f44c89e6-d9b6-4ed7-876c-98033e1fc0a8",
+              "size": 100,
+              "x": 1196.9397590361446,
+              "y": 1505.4698795180723
             }
           ],
           "buckets": [
