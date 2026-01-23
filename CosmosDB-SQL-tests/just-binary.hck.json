@@ -61,11 +61,18 @@
           "primaryKey": false,
           "GUID": "018df565-b882-4559-827a-e13c706ea50f",
           "name": "Just binary",
+          "code": "Jst bnry",
+          "required": true,
+          "partitionKey": true,
           "error": {
-            "name": false,
-            "code": false
+            "sample": true
           },
-          "code": "Jst bnry"
+          "dependencies": [
+            "9897b321-260b-445e-85c2-9bbba2b92f89"
+          ],
+          "sample": "12313",
+          "comments": "wefawfwaef",
+          "fakerFunction": "faker.test();"
         }
       ],
       "definitions": {
@@ -149,7 +156,7 @@
   "creationTS": "2026-01-23T10:39:17.133Z",
   "GUID": "aafac56a-d850-4aa9-834f-e411d6b289db",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-01-23T10:39:59.950Z",
+  "lastModifTS": "2026-01-23T10:41:20.364Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
