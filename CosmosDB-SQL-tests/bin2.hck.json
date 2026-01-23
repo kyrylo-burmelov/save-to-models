@@ -24,11 +24,29 @@
           "isActivated": true,
           "type": "binary",
           "primaryKey": false,
+          "GUID": "99fbfa38-b00f-40ce-b730-5067c3711210",
+          "required": true,
+          "partitionKey": true,
           "error": {
-            "name": false,
-            "code": false
+            "sample": true
           },
-          "GUID": "99fbfa38-b00f-40ce-b730-5067c3711210"
+          "dependencies": [
+            "88d65707-a75a-493b-acd9-a7c128d8b532"
+          ],
+          "sample": "test",
+          "comments": "comments",
+          "fakerFunction": "faker.random.alphaNumeric(24)"
+        },
+        {
+          "name": "New field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": false,
+          "GUID": "88d65707-a75a-493b-acd9-a7c128d8b532",
+          "containerLevelKey": false,
+          "hasERDDivider": false,
+          "docType": false
         }
       ],
       "definitions": {
@@ -50,7 +68,8 @@
   "idToNameHashTable": {
     "5c904398-61ac-4e33-b737-97868cce87f8": "partitionKey",
     "448a8c59-86c0-40e9-bd48-7d9cbbab3abb": "New item type",
-    "99fbfa38-b00f-40ce-b730-5067c3711210": "New field"
+    "99fbfa38-b00f-40ce-b730-5067c3711210": "New field",
+    "88d65707-a75a-493b-acd9-a7c128d8b532": "New field1"
   },
   "definitions": {
     "type": "definitions",
@@ -80,7 +99,7 @@
   "creationTS": "2026-01-23T09:30:14.031Z",
   "GUID": "682a79c3-f089-4319-8b5c-2ab4603dbe1c",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-01-23T10:10:04.165Z",
+  "lastModifTS": "2026-01-23T10:12:36.001Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -100,7 +119,7 @@
             "x": 1304,
             "y": 1117,
             "width": 213,
-            "height": 69,
+            "height": 87,
             "color": {}
           }
         ],
