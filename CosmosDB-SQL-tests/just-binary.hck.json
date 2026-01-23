@@ -1,0 +1,224 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New item type",
+      "type": "object",
+      "properties": [
+        {
+          "name": "id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": true,
+          "GUID": "bdc6d5c0-d591-46f7-82cd-f20027a8ae41",
+          "containerLevelKey": true,
+          "hasERDDivider": true,
+          "docType": false,
+          "required": true,
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "type",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": true,
+          "GUID": "9897b321-260b-445e-85c2-9bbba2b92f89",
+          "containerLevelKey": true,
+          "hasERDDivider": true,
+          "docType": true,
+          "required": true,
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "partitionKey",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": true,
+          "GUID": "d739ada9-1fc5-4465-beac-06743b00b5d7",
+          "containerLevelKey": false,
+          "hasERDDivider": false,
+          "docType": false,
+          "required": true,
+          "partitionKey": true,
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "type": "binary",
+          "primaryKey": false,
+          "GUID": "018df565-b882-4559-827a-e13c706ea50f",
+          "name": "Just binary",
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "code": "Jst bnry"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d3685151-cead-4bfe-9ee0-66cf1fa65b73"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "ece48802-55b0-4f28-8f93-5b596eb04acd",
+      "bucketId": "106925fe-eeb5-462f-8f52-e2eefd35fbaf"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New container",
+      "type": "bucket",
+      "collectionIds": [
+        "ece48802-55b0-4f28-8f93-5b596eb04acd"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "autopilot": false,
+      "capacityMode": "Provisioned throughput",
+      "GUID": "106925fe-eeb5-462f-8f52-e2eefd35fbaf",
+      "hackoladeMeta": {
+        "validationErrors": {
+          "dbId": true
+        }
+      },
+      "idName": "id",
+      "idType": "string",
+      "docTypeName": "type",
+      "docTypeType": "string"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "106925fe-eeb5-462f-8f52-e2eefd35fbaf": "New container",
+    "d739ada9-1fc5-4465-beac-06743b00b5d7": "partitionKey",
+    "bdc6d5c0-d591-46f7-82cd-f20027a8ae41": "id",
+    "9897b321-260b-445e-85c2-9bbba2b92f89": "type",
+    "ece48802-55b0-4f28-8f93-5b596eb04acd": "New item type",
+    "018df565-b882-4559-827a-e13c706ea50f": "Just binary"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "5c3338bc-5608-409a-8c48-34f3f41b19c1"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "7f1503e7-da99-425c-853b-88c641a82897"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "d9552217-6ea7-4012-a221-c751eca1937e"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "CosmosDB",
+  "apiExperience": "SQL API",
+  "transactionalDataStored": 10,
+  "analyticalDataStored": 10,
+  "itemSize": 1,
+  "readsPerSecPerRegion": 100,
+  "writesPerSecPerRegion": 100,
+  "appTarget": "COSMOSDB-SQL",
+  "creationTS": "2026-01-23T10:39:17.133Z",
+  "GUID": "aafac56a-d850-4aa9-834f-e411d6b289db",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-01-23T10:39:59.950Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "CosmosDB-with-SQL-API",
+    "pluginVersion": "0.2.4",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.8.5"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "ece48802-55b0-4f28-8f93-5b596eb04acd",
+            "x": 1172,
+            "y": 1119,
+            "width": 274,
+            "height": 166,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1108,
+            "y": 1055,
+            "GUID": "106925fe-eeb5-462f-8f52-e2eefd35fbaf"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "ece48802-55b0-4f28-8f93-5b596eb04acd"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
