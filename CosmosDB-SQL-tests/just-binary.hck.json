@@ -63,16 +63,13 @@
           "name": "Just binary",
           "code": "Jst bnry",
           "required": true,
-          "partitionKey": true,
-          "error": {
-            "sample": true
-          },
+          "partitionKey": false,
           "dependencies": [
             "9897b321-260b-445e-85c2-9bbba2b92f89"
           ],
-          "sample": "12313",
           "comments": "wefawfwaef",
-          "fakerFunction": "faker.test();"
+          "fakerFunction": "faker.test();",
+          "error": {}
         }
       ],
       "definitions": {
@@ -156,7 +153,7 @@
   "creationTS": "2026-01-23T10:39:17.133Z",
   "GUID": "aafac56a-d850-4aa9-834f-e411d6b289db",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-01-23T10:41:20.364Z",
+  "lastModifTS": "2026-01-23T11:59:10.285Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -167,6 +164,7 @@
   "applicationInformation": {
     "version": "8.8.5"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
