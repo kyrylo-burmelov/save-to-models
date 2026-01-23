@@ -1,0 +1,143 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New item type",
+      "type": "object",
+      "properties": [
+        {
+          "name": "partitionKey",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": true,
+          "GUID": "5c904398-61ac-4e33-b737-97868cce87f8",
+          "containerLevelKey": false,
+          "hasERDDivider": false,
+          "docType": false,
+          "required": true,
+          "partitionKey": true
+        },
+        {
+          "name": "New field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "binary",
+          "primaryKey": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "GUID": "99fbfa38-b00f-40ce-b730-5067c3711210"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "18b614f0-2e11-4446-ba13-b5eae6855b11"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "GUID": "448a8c59-86c0-40e9-bd48-7d9cbbab3abb"
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "5c904398-61ac-4e33-b737-97868cce87f8": "partitionKey",
+    "448a8c59-86c0-40e9-bd48-7d9cbbab3abb": "New item type",
+    "99fbfa38-b00f-40ce-b730-5067c3711210": "New field"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "ce3c2e4a-9d47-469a-84e5-f7225207cd8e"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "afade724-ecb2-4f4a-9865-a6d3b1945514"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "6382bdf2-fd66-45b5-a7d9-f1bdeb73b7a5"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "CosmosDB",
+  "apiExperience": "SQL API",
+  "transactionalDataStored": 10,
+  "analyticalDataStored": 10,
+  "itemSize": 1,
+  "readsPerSecPerRegion": 100,
+  "writesPerSecPerRegion": 100,
+  "appTarget": "COSMOSDB-SQL",
+  "creationTS": "2026-01-23T09:30:14.031Z",
+  "GUID": "682a79c3-f089-4319-8b5c-2ab4603dbe1c",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-01-23T10:10:04.165Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "CosmosDB-with-SQL-API",
+    "pluginVersion": "0.2.4",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.8.5"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "448a8c59-86c0-40e9-bd48-7d9cbbab3abb",
+            "x": 1304,
+            "y": 1117,
+            "width": 213,
+            "height": 69,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
