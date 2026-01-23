@@ -1,0 +1,226 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New item type",
+      "type": "object",
+      "properties": [
+        {
+          "name": "id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": true,
+          "GUID": "519805fe-2230-4311-b703-219b5618ba87",
+          "containerLevelKey": true,
+          "hasERDDivider": true,
+          "docType": false,
+          "required": true,
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "type",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": true,
+          "GUID": "151a7f95-d47d-48c7-93b7-3d7e3005a59a",
+          "containerLevelKey": true,
+          "hasERDDivider": true,
+          "docType": true,
+          "required": true,
+          "error": {
+            "name": false
+          }
+        },
+        {
+          "name": "partitionKey",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "primaryKey": true,
+          "GUID": "05f7e580-0a24-477e-9a34-7097cd083218",
+          "containerLevelKey": false,
+          "hasERDDivider": false,
+          "docType": false,
+          "required": true,
+          "partitionKey": true,
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "Bin field (requied)",
+          "hackoladeMeta": {
+            "namingConvention": "code"
+          },
+          "isActivated": true,
+          "type": "binary",
+          "primaryKey": false,
+          "GUID": "f9e76954-33ea-46c7-8902-5f4a73d252d5",
+          "code": "Bin field (requied)",
+          "id": "test",
+          "description": "Description",
+          "required": true,
+          "partitionKey": false,
+          "comments": "Thu Jan 22 2026 18:20:50 GMT+0400 (Georgia Standard Time): \r\nCOmments",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ab2ceba0-f0fd-4c05-93ee-59dcaef782da"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "3fa67368-c486-40ea-bffd-85d8293a4c8d",
+      "bucketId": "6d8b838f-ad8b-4a3d-819a-24502cc49290"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New container",
+      "type": "bucket",
+      "collectionIds": [
+        "3fa67368-c486-40ea-bffd-85d8293a4c8d"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "autopilot": false,
+      "capacityMode": "Provisioned throughput",
+      "GUID": "6d8b838f-ad8b-4a3d-819a-24502cc49290",
+      "hackoladeMeta": {
+        "validationErrors": {
+          "dbId": true
+        }
+      },
+      "idName": "id",
+      "idType": "string",
+      "docTypeName": "type",
+      "docTypeType": "string"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "6d8b838f-ad8b-4a3d-819a-24502cc49290": "New container",
+    "05f7e580-0a24-477e-9a34-7097cd083218": "partitionKey",
+    "519805fe-2230-4311-b703-219b5618ba87": "id",
+    "151a7f95-d47d-48c7-93b7-3d7e3005a59a": "type",
+    "3fa67368-c486-40ea-bffd-85d8293a4c8d": "New item type",
+    "f9e76954-33ea-46c7-8902-5f4a73d252d5": "Bin field (requied)"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "8d96b750-5eeb-4874-9fc4-9b988d88cec7"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "c0e450a0-f087-4e18-9702-d76900d3d873"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "0e552bd5-512d-4d87-a345-ea9330e3927a"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "CosmosDB",
+  "apiExperience": "SQL API",
+  "transactionalDataStored": 10,
+  "analyticalDataStored": 10,
+  "itemSize": 1,
+  "readsPerSecPerRegion": 100,
+  "writesPerSecPerRegion": 100,
+  "appTarget": "COSMOSDB-SQL",
+  "creationTS": "2026-01-22T14:12:59.481Z",
+  "GUID": "2e76b6b6-c16d-4437-be17-d129584d63fd",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-01-22T14:46:03.626Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "CosmosDB-with-SQL-API",
+    "pluginVersion": "0.2.6",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.8.6"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "3fa67368-c486-40ea-bffd-85d8293a4c8d",
+            "x": 1162,
+            "y": 1187,
+            "width": 235,
+            "height": 128,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1098,
+            "y": 1123,
+            "GUID": "6d8b838f-ad8b-4a3d-819a-24502cc49290"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "3fa67368-c486-40ea-bffd-85d8293a4c8d"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
