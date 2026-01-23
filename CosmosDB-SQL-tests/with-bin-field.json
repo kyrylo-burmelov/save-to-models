@@ -67,6 +67,25 @@
           "required": true,
           "partitionKey": false,
           "comments": "Thu Jan 22 2026 18:20:50 GMT+0400 (Georgia Standard Time): \r\nCOmments",
+          "error": {
+            "code": false,
+            "name": false
+          }
+        },
+        {
+          "name": "Copy of first",
+          "hackoladeMeta": {
+            "namingConvention": ""
+          },
+          "isActivated": true,
+          "type": "binary",
+          "primaryKey": false,
+          "GUID": "3e6043c9-4fa9-4121-984d-1233e2a19e18",
+          "id": "test",
+          "description": "Description",
+          "required": true,
+          "partitionKey": false,
+          "comments": "Thu Jan 22 2026 18:20:50 GMT+0400 (Georgia Standard Time): \r\nCOmments",
           "error": {}
         }
       ],
@@ -121,7 +140,8 @@
     "519805fe-2230-4311-b703-219b5618ba87": "id",
     "151a7f95-d47d-48c7-93b7-3d7e3005a59a": "type",
     "3fa67368-c486-40ea-bffd-85d8293a4c8d": "New item type",
-    "f9e76954-33ea-46c7-8902-5f4a73d252d5": "Bin field (requied)"
+    "f9e76954-33ea-46c7-8902-5f4a73d252d5": "Bin field (requied)",
+    "3e6043c9-4fa9-4121-984d-1233e2a19e18": "Copy of first"
   },
   "definitions": {
     "type": "definitions",
@@ -151,17 +171,18 @@
   "creationTS": "2026-01-22T14:12:59.481Z",
   "GUID": "2e76b6b6-c16d-4437-be17-d129584d63fd",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-01-22T14:46:03.626Z",
+  "lastModifTS": "2026-01-23T10:14:57.540Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
     "pluginName": "CosmosDB-with-SQL-API",
-    "pluginVersion": "0.2.6",
+    "pluginVersion": "0.2.4",
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.8.6"
+    "version": "8.8.5"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
