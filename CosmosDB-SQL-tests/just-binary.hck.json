@@ -11,7 +11,7 @@
           "isActivated": true,
           "type": "string",
           "primaryKey": true,
-          "GUID": "519805fe-2230-4311-b703-219b5618ba87",
+          "GUID": "bdc6d5c0-d591-46f7-82cd-f20027a8ae41",
           "containerLevelKey": true,
           "hasERDDivider": true,
           "docType": false,
@@ -26,7 +26,7 @@
           "isActivated": true,
           "type": "string",
           "primaryKey": true,
-          "GUID": "151a7f95-d47d-48c7-93b7-3d7e3005a59a",
+          "GUID": "9897b321-260b-445e-85c2-9bbba2b92f89",
           "containerLevelKey": true,
           "hasERDDivider": true,
           "docType": true,
@@ -41,7 +41,7 @@
           "isActivated": true,
           "type": "string",
           "primaryKey": true,
-          "GUID": "05f7e580-0a24-477e-9a34-7097cd083218",
+          "GUID": "d739ada9-1fc5-4465-beac-06743b00b5d7",
           "containerLevelKey": false,
           "hasERDDivider": false,
           "docType": false,
@@ -53,51 +53,34 @@
           }
         },
         {
-          "name": "Bin field (requied)",
           "hackoladeMeta": {
             "namingConvention": "code"
           },
           "isActivated": true,
           "type": "binary",
           "primaryKey": false,
-          "GUID": "f9e76954-33ea-46c7-8902-5f4a73d252d5",
-          "code": "Bin field (requied)",
-          "id": "test",
-          "description": "Description",
+          "GUID": "018df565-b882-4559-827a-e13c706ea50f",
+          "name": "Just binary",
+          "code": "Jst bnry",
           "required": true,
           "partitionKey": false,
-          "comments": "Thu Jan 22 2026 18:20:50 GMT+0400 (Georgia Standard Time): \r\nCOmments",
-          "error": {
-            "code": false,
-            "name": false
-          }
-        },
-        {
-          "name": "Copy of first",
-          "hackoladeMeta": {
-            "namingConvention": ""
-          },
-          "isActivated": true,
-          "type": "binary",
-          "primaryKey": false,
-          "GUID": "3e6043c9-4fa9-4121-984d-1233e2a19e18",
-          "id": "test",
-          "description": "Description",
-          "required": true,
-          "partitionKey": false,
-          "comments": "Thu Jan 22 2026 18:20:50 GMT+0400 (Georgia Standard Time): \r\nCOmments",
+          "dependencies": [
+            "9897b321-260b-445e-85c2-9bbba2b92f89"
+          ],
+          "comments": "wefawfwaef",
+          "fakerFunction": "faker.test();",
           "error": {}
         }
       ],
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "ab2ceba0-f0fd-4c05-93ee-59dcaef782da"
+        "GUID": "d3685151-cead-4bfe-9ee0-66cf1fa65b73"
       },
       "isActivated": true,
       "additionalProperties": false,
-      "GUID": "3fa67368-c486-40ea-bffd-85d8293a4c8d",
-      "bucketId": "6d8b838f-ad8b-4a3d-819a-24502cc49290"
+      "GUID": "ece48802-55b0-4f28-8f93-5b596eb04acd",
+      "bucketId": "106925fe-eeb5-462f-8f52-e2eefd35fbaf"
     }
   ],
   "buckets": [
@@ -105,7 +88,7 @@
       "name": "New container",
       "type": "bucket",
       "collectionIds": [
-        "3fa67368-c486-40ea-bffd-85d8293a4c8d"
+        "ece48802-55b0-4f28-8f93-5b596eb04acd"
       ],
       "backgroundColor": {
         "r": 129,
@@ -118,7 +101,7 @@
       "indexes": [],
       "autopilot": false,
       "capacityMode": "Provisioned throughput",
-      "GUID": "6d8b838f-ad8b-4a3d-819a-24502cc49290",
+      "GUID": "106925fe-eeb5-462f-8f52-e2eefd35fbaf",
       "hackoladeMeta": {
         "validationErrors": {
           "dbId": true
@@ -135,28 +118,27 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "6d8b838f-ad8b-4a3d-819a-24502cc49290": "New container",
-    "05f7e580-0a24-477e-9a34-7097cd083218": "partitionKey",
-    "519805fe-2230-4311-b703-219b5618ba87": "id",
-    "151a7f95-d47d-48c7-93b7-3d7e3005a59a": "type",
-    "3fa67368-c486-40ea-bffd-85d8293a4c8d": "New item type",
-    "f9e76954-33ea-46c7-8902-5f4a73d252d5": "Bin field (requied)",
-    "3e6043c9-4fa9-4121-984d-1233e2a19e18": "Copy of first"
+    "106925fe-eeb5-462f-8f52-e2eefd35fbaf": "New container",
+    "d739ada9-1fc5-4465-beac-06743b00b5d7": "partitionKey",
+    "bdc6d5c0-d591-46f7-82cd-f20027a8ae41": "id",
+    "9897b321-260b-445e-85c2-9bbba2b92f89": "type",
+    "ece48802-55b0-4f28-8f93-5b596eb04acd": "New item type",
+    "018df565-b882-4559-827a-e13c706ea50f": "Just binary"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "8d96b750-5eeb-4874-9fc4-9b988d88cec7"
+    "GUID": "5c3338bc-5608-409a-8c48-34f3f41b19c1"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "c0e450a0-f087-4e18-9702-d76900d3d873"
+    "GUID": "7f1503e7-da99-425c-853b-88c641a82897"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "0e552bd5-512d-4d87-a345-ea9330e3927a"
+    "GUID": "d9552217-6ea7-4012-a221-c751eca1937e"
   },
   "sources": [],
   "decorativeSymbols": [],
@@ -168,10 +150,10 @@
   "readsPerSecPerRegion": 100,
   "writesPerSecPerRegion": 100,
   "appTarget": "COSMOSDB-SQL",
-  "creationTS": "2026-01-22T14:12:59.481Z",
-  "GUID": "2e76b6b6-c16d-4437-be17-d129584d63fd",
+  "creationTS": "2026-01-23T10:39:17.133Z",
+  "GUID": "aafac56a-d850-4aa9-834f-e411d6b289db",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-01-23T10:14:57.540Z",
+  "lastModifTS": "2026-01-23T11:59:10.285Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -188,11 +170,11 @@
       "dbLevel": {
         "erd": [
           {
-            "GUID": "3fa67368-c486-40ea-bffd-85d8293a4c8d",
-            "x": 1162,
-            "y": 1187,
-            "width": 235,
-            "height": 128,
+            "GUID": "ece48802-55b0-4f28-8f93-5b596eb04acd",
+            "x": 1172,
+            "y": 1119,
+            "width": 274,
+            "height": 166,
             "color": {}
           }
         ],
@@ -204,9 +186,9 @@
         },
         "buckets": [
           {
-            "x": 1098,
-            "y": 1123,
-            "GUID": "6d8b838f-ad8b-4a3d-819a-24502cc49290"
+            "x": 1108,
+            "y": 1055,
+            "GUID": "106925fe-eeb5-462f-8f52-e2eefd35fbaf"
           }
         ],
         "collapsedNodes": [],
@@ -231,7 +213,7 @@
           {
             "autoWidth": false,
             "autoHeight": false,
-            "GUID": "3fa67368-c486-40ea-bffd-85d8293a4c8d"
+            "GUID": "ece48802-55b0-4f28-8f93-5b596eb04acd"
           }
         ],
         "relationshipUpdateDisabled": false
