@@ -1,0 +1,1006 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "isActivated": true,
+      "collectionName": "New entity",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "fa14e9cb-bff6-40cf-beea-b4dec990ba34"
+      },
+      "additionalProperties": false,
+      "GUID": "980edbb2-3964-4e11-b61d-0c55892e5755",
+      "$ref": "#external/definitions/New entity",
+      "refType": "polyglot",
+      "ref": "b5fbb162-92d2-41e8-b8f2-e63fe9e82809",
+      "refIdPath": [
+        "9eb40faf-81df-4393-9d09-a6ff39e1c3b4",
+        "51531893-8100-4fd4-9a2e-0a7789b95103",
+        "b5fbb162-92d2-41e8-b8f2-e63fe9e82809"
+      ],
+      "bucketId": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "New entity1",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "5e9bd415-f90f-49dc-9507-8ef1130f8150"
+      },
+      "additionalProperties": false,
+      "GUID": "ead63cb5-7734-4078-8af4-ccb8f8c17053",
+      "$ref": "#external/definitions/New entity1",
+      "refType": "polyglot",
+      "ref": "20a60a86-3896-4ce5-aeb9-291190a0c648",
+      "refIdPath": [
+        "9eb40faf-81df-4393-9d09-a6ff39e1c3b4",
+        "51531893-8100-4fd4-9a2e-0a7789b95103",
+        "20a60a86-3896-4ce5-aeb9-291190a0c648"
+      ],
+      "bucketId": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "New entity2",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "4a740464-1332-46a8-aae7-c46c4e3e16e7"
+      },
+      "additionalProperties": false,
+      "GUID": "4cf75af8-c686-4ee4-84d5-72bdecb40eff",
+      "$ref": "#external/definitions/New entity2",
+      "refType": "polyglot",
+      "ref": "11bf1e0b-7022-4f55-9c0e-0c4ba9df2c87",
+      "refIdPath": [
+        "9eb40faf-81df-4393-9d09-a6ff39e1c3b4",
+        "51531893-8100-4fd4-9a2e-0a7789b95103",
+        "11bf1e0b-7022-4f55-9c0e-0c4ba9df2c87"
+      ],
+      "bucketId": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "isActivated": true,
+      "collectionName": "New entity3",
+      "type": "reference",
+      "properties": [],
+      "definitions": {
+        "properties": [],
+        "GUID": "197a973b-1a36-4d10-ae91-b46f5b930e4d"
+      },
+      "additionalProperties": false,
+      "GUID": "23e9ca9c-80c5-4e3f-ada7-ef9129c3c8dc",
+      "$ref": "#external/definitions/New entity3",
+      "refType": "polyglot",
+      "ref": "24a9f9ab-328a-4f02-bd20-92d735263021",
+      "refIdPath": [
+        "9eb40faf-81df-4393-9d09-a6ff39e1c3b4",
+        "51531893-8100-4fd4-9a2e-0a7789b95103",
+        "24a9f9ab-328a-4f02-bd20-92d735263021"
+      ],
+      "bucketId": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New container",
+      "type": "bucket",
+      "collectionIds": [],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "dd8d2f5e-fd04-4a35-b55a-4c2a9da3f85e",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "isActivated": true,
+      "name": "Container #1",
+      "type": "reference",
+      "collectionIds": [
+        "980edbb2-3964-4e11-b61d-0c55892e5755",
+        "ead63cb5-7734-4078-8af4-ccb8f8c17053",
+        "4cf75af8-c686-4ee4-84d5-72bdecb40eff",
+        "23e9ca9c-80c5-4e3f-ada7-ef9129c3c8dc"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "indexes": [],
+      "GUID": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f",
+      "$ref": "#external/definitions/Container #1",
+      "refType": "polyglot",
+      "ref": "aa7e8a29-b838-40f1-909d-80beffac8b3a",
+      "refIdPath": [
+        "9eb40faf-81df-4393-9d09-a6ff39e1c3b4",
+        "51531893-8100-4fd4-9a2e-0a7789b95103",
+        "aa7e8a29-b838-40f1-909d-80beffac8b3a"
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "dd8d2f5e-fd04-4a35-b55a-4c2a9da3f85e": "New container",
+    "980edbb2-3964-4e11-b61d-0c55892e5755": "New entity",
+    "ead63cb5-7734-4078-8af4-ccb8f8c17053": "New entity1",
+    "4cf75af8-c686-4ee4-84d5-72bdecb40eff": "New entity2",
+    "23e9ca9c-80c5-4e3f-ada7-ef9129c3c8dc": "New entity3",
+    "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f": "Container #1",
+    "b097ee76-746f-43cd-9cd3-3a15f93d6604": "Legend"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "f51e7350-9c7b-4a53-a61a-a2f68bc62cd7"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [
+      {
+        "collectionName": "New entity",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute",
+            "isActivated": true,
+            "GUID": "c10e4532-570e-4796-8b3a-dd798993de11",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute1",
+            "isActivated": true,
+            "GUID": "2429b55f-8e70-4918-b90b-7f1e469e53d5",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute2",
+            "isActivated": true,
+            "GUID": "4e1cf36f-071f-4314-a4a3-b757f27cda43",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute3",
+            "isActivated": true,
+            "GUID": "0a55ae5f-2220-4242-9381-6de2072db0f0",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute4",
+            "isActivated": true,
+            "GUID": "49db2582-2002-40b2-b5bd-fa664b72d727",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute5",
+            "isActivated": true,
+            "GUID": "0bb493cc-9fbc-412e-b8be-c99ef65d3245",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute6",
+            "isActivated": true,
+            "GUID": "f2157d60-3486-4c3f-b817-aaddd013350f",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute7",
+            "isActivated": true,
+            "GUID": "6a5de38a-b86d-4149-881e-a27a16c6854f",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "83937c70-caac-40a0-af4f-44381cb442a7"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "b5fbb162-92d2-41e8-b8f2-e63fe9e82809",
+        "bucketId": "aa7e8a29-b838-40f1-909d-80beffac8b3a",
+        "definitionEntityType": "collection",
+        "link": "initial-model-with-container.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Container #1/New entity",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "980edbb2-3964-4e11-b61d-0c55892e5755"
+          ]
+        ]
+      },
+      {
+        "collectionName": "New entity1",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute",
+            "isActivated": true,
+            "GUID": "aae655e9-416a-4305-898d-95e3711a581c",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute1",
+            "isActivated": true,
+            "GUID": "9a95d0e1-3830-456a-81b4-ee3c89b93876",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute2",
+            "isActivated": true,
+            "GUID": "74635c7a-a446-4095-ab5d-0e2be7dad3c5",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute3",
+            "isActivated": true,
+            "GUID": "63a4d245-9740-4566-8b1f-1fc05d1a7753",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute4",
+            "isActivated": true,
+            "GUID": "2aa8ebff-9946-4ae6-af26-c70f12efcdeb",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute5",
+            "isActivated": true,
+            "GUID": "6180cae3-c02b-4033-8adc-09e561428b4d",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute6",
+            "isActivated": true,
+            "GUID": "40fa8d5e-710c-4a5d-bbb9-8b8891362d06",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "bb0124d9-a642-4351-a2ad-48b13344a896"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "20a60a86-3896-4ce5-aeb9-291190a0c648",
+        "bucketId": "aa7e8a29-b838-40f1-909d-80beffac8b3a",
+        "definitionEntityType": "collection",
+        "link": "initial-model-with-container.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Container #1/New entity1",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "ead63cb5-7734-4078-8af4-ccb8f8c17053"
+          ]
+        ]
+      },
+      {
+        "collectionName": "New entity2",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute",
+            "isActivated": true,
+            "GUID": "2ff0c6c8-4132-4ec1-b913-1b202c5f97ac",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute1",
+            "isActivated": true,
+            "GUID": "b6f41116-fbc8-4c9e-9059-cba99b1a2c7a",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute2",
+            "isActivated": true,
+            "GUID": "aa199d9c-a23b-48b3-bd6f-e66e8491f39b",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute3",
+            "isActivated": true,
+            "GUID": "9419799b-c86b-4b38-a253-76e79a16ca29",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute4",
+            "isActivated": true,
+            "GUID": "0d6fdbf9-67d7-43af-9c16-bd72aa00543d",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute5",
+            "isActivated": true,
+            "GUID": "df59c1b7-c074-4e62-b5c2-f0d6cd11e4ec",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute6",
+            "isActivated": true,
+            "GUID": "9d5daf55-ff8f-4fbf-a06a-fa2a7bdf838b",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute7",
+            "isActivated": true,
+            "GUID": "0ce4360e-234b-4acf-a35b-2c2e338868e6",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "5eb0c48f-bd06-4872-b9e6-6c62c8c1e30a"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "11bf1e0b-7022-4f55-9c0e-0c4ba9df2c87",
+        "bucketId": "aa7e8a29-b838-40f1-909d-80beffac8b3a",
+        "definitionEntityType": "collection",
+        "link": "initial-model-with-container.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Container #1/New entity2",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "4cf75af8-c686-4ee4-84d5-72bdecb40eff"
+          ]
+        ]
+      },
+      {
+        "collectionName": "New entity3",
+        "type": "object",
+        "properties": [
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute",
+            "isActivated": true,
+            "GUID": "edc37aaa-9be9-45e6-b0ea-e0fc05fd3c0e",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute1",
+            "isActivated": true,
+            "GUID": "e70f57cd-3654-4487-9395-5fed33faca66",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute2",
+            "isActivated": true,
+            "GUID": "f1da29ae-bce0-42f4-b575-b7f871540e04",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          },
+          {
+            "primaryKey": false,
+            "required": false,
+            "alternateKey": false,
+            "childType": "varchar",
+            "type": "string",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "name": "New attribute3",
+            "isActivated": true,
+            "GUID": "3145c919-0479-4f34-b8e3-b41cf77f6d19",
+            "mode": "",
+            "compositeKey": [
+              "compositePrimaryKey",
+              "compositeUniqueKey"
+            ]
+          }
+        ],
+        "definitions": {
+          "type": "definitions",
+          "properties": [],
+          "GUID": "f19f999a-1074-424d-849e-2c43b5d4cad9"
+        },
+        "isActivated": true,
+        "additionalProperties": false,
+        "GUID": "24a9f9ab-328a-4f02-bd20-92d735263021",
+        "bucketId": "aa7e8a29-b838-40f1-909d-80beffac8b3a",
+        "definitionEntityType": "collection",
+        "link": "initial-model-with-container.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Container #1/New entity3",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "23e9ca9c-80c5-4e3f-ada7-ef9129c3c8dc"
+          ]
+        ]
+      },
+      {
+        "GUID": "3e8bbefc-220e-419c-964c-8991b4979f3e",
+        "name": "Legend",
+        "type": "annotation",
+        "bucketId": "aa7e8a29-b838-40f1-909d-80beffac8b3a",
+        "disableInitialFocus": true,
+        "comments": "DWHIOUDHNWEOI DHWED\"EWF \nEWF\n WE\nF W\nEF \nWEF\n WE\nFWE\nF EW\nFEW\n F\nEW\nF\n EW\n\nF W\nE\nF\nEW \nEW\nF\n WE\n\nFEW\nF \nW\nFWE\nF WF\nWE\nF EW\nF F\nEW\nF EW\n\nF\n WE\n\nFWE \nFWE F\nEWF \nEW\nF\nWEF WE\nF \nWE\nF\n WE\nF\n WE\nF\n EW\nF\n EW\nF \nWE\nF\nWE \nF\nEW\nF \nEW\nF \nWEF\nW\nEF\n W\nEF\n\nW\n E\n\nFEW\nF \nWEF\n WE\nF\n WE\nF\nEW\n F\nEW\nF\n WE\nF \nWE\nF\nW\n EF\nWEF\n EW\nF\nWE\n F\nEW\n \nFEW\n \nFEW\nF\n EW\nF\n EW\nF\nWE \nF\nEW\nF \nEW\nF\n WE\nF\nEW\n \nFEW\nF\nEW\nF\n WE\nF\n WE\nF\n WE\nF\nEW\nF \nWEF\nWE\n F\nEW\nF\n WE\nF \nEW\nF\n EWF\nEWF \nEW\nF EW FEWF LEWHF KEWUFHG OWEIUF HWEUKYF GWEIUYF GWEIUYF GWEIFG WEIUYFG WEIUYF GWEIUF NWEIFKG WEKHFJN WLEF WEF WEF WEFWE F",
+        "value": "'/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json'",
+        "definitionEntityType": "decorativeSymbol",
+        "link": "initial-model-with-container.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Container #1/Legend",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "b097ee76-746f-43cd-9cd3-3a15f93d6604"
+          ]
+        ]
+      },
+      {
+        "name": "Container #1",
+        "type": "bucket",
+        "collectionIds": [
+          "b5fbb162-92d2-41e8-b8f2-e63fe9e82809",
+          "20a60a86-3896-4ce5-aeb9-291190a0c648",
+          "11bf1e0b-7022-4f55-9c0e-0c4ba9df2c87",
+          "24a9f9ab-328a-4f02-bd20-92d735263021"
+        ],
+        "backgroundColor": {
+          "r": 129,
+          "g": 212,
+          "b": 250,
+          "a": 1
+        },
+        "show": true,
+        "isActivated": true,
+        "indexes": [],
+        "GUID": "aa7e8a29-b838-40f1-909d-80beffac8b3a",
+        "hackoladeMeta": {
+          "validationErrors": {}
+        },
+        "definitionEntityType": "bucket",
+        "link": "initial-model-with-container.hck.json",
+        "kind": "relativePath",
+        "fieldRelativePath": "#/Container #1",
+        "fileType": "hackoladeSchema",
+        "definitionRefs": [
+          [
+            "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f"
+          ]
+        ]
+      }
+    ],
+    "GUID": "51531893-8100-4fd4-9a2e-0a7789b95103"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "eb57266a-a917-45a1-b558-2bf288008fc4"
+  },
+  "sources": [],
+  "decorativeSymbols": [
+    {
+      "GUID": "b097ee76-746f-43cd-9cd3-3a15f93d6604",
+      "name": "Legend",
+      "refType": "polyglot",
+      "refIdPath": [
+        "9eb40faf-81df-4393-9d09-a6ff39e1c3b4",
+        "51531893-8100-4fd4-9a2e-0a7789b95103",
+        "3e8bbefc-220e-419c-964c-8991b4979f3e"
+      ],
+      "type": "reference",
+      "ref": "3e8bbefc-220e-419c-964c-8991b4979f3e",
+      "bucketId": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f",
+      "value": "'/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json''/Users/kburmelov/Development/models/model_repos/save-to-models/container-display-issue/outbound_transportation_management-DeltaLake (1).json'",
+      "comments": "DWHIOUDHNWEOI DHWED\"EWF \nEWF\n WE\nF W\nEF \nWEF\n WE\nFWE\nF EW\nFEW\n F\nEW\nF\n EW\n\nF W\nE\nF\nEW \nEW\nF\n WE\n\nFEW\nF \nW\nFWE\nF WF\nWE\nF EW\nF F\nEW\nF EW\n\nF\n WE\n\nFWE \nFWE F\nEWF \nEW\nF\nWEF WE\nF \nWE\nF\n WE\nF\n WE\nF\n EW\nF\n EW\nF \nWE\nF\nWE \nF\nEW\nF \nEW\nF \nWEF\nW\nEF\n W\nEF\n\nW\n E\n\nFEW\nF \nWEF\n WE\nF\n WE\nF\nEW\n F\nEW\nF\n WE\nF \nWE\nF\nW\n EF\nWEF\n EW\nF\nWE\n F\nEW\n \nFEW\n \nFEW\nF\n EW\nF\n EW\nF\nWE \nF\nEW\nF \nEW\nF\n WE\nF\nEW\n \nFEW\nF\nEW\nF\n WE\nF\n WE\nF\n WE\nF\nEW\nF \nWEF\nWE\n F\nEW\nF\n WE\nF \nEW\nF\n EWF\nEWF \nEW\nF EW FEWF LEWHF KEWUFHG OWEIUF HWEUKYF GWEIUYF GWEIUYF GWEIFG WEIUYFG WEIUYF GWEIUF NWEIFKG WEKHFJN WLEF WEF WEF WEFWE F",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "disableInitialFocus": true
+    }
+  ],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-01-27T07:53:46.867Z",
+  "GUID": "9eb40faf-81df-4393-9d09-a6ff39e1c3b4",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-01-27T11:14:36.591Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.9.1"
+  },
+  "hackoladeMeta": {
+    "validationErrors": {}
+  },
+  "polyglotModelPaths": [
+    {
+      "GUID": "33ce87b7-4abe-4d2f-8f1b-85a21ac4dc39",
+      "polyglotModelName": "initial-model-with-container",
+      "polyglotModelPath": "initial-model-with-container.hck.json",
+      "normalization": false,
+      "generateAssociativeEntitiesForManyToManyRelationships": true,
+      "applyTargetNamingConventions": false
+    }
+  ],
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "980edbb2-3964-4e11-b61d-0c55892e5755",
+            "x": 1659.9393939393935,
+            "y": 1533.5757575757564,
+            "width": 217,
+            "height": 176,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "ead63cb5-7734-4078-8af4-ccb8f8c17053",
+            "x": 1776.9393939393935,
+            "y": 1944.5757575757564,
+            "width": 217,
+            "height": 158,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "4cf75af8-c686-4ee4-84d5-72bdecb40eff",
+            "x": 2082.9393939393935,
+            "y": 1772.5757575757564,
+            "width": 217,
+            "height": 176,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "23e9ca9c-80c5-4e3f-ada7-ef9129c3c8dc",
+            "x": 2442.5454545454527,
+            "y": 1519.5757575757564,
+            "width": 217,
+            "height": 104,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1019,
+            "y": 1193,
+            "GUID": "dd8d2f5e-fd04-4a35-b55a-4c2a9da3f85e"
+          },
+          {
+            "x": 1595.9393939393935,
+            "y": 1455.5757575757564,
+            "GUID": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "980edbb2-3964-4e11-b61d-0c55892e5755",
+              "size": 100,
+              "x": 1208,
+              "y": 1219
+            },
+            {
+              "GUID": "ead63cb5-7734-4078-8af4-ccb8f8c17053",
+              "size": 100,
+              "x": 1228,
+              "y": 1239
+            },
+            {
+              "GUID": "4cf75af8-c686-4ee4-84d5-72bdecb40eff",
+              "size": 100,
+              "x": 1248,
+              "y": 1259
+            },
+            {
+              "GUID": "23e9ca9c-80c5-4e3f-ada7-ef9129c3c8dc",
+              "size": 100,
+              "x": 1268,
+              "y": 1279
+            }
+          ],
+          "buckets": [
+            {
+              "x": 52,
+              "y": 175,
+              "GUID": "dd8d2f5e-fd04-4a35-b55a-4c2a9da3f85e"
+            },
+            {
+              "x": 64,
+              "y": 64,
+              "GUID": "ff38f438-8fbe-45ab-a0b6-5da8ef2a2c0f"
+            }
+          ],
+          "decorativeSymbols": [
+            {
+              "GUID": "b097ee76-746f-43cd-9cd3-3a15f93d6604",
+              "x": 1111.5927419354837,
+              "y": 1123.1895161290322,
+              "height": 150,
+              "width": 300
+            }
+          ],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [
+          {
+            "GUID": "b097ee76-746f-43cd-9cd3-3a15f93d6604",
+            "x": 1790.868157380248,
+            "y": 1735.510141739978,
+            "height": 106.06060606060663,
+            "width": 150,
+            "color": {
+              "hex": "#9c27b0",
+              "rgba": {
+                "r": 156,
+                "g": 39,
+                "b": 176,
+                "a": 1
+              }
+            }
+          }
+        ],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "980edbb2-3964-4e11-b61d-0c55892e5755"
+          },
+          {
+            "GUID": "4cf75af8-c686-4ee4-84d5-72bdecb40eff"
+          },
+          {
+            "GUID": "23e9ca9c-80c5-4e3f-ada7-ef9129c3c8dc"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

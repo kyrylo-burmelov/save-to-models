@@ -1,0 +1,31 @@
+Full Name,Name,Asset Id,Community,Domain Type,Domain,Status,Asset Type
+Attribute,Attribute,01927c17-a9c8-759e-9f11-93e8c64b4c5f,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Cardinality,Cardinality,01927c23-1d03-77b0-a132-ce21d2c40bbe,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Cardinality Constraint,Cardinality Constraint,01927c23-1d03-77b0-a132-ce21d2c40bc6,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Composite Key,Composite Key,01927c23-1d03-77b0-a132-ce21d2c40bb9,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Data Integrity,Data Integrity,01927c23-1d03-77b0-a132-ce21d2c40bb3,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Data Mart,Data Mart,01927c23-1d03-77b0-a132-ce21d2c40bbc,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Data Warehouse,Data Warehouse,01927c23-1d03-77b0-a132-ce21d2c40bb6,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Denormalization,Denormalization,01927c23-1d03-77b0-a132-ce21d2c40bb4,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Dimensional Model,Dimensional Model,01927c23-1d03-77b0-a132-ce21d2c40bc5,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Dimension Table,Dimension Table,01927c23-1d03-77b0-a132-ce21d2c40bbb,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Entity,Entity,01927c06-bdc5-7d44-8aed-be430198bf6f,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Entity-Relationship Diagram,Entity-Relationship Diagram,01927c23-1d03-77b0-a132-ce21d2c40bc8,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+ERD,ERD,0192866c-43a4-7185-9f7d-60ee06d5d285,Hackolade,Glossary,Data modeling glossary,Candidate,Acronym
+Fact Table,Fact Table,01927c23-1d03-77b0-a132-ce21d2c40bcb,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Foreign Key,Foreign Key,01927c23-1d03-77b0-a132-ce21d2c40bca,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Index,Index,01927c23-1d03-77b0-a132-ce21d2c40bc9,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Logical Data Model,Logical Data Model,01927c23-1d03-77b0-a132-ce21d2c40bc0,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Normalization,Normalization,01927c23-1d03-77b0-a132-ce21d2c40bba,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+OLAP,OLAP,01927c23-1d03-77b0-a132-ce21d2c40bbf,Hackolade,Glossary,Data modeling glossary,Candidate,Acronym
+OLTP,OLTP,01927c23-1d03-77b0-a132-ce21d2c40bc2,Hackolade,Glossary,Data modeling glossary,Candidate,Acronym
+Online Analytical Processing,Online Analytical Processing,01927c23-1d03-77b0-a132-ce21d2c40bb7,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Online Transaction Processing,Online Transaction Processing,01927c23-1d03-77b0-a132-ce21d2c40bbd,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Physical Data Model,Physical Data Model,01927c23-1d03-77b0-a132-ce21d2c40bcc,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Primary Key,Primary Key,01927c23-1d03-77b0-a132-ce21d2c40bc7,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Referential Integrity,Referential Integrity,01927c23-1d03-77b0-a132-ce21d2c40bc3,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Relationship,Relationship,01927c23-1d03-77b0-a132-ce21d2c40bc4,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Schema,Schema,01927c23-1d03-77b0-a132-ce21d2c40bcd,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Snowflake Schema,Snowflake Schema,01927c23-1d03-77b0-a132-ce21d2c40bb5,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Star Schema,Star Schema,01927c23-1d03-77b0-a132-ce21d2c40bb8,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
+Surrogate Key,Surrogate Key,01927c23-1d03-77b0-a132-ce21d2c40bc1,Hackolade,Glossary,Data modeling glossary,Candidate,Business Term
