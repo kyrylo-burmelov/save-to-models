@@ -411,7 +411,64 @@
       "disableInitialFocus": true
     }
   ],
-  "businessGlossaries": [],
+  "businessGlossaries": [
+    {
+      "GUID": "81ff4e2a-8498-4d18-985b-8eaafc26f34e",
+      "name": "classwords_dictionary_minimal.csv",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../classwords_dictionary_minimal.csv",
+      "mapping": [
+        {
+          "GUID": "1e7348df-7399-4631-8e74-ec82cb5c2529",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "82490eda-8542-4c30-9503-229a7df7401f",
+          "columnIdentifier": "class_word",
+          "displayName": "Class Word",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "58b28d7a-16a2-40ff-ba9a-096730cd1017",
+          "columnIdentifier": "allowed_values",
+          "displayName": "Allowed Values",
+          "isMultipleValue": true,
+          "separator": ";",
+          "position": 2,
+          "displayType": "tag",
+          "isMapped": true
+        },
+        {
+          "GUID": "ebe0846d-c43e-42fe-b04d-c65a667a4edf",
+          "columnIdentifier": "category",
+          "displayName": "category",
+          "position": 3,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "73d9dd19-2b43-4135-9042-1e294d79dfc7",
+          "columnIdentifier": "description",
+          "displayName": "description",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
+    }
+  ],
   "businessGlossaryTerms": [],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
@@ -419,7 +476,7 @@
   "GUID": "dca9ade7-ee0b-4953-b408-cc0e6b806e82",
   "isLineageEnabled": false,
   "polyglotModelPaths": [],
-  "lastModifTS": "2026-03-02T11:24:56.270Z",
+  "lastModifTS": "2026-03-02T11:42:16.252Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
