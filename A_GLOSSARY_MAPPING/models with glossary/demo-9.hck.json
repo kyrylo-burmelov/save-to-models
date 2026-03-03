@@ -1,0 +1,85 @@
+{
+  "modelName": "New model",
+  "collections": [],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {},
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "f4058fd2-91bf-41e5-af2c-119910214dcf"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "0ae61e18-e50d-49d2-8df7-94425a719397"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "20d0147a-3307-432a-8538-7dd47d7779ce"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-03-03T15:16:48.625Z",
+  "GUID": "e55ca4d0-3776-48d9-84e6-799a3156503e",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-03-03T15:17:23.853Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.9.5"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
