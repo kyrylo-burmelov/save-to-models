@@ -1,12 +1,28 @@
 {
   "modelName": "New model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f470b595-fb9a-4714-ad5e-d613b92752db"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "e2b7fb65-3b88-4d01-8404-398881b32049"
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "e2b7fb65-3b88-4d01-8404-398881b32049": "New entity"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -24,14 +40,71 @@
   },
   "sources": [],
   "decorativeSymbols": [],
-  "businessGlossaries": [],
+  "businessGlossaries": [
+    {
+      "GUID": "fbb49d8c-aac7-437d-a2f3-926e2ebf6854",
+      "name": "classwords_dictionary_minimal.csv",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../classwords_dictionary_minimal.csv",
+      "mapping": [
+        {
+          "GUID": "7bd191f9-37fa-45e6-8795-7536e4967aad",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "b8cb90df-0514-488c-8c7c-542f9897a51e",
+          "columnIdentifier": "class_word",
+          "displayName": "Name",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "b14f71bb-5100-4d19-a651-9c4bdae8f1b1",
+          "columnIdentifier": "allowed_values",
+          "displayName": "Allowed values",
+          "isMultipleValue": true,
+          "separator": ";",
+          "position": 2,
+          "displayType": "tag",
+          "isMapped": true
+        },
+        {
+          "GUID": "50cf03ab-9321-47fc-b736-5f2961ee819e",
+          "columnIdentifier": "category",
+          "displayName": "category",
+          "position": 3,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "337900e8-f5ad-474b-9af2-d0d6833c5bc8",
+          "columnIdentifier": "description",
+          "displayName": "description",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
+    }
+  ],
   "businessGlossaryTerms": [],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-03T14:09:41.004Z",
   "GUID": "e1b87278-6bac-4c1b-88f0-b80a071f945a",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-03T14:10:43.015Z",
+  "lastModifTS": "2026-03-03T14:12:21.502Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -45,7 +118,18 @@
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "e2b7fb65-3b88-4d01-8404-398881b32049",
+            "x": 1204,
+            "y": 1239,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -62,7 +146,14 @@
         "selectedCollections": [],
         "displayColorPicker": false,
         "graphView": {
-          "erd": [],
+          "erd": [
+            {
+              "GUID": "e2b7fb65-3b88-4d01-8404-398881b32049",
+              "size": 100,
+              "x": 1204,
+              "y": 1239
+            }
+          ],
           "buckets": [],
           "decorativeSymbols": [],
           "forceLayout": true,
