@@ -1,12 +1,95 @@
 {
   "modelName": "New model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New attribute",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "97332032-4f80-49bc-86f3-19a24ad72463",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "3cba597a-1d4d-43a8-9b85-fdf2f9580e36",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "fc847b2f-608e-4b0c-aef9-1a982aa00bc0",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a50cdff5-e9ba-4203-8100-93192f23a35b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "6ad7e331-5645-42cf-9eff-478a331bd307"
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "6ad7e331-5645-42cf-9eff-478a331bd307": "New entity",
+    "97332032-4f80-49bc-86f3-19a24ad72463": "New attribute",
+    "3cba597a-1d4d-43a8-9b85-fdf2f9580e36": "New attribute1",
+    "fc847b2f-608e-4b0c-aef9-1a982aa00bc0": "New attribute2"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -24,14 +107,85 @@
   },
   "sources": [],
   "decorativeSymbols": [],
-  "businessGlossaries": [],
+  "businessGlossaries": [
+    {
+      "GUID": "4a822d0f-ecdc-4f35-8dea-73e78ddff1f3",
+      "name": "gold_prospecting_business_glossary (1).csv",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../gold_prospecting_business_glossary (1).csv",
+      "mapping": [
+        {
+          "GUID": "821d6878-83bf-44b1-95b3-d77518159f17",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "d96e0172-da31-44c4-8e67-73a5e7df1264",
+          "columnIdentifier": "Term",
+          "displayName": "Name",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "92e9e453-76ff-41f1-aff8-cf71e306f4b0",
+          "columnIdentifier": "Domain",
+          "displayName": "Domain",
+          "position": 2,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "cc806921-236a-46e0-9e18-5881c95a027c",
+          "columnIdentifier": "Definition",
+          "displayName": "Definition",
+          "position": 3,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "5a859bb9-dc21-4cc6-934e-035484fff6db",
+          "columnIdentifier": "Synonyms",
+          "displayName": "Synonyms",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "4084a35f-d1d7-44ad-813a-d26384698783",
+          "columnIdentifier": "GovernanceStatus",
+          "displayName": "GovernanceStatus",
+          "position": 5,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "2d6ea42c-96db-4de9-aec9-6bd0a657c930",
+          "columnIdentifier": "Source",
+          "displayName": "Source",
+          "position": 6,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
+    }
+  ],
   "businessGlossaryTerms": [],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-03T14:24:15.882Z",
   "GUID": "be5086a7-08ca-4aee-a69b-8bcfb30aab09",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-03T14:24:32.769Z",
+  "lastModifTS": "2026-03-03T14:25:26.425Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -45,7 +199,18 @@
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "6ad7e331-5645-42cf-9eff-478a331bd307",
+            "x": 1434,
+            "y": 1245,
+            "width": 217,
+            "height": 86,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -62,7 +227,14 @@
         "selectedCollections": [],
         "displayColorPicker": false,
         "graphView": {
-          "erd": [],
+          "erd": [
+            {
+              "GUID": "6ad7e331-5645-42cf-9eff-478a331bd307",
+              "size": 100,
+              "x": 1434,
+              "y": 1245
+            }
+          ],
           "buckets": [],
           "decorativeSymbols": [],
           "forceLayout": true,
