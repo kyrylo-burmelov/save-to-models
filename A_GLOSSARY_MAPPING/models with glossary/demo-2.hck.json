@@ -1,12 +1,28 @@
 {
   "modelName": "New model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ef6d711c-07cd-415f-b10d-6dd1c846a746"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "a6a5625c-2f45-45e1-9e3a-f4d3990b72a4"
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "a6a5625c-2f45-45e1-9e3a-f4d3990b72a4": "New entity"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -24,14 +40,87 @@
   },
   "sources": [],
   "decorativeSymbols": [],
-  "businessGlossaries": [],
+  "businessGlossaries": [
+    {
+      "GUID": "b303da79-b809-43c6-8847-b1e889485a6a",
+      "name": "GOLD_GLOSSSSSARY",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../gold_prospecting_business_glossary (1).csv",
+      "mapping": [
+        {
+          "GUID": "9bb6edd7-fdac-40bc-9dd5-873e94bb8021",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "d8246b86-fe12-4ec3-9640-db2d7467cf93",
+          "columnIdentifier": "Term",
+          "displayName": "Name",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "tag",
+          "isMapped": true
+        },
+        {
+          "GUID": "682a6522-5769-40e7-a9bc-a79d36fda2d8",
+          "columnIdentifier": "Synonyms",
+          "displayName": "Multiple",
+          "isMultipleValue": true,
+          "separator": ";",
+          "position": 2,
+          "displayType": "tag",
+          "isMapped": true
+        },
+        {
+          "GUID": "26631d32-6470-4ed0-b6cb-e2623a8f3dff",
+          "columnIdentifier": "Domain",
+          "displayName": "Domain",
+          "position": 3,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "dd1f1645-b8e6-4c64-8c2e-b8560e115ba4",
+          "columnIdentifier": "Definition",
+          "displayName": "Definition",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "bc2481a2-00d7-4d75-9955-c2856d04d41e",
+          "columnIdentifier": "GovernanceStatus",
+          "displayName": "GovernanceStatus",
+          "position": 5,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "5209f9af-54a6-4358-b07c-9070d742d526",
+          "columnIdentifier": "Source",
+          "displayName": "Source",
+          "position": 6,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
+    }
+  ],
   "businessGlossaryTerms": [],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-03T13:43:33.980Z",
   "GUID": "2e02cc73-238d-4217-8a0c-b0e4d18857cd",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-03T13:44:15.760Z",
+  "lastModifTS": "2026-03-03T13:47:13.054Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -45,7 +134,18 @@
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "a6a5625c-2f45-45e1-9e3a-f4d3990b72a4",
+            "x": 1138,
+            "y": 1197,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -62,7 +162,14 @@
         "selectedCollections": [],
         "displayColorPicker": false,
         "graphView": {
-          "erd": [],
+          "erd": [
+            {
+              "GUID": "a6a5625c-2f45-45e1-9e3a-f4d3990b72a4",
+              "size": 100,
+              "x": 1292,
+              "y": 1286
+            }
+          ],
           "buckets": [],
           "decorativeSymbols": [],
           "forceLayout": true,
