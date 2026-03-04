@@ -1,12 +1,101 @@
 {
   "modelName": "New model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New attribute",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "561d58f2-d1eb-4b94-b4a8-57f4075a2134",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "6997d778-2841-4ff1-b8bf-ddee35a8043e",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "e8dc3915-b6ff-4f49-a09f-9c17b842281c",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "759476e3-bf9f-40b9-a3e9-bed64d092c98"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "a7a16a1d-9dcb-4518-93db-6ab675015ee2",
+      "glossaryTerms": [
+        {
+          "GUID": "a83d399f-2ebf-42d9-b90e-dbaef8e89fbe",
+          "glossaryTermId": "f7a84fe0-979b-4bea-919d-6ad128456fc7"
+        }
+      ]
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "a7a16a1d-9dcb-4518-93db-6ab675015ee2": "New entity",
+    "561d58f2-d1eb-4b94-b4a8-57f4075a2134": "New attribute",
+    "6997d778-2841-4ff1-b8bf-ddee35a8043e": "New attribute1",
+    "e8dc3915-b6ff-4f49-a09f-9c17b842281c": "New attribute2"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -98,13 +187,35 @@
       ]
     }
   ],
-  "businessGlossaryTerms": [],
+  "businessGlossaryTerms": [
+    {
+      "GUID": "f7a84fe0-979b-4bea-919d-6ad128456fc7",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Land Parcel",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "15f83ca4-07a1-4bc6-b63e-4721a3b631b8",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Land Parcel",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Property",
+          "Parcel",
+          "Site"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A uniquely identified area of land managed by the company, characterized by name, location, type, status, boundaries (as applicable), and related documentation.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Properties section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    }
+  ],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-03T13:38:09.896Z",
   "GUID": "f0c90ffa-e01d-479e-8535-510942c17c9f",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-03T13:40:24.625Z",
+  "lastModifTS": "2026-03-04T10:47:11.987Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -115,10 +226,22 @@
   "applicationInformation": {
     "version": "8.9.5"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "a7a16a1d-9dcb-4518-93db-6ab675015ee2",
+            "x": 123,
+            "y": 143,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -135,7 +258,14 @@
         "selectedCollections": [],
         "displayColorPicker": false,
         "graphView": {
-          "erd": [],
+          "erd": [
+            {
+              "GUID": "a7a16a1d-9dcb-4518-93db-6ab675015ee2",
+              "size": 100,
+              "x": 123,
+              "y": 143
+            }
+          ],
           "buckets": [],
           "decorativeSymbols": [],
           "forceLayout": true,
