@@ -79,8 +79,152 @@
       "GUID": "a7a16a1d-9dcb-4518-93db-6ab675015ee2",
       "glossaryTerms": [
         {
-          "GUID": "a83d399f-2ebf-42d9-b90e-dbaef8e89fbe",
+          "GUID": "e80bdbc5-03e6-496f-b24e-3cc79a6a1b8f",
           "glossaryTermId": "f7a84fe0-979b-4bea-919d-6ad128456fc7"
+        },
+        {
+          "GUID": "434c417a-9bcb-4f3b-96c5-788c12b52c3a",
+          "glossaryTermId": "d7770547-4cd8-43c7-b18f-014c70172c3c"
+        },
+        {
+          "GUID": "07b5dc1b-7b67-48e0-bbdf-1c05529e624b",
+          "glossaryTermId": "020c96c3-b8f5-4714-8e70-8e4cf3f13019"
+        },
+        {
+          "GUID": "92afe17f-2159-49f0-a839-040c68e7cf67",
+          "glossaryTermId": "a861572d-c313-4557-b657-d1cca2d6c9f6"
+        },
+        {
+          "GUID": "218ae337-1e27-45d8-8f85-d4c50d3057e9",
+          "glossaryTermId": "500eb892-9aa2-4ef8-a0d5-a2fb00dd5bbd"
+        },
+        {
+          "GUID": "6dd134fe-f859-4a1a-bb26-013d4ce96d77",
+          "glossaryTermId": "7f688860-d0be-4586-be18-aee444cf9461"
+        },
+        {
+          "GUID": "ed34c663-b758-480b-890f-30b55e36faed",
+          "glossaryTermId": "239194aa-0db7-42cc-83b2-1582f358965c"
+        },
+        {
+          "GUID": "365c34c0-9a24-4718-a375-543c1b963920",
+          "glossaryTermId": "83e772a1-54ef-4e04-a2a8-011883167ffb"
+        },
+        {
+          "GUID": "294b4094-50dd-4f58-bd80-3c5b23a5ed30",
+          "glossaryTermId": "62b72f48-aceb-44e7-962b-7a8066b3446e"
+        },
+        {
+          "GUID": "79dd7472-a874-4663-9b6f-ec5a392b62b9",
+          "glossaryTermId": "62ece9d2-c867-4006-8721-5aaa4ad5ff4f"
+        },
+        {
+          "GUID": "9f8052ed-646d-4c16-ba59-323aabcb3976",
+          "glossaryTermId": "105f5ce5-34bb-4d58-85cd-636d7068eb15"
+        },
+        {
+          "GUID": "51b7a3ed-47eb-435e-b3c2-9850ef2bb2b0",
+          "glossaryTermId": "e2bdb094-d66d-4fef-82a6-f843ea791f11"
+        },
+        {
+          "GUID": "97b3134b-9455-41b2-8aab-85a0bd845a2d",
+          "glossaryTermId": "795c63c2-5607-4382-9fdb-f67f82e27b49"
+        },
+        {
+          "GUID": "99284441-4f10-434e-bb57-c63538158f9d",
+          "glossaryTermId": "e6f4db18-fada-4aa8-9c76-f6a261511475"
+        },
+        {
+          "GUID": "d4799144-3b80-4103-8a17-5881059300e2",
+          "glossaryTermId": "c285e70a-d699-43ec-97f3-3c5ae54831aa"
+        },
+        {
+          "GUID": "4645e8a9-ade2-4f90-9af9-77ada785fba8",
+          "glossaryTermId": "a72f1cd5-cc7e-4da8-92f0-259eb8845400"
+        },
+        {
+          "GUID": "61479496-dc32-4b5a-a141-f6e1457ab7fd",
+          "glossaryTermId": "35a211da-c484-4e51-8543-e00baf1b44ff"
+        },
+        {
+          "GUID": "c3e5c1e2-ff4d-4eab-b69c-98c5ce62bcfe",
+          "glossaryTermId": "b243f64d-3d40-4ef1-bf45-a5ad2688286f"
+        },
+        {
+          "GUID": "6e261bd6-68ab-4fbd-9906-de9b1cf34aa8",
+          "glossaryTermId": "e7105ea2-d1bc-4019-a304-1a957bc4db73"
+        },
+        {
+          "GUID": "21a1cda4-acf4-4768-912b-40aa99c8dad5",
+          "glossaryTermId": "7712c4ff-a86e-489f-af6e-923ebb98de53"
+        },
+        {
+          "GUID": "d57fceb1-c237-41b9-a072-a9a446523830",
+          "glossaryTermId": "b5fc1d1e-60d5-4b79-850d-d898dc893862"
+        },
+        {
+          "GUID": "b01abb6a-7588-4c91-b32c-453dae565fe0",
+          "glossaryTermId": "85c22080-d5b2-4491-903d-081ef2edd88f"
+        },
+        {
+          "GUID": "8a79067d-de85-4c6a-99e5-8c77f1052751",
+          "glossaryTermId": "a6b589ca-5132-4221-9c0c-acb7f1291b95"
+        },
+        {
+          "GUID": "75767499-439b-410e-a6e7-00aa67c13170",
+          "glossaryTermId": "ea753144-02ea-494a-a82a-dc2c0ec34909"
+        },
+        {
+          "GUID": "affac27d-6ac1-4189-a1ec-76ecaa2b1687",
+          "glossaryTermId": "21febb73-6005-41c0-8d9c-69bab23e66bc"
+        },
+        {
+          "GUID": "e48866d7-c0e2-48b2-ac9e-46c9062b521b",
+          "glossaryTermId": "0d6cdca4-0a1d-4c4d-bbd6-99851b935853"
+        },
+        {
+          "GUID": "8aea4df6-2d99-4222-817e-b7834c75da0b",
+          "glossaryTermId": "c8d13b34-afb8-403b-a79a-c8b252e67779"
+        },
+        {
+          "GUID": "e99e6ac9-a719-473c-82bd-2181be46c3db",
+          "glossaryTermId": "d85782d9-03d6-4708-ad21-9b5372c16ae8"
+        },
+        {
+          "GUID": "4e77c05c-42ad-47c9-8832-a70d005b3e9a",
+          "glossaryTermId": "80a82a63-d440-4fc6-b405-297c62724595"
+        },
+        {
+          "GUID": "d8c97396-92dd-4bac-a7c6-267198858953",
+          "glossaryTermId": "f38f5cb7-8158-46c8-888d-a56c26a0ed80"
+        },
+        {
+          "GUID": "6fccd099-7424-4c4d-a7f8-374ade8cdc83",
+          "glossaryTermId": "b8d97f92-a262-441a-af43-6a9ebc2e04b0"
+        },
+        {
+          "GUID": "888bedcd-feda-4f90-8dff-b0202c17035c",
+          "glossaryTermId": "2be45eec-715b-4242-bcaa-e4b9d112f364"
+        },
+        {
+          "GUID": "f37d9487-3344-4872-a63c-b81f552fc6bb",
+          "glossaryTermId": "f4f501f9-3e9e-4c38-b800-c0c6df2b207f"
+        },
+        {
+          "GUID": "66ff808c-4f27-44c3-9d29-f005e90af454",
+          "glossaryTermId": "a6e8dbd9-f685-4d1a-b7ef-3d6f7aa5425e"
+        },
+        {
+          "GUID": "ddee780f-74f1-425b-8d51-1c1ec43d7675",
+          "glossaryTermId": "4a5eddde-8c47-4da2-8a2a-0360e41c84dc"
+        },
+        {
+          "GUID": "340dfa83-3013-4a33-bfe8-157fb4b7d9f5",
+          "glossaryTermId": "8d8980b6-8819-4547-99b5-079cae848cba"
+        },
+        {
+          "GUID": "7ad68345-af11-4b72-b44a-5e553e0df663",
+          "glossaryTermId": "8e3d4aba-5afc-4a73-97e7-5a6c4ab3fbfc"
         }
       ]
     }
@@ -185,6 +329,60 @@
           "isMapped": false
         }
       ]
+    },
+    {
+      "GUID": "ed42a939-68c4-4f72-ad37-9755e8dd8c6e",
+      "name": "c  c c   ",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../classwords_dictionary_minimal.csv",
+      "mapping": [
+        {
+          "GUID": "51bcdb79-8935-42b0-b3a3-396b18557efd",
+          "columnIdentifier": "class_word",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "35477f0a-86df-46a5-badd-82b44b8b252f",
+          "columnIdentifier": "category",
+          "displayName": "Name",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "9b3ae5eb-eea3-400f-a927-ea7d9ad8c5ec",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "position": 2,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "dd4114db-33d4-498f-af99-a857e6c68b1c",
+          "columnIdentifier": "description",
+          "displayName": "description",
+          "position": 3,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "660e4c85-6795-42ab-8be6-5bc3931372dc",
+          "columnIdentifier": "allowed_values",
+          "displayName": "allowed_values",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
     }
   ],
   "businessGlossaryTerms": [
@@ -208,6 +406,723 @@
       "refIds": [
         "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
       ]
+    },
+    {
+      "GUID": "d7770547-4cd8-43c7-b18f-014c70172c3c",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Prospect",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "fea18d5b-133e-4456-b5cd-493b4aaf227d",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Prospect",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Exploration site",
+          "Prospect area"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A land parcel identified for exploration that may later be converted into a claim, mineral lease, or private land parcel depending on ownership and mineral findings.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "In Review",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Properties section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "020c96c3-b8f5-4714-8e70-8e4cf3f13019",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Claim",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "c339c2d3-76ad-4480-858c-edc4967b91b3",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Claim",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Mining claim",
+          "Filed claim"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A parcel of public land for which exclusive mineral rights have been filed and approved by the managing agency; claims have corners/boundaries specified for filing and may be active, inactive, or abandoned.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Properties section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "a861572d-c313-4557-b657-d1cca2d6c9f6",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Mineral Lease",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "db943f55-8b61-49ed-84f6-761f599a8b1e",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Mineral Lease",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Lease",
+          "Mineral rights lease"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A parcel of private land where mineral rights have been negotiated and leased to the company, with defined start and expiration dates.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Properties section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "500eb892-9aa2-4ef8-a0d5-a2fb00dd5bbd",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Private Land",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "a21d6031-fde0-4930-b517-a73de59a9912",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Private Land",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Owned land",
+          "Company-owned land"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A land parcel owned outright by the company; may include surface ownership alone or both surface and mineral rights and can be used for mining operations, equipment storage, or other activities.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Properties section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "7f688860-d0be-4586-be18-aee444cf9461",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Land Parcel Status",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "7e8f1823-e108-44e3-aca6-365ebceb7c5b",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Land Parcel Status",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Parcel status",
+          "Property status"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A governance/operational state of a land parcel. Claims can be active, inactive, or abandoned; prospects, mineral leases, and private land parcels may be active or inactive.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Boundaries section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "239194aa-0db7-42cc-83b2-1582f358965c",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Boundary Corner",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "523650d1-9507-4c83-acc8-3093ab3b3a3c",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Boundary Corner",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Corner point",
+          "Claim corner"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A corner point defining a claim boundary as declared in claim filing; corners are specified using geographic coordinates and may reference natural landmarks as notes.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Boundaries section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "83e772a1-54ef-4e04-a2a8-011883167ffb",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Land Parcel Point",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "b26957e6-d44b-4f2b-9248-8f3151311260",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Land Parcel Point",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Boundary point",
+          "GPS point"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A geographic point used to define the outline of a parcel boundary and to store mapping and legal description notes.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Boundaries section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "62b72f48-aceb-44e7-962b-7a8066b3446e",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Acreage",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "e1941693-5a9a-494f-82b3-e93ef6f6dbb2",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Acreage",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Acres",
+          "Parcel size"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "The approximate size of a land parcel in acres, calculated using GPS corner coordinates and stored for reference.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Acres section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "62ece9d2-c867-4006-8721-5aaa4ad5ff4f",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Party",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "55c70ca7-6659-4711-8df2-10d53713a661",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Party",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Person",
+          "Organization",
+          "Entity"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Parties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "An individual or organization associated with mining operations (e.g., partners, contractors, workers, laboratories, refineries, surveyors), with contact details and notes.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Party Details section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "105f5ce5-34bb-4d58-85cd-636d7068eb15",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Parcel Conversion",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "59f2c9a1-2d1b-49e8-8978-498cec95fabe",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Parcel Conversion",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Prospect conversion",
+          "Reclassification"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Properties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "The process of converting all or part of a prospect into a claim, mineral lease, or private land parcel once sufficient minerals are confirmed; the original prospect and its details must be retained for history.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "In Review",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Conversion section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "e2bdb094-d66d-4fef-82a6-f843ea791f11",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Land Parcel Party Role",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "0c631183-3e59-47f8-b15a-37c17b0619c0",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Land Parcel Party Role",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Party role",
+          "Parcel role"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Parties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A role that a party plays with respect to a land parcel (e.g., prospector, partner, worker, stakeholder), used to manage permissions, responsibilities, and business relationships tied to the property.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Party Interest/Involvement section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "795c63c2-5607-4382-9fdb-f67f82e27b49",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Laboratory",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "c466efae-9732-406e-b6cc-fb7562523a04",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Laboratory",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Lab",
+          "Assay lab"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Parties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A party that performs assay analysis on ore samples and returns assay reports used for decision-making (e.g., whether to file a claim or continue working a property).",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Ore Samples section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "e6f4db18-fada-4aa8-9c76-f6a261511475",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Refinery",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "08eebe1e-ab2b-4816-aeee-6dcde659d396",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Refinery",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Mineral refinery",
+          "Refiner"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Parties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A party that receives extracted material payloads and separates/purifies minerals, returning refined minerals while retaining a predetermined fee (often a percentage by weight) and possibly selling minerals on the market as agreed.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Refinement section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "c285e70a-d699-43ec-97f3-3c5ae54831aa",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Surveyor",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "db0a7597-510a-4c21-92b7-95f31168448e",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Surveyor",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Sample collector",
+          "Field surveyor"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Parties",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A party responsible for collecting ore samples; recorded to support follow-up and traceability regarding sample collection.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Surveyor section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "a72f1cd5-cc7e-4da8-92f0-259eb8845400",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Mining Type",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "dc433509-599b-4487-bd42-b3e68458b504",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Mining Type",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Mining category"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Methods",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A broad category of mining based on the nature of deposits. In this case study: placer mining and hard-rock mining.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Types of Mining and Methods Used section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "35a211da-c484-4e51-8543-e00baf1b44ff",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Placer Mining",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "2ba4988b-ac7d-4a37-a69e-8d3044913ccd",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Placer Mining",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Alluvial mining"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Methods",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "Extraction of valuable minerals from loose, unconsolidated alluvial deposits found in streambeds, riverbeds, and ancient sediment layers.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Types of Mining and Methods Used section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "b243f64d-3d40-4ef1-bf45-a5ad2688286f",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Hard-Rock Mining",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "e5c04287-8741-4f1e-baa3-2bd491868318",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Hard-Rock Mining",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Lode mining"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Methods",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "Extraction of minerals directly from solid rock formations by breaking, blasting, and processing parent rock to release embedded minerals.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Types of Mining and Methods Used section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "e7105ea2-d1bc-4019-a304-1a957bc4db73",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Mining Method",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "94ff0844-7629-422a-a5cc-1de825c2f490",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Mining Method",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Technique",
+          "Method option"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Methods",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A specific technique used within a mining type to extract minerals (e.g., panning, sluicing, high-banking, dry-washing, suction dredging; drilling, blasting, cut-and-fill, block caving).",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "In Review",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Mining Methods/Techniques section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "7712c4ff-a86e-489f-af6e-923ebb98de53",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Mining Method Legality",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "865baa5d-d72d-44a1-81ab-eaf0df04dea1",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Mining Method Legality",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Legal status",
+          "Regulatory status"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Methods",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "The legal restriction status of a mining method by jurisdiction, typically categorized as legal, restricted, or banned.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Mining Methods/Techniques section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "b5fc1d1e-60d5-4b79-850d-d898dc893862",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Ore Sample",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "ee90f309-f09e-4d2a-bcc8-2d52ef3325ec",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Ore Sample",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Sample",
+          "Ore deposit sample"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Ore Samples & Assays",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A physical sample of ore deposit material (often dirt, gravel, sand) collected from a land parcel before mining; samples may be sent to laboratories for assay analysis.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "In Review",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (About the Minerals and Ore Samples section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "85c22080-d5b2-4491-903d-081ef2edd88f",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Assay",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "2fa4c462-63a8-4697-92de-e2aa4d29d581",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Assay",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Assay test",
+          "Lab analysis"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Ore Samples & Assays",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A laboratory analysis of an ore sample to determine the presence and relative quantities of certain minerals; results are returned in an assay report.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Sufficient Expected Minerals? section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "a6b589ca-5132-4221-9c0c-acb7f1291b95",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Assay Order",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "cd22aca3-ad6f-43e6-9439-46cd7be0fe28",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Assay Order",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Lab request",
+          "Assay request"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Ore Samples & Assays",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A request sent to a laboratory to perform an assay on an ore sample; may be repeated for comparative reports and includes associated requests and returned reports.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Documents section under Ore Samples)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "ea753144-02ea-494a-a82a-dc2c0ec34909",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Assay Report",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "9acb7104-5468-4852-8af2-f5975302ed72",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Assay Report",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Lab report",
+          "Assay results report"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Ore Samples & Assays",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A document produced by a laboratory in response to an assay order, used to support decisions such as filing a claim or continuing work on a property.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Sufficient Expected Minerals? section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "21febb73-6005-41c0-8d9c-69bab23e66bc",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Sufficient Mineral Interest",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "2bd4e17a-468d-4ccf-8b0d-bd1cd182f3a8",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Sufficient Mineral Interest",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Sufficient minerals",
+          "Mineral sufficiency"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Ore Samples & Assays",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A record of whether minerals expected/found on a property are present in sufficient quantity and accessibility to warrant mining efforts, based on assay results.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "In Review",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Sufficient Expected Minerals? section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "0d6cdca4-0a1d-4c4d-bbd6-99851b935853",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Mineral",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "30d9d2a6-f31e-4e6c-9496-0062d637ad53",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Mineral",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Commodity mineral"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Minerals & Market",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A naturally occurring substance of value tracked by the company; gold is the primary mineral of interest, with other minerals (e.g., silver, copper, platinum, uranium) possibly present.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (About the Minerals and Ore Samples section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "c8d13b34-afb8-403b-a79a-c8b252e67779",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Hazardous Mineral",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "c25433e6-a106-4d8c-b2aa-c0421799f1c6",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Hazardous Mineral",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Dangerous mineral"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Minerals & Market",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A mineral requiring special precautions and typically avoided by the company (example given: uranium).",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (About the Minerals and Ore Samples section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "d85782d9-03d6-4708-ad21-9b5372c16ae8",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Site Material Payload",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "49b85872-927f-4e2a-a0af-197b61a19ad1",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Site Material Payload",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Payload",
+          "Shipment payload"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Production",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A record of extracted material shipped from a land parcel, capturing logistics such as container type/identifier, weights, moisture, shipment status, approvals, and refinery receiving details; may be linked to an ore sample for comparison.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "In Review",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Payloads section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "80a82a63-d440-4fc6-b405-297c62724595",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Shipment Approval",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "e70d0943-57f0-4a55-bb5c-b38dd4320877",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Shipment Approval",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Payload approval",
+          "Shipping approval"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Production",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "An approval action by a party associated with a site material payload for shipment, supporting transportation and accountability.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Payloads section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "f38f5cb7-8158-46c8-888d-a56c26a0ed80",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Refinement",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "831728cf-bd8f-4b18-ac3e-06356742dcc6",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Refinement",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Refining",
+          "Mineral purification"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Production",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "The process where extracted material is sent to a refinery to separate and purify minerals; outputs include refined minerals and refinery reports/invoices.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Refinement and Documents sections)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "b8d97f92-a262-441a-af43-6a9ebc2e04b0",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Refined Mineral",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "e25afe6c-9318-4542-8ad7-2d21a551ece0",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Refined Mineral",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Refined output",
+          "Purified mineral"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Production",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A purified mineral output returned from the refinery to the company, after the refiner retains a predetermined fee (often by weight).",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Refinement section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "2be45eec-715b-4242-bcaa-e4b9d112f364",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Mining Production",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "f2b2c380-a653-47c5-98ca-4a655469beef",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Mining Production",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Production",
+          "Extraction operations"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Mining Production",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "Operational activities capturing extraction, shipment, refining, and tracking of refined quantities per mineral per land parcel over time (e.g., monthly and year-to-date totals).",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Mining Data section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "f4f501f9-3e9e-4c38-b800-c0c6df2b207f",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Production Compensation",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "6151fbbd-b9b5-4bfe-95bc-2e15c4c3eb68",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Production Compensation",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Production-based payment",
+          "Royalty"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Compensation",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "Payments to parties based on mineral production, typically calculated as a percentage of minerals extracted/refined from a specific parcel during a period, valued using spot price at time of payment.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "In Review",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Production Compensation Arrangements section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "a6e8dbd9-f685-4d1a-b7ef-3d6f7aa5425e",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Party Mineral Contract Term",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "1e792408-46ce-4aa8-8170-1ae093f3dedc",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Party Mineral Contract Term",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Compensation contract term",
+          "Royalty term"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Compensation",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "Contractual terms specifying a party’s compensation rate and effective dates for a role tied to a specific parcel and mineral extraction arrangement; must be versioned over time as rates change.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Documents section under Production Compensation)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "4a5eddde-8c47-4da2-8a2a-0360e41c84dc",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Spot Price",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "ba12be11-75a5-4e8b-9fee-2bcb97a7634b",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Spot Price",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Market price",
+          "Spot market price"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Compensation",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "The current market price of a mineral used to compute the dollar value of production compensation at the time of payment.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Compensation section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "8d8980b6-8819-4547-99b5-079cae848cba",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Equipment",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "94b4132d-b8a7-4db8-952f-b3c25e71d684",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Equipment",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Assets",
+          "Machinery",
+          "Tools"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Assets",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "Mining equipment, machinery, and tools located at or assigned to specific properties, tracked for inventory, maintenance, utilization, and availability even when not actively used in production.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Equipment section)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
+    },
+    {
+      "GUID": "8e3d4aba-5afc-4a73-97e7-5a6c4ab3fbfc",
+      "glossaryId": "17ca5ffe-9d30-451e-a1a6-9fba0d45b212",
+      "name": "Related Document",
+      "properties": {
+        "e97a26ec-bf13-493a-8698-05a3a25f70ad": "7fca46f1-c89a-40cb-aacb-a262b8ab10e9",
+        "35e497c8-fd75-4ce0-a37f-cf5ec92ebc15": "Related Document",
+        "5d27dd14-c2be-4c25-b774-bc1d5ad4aff4": [
+          "Supporting document",
+          "Attachment"
+        ],
+        "56dbe244-ee05-4319-8716-43044deb480f": "Documentation",
+        "15f654ae-e87c-43d4-96d5-0f17e24769ce": "A supporting artifact (typically PDF and/or electronic data) linked to business objects (e.g., parcels, parties, assay orders, payloads) such as contracts, permits, photographs, invoices, reports, and correspondence.",
+        "a6d096df-7353-4f8d-8ce4-e36030712bcf": "Needs Validation",
+        "10a6ba84-5e8d-4618-ab74-6368f50da769": "Gold Prospecting Narrative (Documents sections across domains)"
+      },
+      "refIds": [
+        "a7a16a1d-9dcb-4518-93db-6ab675015ee2"
+      ]
     }
   ],
   "dbVendor": "Polyglot",
@@ -215,7 +1130,7 @@
   "creationTS": "2026-03-03T13:38:09.896Z",
   "GUID": "f0c90ffa-e01d-479e-8535-510942c17c9f",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-04T10:47:11.987Z",
+  "lastModifTS": "2026-03-04T11:47:15.911Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -233,8 +1148,8 @@
         "erd": [
           {
             "GUID": "a7a16a1d-9dcb-4518-93db-6ab675015ee2",
-            "x": 123,
-            "y": 143,
+            "x": 1123,
+            "y": 1143,
             "width": 240,
             "height": 100,
             "color": {
