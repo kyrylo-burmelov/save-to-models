@@ -31,7 +31,7 @@
   "creationTS": "2026-03-03T13:22:25.795Z",
   "GUID": "f8ee540e-8563-40f5-8030-b9faff8281f4",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-03T13:24:07.943Z",
+  "lastModifTS": "2026-03-11T10:03:53.973Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -40,8 +40,9 @@
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.9.5"
+    "version": "8.9.6"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
