@@ -1,12 +1,28 @@
 {
   "modelName": "New model",
-  "collections": [],
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d305818f-9d5c-4f94-9f50-a1e880a402f6"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "8e8886c5-88de-4882-b472-bf326aae43e5"
+    }
+  ],
   "buckets": [],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "8e8886c5-88de-4882-b472-bf326aae43e5": "New entity"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -31,7 +47,7 @@
   "creationTS": "2026-03-03T15:16:48.625Z",
   "GUID": "e55ca4d0-3776-48d9-84e6-799a3156503e",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-03T15:17:23.853Z",
+  "lastModifTS": "2026-03-13T07:04:32.555Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -40,12 +56,24 @@
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.9.5"
+    "version": "8.9.7"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "8e8886c5-88de-4882-b472-bf326aae43e5",
+            "x": 268,
+            "y": 363,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
@@ -62,7 +90,14 @@
         "selectedCollections": [],
         "displayColorPicker": false,
         "graphView": {
-          "erd": [],
+          "erd": [
+            {
+              "GUID": "8e8886c5-88de-4882-b472-bf326aae43e5",
+              "size": 100,
+              "x": 268,
+              "y": 363
+            }
+          ],
           "buckets": [],
           "decorativeSymbols": [],
           "forceLayout": true,
