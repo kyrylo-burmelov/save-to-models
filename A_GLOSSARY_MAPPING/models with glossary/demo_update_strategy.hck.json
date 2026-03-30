@@ -1,12 +1,58 @@
 {
   "modelName": "New model",
-  "collections": [],
-  "buckets": [],
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "3ccf4972-fb01-4df2-a823-3b764945e943"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "c06167c4-d4c4-4b89-9e25-e3516f0e7107",
+      "bucketId": "f55c27b0-1501-40b5-8d14-9d9eb2162024",
+      "glossaryTerms": [
+        {
+          "GUID": "d7986011-52f8-4694-a5ab-bdf99bd50c9b",
+          "glossaryTermId": "40dfa4da-222e-4b51-9bc0-64345b07594b"
+        },
+        {
+          "GUID": "4f3e9c8c-dc39-4c03-8fe3-b6723ec95c95",
+          "glossaryTermId": "249757b8-d8f9-4505-90f1-95b5f75b8eaf"
+        }
+      ]
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New container",
+      "type": "bucket",
+      "collectionIds": [
+        "c06167c4-d4c4-4b89-9e25-e3516f0e7107"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "f55c27b0-1501-40b5-8d14-9d9eb2162024"
+    }
+  ],
   "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
-  "idToNameHashTable": {},
+  "idToNameHashTable": {
+    "f55c27b0-1501-40b5-8d14-9d9eb2162024": "New container",
+    "c06167c4-d4c4-4b89-9e25-e3516f0e7107": "New entity"
+  },
   "definitions": {
     "type": "definitions",
     "properties": [],
@@ -98,13 +144,48 @@
       ]
     }
   ],
-  "businessGlossaryTerms": [],
+  "businessGlossaryTerms": [
+    {
+      "GUID": "40dfa4da-222e-4b51-9bc0-64345b07594b",
+      "glossaryId": "8e35fbfb-2df9-44e2-a3d8-7b4da1cf3007",
+      "name": "Land Parcel",
+      "properties": {
+        "b2b6be04-fdc2-412d-bcee-8a0996829daf": "15f83ca4-07a1-4bc6-b63e-4721a3b631b8",
+        "7d971c2d-9221-41cd-b49c-c5c4a0fb8124": "Land Parcel",
+        "f440819c-abc6-4f0e-9992-60e4ed8a8c1d": "A uniquely identified area of land managed by the company, characterized by name, location, type, status, boundaries (as applicable), and related documentation.",
+        "ef946c78-fb86-4b46-8cea-ef1d2c9ce8d7": "Properties",
+        "11ad9cc7-ce56-4f78-b3c2-604c9354f6cc": "Property; Parcel; Site",
+        "e5d296f1-ec85-41a5-a449-ecbc0fb68629": "Needs Validation",
+        "70dd5250-2241-48ed-97c1-a58e2e0b6c09": "Gold Prospecting Narrative (Properties section)"
+      },
+      "refIds": [
+        "c06167c4-d4c4-4b89-9e25-e3516f0e7107"
+      ]
+    },
+    {
+      "GUID": "249757b8-d8f9-4505-90f1-95b5f75b8eaf",
+      "glossaryId": "8e35fbfb-2df9-44e2-a3d8-7b4da1cf3007",
+      "name": "Prospect",
+      "properties": {
+        "b2b6be04-fdc2-412d-bcee-8a0996829daf": "fea18d5b-133e-4456-b5cd-493b4aaf227d",
+        "7d971c2d-9221-41cd-b49c-c5c4a0fb8124": "Prospect",
+        "f440819c-abc6-4f0e-9992-60e4ed8a8c1d": "A land parcel identified for exploration that may later be converted into a claim, mineral lease, or private land parcel depending on ownership and mineral findings.",
+        "ef946c78-fb86-4b46-8cea-ef1d2c9ce8d7": "Properties",
+        "11ad9cc7-ce56-4f78-b3c2-604c9354f6cc": "Exploration site; Prospect area",
+        "e5d296f1-ec85-41a5-a449-ecbc0fb68629": "In Review",
+        "70dd5250-2241-48ed-97c1-a58e2e0b6c09": "Gold Prospecting Narrative (Properties section)"
+      },
+      "refIds": [
+        "c06167c4-d4c4-4b89-9e25-e3516f0e7107"
+      ]
+    }
+  ],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-30T10:28:35.299Z",
   "GUID": "8572facd-c75a-4bf8-be55-75852b5b7b0d",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-30T10:31:38.703Z",
+  "lastModifTS": "2026-03-30T12:10:51.934Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -115,17 +196,35 @@
   "applicationInformation": {
     "version": "8.10.0"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
-        "erd": [],
+        "erd": [
+          {
+            "GUID": "c06167c4-d4c4-4b89-9e25-e3516f0e7107",
+            "x": 1060,
+            "y": 1193,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
         "erdDefinitions": {
           "erd": [],
           "rootPath": [],
           "entities": [],
           "decorativeSymbols": []
         },
-        "buckets": [],
+        "buckets": [
+          {
+            "x": 996,
+            "y": 1129,
+            "GUID": "f55c27b0-1501-40b5-8d14-9d9eb2162024"
+          }
+        ],
         "collapsedNodes": [],
         "activeRelationship": "",
         "activeRelationshipFields": {
@@ -135,8 +234,21 @@
         "selectedCollections": [],
         "displayColorPicker": false,
         "graphView": {
-          "erd": [],
-          "buckets": [],
+          "erd": [
+            {
+              "GUID": "c06167c4-d4c4-4b89-9e25-e3516f0e7107",
+              "size": 100,
+              "x": 153,
+              "y": 173
+            }
+          ],
+          "buckets": [
+            {
+              "x": 89,
+              "y": 109,
+              "GUID": "f55c27b0-1501-40b5-8d14-9d9eb2162024"
+            }
+          ],
           "decorativeSymbols": [],
           "forceLayout": true,
           "defaultLinkLength": 300
