@@ -1,0 +1,218 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New attribute",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "3b6b2efd-a369-41f5-b337-712d590039be",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "b83bae4e-25e4-4f88-a145-8de4ffc53041",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New attribute2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "2ca3cfa2-9a78-499e-9e64-d1ddc1ca3d57",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "30a68bd2-051e-4a98-8556-1bc6cd16b748"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "8505814f-609e-406d-9230-b4f8a3f5b0ac",
+      "bucketId": "3d70505a-9a6f-4004-9adb-d6f1949bb16e"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New container",
+      "type": "bucket",
+      "collectionIds": [
+        "8505814f-609e-406d-9230-b4f8a3f5b0ac"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "3d70505a-9a6f-4004-9adb-d6f1949bb16e"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "3d70505a-9a6f-4004-9adb-d6f1949bb16e": "New container",
+    "8505814f-609e-406d-9230-b4f8a3f5b0ac": "New entity",
+    "3b6b2efd-a369-41f5-b337-712d590039be": "New attribute",
+    "b83bae4e-25e4-4f88-a145-8de4ffc53041": "New attribute1",
+    "2ca3cfa2-9a78-499e-9e64-d1ddc1ca3d57": "New attribute2"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "a494b34b-29c0-49cc-80a3-0a9c72af184c"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "82735353-1508-4d6c-9e3e-10c471531d27"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "cc2bcf57-e7b3-4446-ae64-73ea8e58b81d"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-04-14T13:17:04.202Z",
+  "GUID": "b08560ba-30e9-4102-b977-3d0ca60e134f",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-04-14T13:17:14.391Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.10.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "8505814f-609e-406d-9230-b4f8a3f5b0ac",
+            "x": 1163,
+            "y": 1281,
+            "width": 217,
+            "height": 86,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1099,
+            "y": 1217,
+            "GUID": "3d70505a-9a6f-4004-9adb-d6f1949bb16e"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "8505814f-609e-406d-9230-b4f8a3f5b0ac",
+              "size": 100,
+              "x": 1250,
+              "y": 1323
+            }
+          ],
+          "buckets": [
+            {
+              "x": 1186,
+              "y": 1259,
+              "GUID": "3d70505a-9a6f-4004-9adb-d6f1949bb16e"
+            }
+          ],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}

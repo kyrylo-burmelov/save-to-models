@@ -1,0 +1,325 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "56ae55aa-1de5-4309-9174-9f12db37b99a"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "60fbe16f-d698-40df-9a37-1fa50998ccc2"
+    },
+    {
+      "collectionName": "New entity1",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f764d721-801f-4f05-8996-cec3da9148d6"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "9ece8fb5-ce3e-4672-994e-418e1b1b59ec",
+      "glossaryTerms": [
+        {
+          "GUID": "2bec08e9-4bd1-468f-af12-dc181ea5638f",
+          "glossaryTermId": "9967f6d8-ffc7-4570-aade-8fed52dc4bfb"
+        }
+      ]
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "60fbe16f-d698-40df-9a37-1fa50998ccc2": "New entity",
+    "9ece8fb5-ce3e-4672-994e-418e1b1b59ec": "New entity1"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "1a562ee3-d279-4e70-92fa-e883f4a44151"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "4794d2e4-41fe-4675-a654-990735cc40b1"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "9cd2a52d-7eed-4d91-b6f2-cb5828887ca8"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [
+    {
+      "GUID": "20fc309b-0132-417b-8619-61297adbb7e7",
+      "name": "gold_prospecting_business_glossary (1).csv",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../../../../../../Downloads/gold_prospecting_business_glossary (1).csv",
+      "mapping": [
+        {
+          "GUID": "fdbe6f02-ffad-4fa5-8a10-26bcada416e4",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "tag",
+          "isMapped": true
+        },
+        {
+          "GUID": "3027f7be-2e35-457b-b71d-aafc1f7625b3",
+          "columnIdentifier": "Term",
+          "displayName": "Term",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "tag",
+          "isMapped": true
+        },
+        {
+          "GUID": "b551fa71-fa38-4c2b-938f-d52b05af99b8",
+          "columnIdentifier": "Definition",
+          "displayName": "Description",
+          "role": "description",
+          "isMultipleValue": false,
+          "position": 2,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "f088b338-0755-48c3-9f5b-401c24e405ac",
+          "columnIdentifier": "Synonyms",
+          "displayName": "Synonyms",
+          "isMultipleValue": true,
+          "separator": ";",
+          "position": 3,
+          "displayType": "tag",
+          "isMapped": true
+        },
+        {
+          "GUID": "e420d6fe-860d-493f-8ea2-14ff030347d4",
+          "columnIdentifier": "Domain",
+          "displayName": "Domain",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "a6d5ebbd-276c-4ea9-a81f-88dafa18deaf",
+          "columnIdentifier": "GovernanceStatus",
+          "displayName": "GovernanceStatus",
+          "position": 5,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "ab3f3432-253b-44a7-8abb-4942d0b5ff21",
+          "columnIdentifier": "Source",
+          "displayName": "Source",
+          "position": 6,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
+    },
+    {
+      "GUID": "6e15f3f0-c964-4f75-896a-8fc2aea55593",
+      "name": "gold_prospecting_business_glossary (1).csv",
+      "hasHeaders": false,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../../../../../../Downloads/gold_prospecting_business_glossary (1).csv",
+      "mapping": [
+        {
+          "GUID": "07e8e78c-60b9-4cc8-9446-75e870ff9322",
+          "columnIdentifier": 0,
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "871bfd0b-e9a0-4f0e-ab50-776d65c457e1",
+          "columnIdentifier": 1,
+          "displayName": "Term",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "bd2d13a8-f856-44e7-becc-ad09d3725e1f",
+          "columnIdentifier": 2,
+          "displayName": "Description",
+          "role": "description",
+          "isMultipleValue": false,
+          "position": 2,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "60074368-56c9-4412-beff-14c719ae3ad4",
+          "columnIdentifier": 3,
+          "displayName": "ацу",
+          "isMultipleValue": false,
+          "position": 3,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "f20d156d-2c72-4dae-b40f-299f1175ea91",
+          "columnIdentifier": 4,
+          "displayName": "афц",
+          "isMultipleValue": false,
+          "position": 4,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "6a0437ca-1d83-4f74-92ff-d1a63bf16991",
+          "columnIdentifier": 6,
+          "displayName": "аацф",
+          "isMultipleValue": false,
+          "position": 5,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "f3fcf596-4ed0-4112-9f3b-adf61ed6a95b",
+          "columnIdentifier": 5,
+          "displayName": "а",
+          "isMultipleValue": false,
+          "position": 6,
+          "displayType": "text",
+          "isMapped": true
+        }
+      ]
+    }
+  ],
+  "businessGlossaryTerms": [
+    {
+      "GUID": "9967f6d8-ffc7-4570-aade-8fed52dc4bfb",
+      "glossaryId": "6e15f3f0-c964-4f75-896a-8fc2aea55593",
+      "name": "Properties",
+      "properties": {
+        "07e8e78c-60b9-4cc8-9446-75e870ff9322": "15f83ca4-07a1-4bc6-b63e-4721a3b631b8",
+        "871bfd0b-e9a0-4f0e-ab50-776d65c457e1": "Properties",
+        "bd2d13a8-f856-44e7-becc-ad09d3725e1f": "Land Parcel",
+        "60074368-56c9-4412-beff-14c719ae3ad4": "A uniquely identified area of land managed by the company, characterized by name, location, type, status, boundaries (as applicable), and related documentation.",
+        "f20d156d-2c72-4dae-b40f-299f1175ea91": "Propertyawfoiunvahwefnoviauwhfnivwaouefhnvawoiufehnvawoeifuhnvawoeiufhvnawoifuhvanowiufhoavwiufhnvoawiuefhnvawoiuefhnvawoieufhvnawoieufhnvawoieufhnvawoiuefhnvaowiuefhvnaowiufhnvawoiuefhvnawoiefuhvnawoieufhvawonieufhvawnoeiufhnvawoiefuhvnaowiefuhvawoiefuhvnawoiefuhvnawoiefuhvnawoiuefhvawnoieufhvanoiwefuhvnawoiefuhvnawoiefuhvnawoieufhvnawoiefhnvwaoiuefhvanowiefuhvawiofe; Parcelfapowvimfjoiawvjfpoaiwvmfjpoawievfjmawpoifjvmwapoifjvamwpeofijvawmpefoijvawmepfoijvawmepfoijvawmpoefijvmawpeofijvmawpoeifjvmawpofijvawmpofeijvmawpefoijvmawpoefijvmawpoefijvmawpoefijvawmpeofijvwapoefijvawpeofijvmawpoefijvawmpoefijvawmpoefijvawoefv; Sifawpeivjfmpwaeiojfvwapmeoifjvawpoiefjmvawpeoifjvmawpoifejvmawpofeijvmawpoefijvampwoefijvamwpoefijvawpoiefjmvawpoiefjmvawepoifjvmwapoefijvmawpoefijvawmpoefjmvapwoefjvpaowiefjvte",
+        "6a0437ca-1d83-4f74-92ff-d1a63bf16991": "Gold Prospecting Narrative (Properties section)",
+        "f3fcf596-4ed0-4112-9f3b-adf61ed6a95b": "Needs Validation"
+      },
+      "refIds": [
+        "9ece8fb5-ce3e-4672-994e-418e1b1b59ec"
+      ]
+    }
+  ],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-03-03T14:18:02.124Z",
+  "GUID": "7de1126e-3493-43dc-8af3-c5ae794fbb06",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-03-10T12:48:50.176Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.9.6"
+  },
+  "hackoladeMeta": {},
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "60fbe16f-d698-40df-9a37-1fa50998ccc2",
+            "x": 226,
+            "y": 373,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "9ece8fb5-ce3e-4672-994e-418e1b1b59ec",
+            "x": 362,
+            "y": 247,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "60fbe16f-d698-40df-9a37-1fa50998ccc2",
+              "size": 100,
+              "x": 226,
+              "y": 373
+            },
+            {
+              "GUID": "9ece8fb5-ce3e-4672-994e-418e1b1b59ec",
+              "size": 100,
+              "x": 362,
+              "y": 247
+            }
+          ],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
