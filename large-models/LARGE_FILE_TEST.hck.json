@@ -37174,6 +37174,21 @@
           ]
         }
       ]
+    },
+    {
+      "collectionName": "New_table",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "670e65c9-a608-44f9-a3cd-d756b51bbfec"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExists": true,
+      "GUID": "7faf5f96-f9b5-4b4f-b3fa-165617f86987"
     }
   ],
   "buckets": [
@@ -46520,7 +46535,8 @@
     "eb69ddd9-0a07-47d6-9faf-c29639ff8325": "created_by",
     "2406b701-ad09-4ee9-a5d1-1861be674521": "last_altered",
     "389c7ed1-048f-49d5-9110-d877f85162ee": "last_altered_by",
-    "376f282f-ea2d-4014-a1b6-5cadcfffd514": "volumes"
+    "376f282f-ea2d-4014-a1b6-5cadcfffd514": "volumes",
+    "7faf5f96-f9b5-4b4f-b3fa-165617f86987": "New_table"
   },
   "definitions": {
     "type": "definitions",
@@ -46593,7 +46609,7 @@
   "isRunning": true,
   "state": "RUNNING",
   "data_security_mode": "USER_ISOLATION",
-  "lastModifTS": "2026-05-05T10:51:00.163Z",
+  "lastModifTS": "2026-05-05T11:02:40.303Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -47135,6 +47151,14 @@
             "y": 1114,
             "width": 185,
             "height": 225,
+            "color": {}
+          },
+          {
+            "GUID": "7faf5f96-f9b5-4b4f-b3fa-165617f86987",
+            "x": 3055.4876033057853,
+            "y": 5684.628099173554,
+            "width": 240,
+            "height": 100,
             "color": {}
           }
         ],
