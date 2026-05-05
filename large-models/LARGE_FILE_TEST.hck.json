@@ -37189,6 +37189,21 @@
       "collectionUsers": [],
       "tableIfNotExists": true,
       "GUID": "7faf5f96-f9b5-4b4f-b3fa-165617f86987"
+    },
+    {
+      "collectionName": "New_table1",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "caf790fb-6822-4f8f-8218-a4523d12ecde"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExists": true,
+      "GUID": "2a60d45b-91a0-4e05-addc-ba30603464e4"
     }
   ],
   "buckets": [
@@ -46536,7 +46551,8 @@
     "2406b701-ad09-4ee9-a5d1-1861be674521": "last_altered",
     "389c7ed1-048f-49d5-9110-d877f85162ee": "last_altered_by",
     "376f282f-ea2d-4014-a1b6-5cadcfffd514": "volumes",
-    "7faf5f96-f9b5-4b4f-b3fa-165617f86987": "New_table"
+    "7faf5f96-f9b5-4b4f-b3fa-165617f86987": "New_table",
+    "2a60d45b-91a0-4e05-addc-ba30603464e4": "New_table1"
   },
   "definitions": {
     "type": "definitions",
@@ -46609,7 +46625,7 @@
   "isRunning": true,
   "state": "RUNNING",
   "data_security_mode": "USER_ISOLATION",
-  "lastModifTS": "2026-05-05T11:02:40.303Z",
+  "lastModifTS": "2026-05-05T11:43:00.337Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -47157,6 +47173,14 @@
             "GUID": "7faf5f96-f9b5-4b4f-b3fa-165617f86987",
             "x": 3055.4876033057853,
             "y": 5684.628099173554,
+            "width": 240,
+            "height": 100,
+            "color": {}
+          },
+          {
+            "GUID": "2a60d45b-91a0-4e05-addc-ba30603464e4",
+            "x": 2317.9203187250996,
+            "y": 6222.988047808764,
             "width": 240,
             "height": 100,
             "color": {}
