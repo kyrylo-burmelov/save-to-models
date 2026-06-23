@@ -1,0 +1,119 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New entity",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a88008fc-2b0d-4225-99a0-fd4b3fe6c7e4"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "53ec0f43-7cdd-456d-9400-a2e74d9d2465"
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "53ec0f43-7cdd-456d-9400-a2e74d9d2465": "New entity"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "503210d6-3865-4649-b042-3ea4adb49b3d"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "ddcc54a3-f968-4f4e-91d9-5e731c38b106"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "d8111a05-e817-4071-987d-fdfdf8ded93c"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-06-23T10:37:11.983Z",
+  "GUID": "af171a27-95cc-4bf6-a4ff-784031d5c80e",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-06-23T10:38:18.421Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.12.0"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "53ec0f43-7cdd-456d-9400-a2e74d9d2465",
+            "x": 1358,
+            "y": 1096,
+            "width": 240,
+            "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "53ec0f43-7cdd-456d-9400-a2e74d9d2465",
+              "size": 100,
+              "x": 1358,
+              "y": 1096
+            }
+          ],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
