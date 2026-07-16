@@ -4,7 +4,49 @@
     {
       "collectionName": "New entity",
       "type": "object",
-      "properties": [],
+      "properties": [
+        {
+          "name": "New attribute",
+          "hackoladeMeta": {
+            "styles": {
+              "color": "#0d47a1"
+            }
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "06b5d8f8-d62d-4063-b20a-baf951316901",
+          "id": "regesrg",
+          "error": {}
+        },
+        {
+          "name": "New attribute1",
+          "hackoladeMeta": {
+            "styles": {
+              "color": "#b71c1c"
+            }
+          },
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "c7d2a859-ddf2-487c-a7c8-123c7382b364"
+        }
+      ],
       "definitions": {
         "type": "definitions",
         "properties": [],
@@ -16,12 +58,76 @@
     }
   ],
   "buckets": [],
-  "views": [],
+  "views": [
+    {
+      "name": "New view",
+      "type": "object",
+      "properties": [
+        {
+          "GUID": "00820773-ffdb-4353-a927-826d70bf7d2b",
+          "type": "reference",
+          "name": "TEST123",
+          "ref": "06b5d8f8-d62d-4063-b20a-baf951316901",
+          "refType": "collectionReference",
+          "refIdPath": [
+            "53ec0f43-7cdd-456d-9400-a2e74d9d2465",
+            "06b5d8f8-d62d-4063-b20a-baf951316901"
+          ],
+          "isActivated": true,
+          "$ref": "#collection/definitions/New entity/New attribute",
+          "hackoladeMeta": {
+            "styles": {
+              "color": "#ef9a9a",
+              "fontStyle": [
+                "italic",
+                "bold"
+              ]
+            }
+          },
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "GUID": "97e40bfb-e5dc-4a52-b30b-5a6a35b4e155",
+          "type": "reference",
+          "name": "New attribute1",
+          "ref": "c7d2a859-ddf2-487c-a7c8-123c7382b364",
+          "refType": "collectionReference",
+          "refIdPath": [
+            "53ec0f43-7cdd-456d-9400-a2e74d9d2465",
+            "c7d2a859-ddf2-487c-a7c8-123c7382b364"
+          ],
+          "isActivated": true,
+          "$ref": "#collection/definitions/New entity/New attribute1",
+          "hackoladeMeta": {},
+          "error": {}
+        }
+      ],
+      "isActivated": true,
+      "GUID": "9697f79f-6c75-4483-9036-4ae8c6c42189",
+      "pipeline": "[\n    {\n        \"$project\": {}\n    }\n]",
+      "viewOn": "",
+      "bucketId": "",
+      "hackoladeMeta": {
+        "validationErrors": {
+          "name": false,
+          "code": false
+        }
+      }
+    }
+  ],
   "relationships": [],
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "53ec0f43-7cdd-456d-9400-a2e74d9d2465": "New entity"
+    "53ec0f43-7cdd-456d-9400-a2e74d9d2465": "New entity",
+    "06b5d8f8-d62d-4063-b20a-baf951316901": "New attribute",
+    "c7d2a859-ddf2-487c-a7c8-123c7382b364": "New attribute1",
+    "9697f79f-6c75-4483-9036-4ae8c6c42189": "New view",
+    "00820773-ffdb-4353-a927-826d70bf7d2b": "TEST123",
+    "97e40bfb-e5dc-4a52-b30b-5a6a35b4e155": "New attribute1"
   },
   "definitions": {
     "type": "definitions",
@@ -47,7 +153,7 @@
   "creationTS": "2026-06-23T10:37:11.983Z",
   "GUID": "af171a27-95cc-4bf6-a4ff-784031d5c80e",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-06-23T10:38:18.421Z",
+  "lastModifTS": "2026-07-16T07:30:01.146Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -56,8 +162,9 @@
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.12.0"
+    "version": "8.12.3"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -68,6 +175,16 @@
             "y": 1096,
             "width": 240,
             "height": 100,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "9697f79f-6c75-4483-9036-4ae8c6c42189",
+            "x": 1411,
+            "y": 1308,
+            "width": 206,
+            "height": 68,
             "color": {
               "hex": "#2196F3"
             }
@@ -95,6 +212,12 @@
               "size": 100,
               "x": 1358,
               "y": 1096
+            },
+            {
+              "GUID": "9697f79f-6c75-4483-9036-4ae8c6c42189",
+              "size": 100,
+              "x": 1411,
+              "y": 1308
             }
           ],
           "buckets": [],
@@ -106,7 +229,18 @@
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
         "options": [],
-        "relationshipUpdateDisabled": false
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false,
+          "hideAnnotations": true,
+          "hideRectangles": true,
+          "hideDataTypes": true,
+          "hideForeignMaster": true,
+          "sortPrimaryKeysToTop": false,
+          "hideInactiveObjects": true,
+          "showRelationshipVerb": false,
+          "showRelationshipRole": false
+        }
       },
       "collectionLevel": {},
       "changed": false
