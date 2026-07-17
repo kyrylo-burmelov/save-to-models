@@ -134,121 +134,7 @@
       "GUID": "7076086c-5483-4e1a-b2db-5c89bb762f8d"
     }
   ],
-  "views": [
-    {
-      "name": "New view",
-      "type": "object",
-      "properties": [
-        {
-          "GUID": "96e776bf-31ec-44cb-8cb8-fb8c6884b448",
-          "type": "reference",
-          "name": "GREEN",
-          "ref": "0f979c2e-32a5-4250-99c8-2f61c08f61ba",
-          "refType": "collectionReference",
-          "refIdPath": [
-            "b06470d1-b1a7-4497-bd6b-2a217ea28fbd",
-            "ce9b55da-7b95-4be4-acee-f0bc362ad61e",
-            "0f979c2e-32a5-4250-99c8-2f61c08f61ba"
-          ],
-          "isActivated": true,
-          "$ref": "#collection/definitions/New entity/",
-          "hackoladeMeta": {},
-          "error": {}
-        },
-        {
-          "GUID": "646091fe-228c-469d-9eee-e228c6f7f325",
-          "type": "reference",
-          "name": "RED",
-          "ref": "a3b7c77b-785e-4e43-b600-9e86d2441f62",
-          "refType": "collectionReference",
-          "refIdPath": [
-            "b85c12e6-be57-48d7-bc31-06d8a6555a46",
-            "e2f3af47-ee9d-41df-9307-564afebcd5da",
-            "a3b7c77b-785e-4e43-b600-9e86d2441f62"
-          ],
-          "isActivated": true,
-          "$ref": "",
-          "hackoladeMeta": {},
-          "error": {}
-        }
-      ],
-      "isActivated": true,
-      "GUID": "43ee2c4a-0faa-4243-af8e-cdafe71b7d23",
-      "pipeline": "[\n    {\n        \"$project\": {}\n    }\n]",
-      "viewOn": "",
-      "bucketId": "",
-      "hackoladeMeta": {
-        "validationErrors": {
-          "name": false,
-          "code": false
-        }
-      }
-    },
-    {
-      "name": "New view1",
-      "type": "object",
-      "properties": [
-        {
-          "GUID": "cc55f3f4-65ac-4a4f-882e-c9256352ec07",
-          "type": "reference",
-          "name": "RED",
-          "ref": "a3b7c77b-785e-4e43-b600-9e86d2441f62",
-          "refType": "collectionReference",
-          "refIdPath": [
-            "b06470d1-b1a7-4497-bd6b-2a217ea28fbd",
-            "9c1c9fe7-030e-4e33-8ac3-7ec0f1ddab16",
-            "a3b7c77b-785e-4e43-b600-9e86d2441f62"
-          ],
-          "isActivated": true,
-          "$ref": "#collection/definitions/New entity/RED",
-          "hackoladeMeta": {},
-          "error": {}
-        },
-        {
-          "GUID": "6f8088eb-04d4-437a-abeb-dec67653ab48",
-          "type": "reference",
-          "name": "GREEN",
-          "ref": "0f979c2e-32a5-4250-99c8-2f61c08f61ba",
-          "refType": "collectionReference",
-          "refIdPath": [
-            "b06470d1-b1a7-4497-bd6b-2a217ea28fbd",
-            "65567ab9-cfb3-4928-8fe4-9b37081abfdd",
-            "0f979c2e-32a5-4250-99c8-2f61c08f61ba"
-          ],
-          "isActivated": true,
-          "$ref": "#collection/definitions/New entity/GREEN",
-          "hackoladeMeta": {},
-          "error": {}
-        },
-        {
-          "GUID": "d0de8a46-a99f-4fe7-9b14-74aecdf83c95",
-          "type": "reference",
-          "name": "BLUE",
-          "ref": "c15ad74a-cc10-4eb5-9125-cb2a254acadc",
-          "refType": "collectionReference",
-          "refIdPath": [
-            "b06470d1-b1a7-4497-bd6b-2a217ea28fbd",
-            "c15ad74a-cc10-4eb5-9125-cb2a254acadc"
-          ],
-          "isActivated": true,
-          "$ref": "#collection/definitions/New entity/BLUE",
-          "hackoladeMeta": {},
-          "error": {}
-        }
-      ],
-      "isActivated": true,
-      "GUID": "37e958c3-f448-4ed4-b218-e9ec8d69ce2b",
-      "pipeline": "[\n    {\n        \"$project\": {}\n    }\n]",
-      "viewOn": "",
-      "bucketId": "",
-      "hackoladeMeta": {
-        "validationErrors": {
-          "name": false,
-          "code": false
-        }
-      }
-    }
-  ],
+  "views": [],
   "relationships": [],
   "users": [],
   "diagramViews": [],
@@ -266,7 +152,14 @@
     "37e958c3-f448-4ed4-b218-e9ec8d69ce2b": "New view1",
     "cc55f3f4-65ac-4a4f-882e-c9256352ec07": "RED",
     "6f8088eb-04d4-437a-abeb-dec67653ab48": "GREEN",
-    "d0de8a46-a99f-4fe7-9b14-74aecdf83c95": "BLUE"
+    "d0de8a46-a99f-4fe7-9b14-74aecdf83c95": "BLUE",
+    "67d3739b-b45e-42f0-ad5e-4da7e3fa50e0": "New view2",
+    "c2d61268-3f7a-43a6-8fb5-a8a24c6fdbfb": "RED",
+    "fddb1bca-2518-4bad-8b5c-90190d73170d": "GREEN",
+    "16a9e9b2-da77-4edc-9023-d8dac5ac2657": "RED",
+    "2a7284b8-70cb-4810-9427-52691e0030fc": "New view3",
+    "c3d05c06-95da-4230-a820-77a185c392ec": "RED",
+    "f77a3428-585b-4676-87b0-75ef25148a1c": "GREEN"
   },
   "definitions": {
     "type": "definitions",
@@ -318,7 +211,7 @@
   "creationTS": "2026-07-17T07:51:42.834Z",
   "GUID": "b85c12e6-be57-48d7-bc31-06d8a6555a46",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-07-17T07:56:28.543Z",
+  "lastModifTS": "2026-07-17T07:58:20.435Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -327,8 +220,9 @@
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.12.4"
+    "version": "8.12.3"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -339,26 +233,6 @@
             "y": 1231,
             "width": 218,
             "height": 124,
-            "color": {
-              "hex": "#2196F3"
-            }
-          },
-          {
-            "GUID": "43ee2c4a-0faa-4243-af8e-cdafe71b7d23",
-            "x": 1117,
-            "y": 1509,
-            "width": 201,
-            "height": 68,
-            "color": {
-              "hex": "#2196F3"
-            }
-          },
-          {
-            "GUID": "37e958c3-f448-4ed4-b218-e9ec8d69ce2b",
-            "x": 1179,
-            "y": 1671,
-            "width": 201,
-            "height": 86,
             "color": {
               "hex": "#2196F3"
             }
@@ -392,18 +266,6 @@
               "size": 100,
               "x": 1129,
               "y": 1231
-            },
-            {
-              "GUID": "43ee2c4a-0faa-4243-af8e-cdafe71b7d23",
-              "size": 100,
-              "x": 1117,
-              "y": 1509
-            },
-            {
-              "GUID": "37e958c3-f448-4ed4-b218-e9ec8d69ce2b",
-              "size": 100,
-              "x": 1179,
-              "y": 1671
             }
           ],
           "buckets": [
