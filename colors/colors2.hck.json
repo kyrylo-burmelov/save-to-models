@@ -165,7 +165,24 @@
     {
       "name": "New view",
       "type": "object",
-      "properties": [],
+      "properties": [
+        {
+          "GUID": "1294be7e-02c9-4934-9cb7-b5b30f04df3e",
+          "type": "reference",
+          "name": "GREEN",
+          "ref": "0f979c2e-32a5-4250-99c8-2f61c08f61ba",
+          "refType": "collectionReference",
+          "refIdPath": [
+            "b06470d1-b1a7-4497-bd6b-2a217ea28fbd",
+            "65567ab9-cfb3-4928-8fe4-9b37081abfdd",
+            "0f979c2e-32a5-4250-99c8-2f61c08f61ba"
+          ],
+          "isActivated": true,
+          "$ref": "#collection/definitions/New entity/GREEN",
+          "hackoladeMeta": {},
+          "error": {}
+        }
+      ],
       "isActivated": true,
       "GUID": "5655294a-445c-4948-adcc-124c8cdd1378",
       "pipeline": "[\n    {\n        \"$project\": {}\n    }\n]",
@@ -198,7 +215,8 @@
     "6f8088eb-04d4-437a-abeb-dec67653ab48": "GREEN",
     "d0de8a46-a99f-4fe7-9b14-74aecdf83c95": "BLUE",
     "5655294a-445c-4948-adcc-124c8cdd1378": "New view",
-    "347ebee5-d515-46c1-bede-867011c8c9c2": "PURPLE"
+    "347ebee5-d515-46c1-bede-867011c8c9c2": "PURPLE",
+    "1294be7e-02c9-4934-9cb7-b5b30f04df3e": "GREEN"
   },
   "definitions": {
     "type": "definitions",
@@ -250,7 +268,7 @@
   "creationTS": "2026-07-17T07:51:42.834Z",
   "GUID": "b85c12e6-be57-48d7-bc31-06d8a6555a46",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-07-17T08:01:54.671Z",
+  "lastModifTS": "2026-07-17T09:47:10.604Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -259,8 +277,9 @@
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.12.4"
+    "version": "8.12.3"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -277,10 +296,10 @@
           },
           {
             "GUID": "5655294a-445c-4948-adcc-124c8cdd1378",
-            "x": 1076,
-            "y": 1509,
-            "width": 240,
-            "height": 100,
+            "x": 1432,
+            "y": 1255,
+            "width": 201,
+            "height": 50,
             "color": {
               "hex": "#2196F3"
             }
