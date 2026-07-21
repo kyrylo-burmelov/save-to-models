@@ -1,0 +1,145 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "New_table",
+      "type": "object",
+      "properties": [],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d5569b3d-5c77-41f5-9e11-3d4b88e42f61"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "tableIfNotExists": true,
+      "GUID": "853c4d1f-aa6e-42ea-95c0-ae25b5edfb9c",
+      "bucketId": "d96dfe01-32c0-4d14-889a-a8a7e81a1786"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New_schema",
+      "type": "bucket",
+      "collectionIds": [
+        "853c4d1f-aa6e-42ea-95c0-ae25b5edfb9c"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "d96dfe01-32c0-4d14-889a-a8a7e81a1786"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "d96dfe01-32c0-4d14-889a-a8a7e81a1786": "New_schema",
+    "853c4d1f-aa6e-42ea-95c0-ae25b5edfb9c": "New_table"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "15fc7233-03f4-4ad8-9eec-2234d11c8326"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "d2ce3ddd-d5a1-45ef-a95e-3e4032a97785"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "36321048-1a72-41bb-9031-4de9a6f2ce4f"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVersion": "Runtime 17",
+  "dbVendor": "Delta Lake",
+  "appTarget": "DeltaLake",
+  "creationTS": "2026-07-21T08:34:47.282Z",
+  "GUID": "6537d180-7a02-4b44-b120-726b36436864",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-07-21T08:35:20.962Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "DeltaLake",
+    "pluginVersion": "0.2.54",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.12.5"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "853c4d1f-aa6e-42ea-95c0-ae25b5edfb9c",
+            "x": 1113,
+            "y": 1223,
+            "width": 218,
+            "height": 103,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1049,
+            "y": 1159,
+            "GUID": "d96dfe01-32c0-4d14-889a-a8a7e81a1786"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300,
+          "options": []
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "853c4d1f-aa6e-42ea-95c0-ae25b5edfb9c"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
