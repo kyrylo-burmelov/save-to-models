@@ -1,0 +1,595 @@
+{
+  "modelName": "new_model",
+  "collections": [
+    {
+      "collectionName": "User",
+      "type": "object",
+      "properties": [
+        {
+          "name": "id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "number",
+          "required": false,
+          "alternateKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "7087824b-bdb0-4dc3-b3de-3f529528a86f"
+        },
+        {
+          "name": "firstName",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar2",
+          "length": 20,
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "GUID": "26f72548-210f-4d54-9c18-49939410d01b",
+          "error": {}
+        },
+        {
+          "name": "lastName",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar2",
+          "length": 20,
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "GUID": "159489b1-16e6-4109-a1ab-476b9ac0fa70",
+          "error": {}
+        },
+        {
+          "name": "email",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar2",
+          "length": 20,
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "GUID": "30a68a5d-d216-4cc0-aefe-719a3b395053",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d11959af-2b22-424e-bc6c-2e65586622b4"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "temporary": false,
+      "sharded": false,
+      "immutable": false,
+      "GUID": "abc1415a-f705-466e-8dec-aa512846010f",
+      "grpProp": [
+        {
+          "GUID": "f598afbe-aab0-4493-ae2d-17d829adc916",
+          "grpNumber2": [
+            {
+              "GUID": "fe5e6f59-5637-492b-a8ae-6fdfc9ff536d"
+            }
+          ]
+        }
+      ],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "Indxs": [
+        {
+          "GUID": "a0b7f987-3009-4aa4-8942-9a16d5e9a11d",
+          "isActivated": true,
+          "ifNotExist": true,
+          "indxSchema": "HR",
+          "indxName": "idx_user_email",
+          "indxType": "unique",
+          "indxKey": [
+            {
+              "keyId": "30a68a5d-d216-4cc0-aefe-719a3b395053",
+              "type": "asc"
+            }
+          ],
+          "indxDescription": "Enforces unique email addresses for employee login.",
+          "tablespace": "USERS",
+          "index_properties": "PARALLEL 4\nONLINE",
+          "index_attributes": "INITRANS 2\nPCTFREE 10",
+          "index_compression": "COMPRESS ADVANCED LOW",
+          "logging_clause": "logging",
+          "indexAnnotations": [
+            {
+              "GUID": "b09390e4-016a-47ec-9716-bd4b3921636c",
+              "annotationName": "owner",
+              "annotationValue": "identity-team"
+            },
+            {
+              "GUID": "4b485df8-f9a5-4bb5-a1a2-063ac2dded81",
+              "annotationName": "sla",
+              "annotationValue": "critical"
+            }
+          ],
+          "indxPartitionScope": "global",
+          "indxPartitionClause": "PARTITION BY HASH (email) PARTITIONS 4",
+          "indxComments": "Created for authentication lookups. Monitor for duplicate email conflicts."
+        },
+        {
+          "GUID": "4b7292d6-ad82-4051-9ebe-852380af05a8",
+          "isActivated": true,
+          "ifNotExist": false,
+          "indxSchema": "HR",
+          "indxName": "idx_user_name",
+          "indxType": "",
+          "indxKey": [
+            {
+              "keyId": "159489b1-16e6-4109-a1ab-476b9ac0fa70",
+              "type": "asc"
+            },
+            {
+              "keyId": "26f72548-210f-4d54-9c18-49939410d01b",
+              "type": "asc"
+            }
+          ],
+          "indxDescription": "Supports HR directory search by last and first name.",
+          "tablespace": "INDX",
+          "index_properties": "NOPARALLEL",
+          "index_attributes": "TABLESPACE INDX",
+          "index_compression": "NOCOMPRESS",
+          "logging_clause": "nologging",
+          "indexAnnotations": [
+            {
+              "GUID": "cfcaf5cc-24e0-4032-8455-4466af660942",
+              "annotationName": "owner",
+              "annotationValue": "hr-reporting"
+            }
+          ],
+          "indxPartitionScope": "local",
+          "indxPartitionClause": "",
+          "indxComments": "Used by employee search screens. Prefer rebuild offline during weekends."
+        }
+      ]
+    },
+    {
+      "collectionName": "Order",
+      "type": "object",
+      "properties": [
+        {
+          "name": "id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "976abe56-9d83-40fe-84c3-b88b66b5b147",
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "number"
+        },
+        {
+          "name": "orderNumber",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "d55d6bd7-d722-44b6-9808-185fb45abad6",
+          "mode": "varchar2",
+          "length": 40
+        },
+        {
+          "name": "customerId",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "45f42075-2755-4441-bf8c-180018365471",
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "number"
+        },
+        {
+          "name": "orderDate",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "date",
+          "type": "date",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "e36fd781-9a43-4cf6-97dc-d5f5d5893887"
+        },
+        {
+          "name": "status",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "0e0ce60a-803a-4613-bd67-67998f614b1b",
+          "mode": "varchar2",
+          "length": 20
+        },
+        {
+          "name": "totalAmount",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "14816f9d-378d-4019-9862-4a097a0593c6",
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "number"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1dc95252-326b-42f8-81c8-45ae9ad96608"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "temporary": false,
+      "sharded": false,
+      "immutable": false,
+      "GUID": "2942ea31-6147-42f5-a449-dafa19dd5292",
+      "grpProp": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "Indxs": [
+        {
+          "GUID": "066959c3-9ce5-48dc-8ee8-5e1dc30d4f81",
+          "isActivated": true,
+          "ifNotExist": true,
+          "indxSchema": "SALES",
+          "indxName": "idx_order_number",
+          "indxType": "unique",
+          "indxKey": [
+            {
+              "keyId": "d55d6bd7-d722-44b6-9808-185fb45abad6",
+              "type": "asc"
+            }
+          ],
+          "indxDescription": "Unique business key for customer-facing order numbers.",
+          "tablespace": "SALES_DATA",
+          "index_properties": "ONLINE\nPARALLEL 8",
+          "index_attributes": "INITRANS 4\nPCTFREE 8",
+          "index_compression": "COMPRESS 1",
+          "logging_clause": "logging",
+          "indexAnnotations": [
+            {
+              "GUID": "e0a1df36-027f-4e0a-be76-c3adedb2d56a",
+              "annotationName": "owner",
+              "annotationValue": "order-platform"
+            },
+            {
+              "GUID": "73831518-b671-4b36-9479-b11e35dc2763",
+              "annotationName": "retention",
+              "annotationValue": "7y"
+            }
+          ],
+          "indxPartitionScope": "global",
+          "indxPartitionClause": "PARTITION BY RANGE (orderNumber) (PARTITION p_max VALUES LESS THAN (MAXVALUE))",
+          "indxComments": "Critical for order entry and customer support search by order number."
+        },
+        {
+          "GUID": "c0b07bb1-faa1-428e-bd3c-c8bcdb067e90",
+          "isActivated": true,
+          "ifNotExist": false,
+          "indxSchema": "SALES",
+          "indxName": "idx_order_customer_date",
+          "indxType": "",
+          "indxKey": [
+            {
+              "keyId": "45f42075-2755-4441-bf8c-180018365471",
+              "type": "asc"
+            },
+            {
+              "keyId": "e36fd781-9a43-4cf6-97dc-d5f5d5893887",
+              "type": "desc"
+            }
+          ],
+          "indxDescription": "Covers account history queries: orders by customer, newest first.",
+          "tablespace": "SALES_INDX",
+          "index_properties": "NOLOGGING\nPARALLEL 4",
+          "index_attributes": "PCTFREE 12",
+          "index_compression": "COMPRESS ADVANCED HIGH",
+          "logging_clause": "nologging",
+          "indexAnnotations": [
+            {
+              "GUID": "be33ff56-7bd8-4f59-b66f-7f96c844ee98",
+              "annotationName": "owner",
+              "annotationValue": "crm-team"
+            }
+          ],
+          "indxPartitionScope": "local",
+          "indxPartitionClause": "PARTITION BY RANGE (orderDate) INTERVAL (NUMTOYMINTERVAL(1, 'MONTH'))",
+          "indxComments": "Main path for My Orders. Review after Black Friday load tests."
+        },
+        {
+          "GUID": "e82512da-6728-442a-a254-dab10d20eb3f",
+          "isActivated": false,
+          "ifNotExist": false,
+          "indxSchema": "SALES",
+          "indxName": "idx_order_status",
+          "indxType": "bitmap",
+          "indxKey": [
+            {
+              "keyId": "0e0ce60a-803a-4613-bd67-67998f614b1b",
+              "type": "asc"
+            }
+          ],
+          "indxDescription": "Bitmap index for low-cardinality order status reporting filters.",
+          "tablespace": "SALES_INDX",
+          "index_properties": "NOPARALLEL",
+          "index_attributes": "TABLESPACE SALES_INDX",
+          "index_compression": "NOCOMPRESS",
+          "logging_clause": "filesystem_like_logging",
+          "indexAnnotations": [
+            {
+              "GUID": "4afaccfe-0ea9-463d-8cd7-af76e069f569",
+              "annotationName": "status",
+              "annotationValue": "deprecated-candidate"
+            }
+          ],
+          "indxPartitionScope": "",
+          "indxPartitionClause": "",
+          "indxComments": "Deactivated temporarily — high DML on status updates caused latch contention."
+        }
+      ],
+      "comments": "Sales order header table used for checkout and fulfillment."
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "abc1415a-f705-466e-8dec-aa512846010f": "User",
+    "7087824b-bdb0-4dc3-b3de-3f529528a86f": "id",
+    "26f72548-210f-4d54-9c18-49939410d01b": "firstName",
+    "159489b1-16e6-4109-a1ab-476b9ac0fa70": "lastName",
+    "30a68a5d-d216-4cc0-aefe-719a3b395053": "email",
+    "2942ea31-6147-42f5-a449-dafa19dd5292": "Order",
+    "976abe56-9d83-40fe-84c3-b88b66b5b147": "id",
+    "d55d6bd7-d722-44b6-9808-185fb45abad6": "orderNumber",
+    "45f42075-2755-4441-bf8c-180018365471": "customerId",
+    "e36fd781-9a43-4cf6-97dc-d5f5d5893887": "orderDate",
+    "0e0ce60a-803a-4613-bd67-67998f614b1b": "status",
+    "14816f9d-378d-4019-9862-4a097a0593c6": "totalAmount"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "95b667a7-f1a7-4140-b0cd-8554958e6212"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "c3e38d8f-fd8d-4d52-9ef1-38be33344855"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "b1209f66-01c0-4e16-814a-8927358a9978"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVersion": "26ai",
+  "dbVendor": "Oracle",
+  "appTarget": "Oracle",
+  "creationTS": "2026-07-28T15:41:41.318Z",
+  "GUID": "2c7fb710-a1b0-4321-8cd0-0c1c582ae9bb",
+  "isLineageEnabled": false,
+  "t-grpProp": [
+    {
+      "GUID": "6491bb86-290e-43e2-a7b0-4ab504d8c2ac"
+    }
+  ],
+  "grpProp": [
+    {
+      "GUID": "6aa0e835-3be2-4f3e-be36-35538fdd9c0b"
+    }
+  ],
+  "lastModifTS": "2026-08-05T09:10:51.296Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Oracle",
+    "pluginVersion": "0.2.63",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.12.7"
+  },
+  "hackoladeMeta": {},
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "abc1415a-f705-466e-8dec-aa512846010f",
+            "x": 1040,
+            "y": 1040,
+            "width": 260,
+            "height": 104,
+            "color": {}
+          },
+          {
+            "GUID": "2942ea31-6147-42f5-a449-dafa19dd5292",
+            "x": 1400,
+            "y": 1040,
+            "width": 280,
+            "height": 140,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
