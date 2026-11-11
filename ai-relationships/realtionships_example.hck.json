@@ -1,0 +1,2346 @@
+{
+  "modelName": "Relationship examples",
+  "collections": [
+    {
+      "collectionName": "Author",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "1f83b5b6-d08c-4832-ac08-ed39efddcb2f",
+      "description": "A person who writes books.",
+      "bucketId": "610394ca-0440-47d1-8912-341b33574475",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Author ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "55f7a5a8-60f2-42d4-81e6-049bbfb15e4e",
+          "description": "Unique identifier of the author."
+        },
+        {
+          "name": "Author name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "31689bff-b6d3-40c4-ab39-e74ed9ef3a72",
+          "description": "Full name of the author."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "59d87867-b0af-4482-a4c6-88c8f42c278b",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Book",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "671d97ed-cc19-4617-89c5-590b6e64b688",
+      "description": "A published work written by one author.",
+      "bucketId": "610394ca-0440-47d1-8912-341b33574475",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Book ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "71fb3856-15e6-4c40-aa46-9ced6984f951",
+          "description": "Unique identifier of the book."
+        },
+        {
+          "name": "Title",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "14551d4e-f86c-4d42-8943-9b9c38a94840",
+          "description": "Title of the book."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "0ebbff26-c9a7-4616-872b-35d3fdf610ae",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Publisher",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "858270da-f7a2-43a9-8e3b-0a64eaa76bf0",
+      "description": "A company that publishes books.",
+      "bucketId": "610394ca-0440-47d1-8912-341b33574475",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Publisher ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "e69e82aa-751e-4a74-a8ba-f13b65e1bc9e",
+          "description": "Unique identifier of the publisher."
+        },
+        {
+          "name": "Publisher name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "48552fe8-8d07-4823-80d1-a4f1aa6dee22",
+          "description": "Legal name of the publisher."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "725171aa-5b7a-4f26-ab71-6e3494adf033",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Customer",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+      "description": "A registered customer who places orders.",
+      "uniqueKey": [
+        {
+          "GUID": "8c1c2ddd-c89e-4be4-9596-3c9cc3f6db70",
+          "constraintName": "Unique customer email",
+          "compositeUniqueKey": [
+            {
+              "keyId": "a8d832cd-1eae-4024-aea6-588922e00c6d"
+            }
+          ]
+        }
+      ],
+      "bucketId": "a0ac7e82-65b5-48af-8e85-20285c927cc8",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Customer ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "1cd19cbd-eb1b-4144-a1cf-b37886d49e3f",
+          "description": "Unique identifier of the customer.",
+          "childRelationships": [
+            "1ab2fe5d-bbdd-4a8c-9317-9d18328c4d76"
+          ]
+        },
+        {
+          "name": "Email",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": true,
+          "mode": "string",
+          "GUID": "a8d832cd-1eae-4024-aea6-588922e00c6d",
+          "description": "Login email of the customer, unique across customers."
+        },
+        {
+          "name": "Full name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "ffd02da8-1a12-4fa0-b1d3-c4a7067a0097",
+          "description": "Full name of the customer."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "24840357-3d95-47f2-b1ec-bb642fe2e17d",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Order",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+      "description": "A purchase placed by a customer.",
+      "bucketId": "a0ac7e82-65b5-48af-8e85-20285c927cc8",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Order ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "258ef8c0-9790-48f5-86f5-8302883b62e2",
+          "description": "Unique identifier of the order.",
+          "childRelationships": [
+            "84a6bdcd-01e0-4268-9246-ba647a535167"
+          ]
+        },
+        {
+          "name": "Customer ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "3b497bd9-7f48-48a7-9e5c-da4e2e38b660",
+          "description": "Customer who placed the order.",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+          "foreignField": [
+            "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+            "1cd19cbd-eb1b-4144-a1cf-b37886d49e3f"
+          ],
+          "parentRelationship": "1ab2fe5d-bbdd-4a8c-9317-9d18328c4d76"
+        },
+        {
+          "name": "Order date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": true,
+          "alternateKey": false,
+          "childType": "date",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "23c522c4-b650-415f-a0e4-fec7c0ab324a",
+          "primaryKey": false,
+          "description": "Date the order was placed."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "9873b210-dea6-430f-aeea-ceb13a176945",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Order line",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "dda609f6-5e60-4ca9-877f-920888ac327e",
+      "description": "One product line within an order. It cannot exist without its order.",
+      "primaryKey": [
+        {
+          "GUID": "0eeea1d2-4763-4b65-b069-cfd7e8a77dd3",
+          "compositePrimaryKey": [
+            {
+              "keyId": "fc81d8ca-5f4e-4538-88f5-45b5091a6055"
+            },
+            {
+              "keyId": "b1d7d456-6016-475c-b7cc-71f37d5c42c2"
+            }
+          ]
+        }
+      ],
+      "bucketId": "a0ac7e82-65b5-48af-8e85-20285c927cc8",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Order ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "GUID": "fc81d8ca-5f4e-4538-88f5-45b5091a6055",
+          "description": "Order this line belongs to.",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+          "foreignField": [
+            "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+            "258ef8c0-9790-48f5-86f5-8302883b62e2"
+          ],
+          "parentRelationship": "84a6bdcd-01e0-4268-9246-ba647a535167"
+        },
+        {
+          "name": "Line number",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "GUID": "b1d7d456-6016-475c-b7cc-71f37d5c42c2",
+          "description": "Position of the line within the order."
+        },
+        {
+          "name": "Quantity",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "b42eb7b5-901f-420f-b95f-94c9cf1f5712",
+          "description": "Number of units ordered on this line."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "7a42b316-8f0f-492d-9c2d-cc5a265f52ec",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Supplier",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "fcea52a9-d0db-425d-906e-d285c2c061bd",
+      "description": "A company that supplies goods to the business.",
+      "bucketId": "3c7971c9-e297-4d41-befc-13bf080fb81c",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Supplier ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "b8a44f75-3a16-41b2-8aeb-a0a2dd5a7810",
+          "description": "Unique identifier of the supplier."
+        },
+        {
+          "name": "Supplier name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "15d089e5-d389-4882-bd99-c7f173099981",
+          "description": "Current trading name of the supplier.",
+          "childRelationships": [
+            "6d886ff2-5587-492f-bfda-f74234fac271"
+          ]
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "dcf5c528-82d1-4861-a831-30ec35f66529",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Purchase order",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "2e56ca34-ecab-4529-bca9-b5bcab38a65c",
+      "description": "A purchase order issued to a supplier. It keeps a copy of the supplier name as it was when the order was issued.",
+      "bucketId": "3c7971c9-e297-4d41-befc-13bf080fb81c",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Purchase order ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "6512283d-eedf-4807-a1e6-77b350127052",
+          "description": "Unique identifier of the purchase order."
+        },
+        {
+          "name": "Supplier name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "ed29b4dd-7048-4812-bda3-41b134140479",
+          "description": "Copy of the supplier name at the time of issue.",
+          "relationshipType": "Foreign Master",
+          "foreignCollection": "fcea52a9-d0db-425d-906e-d285c2c061bd",
+          "foreignField": [
+            "fcea52a9-d0db-425d-906e-d285c2c061bd",
+            "15d089e5-d389-4882-bd99-c7f173099981"
+          ],
+          "parentRelationship": "6d886ff2-5587-492f-bfda-f74234fac271"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "ed651da2-7654-4575-b2a0-729a61e03a77",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Student",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "43620272-2b1c-4809-8184-eb75c8e69d70",
+      "description": "A person enrolled in courses.",
+      "bucketId": "e9ca1f30-f92a-455f-a7cf-7bda1a128947",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Student ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "49642150-d91d-46a5-8cb7-cdd8888e9e8f",
+          "description": "Unique identifier of the student.",
+          "childRelationships": [
+            "809e6a87-d959-4501-a0b9-dbe690a1d9b1"
+          ]
+        },
+        {
+          "name": "Student name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "00b8ce66-4eb6-4861-a143-da4e889d119d",
+          "description": "Full name of the student."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "530662ed-e8ef-485b-85f3-ab49ffb499f0",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Course offering",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+      "description": "A course taught in a specific term.",
+      "primaryKey": [
+        {
+          "GUID": "f40a1982-dcac-42e0-9b7d-009e74eb04d3",
+          "compositePrimaryKey": [
+            {
+              "keyId": "52baad96-82bd-4efe-9059-185ba6afe37c"
+            },
+            {
+              "keyId": "394783e4-90e7-48ea-b5ba-eb385f0cd673"
+            }
+          ]
+        }
+      ],
+      "bucketId": "e9ca1f30-f92a-455f-a7cf-7bda1a128947",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Course code",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "52baad96-82bd-4efe-9059-185ba6afe37c",
+          "description": "",
+          "childRelationships": [
+            "eb65d93f-adb3-4a10-aa60-b91cdd4c8da1"
+          ]
+        },
+        {
+          "name": "Term code",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "394783e4-90e7-48ea-b5ba-eb385f0cd673",
+          "description": "",
+          "childRelationships": [
+            "eb65d93f-adb3-4a10-aa60-b91cdd4c8da1"
+          ]
+        },
+        {
+          "name": "Course title",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "bc9754cb-d167-4d69-a131-cef27e160adb",
+          "description": ""
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "82d444b3-2871-4f60-bdc5-95201a9aec38",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Enrollment",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "865d7e0e-d4e0-48fb-8f94-f578840df436",
+      "description": "A student's registration in one course offering.",
+      "primaryKey": [
+        {
+          "GUID": "13b89b94-9cc2-48f4-9bc3-7c2168c6bc66",
+          "compositePrimaryKey": [
+            {
+              "keyId": "50130250-e769-42d8-99af-97b18a41ae7a"
+            },
+            {
+              "keyId": "2b7fccd1-aa0e-40ec-9ae4-d56b2f96b3ba"
+            },
+            {
+              "keyId": "1e8c6e55-d183-4990-942d-acd924b0db88"
+            }
+          ]
+        }
+      ],
+      "bucketId": "e9ca1f30-f92a-455f-a7cf-7bda1a128947",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "properties": [
+        {
+          "name": "Student ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "GUID": "50130250-e769-42d8-99af-97b18a41ae7a",
+          "description": "",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "43620272-2b1c-4809-8184-eb75c8e69d70",
+          "foreignField": [
+            "43620272-2b1c-4809-8184-eb75c8e69d70",
+            "49642150-d91d-46a5-8cb7-cdd8888e9e8f"
+          ],
+          "parentRelationship": "809e6a87-d959-4501-a0b9-dbe690a1d9b1"
+        },
+        {
+          "name": "Course code",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "2b7fccd1-aa0e-40ec-9ae4-d56b2f96b3ba",
+          "description": "",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+          "foreignField": [
+            "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+            "52baad96-82bd-4efe-9059-185ba6afe37c"
+          ],
+          "parentRelationship": "eb65d93f-adb3-4a10-aa60-b91cdd4c8da1"
+        },
+        {
+          "name": "Term code",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "1e8c6e55-d183-4990-942d-acd924b0db88",
+          "description": "",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+          "foreignField": [
+            "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+            "394783e4-90e7-48ea-b5ba-eb385f0cd673"
+          ],
+          "parentRelationship": "eb65d93f-adb3-4a10-aa60-b91cdd4c8da1"
+        },
+        {
+          "name": "Grade",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "b7a243b8-62e1-4cae-b970-192491dcbcec",
+          "description": ""
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "5ee56764-9238-40c2-912f-12f93883a6de",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Department",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+      "description": "An organizational unit that employees belong to.",
+      "bucketId": "a665e4c2-12fa-44c8-81fe-10b3eb1e3917",
+      "properties": [
+        {
+          "name": "Department ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "44f389e1-24a0-415d-bff3-aac99232b146",
+          "description": "Unique identifier of the department.",
+          "childRelationships": [
+            "7e0c4c38-1503-4ce6-87ff-f7358393f5de"
+          ]
+        },
+        {
+          "name": "Department name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "caa7b991-79ab-4da6-bdb0-464b1d4e7089",
+          "description": "Name of the department."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "5a01b006-a7e5-4ce7-95f9-96123daae9fb",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Employee",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "72748069-94cf-4437-9c2b-98da13a73f02",
+      "description": "A person employed by the company.",
+      "bucketId": "a665e4c2-12fa-44c8-81fe-10b3eb1e3917",
+      "properties": [
+        {
+          "name": "Employee ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "762635b2-6583-45aa-bbaf-3250daad992b",
+          "description": "Unique identifier of the employee.",
+          "childRelationships": [
+            "b1be9439-0eb3-44fb-986f-e530814f25e6"
+          ]
+        },
+        {
+          "name": "Full name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "579392fd-60b9-4b11-9b7a-3d3e01e2a24c",
+          "description": "Full name of the employee."
+        },
+        {
+          "name": "Hire date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": false,
+          "alternateKey": false,
+          "childType": "date",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "fa633007-5f83-4972-9ce7-54f809480207",
+          "primaryKey": false,
+          "description": "Date the employee was hired."
+        },
+        {
+          "name": "Department ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "ff979177-3cb3-44d9-9d8a-790a300534b4",
+          "description": "Department the employee belongs to.",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+          "foreignField": [
+            "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+            "44f389e1-24a0-415d-bff3-aac99232b146"
+          ],
+          "parentRelationship": "7e0c4c38-1503-4ce6-87ff-f7358393f5de"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "a22280f8-659a-4636-9e07-84bb93bde8f2",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Project",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "cff6cb06-72a0-499b-b049-740fa2b7d917",
+      "description": "A piece of work carried out by one or more employees.",
+      "bucketId": "a665e4c2-12fa-44c8-81fe-10b3eb1e3917",
+      "properties": [
+        {
+          "name": "Project ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "d9e14c15-65a0-43ca-8bc8-b12990e7ba7b",
+          "description": "Unique identifier of the project.",
+          "childRelationships": [
+            "d9e8de3d-0a5f-4861-aebe-988f071b8a8f"
+          ]
+        },
+        {
+          "name": "Project title",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": true,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "50e5cc8b-1f5b-40cd-97fb-923fec5f1534",
+          "description": "Title of the project."
+        },
+        {
+          "name": "Start date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": false,
+          "alternateKey": false,
+          "childType": "date",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "ec6ea513-e7d7-40ac-97bd-c8077a565816",
+          "primaryKey": false,
+          "description": "Date the project started."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "f7af3161-79f1-453d-97ab-fc6b5228b18e",
+        "properties": []
+      }
+    },
+    {
+      "collectionName": "Project assignment",
+      "type": "object",
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "f4be3d42-d3b0-482b-8f51-54cff224645e",
+      "description": "The assignment of an employee to a project, with the role they play on it.",
+      "primaryKey": [
+        {
+          "GUID": "1a6c5c97-a1d1-4f29-91b1-5273b3de9c44",
+          "compositePrimaryKey": [
+            {
+              "keyId": "f02739b4-b97c-4b4b-9ea2-282fc0f54050"
+            },
+            {
+              "keyId": "db7c43a3-2932-4862-99b0-0e6e0ea143a0"
+            }
+          ]
+        }
+      ],
+      "bucketId": "a665e4c2-12fa-44c8-81fe-10b3eb1e3917",
+      "properties": [
+        {
+          "name": "Employee ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "GUID": "f02739b4-b97c-4b4b-9ea2-282fc0f54050",
+          "description": "Employee assigned to the project.",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "72748069-94cf-4437-9c2b-98da13a73f02",
+          "foreignField": [
+            "72748069-94cf-4437-9c2b-98da13a73f02",
+            "762635b2-6583-45aa-bbaf-3250daad992b"
+          ],
+          "parentRelationship": "b1be9439-0eb3-44fb-986f-e530814f25e6"
+        },
+        {
+          "name": "Project ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "integer",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "GUID": "db7c43a3-2932-4862-99b0-0e6e0ea143a0",
+          "description": "Project the employee is assigned to.",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "cff6cb06-72a0-499b-b049-740fa2b7d917",
+          "foreignField": [
+            "cff6cb06-72a0-499b-b049-740fa2b7d917",
+            "d9e14c15-65a0-43ca-8bc8-b12990e7ba7b"
+          ],
+          "parentRelationship": "d9e8de3d-0a5f-4861-aebe-988f071b8a8f"
+        },
+        {
+          "name": "Role",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "mode": "string",
+          "GUID": "21701df3-a9b8-4ba5-8786-b832fa85824a",
+          "description": "Role the employee plays on the project."
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "GUID": "86c477f2-3940-44b7-b089-6813e94b87c8",
+        "properties": []
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "Entity to entity",
+      "type": "bucket",
+      "collectionIds": [
+        "1f83b5b6-d08c-4832-ac08-ed39efddcb2f",
+        "671d97ed-cc19-4617-89c5-590b6e64b688",
+        "858270da-f7a2-43a9-8e3b-0a64eaa76bf0"
+      ],
+      "backgroundColor": {
+        "r": 179,
+        "g": 157,
+        "b": 219,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "610394ca-0440-47d1-8912-341b33574475",
+      "description": "Conceptual relationships between business entities. Ends name whole entities, so only the reading direction, roles, and verbs are defined here.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "name": "Foreign key",
+      "type": "bucket",
+      "collectionIds": [
+        "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+        "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+        "dda609f6-5e60-4ca9-877f-920888ac327e"
+      ],
+      "backgroundColor": {
+        "r": 255,
+        "g": 204,
+        "b": 128,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "a0ac7e82-65b5-48af-8e85-20285c927cc8",
+      "description": "Foreign keys link child attributes to the primary key of a parent entity, with delete and update rules and cardinalities.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "name": "Foreign master",
+      "type": "bucket",
+      "collectionIds": [
+        "fcea52a9-d0db-425d-906e-d285c2c061bd",
+        "2e56ca34-ecab-4529-bca9-b5bcab38a65c"
+      ],
+      "backgroundColor": {
+        "r": 128,
+        "g": 222,
+        "b": 234,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "3c7971c9-e297-4d41-befc-13bf080fb81c",
+      "description": "A foreign master records that the child stores a copy of the parent's value rather than a reference to it.",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "name": "Composite relationship",
+      "type": "bucket",
+      "collectionIds": [
+        "43620272-2b1c-4809-8184-eb75c8e69d70",
+        "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+        "865d7e0e-d4e0-48fb-8f94-f578840df436"
+      ],
+      "backgroundColor": {
+        "r": 230,
+        "g": 238,
+        "b": 156,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "e9ca1f30-f92a-455f-a7cf-7bda1a128947",
+      "description": "Composite FK example: enrollment foreign keys match the composite PK of course offering."
+    },
+    {
+      "name": "Human resources",
+      "type": "bucket",
+      "collectionIds": [
+        "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+        "72748069-94cf-4437-9c2b-98da13a73f02",
+        "cff6cb06-72a0-499b-b049-740fa2b7d917",
+        "f4be3d42-d3b0-482b-8f51-54cff224645e"
+      ],
+      "backgroundColor": {
+        "r": 244,
+        "g": 143,
+        "b": 177,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "a665e4c2-12fa-44c8-81fe-10b3eb1e3917",
+      "description": "Employees, the departments they belong to, and the projects they work on."
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "name": "Author books",
+      "relationshipType": "",
+      "parentField": [],
+      "childField": [],
+      "isActivated": true,
+      "GUID": "60d50a39-34e3-4125-b888-e0374d8ecdfd",
+      "level": "field",
+      "parentCollection": "671d97ed-cc19-4617-89c5-590b6e64b688",
+      "childCollection": "1f83b5b6-d08c-4832-ac08-ed39efddcb2f",
+      "description": "An author writes many books; each book is written by one author.",
+      "parentVerb": "is written by",
+      "childVerb": "writes",
+      "parentRole": "BOOK",
+      "childRole": "AUTHOR",
+      "hackoladeStyles": {
+        "GUID": "ed815d4a-8fc7-48fe-b9bf-96ba23a32204",
+        "color": "#FF0000",
+        "shape": [
+          {
+            "x": 1826,
+            "y": 1187
+          },
+          {
+            "x": 1826,
+            "y": 1162
+          },
+          {
+            "x": 1811,
+            "y": 1162
+          },
+          {
+            "x": 1811,
+            "y": 1137
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ],
+        "autoPositioning": true
+      },
+      "lineSize": 2
+    },
+    {
+      "name": "Book publisher",
+      "relationshipType": "",
+      "parentField": [],
+      "childField": [],
+      "isActivated": true,
+      "GUID": "ba499742-a78b-4c58-b6a7-d3ea3968613c",
+      "level": "field",
+      "parentCollection": "671d97ed-cc19-4617-89c5-590b6e64b688",
+      "childCollection": "858270da-f7a2-43a9-8e3b-0a64eaa76bf0",
+      "description": "A book is published by one publisher; a publisher publishes many books. Read in both directions.",
+      "parentVerb": "Hello",
+      "childVerb": "Hello",
+      "parentRole": "HELLO",
+      "childRole": "HELLO",
+      "hackoladeStyles": {
+        "GUID": "09229302-8bd4-448c-afdc-c2bf0e74d630",
+        "color": "#FF0000",
+        "shape": [
+          {
+            "x": 2037,
+            "y": 1159.5
+          },
+          {
+            "x": 1914,
+            "y": 1100.5
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ],
+        "autoPositioning": true,
+        "thickness": 6,
+        "type": "Oblique"
+      },
+      "lineSize": 2
+    },
+    {
+      "name": "Order customer",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+          "1cd19cbd-eb1b-4144-a1cf-b37886d49e3f"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+          "3b497bd9-7f48-48a7-9e5c-da4e2e38b660"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "1ab2fe5d-bbdd-4a8c-9317-9d18328c4d76",
+      "level": "field",
+      "parentCollection": "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+      "childCollection": "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+      "description": "Each order is placed by exactly one customer; a customer may place many orders. Enforced by a non-identifying foreign key.",
+      "parentVerb": "places",
+      "childVerb": "is placed by",
+      "parentRole": "CUSTOMER",
+      "childRole": "ORDER",
+      "hackoladeStyles": {
+        "GUID": "f0bbc671-0a4a-4652-930e-067269598b4a",
+        "color": "#FF0000",
+        "shape": [
+          {
+            "x": 1290,
+            "y": 1109.5
+          },
+          {
+            "x": 1347,
+            "y": 1109.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ],
+        "autoPositioning": true
+      },
+      "materializationConstraintType": "nonIdentifying",
+      "lineSize": 2
+    },
+    {
+      "name": "Order line order",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+          "258ef8c0-9790-48f5-86f5-8302883b62e2"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "dda609f6-5e60-4ca9-877f-920888ac327e",
+          "fc81d8ca-5f4e-4538-88f5-45b5091a6055"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "84a6bdcd-01e0-4268-9246-ba647a535167",
+      "level": "field",
+      "parentCollection": "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+      "childCollection": "dda609f6-5e60-4ca9-877f-920888ac327e",
+      "description": "Each order line belongs to exactly one order; an order contains one or more lines. The foreign key is part of the order line's primary key, so the relationship is identifying.",
+      "parentVerb": "contains",
+      "childVerb": "belongs to",
+      "parentRole": "ORDER",
+      "childRole": "ORDER LINE",
+      "hackoladeStyles": {
+        "GUID": "745683f4-be4b-407b-aec6-7d263915c1ea",
+        "color": "#FF0000",
+        "shape": [
+          {
+            "x": 1174.5,
+            "y": 1205
+          },
+          {
+            "x": 1174.5,
+            "y": 1180
+          },
+          {
+            "x": 1177,
+            "y": 1180
+          },
+          {
+            "x": 1177,
+            "y": 1155
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ],
+        "autoPositioning": true
+      },
+      "materializationConstraintType": "identifying",
+      "lineSize": 2
+    },
+    {
+      "name": "Purchase order supplier name",
+      "relationshipType": "Foreign Master",
+      "parentField": [
+        [
+          "fcea52a9-d0db-425d-906e-d285c2c061bd",
+          "15d089e5-d389-4882-bd99-c7f173099981"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "2e56ca34-ecab-4529-bca9-b5bcab38a65c",
+          "ed29b4dd-7048-4812-bda3-41b134140479"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "6d886ff2-5587-492f-bfda-f74234fac271",
+      "level": "field",
+      "parentCollection": "fcea52a9-d0db-425d-906e-d285c2c061bd",
+      "childCollection": "2e56ca34-ecab-4529-bca9-b5bcab38a65c",
+      "description": "Each purchase order stores a copy of its supplier's name. The copy is not updated when the supplier record changes.",
+      "parentVerb": "receives",
+      "childVerb": "is issued to",
+      "parentRole": "SUPPLIER",
+      "childRole": "PURCHASE ORDER",
+      "hackoladeStyles": {
+        "GUID": "783575c2-3db2-4498-bb36-8c97ca19139a",
+        "color": "#FF0000",
+        "shape": [
+          {
+            "x": 1377,
+            "y": 1447.5
+          },
+          {
+            "x": 1307,
+            "y": 1447.5
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ],
+        "autoPositioning": true
+      },
+      "lineSize": 2
+    },
+    {
+      "name": "Enrollment course offering",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+          "52baad96-82bd-4efe-9059-185ba6afe37c"
+        ],
+        [
+          "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+          "394783e4-90e7-48ea-b5ba-eb385f0cd673"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "865d7e0e-d4e0-48fb-8f94-f578840df436",
+          "2b7fccd1-aa0e-40ec-9ae4-d56b2f96b3ba"
+        ],
+        [
+          "865d7e0e-d4e0-48fb-8f94-f578840df436",
+          "1e8c6e55-d183-4990-942d-acd924b0db88"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "eb65d93f-adb3-4a10-aa60-b91cdd4c8da1",
+      "level": "field",
+      "parentCollection": "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+      "childCollection": "865d7e0e-d4e0-48fb-8f94-f578840df436",
+      "description": "Composite FK: Course code + Term code. Identifying.",
+      "parentVerb": "includes",
+      "childVerb": "is taken in",
+      "parentRole": "COURSE OFFERING",
+      "childRole": "ENROLLMENT",
+      "hackoladeStyles": {
+        "GUID": "ab6b41c3-bc04-47f9-be31-bb9ec08924c8",
+        "color": "#FF0000",
+        "shape": [
+          {
+            "x": 1440,
+            "y": 1682.5
+          },
+          {
+            "x": 1474.5,
+            "y": 1682.5
+          },
+          {
+            "x": 1474.5,
+            "y": 1673.5
+          },
+          {
+            "x": 1509,
+            "y": 1673.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ],
+        "autoPositioning": true
+      },
+      "materializationConstraintType": "identifying",
+      "lineSize": 2
+    },
+    {
+      "name": "Enrollment student",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "43620272-2b1c-4809-8184-eb75c8e69d70",
+          "49642150-d91d-46a5-8cb7-cdd8888e9e8f"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "865d7e0e-d4e0-48fb-8f94-f578840df436",
+          "50130250-e769-42d8-99af-97b18a41ae7a"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "809e6a87-d959-4501-a0b9-dbe690a1d9b1",
+      "level": "field",
+      "parentCollection": "43620272-2b1c-4809-8184-eb75c8e69d70",
+      "childCollection": "865d7e0e-d4e0-48fb-8f94-f578840df436",
+      "description": "Single-field FK. Identifying.",
+      "parentVerb": "makes",
+      "childVerb": "is made by",
+      "parentRole": "STUDENT",
+      "childRole": "ENROLLMENT",
+      "hackoladeStyles": {
+        "GUID": "5492feb9-9563-4d10-85ec-87b01a2f072f",
+        "color": "#FF0000",
+        "shape": [
+          {
+            "x": 1324,
+            "y": 1737
+          },
+          {
+            "x": 1324,
+            "y": 1762
+          },
+          {
+            "x": 1329,
+            "y": 1762
+          },
+          {
+            "x": 1329,
+            "y": 1787
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ],
+        "autoPositioning": true
+      },
+      "materializationConstraintType": "identifying",
+      "lineSize": 2
+    },
+    {
+      "name": "Employee department",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+          "44f389e1-24a0-415d-bff3-aac99232b146"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "72748069-94cf-4437-9c2b-98da13a73f02",
+          "ff979177-3cb3-44d9-9d8a-790a300534b4"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "7e0c4c38-1503-4ce6-87ff-f7358393f5de",
+      "level": "field",
+      "parentCollection": "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+      "childCollection": "72748069-94cf-4437-9c2b-98da13a73f02",
+      "description": "Each employee belongs to exactly one department; a department has many employees.",
+      "parentVerb": "has",
+      "childVerb": "belongs to",
+      "parentRole": "DEPARTMENT",
+      "childRole": "EMPLOYEE",
+      "materializationConstraintType": "nonIdentifying",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "3bc4a98e-3d57-436d-9662-df29a4d0e641",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1454,
+            "y": 2058.5
+          },
+          {
+            "x": 1492.5,
+            "y": 2058.5
+          },
+          {
+            "x": 1492.5,
+            "y": 2040.5
+          },
+          {
+            "x": 1531,
+            "y": 2040.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "Assignment employee",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "72748069-94cf-4437-9c2b-98da13a73f02",
+          "762635b2-6583-45aa-bbaf-3250daad992b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "f4be3d42-d3b0-482b-8f51-54cff224645e",
+          "f02739b4-b97c-4b4b-9ea2-282fc0f54050"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "b1be9439-0eb3-44fb-986f-e530814f25e6",
+      "level": "field",
+      "parentCollection": "72748069-94cf-4437-9c2b-98da13a73f02",
+      "childCollection": "f4be3d42-d3b0-482b-8f51-54cff224645e",
+      "description": "Each assignment concerns exactly one employee.",
+      "parentVerb": "is assigned through",
+      "childVerb": "is for",
+      "parentRole": "EMPLOYEE",
+      "childRole": "ASSIGNMENT",
+      "materializationConstraintType": "identifying",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "8242a39e-264b-4860-8f72-ac602212946e",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1344.5,
+            "y": 2163
+          },
+          {
+            "x": 1344.5,
+            "y": 2138
+          },
+          {
+            "x": 1331,
+            "y": 2138
+          },
+          {
+            "x": 1331,
+            "y": 2113
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      }
+    },
+    {
+      "name": "Assignment project",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "cff6cb06-72a0-499b-b049-740fa2b7d917",
+          "d9e14c15-65a0-43ca-8bc8-b12990e7ba7b"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "f4be3d42-d3b0-482b-8f51-54cff224645e",
+          "db7c43a3-2932-4862-99b0-0e6e0ea143a0"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "n",
+      "GUID": "d9e8de3d-0a5f-4861-aebe-988f071b8a8f",
+      "level": "field",
+      "parentCollection": "cff6cb06-72a0-499b-b049-740fa2b7d917",
+      "childCollection": "f4be3d42-d3b0-482b-8f51-54cff224645e",
+      "description": "Each assignment is on exactly one project.",
+      "parentVerb": "includes",
+      "childVerb": "is on",
+      "parentRole": "PROJECT",
+      "childRole": "ASSIGNMENT",
+      "materializationConstraintType": "identifying",
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "9357d64b-e9bd-4bb8-bed0-05de705f07f1",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1481,
+            "y": 2208.5
+          },
+          {
+            "x": 1531,
+            "y": 2208.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "610394ca-0440-47d1-8912-341b33574475": "Entity to entity",
+    "a0ac7e82-65b5-48af-8e85-20285c927cc8": "Foreign key",
+    "3c7971c9-e297-4d41-befc-13bf080fb81c": "Foreign master",
+    "55f7a5a8-60f2-42d4-81e6-049bbfb15e4e": "Author ID",
+    "31689bff-b6d3-40c4-ab39-e74ed9ef3a72": "Author name",
+    "1f83b5b6-d08c-4832-ac08-ed39efddcb2f": "Author",
+    "71fb3856-15e6-4c40-aa46-9ced6984f951": "Book ID",
+    "14551d4e-f86c-4d42-8943-9b9c38a94840": "Title",
+    "671d97ed-cc19-4617-89c5-590b6e64b688": "Book",
+    "e69e82aa-751e-4a74-a8ba-f13b65e1bc9e": "Publisher ID",
+    "48552fe8-8d07-4823-80d1-a4f1aa6dee22": "Publisher name",
+    "858270da-f7a2-43a9-8e3b-0a64eaa76bf0": "Publisher",
+    "60d50a39-34e3-4125-b888-e0374d8ecdfd": "Author books",
+    "ba499742-a78b-4c58-b6a7-d3ea3968613c": "Book publisher",
+    "1cd19cbd-eb1b-4144-a1cf-b37886d49e3f": "Customer ID",
+    "a8d832cd-1eae-4024-aea6-588922e00c6d": "Email",
+    "ffd02da8-1a12-4fa0-b1d3-c4a7067a0097": "Full name",
+    "472b19af-ef3a-4c21-b33d-9a19346d46fc": "Customer",
+    "258ef8c0-9790-48f5-86f5-8302883b62e2": "Order ID",
+    "3b497bd9-7f48-48a7-9e5c-da4e2e38b660": "Customer ID",
+    "23c522c4-b650-415f-a0e4-fec7c0ab324a": "Order date",
+    "8ae76d31-55c6-4577-98e4-45a7039e0ebe": "Order",
+    "fc81d8ca-5f4e-4538-88f5-45b5091a6055": "Order ID",
+    "b1d7d456-6016-475c-b7cc-71f37d5c42c2": "Line number",
+    "b42eb7b5-901f-420f-b95f-94c9cf1f5712": "Quantity",
+    "dda609f6-5e60-4ca9-877f-920888ac327e": "Order line",
+    "1ab2fe5d-bbdd-4a8c-9317-9d18328c4d76": "Order customer",
+    "84a6bdcd-01e0-4268-9246-ba647a535167": "Order line order",
+    "b8a44f75-3a16-41b2-8aeb-a0a2dd5a7810": "Supplier ID",
+    "15d089e5-d389-4882-bd99-c7f173099981": "Supplier name",
+    "fcea52a9-d0db-425d-906e-d285c2c061bd": "Supplier",
+    "6512283d-eedf-4807-a1e6-77b350127052": "Purchase order ID",
+    "ed29b4dd-7048-4812-bda3-41b134140479": "Supplier name",
+    "2e56ca34-ecab-4529-bca9-b5bcab38a65c": "Purchase order",
+    "6d886ff2-5587-492f-bfda-f74234fac271": "Purchase order supplier name",
+    "e9ca1f30-f92a-455f-a7cf-7bda1a128947": "Composite relationship",
+    "49642150-d91d-46a5-8cb7-cdd8888e9e8f": "Student ID",
+    "00b8ce66-4eb6-4861-a143-da4e889d119d": "Student name",
+    "43620272-2b1c-4809-8184-eb75c8e69d70": "Student",
+    "52baad96-82bd-4efe-9059-185ba6afe37c": "Course code",
+    "394783e4-90e7-48ea-b5ba-eb385f0cd673": "Term code",
+    "bc9754cb-d167-4d69-a131-cef27e160adb": "Course title",
+    "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f": "Course offering",
+    "50130250-e769-42d8-99af-97b18a41ae7a": "Student ID",
+    "2b7fccd1-aa0e-40ec-9ae4-d56b2f96b3ba": "Course code",
+    "1e8c6e55-d183-4990-942d-acd924b0db88": "Term code",
+    "b7a243b8-62e1-4cae-b970-192491dcbcec": "Grade",
+    "865d7e0e-d4e0-48fb-8f94-f578840df436": "Enrollment",
+    "eb65d93f-adb3-4a10-aa60-b91cdd4c8da1": "Enrollment course offering",
+    "809e6a87-d959-4501-a0b9-dbe690a1d9b1": "Enrollment student",
+    "a665e4c2-12fa-44c8-81fe-10b3eb1e3917": "Human resources",
+    "44f389e1-24a0-415d-bff3-aac99232b146": "Department ID",
+    "caa7b991-79ab-4da6-bdb0-464b1d4e7089": "Department name",
+    "9efa4044-2df7-43a4-bf5c-92262c1d1ca5": "Department",
+    "762635b2-6583-45aa-bbaf-3250daad992b": "Employee ID",
+    "579392fd-60b9-4b11-9b7a-3d3e01e2a24c": "Full name",
+    "fa633007-5f83-4972-9ce7-54f809480207": "Hire date",
+    "ff979177-3cb3-44d9-9d8a-790a300534b4": "Department ID",
+    "72748069-94cf-4437-9c2b-98da13a73f02": "Employee",
+    "d9e14c15-65a0-43ca-8bc8-b12990e7ba7b": "Project ID",
+    "50e5cc8b-1f5b-40cd-97fb-923fec5f1534": "Project title",
+    "ec6ea513-e7d7-40ac-97bd-c8077a565816": "Start date",
+    "cff6cb06-72a0-499b-b049-740fa2b7d917": "Project",
+    "f02739b4-b97c-4b4b-9ea2-282fc0f54050": "Employee ID",
+    "db7c43a3-2932-4862-99b0-0e6e0ea143a0": "Project ID",
+    "21701df3-a9b8-4ba5-8786-b832fa85824a": "Role",
+    "f4be3d42-d3b0-482b-8f51-54cff224645e": "Project assignment",
+    "7e0c4c38-1503-4ce6-87ff-f7358393f5de": "Employee department",
+    "b1be9439-0eb3-44fb-986f-e530814f25e6": "Assignment employee",
+    "d9e8de3d-0a5f-4861-aebe-988f071b8a8f": "Assignment project"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "dba49a38-7b38-4d33-ad8e-eced572220ef"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "24394d7e-bae6-43fd-9286-59ebf71d0c78"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "b2ab9e4d-f56f-4055-813e-753777d203ae"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-11-11T13:39:37.756Z",
+  "GUID": "20ef3312-67ec-4ff0-8bfc-03ca29d5d01f",
+  "hackoladeMeta": {
+    "namingConvention": "code",
+    "validationErrors": {}
+  },
+  "code": "New model",
+  "isLineageEnabled": false,
+  "supertypeGroups": [],
+  "description": "Examples of the relationship types that can be created with AI chat: entity-to-entity, foreign key, and foreign master.",
+  "lastModifTS": "2026-11-11T14:24:21.865Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.13.9"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "1f83b5b6-d08c-4832-ac08-ed39efddcb2f",
+            "x": 1708,
+            "y": 1187,
+            "width": 236,
+            "height": 73,
+            "color": {
+              "hex": "#E53935"
+            }
+          },
+          {
+            "GUID": "671d97ed-cc19-4617-89c5-590b6e64b688",
+            "x": 1708,
+            "y": 1064,
+            "width": 206,
+            "height": 73,
+            "color": {
+              "hex": "#FB8C00"
+            }
+          },
+          {
+            "GUID": "858270da-f7a2-43a9-8e3b-0a64eaa76bf0",
+            "x": 2037,
+            "y": 1123,
+            "width": 250,
+            "height": 73,
+            "color": {
+              "hex": "#FDD835"
+            }
+          },
+          {
+            "GUID": "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+            "x": 1347,
+            "y": 1064,
+            "width": 233,
+            "height": 91,
+            "color": {
+              "hex": "#7CB342"
+            }
+          },
+          {
+            "GUID": "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+            "x": 1064,
+            "y": 1064,
+            "width": 226,
+            "height": 91,
+            "color": {
+              "hex": "#00897B"
+            }
+          },
+          {
+            "GUID": "dda609f6-5e60-4ca9-877f-920888ac327e",
+            "x": 1064,
+            "y": 1205,
+            "width": 221,
+            "height": 91,
+            "color": {
+              "hex": "#00ACC1"
+            }
+          },
+          {
+            "GUID": "fcea52a9-d0db-425d-906e-d285c2c061bd",
+            "x": 1064,
+            "y": 1411,
+            "width": 243,
+            "height": 73,
+            "color": {
+              "hex": "#1E88E5"
+            }
+          },
+          {
+            "GUID": "2e56ca34-ecab-4529-bca9-b5bcab38a65c",
+            "x": 1377,
+            "y": 1411,
+            "width": 263,
+            "height": 73,
+            "color": {
+              "hex": "#3949AB"
+            }
+          },
+          {
+            "GUID": "43620272-2b1c-4809-8184-eb75c8e69d70",
+            "x": 1208,
+            "y": 1787,
+            "width": 242,
+            "height": 73,
+            "color": {
+              "hex": "#8E24AA"
+            }
+          },
+          {
+            "GUID": "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+            "x": 1509,
+            "y": 1628,
+            "width": 251,
+            "height": 91,
+            "color": {
+              "hex": "#D81B60"
+            }
+          },
+          {
+            "GUID": "865d7e0e-d4e0-48fb-8f94-f578840df436",
+            "x": 1208,
+            "y": 1628,
+            "width": 232,
+            "height": 109,
+            "color": {
+              "hex": "#6D4C41"
+            }
+          },
+          {
+            "GUID": "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+            "x": 1531,
+            "y": 2004,
+            "width": 266,
+            "height": 73,
+            "color": {
+              "hex": "#757575"
+            }
+          },
+          {
+            "GUID": "72748069-94cf-4437-9c2b-98da13a73f02",
+            "x": 1208,
+            "y": 2004,
+            "width": 246,
+            "height": 109,
+            "color": {
+              "hex": "#C0CA33"
+            }
+          },
+          {
+            "GUID": "cff6cb06-72a0-499b-b049-740fa2b7d917",
+            "x": 1531,
+            "y": 2163,
+            "width": 226,
+            "height": 91,
+            "color": {
+              "hex": "#5E35B1"
+            }
+          },
+          {
+            "GUID": "f4be3d42-d3b0-482b-8f51-54cff224645e",
+            "x": 1208,
+            "y": 2163,
+            "width": 273,
+            "height": 91,
+            "color": {
+              "hex": "#F4511E"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1644,
+            "y": 1000,
+            "GUID": "610394ca-0440-47d1-8912-341b33574475"
+          },
+          {
+            "x": 1000,
+            "y": 1000,
+            "GUID": "a0ac7e82-65b5-48af-8e85-20285c927cc8"
+          },
+          {
+            "x": 1000,
+            "y": 1347,
+            "GUID": "3c7971c9-e297-4d41-befc-13bf080fb81c"
+          },
+          {
+            "x": 1144,
+            "y": 1564,
+            "GUID": "e9ca1f30-f92a-455f-a7cf-7bda1a128947"
+          },
+          {
+            "x": 1144,
+            "y": 1940,
+            "GUID": "a665e4c2-12fa-44c8-81fe-10b3eb1e3917"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "1f83b5b6-d08c-4832-ac08-ed39efddcb2f",
+              "size": 100,
+              "x": 1414,
+              "y": 1314
+            },
+            {
+              "GUID": "671d97ed-cc19-4617-89c5-590b6e64b688",
+              "size": 100,
+              "x": 1164,
+              "y": 1114
+            },
+            {
+              "GUID": "858270da-f7a2-43a9-8e3b-0a64eaa76bf0",
+              "size": 100,
+              "x": 1164,
+              "y": 1364
+            },
+            {
+              "GUID": "472b19af-ef3a-4c21-b33d-9a19346d46fc",
+              "size": 100,
+              "x": 1614,
+              "y": 1064
+            },
+            {
+              "GUID": "8ae76d31-55c6-4577-98e4-45a7039e0ebe",
+              "size": 100,
+              "x": 1414,
+              "y": 1564
+            },
+            {
+              "GUID": "dda609f6-5e60-4ca9-877f-920888ac327e",
+              "size": 100,
+              "x": 1664,
+              "y": 1564
+            },
+            {
+              "GUID": "fcea52a9-d0db-425d-906e-d285c2c061bd",
+              "size": 100,
+              "x": 1664,
+              "y": 1314
+            },
+            {
+              "GUID": "2e56ca34-ecab-4529-bca9-b5bcab38a65c",
+              "size": 100,
+              "x": 1064,
+              "y": 1614
+            },
+            {
+              "GUID": "43620272-2b1c-4809-8184-eb75c8e69d70",
+              "size": 100,
+              "x": 1458,
+              "y": 2158
+            },
+            {
+              "GUID": "593eddd3-4cc1-4a7e-b97b-d05c9c7db38f",
+              "size": 100,
+              "x": 1208,
+              "y": 1958
+            },
+            {
+              "GUID": "865d7e0e-d4e0-48fb-8f94-f578840df436",
+              "size": 100,
+              "x": 1208,
+              "y": 2208
+            },
+            {
+              "GUID": "9efa4044-2df7-43a4-bf5c-92262c1d1ca5",
+              "size": 100,
+              "x": 1458,
+              "y": 2802
+            },
+            {
+              "GUID": "72748069-94cf-4437-9c2b-98da13a73f02",
+              "size": 100,
+              "x": 1208,
+              "y": 2602
+            },
+            {
+              "GUID": "cff6cb06-72a0-499b-b049-740fa2b7d917",
+              "size": 100,
+              "x": 1208,
+              "y": 2852
+            },
+            {
+              "GUID": "f4be3d42-d3b0-482b-8f51-54cff224645e",
+              "size": 100,
+              "x": 1658,
+              "y": 2552
+            }
+          ],
+          "buckets": [
+            {
+              "x": 64,
+              "y": 64,
+              "GUID": "610394ca-0440-47d1-8912-341b33574475"
+            },
+            {
+              "x": 128,
+              "y": 128,
+              "GUID": "a0ac7e82-65b5-48af-8e85-20285c927cc8"
+            },
+            {
+              "x": 192,
+              "y": 192,
+              "GUID": "3c7971c9-e297-4d41-befc-13bf080fb81c"
+            },
+            {
+              "x": 256,
+              "y": 256,
+              "GUID": "e9ca1f30-f92a-455f-a7cf-7bda1a128947"
+            },
+            {
+              "x": 320,
+              "y": 320,
+              "GUID": "a665e4c2-12fa-44c8-81fe-10b3eb1e3917"
+            }
+          ],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 158,
+          "options": []
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
